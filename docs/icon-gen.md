@@ -1,0 +1,11 @@
+﻿---
+title: ⭐ IconGen
+---
+
+# IconGen
+
+*IconGen* is an Unity Editor tool that lets you capture icons and generate icons.
+
+:::tip
+This does not require VRChat to run. It has been tested to work on Unity 2019, and should work on newer versions.
+:::
