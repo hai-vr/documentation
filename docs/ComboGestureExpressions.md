@@ -23,7 +23,9 @@ With *ComboGestureExpressions*:
 - Attach multiple expressions on a single gesture by switching between different moods using the Expressions Menu.
 - Eyes will no longer blink whenever the avatar has a face expression with eyes closed.
 - Puppets and blend trees are integrated into the tool.
-- Animations triggered by squeezing the controller trigger will look smooth to outside observers (see [corrections](corrections.md)).
+- Animations triggered by squeezing the controller trigger will look smooth to outside observers.
+
+[//]: # (- &#40;see [corrections]&#40;corrections.md&#41;&#41;.)
 
 *(Most illustrations in this documentation use [Saneko avatar (さねこ) by ひゅうがなつ](https://booth.pm/en/items/2322146))*
 
@@ -44,7 +46,7 @@ Remove the preview dummy in the scene, they are no longer needed.
 
 ## What's new in V2?
 
-Find out [what's new in V2](v2.0-whats-new.md).
+[//]: # (Find out [what's new in V2]&#40;v2.0-whats-new.md&#41;.)
 
 ## Having issues? Join my Discord Server
 
@@ -301,7 +303,8 @@ For a boolean, *IsAboveThreshold* means the element is active when it's true.
 ## Using multiple mood sets
 
 <iframe src="https://streamable.com/e/c5x44o?loop=0" width="816" height="512" frameborder="0" allowfullscreen></iframe>
-*(A [longer tutorial with audio commentary](tutorial.md#using-multiple-mood-sets-tutorial-with-audio-commentary) is available)*
+
+[//]: # (*&#40;A [longer tutorial with audio commentary]&#40;tutorial.md#using-multiple-mood-sets-tutorial-with-audio-commentary&#41; is available&#41;*)
 
 Earlier, you set up face expressions within `Default` object of the prefab. This is the default mood set of face expressions of your avatar that is active after loading. However, you can have any number of mood sets and switch between them using the menu to increase the number of face expressions depending on the situation.
 
@@ -320,7 +323,8 @@ Add additional mood sets by clicking <span class="hai-btn">+</span> on the list,
 ## Standalone puppets and blend trees
 
 <iframe src="https://streamable.com/e/ai0fzb?loop=0" width="816" height="512" frameborder="0" allowfullscreen></iframe>
-*(A [longer tutorial with audio commentary](tutorial.md#standalone-puppets-and-blend-trees-tutorial-with-audio-commentary) is available)*
+
+[//]: # (*&#40;A [longer tutorial with audio commentary]&#40;tutorial.md#standalone-puppets-and-blend-trees-tutorial-with-audio-commentary&#41; is available&#41;*)
 
 So far we have set up *Activity* mood sets. Another type of mood set is available: *Puppet*, which can be controlled by an Expression Menu.
 
@@ -351,7 +355,8 @@ I recommend creating two controls in your Expression Menu to control the puppet:
 ## Animate cat ears, wings and more
 
 <iframe src="https://streamable.com/e/uo3kut?loop=0" width="816" height="512" frameborder="0" allowfullscreen></iframe>
-*(A [longer tutorial with audio commentary](tutorial.md#animate-cat-ears-wings-and-more-tutorial-with-audio-commentary) is available)*
+
+[//]: # (*&#40;A [longer tutorial with audio commentary]&#40;tutorial.md#animate-cat-ears-wings-and-more-tutorial-with-audio-commentary&#41; is available&#41;*)
 
 In Avatars 3.0, animations that modify transforms belong in the [Gesture playable layer](https://docs.vrchat.com/docs/playable-layers#gesture). In face expression animations, this is most often used to animate ears, wings, tails...
 
@@ -374,12 +379,13 @@ Handling the Gesture Playable is very tricky, and extra precautions need to be t
 - If you modify the FX Playable Layer, and <span class="hai-btn">Synchronize Animator FX and Gesture layers</span> every time you do a change in the FX Playable Layer. That is because the mask is generated based on the animations within the FX Playable layer.
 - You should not share your Gesture Playable Layer between two very different avatars that do not have the same base, because the avatar is being used to capture the default bone positions of the avatar when it is at rest, so that animated transforms can reset to a base position when they are not being used.
 
-*If you would like to know why an Avatar mask is needed on layers of the FX Playable Layer, [you may find additional information here](writedefaults.md).*
+[//]: # (*If you would like to know why an Avatar mask is needed on layers of the FX Playable Layer, [you may find additional information here]&#40;writedefaults.md&#41;.*)
 
 ## Permutations
 
 <iframe src="https://streamable.com/e/2onv8c?loop=0" width="816" height="512" frameborder="0" allowfullscreen></iframe>
-*(A [longer tutorial with audio commentary](tutorial.md#permutations-tutorial-with-audio-commentary) is available)*
+
+[//]: # (*&#40;A [longer tutorial with audio commentary]&#40;tutorial.md#permutations-tutorial-with-audio-commentary&#41; is available&#41;*)
 
 For simplicity purposes, we've been using combinations of gestures, meaning that `Left Point + Right ThumbsUp` will show the same animation as `Left ThumbsUp + Right Point`. I encourage you [using multiple mood sets](#using-multiple-mood-sets) available in an Expressions menu to expand your expressions repertoire.
 
@@ -390,7 +396,8 @@ If you would like to create permutations of gestures, which I do recommend for a
 ## Mix puppets and gestures
 
 <iframe src="https://streamable.com/e/nvm1n0?loop=0" width="816" height="512" frameborder="0" allowfullscreen></iframe>
-*(A [longer tutorial with audio commentary](tutorial.md#mix-puppets-and-gestures-tutorial-with-audio-commentary) is available)*
+
+[//]: # (*&#40;A [longer tutorial with audio commentary]&#40;tutorial.md#mix-puppets-and-gestures-tutorial-with-audio-commentary&#41; is available&#41;*)
 
 Any animation slot can have a blend tree within it instead. This means puppeteering is possible for specific combos of hand gestures.
 
@@ -421,9 +428,9 @@ When the parameter is active, the face expressions of your avatar will stop play
 
 ## Learn more
 
-- [Corrections](corrections.md) - Learn about the various techniques used to fix animations.
-- [Integrator](integrator.md) - Documentation about the Integrator, a module to add Weight Corrections without using ComboGestureExpressions.
-- [Write Defaults](writedefaults.md) - Explanation of how the Avatar Mask is built.
+[//]: # (- [Corrections]&#40;corrections.md&#41; - Learn about the various techniques used to fix animations.)
+[//]: # (- [Integrator]&#40;integrator.md&#41; - Documentation about the Integrator, a module to add Weight Corrections without using ComboGestureExpressions.)
+[//]: # (- [Write Defaults]&#40;writedefaults.md&#41; - Explanation of how the Avatar Mask is built.)
 - [Download on github.com](https://github.com/hai-vr/combo-gesture-expressions-av3/releases) - Main download location.
 - [Download on booth.pm](https://hai-vr.booth.pm/items/2219616) - Alternate download location.
 
