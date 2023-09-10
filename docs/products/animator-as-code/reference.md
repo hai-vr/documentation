@@ -2,7 +2,7 @@
 sidebar_position: 3
 ---
 
-# Reference
+# Reference manual
 
 ## Typical animator creation steps
 
