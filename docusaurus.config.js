@@ -68,7 +68,7 @@ const config = {
         title: 'Haï~',
         logo: {
           alt: 'My Site Logo',
-          src: 'img/hai-misty.png',
+          src: 'img/hai-avi.png',
         },
         items: [
           {
