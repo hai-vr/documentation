@@ -1,6 +1,8 @@
 ﻿---
 title: Blendshape Viewer
 ---
+import Je9CWGeOH8 from './blendshape-viewer-img/sx_2022-01-15_00-25-45_Je9CWGeOH8.mp4';
+import xx4Kdbs1Hlck from './blendshape-viewer-img/sx_2022-01-15_00-18-15_4Kdbs1Hlck.mp4';
 
 *Blendshape Viewer* lets you visually browse blendshapes.
 
@@ -8,17 +10,16 @@ title: Blendshape Viewer
 This does not require VRChat to run. It has been tested to work on Unity 2019, and should work on newer versions.
 :::
 
-[sx_2022-01-15_00-25-45_Je9CWGeOH8.mp4](blendshape-viewer-img/sx_2022-01-15_00-25-45_Je9CWGeOH8.mp4)
+<video controls width="816" autostart="false">
+    <source src={Je9CWGeOH8}/>
+</video>
 
 ## Download
 
-The tool is free for download on GitHub.
+The tool is free for download.
 
-[https://github.com/hai-vr/blendshape-viewer](https://github.com/hai-vr/blendshape-viewer)
-
-It is also available on Booth.pm:
-
-[Blendshape Viewer - hai-vr - BOOTH](https://hai-vr.booth.pm/items/3582541)
+- GitHub ([hai-vr/blendshape-viewer](https://github.com/hai-vr/blendshape-viewer))
+- Booth.pm ([Blendshape Viewer - hai-vr - BOOTH](https://hai-vr.booth.pm/items/3582541))
 
 ## How to use
 
@@ -48,20 +49,6 @@ It is also available on Booth.pm:
 - **Thumbnail Size**: Size of the pictures.
 - **Update button**: Click to refresh the pictures.
 
-## Having issues? Join my Discord Server
-
-I will try to provide help on the #main channel when I can.
-
-[Join the Invitation Discord Server!](https://discord.com/invite/58fWAUTYF8)
-
-## Check out my other tool “Animation Viewer”
-
-*[Animation Viewer](https://www.notion.so/Animation-Viewer-2a4bc319631c44d383174bd140722e38?pvs=21)* lets you preview animations in the Project view browser.
-
-It’s also free! [Animation Viewer](https://www.notion.so/Animation-Viewer-2a4bc319631c44d383174bd140722e38?pvs=21)
-
-![Untitled](blendshape-viewer-img/Untitled%204.png)
-
 ## Additional notes
 
 - Remember you can change the field of view of the scene camera.
@@ -70,7 +57,9 @@ It’s also free! [Animation Viewer](https://www.notion.so/Animation-Viewer-2a4b
 
 - The tool can be used when recording animations.
 
-[sx_2022-01-15_00-18-15_4Kdbs1Hlck.mp4](blendshape-viewer-img/sx_2022-01-15_00-18-15_4Kdbs1Hlck.mp4)
+<video controls width="816" autostart="false">
+    <source src={xx4Kdbs1Hlck}/>
+</video>
 
 - The text of the blendshape labels can be selected and copied.
 

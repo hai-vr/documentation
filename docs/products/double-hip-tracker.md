@@ -1,6 +1,7 @@
 ---
 title: ⭐ Double Hip Tracker
 ---
+import pFdyyLdeVF from './double-hip-tracker-img/double-hip-tracker_pFdyyLdeVF.mp4';
 
 # Double Hip Tracker
 
@@ -45,7 +46,9 @@ Once enabled, you need to select the serial numbers of your two chest trackers b
 
 You can find out which tracker is the correct one by spinning your tracker quickly, and an indicator `<<<` will show up in the list of available hardware.
 
-[Spin your tracker to find it using the <<< indicator](double-hip-tracker-img/double-hip-tracker_pFdyyLdeVF.mp4)
+<video controls width="816" autostart="false">
+    <source src={pFdyyLdeVF}/>
+</video>
 
 Spin your tracker to find it using the <<< indicator
 

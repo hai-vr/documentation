@@ -17,12 +17,6 @@ It is written with VRChat Avatars 3.0 use cases in mind; the API is opinionated 
     <source src="https://user-images.githubusercontent.com/60819407/157751278-475538c7-3310-4fa5-9a87-3651c85eaa1c.mp4" />
 </video>
 
-# Interested? Join my Discord Server
-
-This is a work in progress, I am looking for feedback!
-
-[Join the Invitation Discord Server!](https://discord.com/invite/58fWAUTYF8)
-
 # Install
 
 There are currently no releases.

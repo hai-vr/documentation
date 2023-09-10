@@ -1,6 +1,13 @@
 ﻿
 # Reference
 
+## Download
+
+The tool is free for download.
+
+- GitHub ([hai-vr/combo-gesture-expressions-av3/releases](https://github.com/hai-vr/combo-gesture-expressions-av3/releases))
+- Booth.pm ([ComboGestureExpressions - hai-vr - BOOTH](https://hai-vr.booth.pm/items/2219616))
+
 ## Installation for V1 users
 
 The components used in ComboGestureExpressions V1 and V2 are the same. You will not lose your work.
@@ -16,12 +23,6 @@ Remove the preview dummy in the scene, they are no longer needed.
 ## What's new in V2?
 
 [//]: # (Find out [what's new in V2]&#40;v2.0-whats-new.md&#41;.)
-
-## Having issues? Join my Discord Server
-
-I will try to provide help on the #cge channel when I can.
-
-[Join the Invitation Discord (https://discord.gg/58fWAUTYF8)](https://discord.gg/58fWAUTYF8).
 
 ## Set up the prefab and open the CGE Editor
 

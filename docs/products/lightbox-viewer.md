@@ -10,16 +10,12 @@ This does not require VRChat to run. It has been tested to work on Unity 2019, a
 
 ## Download
 
-- [> Download on GitHub...](https://github.com/hai-vr/lightbox-viewer/releases)
-- [> Download on Booth.pm...](https://hai-vr.booth.pm/items/3870813)
+The tool is free for download.
 
-## Having issues? Join my Discord Server
+- GitHub ([hai-vr/lightbox-viewer/releases](https://github.com/hai-vr/lightbox-viewer/releases))
+- Booth.pm ([Lightbox Viewer - hai-vr - BOOTH](https://hai-vr.booth.pm/items/3870813))
 
-I will try to provide help on the #lightbox-viewer channel when I can.
-
-[Join the Invitation Discord (https://discord.gg/58fWAUTYF8)](https://discord.gg/58fWAUTYF8).
-
-## Usage
+## How to use
 
 ### Testing materials with Lightbox Viewer
 

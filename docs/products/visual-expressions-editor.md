@@ -15,13 +15,10 @@ This does not require VRChat to run. It has been tested to work on Unity 2019, a
 
 ## Download
 
-The tool is free for download on GitHub.
+The tool is free for download.
 
-[https://github.com/hai-vr/blendshape-viewer](https://github.com/hai-vr/blendshape-viewer)
-
-It is also available on Booth.pm:
-
-[Visual Expressions Editor - hai-vr - BOOTH](https://hai-vr.booth.pm/items/3708550)
+- GitHub ([hai-vr/blendshape-viewer](https://github.com/hai-vr/blendshape-viewer))
+- Booth.pm ([Visual Expressions Editor - hai-vr - BOOTH](https://hai-vr.booth.pm/items/3708550))
 
 ## How to use
 
@@ -122,20 +119,6 @@ When a slider number is blue, this means the first and last keyframe of that ble
 - **“>” arrow**: Select the next keyframe of that blend shape.
 
 Remember that animations assets must be set to looping so that they will loop in the animator. The checkbox under the preview pane called “Is Looping Animation” changes that setting.
-
-## Having issues? Join my Discord Server
-
-I will try to provide help on the #main channel when I can.
-
-[Join the Invitation Discord Server!](https://discord.com/invite/58fWAUTYF8)
-
-## Check out my other tool “Animation Viewer”
-
-*[Animation Viewer](https://www.notion.so/Animation-Viewer-2a4bc319631c44d383174bd140722e38?pvs=21)* lets you preview animations in the Project view browser.
-
-It’s also free! [Animation Viewer](https://www.notion.so/Animation-Viewer-2a4bc319631c44d383174bd140722e38?pvs=21) 
-
-![Untitled](visual-expressions-editor-img/Untitled%204.png)
 
 ## Additional notes
 

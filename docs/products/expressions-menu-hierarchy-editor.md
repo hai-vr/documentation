@@ -1,3 +1,6 @@
+import qwusFjCQsC from './expressions-menu-hierarchy-editor-img/sx_2022-03-03_03-36-12_qwusFjCQsC.mp4'
+import JfpvN3yRTz from './expressions-menu-hierarchy-editor-img/sx_2022-03-03_01-37-29_JfpvN3yRTz.mp4'
+
 # Expressions Menu Hierarchy Editor
 
 *Expressions Menu Hierarchy Editor* lets you edit Avatars 3.0 menus as if they were objects in your scene hierarchy, making it easier to edit the menu by duplicating and moving items around.
@@ -14,13 +17,10 @@ Additional functionality includes automatically disabling items in the menu when
 
 ## Download
 
-The tool is free for download on GitHub.
+The tool is free for download.
 
-[https://github.com/hai-vr/av3-expressions-menu-hierarchy-editor](https://github.com/hai-vr/av3-expressions-menu-hierarchy-editor)
-
-It is also available on Booth:
-
-[](https://hai-vr.booth.pm/items/3696355)
+- GitHub ([hai-vr/av3-expressions-menu-hierarchy-editor](https://github.com/hai-vr/av3-expressions-menu-hierarchy-editor))
+- Booth.pm ([Expressions Menu Hierarchy Editor - hai-vr - BOOTH](https://hai-vr.booth.pm/items/3696355))
 
 ## How to set up
 
@@ -35,7 +35,9 @@ We will import your existing menu in order to create a new Expression Menu asset
 
 Your scene now contains the entire menu as a hierarchy of GameObjects!
 
-[sx_2022-03-03_03-36-12_qwusFjCQsC.mp4](expressions-menu-hierarchy-editor-img/sx_2022-03-03_03-36-12_qwusFjCQsC.mp4)
+<video controls width="816" autostart="false">
+    <source src={qwusFjCQsC}/>
+</video>
 
 ## Editing menus
 
@@ -65,7 +67,9 @@ Menus generated from other Editor Tools such as Radial Inventory System can be h
 
 The hierarchy children of this SubMenu will be ignored.
 
-[sx_2022-03-03_01-37-29_JfpvN3yRTz.mp4](expressions-menu-hierarchy-editor-img/sx_2022-03-03_01-37-29_JfpvN3yRTz.mp4)
+<video controls width="816" autostart="false">
+    <source src={JfpvN3yRTz}/>
+</video>
 
 ### Reusing a SubMenu multiple times / Circular references
 
@@ -126,9 +130,3 @@ Shaders can be used to modify the appearance of your icons. This can be used in 
 A few shader materials are provided in the Shaders/ folder. One of them draws a red line across the icon. Try playing with it!
 
 ![sx_2022-03-02_22-23-30_viM5vpgobm.gif](expressions-menu-hierarchy-editor-img/sx_2022-03-02_22-23-30_viM5vpgobm.gif)
-
-## Having issues? Join my Discord Server
-
-I will try to provide help on the #main channel when I can.
-
-[Join the Invitation Discord Server!](https://discord.com/invite/58fWAUTYF8)

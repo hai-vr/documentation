@@ -15,13 +15,10 @@ This does not require VRChat to run. It has been tested to work on Unity 2019, a
 
 ## Download
 
-The tool is free for download on GitHub (in the same repository as Blendshape Viewer).
+The tool is free for download.
 
-[https://github.com/hai-vr/blendshape-viewer](https://github.com/hai-vr/blendshape-viewer)
-
-It is also available on Booth.pm:
-
-[Animation Viewer - hai-vr - BOOTH](https://hai-vr.booth.pm/items/3625699)
+- GitHub ([https://github.com/hai-vr/blendshape-viewer](https://github.com/hai-vr/blendshape-viewer))
+- Booth.pm ([Animation Viewer - hai-vr - BOOTH](https://hai-vr.booth.pm/items/3625699))
 
 ## How to use
 
@@ -62,20 +59,6 @@ This option specifies on which bone to attach the camera. By default, it is focu
 - **Advanced/Base Pose**: Animator pose to use before the animation is applied.
 This lets you preview the avatar in a different pose than the bicycle pose (see Additional notes below).
 - **Advanced/Update On Activate**: When this is turned off, the thumbnails will not refresh when pressing Activate Viewer. This can let you toggle the thumbnail on and off and keep the same thumbnails after having moved the Scene view around.
-
-## Having issues? Join my Discord Server
-
-I will try to provide help on the #main channel when I can.
-
-[Join the Invitation Discord Server!](https://discord.com/invite/58fWAUTYF8)
-
-## Check out my other tool “Blendshape Viewer”
-
-*[Blendshape Viewer](https://www.notion.so/Blendshape-Viewer-d9e139664ff74677ad004b6f7cf9b1a7?pvs=21)* lets you visually browse blendshapes.
-
-It’s also free! [Blendshape Viewer](https://www.notion.so/Blendshape-Viewer-d9e139664ff74677ad004b6f7cf9b1a7?pvs=21) 
-
-![Untitled](animation-viewer-img/Untitled%205.png)
 
 ## Additional notes
 

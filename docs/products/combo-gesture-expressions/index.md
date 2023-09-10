@@ -10,11 +10,6 @@ This tool requires VRChat, and is incompatible with other apps and platforms.
 
 It is bundled with *Visual Expressions Editor*, an animation editor that lets you create face expressions with the help of previews.
 
-## [> Download latest version...](https://github.com/hai-vr/combo-gesture-expressions-av3/releases)
-
-- *([Download on github.com](https://github.com/hai-vr/combo-gesture-expressions-av3/releases))*
-- *([Download on booth.pm](https://hai-vr.booth.pm/items/2219616))*
-
 <video controls width="816" autostart="false">
     <source src="https://hai-vr.github.io/combo-gesture-expressions-av3/videos/cge2-rc-github.mp4" type="video/mp4" />
 </video>
@@ -28,6 +23,13 @@ With *ComboGestureExpressions*:
 - Eyes will no longer blink whenever the avatar has a face expression with eyes closed.
 - Puppets and blend trees are integrated into the tool.
 - Animations triggered by squeezing the controller trigger will look smooth to outside observers.
+
+## Download
+
+The tool is free for download.
+
+- GitHub ([hai-vr/combo-gesture-expressions-av3/releases](https://github.com/hai-vr/combo-gesture-expressions-av3/releases))
+- Booth.pm ([ComboGestureExpressions - hai-vr - BOOTH](https://hai-vr.booth.pm/items/2219616))
 
 [//]: # (- &#40;see [corrections]&#40;corrections.md&#41;&#41;.)
 

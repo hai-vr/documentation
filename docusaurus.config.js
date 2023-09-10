@@ -84,6 +84,12 @@ const config = {
             label: 'ResilienceVR',
           },
           {
+            type: 'docSidebar',
+            sidebarId: 'otherSidebar',
+            position: 'left',
+            label: 'Help & Discord',
+          },
+          {
             href: 'https://github.com/hai-vr/',
             label: 'GitHub',
             position: 'right',
@@ -103,6 +109,10 @@ const config = {
               {
                 label: 'ResilienceVR',
                 to: '/docs/resilience/intro',
+              },
+              {
+                label: 'Help & Discord',
+                to: '/docs/other/discord',
               },
             ],
           },
