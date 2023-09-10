@@ -84,7 +84,7 @@ const config = {
             label: 'ResilienceVR',
           },
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/hai-vr/',
             label: 'GitHub',
             position: 'right',
           },
