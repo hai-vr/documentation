@@ -14,12 +14,12 @@ const config = {
   url: 'https://hai-vr.github.io/',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: 'temp-test/',
+  baseUrl: 'documentation/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'hai-vr', // Usually your GitHub org/user name.
-  projectName: 'temp-test', // Usually your repo name.
+  projectName: 'documentation', // Usually your repo name.
   trailingSlash: false,
 
   onBrokenLinks: 'throw',

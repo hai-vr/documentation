@@ -30,7 +30,7 @@ If you use assembly definitions, change the assembly reference from `AnimatorAsC
 - If your project depends on VRChat, you will need to use extension methods.
     - Add `using AnimatorAsCode.V1.VRC;` in your class imports to use the VRChat extension methods.
         - The extension methods are contained within the class `AnimatorAsCode.V1.VRC.AacVRCExtensions`.
-    - Add `using AnimatorAsCode.V1.VRC;` in your class imports to use the extension methods.
+    - Add `using AnimatorAsCode.V1.VRCDestructiveWorkflow;` in your class imports to use the VRChat destructive workflow extension methods.
         - The extension methods are contained within the class `AnimatorAsCode.V1.VRCDestructiveWorkflow.AacVRCDestructiveWorkflowExtensions`
 - Change `TrackingElement` to `AacAv3.Av3TrackingElement`
 

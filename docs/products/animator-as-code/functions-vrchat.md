@@ -7,7 +7,10 @@ sidebar_position: 5
 These functions are specific to the VRChat Avatars SDK. For more functions, see [Destructive workflow](./functions-vrchat-destructive).
 
 :::caution
-To use these functions, use the extensions functions in `AacVRCExtensions`.
+To use these functions, use the extensions functions in `AacVRCExtensions`:
+
+- Add `using AnimatorAsCode.V1.VRC;` in your class imports.
+- If you use assembly definitions, add the `AnimatorAsCodeFramework.V1.VRC` assembly reference.
 :::
 
 ## Base (AacFlBase)
@@ -17,11 +20,12 @@ To use these functions, use the extensions functions in `AacVRCExtensions`.
 - `AacVrcAssetLibrary VrcAssets()` <br/>
   Return an AacVrcAssetLibrary, which lets you select various assets from VRChat.
 
+
 ## Avatars 3.0 (AacAv3)
 
 ### Parameters
 
-- `AacFlBoolParameter IsLocal` -> Bool <br/>
+- `AacFlBoolParameter IsLocal` <br/>
   Create a Bool parameter in the animator named IsLocal.
 
 - `AacFlEnumIntParameter<Av3Viseme> Viseme` <br/>
@@ -33,49 +37,49 @@ To use these functions, use the extensions functions in `AacVRCExtensions`.
 - `AacFlEnumIntParameter<Av3Gesture> GestureRight` <br/>
   Create an Int parameter in the animator named GestureRight.
 
-- `AacFlFloatParameter GestureLeftWeight` -> Float <br/>
+- `AacFlFloatParameter GestureLeftWeight` <br/>
   Create a Float parameter in the animator named GestureLeftWeight.
 
-- `AacFlFloatParameter GestureRightWeight` -> Float <br/>
+- `AacFlFloatParameter GestureRightWeight` <br/>
   Create a Float parameter in the animator named GestureRightWeight.
 
-- `AacFlFloatParameter AngularY` -> Float <br/>
+- `AacFlFloatParameter AngularY` <br/>
   Create a Float parameter in the animator named AngularY.
 
-- `AacFlFloatParameter VelocityX` -> Float <br/>
+- `AacFlFloatParameter VelocityX` <br/>
   Create a Float parameter in the animator named VelocityX.
 
-- `AacFlFloatParameter VelocityY` -> Float <br/>
+- `AacFlFloatParameter VelocityY` <br/>
   Create a Float parameter in the animator named VelocityY.
 
-- `AacFlFloatParameter VelocityZ` -> Float <br/>
+- `AacFlFloatParameter VelocityZ` <br/>
   Create a Float parameter in the animator named VelocityZ.
 
-- `AacFlFloatParameter Upright` -> Float <br/>
+- `AacFlFloatParameter Upright` <br/>
   Create a Float parameter in the animator named Upright.
 
-- `AacFlBoolParameter Grounded` -> Bool <br/>
+- `AacFlBoolParameter Grounded` <br/>
   Create a Bool parameter in the animator named Grounded.
 
-- `AacFlBoolParameter Seated` -> Bool <br/>
+- `AacFlBoolParameter Seated` <br/>
   Create a Bool parameter in the animator named Seated.
 
-- `AacFlBoolParameter AFK` -> Bool <br/>
+- `AacFlBoolParameter AFK` <br/>
   Create a Bool parameter in the animator named AFK.
 
-- `AacFlIntParameter TrackingType` -> Int <br/>
+- `AacFlIntParameter TrackingType` <br/>
   Create an Int parameter in the animator named TrackingType.
 
-- `AacFlIntParameter VRMode` -> Int <br/>
+- `AacFlIntParameter VRMode` <br/>
   Create an Int parameter in the animator named VRMode.
 
-- `AacFlBoolParameter MuteSelf` -> Bool <br/>
+- `AacFlBoolParameter MuteSelf` <br/>
   Create a Bool parameter in the animator named MuteSelf.
 
-- `AacFlBoolParameter InStation` -> Bool <br/>
+- `AacFlBoolParameter InStation` <br/>
   Create a Bool parameter in the animator named InStation.
 
-- `AacFlFloatParameter Voice` -> Float <br/>
+- `AacFlFloatParameter Voice` <br/>
   Create a Float parameter in the animator named Voice.
 
 
@@ -98,3 +102,74 @@ To use these functions, use the extensions functions in `AacVRCExtensions`.
 
 - `AnimationClip ProxyForGesture(AacAv3.Av3Gesture gesture, bool masculine)` <br/>
   Gesture proxy animation asset. There are two idle animations for the neutral hand, the bool selects one or the other.
+
+
+## State (AacFlState)
+
+### Driver state behaviour
+
+#### Local
+
+- `AacFlState DrivingLocally()` <br/>
+  Set the driver to be Local only. Create an Avatar Parameter Driver state behaviour if it does not exist.
+
+#### Set
+
+- `AacFlState Drives(AacFlIntParameter parameter, int value)` <br/>
+  Drive the Int parameter to value. Create an Avatar Parameter Driver state behaviour if it does not exist.
+
+- `AacFlState Drives(AacFlFloatParameter parameter, float value)` <br/>
+  Drive the Float parameter to value. Create an Avatar Parameter Driver state behaviour if it does not exist.
+
+- `AacFlState Drives(AacFlBoolParameter parameter, bool value)` <br/>
+  Drive the Bool parameter to value. Create an Avatar Parameter Driver state behaviour if it does not exist.
+
+- `AacFlState Drives(AacFlBoolParameterGroup parameters, bool value)` <br/>
+  Drive the Bool parameter to value. Create an Avatar Parameter Driver state behaviour if it does not exist.
+
+#### Add
+
+- `AacFlState DrivingIncreases(AacFlFloatParameter parameter, float additiveValue)` <br/>
+  Drive the Float parameter, incrementing it by `additiveValue`. Create an Avatar Parameter Driver state behaviour if it does not exist.
+
+- `AacFlState DrivingDecreases(AacFlFloatParameter parameter, float positiveValueToDecreaseBy)` <br/>
+  Drive the Float parameter, decreasing it by the amount of `positiveValueToDecreaseBy`. Create an Avatar Parameter Driver state behaviour if it does not exist.
+
+- `AacFlState DrivingIncreases(AacFlIntParameter parameter, int additiveValue)` <br/>
+  Drive the Int parameter, incrementing it by `additiveValue`. Create an Avatar Parameter Driver state behaviour if it does not exist.
+
+- `AacFlState DrivingDecreases(AacFlIntParameter parameter, int positiveValueToDecreaseBy)` <br/>
+  Drive the Int parameter, decreasing it by the amount of `positiveValueToDecreaseBy`. Create an Avatar Parameter Driver state behaviour if it does not exist.
+
+#### Random
+
+- `AacFlState DrivingRandomizesLocally(AacFlFloatParameter parameter, float min, float max)` <br/>
+  Drive the Float parameter value to be random between min and max. Set the driver to be Local only. Create an Avatar Parameter Driver state behaviour if it does not exist.
+
+- `AacFlState DrivingRandomizesLocally(AacFlIntParameter parameter, int min, int max)` <br/>
+  Drive the Int parameter value to be random between min and max. Set the driver to be Local only. Create an Avatar Parameter Driver state behaviour if it does not exist.
+
+- `AacFlState DrivingRandomizesLocally(AacFlBoolParameter parameter, float chance)` <br/>
+  Drive the Bool parameter value to be random with the specified chance of being true. Set the driver to be Local only. Create an Avatar Parameter Driver state behaviour if it does not exist.
+
+### Tracking state behaviours
+
+- `AacFlState PrintsToLogUsingTrackingBehaviour(string value)` <br/>
+  Use an Animator Tracking Control to print logs to the avatar wearer. Create an Animator Tracking Control state behaviour if it does not exist.
+
+- `AacFlState TrackingTracks(TrackingElement element)` <br/>
+  Use an Animator Tracking Control to set the element to be tracking. Create an Animator Tracking Control state behaviour if it does not exist.
+
+- `AacFlState TrackingAnimates(TrackingElement element)` <br/>
+  Use an Animator Tracking Control to set the element to be animating. Create an Animator Tracking Control state behaviour if it does not exist.
+
+- `AacFlState TrackingSets(TrackingElement element, VRC_AnimatorTrackingControl.TrackingType trackingType)` <br/>
+  Use an Animator Tracking Control to set the element to be the value of `trackingType`. Create an Animator Tracking Control state behaviour if it does not exist.
+ 
+### Locomotion state behaviour
+
+- `AacFlState LocomotionEnabled()` <br/>
+  Enable locomotion. Create an Animator Locomotion Control if it does not exist.
+
+- `AacFlState LocomotionDisabled()` <br/>
+  Disable locomotion. Create an Animator Locomotion Control if it does not exist.

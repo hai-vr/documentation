@@ -32,7 +32,7 @@ Create a new clip which animates a dummy transform for a specific duration speci
 #### Reference VRChat assets
 
 :::info
-See functions specific to [VRChat](./functions-vrchat).
+See functions specific to [VRChat](./functions-vrchat#base-aacflbase).
 :::
 
 #### Maintain assets
@@ -43,7 +43,7 @@ See functions specific to [VRChat](./functions-vrchat).
 #### Create layers (Destructive workflow)
 
 :::info
-For VRChat-specific functions, see [VRChat (Destructive workflow)](./functions-vrchat-destructive)
+For VRChat-specific functions, see [VRChat (Destructive workflow)](./functions-vrchat-destructive#extensions-for-base-aacflbase)
 :::
 
 - `AacFlLayer CreateMainArbitraryControllerLayer(AnimatorController controller)` <br/>
@@ -58,7 +58,7 @@ Clears the topmost layer of an arbitrary AnimatorController, and returns it.
 #### Remove layers (Destructive workflow)
 
 :::info
-See functions specific to [VRChat (Destructive workflow)](./functions-vrchat-destructive)
+See functions specific to [VRChat (Destructive workflow)](./functions-vrchat-destructive#extensions-for-base-aacflbase)
 :::
 
 
@@ -225,66 +225,11 @@ Create a transition with no exit time to the destination state, and does not ret
 Create a transition from this state to the exit.
 
 
-### Avatar Parameter Driver state behaviour
+### State behaviours
 
-
-- `AacFlState Drives(AacFlIntParameter parameter, int value)` <br/>
-Drive the Int parameter to value. Create an Avatar Parameter Driver state behaviour if it does not exist.
-
-- `AacFlState Drives(AacFlFloatParameter parameter, float value)` <br/>
-Drive the Float parameter to value. Create an Avatar Parameter Driver state behaviour if it does not exist.
-
-- `AacFlState DrivingIncreases(AacFlFloatParameter parameter, float additiveValue)` <br/>
-Drive the Float parameter, incrementing it by `additiveValue`. Create an Avatar Parameter Driver state behaviour if it does not exist.
-
-- `AacFlState DrivingDecreases(AacFlFloatParameter parameter, float positiveValueToDecreaseBy)` <br/>
-Drive the Float parameter, decreasing it by the amount of `positiveValueToDecreaseBy`. Create an Avatar Parameter Driver state behaviour if it does not exist.
-
-- `AacFlState DrivingIncreases(AacFlIntParameter parameter, int additiveValue)` <br/>
-Drive the Int parameter, incrementing it by `additiveValue`. Create an Avatar Parameter Driver state behaviour if it does not exist.
-
-- `AacFlState DrivingDecreases(AacFlIntParameter parameter, int positiveValueToDecreaseBy)` <br/>
-Drive the Int parameter, decreasing it by the amount of `positiveValueToDecreaseBy`. Create an Avatar Parameter Driver state behaviour if it does not exist.
-
-- `AacFlState DrivingRandomizesLocally(AacFlFloatParameter parameter, float min, float max)` <br/>
-Drive the Float parameter value to be random between min and max. Set the driver to be Local only. Create an Avatar Parameter Driver state behaviour if it does not exist.
-
-- `AacFlState DrivingRandomizesLocally(AacFlIntParameter parameter, int min, int max)` <br/>
-Drive the Int parameter value to be random between min and max. Set the driver to be Local only. Create an Avatar Parameter Driver state behaviour if it does not exist.
-
-- `AacFlState DrivingRandomizesLocally(AacFlBoolParameter parameter, float chance)` <br/>
-Drive the Bool parameter value to be random with the specified chance of being true. Set the driver to be Local only. Create an Avatar Parameter Driver state behaviour if it does not exist.
-
-- `AacFlState Drives(AacFlBoolParameter parameter, bool value)` <br/>
-Drive the Bool parameter to value. Create an Avatar Parameter Driver state behaviour if it does not exist.
-
-- `AacFlState Drives(AacFlBoolParameterGroup parameters, bool value)` <br/>
-Drive the Bool parameter to value. Create an Avatar Parameter Driver state behaviour if it does not exist.
-
-- `AacFlState DrivingLocally()` <br/>
-Set the driver to be Local only. Create an Avatar Parameter Driver state behaviour if it does not exist.
-
-
-### Other state behaviours
-
-
-- `AacFlState PrintsToLogUsingTrackingBehaviour(string value)` <br/>
-Use an Animator Tracking Control to print logs to the avatar wearer. Create an Animator Tracking Control state behaviour if it does not exist.
-
-- `AacFlState TrackingTracks(TrackingElement element)` <br/>
-Use an Animator Tracking Control to set the element to be tracking. Create an Animator Tracking Control state behaviour if it does not exist.
-
-- `AacFlState TrackingAnimates(TrackingElement element)` <br/>
-Use an Animator Tracking Control to set the element to be animating. Create an Animator Tracking Control state behaviour if it does not exist.
-
-- `AacFlState TrackingSets(TrackingElement element, VRC_AnimatorTrackingControl.TrackingType trackingType)` <br/>
-Use an Animator Tracking Control to set the element to be the value of `trackingType`. Create an Animator Tracking Control state behaviour if it does not exist.
-
-- `AacFlState LocomotionEnabled()` <br/>
-Enable locomotion. Create an Animator Locomotion Control if it does not exist.
-
-- `AacFlState LocomotionDisabled()` <br/>
-Disable locomotion. Create an Animator Locomotion Control if it does not exist.
+:::info
+See functions specific to [VRChat](./functions-vrchat#state-aacflstate).
+:::
 
 
 ## Clip (AacFlClip)
