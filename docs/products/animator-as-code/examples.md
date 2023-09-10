@@ -4,6 +4,10 @@ sidebar_position: 2
 
 # Examples
 
+:::danger
+This is the work-in-progress documentation for Animator As Code **V1**, which has not yet been released. The last public version of Animator As Code is V0.
+:::
+
 :::tip
 These examples below are using a **destructive workflow**.
 

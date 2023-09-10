@@ -4,7 +4,11 @@ sidebar_position: 4
 
 # Functions
 
-## Animator As Code (AacV0)
+:::danger
+This is the work-in-progress documentation for Animator As Code **V1**, which has not yet been released. The last public version of Animator As Code is V0.
+:::
+
+## Animator As Code (AacV1)
 
 - `static AacFlBase Create(AacConfiguration configuration)` <br/>
 Create an Animator As Code (AAC) base.

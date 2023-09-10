@@ -1,5 +1,9 @@
 ﻿# Animator As Code V1
 
+:::danger
+This is the work-in-progress documentation for Animator As Code **V1**, which has not yet been released. The last public version of Animator As Code is V0.
+:::
+
 **Animator As Code** is a small Unity Editor facility to generate Avatars 3.0 Animator layers and animations from a [fluent builder](https://en.wikipedia.org/wiki/Fluent_interface) syntax written in C#.
 
 :::tip

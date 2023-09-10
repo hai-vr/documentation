@@ -4,6 +4,10 @@ sidebar_position: 5
 
 # Functions: VRChat
 
+:::danger
+This is the work-in-progress documentation for Animator As Code **V1**, which has not yet been released. The last public version of Animator As Code is V0.
+:::
+
 These functions are specific to the VRChat Avatars SDK. For more functions, see [Destructive workflow](./functions-vrchat-destructive).
 
 :::caution

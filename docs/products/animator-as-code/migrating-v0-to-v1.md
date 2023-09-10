@@ -1,8 +1,12 @@
 ﻿---
-sidebar_position: 8
+sidebar_position: 9
 ---
 
 # Migrating from V0 to V1
+
+:::danger
+This is the work-in-progress documentation for Animator As Code **V1**, which has not yet been released. The last public version of Animator As Code is V0.
+:::
 
 TODO: Fix mixed Linear/Easing curve generator???
 TODO: Fix undo slow operations (ask bd?)

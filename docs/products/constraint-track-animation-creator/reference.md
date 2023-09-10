@@ -527,10 +527,4 @@ TODO:
 
 ## Other pages
 
-[Constraint Track Animation Creator](https://www.notion.so/Constraint-Track-Animation-Creator-b8e60b42401140e28b2ba05ff21b71bd?pvs=21)
-
-[Work in progress](https://www.notion.so/Work-in-progress-e847185f167b427d8533d7109ed5fd21?pvs=21)
-
-[Reference manual](https://www.notion.so/Reference-manual-63e4ce5bddfb40c5849c2702aa9f1fea?pvs=21)
-
 [Work in progress](https://www.notion.so/Work-in-progress-e847185f167b427d8533d7109ed5fd21?pvs=21)

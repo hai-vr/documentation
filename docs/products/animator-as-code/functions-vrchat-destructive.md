@@ -4,6 +4,10 @@ sidebar_position: 6
 
 # Functions: VRChat (Destructive workflow)
 
+:::danger
+This is the work-in-progress documentation for Animator As Code **V1**, which has not yet been released. The last public version of Animator As Code is V0.
+:::
+
 These functions will create and delete layers within the animator controllers inside the VRCAvatarDescriptor, hence destructive workflow.
 
 As times are changing, it is recommended that you switch to a non-destructive workflow using tools such as *Modular Avatar* or *VRCFury*, by creating an animator controller using `AacFlBase.NewAnimatorController()`. Alternatively, you can use functions contained in `AacFlBase` to destructively edit an arbitrary animator controller asset.
