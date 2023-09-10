@@ -1,6 +1,10 @@
-﻿# Animator As Code
+﻿# Animator As Code V1
 
 **Animator As Code** is a small Unity Editor facility to generate Avatars 3.0 Animator layers and animations from a [fluent builder](https://en.wikipedia.org/wiki/Fluent_interface) syntax written in C#.
+
+:::tip
+AnimatorAsCode V1 does not require VRChat unless you use VRChat-specific functions.
+:::
 
 Describing your animators as code provides the following advantages:
 
@@ -12,10 +16,6 @@ It is written with VRChat Avatars 3.0 use cases in mind; the API is opinionated 
 <video controls width="816" autostart="false">
     <source src="https://user-images.githubusercontent.com/60819407/157751278-475538c7-3310-4fa5-9a87-3651c85eaa1c.mp4" />
 </video>
-
-:::tip
-AnimatorAsCode does not require VRChat unless you use VRChat-specific functions.
-:::
 
 # Interested? Join my Discord Server
 

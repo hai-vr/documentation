@@ -2,6 +2,10 @@
 
 *Expressions Menu Hierarchy Editor* lets you edit Avatars 3.0 menus as if they were objects in your scene hierarchy, making it easier to edit the menu by duplicating and moving items around.
 
+:::caution
+This tool requires VRChat, and is incompatible with other apps and platforms.
+:::
+
 ![EmhCard.png](expressions-menu-hierarchy-editor-img/EmhCard.png)
 
 Additional functionality includes automatically disabling items in the menu when your Expression Parameters does not support it, and generating icons.

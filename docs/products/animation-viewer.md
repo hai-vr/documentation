@@ -1,8 +1,17 @@
+import uYmmptha2T from './animation-viewer-img/sx_2022-02-02_03-27-39_uYmmptha2T.mp4';
+import QdOYmOWyly from './animation-viewer-img/sx_2022-02-02_03-05-20_QdOYmOWyly.mp4';
+
 # Animation Viewer
 
 *Animation Viewer* lets you preview animations in the Project view browser.
 
-[sx_2022-02-02_03-27-39_uYmmptha2T.mp4](animation-viewer-img/sx_2022-02-02_03-27-39_uYmmptha2T.mp4)
+:::tip
+This does not require VRChat to run. It has been tested to work on Unity 2019, and should work on newer versions.
+:::
+
+<video controls width="816" autostart="false">
+    <source src={uYmmptha2T}/>
+</video>
 
 ## Download
 
@@ -78,4 +87,6 @@ It’s also free! [Blendshape Viewer](https://www.notion.so/Blendshape-Viewer-d9
 This can be used to choose a pose to preview clothing toggle animations.
 This can also be used to hide hats and other objects, letting you generate more relevant previews.
     
-    [sx_2022-02-02_03-05-20_QdOYmOWyly.mp4](animation-viewer-img/sx_2022-02-02_03-05-20_QdOYmOWyly.mp4)
+<video controls width="816" autostart="false">
+    <source src={QdOYmOWyly}/>
+</video>

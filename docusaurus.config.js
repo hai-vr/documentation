@@ -6,8 +6,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
+  title: 'Haï~',
+  tagline: 'Virtual reality tools and apps',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -68,7 +68,7 @@ const config = {
         title: 'Haï~',
         logo: {
           alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          src: 'img/hai-misty.png',
         },
         items: [
           {
@@ -76,6 +76,12 @@ const config = {
             sidebarId: 'tutorialSidebar',
             position: 'left',
             label: 'Products',
+          },
+          {
+            type: 'docSidebar',
+            sidebarId: 'resilienceSidebar',
+            position: 'left',
+            label: 'ResilienceVR',
           },
           {
             href: 'https://github.com/facebook/docusaurus',
@@ -91,8 +97,12 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'Tutorial',
-                to: '/docs/intro',
+                label: 'Products',
+                to: '/docs/products/intro',
+              },
+              {
+                label: 'ResilienceVR',
+                to: '/docs/resilience/intro',
               },
             ],
           },
@@ -100,16 +110,16 @@ const config = {
             title: 'Community',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
+                label: 'Patreon',
+                href: 'https://www.patreon.com/vr_hai',
               },
               {
                 label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
+                href: 'https://twitter.com/vr_hai',
+              },
+              {
+                label: 'Discord',
+                href: 'https://discordapp.com/invite/???',
               },
             ],
           },
@@ -122,12 +132,16 @@ const config = {
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/hai-vr/',
+              },
+              {
+                label: 'hai-vr.dev',
+                href: 'https://hai-vr.dev/',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Invitational Software. Built with Docusaurus.`,
       },
       prism: {
         additionalLanguages: ['csharp'],
