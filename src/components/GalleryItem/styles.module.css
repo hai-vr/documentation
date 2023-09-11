@@ -1,0 +1,11 @@
+.gallery_card_image img {
+  height: 200px;
+  width: 100%;
+  overflow: hidden;
+}
+.gallery_card_image img {
+  object-fit: cover;
+}
+.gallery_card_overall {
+  height: 400px;
+}
