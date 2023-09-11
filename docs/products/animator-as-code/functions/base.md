@@ -13,6 +13,65 @@ This is the work-in-progress documentation for Animator As Code **V1**, which ha
 New additions in V1 are indicated with a light bulb 💡 icon.
 :::
 
+#### Animator creation overview
+
+```mermaid
+graph TD;
+    AacV1[static AacV1]:::roots-->|Create|Base:::roots;
+    Base-->|CreateMainArbitraryControllerLayer<br>/CreateSupportingArbitraryControllerLayer<br>/CreateFirstArbitraryControllerLayer|Layer;
+
+    Base-->|NewAnimatorController|Controller:::focus;
+    Controller-->|NewLayer|Layer;
+    Layer-->|NewState|State;
+    Layer-->|NewSubStateMachine|StateMachine;
+    StateMachine-->|NewSubStateMachine|StateMachine;
+    StateMachine-->|NewState|State;
+    StateMachine-->|TransitionsTo<br>/TransitionsFromAny<br>/Restarts<br>/Exits|Transition;
+    StateMachine-->|TransitionsFromEntry|EntryTransition;
+    State-->|TransitionsTo<br>/TransitionsFromAny|Transition;
+    State-->|TransitionsFromEntry|EntryTransition;
+    Transition-->|When|TransitionContinuation;
+    EntryTransition-->|When|TransitionContinuation;
+    TransitionContinuation-->|And|TransitionContinuation;
+    TransitionContinuation-->|Or|NewTransitionContinuation;
+    NewTransitionContinuation-->|When|TransitionContinuation;
+    
+    Layer-->|IntParameter<br>/FloatParameter<br>/BoolParameter|Parameter;
+    Parameter-->|IsGreaterThan<br>/IsLessThan<br>/IsEqualTo<br>/IsNotEqualTo<br>/IsTrue<br>/IsFalse|Condition;
+    Layer-->|IntParameters<br>/FloatParameters<br>/BoolParameters|ParameterGroup;
+    ParameterGroup-->|AreGreaterThan<br>/AreLessThan<br>/AreEqualTo<br>/AreNotEqualTo<br>/AreTrue<br>/AreFalse<br>/AreTrueExcept<br>/AreFalseExcept|Condition;
+    ParameterGroup-->|IsAnyTrue<br>/IsAnyFalse<br>|OrCondition;
+    
+    Base-->|NewClip|Clip:::disabled;
+    Base-->|NewBlendTree|BlendTree:::disabled;
+    
+    classDef disabled fill:#CCC
+    classDef roots fill:#FCC
+    classDef focus fill:#CFF
+```
+
+#### Asset creation overview
+
+```mermaid
+graph TD;
+    AacV1[static AacV1]:::roots-->|Create|Base:::roots;
+    Base-->|NewAnimatorController|Controller:::disabled;
+    
+    Base-->|NewClip|Clip:::focus;
+    Base-->|NewBlendTree|BlendTree:::focus;
+    Clip-->|Animating λ|EditClip;
+    EditClip-->|Animates|SettingCurve;
+    SettingCurve-->|WithSecondsUnit λ<br>/WithFrameCountUnit λ<br>/WithUnit λ|SettingKeyframes;
+    
+    BlendTree-->|FreeformCartesian2D<br>/FreeformDirectional2D<br>/SimpleDirectional2D|BlendTree2D;
+    BlendTree-->|Simple1D|BlendTree1D;
+    BlendTree-->|Direct|BlendTreeDirect;
+    
+    classDef disabled fill:#CCC
+    classDef roots fill:#FCC
+    classDef focus fill:#CFF
+```
+
 ## Animator As Code (AacV1)
 
 - `static AacFlBase Create(AacConfiguration configuration)` <br/>
@@ -87,6 +146,9 @@ Create a new state, initially positioned below the last generated state of this 
 - `AacFlState NewState(string name, int x, int y)` <br/>
 Create a new state at a specific position `x` and `y`, in grid units. The grid size is defined in the DefaultsProvider of the AacConfiguration of AAC. `x` positive goes right, `y` positive goes down.
 
+- `AacFlStateMachine NewSubStateMachine(string name)` 💡<br/>
+  Create a new state machine, initially positioned below the last generated state of this layer.
+
 #### Create layer transitions
 
 - `AacFlTransition AnyTransitionsTo(AacFlState destination)` <br/>
@@ -158,8 +220,19 @@ Set the Avatar Mask of the layer to be an Avatar Mask which denies all transform
 Set the Avatar Mask of the layer to be an Avatar Mask that allows the specified transforms. If `paths` is an empty array, all transforms are denied, which is effectively the same as calling `.WithAvatarMaskNoTransforms()`. The asset is generated into the container.
 
 
-## State (AacFlState)
+## Sub State Machine (AacFlStateMachine 💡)
 
+- `AacFlStateMachine NewSubStateMachine(string name)` 💡<br/>
+Create a new state machine, initially positioned below the last generated state of this layer.
+
+- `AacFlStateMachine Restarts()` 💡<br/>
+Creates a new transition of the entire state machine node to itself, which is evaluated after the state machine commits to an exit transitions.
+
+- `AacFlStateMachine Exits()` 💡<br/>
+Create a transition from this state machine node to the exit.
+
+
+## State (AacFlState)
 
 - `AnimatorState State;` <br/>
 Expose the underlying State object.

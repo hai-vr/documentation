@@ -18,6 +18,23 @@ To use these functions, use the extensions functions in `AacVRCDestructiveWorkfl
 - Add `using AnimatorAsCode.V1.VRCDestructiveWorkflow;` in your class imports.
 - If you use assembly definitions, add the `AnimatorAsCodeFramework.V1.VRCDestructiveWorkflow` assembly reference.
 
+#### Animator creation overview
+
+```mermaid
+graph TD;
+    AacV1[static AacV1]:::roots-->|Create|Base:::roots;
+    Base-->|CreateMainArbitraryControllerLayer<br>/CreateSupportingArbitraryControllerLayer<br>/CreateFirstArbitraryControllerLayer|Layer;
+    Base-->|CreateMainFxLayer<br>/CreateMainGestureLayer<br>/CreateMainActionLayer<br>/CreateMainIdleLayer<br>/CreateMainLocomotionLayer<br>/CreateMainAv3Layer<br>/CreateSupportingFxLayer<br>/CreateSupportingGestureLayer<br>/CreateSupportingActionLayer<br>/CreateSupportingIdleLayer<br>/CreateSupportingLocomotionLayer<br>/CreateSupportingAv3Layer|Layer;
+    Base-->|RemoveAllMainLayers<br>/RemoveAllSupportingLayers|Base;
+    
+    Base-->|NewAnimatorController|Controller;
+    Controller-->|NewLayer|Layer;
+    
+    classDef disabled fill:#CCC
+    classDef roots fill:#FCC
+    classDef focus fill:#CFF
+```
+
 ## Extensions for Base (AacFlBase)
 
 #### Destructive workflow: Create layers (AacVRCDestructiveWorkflowExtensions)

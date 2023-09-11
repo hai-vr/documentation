@@ -16,6 +16,31 @@ To use these functions, use the extensions functions in `AacVRCExtensions`:
 - Add `using AnimatorAsCode.V1.VRC;` in your class imports.
 - If you use assembly definitions, add the `AnimatorAsCodeFramework.V1.VRC` assembly reference.
 
+#### Animator creation overview
+
+```mermaid
+graph TD;
+    AacV1[static AacV1]:::roots-->|Create|Base:::roots;
+    Base-->|VrcAssets|VrcAssetLibrary
+    
+    Base-->|NewAnimatorController|Controller:::focus;
+    Controller-->|NewLayer|Layer:::focus;
+    Layer-->|Av3|Av3;
+    Av3-->|*|Parameter;
+    Av3-->|ItIsRemote<br>/ItIsLocal|Condition;
+    
+    Layer-->|NewState|State:::focus;
+    Layer-->|NewSubStateMachine|StateMachine:::focus;
+    StateMachine-->|NewSubStateMachine|StateMachine;
+    StateMachine-->|NewState|State;
+    
+    State-->|Drives<br>/Driving*<br>/Tracking*<br>/Locomotion<br>/PrintsToLogUsingTrackingBehaviour|State;
+    
+    classDef disabled fill:#CCC
+    classDef roots fill:#FCC
+    classDef focus fill:#CFF
+```
+
 ## Base (AacFlBase)
 
 #### Reference VRChat assets (AacVRCExtensions)
