@@ -10,7 +10,7 @@ title: "Modular Avatar"
 The functionality of this library is strictly limited to the handling of animators and parameters, therefore only the following components are covered:
 
 - [MA Merge Animator](https://modular-avatar.nadena.dev/docs/reference/merge-animator)
-- [MA Parameters](https://modular-avatar.nadena.dev/docs/reference/parameters
+- [MA Parameters](https://modular-avatar.nadena.dev/docs/reference/parameters)
 - [MA Menu Item](https://modular-avatar.nadena.dev/docs/reference/menu-item)
 
 For other components, you need to create them by hand.

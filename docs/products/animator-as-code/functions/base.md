@@ -19,14 +19,21 @@ Create an Animator As Code (AAC) base.
 
 #### Create assets
 
+:::info
+New additions in V1 are indicated with a light bulb 💡 icon.
+:::
+
 - `AacFlClip NewClip()` <br/>
 Create a new clip. The asset is generated into the container.
 
 - `AacFlClip CopyClip(AnimationClip originalClip)` <br/>
 Create a new clip that is a copy of `originalClip`. The asset is generated into the container.
 
+- `AacFlNonInitializedBlendTree NewBlendTree()` 💡<br/>
+  Create a new BlendTree asset. The asset is generated into the container.
+
 - `BlendTree NewBlendTreeAsRaw()` <br/>
-Create a new BlendTree asset. The asset is generated into the container.
+  Create a new BlendTree asset and returns a native BlendTree object. The asset is generated into the container. 💡 You may use NewBlendTree() instead to obtain a fluent interface.
 
 - `AacFlClip NewClip(string name)` <br/>
 Create a new clip with a name. However, the name is only used as a suffix for the asset. The asset is generated into the container. FIXME: This is quite pointless because the name is mangled anyways.
@@ -65,6 +72,11 @@ Clears the topmost layer of an arbitrary AnimatorController, and returns it.
 :::info
 See functions specific to [VRChat (Destructive workflow)](./vrchat-destructive#extensions-for-base-aacflbase)
 :::
+
+#### Create parameters without an animator 💡
+
+- `AacFlNoAnimator NoAnimator()` 💡<br/>
+If you are not creating an animator, this returns an object from which you can obtain animator parameter objects. You should use this class if you are creating BlendTree assets without any animator controllers to back it. Otherwise, it is strongly recommended to obtain animator parameter objects directly from the layer objects instead of using NoAnimator(), as the use of NoAnimator() will not result in the registration of any parameters inside the animator controller.
 
 
 ## Layer (AacFlLayer)
@@ -200,6 +212,9 @@ Set a specific raw Motion for the state. This could be a blend tree.
 
 - `AacFlState WithAnimation(AacFlClip clip)` <br/>
 Set a specific clip for the state. See `(AacFlBase).NewClip()` and similar.
+
+- `AacFlState WithAnimation(AacFlBlendTree clip)` <br/>
+Set a specific blend tree for the state. See `(AacFlBase).NewBlendTree()` and similar.
 
 - `AacFlState MotionTime(AacFlFloatParameter floatParam)` <br/>
 Set the Motion Time, formerly known as Normalized Time.
@@ -379,15 +394,88 @@ Create a linear keyframe. The unit is defined by the function that invokes this 
 Create a constant keyframe. The unit is defined by the function that invokes this lambda expression.
 
 
+## Blend Trees (AacFlBlendTree) 💡
+
+- `BlendTree BlendTree;` 💡<br/>
+Expose the underlying BlendTree object.
+
+### Initialization (AacFlNonInitializedBlendTree : AacFlBlendTree) 💡
+
+- `AacFlBlendTree2D FreeformCartesian2D(AacFlFloatParameter parameterX, AacFlFloatParameter parameterY)` 💡<br/>
+Define this BlendTree as being FreeformCartesian2D.
+
+- `AacFlBlendTree2D FreeformDirectional2D(AacFlFloatParameter parameterX, AacFlFloatParameter parameterY)` 💡<br/>
+Define this BlendTree as being FreeformDirectional2D.
+
+- `AacFlBlendTree2D SimpleDirectional2D(AacFlFloatParameter parameterX, AacFlFloatParameter parameterY)` 💡<br/>
+Define this BlendTree as being SimpleDirectional2D.
+
+- `AacFlBlendTree1D Simple1D(AacFlFloatParameter parameter)` 💡<br/>
+Define this BlendTree as being Simple1D.
+
+- `AacFlBlendTreeDirect Direct()` 💡<br/>
+Define this BlendTree as being Direct.
+
+### 2D Blend Trees (AacFlBlendTree2D : AacFlBlendTree) 💡
+
+- `AacFlBlendTree2D WithAnimation(AacFlBlendTree blendTree, Vector2 pos, Action<AacFlBlendTreeChildMotion> furtherDefiningChild = null)` 💡<br/>
+Add a BlendTree in the specified coordinates. The last parameter overload is optional: by default, the timeScale is 1, cycle offset is 0, mirror is false.
+
+- `AacFlBlendTree2D WithAnimation(AacFlBlendTree blendTree, float x, float y, Action<AacFlBlendTreeChildMotion> furtherDefiningChild = null)` 💡<br/>
+Add a BlendTree in the specified `x` and `y` coordinates. The last parameter overload is optional: by default, the timeScale is 1, cycle offset is 0, mirror is false.
+
+- `AacFlBlendTree2D WithAnimation(AacFlClip clip, Vector2 pos, Action<AacFlBlendTreeChildMotion> furtherDefiningChild = null)` 💡<br/>
+Add a Clip in the specified coordinates. The last parameter overload is optional: by default, the timeScale is 1, cycle offset is 0, mirror is false.
+
+- `AacFlBlendTree2D WithAnimation(AacFlClip clip, float x, float y, Action<AacFlBlendTreeChildMotion> furtherDefiningChild = null)` 💡<br/>
+Add a Clip in the specified `x` and `y` coordinates. The last parameter overload is optional: by default, the timeScale is 1, cycle offset is 0, mirror is false.
+
+- `AacFlBlendTree2D WithAnimation(Motion motion, Vector2 pos, Action<AacFlBlendTreeChildMotion> furtherDefiningChild = null)` 💡<br/>
+Add a raw motion in the specified coordinates. The last parameter overload is optional: by default, the timeScale is 1, cycle offset is 0, mirror is false.
+
+- `AacFlBlendTree2D WithAnimation(Motion motion, float x, float y, Action<AacFlBlendTreeChildMotion> furtherDefiningChild = null)` 💡<br/>
+Add a raw motion in the specified `x` and `y` coordinates. The last parameter overload is optional: by default, the timeScale is 1, cycle offset is 0, mirror is false.
+
+### 1D Blend Trees (AacFlBlendTree1D : AacFlBlendTree) 💡
+
+- `AacFlBlendTree1D WithAnimation(AacFlBlendTree blendTree, float threshold, Action<AacFlBlendTreeChildMotion> furtherDefiningChild = null)` 💡<br/>
+Add a BlendTree in the specified threshold. The last parameter overload is optional: by default, the timeScale is 1, cycle offset is 0, mirror is false.
+
+- `AacFlBlendTree1D WithAnimation(AacFlClip clip, float threshold, Action<AacFlBlendTreeChildMotion> furtherDefiningChild = null)` 💡<br/>
+Add a Clip in the specified threshold. The last parameter overload is optional: by default, the timeScale is 1, cycle offset is 0, mirror is false.
+
+- `AacFlBlendTree1D WithAnimation(Motion motion, float threshold, Action<AacFlBlendTreeChildMotion> furtherDefiningChild = null)` 💡<br/>
+Add a raw motion in the specified threshold. The last parameter overload is optional: by default, the timeScale is 1, cycle offset is 0, mirror is false.
+
+### 1D Blend Trees (AacFlBlendTreeDirect : AacFlBlendTree) 💡
+
+- `AacFlBlendTreeDirect WithAnimation(AacFlBlendTree blendTree, AacFlFloatParameter parameter, Action<AacFlBlendTreeChildMotion> furtherDefiningChild = null)` 💡<br/>
+Add a BlendTree driven by the specified parameter. The last parameter overload is optional: by default, the timeScale is 1, cycle offset is 0, mirror is false.
+
+- `AacFlBlendTreeDirect WithAnimation(AacFlClip clip, AacFlFloatParameter parameter, Action<AacFlBlendTreeChildMotion> furtherDefiningChild = null)` 💡<br/>
+Add a Clip driven by the specified parameter. The last parameter overload is optional: by default, the timeScale is 1, cycle offset is 0, mirror is false.
+
+- `AacFlBlendTreeDirect WithAnimation(Motion motion, AacFlFloatParameter parameter, Action<AacFlBlendTreeChildMotion> furtherDefiningChild = null)` 💡<br/>
+Add a raw motion driven by the specified parameter. The last parameter overload is optional: by default, the timeScale is 1, cycle offset is 0, mirror is false.
+
+### Further define a blend tree child (AacFlBlendTreeChildMotion) 💡
+
+- `AacFlBlendTreeChildMotion WithTimeScaleSetTo(float timeScale)` 💡<br/>
+Set the time scale. The time scale value is 1 by default.
+
+- `AacFlBlendTreeChildMotion WithMirrorSetTo(bool mirror)` 💡<br/>
+Set the mirror option. The mirror option value is false by default.
+
+- `AacFlBlendTreeChildMotion WithCycleOffsetSetTo(float cycleOffset)` 💡<br/>
+Set the cycle offset. The cycle offset value is 0 by default.
+
 
 ## Transitions
-
 
 `AnimatorTransitionBase Transition;`  <br/>
 Expose the underlying Transition object (from AacFlNewTransitionContinuation)
 
 ### Attributes (AacFlTransition : AacFlNewTransitionContinuation)
-
 
 - `AacFlTransition WithSourceInterruption()` <br/>
 Set interruption source to be Source. // FIXME: Clunky interface.
