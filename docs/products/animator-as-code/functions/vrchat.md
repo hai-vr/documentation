@@ -1,5 +1,6 @@
 ﻿---
 sidebar_position: 5
+title: "VRChat"
 ---
 
 # Functions: VRChat

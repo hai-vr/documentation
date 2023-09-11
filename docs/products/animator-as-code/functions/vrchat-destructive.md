@@ -1,5 +1,6 @@
 ﻿---
 sidebar_position: 6
+title: "VRChat (Destructive workflow)"
 ---
 
 # Functions: VRChat (Destructive workflow)

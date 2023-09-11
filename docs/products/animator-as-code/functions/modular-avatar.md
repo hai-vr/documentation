@@ -1,16 +1,17 @@
 ﻿---
 sidebar_position: 7
+title: "Modular Avatar"
 ---
 
 # Functions: Modular Avatar
 
 *Modular Avatar As Code* contains facilities to automate the creation of [Modular Avatar](https://modular-avatar.nadena.dev/) components.
 
-The functionality of this library is strictly limited to the handling of animator and parameters, therefore only the following components are covered:
+The functionality of this library is strictly limited to the handling of animators and parameters, therefore only the following components are covered:
 
-- ModularAvatarMergeAnimator
-- ModularAvatarParameters
-- ModularAvatarMenuItem
+- [MA Merge Animator](https://modular-avatar.nadena.dev/docs/reference/merge-animator)
+- [MA Parameters](https://modular-avatar.nadena.dev/docs/reference/parameters
+- [MA Menu Item](https://modular-avatar.nadena.dev/docs/reference/menu-item)
 
 For other components, you need to create them by hand.
 

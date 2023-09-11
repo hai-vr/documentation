@@ -9,3 +9,16 @@ title: ⭐ IconGen
 :::tip
 This does not require VRChat to run. It has been tested to work on Unity 2019, and should work on newer versions.
 :::
+
+## Download
+
+TODO
+
+## How to use
+
+### Capture new icons from the scene
+
+To capture new icons from the scene, open *Window > Hai > IconCap*.
+
+### Layering icons
+
