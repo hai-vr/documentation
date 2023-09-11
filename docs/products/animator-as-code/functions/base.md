@@ -484,7 +484,7 @@ Define this BlendTree as being Simple1D.
 - `AacFlBlendTreeDirect Direct()` 💡<br/>
 Define this BlendTree as being Direct.
 
-### 2D Blend Trees (AacFlBlendTree2D : AacFlBlendTree) 💡
+### 2D Blend Tree (AacFlBlendTree2D : AacFlBlendTree) 💡
 
 - `AacFlBlendTree2D WithAnimation(AacFlBlendTree blendTree, Vector2 pos, Action<AacFlBlendTreeChildMotion> furtherDefiningChild = null)` 💡<br/>
 Add a BlendTree in the specified coordinates. The last parameter overload is optional: by default, the timeScale is 1, cycle offset is 0, mirror is false.
@@ -504,7 +504,7 @@ Add a raw motion in the specified coordinates. The last parameter overload is op
 - `AacFlBlendTree2D WithAnimation(Motion motion, float x, float y, Action<AacFlBlendTreeChildMotion> furtherDefiningChild = null)` 💡<br/>
 Add a raw motion in the specified `x` and `y` coordinates. The last parameter overload is optional: by default, the timeScale is 1, cycle offset is 0, mirror is false.
 
-### 1D Blend Trees (AacFlBlendTree1D : AacFlBlendTree) 💡
+### 1D Blend Tree (AacFlBlendTree1D : AacFlBlendTree) 💡
 
 - `AacFlBlendTree1D WithAnimation(AacFlBlendTree blendTree, float threshold, Action<AacFlBlendTreeChildMotion> furtherDefiningChild = null)` 💡<br/>
 Add a BlendTree in the specified threshold. The last parameter overload is optional: by default, the timeScale is 1, cycle offset is 0, mirror is false.
@@ -515,7 +515,7 @@ Add a Clip in the specified threshold. The last parameter overload is optional: 
 - `AacFlBlendTree1D WithAnimation(Motion motion, float threshold, Action<AacFlBlendTreeChildMotion> furtherDefiningChild = null)` 💡<br/>
 Add a raw motion in the specified threshold. The last parameter overload is optional: by default, the timeScale is 1, cycle offset is 0, mirror is false.
 
-### 1D Blend Trees (AacFlBlendTreeDirect : AacFlBlendTree) 💡
+### Direct Blend Tree (AacFlBlendTreeDirect : AacFlBlendTree) 💡
 
 - `AacFlBlendTreeDirect WithAnimation(AacFlBlendTree blendTree, AacFlFloatParameter parameter, Action<AacFlBlendTreeChildMotion> furtherDefiningChild = null)` 💡<br/>
 Add a BlendTree driven by the specified parameter. The last parameter overload is optional: by default, the timeScale is 1, cycle offset is 0, mirror is false.
