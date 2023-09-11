@@ -31,9 +31,6 @@ The tool is free for download.
 - GitHub ([hai-vr/combo-gesture-expressions-av3/releases](https://github.com/hai-vr/combo-gesture-expressions-av3/releases))
 - Booth.pm ([ComboGestureExpressions - hai-vr - BOOTH](https://hai-vr.booth.pm/items/2219616))
 
-[//]: # (- &#40;see [corrections]&#40;corrections.md&#41;&#41;.)
-
 *(Most illustrations in this documentation use [Saneko avatar (さねこ) by ひゅうがなつ](https://booth.pm/en/items/2322146))*
 
-[//]: # (<img src="EeCgeLogo3.png" style="width: 200px; height: 200px" />)
-<img src="EeCgeLogo3.png"/>
+![EeCgeLogo3.png](EeCgeLogo3.png)
