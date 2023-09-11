@@ -9,6 +9,10 @@ title: "Base functions"
 This is the work-in-progress documentation for Animator As Code **V1**, which has not yet been released. The last public version of Animator As Code is V0.
 :::
 
+:::info
+New additions in V1 are indicated with a light bulb 💡 icon.
+:::
+
 ## Animator As Code (AacV1)
 
 - `static AacFlBase Create(AacConfiguration configuration)` <br/>
@@ -18,10 +22,6 @@ Create an Animator As Code (AAC) base.
 ## Base (AacFlBase)
 
 #### Create assets
-
-:::info
-New additions in V1 are indicated with a light bulb 💡 icon.
-:::
 
 - `AacFlClip NewClip()` <br/>
 Create a new clip. The asset is generated into the container.
@@ -134,11 +134,6 @@ Combine multiple Int parameters into a group.
 
 - `AacFlIntParameterGroup IntParameters(params AacFlIntParameter[] parameters)` <br/>
 Combine multiple Int parameters into a group.
-
-#### Create VRChat parameters
-
-- `AacAv3 Av3()` <br/>
-Return an AacAv3 object, letting you select various standard Avatars 3.0 Animator Parameters. Subsequently invoking its functions will create invoked parameters in that layer.
   
 #### Set animator parameter value
 
@@ -213,7 +208,7 @@ Set a specific raw Motion for the state. This could be a blend tree.
 - `AacFlState WithAnimation(AacFlClip clip)` <br/>
 Set a specific clip for the state. See `(AacFlBase).NewClip()` and similar.
 
-- `AacFlState WithAnimation(AacFlBlendTree clip)` <br/>
+- `AacFlState WithAnimation(AacFlBlendTree clip)` 💡<br/>
 Set a specific blend tree for the state. See `(AacFlBase).NewBlendTree()` and similar.
 
 - `AacFlState MotionTime(AacFlFloatParameter floatParam)` <br/>

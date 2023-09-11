@@ -13,12 +13,10 @@ These functions will create and delete layers within the animator controllers in
 
 As times are changing, it is recommended that you switch to a non-destructive workflow using tools such as *Modular Avatar* or *VRCFury*, by creating an animator controller using `AacFlBase.NewAnimatorController()`. Alternatively, you can use functions contained in `AacFlBase` to destructively edit an arbitrary animator controller asset.
 
-:::caution
 To use these functions, use the extensions functions in `AacVRCDestructiveWorkflowExtensions`:
 
 - Add `using AnimatorAsCode.V1.VRCDestructiveWorkflow;` in your class imports.
 - If you use assembly definitions, add the `AnimatorAsCodeFramework.V1.VRCDestructiveWorkflow` assembly reference.
-:::
 
 ## Extensions for Base (AacFlBase)
 

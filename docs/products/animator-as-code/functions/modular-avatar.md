@@ -5,6 +5,10 @@ title: "Modular Avatar"
 
 # Functions: Modular Avatar
 
+:::danger
+This is the work-in-progress documentation for Animator As Code **V1**, which has not yet been released. The last public version of Animator As Code is V0.
+:::
+
 *Modular Avatar As Code* contains facilities to automate the creation of [Modular Avatar](https://modular-avatar.nadena.dev/) components.
 
 The functionality of this library is strictly limited to the handling of animators and parameters, therefore only the following components are covered:
@@ -16,10 +20,6 @@ The functionality of this library is strictly limited to the handling of animato
 For other components, you need to create them by hand.
 
 To use the Modular Avatar As Code functions, add `using ModularAvatarAsCode.V1;` to your class imports.
-
-:::danger
-This is the work-in-progress documentation for Animator As Code **V1**, which has not yet been released. The last public version of Animator As Code is V0.
-:::
 
 ## Modular Avatar As Code (MaAc)
 

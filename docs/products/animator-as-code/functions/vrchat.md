@@ -11,12 +11,10 @@ This is the work-in-progress documentation for Animator As Code **V1**, which ha
 
 These functions are specific to the VRChat Avatars SDK. For more functions, see [Destructive workflow](./vrchat-destructive).
 
-:::caution
 To use these functions, use the extensions functions in `AacVRCExtensions`:
 
 - Add `using AnimatorAsCode.V1.VRC;` in your class imports.
 - If you use assembly definitions, add the `AnimatorAsCodeFramework.V1.VRC` assembly reference.
-:::
 
 ## Base (AacFlBase)
 
@@ -24,6 +22,14 @@ To use these functions, use the extensions functions in `AacVRCExtensions`:
 
 - `AacVrcAssetLibrary VrcAssets()` <br/>
   Return an AacVrcAssetLibrary, which lets you select various assets from VRChat.
+
+
+## Layer (AacFlLayer)
+
+#### Create VRChat parameters
+
+- `AacAv3 Av3()` <br/>
+  Return an AacAv3 object, letting you select various standard Avatars 3.0 Animator Parameters. Subsequently invoking its functions will create invoked parameters in that layer.
 
 
 ## Avatars 3.0 (AacAv3)
