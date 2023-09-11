@@ -53,13 +53,3 @@ Before committing to creating a Constraint Track, ask yourself if you really wan
 A Constraint Track is useful when it **goes through various other bones that can be deformed relative to each other**. If it does not, then you can simply use a Transform animation.
 
 Some effects are more easily done without a track. For example, if you’re building an umbrella, then you probably don’t need a track. You can either use a blend shape / shape key, or just use simple Transform animations.
-
-## Learn more
-
-[Avatars 3.0: Making an object slide along a track with Constraint Track Animations](https://www.notion.so/Avatars-3-0-Making-an-object-slide-along-a-track-with-Constraint-Track-Animations-d0f6e217cc284b199341d02e0a25093f?pvs=21)
-
-[Task Board](https://www.notion.so/5440f1b8ea774c959f5faf3dd4c0a3d2?pvs=21)
-
-- Tweet
-
-  [https://twitter.com/vr_hai/status/1473236233384087552](https://twitter.com/vr_hai/status/1473236233384087552)

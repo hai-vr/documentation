@@ -33,4 +33,4 @@ The tool is free for download.
 
 *(Most illustrations in this documentation use [Saneko avatar (さねこ) by ひゅうがなつ](https://booth.pm/en/items/2322146))*
 
-![EeCgeLogo3.png](EeCgeLogo3.png)
+[//]: # (![EeCgeLogo3.png]&#40;EeCgeLogo3.png&#41;)

@@ -2,11 +2,13 @@
 
 While working on ComboGestureExpressions 1.4, I had a lot of struggles with Write Defaults OFF. I have consolidated everything I've learned along the way on this page.
 
-> ⚠️ The article below was written in March 2021.
-> 
-> Research on this subject has evolved since then, and as of September 2023, I recommend you [read this other article instead](https://notes.sleightly.dev/write-defaults/).
->
-> https://notes.sleightly.dev/write-defaults/
+:::caution
+⚠️ The article below was written in March 2021.
+
+Research on this subject has evolved since then, and as of September 2023, I recommend you [read this other article instead](https://notes.sleightly.dev/write-defaults/).
+
+https://notes.sleightly.dev/write-defaults/
+:::
 
 ### Animating non-muscle transforms
 
@@ -47,11 +49,13 @@ There is an unknown:
 
 ### Quirks
 
-> ⚠️ The article was written in March 2021.
-> 
-> Research on this subject has evolved since then, and as of September 2023, I recommend you [read this other article instead](https://notes.sleightly.dev/write-defaults/).
->
-> https://notes.sleightly.dev/write-defaults/
+:::caution
+⚠️ The article was written in March 2021.
+
+Research on this subject has evolved since then, and as of September 2023, I recommend you [read this other article instead](https://notes.sleightly.dev/write-defaults/).
+
+https://notes.sleightly.dev/write-defaults/
+:::
 
 There are additional precautions that need to be taken for Write Defaults OFF to function properly, but it is outside of the scope of *ComboGestureExpressions*. This list may not be totally accurate:
 

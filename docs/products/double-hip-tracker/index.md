@@ -12,7 +12,7 @@ When one of the trackers temporarily loses tracking, the other one is used inste
 This tool requires VRChat, because it uses VRChat’s OSC trackers. It is not compatible with other VR applications.
 :::
 
-## Download
+## Download ⭐
 
 Double Hip Tracker is currently available to Patreon supporters at any tier ([https://www.patreon.com/vr_hai](https://www.patreon.com/vr_hai)).
 
