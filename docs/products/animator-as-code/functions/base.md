@@ -37,7 +37,7 @@ Create a new clip which animates a dummy transform for a specific duration speci
 #### Reference VRChat assets
 
 :::info
-See functions specific to [VRChat](./functions-vrchat#base-aacflbase).
+See functions specific to [VRChat](./vrchat#base-aacflbase).
 :::
 
 #### Maintain assets
@@ -48,7 +48,7 @@ See functions specific to [VRChat](./functions-vrchat#base-aacflbase).
 #### Create layers (Destructive workflow)
 
 :::info
-For VRChat-specific functions, see [VRChat (Destructive workflow)](./functions-vrchat-destructive#extensions-for-base-aacflbase)
+For VRChat-specific functions, see [VRChat (Destructive workflow)](./vrchat-destructive#extensions-for-base-aacflbase)
 :::
 
 - `AacFlLayer CreateMainArbitraryControllerLayer(AnimatorController controller)` <br/>
@@ -63,7 +63,7 @@ Clears the topmost layer of an arbitrary AnimatorController, and returns it.
 #### Remove layers (Destructive workflow)
 
 :::info
-See functions specific to [VRChat (Destructive workflow)](./functions-vrchat-destructive#extensions-for-base-aacflbase)
+See functions specific to [VRChat (Destructive workflow)](./vrchat-destructive#extensions-for-base-aacflbase)
 :::
 
 
@@ -233,7 +233,7 @@ Create a transition from this state to the exit.
 ### State behaviours
 
 :::info
-See functions specific to [VRChat](./functions-vrchat#state-aacflstate).
+See functions specific to [VRChat](./vrchat#state-aacflstate).
 :::
 
 
