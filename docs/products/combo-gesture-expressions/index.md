@@ -24,13 +24,13 @@ With *ComboGestureExpressions*:
 - Puppets and blend trees are integrated into the tool.
 - Animations triggered by squeezing the controller trigger will look smooth to outside observers.
 
+*(Most illustrations in this documentation use [Saneko avatar (さねこ) by ひゅうがなつ](https://booth.pm/en/items/2322146))*
+
 ## Download
 
 The tool is free for download.
 
 - GitHub ([hai-vr/combo-gesture-expressions-av3/releases](https://github.com/hai-vr/combo-gesture-expressions-av3/releases))
 - Booth.pm ([ComboGestureExpressions - hai-vr - BOOTH](https://hai-vr.booth.pm/items/2219616))
-
-*(Most illustrations in this documentation use [Saneko avatar (さねこ) by ひゅうがなつ](https://booth.pm/en/items/2322146))*
 
 [//]: # (![EeCgeLogo3.png]&#40;EeCgeLogo3.png&#41;)

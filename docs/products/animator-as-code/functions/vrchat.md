@@ -34,7 +34,7 @@ graph TD;
     StateMachine-->|NewSubStateMachine|StateMachine;
     StateMachine-->|NewState|State;
     
-    State-->|Drives<br>/Driving*<br>/Tracking*<br>/Locomotion<br>/PrintsToLogUsingTrackingBehaviour|State;
+    State-->|Drives<br>/Driving*<br>/Tracking*<br>/Locomotion*<br>/PrintsToLogUsingTrackingBehaviour|State;
     
     classDef disabled fill:#CCC
     classDef roots fill:#FCC
