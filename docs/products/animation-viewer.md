@@ -17,7 +17,7 @@ This does not require VRChat to run. It has been tested to work on Unity 2019, a
 
 The tool is free for download.
 
-- GitHub ([https://github.com/hai-vr/blendshape-viewer](https://github.com/hai-vr/blendshape-viewer))
+- GitHub ([hai-vr/blendshape-viewer](https://github.com/hai-vr/blendshape-viewer))
 - Booth.pm ([Animation Viewer - hai-vr - BOOTH](https://hai-vr.booth.pm/items/3625699))
 
 ## How to use
