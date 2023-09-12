@@ -8,6 +8,7 @@
 - Github Pages dropdown needs to be set to github pages mode, not github actions (does it have to, since we set up the action?)
 - TODO: migrate video tag to be responsive
 - products index.md hides the both TOC and the default title
+- TODO: I replaced the landing page with a redirect, but it makes the social embed look like shit, how to fix this?
 
 # Website
 
