@@ -10,4 +10,4 @@ The application is not currently available to the public. Please come back at an
 
 ---
 
-Return to **[Products list](../products).**
+Return to **[Products list](./products).**
