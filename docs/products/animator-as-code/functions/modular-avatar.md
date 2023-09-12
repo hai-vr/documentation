@@ -25,6 +25,20 @@ For other components, you need to create them by hand.
 
 To use the Modular Avatar As Code functions, add `using ModularAvatarAsCode.V1;` to your class imports.
 
+#### Component creation overview
+
+```mermaid
+graph TD;
+    MaAcStatic[static MaAc]:::roots-->|Create|MaAc:::roots;
+    MaAc-->|On|MaAc;
+    MaAc-->|NewParameter|MaacParameter;
+    MaAc-->|EditMenuItemOnSelf<br>/EditMenuItem|MaacMenuItem ;
+    
+    classDef disabled fill:#CCC
+    classDef roots fill:#FCC
+    classDef focus fill:#CFF
+```
+
 ## Modular Avatar As Code (MaAc)
 
 - `static MaAc Create(GameObject root, bool setDirty = true)` <br/>
@@ -41,6 +55,9 @@ Create a new instance of MaAc targeting another object. Beware that this new ins
 - `MaAc ImportParameters(VRCExpressionParameters parameters)` <br/>
 Import parameters from an existing VRCExpressionParameters asset.
 
+- `MaacParameter<float> NewParameter(MaacParameterType parameterType, string parameter)` <br/>
+Declare a new parameter of the given type. If you use Animator As Code, you can reuse the parameters using the other `NewParameter` method overloads or the `NewBoolToFloatParameter` method. Function calls on the resulting objects will affect all parameters of that group.
+
 - `MaacParameter<float> NewParameter(AacFlFloatParameter aacParameter)` <br/>
 Declare a new Float parameter, by default saved and synced. This creates a ModularAvatarParameters on the targeted object if it doesn't already exist.
 
@@ -52,6 +69,11 @@ Declare a new Bool parameter, by default saved and synced. This creates a Modula
 
 - `MaacParameter<bool> NewBoolToFloatParameter(AacFlFloatParameter aacParameter)` <br/>
 Declare a new Bool parameter, acknowledging that the animator has exposed it as a Float. By default it is saved and synced. This creates a ModularAvatarParameters on the targeted object if it doesn't already exist.
+
+#### Parameter groups
+
+- `MaacParameter<float> NewParameter(MaacParameterType parameterType, params string[] parametersWithNulls)` <br/>
+  Declare new parameters of the given type. If you use Animator As Code, you can reuse the parameters using the other `NewParameter` method overloads or the `NewBoolToFloatParameter` method. The array can safely contain null values.
 
 - `MaacParameter<float> NewParameter(AacFlFloatParameterGroup aacParameterGroup)` <br/>
 Declare new Float parameters, by default saved and synced. This creates a ModularAvatarParameters on the targeted object if it doesn't already exist. Function calls on the resulting objects will affect all parameters of that group.
@@ -81,8 +103,8 @@ Edit one menu item on this object. It is not possible to declare multiple menu i
 - `MaacMenuItem EditMenuItem(GameObject receiver)` <br/>
 Edit one menu item on the receiver object. It is not possible to declare multiple menu items on that same object.
 
-- `MaacMenuItem EditMenuItem(params GameObject[] receivers)` <br/>
-Edit one menu item on all of the receiver objects. It is not possible to declare multiple menu items on those same objects. Function calls on the resulting objects will affect all parameters of that group. Use this in case you have multiple identical menu items scattered across different menus.
+- `MaacMenuItem EditMenuItem(params GameObject[] receiversWithNulls)` <br/>
+Edit one menu item on all of the receiver objects. It is not possible to declare multiple menu items on those same objects. Function calls on the resulting objects will affect all parameters of that group. Use this in case you have multiple identical menu items scattered across different menus. The array can safely contain null values.
 
 ## Parameter (MaacParameter<T\>)
 

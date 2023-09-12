@@ -43,21 +43,6 @@ export function GalleryItem({name, image, url, urlTS, children}: Props): JSX.Ele
                     </h3>
                     <p>{children}</p>
                 </div>
-                {/*<div className="card__footer">*/}
-                {/*    <div style={{textAlign: 'center'}}>*/}
-                {/*        <b>*/}
-                {/*            <Translate id="playground.tryItButton">Try it now!</Translate>*/}
-                {/*        </b>*/}
-                {/*    </div>*/}
-                {/*    <div className="button-group button-group--block">*/}
-                {/*        <Link className="button button--secondary" to={url}>*/}
-                {/*            JavaScript*/}
-                {/*        </Link>*/}
-                {/*        <Link className="button button--secondary" to={urlTS}>*/}
-                {/*            TypeScript*/}
-                {/*        </Link>*/}
-                {/*    </div>*/}
-                {/*</div>*/}
             </div>
         </div>
     );

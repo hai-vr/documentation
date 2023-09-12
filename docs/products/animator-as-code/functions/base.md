@@ -26,9 +26,9 @@ graph TD;
     Layer-->|NewSubStateMachine|StateMachine;
     StateMachine-->|NewSubStateMachine|StateMachine;
     StateMachine-->|NewState|State;
-    StateMachine-->|TransitionsTo<br>/TransitionsFromAny<br>/Restarts<br>/Exits|Transition;
+    StateMachine-->|TransitionsTo<br>/TransitionsFromAny<br>/Exits<br>/Restarts|Transition;
     StateMachine-->|TransitionsFromEntry|EntryTransition;
-    State-->|TransitionsTo<br>/TransitionsFromAny|Transition;
+    State-->|TransitionsTo<br>/TransitionsFromAny<br>/Exits|Transition;
     State-->|TransitionsFromEntry|EntryTransition;
     Transition-->|When|TransitionContinuation;
     EntryTransition-->|When|TransitionContinuation;
@@ -247,15 +247,21 @@ Creates a new transition of the entire state machine node to itself, which is ev
 Create a transition from this state machine node to the exit.
 
 
-## NoAnimator (AacFlNoAnimator)
+## No Animator (AacFlNoAnimator) 💡
 
-- `AacFlFloatParameter FloatParameter(string parameterName) => AacFlFloatParameter.Internally(parameterName);` 💡<br/>
+:::caution
+You should use this class if you are creating BlendTree assets without any animator controllers to back it.
+
+Otherwise, it is strongly recommended to obtain animator parameter objects directly from the [layer objects](#create-parameters) instead of using NoAnimator(), as the use of NoAnimator() will not result in the registration of any parameters inside the animator controller.
+:::
+
+- `AacFlFloatParameter FloatParameter(string parameterName)` 💡<br/>
 Create a Float parameter, for use without a backing animator.
 
-- `AacFlIntParameter IntParameter(string parameterName) => AacFlIntParameter.Internally(parameterName);` 💡<br/>
+- `AacFlIntParameter IntParameter(string parameterName)` 💡<br/>
 Create a Int parameter, for use without a backing animator.
 
-- `AacFlBoolParameter BoolParameter(string parameterName) => AacFlBoolParameter.Internally(parameterName);` 💡<br/>
+- `AacFlBoolParameter BoolParameter(string parameterName)` 💡<br/>
 Create a Bool parameter, for use without a backing animator.
 
 
