@@ -134,7 +134,7 @@ const config = {
               },
               {
                 label: 'Discord',
-                href: 'https://discordapp.com/invite/???',
+                to: '/docs/other/discord',
               },
             ],
           },
