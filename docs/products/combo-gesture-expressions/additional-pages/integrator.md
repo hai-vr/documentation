@@ -1,5 +1,9 @@
 # Integrator
 
+:::danger
+The Integrator is not available in the current version of V2.
+:::
+
 This is the documentation for the Integrator.
 
 The Integrator is a module that lets you integrate the Weight Correction layers onto your Animator controller **even if you don't use ComboGestureExpressions to manage your face expressions**.

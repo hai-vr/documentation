@@ -15,6 +15,8 @@ import YTbmBZpWFo from './videos/sx_2022-05-04_20-10-33_YTbmBZpWFo.mp4';
 import cge_dyn2_f from './videos/cge-dyn2-f.mp4';
 import f5ToWtGl2m from './videos/sx_2022-05-04_21-56-30_f5ToWtGl2m.mp4';
 
+import styles from './styles.module.css';
+
 # Reference manual
 
 ## Download
@@ -52,8 +54,8 @@ I will try to provide help on the #cge channel when I can.
     <source src={LrodZ6DkxP} type="video/mp4" />
 </video>
 
-Add the prefab to the scene located in `Assets/Hai/ComboGesture/ComboGestureExpressions.prefab`. Right-click on the newly inserted prefab and click <span class="hai-btn">Unpack prefab completely</span>.
-Select the `Default` object which contains a *Combo Gesture Activity* component, then click the <span class="hai-btn">Open editor</span> button in the Inspector to open the CGE Editor.
+Add the prefab to the scene located in `Assets/Hai/ComboGesture/ComboGestureExpressions.prefab`. Right-click on the newly inserted prefab and click <span class={styles.hai_btn}>Unpack prefab completely</span>.
+Select the `Default` object which contains a *Combo Gesture Activity* component, then click the <span class={styles.hai_btn}>Open editor</span> button in the Inspector to open the CGE Editor.
 
 ## Visualize your animation files and preview using AnimationViewer
 ![NewInV2TagSmall](https://user-images.githubusercontent.com/60819407/167145432-89428be9-9f16-4795-98ce-093a0c96837c.png)
@@ -77,7 +79,7 @@ For more information, see [AnimationViewer manual](https://hai-vr.notion.site/An
 
 To assign animations with hand gestures, Drag and drop animation clips from your Project view to the slots in CGE Editor.
 
-<span class="hai-v2">To make the CGE Editor display the previews, drag and drop your avatar to the <em>Preview setup</em> field at the top.</span>
+<span class={styles.hai_v2}>To make the CGE Editor display the previews, drag and drop your avatar to the <em>Preview setup</em> field at the top.</span>
 
 Fill the first row completely. The first row contains the animations that play when one hand is doing a gesture, but the other hand is doing a gesture that doesn't exist (i.e. the 🤙 sign).
 
@@ -104,9 +106,9 @@ Gesture names for reference ([VRChat documentation](https://docs.vrchat.com/docs
 
 If you need to create a new face expression animation, click the *Create* button, or click the *Visual Expressions Editor* button on the top right.
 
-<span class="hai-v2">Another way to open this editor is to go in the Animator component, then click the vertical dots on the right</span> `⋮` and click *Haï VisualExpressionsEditor*. <span class="hai-v2">Move your scene camera to better see your avatar.</span>
+<span class={styles.hai_v2}>Another way to open this editor is to go in the Animator component, then click the vertical dots on the right</span> `⋮` and click *Haï VisualExpressionsEditor*. <span class={styles.hai_v2}>Move your scene camera to better see your avatar.</span>
 
-<span class="hai-v2">In the CGE Editor, at any point, you can click *Regenerate all previews* to refresh the previews.</span>
+<span class={styles.hai_v2}>In the CGE Editor, at any point, you can click *Regenerate all previews* to refresh the previews.</span>
 
 For more information, head over to the [Visual Expressions Editor documentation](https://hai-vr.notion.site/Visual-Expressions-Editor-262f0ba4cfe24ba38278d99939a2a018).
 
@@ -118,11 +120,11 @@ For more information, head over to the [Visual Expressions Editor documentation]
 
 When your left hand and right hand are not making the same gesture, the animation in the corresponding slot will play.
 
-You can choose your own animation, or use a tool to combine the corresponding animations from the left and right hand by clicking the <span class="hai-btn">+ Combine</span> button.
+You can choose your own animation, or use a tool to combine the corresponding animations from the left and right hand by clicking the <span class={styles.hai_btn}>+ Combine</span> button.
 
 When combining, you will see a preview of the two animations mixed together. It is very common for the mixed animation to be conflicting, especially when two animations animate the eyes or the mouth in a different way.
 
-Click the buttons on either side to turn some properties on and off, until you find a face expression that makes sense for that combination of gesture. When satisfied with the result, click <span class="hai-btn">Save and assign</span> in the middle.
+Click the buttons on either side to turn some properties on and off, until you find a face expression that makes sense for that combination of gesture. When satisfied with the result, click <span class={styles.hai_btn}>Save and assign</span> in the middle.
 
 You can choose to rename the animation using the field above the button.
 
@@ -134,14 +136,15 @@ It is highly recommended to fill out all slots.
     <source src={JWZUi936jq} type="video/mp4" />
 </video>
 
-Go to <span class="hai-btn">Prevent eyes blinking</span> tab. By selecting which animations have both eyes closed, the blinking animation will be disabled as long as that face expression is active.
+Go to <span class={styles.hai_btn}>Prevent eyes blinking</span> tab. By selecting which animations have both eyes closed, the blinking animation will be disabled as long as that face expression is active.
 
 It is not recommended selecting animations with only one eye closed such as winking, as this will also cause the avatar to stop eye contact.
 
-<div class="hai-interlude">
-<p>In your animations, you should <strong>not</strong> animate the Blink blendshape which is used by the Avatars 3.0 descriptor. If you do, your eyelids will not smoothly animate, and they will not animate on analog Fist gestures.</p>
-<p>On many avatar bases, the left eyelid and right eyelid can be animated independently. I would suggest you to animate those two blendshapes instead.</p>
-</div>
+:::danger
+In your animations, you should **not** animate the Blink blendshape which is used by the Avatars 3.0 descriptor. If you do, your eyelids will not smoothly animate, and they will not animate on analog Fist gestures.
+
+On many avatar bases, the left eyelid and right eyelid can be animated independently. I would suggest you to animate those two blendshapes instead.
+:::
 
 ## Apply to the avatar
 
@@ -155,13 +158,13 @@ Select the `ComboGestureExpressions` object of the prefab which contains a *Comb
 
 Depending on how your animator is built, choose the correct setting in `FX Playable Mode`: Choose Write Defaults OFF if you are following VRChat recommendations. Try to be consistent throughout your animator.
 
-<span class="hai-v2"><em>If you use MMD worlds that contain dance animations, please read the MMD worlds section later in this manual.</em></span>
+<span class={styles.hai_v2}><em>If you use MMD worlds that contain dance animations, please read the MMD worlds section later in this manual.</em></span>
 
-You should now be able to press <span class="hai-btn">Synchronize Animator FX layers</span>, which will modify your animator controller.
+You should now be able to press <span class={styles.hai_btn}>Synchronize Animator FX layers</span>, which will modify your animator controller.
 
 Whenever you modify any face expression animation or anything related to ComboGestureExpressions, press that button again to synchronize.
 
-*If you haven't done it already, right-click on the newly created prefab and click <span class="hai-btn">Unpack prefab completely</span>.*
+*If you haven't done it already, right-click on the newly created prefab and click <span class={styles.hai_btn}>Unpack prefab completely</span>.*
 
 ## Squeezing the trigger
 
@@ -181,18 +184,19 @@ When both hands of your hand are making a fist, you can select two additional an
 - The `Fist X2, RIGHT trigger` animation will be used when the right trigger is squeezed.
 - The `No gesture` animation will be used when none of the triggers are squeezed.
 
-<div class="hai-interlude">
+:::note
 <video controls width="408" autostart loop>
     <source src={demo_analog} type="video/mp4" />
 </video>
 
-<p>Illustration of animation blending in an Analog Fist gesture.</p>
-</div>
+Illustration of animation blending in an Analog Fist gesture.
+:::
 
-<div class="hai-interlude">
-<p>In your animations, you should <strong>not</strong> animate the Blink blendshape which is used by the Avatars 3.0 descriptor. They will not animate on analog Fist gestures.</p>
-<p>On many avatar bases, the left eyelid and right eyelid can be animated independently. I would suggest you to animate those two blendshapes instead.</p>
-</div>
+:::danger
+In your animations, you should **not** animate the Blink blendshape which is used by the Avatars 3.0 descriptor. They will not animate on analog Fist gestures.
+
+On many avatar bases, the left eyelid and right eyelid can be animated independently. I would suggest you to animate those two blendshapes instead.
+:::
 
 ## Add some Dynamics using PhysBones, Contacts, OSC, and other Avatars 3.0 parameters
 ![NewInV2TagSmall](https://user-images.githubusercontent.com/60819407/167145432-89428be9-9f16-4795-98ce-093a0c96837c.png)
@@ -200,7 +204,7 @@ When both hands of your hand are making a fist, you can select two additional an
     <source src={YTbmBZpWFo} type="video/mp4" />
 </video>
 
-To make your face expression react to interactions and other Dynamics, add the prefab to the scene located in `Assets/Hai/ComboGesture/CGEDynamics.prefab`. Right-click on the newly inserted prefab and click <span class="hai-btn">Unpack prefab completely</span>.
+To make your face expression react to interactions and other Dynamics, add the prefab to the scene located in `Assets/Hai/ComboGesture/CGEDynamics.prefab`. Right-click on the newly inserted prefab and click <span class={styles.hai_btn}>Unpack prefab completely</span>.
 
 This component lets you define Dynamics. Press the `+` button to add a new element in the list.
 
@@ -208,13 +212,13 @@ In the Compiler, define your *Main Dynamics* object above the Mood sets.
 
 You can individually define *Dynamics* objects in each Mood set, which will only apply it to that Mood set. Make sure you don't have duplicate inside your *Main Dynamics* object!
 
-<div class="hai-interlude">
+:::note
 <video controls width="408" autostart loop>
     <source src={cge_dyn2_f} type="video/mp4" />
 </video>
 
-<p>Illustration of a Dynamics contact.</p>
-</div>
+Illustration of a Dynamics contact.
+:::
 
 ### Select the Dynamic Expression
 
@@ -307,7 +311,7 @@ In your Expression Parameters, add a new Parameter of type `Bool`.
 
 In your Expression Menu, create a Toggle to control that Parameter.
 
-Add additional mood sets by clicking <span class="hai-btn">+</span> on the list, then drag-and-drop or select another *ComboGestureActivity* component. Just like the second one, choose another `Parameter Name` for that mood set, create an Expression Parameter and a Expression Menu toggle.
+Add additional mood sets by clicking <span class={styles.hai_btn}>+</span> on the list, then drag-and-drop or select another *ComboGestureActivity* component. Just like the second one, choose another `Parameter Name` for that mood set, create an Expression Parameter and a Expression Menu toggle.
 
 *It is not necessary, you can optionally add a `Parameter Name` to the blank mood set. In that case, the first mood set in the list will be default mood set. This will allow you to add a toggle control to the default mood set in order to have an icon for it.*
 
@@ -318,29 +322,29 @@ Add additional mood sets by clicking <span class="hai-btn">+</span> on the list,
 
 So far we have set up *Activity* mood sets. Another type of mood set is available: *Puppet*, which can be controlled by an Expression Menu.
 
-The prefab contains an object called *Puppet* which contains a *Combo Gesture Puppet* component. Select it and click the <span class="hai-btn">Open editor</span> button in the Inspector.
+The prefab contains an object called *Puppet* which contains a *Combo Gesture Puppet* component. Select it and click the <span class={styles.hai_btn}>Open editor</span> button in the Inspector.
 
-<span class="hai-v2">To make the CGE Editor display the previews, drag and drop your avatar to the <em>Preview setup</em> field at the top.</span>
+<span class={styles.hai_v2}>To make the CGE Editor display the previews, drag and drop your avatar to the <em>Preview setup</em> field at the top.</span>
 
 Create a blend tree using the tool. Select one of the following basic templates: Four directions, Eight directions, Six directions pointing forward, Six directions pointing sideways.
 
-In Joystick center animation, add an animation that will be used when the joystick of the puppet menu is resting at the center. Click <span class="hai-btn">Create a new blend tree asset</span> to select a location where to save that blend tree.
+In Joystick center animation, add an animation that will be used when the joystick of the puppet menu is resting at the center. Click <span class={styles.hai_btn}>Create a new blend tree asset</span> to select a location where to save that blend tree.
 
 There are two additional options when generating the blend tree that should be left at their default values:
 - Fix joystick snapping creates 4 additional animations for the resting pose near the center. This is because joystick of VR controllers have a dead zone in the middle. This means the animation will snap when exiting that dead zone.
 - Joystick maximum tilt brings the outer animation points slightly closer to the middle. This is because joystick of VR controllers can not always be tilted all the way in every direction. This can also be used to avoid tilting the joystick all the way.
 
-After generating the blend tree, edit it in the inspector to assign the face expressions in it. After it is done, select which face expressions have eyes closed by going to <span class="hai-btn">Prevent eyes blinking</span> tab.
+After generating the blend tree, edit it in the inspector to assign the face expressions in it. After it is done, select which face expressions have eyes closed by going to <span class={styles.hai_btn}>Prevent eyes blinking</span> tab.
 
-Select the `ComboGestureExpressions` object of the prefab. In the inspector, add a mood set by clicking <span class="hai-btn">+</span> on the list. On the left in the dropdown menu, switch from *Activity* to *Puppet*, then drag-and-drop or select the `Puppet` object. Just like *Activity* mood sets, you can create more *Puppet* mood sets by creating additional *ComboGesturePuppet* components.
+Select the `ComboGestureExpressions` object of the prefab. In the inspector, add a mood set by clicking <span class={styles.hai_btn}>+</span> on the list. On the left in the dropdown menu, switch from *Activity* to *Puppet*, then drag-and-drop or select the `Puppet` object. Just like *Activity* mood sets, you can create more *Puppet* mood sets by creating additional *ComboGesturePuppet* components.
 
 I recommend creating two controls in your Expression Menu to control the puppet: A Toggle control to switch to the Puppet mood set, and separate Two-Axis Puppet to control the two parameters of your blend tree.
 
-<div class="hai-interlude">
+:::note
 <iframe src="https://streamable.com/e/8u2sd5?loop=0" width="408" height="256" frameborder="0" allowfullscreen></iframe>
 
-<p>Illustration of a puppet mood set.</p>
-</div>
+Illustration of a puppet mood set.
+:::
 
 ## Animate cat ears, wings and more
 
@@ -363,9 +367,9 @@ Depending on how your animator is built, choose the correct setting in `Gesture 
 
 Handling the Gesture Playable is very tricky, and extra precautions need to be taken:
 
-- **You will see a red warning regarding Avatar Masks if *ComboGestureExpressions* detects that your FX Playable Layer may be incompatible with your Gesture Playable Layer**, in which case it will suggest you a fix. If that's the case, click <span class="hai-btn">Add missing masks</span>. This will add a mask to the layers of your FX Playable Layer that do not yet have an Avatar mask.
-- If you add new layers to the FX Playable Layer, you may have to click <span class="hai-btn">Add missing masks</span> if you see the red warning again.
-- If you modify the FX Playable Layer, and <span class="hai-btn">Synchronize Animator FX and Gesture layers</span> every time you do a change in the FX Playable Layer. That is because the mask is generated based on the animations within the FX Playable layer.
+- **You will see a red warning regarding Avatar Masks if *ComboGestureExpressions* detects that your FX Playable Layer may be incompatible with your Gesture Playable Layer**, in which case it will suggest you a fix. If that's the case, click <span class={styles.hai_btn}>Add missing masks</span>. This will add a mask to the layers of your FX Playable Layer that do not yet have an Avatar mask.
+- If you add new layers to the FX Playable Layer, you may have to click <span class={styles.hai_btn}>Add missing masks</span> if you see the red warning again.
+- If you modify the FX Playable Layer, and <span class={styles.hai_btn}>Synchronize Animator FX and Gesture layers</span> every time you do a change in the FX Playable Layer. That is because the mask is generated based on the animations within the FX Playable layer.
 - You should not share your Gesture Playable Layer between two very different avatars that do not have the same base, because the avatar is being used to capture the default bone positions of the avatar when it is at rest, so that animated transforms can reset to a base position when they are not being used.
 
 *If you would like to know why an Avatar mask is needed on layers of the FX Playable Layer, [you may find additional information here](./additional-pages/writedefaults).*
@@ -377,9 +381,9 @@ Handling the Gesture Playable is very tricky, and extra precautions need to be t
 
 For simplicity purposes, we've been using combinations of gestures, meaning that `Left Point + Right ThumbsUp` will show the same animation as `Left ThumbsUp + Right Point`. I encourage you [using multiple mood sets](#using-multiple-mood-sets) available in an Expressions menu to expand your expressions repertoire.
 
-If you would like to create permutations of gestures, which I do recommend for asymmetric face expressions or hand-specific Fist animations, <span class="hai-v2">change the <em>Mode</em> dropdown at the top left and select <em>Permutations</em></span>. You will see a colored table split between Left hand permutations (colored in orange) and Right hand permutations (colored in blue).
+If you would like to create permutations of gestures, which I do recommend for asymmetric face expressions or hand-specific Fist animations, <span class={styles.hai_v2}>change the <em>Mode</em> dropdown at the top left and select <em>Permutations</em></span>. You will see a colored table split between Left hand permutations (colored in orange) and Right hand permutations (colored in blue).
 
-<span class="hai-v2">When this mode is selected in the dropdown</span>, the Activity will behave as if everything was still a combo: If you don't define a Left hand permutation, the Right hand permutation animation will be used for both.
+<span class={styles.hai_v2}>When this mode is selected in the dropdown</span>, the Activity will behave as if everything was still a combo: If you don't define a Left hand permutation, the Right hand permutation animation will be used for both.
 
 ## Mix puppets and gestures
 
@@ -390,7 +394,7 @@ Any animation slot can have a blend tree within it instead. This means puppeteer
 
 Analog Fist gesture can be completely customized using it, and it is even possible to simultaneously combine the Fist analog trigger with a puppet menu if you feel like it. Remember puppets retain their values when closing the menu, so you don't necessarily need to have your puppet menu opened.
 
-The blend tree template generator can be accessed in <span class="hai-btn">Additional editors > Create blend trees</span> tab. For puppet menus, use the [previously mentioned templates](#standalone-puppets-and-blend-trees). For Fist gestures, select one of the following templates: Single analog fist with hair trigger, Single analog fist and two directions, Dual analog fist.
+The blend tree template generator can be accessed in <span class={styles.hai_btn}>Additional editors > Create blend trees</span> tab. For puppet menus, use the [previously mentioned templates](#standalone-puppets-and-blend-trees). For Fist gestures, select one of the following templates: Single analog fist with hair trigger, Single analog fist and two directions, Dual analog fist.
 
 When placing a blend tree in a single Fist gesture, the parameter `_AutoGestureWeight` will be how much the trigger is squeezed.
 
