@@ -11,7 +11,7 @@ import {GalleryItem} from '@site/src/components/GalleryItem';
 <div className="row">
 <GalleryItem 
         name = 'ResilienceVR'
-        image = ""
+        image = {require("./gallery-img/resilience-temp.png").default}
         url = './resilience'
 >
 
@@ -65,7 +65,7 @@ import {GalleryItem} from '@site/src/components/GalleryItem';
 </GalleryItem>
 <GalleryItem 
         name = 'Property Finder'
-        image = ""
+        image = {require("./gallery-img/property-finder.png").default}
         url = './products/property-finder'
 >
 
@@ -101,7 +101,7 @@ import {GalleryItem} from '@site/src/components/GalleryItem';
 </GalleryItem>
 <GalleryItem 
         name = 'IconGen'
-        image = ""
+        image = {require("./gallery-img/icon-gen.png").default}
         url = './products/icon-gen'
 >
 
