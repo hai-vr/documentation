@@ -9,6 +9,10 @@ import JfpvN3yRTz from './expressions-menu-hierarchy-editor-img/sx_2022-03-03_01
 This tool requires VRChat, and is incompatible with other apps and platforms.
 :::
 
+:::tip
+If you use **[Modular Avatar](https://modular-avatar.nadena.dev/)**, you should use [Modular Avatar Menu Items](https://modular-avatar.nadena.dev/docs/tutorials/menu) instead.
+:::
+
 ![EmhCard.png](expressions-menu-hierarchy-editor-img/EmhCard.png)
 
 Additional functionality includes automatically disabling items in the menu when your Expression Parameters does not support it, and generating icons.
@@ -23,6 +27,10 @@ The tool is free for download.
 - Booth.pm ([Expressions Menu Hierarchy Editor - hai-vr - BOOTH](https://hai-vr.booth.pm/items/3696355))
 
 ## How to set up
+
+:::tip
+If you use **[Modular Avatar](https://modular-avatar.nadena.dev/)**, you should use [Modular Avatar Menu Items](https://modular-avatar.nadena.dev/docs/tutorials/menu) instead.
+:::
 
 Expressions Menu Hierarchy Editor (EMH) assumes that you already have a menu set up for your avatar in the traditional way.
 
