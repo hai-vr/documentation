@@ -124,14 +124,6 @@ const config = {
                 label: 'ResilienceVR',
                 to: '/docs/resilience',
               },
-              {
-                label: 'Help & Discord',
-                to: '/docs/other/discord',
-              },
-              {
-                label: 'Patreon rewards',
-                to: '/docs/other/patreon',
-              },
             ],
           },
           {
