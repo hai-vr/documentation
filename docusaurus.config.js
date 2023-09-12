@@ -95,6 +95,15 @@ const config = {
             label: 'Help & Discord',
           },
           {
+            label: 'Patreon rewards',
+            to: '/docs/other/patreon',
+          },
+          {
+            href: 'https://www.patreon.com/vr_hai',
+            label: 'Patreon',
+            position: 'right',
+          },
+          {
             href: 'https://github.com/hai-vr/',
             label: 'GitHub',
             position: 'right',
@@ -118,6 +127,10 @@ const config = {
               {
                 label: 'Help & Discord',
                 to: '/docs/other/discord',
+              },
+              {
+                label: 'Patreon rewards',
+                to: '/docs/other/patreon',
               },
             ],
           },

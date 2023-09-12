@@ -1,5 +1,5 @@
 ﻿---
-title: ⭐ IconGen
+title: 🔒 IconGen
 ---
 
 # IconGen
