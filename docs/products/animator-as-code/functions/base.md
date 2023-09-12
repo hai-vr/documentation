@@ -100,6 +100,12 @@ Create a new clip with a name. However, the name is only used as a suffix for th
 - `AacFlClip DummyClipLasting(float numberOf, AacFlUnit unit)` <br/>
 Create a new clip which animates a dummy transform for a specific duration specified in an unit (Frames or Seconds).
 
+- `AacFlController NewAnimatorController()` 💡<br/>
+Create a new animator controller. The asset is generated into the container.
+
+- `AacFlController NewAnimatorController(string name)` 💡<br/>
+Create a new animator controller with a name. However, the name is only used as a suffix for the asset. The asset is generated into the container.
+
 #### Reference VRChat assets
 
 :::info
@@ -136,6 +142,15 @@ See functions specific to [VRChat (Destructive workflow)](./vrchat-destructive#e
 
 - `AacFlNoAnimator NoAnimator()` 💡<br/>
 If you are not creating an animator, this returns an object from which you can obtain animator parameter objects. You should use this class if you are creating BlendTree assets without any animator controllers to back it. Otherwise, it is strongly recommended to obtain animator parameter objects directly from the layer objects instead of using NoAnimator(), as the use of NoAnimator() will not result in the registration of any parameters inside the animator controller.
+
+
+## Controller (AacFlController) 💡
+
+- `AacFlLayer NewLayer(string suffix)` 💡<br/>
+Create a new layer with a specific suffix. You cannot create multiple layers with the same suffix on the same controller.
+
+- `AacFlLayer NewLayer()` 💡<br/>
+Create a new layer. You cannot invoke this method multiple times on the same controller.
 
 
 ## Layer (AacFlLayer)
@@ -220,7 +235,7 @@ Set the Avatar Mask of the layer to be an Avatar Mask which denies all transform
 Set the Avatar Mask of the layer to be an Avatar Mask that allows the specified transforms. If `paths` is an empty array, all transforms are denied, which is effectively the same as calling `.WithAvatarMaskNoTransforms()`. The asset is generated into the container.
 
 
-## Sub State Machine (AacFlStateMachine 💡)
+## Sub State Machine (AacFlStateMachine) 💡
 
 - `AacFlStateMachine NewSubStateMachine(string name)` 💡<br/>
 Create a new state machine, initially positioned below the last generated state of this layer.
@@ -230,6 +245,18 @@ Creates a new transition of the entire state machine node to itself, which is ev
 
 - `AacFlStateMachine Exits()` 💡<br/>
 Create a transition from this state machine node to the exit.
+
+
+## NoAnimator (AacFlNoAnimator)
+
+- `AacFlFloatParameter FloatParameter(string parameterName) => AacFlFloatParameter.Internally(parameterName);` 💡<br/>
+Create a Float parameter, for use without a backing animator.
+
+- `AacFlIntParameter IntParameter(string parameterName) => AacFlIntParameter.Internally(parameterName);` 💡<br/>
+Create a Int parameter, for use without a backing animator.
+
+- `AacFlBoolParameter BoolParameter(string parameterName) => AacFlBoolParameter.Internally(parameterName);` 💡<br/>
+Create a Bool parameter, for use without a backing animator.
 
 
 ## State (AacFlState)

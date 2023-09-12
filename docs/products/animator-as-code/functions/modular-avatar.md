@@ -9,6 +9,10 @@ title: "Modular Avatar"
 This is the work-in-progress documentation for Animator As Code **V1**, which has not yet been released. The last public version of Animator As Code is V0.
 :::
 
+:::caution
+The API contract for Modular Avatar As Code V1 is highly unstable. Use at your own risk.
+:::
+
 *Modular Avatar As Code* contains facilities to automate the creation of [Modular Avatar](https://modular-avatar.nadena.dev/) components.
 
 The functionality of this library is strictly limited to the handling of animators and parameters, therefore only the following components are covered:
