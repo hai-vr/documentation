@@ -410,6 +410,11 @@ Start editing the clip with a lambda expression.
 
 ## Clip editing (AacFlEditClip)
 
+:::tip
+Consider using [Property Finder](../../property-finder.md) to locate the animatable properties that you are interested in.
+
+![property-finder-aac.png](./img/property-finder-aac.png)
+:::
 
 - `AnimationClip Clip;`  <br/>
 Expose the underlying Clip object.
