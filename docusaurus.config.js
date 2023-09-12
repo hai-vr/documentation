@@ -107,11 +107,11 @@ const config = {
             items: [
               {
                 label: 'Products',
-                to: '/docs/products/intro',
+                to: '/docs/products',
               },
               {
                 label: 'ResilienceVR',
-                to: '/docs/resilience/intro',
+                to: '/docs/resilience',
               },
               {
                 label: 'Help & Discord',

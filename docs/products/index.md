@@ -12,7 +12,7 @@ import {GalleryItem} from '@site/src/components/GalleryItem';
 <GalleryItem 
         name = 'ResilienceVR'
         image = ""
-        url = './../resilience/intro'
+        url = './../resilience'
 >
 
 *ResilienceVR* is a standalone social VR app which focuses on experimentation and intimacy.
@@ -152,7 +152,7 @@ import {GalleryItem} from '@site/src/components/GalleryItem';
 |                                                                            | Product type          | App / Platform      | License     | Booth                                          |
 |----------------------------------------------------------------------------|-----------------------|---------------------|-------------|------------------------------------------------|
 | **Applications**                                                           |                       |                     |             |                                                |
-| [**ResilienceVR**](./../resilience/intro)                                  | 🖥️ Application       |                     | Proprietary |                                                |
+| [**ResilienceVR**](./../resilience)                                        | 🖥️ Application       |                     | Proprietary |                                                |
 | [⭐ Double Hip Tracker](./double-hip-tracker)                               | 🖥️ Application (OSC) | ⚠️ VRChat required  | Proprietary |                                                |
 | [⭐ VeryHaï](./very-h)                                                      | 🖥️️ Application      |                     | Proprietary |                                                |
 | **Viewers**                                                                |                       |                     |             |                                                |
