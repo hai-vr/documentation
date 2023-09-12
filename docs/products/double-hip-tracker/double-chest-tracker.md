@@ -46,6 +46,10 @@ If you are wearing your two chest trackers in locations where one of the tracker
 
 For example, if you’re wearing a tracker on the chest like you normally would, and a tracker somewhere below your armpit, it could be advantageous to prioritize the tracker located on the chest.
 
+<video controls width="816">
+    <source src={require('./img/doublechesttrackerprio-f.mp4').default}/>
+</video>
+
 Select the serial number of the tracker that has a better position in the **Tracker A** slot.
 
 Check the Prioritize Tracker A checkbox.
