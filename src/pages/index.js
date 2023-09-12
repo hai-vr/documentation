@@ -26,16 +26,22 @@ function HomepageHeader() {
   );
 }
 
+// export default function Home() {
+//   const {siteConfig} = useDocusaurusContext();
+//   return (
+//     <Layout
+//       title={`${siteConfig.title}`}
+//       description="Virtual reality tools and apps">
+//       <HomepageHeader />
+//       <main>
+//         <HomepageFeatures />
+//       </main>
+//     </Layout>
+//   );
+// }
+
+import {Redirect} from '@docusaurus/router';
+
 export default function Home() {
-  const {siteConfig} = useDocusaurusContext();
-  return (
-    <Layout
-      title={`${siteConfig.title}`}
-      description="Virtual reality tools and apps">
-      <HomepageHeader />
-      <main>
-        <HomepageFeatures />
-      </main>
-    </Layout>
-  );
-}
+    return <Redirect to="/docs/products/intro" />;
+};
