@@ -6,7 +6,7 @@ hide_title: true
 description: Documentation and gallery of Haï's tools and apps
 ---
 
-import Gallery from '@site/src/pages/index.mdx'
+import Gallery from '@site/src/pages/gallery.mdx'
 
 <Gallery />
 
