@@ -3,6 +3,7 @@ title: All products 🗒️
 sidebar_position: 1
 hide_table_of_contents: true
 hide_title: true
+description: Documentation and gallery of Haï's tools and apps
 ---
 
 ```mdx-code-block
