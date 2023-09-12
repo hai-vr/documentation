@@ -1,10 +1,149 @@
 ﻿---
 title: All products 🗒️
+sidebar_position: 1
+hide_table_of_contents: true
+hide_title: true
 description: Documentation and gallery of Haï's tools and apps
 ---
 
 ```mdx-code-block
-import {Redirect} from '@docusaurus/router';
+import {GalleryItem} from '@site/src/components/GalleryItem';
 
-<Redirect to="/docs/products" />
+<div className="row">
+<GalleryItem 
+        name = 'ResilienceVR'
+        image = {require("@site/docs/products/gallery-img/resilience-temp.png").default}
+        url = '/docs/resilience'
+>
+
+*ResilienceVR* is a standalone social VR app which focuses on experimentation and intimacy.
+
+</GalleryItem>
+<GalleryItem 
+        name = 'Double Hip Tracker'
+        image = {require("@site/docs/products/gallery-img/double-hip-tracker.png").default}
+        url = '/docs/products/double-hip-tracker'
+>
+
+*Double Hip Tracker* lets you use two hip trackers on VRChat. If one loses tracking, the other is used instead.
+
+</GalleryItem>
+<GalleryItem 
+        name = 'VeryHaï'
+        image = {require("@site/docs/products/gallery-img/very-h.png").default}
+        url = '/docs/products/very-h'
+>
+
+*VeryHaï* is an application that communicates with OSC, OpenVR, and haptic devices, for various uses.
+
+</GalleryItem>
+<GalleryItem 
+        name = 'Lightbox Viewer'
+        image = {require("@site/docs/products/gallery-img/lightbox-viewer.png").default}
+        url = '/docs/products/lightbox-viewer'
+>
+
+*Lightbox Viewer* lets you simultaneously visualize changes in shader material settings under different lighting conditions.
+
+</GalleryItem>
+<GalleryItem 
+        name = 'Animation Viewer'
+        image = {require("@site/docs/products/gallery-img/animation-viewer.png").default}
+        url = '/docs/products/animation-viewer'
+>
+
+*Animation Viewer* lets you preview animations in the Project view browser.
+
+</GalleryItem>
+<GalleryItem 
+        name = 'Blendshape Viewer'
+        image = {require("@site/docs/products/gallery-img/blendshape-viewer.png").default}
+        url = '/docs/products/blendshape-viewer'
+>
+
+*Blendshape Viewer* lets you visually browse blendshapes.
+
+</GalleryItem>
+<GalleryItem 
+        name = 'Property Finder'
+        image = {require("@site/docs/products/gallery-img/property-finder.png").default}
+        url = '/docs/products/property-finder'
+>
+
+*Property Finder* lets you view the animatable properties of an object.
+
+</GalleryItem>
+<GalleryItem 
+        name = 'ComboGestureExpressions'
+        image = {require("@site/docs/products/gallery-img/combo-gesture-expressions.png").default}
+        url = '/docs/products/combo-gesture-expressions'
+>
+
+*ComboGestureExpressions* lets you attach face expressions to hand gestures, and make it react to other Avatars 3.0 features.
+
+</GalleryItem>
+<GalleryItem 
+        name = 'Constraint Track Animation Creator'
+        image = {require("@site/docs/products/gallery-img/constraint-track-animation-creator.png").default}
+        url = '/docs/products/constraint-track-animation-creator'
+>
+
+*Constraint Track Animation Creator* lets you animate an object to slide along a track using constraints.
+
+</GalleryItem>
+<GalleryItem 
+        name = 'Expressions Menu Hierarchy Editor'
+        image = {require("@site/docs/products/gallery-img/expressions-menu-hierarchy-editor.png").default}
+        url = '/docs/products/expressions-menu-hierarchy-editor'
+>
+
+*Expressions Menu Hierarchy Editor* lets you edit Avatars 3.0 menus as if they were objects in your scene hierarchy.
+
+</GalleryItem>
+<GalleryItem 
+        name = 'IconGen'
+        image = {require("@site/docs/products/gallery-img/icon-gen.png").default}
+        url = '/docs/products/icon-gen'
+>
+
+*IconGen* lets you capture icons and generate icons.
+
+</GalleryItem>
+<GalleryItem 
+        name = 'Visual Expressions Editor'
+        image = {require("@site/docs/products/gallery-img/visual-expressions-editor.png").default}
+        url = '/docs/products/visual-expressions-editor'
+>
+
+*Visual Expressions Editor* lets you edit face expression animations.
+
+</GalleryItem>
+<GalleryItem 
+        name = 'Animator As Code'
+        image = {require("@site/docs/products/gallery-img/animator-as-code.jpg").default}
+        url = '/docs/products/animator-as-code'
+>
+
+*Animator As Code* is a Unity Editor API to generate Avatars 3.0 Animator layers and animations from a fluent builder syntax written in C#.
+
+</GalleryItem>
+<GalleryItem 
+        name = 'Modular Avatar As Code'
+        image = {require("@site/docs/products/gallery-img/modular-avatar-as-code.png").default}
+        url = '/docs/products/animator-as-code/functions/modular-avatar'
+>
+
+*Modular Avatar As Code* contains facilities to automate the creation of Modular Avatar components using Animator As Code.
+
+</GalleryItem>
+<GalleryItem 
+        name = 'Cloth Transfer'
+        image = {require("@site/docs/products/gallery-img/cloth-transfer.png").default}
+        url = '/docs/products/cloth-transfer'
+>
+
+*Cloth Transfer* lets you transfer cloth constraints across incompatible Unity versions.
+
+</GalleryItem>
+</div>
 ```
