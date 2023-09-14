@@ -28,6 +28,7 @@ import Gallery from '@site/src/pages/gallery.mdx'
 | [Constraint Track Animation Creator](./products/constraint-track-animation-creator) | 🛠️ Unity Editor tool | ⚠️ VRChat required  | MIT         | [Booth](https://hai-vr.booth.pm/items/3532857) |
 | [Expressions Menu Hierarchy Editor](./products/expressions-menu-hierarchy-editor)   | 🛠️ Unity Editor tool | ⚠️ VRChat required  | MIT         | [Booth](https://hai-vr.booth.pm/items/3696355) |
 | [⭐ IconGen](./products/icon-gen)                                                    | 🛠️ Unity Editor tool |                     | Proprietary |                                                |
+| [IconGen Thumbnail](./products/icon-gen#capture-thumbnails-for-vrchat-in-play-mode) | 🛠️ Unity Editor tool |                     | Proprietary | [Booth](https://hai-vr.booth.pm/items/5092126) |
 | [Visual Expressions Editor](./products/visual-expressions-editor)                   | 🛠️ Unity Editor tool |                     | MIT         | [Booth](https://hai-vr.booth.pm/items/3708550) |
 | [Animator As Code](./products/animator-as-code)                                     | 📐 Unity Editor API   | 🗨️ VRChat optional | MIT         |                                                |
 | [Modular Avatar As Code](./products/animator-as-code/functions/modular-avatar)      | 📐 Unity Editor API   | ⚠️ VRChat required  | MIT         |                                                |
