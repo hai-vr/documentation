@@ -417,6 +417,25 @@ When the parameter is active, the face expressions of your avatar will stop play
 
 *It is possible to use Write Defaults OFF with a big caveat: you won't be able to use the FX layer, therefore no toggles or other avatar gimmicks. CGE's MMD worlds compatibility will not be able to help you with this.*
 
+## Disable CGE blinking prevention when using eye tracking (Beta)
+
+:::note
+This option is not currently available, but it will be in a future release of ComboGestureExpressions.
+:::
+
+If you use an eye tracking hardware device on your HMD, you can choose to turn off ComboGestureExpressions' [eyes blinking prevention feature](#do-not-blink-when-eyes-are-closed) when eye tracking is enabled. **If you don't use an eye tracking hardware device on your HMD, don't bother with this!.**
+
+In the Compiler at the bottom:
+
+- If you use Jerry's Face Tracking [Adjerry91/VRCFaceTracking-Templates](https://github.com/Adjerry91/VRCFaceTracking-Templates):
+  - Define the field called *Eye tracking enabled parameter* to be `EyeTrackingActive` in the parameter name.
+  - Keep the *Eye tracking parameter type* to be *Modern*.
+- If you use another eye tracking template or system:
+  - Define the field called *Eye tracking enabled parameter* to be a parameter of your eye tracking that is enabled when your eye tracking device is enabled.
+  - Set the *Eye tracking parameter type* to be:
+    - *Modern* if that eye tracking system uses special blend trees, where the parameter is defined as a float within the animator. This is the most likely option if you use a modern eye tracking animator system.
+    - *Legacy Bool* if that eye tracking system uses a boolean within the animator as the toggle.
+
 ## Learn more
 
 - [Corrections](./additional-pages/corrections) - Learn about the various techniques used to fix animations.
