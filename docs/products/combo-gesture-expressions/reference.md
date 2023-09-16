@@ -428,7 +428,7 @@ If you use an eye tracking hardware device on your HMD, you can choose to turn o
 In the Compiler at the bottom:
 
 - If you use Jerry's Face Tracking [Adjerry91/VRCFaceTracking-Templates](https://github.com/Adjerry91/VRCFaceTracking-Templates):
-  - Define the field called *Eye tracking enabled parameter* to be `EyeTrackingActive` in the parameter name.
+  - Define the field called *Eye tracking enabled parameter* to be `EyeTrackingActive`
   - Keep the *Eye tracking parameter type* to be *Modern*.
 - If you use another eye tracking template or system:
   - Define the field called *Eye tracking enabled parameter* to be a parameter of your eye tracking that is enabled when your eye tracking device is enabled.
