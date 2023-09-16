@@ -417,7 +417,7 @@ When the parameter is active, the face expressions of your avatar will stop play
 
 *It is possible to use Write Defaults OFF with a big caveat: you won't be able to use the FX layer, therefore no toggles or other avatar gimmicks. CGE's MMD worlds compatibility will not be able to help you with this.*
 
-## Disable CGE blinking prevention when using eye tracking (Beta)
+## Disable blinking prevention when using eye tracking
 
 :::note
 This option is not currently available, but it will be in a future release of ComboGestureExpressions.
