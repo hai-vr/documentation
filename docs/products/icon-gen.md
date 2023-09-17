@@ -76,3 +76,10 @@ This feature is not available yet, please check back later!
 :::note
 This feature is not available yet, please check back later!
 :::
+
+## Changelog
+
+### IconGen Thumbnail
+
+- 1.0.1: Temporarily fix a memory leak by destroying the texture resource
+- 1.0.0: First release
