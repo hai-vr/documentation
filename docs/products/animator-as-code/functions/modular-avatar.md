@@ -31,8 +31,9 @@ To use the Modular Avatar As Code functions, add `using ModularAvatarAsCode.V1;`
 graph TD;
     MaAcStatic[static MaAc]:::roots-->|Create|MaAc:::roots;
     MaAc-->|On|MaAc;
+    MaAc-->|NewMergeAnimator<br>/UsingMergeAnimator|MaacMergeAnimator;
     MaAc-->|NewParameter|MaacParameter;
-    MaAc-->|EditMenuItemOnSelf<br>/EditMenuItem|MaacMenuItem ;
+    MaAc-->|EditMenuItemOnSelf<br>/EditMenuItem|MaacMenuItem;
     
     classDef disabled fill:#CCC
     classDef roots fill:#FCC
