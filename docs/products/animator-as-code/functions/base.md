@@ -106,6 +106,9 @@ Create a new animator controller. The asset is generated into the container.
 - `AacFlController NewAnimatorController(string name)` 💡<br/>
 Create a new animator controller with a name. However, the name is only used as a suffix for the asset. The asset is generated into the container.
 
+- `T DuplicateAsset<T>(T assetToDuplicate) where T : Object` 💡<br/>
+Duplicate a new asset into the container and return it. For example, use this to create modified material variants. This asset will be removed the same way as other generated assets.
+
 #### Reference VRChat assets
 
 :::info
