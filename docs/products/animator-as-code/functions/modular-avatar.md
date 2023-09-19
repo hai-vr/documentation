@@ -111,7 +111,7 @@ Edit one menu item on this object. It is not possible to declare multiple menu i
 Edit one menu item on the receiver object. It is not possible to declare multiple menu items on that same object.
 
 - `MaacMenuItem EditMenuItem(params GameObject[] receiversWithNulls)` <br/>
-Edit one menu item on all of the receiver objects. It is not possible to declare multiple menu items on those same objects. Function calls on the resulting objects will affect all parameters of that group. Use this in case you have multiple identical menu items scattered across different menus. The array can safely contain null values.
+Edit one menu item on all of the receiver objects. It is not possible to declare multiple menu items on those same objects. Function calls on the resulting objects will affect all of those menu items. Use this in case you have multiple identical menu items scattered across different menus. The array can safely contain null values.
 
 ## Merge Animator (MaacMergeAnimator)
 
