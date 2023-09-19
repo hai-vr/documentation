@@ -53,22 +53,22 @@ Create a new instance of MaAc targeting another object. Beware that this new ins
 #### Parameters
 
 - `MaAc ImportParameters(VRCExpressionParameters parameters)` <br/>
-Import parameters from an existing VRCExpressionParameters asset.
+Import parameters from an existing VRCExpressionParameters asset. If the object already contains a ModularAvatarParameters component: The first invocation of this function, or NewParameter function, whichever happens first, will wipe all existing parameters from that component.
 
 - `MaacParameter<float> NewParameter(MaacParameterType parameterType, string parameter)` <br/>
-Declare a new parameter of the given type. If you use Animator As Code, you can reuse the parameters using the other `NewParameter` method overloads or the `NewBoolToFloatParameter` method. Function calls on the resulting objects will affect all parameters of that group.
+Declare a new parameter of the given type. If you use Animator As Code, you can reuse the parameters using the other `NewParameter` method overloads or the `NewBoolToFloatParameter` method. Function calls on the resulting objects will affect all parameters of that group. If the object already contains a ModularAvatarParameters component: The first invocation of this function, or ImportParameters function, whichever happens first, will wipe all existing parameters from that component.
 
 - `MaacParameter<float> NewParameter(AacFlFloatParameter aacParameter)` <br/>
-Declare a new Float parameter, by default saved and synced. This creates a ModularAvatarParameters on the targeted object if it doesn't already exist.
+Declare a new Float parameter, by default saved and synced. This creates a ModularAvatarParameters on the targeted object if it doesn't already exist. If the object already contains a ModularAvatarParameters component: The first invocation of this function, or ImportParameters function, whichever happens first, will wipe all existing parameters from that component.
 
 - `MaacParameter<int> NewParameter(AacFlIntParameter aacParameter)` <br/>
-Declare a new Int parameter, by default saved and synced. This creates a ModularAvatarParameters on the targeted object if it doesn't already exist.
+Declare a new Int parameter, by default saved and synced. This creates a ModularAvatarParameters on the targeted object if it doesn't already exist. If the object already contains a ModularAvatarParameters component: The first invocation of this function, or ImportParameters function, whichever happens first, will wipe all existing parameters from that component.
 
 - `MaacParameter<bool> NewParameter(AacFlBoolParameter aacParameter)` <br/>
-Declare a new Bool parameter, by default saved and synced. This creates a ModularAvatarParameters on the targeted object if it doesn't already exist.
+Declare a new Bool parameter, by default saved and synced. This creates a ModularAvatarParameters on the targeted object if it doesn't already exist. If the object already contains a ModularAvatarParameters component: The first invocation of this function, or ImportParameters function, whichever happens first, will wipe all existing parameters from that component.
 
 - `MaacParameter<bool> NewBoolToFloatParameter(AacFlFloatParameter aacParameter)` <br/>
-Declare a new Bool parameter, acknowledging that the animator has exposed it as a Float. By default it is saved and synced. This creates a ModularAvatarParameters on the targeted object if it doesn't already exist.
+Declare a new Bool parameter, acknowledging that the animator has exposed it as a Float. By default it is saved and synced. This creates a ModularAvatarParameters on the targeted object if it doesn't already exist. If the object already contains a ModularAvatarParameters component: The first invocation of this function, or ImportParameters function, whichever happens first, will wipe all existing parameters from that component.
 
 #### Parameter groups
 
@@ -89,11 +89,17 @@ Declare new Bool parameters, acknowledging that the animator has exposed them as
 
 #### Merge Animator
 
-- `ModularAvatarMergeAnimator NewMergeAnimator(AacFlController controller, VRCAvatarDescriptor.AnimLayerType layerType)` <br/>
-Declare a new animator to be merged. Every call to NewMergeAnimator will create a new ModularAvatarMergeAnimator, as long as this instance of MaAc is reused.
+- `MaacMergeAnimator NewMergeAnimator(AacFlController controller, VRCAvatarDescriptor.AnimLayerType layerType)` <br/>
+Declare a new animator to be merged. Every call to NewMergeAnimator will create a new ModularAvatarMergeAnimator, as long as this instance of MaAc is reused. The path mode is set to Absolute.
 
-- `ModularAvatarMergeAnimator NewMergeAnimator(AnimatorController animator, VRCAvatarDescriptor.AnimLayerType layerType)` <br/>
-Declare a new raw animator to be merged. Every call to NewMergeAnimator will create a new ModularAvatarMergeAnimator, as long as this instance of MaAc is reused.
+- `MaacMergeAnimator NewMergeAnimator(AnimatorController animator, VRCAvatarDescriptor.AnimLayerType layerType)` <br/>
+Declare a new raw animator to be merged. Every call to NewMergeAnimator will create a new ModularAvatarMergeAnimator, as long as this instance of MaAc is reused. The path mode is set to Absolute.
+
+- `MaacMergeAnimator UsingMergeAnimator(ModularAvatarMergeAnimator mergeAnimator, AacFlController controller, VRCAvatarDescriptor.AnimLayerType layerType)` <br/>
+Writes over an existing MergeAnimator component, setting the controller and layer type to be merged. The path mode is set to Absolute.
+
+- `MaacMergeAnimator UsingMergeAnimator(ModularAvatarMergeAnimator mergeAnimator, AnimatorController animator, VRCAvatarDescriptor.AnimLayerType layerType)` <br/>
+Writes over an existing MergeAnimator component, setting the raw controller and layer type to be merged. The path mode is set to Absolute.
 
 #### Menu items
 
@@ -105,6 +111,11 @@ Edit one menu item on the receiver object. It is not possible to declare multipl
 
 - `MaacMenuItem EditMenuItem(params GameObject[] receiversWithNulls)` <br/>
 Edit one menu item on all of the receiver objects. It is not possible to declare multiple menu items on those same objects. Function calls on the resulting objects will affect all parameters of that group. Use this in case you have multiple identical menu items scattered across different menus. The array can safely contain null values.
+
+## Merge Animator (MaacMergeAnimator)
+
+- `MaacMergeAnimator Relative()` <br/>
+Mark the path mode as relative. By default, merge animators are made absolute.
 
 ## Parameter (MaacParameter<T\>)
 
