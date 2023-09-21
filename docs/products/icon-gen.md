@@ -18,54 +18,13 @@ However, *IconGen Thumbnail* is free for download.
 
 - Booth.pm ([IconGen Thumbnail (Play mode) - hai-vr - BOOTH](https://hai-vr.booth.pm/items/5092126))
 
-## How to use
-
-### Capture thumbnails for VRChat in Play Mode
-
-<video controls width="816">
-    <source src={require('./img/icon-gen/2023-09-13_17-27-18_ShareX.mp4').default}/>
-</video>
-
-To capture thumbnails for VRChat in Play Mode, go to *Window > Haï > IconGen Thumbnail*.
-
-![icon-gen-menu.png](./img/icon-gen/icon-gen-menu.png)
-
-In the window, click *Start capturing*.
-
-Move your scene camera to an angle that you like.
-
-Click *Save as PNG...* to save the thumbnail.
-
-The *Save again* button will save the picture at the previously saved location.
-
-![Unity_xuolgaXxqS.png](./img/icon-gen/Unity_xuolgaXxqS.png)
-
-:::caution
-Click *Stop capturing* when you're done, as the tool will consume resources during use.
-:::
-
-#### Options
-
-The thumbnail size will be 1200x900, the size of a VRChat thumbnail.
-
-For other sizes, use *[IconGen Capture](#capture-icons-for-the-expressions-menu)* instead.
-
-- **Use scene camera FOV:** Use the FOV of the scene camera.
-- **Field Of View:** Set Field Of View of the capture camera.
-- **Far Clip Plane:** Hide objects beyond this distance by setting the far clip plane of the capture camera.
-- **(extended):** Same as Far Clip Plane, but the slider goes to an extended range.
-- **Camera Roll:** Tilts the capture camera.
-- **Transparent:** Take a transparent screenshot if you want to edit it in an external program.
-- **Background:** Change the background color of the capture camera.
-- **Capture Sky:** Make the sky visible in the capture camera.
-- **Avoid Emulator Conflict:** Hides the Player and MirrorReflection layers from the capture camera, which avoids a conflict with Av3 Emulator in Play mode.
-- **Use Post Processing:** Make post processing volumes affect the capture camera.
-
-### Capture icons for the Expressions Menu
+## Capture icons for the Expressions Menu
 
 :::danger
 This feature is not available yet, please check back later!
 :::
+
+### How to use
 
 <video controls width="816">
     <source src={require('./img/icon-gen/2023-09-21_08-34-13_ShareX.mp4').default}/>
@@ -84,6 +43,8 @@ The *Save again* button will save the picture at the previously saved location.
 :::caution
 Click *Stop capturing* when you're done, as the tool will consume resources during use.
 :::
+
+### Options
 
 ![](./img/icon-gen/Unity_N4SK4Zqao0.png)
 
@@ -107,21 +68,21 @@ Click *Stop capturing* when you're done, as the tool will consume resources duri
   - **Preview Generator:** Select an existing IconGen assets to test how layers would be applied to this picture.
   - **Preview Icon:** Preview the picture with the IconGen asset applied.<br/>![](./img/icon-gen/Unity_FRkH0ykKvM.png)
 
-### Decorate and crop icons using layers
+## Decorate and crop icons using layers
 
 :::danger
 This feature is not available yet, please check back later!
 :::
 
-After capturing your icons, you can process all of them in bulk by applying layers to them.
+After capturing your icons, you can decorate and crop all of them in bulk to give them an unified style.
 
-#### Create an IconGen asset
+### Create an IconGen asset
 
 Create a new asset by right-clicking into the Project tab and selecting *Create > Haï > IconGen*.
 
 ![](./img/icon-gen/Unity_gCIY4BKhBo.png)
 
-#### Add multiple icons at once
+### Add multiple icons at once
 
 Drag and drop a group of icons by selecting the IconGen asset, then locking the Inspector tab, and then drag-and-drop the group of icons into the *Source icons* field.
 
@@ -129,25 +90,25 @@ Drag and drop a group of icons by selecting the IconGen asset, then locking the 
     <source src={require('./img/icon-gen/2023-09-21_07-32-58_ShareX.mp4').default}/>
 </video>
 
-#### Add icons one by one
+### Add icons one by one
 
 To add icons one by one, you can do the same as *Add multiple icons at once*, or you can alternatively add it in the *+* field and press the *+ Add* button.
 
 ![](./img/icon-gen/2023-09-21_07-38-29_ShareX.png)
 
-#### Rename your icons
+### Rename your icons
 
 By default, the name of your icons will be suffixed so that you can search for them in other interfaces.
 
 You can change the *Name Prefix* and *Name Suffix*.
 
-#### Use a template for layers
+### Use a template for layers
 
 *IconGen* comes shipped with pre-built templates which serve as examples on how to build layers.
 
 You can reuse an existing template by selecting one in the *Template* field.
 
-#### Build layers yourself
+### Build layers yourself
 
 You are encouraged to browse the existing templates shipped with IconGen to serve as inspiration on how to use the layers.
 
@@ -163,7 +124,7 @@ In this example, there are 3 layers:
 
 ![](./img/icon-gen/2023-09-21_07-48-40_ShareX.png)
 
-#### Mode
+### Choose a layer mode
 
 Layers can be set into different modes which determines how that layer will affect the existing picture.
 
@@ -173,12 +134,57 @@ Layers can be set into different modes which determines how that layer will affe
 - **Mask**: The picture is cut into the shape of the element.<br/>![](./img/icon-gen/2023-09-21_08-00-08_ShareX.png)
 - **Draw Under**: The element is drawn below.<br/>![](./img/icon-gen/2023-09-21_08-02-25_ShareX.png)
 - **Gray Out**: The picture is grayed out. If there is an element, then only the similar pixels will be grayed out.<br/>![](./img/icon-gen/2023-09-21_07-59-22_ShareX.png)
-- **Bottom Left**: The element is drawn at the bottom left.<br/>![](./img/icon-gen/2023-09-21_08-04-10_ShareX.png)
-- **Bottom Right**: The element is drawn at the bottom right.
-- **Top Left**: The element is drawn at the top left.
-- **Top Right**: The element is drawn at the top right.
-- **Inverse Mask**: The picture is cut away from the shape of the element.
-- **Custom Material**: The layer uses a custom material of your choice.
+- *Position modes*
+  - **Bottom Left**: The element is drawn at the bottom left.<br/>![](./img/icon-gen/2023-09-21_08-04-10_ShareX.png)
+  - **Bottom Right**: The element is drawn at the bottom right.
+  - **Top Left**: The element is drawn at the top left.
+  - **Top Right**: The element is drawn at the top right.
+- *Advanced modes*
+  - **Inverse Mask**: The picture is cut away from the shape of the element.
+  - **Custom Material**: The layer uses a custom material of your choice.
+
+## Capture thumbnails for VRChat in Play Mode
+
+### How to use
+
+<video controls width="816">
+    <source src={require('./img/icon-gen/2023-09-13_17-27-18_ShareX.mp4').default}/>
+</video>
+
+To capture thumbnails for VRChat in Play Mode, go to *Window > Haï > IconGen Thumbnail*.
+
+![icon-gen-menu.png](./img/icon-gen/icon-gen-menu.png)
+
+In the window, click *Start capturing*.
+
+Move your scene camera to an angle that you like.
+
+Click *Save as PNG...* to save the thumbnail.
+
+The *Save again* button will save the picture at the previously saved location.
+
+![Unity_xuolgaXxqS.png](./img/icon-gen/Unity_xuolgaXxqS.png)
+
+:::caution
+Click *Stop capturing* when you're done, as the tool will consume resources during use.
+:::
+
+### Options
+
+The thumbnail size will be 1200x900, the size of a VRChat thumbnail.
+
+For other sizes, use *[IconGen Capture](#capture-icons-for-the-expressions-menu)* instead.
+
+- **Use scene camera FOV:** Use the FOV of the scene camera.
+- **Field Of View:** Set Field Of View of the capture camera.
+- **Far Clip Plane:** Hide objects beyond this distance by setting the far clip plane of the capture camera.
+- **(extended):** Same as Far Clip Plane, but the slider goes to an extended range.
+- **Camera Roll:** Tilts the capture camera.
+- **Transparent:** Take a transparent screenshot if you want to edit it in an external program.
+- **Background:** Change the background color of the capture camera.
+- **Capture Sky:** Make the sky visible in the capture camera.
+- **Avoid Emulator Conflict:** Hides the Player and MirrorReflection layers from the capture camera, which avoids a conflict with Av3 Emulator in Play mode.
+- **Use Post Processing:** Make post processing volumes affect the capture camera.
 
 ## Changelog
 
