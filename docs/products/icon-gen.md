@@ -20,6 +20,8 @@ However, *IconGen Thumbnail* is free for download.
 
 ## Capture icons for the Expressions Menu
 
+Capture icons directly from the selected objects in the scene, with transparency.
+
 :::danger
 This feature is not available yet, please check back later!
 :::
@@ -30,26 +32,27 @@ This feature is not available yet, please check back later!
     <source src={require('./img/icon-gen/2023-09-21_08-34-13_ShareX.mp4').default}/>
 </video>
 
-To capture new icons from the scene, open *Window > Hai > IconGen Capture*.
+To capture new icons from the scene:
 
-In the window, click *Start capturing*.
-
-Move your scene camera to an angle that you like.
-
-Click *Save as PNG...* to save the icon.
-
-The *Save again* button will save the picture at the previously saved location.
-
-:::caution
-Click *Stop capturing* when you're done, as the tool will consume resources during use.
-:::
+- Open *Window > Hai > IconGen Capture*.
+- In the window, click *Start capturing*.
+- Move your scene camera to an angle that you like.
+- Click *Save as PNG...* to save the icon.
+- The *Save again* button will save the picture at the previously saved location.
+- Click *Stop capturing* when you're done, as the tool will consume resources during use.
 
 ### Options
 
 ![](./img/icon-gen/Unity_N4SK4Zqao0.png)
 
 - **Icon Size:** Change the size of the icon/picture.
+- *Buttons*
+  - **Capture:** Capture the picture once.
+  - **Start capturing:** Capture pictures continuously.
+  - **Save as PNG...:** Save the captured icon as a PNG. This does not include the icon preview.
+  - **Save again:** Save the picture at the previously saved location.
 - *Capture settings*
+  - **Only Scene Selection:** Only selected objects in the scene are shown.
   - **Use scene camera FOV:** Use the FOV of the scene camera.
   - **Field Of View:** Set Field Of View of the capture camera.
   - **Far Clip Plane:** Hide objects beyond this distance by setting the far clip plane of the capture camera.
@@ -67,14 +70,16 @@ Click *Stop capturing* when you're done, as the tool will consume resources duri
   - **Show Grid:** Show a grid on the picture to assist in alignment.<br/>![](./img/icon-gen/Unity_0TIJndaE7c.png)
   - **Preview Generator:** Select an existing IconGen assets to test how layers would be applied to this picture.
   - **Preview Icon:** Preview the picture with the IconGen asset applied.<br/>![](./img/icon-gen/Unity_FRkH0ykKvM.png)
+  - **Save baked preview as PNG...:** Save the preview as a PNG (grid is not included).
+  - **Save baked preview again:** Save the preview at the previously saved location.
 
 ## Decorate and crop icons using layers
+
+After capturing your icons, you can decorate and crop all of them in bulk to give them an unified style.
 
 :::danger
 This feature is not available yet, please check back later!
 :::
-
-After capturing your icons, you can decorate and crop all of them in bulk to give them an unified style.
 
 ### Create an IconGen asset
 
@@ -130,6 +135,11 @@ Layers can be set into different modes which determines how that layer will affe
 
 ![](./img/icon-gen/Unity_wnr2Xh3hUm.png)
 
+- *Buttons*
+  - **Capture:** Capture the picture once.
+  - **Start capturing:** Capture pictures continuously.
+  - **Save as PNG...:** Save the captured thumbnail as a PNG. This does not include the icon preview.
+  - **Save again:** Save the picture at the previously saved location.
 - **Overlay**: The element is drawn on top.<br/>![](./img/icon-gen/2023-09-21_08-01-03_ShareX.png)
 - **Mask**: The picture is cut into the shape of the element.<br/>![](./img/icon-gen/2023-09-21_08-00-08_ShareX.png)
 - **Draw Under**: The element is drawn below.<br/>![](./img/icon-gen/2023-09-21_08-02-25_ShareX.png)
