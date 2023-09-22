@@ -17,7 +17,9 @@ This does not require VRChat to run. It has been tested to work on Unity 2019, a
 ## Download ⭐
 
 - *IconGen* is currently available to Patreon supporters at any tier ([https://www.patreon.com/vr_hai](https://www.patreon.com/vr_hai)).
-  - Patreon ([Access to IconGen tool](https://www.patreon.com/posts/access-to-tool-89653332))
+  - This tool will remain exclusive to supporters for a minimum of 8 months (meaning at least until the beginning of June 2024). After this 8-month period is complete, I will decide what to do with this tool.
+    - See [Patreon rewards](../other/patreon).
+    - Patreon ([Access to IconGen tool](https://www.patreon.com/posts/access-to-tool-89653332))
 
 - *IconGen Thumbnail* only contains the [VRChat Play Mode thumbnail capture tool](#capture-thumbnails-for-vrchat-in-play-mode), and is distributed for free.
   - Booth.pm ([IconGen Thumbnail (Play mode) - hai-vr - BOOTH](https://hai-vr.booth.pm/items/5092126))
