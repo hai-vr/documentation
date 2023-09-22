@@ -1,5 +1,5 @@
 ﻿---
-title: 🔒 IconGen
+title: ⭐ IconGen
 ---
 
 # IconGen
@@ -16,11 +16,11 @@ This does not require VRChat to run. It has been tested to work on Unity 2019, a
 
 ## Download ⭐
 
-IconGen is not currently available for download, please check again later!
+- *IconGen* is currently available to Patreon supporters at any tier ([https://www.patreon.com/vr_hai](https://www.patreon.com/vr_hai)).
+  - Patreon ([Access to IconGen tool](https://www.patreon.com/posts/access-to-tool-89653332))
 
-However, *IconGen Thumbnail* is free for download.
-
-- Booth.pm ([IconGen Thumbnail (Play mode) - hai-vr - BOOTH](https://hai-vr.booth.pm/items/5092126))
+- *IconGen Thumbnail* only contains the [VRChat Play Mode thumbnail capture tool](#capture-thumbnails-for-vrchat-in-play-mode), and is distributed for free.
+  - Booth.pm ([IconGen Thumbnail (Play mode) - hai-vr - BOOTH](https://hai-vr.booth.pm/items/5092126))
 
 ## Capture icons for the Expressions Menu
 
