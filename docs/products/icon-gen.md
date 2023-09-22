@@ -70,7 +70,7 @@ To capture new icons from the scene:
   - **Far Clip Plane:** Hide objects beyond this distance by setting the far clip plane of the capture camera.
   - **(extended):** Same as Far Clip Plane, but the slider goes to an extended range.
   - **Camera Roll:** Tilts the capture camera.
-  - **Transparent:** Take a transparent screenshot if you want to edit it in an external program.
+  - **Transparent:** Choose the transparency of the picture.
     - *Transparent* will make the background transparent.
     - *Opaque* will force the image to be opaque.
     - *Transparent with Background* is an advanced mode that puts a transparent background of a specific color. Shaders can cause areas to be transparent, even when the background color is itself opaque.
@@ -84,6 +84,11 @@ To capture new icons from the scene:
   - **Preview Icon:** Preview the picture with the IconGen asset applied.<br/>![](./img/icon-gen/Unity_FRkH0ykKvM.png)
   - **Save baked preview as PNG...:** Save the preview as a PNG (grid is not included).
   - **Save baked preview again:** Save the preview at the previously saved location.
+- *Buttons*
+  - **Capture:** Capture the picture once.
+  - **Start capturing:** Capture pictures continuously.
+  - **Save as PNG...:** Save the captured thumbnail as a PNG. This does not include the icon preview.
+  - **Save again:** Save the picture at the previously saved location.
 
 ## Decorate and crop icons using layers
 
@@ -157,11 +162,6 @@ Layers can be set into different modes which determines how that layer will affe
 
 ![](./img/icon-gen/Unity_wnr2Xh3hUm.png)
 
-- *Buttons*
-  - **Capture:** Capture the picture once.
-  - **Start capturing:** Capture pictures continuously.
-  - **Save as PNG...:** Save the captured thumbnail as a PNG. This does not include the icon preview.
-  - **Save again:** Save the picture at the previously saved location.
 - **Overlay**: The element is drawn on top.<br/>![](./img/icon-gen/2023-09-21_08-01-03_ShareX.png)
 - **Mask**: The picture is cut into the shape of the element.<br/>![](./img/icon-gen/2023-09-21_08-00-08_ShareX.png)
 - **Draw Under**: The element is drawn below.<br/>![](./img/icon-gen/2023-09-21_08-02-25_ShareX.png)
