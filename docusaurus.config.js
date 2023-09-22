@@ -95,7 +95,7 @@ const config = {
             label: 'Help & Discord',
           },
           {
-            label: 'Patreon rewards',
+            label: 'Patreon rewards / pixivFANBOXの特典',
             to: '/docs/other/patreon',
           },
           {
@@ -132,6 +132,10 @@ const config = {
               {
                 label: 'Patreon',
                 href: 'https://www.patreon.com/vr_hai',
+              },
+              {
+                label: 'pixivFANBOX',
+                href: 'https://hai-vr.fanbox.cc/',
               },
               {
                 label: 'Twitter',
