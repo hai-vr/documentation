@@ -4,7 +4,7 @@ title: 🔒 IconGen
 
 # IconGen
 
-*IconGen* is an Unity Editor tool that lets you capture icons and generate icons.
+*IconGen* is an Unity Editor tool that lets you capture icons from objects in your scene, and then decorate and crop them.
 
 :::tip
 This does not require VRChat to run. It has been tested to work on Unity 2019, and should work on newer versions.
@@ -22,11 +22,15 @@ However, *IconGen Thumbnail* is free for download.
 
 Capture icons directly from the selected objects in the scene, with transparency.
 
-:::danger
-This feature is not available yet, please check back later!
-:::
-
 ### How to use
+
+:::tip
+You can change the editor language at the bottom of the panel.
+
+パネルの下部でエディターの言語を変更できます。
+
+![](./img/icon-gen/mspaint_ovJ8RiyRSo.png)
+:::
 
 <video controls width="816">
     <source src={require('./img/icon-gen/2023-09-21_08-34-13_ShareX.mp4').default}/>
@@ -77,8 +81,12 @@ To capture new icons from the scene:
 
 After capturing your icons, you can decorate and crop all of them in bulk to give them an unified style.
 
-:::danger
-This feature is not available yet, please check back later!
+:::tip
+You can change the editor language at the bottom of the panel.
+
+パネルの下部でエディターの言語を変更できます。
+
+![](./img/icon-gen/mspaint_ovJ8RiyRSo.png)
 :::
 
 ### Create an IconGen asset
@@ -111,7 +119,13 @@ You can change the *Name Prefix* and *Name Suffix*.
 
 *IconGen* comes shipped with pre-built templates which serve as examples on how to build layers.
 
+Browse the templates in *Assets/Hai/IconGen/Templates/*.
+
 You can reuse an existing template by selecting one in the *Template* field.
+
+<video controls width="816">
+    <source src={require('./img/icon-gen/2023-09-22_06-50-21_ShareX.mp4').default}/>
+</video>
 
 ### Build layers yourself
 
