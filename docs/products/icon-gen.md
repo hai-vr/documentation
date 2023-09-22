@@ -10,6 +10,10 @@ title: 🔒 IconGen
 This does not require VRChat to run. It has been tested to work on Unity 2019, and should work on newer versions.
 :::
 
+<video controls width="816">
+    <source src={require('./img/icon-gen/2023-09-22_07-31-44_ShareX.mp4').default}/>
+</video>
+
 ## Download ⭐
 
 IconGen is not currently available for download, please check again later!
