@@ -49,6 +49,7 @@ To capture new icons from the scene:
 - Open *Window > Hai > IconGen Capture*.
 - In the window, click *Start capturing*.
 - Move your scene camera to an angle that you like.
+- If you select objects in your scene, then only those objects will be captured.
 - Click *Save as PNG...* to save the icon.
 - The *Save again* button will save the picture at the previously saved location.
 - Click *Stop capturing* when you're done, as the tool will consume resources during use.
