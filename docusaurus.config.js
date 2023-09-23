@@ -95,7 +95,7 @@ const config = {
             label: 'Help & Discord',
           },
           {
-            label: 'Patreon rewards / pixivFANBOXの特典',
+            label: 'Patreon rewards',
             to: '/docs/other/patreon',
           },
           {
