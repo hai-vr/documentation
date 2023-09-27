@@ -85,11 +85,6 @@ To capture new icons from the scene:
   - **Preview Icon:** Preview the picture with the IconGen asset applied.<br/>![](./img/icon-gen/Unity_FRkH0ykKvM.png)
   - **Save baked preview as PNG...:** Save the preview as a PNG (grid is not included).
   - **Save baked preview again:** Save the preview at the previously saved location.
-- *Buttons*
-  - **Capture:** Capture the picture once.
-  - **Start capturing:** Capture pictures continuously.
-  - **Save as PNG...:** Save the captured thumbnail as a PNG. This does not include the icon preview.
-  - **Save again:** Save the picture at the previously saved location.
 
 ## Decorate and crop icons using layers
 
@@ -218,6 +213,11 @@ For other sizes, use *[IconGen Capture](#capture-icons-for-the-expressions-menu)
 - **Capture Sky:** Make the sky visible in the capture camera.
 - **Avoid Emulator Conflict:** Hides the Player and MirrorReflection layers from the capture camera, which avoids a conflict with Av3 Emulator in Play mode.
 - **Use Post Processing:** Make post processing volumes affect the capture camera.
+- *Buttons*
+  - **Capture:** Capture the picture once.
+  - **Start capturing:** Capture pictures continuously.
+  - **Save as PNG...:** Save the captured thumbnail as a PNG. This does not include the icon preview.
+  - **Save again:** Save the picture at the previously saved location.
 
 ## Changelog
 
