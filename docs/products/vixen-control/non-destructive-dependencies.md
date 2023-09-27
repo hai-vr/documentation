@@ -29,8 +29,7 @@ graph TD;
         direction LR
         VRCF_FC[VRCFury Full Controller]:::vrcf --- MA_MAA[Modular Avatar Merge Animator]:::ma;
     end
-    MergeAnimators --> |Playable layer generated|V_DBTPP[Vixen Merge All Vixen Direct Blend Trees]:::vixen;
-    V_DBTPP --> |Final avatar state|Optimizers:::optsub;
+    MergeAnimators --> |Playable layers generated|Optimizers:::optsub;
     subgraph Optimizers
         direction LR
         DARK[d4rkpl4y3r's Avatar Optimizer]:::opt --- ANAT[Anatawa12's Avatar Optimizer]:::ma;
@@ -54,6 +53,14 @@ This is part of the main Vixen Processor.
     - Vixen does not treat objects differently whether they're tagged EditorOnly or not in the scene.
 - For this reason, Vixen needs to run *after* properties are changed in the scene.
 
+## Vixen Create Animations
+
+This is part of the main Vixen Processor.
+
+- Vixen uses GetComponentsInChildren to find properties to animate.
+- The behaviour of GetComponentsInChildren should be based on the structure of the avatar hierarchy during Edit mode. 
+- For this reason, Vixen needs to run *before* other modules rearrange the structure of the avatar hierarchy in such a way that GetComponentsInChildren would return different results.
+
 ## Vixen Intermodule
 
 This is part of the main Vixen Processor.
@@ -67,14 +74,3 @@ This is part of the main Vixen Processor.
 
 - Vixen creates Modular Avatar components to be used by Modular Avatar.
 - For this reason, Vixen needs to run *before* Modular Avatar.
-
-## Vixen Merge all Vixen Direct Blend Trees
-
-This is a separate processor which is **not** part of the Vixen Processor.
-
-- Vixen may create layers with only one blend tree inside of it.
-- Since Vixen may create animators with paths relative to an embedded prefab, rather than with paths relative to the avatar root, these blend trees are not immediately merged into a single animator.
-    - **TODO: Evaluate if there's an alternative way to do this, or if we could just leave all paths absolute by design, even within embedded prefabs, since we don't need a pre-existing animator asset.**
-        - *This may become a problem when we'll allow Vixen Control to contain animations references with paths relative to the prefab.*
-- Vixen will merge all Vixen Direct Blend Trees after all of them have been merged into a single animator playable layer.
-- For this reason, this specific Vixen processor needs to run *after modules* that merge multiple animator into a single playable layer.

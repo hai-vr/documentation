@@ -14,7 +14,17 @@ This tool requires VRChat, and is currently incompatible with other apps and pla
 
 This tool is not yet available at this time.
 
+## Method of operation
+
+:::danger
+*Vixen Control* is not currently available. Please check back another time!
+:::
+
 ## Modular Avatar or VRCFury?
+
+:::danger
+*Vixen Control* is not currently available. Please check back another time!
+:::
 
 *Vixen Control* strongly recommends you to install [Modular Avatar](https://modular-avatar.nadena.dev/) in your project to benefit from all of its features.
 
@@ -67,7 +77,7 @@ The object specified in *Sample from* in the Properties section is only used as 
 You can exclude specific objects from being affected by adding them in the *Do not change these objects* list. This only excludes the specified objects in that list; not their children.
 
 :::caution
-If you have a property affecting a component of type *SkinnedMeshRenderer* type, it will not affect the components of type *MeshRenderer*.
+If you have a property affecting a component of type *MeshRenderer* type, it will not affect the components of type *SkinnedMeshRenderer*, and inversely.
 
 If you need to affect both, create an additional object group that samples from an object of the other type.
 :::
@@ -76,25 +86,44 @@ If you need to affect both, create an additional object group that samples from 
 
 After having chosen your target object or sample source, you can add the properties you are interested in.
 
-In the Properties section, locate the component that you are interested in, then click the corresponding filter.
+In the Properties section, locate the component that you are interested in, then browse the available properties by clicking the following buttons:
 
 - *Materials* contains the material properties, and the material slots.
 - *Blendshapes* contains the blendshapes of a SkinnedMeshRenderer.
 - *Other*/*Properties* contains all the other properties.
 
-Search for the properties you're interested in by typing in the search box. You separate your search keywords using spaces.
+Search for the properties you're interested in by typing in the search box.
 
 When you have located the property to change, press *Add*.
 
-To close the list of properties to add, press the *_* button.
+To close the search box, press the *_* button.
+
+:::tip
+You can separate search terms with a space, so the search query `color rim` can find results such as `material._RimLitTexColor`.
+:::
 
 ### Modifying the value of properties
 
 Once a property has been added, you can change its value by editing the fields, or in some cases, moving the slider or clicking the color picker.
 
-Properties sometimes have a type shown, such as *Color (XYZ)* or *Vector3*. We don't know what's the actual type of the property, so the displayed property is only a guess. In such cases, you can specify the type of the property yourself:
+Some properties have a type shown, such as *Color (XYZ)* or *Vector3*. We don't know what's the actual type of the property, so the displayed property is only a guess. In such cases, you can specify the type of the property yourself:
 
 - The types *Color (XYZ), Vector3, Position, Scale*, are compatible with each other.
 - The types *Color (XYZW), Vector4, Rotation,* are compatible with each other.
 
-*Position, Scale, or Rotation* are special types: You will need to specify a Transform in your scene to sample the local position, scale, or rotation values from.
+*Position, Scale, or Rotation* are special types: You will need to specify a Transform in your scene to sample the local position, local scale, or local rotation values from.
+
+## Create more complex conditions
+
+By default, *Vixen Control* lets you describe the **active state** of your control. The **inactive state** is simply the opposite of the toggles, using the current values of the properties in your scene.
+
+The control will switch between the active state and the inactive state depending on whether the menu item is active or not.
+
+That menu item controls a parameter.
+- If your control uses the *Simplified* mode, that parameter has a random name that is hidden from you.
+- If your control uses the *Advanced* mode, you get to choose the parameter name yourself.
+
+If you need more than one parameter, click *Add Conditional* to create a new control that uses the *Conditional* mode. 
+
+### Conditionals
+
