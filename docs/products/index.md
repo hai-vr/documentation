@@ -30,7 +30,7 @@ import Gallery from '@site/src/pages/gallery.mdx'
 | [⭐ IconGen](./products/icon-gen)                                                    | 🛠️ Unity Editor tool |                     | Proprietary |                                                |
 | [IconGen Thumbnail](./products/icon-gen#capture-thumbnails-for-vrchat-in-play-mode) | 🛠️ Unity Editor tool |                     | Proprietary | [Booth](https://hai-vr.booth.pm/items/5092126) |
 | [Visual Expressions Editor](./products/visual-expressions-editor)                   | 🛠️ Unity Editor tool |                     | MIT         | [Booth](https://hai-vr.booth.pm/items/3708550) |
-| [⭐ Vixen Control](./products/vixen-control)                                         | 🛠️ Unity Editor tool |                     | Proprietary |                                                |
+| [⭐ Vixen Control](./products/vixen)                                                 | 🛠️ Unity Editor tool |                     | Proprietary |                                                |
 | [Animator As Code](./products/animator-as-code)                                     | 📐 Unity Editor API   | 🗨️ VRChat optional | MIT         |                                                |
 | [Modular Avatar As Code](./products/animator-as-code/functions/modular-avatar)      | 📐 Unity Editor API   | ⚠️ VRChat required  | MIT         |                                                |
 | **Patchers**                                                                        |                       |                     |             |                                                |
