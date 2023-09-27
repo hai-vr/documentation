@@ -57,7 +57,7 @@ This is part of the main Vixen Processor.
 
 This is part of the main Vixen Processor.
 
-- Vixen uses GetComponentsInChildren to find properties to animate.
+- Vixen uses GetComponentsInChildren to find components to animate, when the Selection setting of an object group is set to Everything or Recursive Search.
 - The behaviour of GetComponentsInChildren should be based on the structure of the avatar hierarchy during Edit mode. 
 - For this reason, Vixen needs to run *before* other modules rearrange the structure of the avatar hierarchy in such a way that GetComponentsInChildren would return different results.
 
