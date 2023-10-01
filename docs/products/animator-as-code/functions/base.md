@@ -123,7 +123,7 @@ See functions specific to [VRChat](./vrchat#base-aacflbase).
 #### Create layers (Destructive workflow)
 
 :::info
-For VRChat-specific functions, see [VRChat (Destructive workflow)](./vrchat-destructive#extensions-for-base-aacflbase)
+For VRChat-specific functions, see [VRChat (Destructive workflow)](./vrchat-destructive-workflow#extensions-for-base-aacflbase)
 :::
 
 - `AacFlLayer CreateMainArbitraryControllerLayer(AnimatorController controller)` <br/>
@@ -138,7 +138,7 @@ Clears the topmost layer of an arbitrary AnimatorController, and returns it.
 #### Remove layers (Destructive workflow)
 
 :::info
-See functions specific to [VRChat (Destructive workflow)](./vrchat-destructive#extensions-for-base-aacflbase)
+See functions specific to [VRChat (Destructive workflow)](./vrchat-destructive-workflow#extensions-for-base-aacflbase)
 :::
 
 #### Create parameters without an animator 💡
@@ -217,13 +217,13 @@ Combine multiple Int parameters into a group.
   
 #### Set animator parameter value
 
-- `void OverrideValue(AacFlBoolParameter toBeForced, bool value)` <br/>
+- `AacFlLayer OverrideValue(AacFlBoolParameter toBeForced, bool value)` <br/>
 Set the Bool value of `toBeForced` parameter to `value` in the animator.
 
-- `void OverrideValue(AacFlFloatParameter toBeForced, float value)` <br/>
+- `AacFlLayer OverrideValue(AacFlFloatParameter toBeForced, float value)` <br/>
 Set the Float value of `toBeForced` parameter to `value` in the animator.
 
-- `void OverrideValue(AacFlIntParameter toBeForced, int value)` <br/>
+- `AacFlLayer OverrideValue(AacFlIntParameter toBeForced, int value)` <br/>
 Set the Int value of `toBeForced` parameter to `value` in the animator.
 
 #### Edit avatar mask
@@ -231,10 +231,10 @@ Set the Int value of `toBeForced` parameter to `value` in the animator.
 - `AacFlLayer WithAvatarMask(AvatarMask avatarMask)` <br/>
 Set the Avatar Mask of the layer.
 
-- `void WithAvatarMaskNoTransforms()` <br/>
+- `AacFlLayer WithAvatarMaskNoTransforms()` <br/>
 Set the Avatar Mask of the layer to be an Avatar Mask which denies all transforms. The asset is generated into the container.
 
-- `void ResolveAvatarMask(Transform[] paths)` <br/>
+- `AacFlLayer ResolveAvatarMask(Transform[] paths)` <br/>
 Set the Avatar Mask of the layer to be an Avatar Mask that allows the specified transforms. If `paths` is an empty array, all transforms are denied, which is effectively the same as calling `.WithAvatarMaskNoTransforms()`. The asset is generated into the container.
 
 
