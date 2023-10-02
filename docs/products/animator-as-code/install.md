@@ -10,7 +10,7 @@ This is the work-in-progress documentation for Animator As Code **V1**, which ha
 
 Animator As Code V1 can be installed using VRChat Creator Companion.
 
-- Use this link to **[install add our listing to VCC](vcc://vpm/addRepo?url=https://hai-vr.github.io/vpm-listing/index.json)**.
+- Use this link to **[install our listing to VCC](vcc://vpm/addRepo?url=https://hai-vr.github.io/vpm-listing/index.json)**.
 
 ## Packages
 
