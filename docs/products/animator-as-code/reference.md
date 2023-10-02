@@ -1,5 +1,5 @@
 ﻿---
-sidebar_position: 3
+sidebar_position: 4
 ---
 
 # Reference manual
@@ -19,6 +19,12 @@ Animator As Code is generally used in the following steps:
 - Create the transitions
 
 ## Declare an Animator As Code (AAC)
+
+:::caution
+These steps describe how to use Animator As Code without the help of any other dependency.
+
+It may be much easier to use Animator As Code when it is integrated with Modular Avatar and NDMF.
+:::
 
 In order to use Animator As Code (AAC), first, declare it with a configuration.
 

@@ -9,6 +9,10 @@ title: "NDMF Processor"
 This is the work-in-progress documentation for Animator As Code **V1**, which has not yet been released. The last public version of Animator As Code is V0.
 :::
 
+:::caution
+The API contract for Modular Avatar As Code V1 is highly unstable. Use at your own risk.
+:::
+
 This integration lets you write scripts that run when an avatar is being processed by [NDMF (Non-Destructive Modular Framework)](https://github.com/bdunderscore/ndmf). An Animator As Code instance (`AacFlBase`) is provided for you.
 
 ## Example
@@ -61,7 +65,7 @@ namespace NdmfAsCode.V1.Example
 
 ## Use a shared Direct Blend Tree
 
-If you're familiar with the concept of sharing a Direct Blend Tree, the processor can merge them all for you.
+If you're familiar with the concept of sharing a Direct Blend Tree, the processor can merge them all for you, across all scripts that use `AacPlugin`.
 
 ```csharp
 #if UNITY_EDITOR
@@ -109,11 +113,26 @@ namespace NdmfAsCode.V1.Example
 #endif
 ```
 
+## How to use
+
+To use NDMF Processor:
+
+- Create a new MonoBehaviour class.
+- Create a new class that inherits from `AacPlugin<YourBehaviour>`
+- Override the method `protected override AacPluginOuput Execute()`
+- Use the `aac` field to access an instance of AAC.
+- Use the `my` field to access your MonoBehaviour instance.
+- Make the method `return AacPluginOuput.Regular();`
+
+To use that processor, add new component somewhere in your avatar that uses that behaviour.
+
+You can have multiple of these, and the script will be executed for each instance.
+
 ## Plugin (AacPlugin<T\> where T : MonoBehaviour)
 
 Define `T` to be your MonoBehaviour component.
 
-## Properties
+### Properties
 
 - `protected AacFlBase aac { get; private set; }` <br/>
 This field contains the Animator As Code instance. To customize the configuration, see [Overrides](#overrides) below.
@@ -140,3 +159,11 @@ The root transform is used to determine the relative paths to the object referen
 
 - `protected virtual bool UseWriteDefaults(Component script, BuildContext context) => false;` <br/>
 Choose the WriteDefaults state that will be used by default when creating states.
+
+## NDMF Sequence
+
+#### In BuildPhase.Generating
+
+- All user plugins inheriting from `AacPlugin<T>` run before plugin `NdmfAacDBTPlugin` does.
+- The plugin `NdmfAacDBTPlugin` collects all direct blend trees declared by user plugins.
+- Plugins are expected to generate Modular Avatar components. Modular Avatar components belong in the Transforming build phase.
