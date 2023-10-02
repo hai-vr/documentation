@@ -11,18 +11,19 @@ This is the work-in-progress documentation for Animator As Code **V1**, which ha
 
 This integration lets you write scripts that run when an avatar is being processed by [NDMF (Non-Destructive Modular Framework)](https://github.com/bdunderscore/ndmf). An Animator As Code instance (`AacFlBase`) is provided for you.
 
+## Example
+
 Here's an example of a toggle written with the NDMF Processor:
 
 ```csharp
 #if UNITY_EDITOR
-using System;
 using ModularAvatarAsCode.V1;
 using nadena.dev.ndmf;
 using NdmfAsCode.V1.Example;
 using UnityEngine;
 using VRC.SDK3.Avatars.Components;
 
-[assembly: ExportsPlugin(typeof(NdmfAsCodeToggleProcessor))]
+[assembly: ExportsPlugin(typeof(AacToggleProcessor))]
 namespace NdmfAsCode.V1.Example
 {
     public class NdmfAsCodeToggle : MonoBehaviour
@@ -32,14 +33,10 @@ namespace NdmfAsCode.V1.Example
         public Texture2D icon;
     }
 
-    public class NdmfAsCodeToggleProcessor : AbstractNdmfAsCodePlugin
+    public class AacToggleProcessor : AacPlugin<NdmfAsCodeToggle>
     {
-        protected override Type ScriptType => typeof(NdmfAsCodeToggle);
-
-        protected override NdmfAsCodeOutput Execute()
+        protected override AacPluginOuput Execute()
         {
-            var my = (NdmfAsCodeToggle)script;
-            
             var ctrl = aac.NewAnimatorController();
             var fx = ctrl.NewLayer();
             
@@ -50,115 +47,85 @@ namespace NdmfAsCode.V1.Example
             off.TransitionsTo(on).When(param.IsTrue());
             on.TransitionsTo(off).When(param.IsFalse());
 
-            var maAc = MaAc.Create(script.gameObject);
+            var maAc = MaAc.Create(my.gameObject);
             maAc.NewMergeAnimator(ctrl, VRCAvatarDescriptor.AnimLayerType.FX);
             maAc.NewParameter(param);
-            maAc.EditMenuItemOnSelf().Toggle(param).Name(my.gameObject.name).WithIcon(my.icon);
+            maAc.EditMenuItemOnSelf().Toggle(param).Name(my.name).WithIcon(my.icon);
 
-            return NdmfAsCodeOutput.Regular();
+            return AacPluginOuput.Regular();
         }
     }
 }
 #endif
 ```
 
-## Minimal template
+## Use a shared Direct Blend Tree
 
-Change `YourScript` and `YourScriptProcessor` with the names of your choice.
+If you're familiar with the concept of sharing a Direct Blend Tree, the processor can merge them all for you.
 
 ```csharp
 #if UNITY_EDITOR
-using System;
 using ModularAvatarAsCode.V1;
 using nadena.dev.ndmf;
 using NdmfAsCode.V1.Example;
 using UnityEngine;
 using VRC.SDK3.Avatars.Components;
 
-[assembly: ExportsPlugin(typeof(NdmfAsCodeToggleProcessor))]
-namespace YourNamespace
+[assembly: ExportsPlugin(typeof(AacToggleProcessor))]
+namespace NdmfAsCode.V1.Example
 {
-    public class YourScript : MonoBehaviour
-    {
-    }
-
-    public class YourScriptProcessor : AbstractNdmfAsCodePlugin
-    {
-        protected override Type ScriptType => typeof(YourScript);
-
-        protected override NdmfAsCodeOutput Execute()
-        {
-            var my = (YourScript)script;
-            
-            var ctrl = aac.NewAnimatorController();
-            var fx = ctrl.NewLayer();
-            
-            // var maAc = MaAc.Create(script.gameObject);
-            // maAc.NewMergeAnimator(ctrl, VRCAvatarDescriptor.AnimLayerType.FX);
-
-            return NdmfAsCodeOutput.Regular();
-        }
-    }
-}
-#endif
-```
-
-## Direct Blend Trees merger
-
-If you're familiar with the concept of merging blend trees, the processor can merge them all for you.
-
-```csharp
-#if UNITY_EDITOR
-using System;
-using nadena.dev.ndmf;
-using NdmfAsCode.V1;
-using UnityEngine;
-using YourNamespace;
-
-[assembly: ExportsPlugin(typeof(YourScriptProcessor))]
-namespace YourNamespace
-{
-    public class YourScript : MonoBehaviour
+    public class NdmfAsCodeToggleDBT : MonoBehaviour
     {
         public string parameter;
+        public GameObject[] objects;
+        public Texture2D icon;
     }
 
-    public class YourScriptProcessor : AbstractNdmfAsCodePlugin
+    public class AacToggleDBTProcessor : AacPlugin<NdmfAsCodeToggleDBT>
     {
-        protected override Type ScriptType => typeof(YourScript);
-
-        protected override NdmfAsCodeOutput Execute()
+        protected override AacPluginOuput Execute()
         {
-            var my = (YourScript)script;
-
-            var bt = aac.NewBlendTree()
-                .Simple1D(aac.NoAnimator().FloatParameter(my.parameter));
-                // .WithAnimation(aac.NewClip()..., 0)
-                // .WithAnimation(aac.NewClip()..., 1)
+            // Since this does not produce a layer but still needs Float parameters, use NoAnimator().
+            // NDMF Processor will create the necessary parameters into the direct blend tree animator.
+            var param = aac.NoAnimator().FloatParameter(my.parameter);
             
-            return NdmfAsCodeOutput.MergeIntoDirectBlendTree(bt.BlendTree);
+            var bt = aac.NewBlendTree()
+                .Simple1D(param)
+                .WithAnimation(aac.NewClip().Toggling(my.objects, false), 0)
+                .WithAnimation(aac.NewClip().Toggling(my.objects, true), 1);
+
+            var maAc = MaAc.Create(my.gameObject);
+            // Blend Trees use a Float parameter, but the Expression Parameter can declare it as a bool.
+            // Use the functions NewBoolToFloatParameter(...) and ToggleBoolToFloat(...) to reuse the parameter
+            maAc.NewBoolToFloatParameter(param);
+            maAc.EditMenuItemOnSelf().ToggleBoolToFloat(param).Name(my.name).WithIcon(my.icon);
+            
+            // TODO: We need a way to store override values! Such as One = 1, or Smoothing = 0.8.
+            // This may need to be added in the output object
+            return AacPluginOuput.DirectBlendTree(VRCAvatarDescriptor.AnimLayerType.FX, bt);
         }
     }
 }
 #endif
 ```
 
-## Plugin (AbstractNdmfAsCodePlugin)
+## Plugin (AacPlugin<T\> where T : MonoBehaviour)
 
-- `protected AacFlBase aac;` <br/>
+Define `T` to be your MonoBehaviour component.
+
+## Properties
+
+- `protected AacFlBase aac { get; private set; }` <br/>
 This field contains the Animator As Code instance. To customize the configuration, see [Overrides](#overrides) below.
 
-- `protected Component script;` <br/>
-This field contains the instance of your targeted script being processed. You should immediately cast this script to use it.
+- `protected T my { get; private set; }` <br/>
+This field contains the instance of your targeted script being processed.
 
-- `protected BuildContext buildContext;` <br/>
+- `protected BuildContext buildContext { get; private set; }` <br/>
 This field contains the build context of NDMF.
 
 
 ### Overrides
-
-- `protected virtual Type ScriptType` <br/>
-Define the component type that you are targeting. This must be overriden in your processor.
 
 You may override those methods if necessary:
 
@@ -172,4 +139,4 @@ The root transform is used to determine the relative paths to the object referen
 (At the moment, the DefaultValueRoot is not used in Animator As Code. It is meant to be used for sampling the default values of animated properties, so it may be different from the AnimatorRoot above)
 
 - `protected virtual bool UseWriteDefaults(Component script, BuildContext context) => false;` <br/>
-Choose the default WriteDefaults state.
+Choose the WriteDefaults state that will be used by default when creating states.
