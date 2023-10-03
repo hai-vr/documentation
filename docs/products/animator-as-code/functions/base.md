@@ -158,14 +158,14 @@ Create a new layer. You cannot invoke this method multiple times on the same con
 
 ## Layer (AacFlLayer)
 
-- `AacFlState NewState(string name)` <br/>
-Create a new state, initially positioned below the last generated state of this layer.
+- `AacFlState NewState(string name)` 🔺<br/>
+Create a new state, initially positioned below the last generated state of this layer. 🔺 If the name is already used, a number will be appended at the end.
 
-- `AacFlState NewState(string name, int x, int y)` <br/>
-Create a new state at a specific position `x` and `y`, in grid units. The grid size is defined in the DefaultsProvider of the AacConfiguration of AAC. `x` positive goes right, `y` positive goes down.
+- `AacFlState NewState(string name, int x, int y)` 🔺<br/>
+Create a new state at a specific position `x` and `y`, in grid units. The grid size is defined in the DefaultsProvider of the AacConfiguration of AAC. `x` positive goes right, `y` positive goes down. 🔺 If the name is already used, a number will be appended at the end.
 
 - `AacFlStateMachine NewSubStateMachine(string name)` 💡<br/>
-  Create a new state machine, initially positioned below the last generated state of this layer.
+  Create a new state machine, initially positioned below the last generated state of this layer. 🔺 If the name is already used, a number will be appended at the end.
 
 #### Create layer transitions
 
@@ -247,8 +247,8 @@ Create a new state machine, initially positioned below the last generated state 
 Creates a new transition of the entire state machine node to itself, which is evaluated after the state machine commits to an exit transitions.
 
 - `AacFlStateMachine Exits()` 💡<br/>
-Create a transition from this state machine node to the exit.
-
+Create a transition from this state machine node to the exit. 🔺 If the name is already used, a number will be appended at the end.
+  
 
 ## No Animator (AacFlNoAnimator) 💡
 
@@ -385,8 +385,17 @@ Change a blendShape of a skinned mesh. This lasts one frame.
 - `AacFlClip BlendShape(SkinnedMeshRenderer[] rendererWithNulls, string blendShapeName, float value)` <br/>
 Change a blendShape of multiple skinned meshes. This lasts one frame. The array can safely contain null values.
 
+- `AacFlClip Positioning(GameObject[] gameObjectsWithNulls, Vector3 localPosition)` 💡<br/>
+Change the position of a GameObject in local space. This lasts one frame. This lasts one frame. The array can safely contain null values. // FIXME: This is weird, this should be a Transform array, and also this needs a single-object overload.
+
+- `AacFlClip RotatingUsingEulerInterpolation(GameObject[] gameObjectsWithNulls, Vector3 localEulerAngles)` 💡<br/>
+Change the rotation of GameObjects in local space, with Euler interpolation. This lasts one frame. The array can safely contain null values. // FIXME: This is weird, this should be a Transform array, and also this needs a single-object overload.
+
+- `AacFlClip RotatingUsingQuaternionInterpolation(GameObject[] gameObjectsWithNulls, Quaternion localQuaternionAngles)` 💡<br/>
+  Change the rotation of GameObjects in local space, with Quaternion interpolation. This lasts one frame. The array can safely contain null values. // FIXME: This is weird, this should be a Transform array, and also this needs a single-object overload.
+
 - `AacFlClip Scaling(GameObject[] gameObjectsWithNulls, Vector3 scale)` <br/>
-Scale GameObjects. This lasts one frame. The array can safely contain null values. // FIXME: This is weird, this should be a Transform array, and also this needs a single-object overload.
+Change the local scale of GameObjects. This lasts one frame. The array can safely contain null values. // FIXME: This is weird, this should be a Transform array, and also this needs a single-object overload.
 
 - `AacFlClip Toggling(GameObject gameObject, bool value)` <br/>
  Enable or disable a GameObject. This lasts one frame.
@@ -402,6 +411,15 @@ Swap a material of a Renderer on the specified slot (indexed at 0). This lasts o
 
 - `AacFlClip SwappingMaterial(ParticleSystem particleSystem, int slot, Material material)` <br/>
 Swap a material of a Particle System on the specified slot (indexed at 0). This lasts one frame. This effectively takes the ParticleSystemRenderer of the component.
+
+
+### Mutli-frame Animations 💡
+
+- `AacFlClip BlendShape(SkinnedMeshRenderer renderer, string blendShapeName, AnimationCurve animationCurve)` 💡<br/>
+Change a blendShape of a skinned meshe, with an animation curve.
+
+- `AacFlClip BlendShape(SkinnedMeshRenderer[] rendererWithNulls, string blendShapeName, AnimationCurve animationCurve)` 💡<br/>
+Change a blendShape of multiple skinned meshes, with an animation curve. The array can safely contain null values.
 
 
 ### Clip Editing
@@ -447,6 +465,12 @@ Animates a color property of a component. The runtime type of the component will
 - `AacFlSettingCurveColor AnimatesColor(Component[] anyComponents, string property)` <br/>
 Animates a color property of several components. The runtime type of the component will be used. // FIXME: Safety is not provived on nulls. It should probably be, for convenience.
 
+- `AacFlSettingCurveColor AnimatesHDRColor(Component anyComponent, string property)` 💡<br/>
+  Animates a HDR color property of a component (uses XYZW instead of RGBA). The runtime type of the component will be used. // FIXME: this needs multi-component, with safety
+
+- `AacFlSettingCurveObjectReference AnimatesObjectReference(Component anyComponent, string property)` 💡<br/>
+  Animates an object reference of a component. The runtime type of the component will be used. // FIXME: this needs multi-component, with safety
+
 - `EditorCurveBinding BindingFromComponent(Component anyComponent, string propertyName)` <br/>
 Returns an EditorCurveBinding of a component, relative to the animator root. The runtime type of the component will be used. This is meant to be used in conjunction with traditional animation APIs.
 
@@ -471,12 +495,14 @@ Start defining the keyframes with a lambda expression, expressing the unit.
 
 ### Curve of type Color (AacFlSettingCurveColor)
 
-
 - `void WithOneFrame(Color desiredValue)` <br/>
-Define the curve to be exactly one frame by defining two constant keyframes, usually lasting 1/60th of a second, with the desired color value.
+Define the curve to be exactly one frame by defining two constant keyframes, usually lasting 1/60th of a second, with the desired object reference value.
 
-- `void WithKeyframes(AacFlUnit unit, Action<AacFlSettingKeyframesColor> action)` <br/>
-Start defining the keyframes with a lambda expression, expressing the unit.
+
+### Curve of type ObjectReference (AacFlSettingCurveObjectReference) 💡
+
+- `void WithOneFrame(Object objectReference)` 💡<br/>
+  Define the curve to be exactly one frame by defining two constant keyframes, usually lasting 1/60th of a second, with the desired color value.
 
 
 ### Keyframes of type Float (AacFlSettingKeyframes)
