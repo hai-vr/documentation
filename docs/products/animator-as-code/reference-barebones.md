@@ -2,15 +2,24 @@
 sidebar_position: 8
 ---
 
-# Old way
+# Barebones way
 
 :::danger
 This is the work-in-progress documentation for Animator As Code **V1**, which has not yet been released. The last public version of Animator As Code is V0.
 :::
 
+This section describes how to initialize Animator As Code in an environment where no integration is available.
+
+This is good for:
+
+- Generating Animator Controller assets on-disk.
+- Using Animator As Code in a non-VRChat Avatars project.
+
+If you are using VRChat Avatars, it is highly recommended that you look into the [non-destructive workflow examples](getting-started).
+
 ## Typical animator creation steps
 
-Animator As Code is generally used in the following steps:
+If you use Animator As Code barebones, it is generally used in the following steps:
 
 - Declare an Animator As Code
 - Create one or multiple layers
@@ -23,7 +32,7 @@ Animator As Code is generally used in the following steps:
 :::caution
 These steps describe how to use Animator As Code without the help of any other dependency.
 
-It may be much easier to use Animator As Code when it is integrated with Modular Avatar and NDMF.
+In VRChat Avatars, it may be much easier to use Animator As Code [when it is integrated with Modular Avatar and NDMF](getting-started).
 :::
 
 In order to use Animator As Code (AAC), first, declare it with a configuration.

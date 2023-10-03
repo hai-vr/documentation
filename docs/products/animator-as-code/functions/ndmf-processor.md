@@ -39,7 +39,7 @@ namespace NdmfAsCode.V1.Example
 
     public class AacToggleProcessor : AacPlugin<NdmfAsCodeToggle>
     {
-        protected override AacPluginOuput Execute()
+        protected override AacPluginOutput Execute()
         {
             var ctrl = aac.NewAnimatorController();
             var fx = ctrl.NewLayer();
@@ -56,7 +56,7 @@ namespace NdmfAsCode.V1.Example
             maAc.NewParameter(param);
             maAc.EditMenuItemOnSelf().Toggle(param).Name(my.name).WithIcon(my.icon);
 
-            return AacPluginOuput.Regular();
+            return AacPluginOutput.Regular();
         }
     }
 }
@@ -87,7 +87,7 @@ namespace NdmfAsCode.V1.Example
 
     public class AacToggleDBTProcessor : AacPlugin<NdmfAsCodeToggleDBT>
     {
-        protected override AacPluginOuput Execute()
+        protected override AacPluginOutput Execute()
         {
             // Since this does not produce a layer but still needs Float parameters, use NoAnimator().
             // NDMF Processor will create the necessary parameters into the direct blend tree animator.
@@ -106,7 +106,7 @@ namespace NdmfAsCode.V1.Example
             
             // TODO: We need a way to store override values! Such as One = 1, or Smoothing = 0.8.
             // This may need to be added in the output object
-            return AacPluginOuput.DirectBlendTree(VRCAvatarDescriptor.AnimLayerType.FX, bt);
+            return AacPluginOutput.DirectBlendTree(VRCAvatarDescriptor.AnimLayerType.FX, bt);
         }
     }
 }
@@ -119,10 +119,10 @@ To use NDMF Processor:
 
 - Create a new MonoBehaviour class.
 - Create a new class that inherits from `AacPlugin<YourBehaviour>`
-- Override the method `protected override AacPluginOuput Execute()`
+- Override the method `protected override AacPluginOutput Execute()`
 - Use the `aac` field to access an instance of AAC.
 - Use the `my` field to access your MonoBehaviour instance.
-- Make the method `return AacPluginOuput.Regular();`
+- Make the method `return AacPluginOutput.Regular();`
 
 To use that processor, add new component somewhere in your avatar that uses that behaviour.
 
