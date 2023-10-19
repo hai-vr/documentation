@@ -51,7 +51,7 @@ Define your menu title, icon, control type, and whether the menu state is saved 
 :::tip
 Only the Simplified mode is described in this section.
 
-For more the other modes, see [Additional Modes](./vixen/modes).
+[//]: # (For more the other modes, see [Additional Modes]&#40;./vixen/modes&#41;.)
 :::
 
 ## Toggle objects and components
