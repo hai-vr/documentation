@@ -1,10 +1,10 @@
 ﻿---
-title: 🔒 Vixen Control
+title: 🔒 Vixen
 ---
 
-# Vixen Control
+# Vixen
 
-*Vixen Control* is an Unity Editor tool that provides another approach to create interactive elements and toggles on your avatar.
+*Vixen* is an Unity Editor tool that provides another approach to create interactive elements and toggles on your avatar.
 
 :::caution
 This tool requires VRChat, and is currently incompatible with other apps and platforms.
@@ -17,27 +17,47 @@ This tool is not yet available at this time.
 ## Method of operation
 
 :::danger
-*Vixen Control* is not currently available. Please check back another time!
+*Vixen* is not currently available. Please check back another time!
 :::
+
+*Vixen* is a **non-destructive** tool. The animators, menus and parameters are generated right before your avatar uploads, leaving your assets on-disk clean.
 
 ## Modular Avatar or VRCFury?
 
 :::danger
-*Vixen Control* is not currently available. Please check back another time!
+*Vixen* is not currently available. Please check back another time!
 :::
 
-*Vixen Control* strongly recommends you to install [Modular Avatar](https://modular-avatar.nadena.dev/) in your project to benefit from all of its features.
+*Vixen* is founded on top of [Modular Avatar](https://modular-avatar.nadena.dev/), and uses the NDM Framework.
 
-However, if you use [VRCFury](https://vrcfury.com/) and you cannot install Modular Avatar, you can use [VRCFury's Toggle](https://vrcfury.com/components/toggle) to create toggles, and switch the *Vixen Control* mode to *Intermodule*.
+It should be compatible with projects that use [VRCFury](https://vrcfury.com/).
 
-In *Intermodule* mode, *Vixen Control* will automatically generate animations that can then be used by VRCFury. **Without Modular Avatar, some features from *Vixen Control* will not be usable.**
+However, if you use [VRCFury](https://vrcfury.com/) and you cannot install Modular Avatar, you can use [VRCFury's Toggle](https://vrcfury.com/components/toggle) to create toggles, and switch the *Vixen* mode to *Export Animations*.
 
-If you do not wish to use Modular Avatar nor VRCFury, you can still switch *Vixen Control* mode to *Intermodule*.
+In *Export Animations* mode, *Vixen* will automatically generate animations that can then be used with VRCFury. **Without Modular Avatar, some features from *Vixen* will not be usable.**
+
+## Getting started
+
+:::danger
+*Vixen* is not currently available. Please check back another time!
+:::
+
+## Menu (Simple)
+
+Adding your *Vixen* object automatically creates a menu item for that control.
+
+Define your menu title, icon, control type, and whether the menu state is saved between avatar and world changes.
+
+:::tip
+Only the Simplified mode is described in this section.
+
+For more the other modes, see [Additional Modes](./vixen/modes).
+:::
 
 ## Toggle objects and components
 
 :::danger
-*Vixen Control* is not currently available. Please check back another time!
+*Vixen* is not currently available. Please check back another time!
 :::
 
 In *Toggle objects*, drag and drop objects from your avatar into the *Enable these when active* slot to enable them, or the *Disable these when active* to disable them.
@@ -49,7 +69,7 @@ Additionally, the objects or components in *Enable these when active* will be di
 ## Change properties
 
 :::danger
-*Vixen Control* is not currently available. Please check back another time!
+*Vixen* is not currently available. Please check back another time!
 :::
 
 ### Changing specific objects
@@ -106,6 +126,10 @@ You can separate search terms with a space, so the search query `color rim` can 
 
 Once a property has been added, you can change its value by editing the fields, or in some cases, moving the slider or clicking the color picker.
 
+The checkbox at the far left of the property name lets you choose whether the property value applies when it's active or when it's not.
+- If it's checked, then the value you set applies when the control is active.
+- If it's unchecked, then the value you set applies when the control is inactive.
+
 Some properties have a type shown, such as *Color (XYZ)* or *Vector3*. We don't know what's the actual type of the property, so the displayed property is only a guess. In such cases, you can specify the type of the property yourself:
 
 - The types *Color (XYZ), Vector3, Position, Scale*, are compatible with each other.
@@ -115,7 +139,7 @@ Some properties have a type shown, such as *Color (XYZ)* or *Vector3*. We don't 
 
 ## Create more complex conditions
 
-By default, *Vixen Control* lets you describe the **active state** of your control. The **inactive state** is simply the opposite of the toggles, using the current values of the properties in your scene.
+By default, *Vixen* lets you describe the **active state** of your control. The **inactive state** is simply the opposite of the toggles, using the current values of the properties in your scene.
 
 The control will switch between the active state and the inactive state depending on whether the menu item is active or not.
 
