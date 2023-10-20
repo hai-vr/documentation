@@ -44,7 +44,7 @@ If you want to put that menu item inside a sub-folder of your Expressions menu, 
 Drag objects into the Toggle category:
 
 - Objects placed in *Enable these when active* will be visible when the menu is turned on.
-- Object placed in *Disable these when active* will be visible when the menu is turned off.
+- Objects placed in *Disable these when active* will be visible when the menu is turned off.
 
 If you want to toggle a component instead of the object itself, drag the object into the Toggle category, and then choose the desired component in the dropdown.
 
@@ -97,12 +97,14 @@ If you need to change the properties of different objects in a different way, pr
 In the Menu category, you can choose other modes:
 
 - **Simplified Menu** shows the essentials of a menu.
-- **Advanced Menu** shows all options of a menu, including the parameter name, and whether it is synced. If you leave the parameter name blank, we will choose one for you.
+- **Advanced Menu** shows all options of a menu, including the parameter name, and whether it is synced.
 - **Export Animations** disables the menu, and lets your export the animations to files every time the avatar is being built, so that you may be able to use these animations inside other animators.
-- No not use **Conditional** for now, as it will be developed further in later versions.
-- **OSC** is a bit like a menu that doesn't exist. You will need to control it using an OSC program.
+- Do not use **Conditional** for now, as it will be developed further in later versions.
+- **OSC** is a like an invisible menu item. You will need to control it using an OSC program. You **must not** use this for Contacts or PhysBones.
 - **Contact** lets you use a VRC Contact to control the animation.
 - **PhysBone** lets you use a VRC PhysBone to control the animation.
+
+If you leave the parameter name blank on an Advanced Menu, Contact, or PhysBone, we will choose one for you.
 
 Most of the modes also have the following properties:
 
