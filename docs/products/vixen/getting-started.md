@@ -14,24 +14,24 @@ sidebar_position: 1
 
 Compatibility notes:
 
-- Although *Vixen* does not require you to learn how to use Modular Avatar, it is built on top of [Modular Avatar](https://modular-avatar.nadena.dev/).
+- *Vixen* is built on top of [Modular Avatar](https://modular-avatar.nadena.dev/), but it does not require you to learn how to use Modular Avatar.
 - It uses the NDM Framework.
 - It should be compatible with projects that use [VRCFury](https://vrcfury.com/).
 
 ## Install Vixen
 
-First, [download Vixen](../vixen).
+First, go to Patreon to [download Vixen](../vixen).
 
 Vixen requires the use of the VRChat Creator Companion.
 
 You need to add **two** listings:
 
 - Add **[Modular Avatar listing](https://modular-avatar.nadena.dev/)** by clicking on *Download (using VCC)*, and
-- also **[install our listing to VCC](vcc://vpm/addRepo?url=https://hai-vr.github.io/vpm-listing/index.json)**
+- also **[install Haï~'s listing to VCC](vcc://vpm/addRepo?url=https://hai-vr.github.io/vpm-listing/index.json)**.
 
 In VCC, add the **"Haï~ - VCC Dependencies for Vixen"** package to your project.
 
-Finally, add Vixen downloaded in the first step to your project.
+Finally, open the downloaded Vixen archive and install the .unitypackage in your project.
 
 ## Menu items
 
