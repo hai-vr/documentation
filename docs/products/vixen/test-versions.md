@@ -4,10 +4,6 @@ sidebar_position: 3
 
 # Test versions
 
-:::danger
-*Vixen* is not currently available; the documentation is being written. Please check back another time!
-:::
-
 Vixen is currently published as test versions.
 
 These versions don't have all the features because some of them are too unstable or not ready.

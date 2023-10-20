@@ -4,10 +4,6 @@ sidebar_position: 1
 
 # Getting started
 
-:::danger
-*Vixen* is not currently available; the documentation is being written. Please check back another time!
-:::
-
 <video controls width="816">
     <source src={require('./img/2023-10-20_17-11-26_ShareX.mp4').default}/>
 </video>
