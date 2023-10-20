@@ -8,6 +8,10 @@ sidebar_position: 1
 *Vixen* is not currently available; the documentation is being written. Please check back another time!
 :::
 
+<video controls width="816">
+    <source src={require('./img/2023-10-20_17-11-26_ShareX.mp4').default}/>
+</video>
+
 ## Method of operation
 
 *Vixen* is a **non-destructive** tool. The animators, menus and parameters are generated right before your avatar uploads, leaving your assets on-disk clean.
@@ -33,13 +37,19 @@ In VCC, add the **"Haï~ - VCC Dependencies for Vixen"** package to your project
 
 Finally, open the downloaded Vixen archive and install the .unitypackage in your project.
 
-## Menu items
+## Menu items and toggles
+
+<video controls width="816">
+    <source src={require('./img/2023-10-20_17-23-33_ShareX.mp4').default}/>
+</video>
+
+### Create a menu item
 
 To create a menu item, create a new GameObject inside your avatar, and attach a **Vixen Control** component to it. Give a name to your menu.
 
 If you want to put that menu item inside a sub-folder of your Expressions menu, create a new GameObject inside your avatar, and attach a **Vixen Folder** component to it. Move your menu items into that GameObject.
 
-## Toggle objects
+### Create toggles
 
 Drag objects into the Toggle category:
 
@@ -50,6 +60,10 @@ If you want to toggle a component instead of the object itself, drag the object 
 
 ## Previewing changes
 
+<video controls width="816">
+    <source src={require('./img/2023-10-20_17-20-09_ShareX.mp4').default}/>
+</video>
+
 At the top, you can press *Preview when active* to preview the avatar when the menu is active.
 
 Conversely, press *Preview when inactive* to preview the avatar when the menu is inactive.
@@ -59,6 +73,10 @@ If you're testing for effects over time such as a dissolve, press one of the *Pr
 *You may not be able to test for particle effects or other complex effects in this mode.*
 
 ## Change properties
+
+<video controls width="816">
+    <source src={require('./img/2023-10-20_17-18-39_ShareX.mp4').default}/>
+</video>
 
 ### Create the first object group
 

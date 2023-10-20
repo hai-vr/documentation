@@ -10,6 +10,10 @@ title: 🔒 Vixen
 This tool requires VRChat, and is currently incompatible with other apps and platforms.
 :::
 
+<video controls width="816">
+    <source src={require('./img/2023-10-20_17-11-26_ShareX.mp4').default}/>
+</video>
+
 ## Download ⭐
 
 This tool is not yet available at this time.
