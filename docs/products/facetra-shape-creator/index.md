@@ -1,3 +1,7 @@
-﻿# Hai's FaceTra Shape Creator
+﻿---
+title: ⭐ FaceTra Shape Creator
+---
 
-Placeholder
+# Haï's FaceTra Shape Creator
+
+The [documentation for *Haï's FaceTra Shape Creator* is currently located in a different page](https://hai-vr.notion.site/hai-vr/Ha-s-FaceTra-Shape-Creator-f1d95d4459e54fc3b2f166d9ebb5ebf3).
