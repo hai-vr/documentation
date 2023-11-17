@@ -23,10 +23,12 @@ import Gallery from '@site/src/pages/gallery.mdx'
 | [Animation Viewer](./products/animation-viewer)                                     | 🛠️ Unity Editor tool |                     | MIT         | [Booth](https://hai-vr.booth.pm/items/3625699) |
 | [Blendshape Viewer](./products/blendshape-viewer)                                   | 🛠️ Unity Editor tool |                     | MIT         | [Booth](https://hai-vr.booth.pm/items/3582541) |
 | [Property Finder](./products/property-finder)                                       | 🛠️ Unity Editor tool |                     | MIT         |                                                |
+| [BlendTree Viewer](./products/blendtree-viewer)                                     | 🛠️ Unity Editor tool |                     | MIT         |                                                |
 | **Editors**                                                                         |                       |                     |             |                                                |
 | [ComboGestureExpressions](./products/combo-gesture-expressions)                     | 🛠️ Unity Editor tool | ⚠️ VRChat required  | MIT         | [Booth](https://hai-vr.booth.pm/items/2219616) |
 | [Constraint Track Animation Creator](./products/constraint-track-animation-creator) | 🛠️ Unity Editor tool | ⚠️ VRChat required  | MIT         | [Booth](https://hai-vr.booth.pm/items/3532857) |
 | [Expressions Menu Hierarchy Editor](./products/expressions-menu-hierarchy-editor)   | 🛠️ Unity Editor tool | ⚠️ VRChat required  | MIT         | [Booth](https://hai-vr.booth.pm/items/3696355) |
+| [⭐ FaceTra Shape Creator](./products/facetra-shape-creator)                         | 🛠️ Unity Editor tool |                     | Proprietary |                                                |
 | [⭐ IconGen](./products/icon-gen)                                                    | 🛠️ Unity Editor tool |                     | Proprietary |                                                |
 | [IconGen Thumbnail](./products/icon-gen#capture-thumbnails-for-vrchat-in-play-mode) | 🛠️ Unity Editor tool |                     | Proprietary | [Booth](https://hai-vr.booth.pm/items/5092126) |
 | [Visual Expressions Editor](./products/visual-expressions-editor)                   | 🛠️ Unity Editor tool |                     | MIT         | [Booth](https://hai-vr.booth.pm/items/3708550) |
