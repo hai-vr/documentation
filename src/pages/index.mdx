@@ -10,11 +10,19 @@ import clsx from 'clsx';
 
 import Gallery from '@site/src/pages/gallery.mdx'
 import styles from './index.module.css';
+import Link from "@docusaurus/Link";
 
 <header className={clsx('hero hero--primary', styles.heroBanner)}>
     <div className="container">
         <h1 className="hero__title">Haï~</h1>
         <p className="hero__subtitle">Tools and apps for VR</p>
+        <div className={styles.buttons}>
+            <Link
+                className="button button--secondary button--lg"
+                to="vcc://vpm/addRepo?url=https://hai-vr.github.io/vpm-listing/index.json">
+                Add listing to VCC
+            </Link>
+        </div>
     </div>
 </header>
 
