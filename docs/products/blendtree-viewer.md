@@ -2,7 +2,7 @@
 title: BlendTree Viewer
 ---
 
-*BlendTree Viewer* lets you view large blend trees in a compact view.
+*BlendTree Viewer* lets you browse large blend trees in a compact view.
 
 :::tip
 This does not require VRChat to run. It has been tested to work on Unity 2019, and should work on newer versions.
