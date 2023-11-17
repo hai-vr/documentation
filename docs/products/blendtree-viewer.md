@@ -8,14 +8,17 @@ title: BlendTree Viewer
 This does not require VRChat to run. It has been tested to work on Unity 2019, and should work on newer versions.
 :::
 
-![Unity_B84jVe8l9H.png](img/blendtree-viewer/Unity_B84jVe8l9H.png)
+<video controls width="816">
+    <source src={require('./img/blendtree-viewer/2023-11-17_00-10-56_ShareX.mp4').default}/>
+</video>
 
 ## Download
 
 The tool is free for download. It can also be downloaded using VCC.
 
+### Direct download
+
 - GitHub ([hai-vr/blendtree-viewer](https://github.com/hai-vr/blendtree-viewer))
-- Booth.pm ([Blendshape Viewer - hai-vr - BOOTH](https://hai-vr.booth.pm/items/3582541))
 
 ### VCC
 
