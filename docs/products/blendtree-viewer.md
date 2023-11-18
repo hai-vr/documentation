@@ -27,5 +27,12 @@ The tool is free for download. It can also be downloaded using VCC.
 
 ## How to use
 
-- Open *Window > Haï > BlendTree Viewer*.
-- In Unity's Animator window, click on an animator state that contains a blend tree.
+Open *Window > Haï > BlendTree Viewer*.
+
+In Unity's Animator window, click on an animator state that contains a blend tree. You do not need to double click the animator state.
+
+*BlendTree Viewer* will automatically focus on the currently selected blend tree, or on the blend tree that is contained within the currently selected animator state.
+
+You can prevent this automatic focus by unchecking *Sync With Animator*. You may then click the *Select* button to focus on the currently selected blend tree.
+
+All of the fields of this viewer window are read-only. Use the Inspector window as normal to edit the objects.
