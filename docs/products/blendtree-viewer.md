@@ -23,7 +23,7 @@ The tool is free for download. It can also be downloaded using VCC.
 ### VCC
 
 - Use this link to **[install our listing to VCC](vcc://vpm/addRepo?url=https://hai-vr.github.io/vpm-listing/index.json)**.
-- Add *BlendTree Viewer* to your project using VCC.
+- Add *Haï ~ BlendTree Viewer* to your project using VCC.
 
 ## How to use
 

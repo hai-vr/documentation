@@ -16,10 +16,16 @@ This does not require VRChat to run. It has been tested to work on Unity 2019, a
 
 ## Download
 
-The tool is free for download.
+The tool is free for download. It can also be downloaded using VCC.
 
-- GitHub ([hai-vr/miscellaneous-gist/releases/tag/PropertyFinder-V1.0.0](https://github.com/hai-vr/miscellaneous-gist/releases/tag/PropertyFinder-V1.0.0))
-- gist ([gist.github.com/hai-vr/1cbb8fa4eb4b8f349e5c995eeeb9020d](https://gist.github.com/hai-vr/1cbb8fa4eb4b8f349e5c995eeeb9020d))
+### Direct download
+
+- GitHub ([hai-vr/property-finder](https://github.com/hai-vr/property-finder))
+
+### VCC
+
+- Use this link to **[install our listing to VCC](vcc://vpm/addRepo?url=https://hai-vr.github.io/vpm-listing/index.json)**.
+- Add *Haï ~ Property Finder* to your project using VCC.
 
 ## How to use
 

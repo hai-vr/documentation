@@ -10,10 +10,16 @@ This does not require VRChat to run. It has been tested to work on Unity 2019, a
 
 ## Download
 
-The tool is free for download.
+The tool is free for download. It can also be downloaded using VCC.
 
-- GitHub ([hai-vr/lightbox-viewer/releases](https://github.com/hai-vr/lightbox-viewer/releases))
-- Booth.pm ([Lightbox Viewer - hai-vr - BOOTH](https://hai-vr.booth.pm/items/3870813))
+### Direct download
+
+- GitHub ([hai-vr/lightbox-viewer](https://github.com/hai-vr/lightbox-viewer))
+
+### VCC
+
+- Use this link to **[install our listing to VCC](vcc://vpm/addRepo?url=https://hai-vr.github.io/vpm-listing/index.json)**.
+- Add *Haï ~ Lightbox Viewer* to your project using VCC.
 
 ## How to use
 

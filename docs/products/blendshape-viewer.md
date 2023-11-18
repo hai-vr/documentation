@@ -16,10 +16,16 @@ This does not require VRChat to run. It has been tested to work on Unity 2019, a
 
 ## Download
 
-The tool is free for download.
+The tool is free for download. It can also be downloaded using VCC.
 
-- GitHub ([hai-vr/blendshape-viewer](https://github.com/hai-vr/blendshape-viewer))
-- Booth.pm ([Blendshape Viewer - hai-vr - BOOTH](https://hai-vr.booth.pm/items/3582541))
+### Direct download
+
+- GitHub ([hai-vr/blendshape-viewer-vcc](https://github.com/hai-vr/blendshape-viewer-vcc))
+
+### VCC
+
+- Use this link to **[install our listing to VCC](vcc://vpm/addRepo?url=https://hai-vr.github.io/vpm-listing/index.json)**.
+- Add *Haï ~ Blendshape Viewer* to your project using VCC.
 
 ## How to use
 
