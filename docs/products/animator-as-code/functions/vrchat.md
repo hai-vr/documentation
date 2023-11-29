@@ -9,6 +9,10 @@ title: "VRChat"
 This is the work-in-progress documentation for Animator As Code **V1**, which has not yet been released. The last public version of Animator As Code is V0.
 :::
 
+:::info
+New additions in V1 are indicated with a light bulb 💡 icon.
+:::
+
 These functions are specific to the VRChat Avatars SDK. For more functions, see [Destructive workflow](./vrchat-destructive-workflow).
 
 To use these functions, use the extensions functions in `AacVRCExtensions`:
@@ -91,6 +95,9 @@ graph TD;
 - `AacFlFloatParameter VelocityZ` <br/>
   Create a Float parameter in the animator named VelocityZ.
 
+- `AacFlFloatParameter VelocityMagnitude` 💡<br/>
+  Create a Float parameter in the animator named VelocityMagnitude.
+
 - `AacFlFloatParameter Upright` <br/>
   Create a Float parameter in the animator named Upright.
 
@@ -117,6 +124,27 @@ graph TD;
 
 - `AacFlFloatParameter Voice` <br/>
   Create a Float parameter in the animator named Voice.
+
+- `AacFlBoolParameter Earmuffs` 💡<br/>
+  Create a Bool parameter in the animator named Earmuffs.
+
+- `AacFlBoolParameter IsOnFriendsList` 💡<br/>
+  Create a Bool parameter in the animator named IsOnFriendsList.
+
+- `AacFlBoolParameter ScaleModified` 💡<br/>
+  Create a Bool parameter in the animator named ScaleModified.
+
+- `AacFlFloatParameter ScaleFactor` 💡<br/>
+  Create a Float parameter in the animator named ScaleFactor.
+
+- `AacFlFloatParameter ScaleFactorInverse` 💡<br/>
+  Create a Float parameter in the animator named ScaleFactorInverse.
+
+- `AacFlFloatParameter EyeHeightAsMeters` 💡<br/>
+  Create a Float parameter in the animator named EyeHeightAsMeters.
+
+- `AacFlFloatParameter EyeHeightAsPercent` 💡<br/>
+  Create a Float parameter in the animator named EyeHeightAsPercent.
 
 
 ### Supporting conditions
