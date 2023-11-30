@@ -8,11 +8,9 @@ title: Property Finder
 This does not require VRChat to run. It has been tested to work on Unity 2019, and should work on newer versions.
 :::
 
-```mdx-code-block
 <video controls autoplay muted>
     <source src={require('./img/property-finder/sx_2022-05-19_23-47-37_jKkVpl9QvX.mp4').default}/>
 </video>
-```
 
 ## Download
 

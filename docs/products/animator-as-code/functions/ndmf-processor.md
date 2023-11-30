@@ -128,7 +128,7 @@ To use that processor, add new component somewhere in your avatar that uses that
 
 You can have multiple of these, and the script will be executed for each instance.
 
-## Plugin (AacPlugin<T\> where T : MonoBehaviour)
+## Plugin (AacPlugin\<T> where T : MonoBehaviour)
 
 Define `T` to be your MonoBehaviour component.
 

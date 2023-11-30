@@ -121,7 +121,7 @@ When a slider number is blue, this means the first and last keyframe of that ble
 
 - **“+” sign**: Add a keyframe.
 - **“x” sign**: Remove a keyframe.
-- **“<” arrow**: Select the previous keyframe of that blend shape.
+- **“\<” arrow**: Select the previous keyframe of that blend shape.
 - **“>” arrow**: Select the next keyframe of that blend shape.
 
 Remember that animations assets must be set to looping so that they will loop in the animator. The checkbox under the preview pane called “Is Looping Animation” changes that setting.

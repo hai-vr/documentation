@@ -118,7 +118,7 @@ Edit one menu item on all of the receiver objects. It is not possible to declare
 - `MaacMergeAnimator Relative()` <br/>
 Mark the path mode as relative. By default, merge animators are made absolute.
 
-## Parameter (MaacParameter<T\>)
+## Parameter (MaacParameter\<T>)
 
 - `MaacParameter<T> NotSynced()` <br/>
 Mark this parameter as not synced. By default, newly created parameters are synced.

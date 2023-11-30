@@ -34,10 +34,10 @@ In the meantime, you can use these videos as reference, which shows most of the 
 The following video shows in under 2 minutes an avatar being imported from scratch and an animation being created out of it.
 
 <video controls width="816" autostart="false">
-    <source src={hfr7itqHuk}/>
+    <source src={hfr7itqHuk} />
 </video>
 
-<aside>
+[//]: # (<aside>)
 ⚠️ The following video is out of date, but demonstrates:
 
 - the modification of a Neutral position
@@ -48,11 +48,11 @@ It needs to be installed separately, and the process is explained in this manual
 
 - Show video...
 
-- <video controls width="816" autostart="false">
-    <source src={minaCXRGZI}/>
+<video controls width="816" autostart="false">
+    <source src={minaCXRGZI} />
 </video>
 
-</aside>
+[//]: # (</aside>)
 
 # Create child bones for the clothes
 
@@ -158,7 +158,7 @@ For those, you need to split the Vertex Group of the mesh into multiple parts yo
   In the following video, the Neutral object of the frill ribbon is moved away from the LeftUpLeg bone to be roughly the center of the frill ribbon.
   This new Neutral position better represents the rotation point of the frill, which will make it easier to slide through the leg.
 
-- <video controls width="816" autostart="false">
+<video controls width="816" autostart="false">
     <source src={rhqoXFd3f5}/>
 </video>
 
