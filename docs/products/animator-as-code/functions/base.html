@@ -1,205 +1,902 @@
 <!doctype html>
-<html lang="en" dir="ltr" class="docs-wrapper docs-doc-page docs-version-current plugin-docs plugin-id-default docs-doc-id-products/animator-as-code/functions/base">
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-products/animator-as-code/functions/base" data-has-hydrated="false">
 <head>
 <meta charset="UTF-8">
-<meta name="generator" content="Docusaurus v2.4.1">
-<title data-rh="true">Base functions | Haï~</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://docs.hai-vr.dev/img/hai-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://docs.hai-vr.dev/img/hai-social-card.jpg"><meta data-rh="true" property="og:url" content="https://docs.hai-vr.dev/docs/products/animator-as-code/functions/base"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Base functions | Haï~"><meta data-rh="true" name="description" content="This is the work-in-progress documentation for Animator As Code V1, which has not yet been released. The last public version of Animator As Code is V0."><meta data-rh="true" property="og:description" content="This is the work-in-progress documentation for Animator As Code V1, which has not yet been released. The last public version of Animator As Code is V0."><link data-rh="true" rel="icon" href="/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://docs.hai-vr.dev/docs/products/animator-as-code/functions/base"><link data-rh="true" rel="alternate" href="https://docs.hai-vr.dev/docs/products/animator-as-code/functions/base" hreflang="en"><link data-rh="true" rel="alternate" href="https://docs.hai-vr.dev/docs/products/animator-as-code/functions/base" hreflang="x-default"><link rel="stylesheet" href="/assets/css/styles.0343698a.css">
-<link rel="preload" href="/assets/js/runtime~main.df588d96.js" as="script">
-<link rel="preload" href="/assets/js/main.faaebf96.js" as="script">
+<meta name="generator" content="Docusaurus v3.0.0">
+<title data-rh="true">Base functions | Haï~</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://docs.hai-vr.dev/img/hai-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://docs.hai-vr.dev/img/hai-social-card.jpg"><meta data-rh="true" property="og:url" content="https://docs.hai-vr.dev/docs/products/animator-as-code/functions/base"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Base functions | Haï~"><meta data-rh="true" name="description" content="This is the work-in-progress documentation for Animator As Code V1, which has not yet been released. The last public version of Animator As Code is V0."><meta data-rh="true" property="og:description" content="This is the work-in-progress documentation for Animator As Code V1, which has not yet been released. The last public version of Animator As Code is V0."><link data-rh="true" rel="icon" href="/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://docs.hai-vr.dev/docs/products/animator-as-code/functions/base"><link data-rh="true" rel="alternate" href="https://docs.hai-vr.dev/docs/products/animator-as-code/functions/base" hreflang="en"><link data-rh="true" rel="alternate" href="https://docs.hai-vr.dev/docs/products/animator-as-code/functions/base" hreflang="x-default"><link rel="stylesheet" href="/assets/css/styles.93d82155.css">
+<script src="/assets/js/runtime~main.1106446b.js" defer="defer"></script>
+<script src="/assets/js/main.097c8d7e.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
-<script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){var t=null;try{t=new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}return t}()||function(){var t=null;try{t=localStorage.getItem("theme")}catch(t){}return t}();t(null!==e?e:"light")}()</script><div id="__docusaurus">
-<div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="navbar navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/"><div class="navbar__logo"><img src="/img/hai-avi.png" alt="My Site Logo" class="themedImage_ToTc themedImage--light_HNdA"><img src="/img/hai-avi.png" alt="My Site Logo" class="themedImage_ToTc themedImage--dark_i4oU"></div><b class="navbar__title text--truncate">Haï~</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/docs/products">Products</a><a class="navbar__item navbar__link" href="/docs/resilience">ResilienceVR</a><a class="navbar__item navbar__link" href="/docs/other/discord">Help &amp; Discord</a><a class="navbar__item navbar__link" href="/docs/other/patreon">Patreon rewards</a></div><div class="navbar__items navbar__items--right"><a href="https://www.patreon.com/vr_hai" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">Patreon<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a><a href="https://github.com/hai-vr/" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="Switch between dark and light mode (currently light mode)" aria-label="Switch between dark and light mode (currently light mode)" aria-live="polite"><svg viewBox="0 0 24 24" width="24" height="24" class="lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" class="darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg></button></div><div class="searchBox_ZlJk"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_z2l0 docsWrapper_BCFX"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docPage__5DB"><aside class="theme-doc-sidebar-container docSidebarContainer_b6E3"><div class="sidebarViewport_Xe31"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/docs/products">All products 🗒️</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/docs/products/animation-viewer">Animation Viewer</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--active" aria-expanded="true" href="/docs/products/animator-as-code">Animator As Code (V1)</a><button aria-label="Toggle the collapsible sidebar category &#x27;Animator As Code (V1)&#x27;" type="button" class="clean-btn menu__caret"></button></div><ul style="display:block;overflow:visible;height:auto" class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/products/animator-as-code/install">Install</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/products/animator-as-code/getting-started">Getting started</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/products/animator-as-code/examples">Examples</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/products/animator-as-code/reference">Reference manual</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" aria-expanded="true" tabindex="0" href="/docs/products/animator-as-code/functions/base">Functions</a></div><ul style="display:block;overflow:visible;height:auto" class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/docs/products/animator-as-code/functions/base">Base functions</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/products/animator-as-code/functions/vrchat">VRChat</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/products/animator-as-code/functions/vrchat-destructive-workflow">VRChat (Destructive workflow)</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/products/animator-as-code/functions/modular-avatar">Modular Avatar</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/products/animator-as-code/functions/ndmf-processor">NDMF Processor</a></li></ul></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/products/animator-as-code/reference-barebones">Barebones way</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/products/animator-as-code/migrating-v0-to-v1">Migrating from V0 to V1</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/products/animator-as-code/examples-maac">Non-destructive workflow examples</a></li></ul></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/docs/products/blendshape-viewer">Blendshape Viewer</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/docs/products/blendtree-viewer">BlendTree Viewer</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/docs/products/cloth-transfer">Cloth Transfer</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/docs/products/combo-gesture-expressions">ComboGestureExpressions</a><button aria-label="Toggle the collapsible sidebar category &#x27;ComboGestureExpressions&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/docs/products/constraint-track-animation-creator">Constraint Track Animation Creator</a><button aria-label="Toggle the collapsible sidebar category &#x27;Constraint Track Animation Creator&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/docs/products/double-hip-tracker">⭐ Double Hip Tracker</a><button aria-label="Toggle the collapsible sidebar category &#x27;⭐ Double Hip Tracker&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/docs/products/expressions-menu-hierarchy-editor">Expressions Menu Hierarchy Editor</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/docs/products/facetra-shape-creator">⭐ FaceTra Shape Creator</a><button aria-label="Toggle the collapsible sidebar category &#x27;⭐ FaceTra Shape Creator&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/docs/products/icon-gen">⭐ IconGen</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/docs/products/lightbox-viewer">Lightbox Viewer</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/docs/products/property-finder">Property Finder</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/docs/products/very-h">🔒 VeryHaï</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/docs/products/visual-expressions-editor">Visual Expressions Editor</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/docs/products/vixen">⭐ Vixen</a><button aria-label="Toggle the collapsible sidebar category &#x27;⭐ Vixen&#x27;" type="button" class="clean-btn menu__caret"></button></div></li></ul></nav></div></div></aside><main class="docMainContainer_gTbr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs" itemscope="" itemtype="https://schema.org/BreadcrumbList"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item"><a class="breadcrumbs__link" itemprop="item" href="/docs/products/animator-as-code"><span itemprop="name">Animator As Code (V1)</span></a><meta itemprop="position" content="1"></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">Functions</span><meta itemprop="position" content="2"></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link" itemprop="name">Base functions</span><meta itemprop="position" content="3"></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><h1>Functions</h1><div class="theme-admonition theme-admonition-danger alert alert--danger admonition_LlT9"><div class="admonitionHeading_tbUL"><span class="admonitionIcon_kALy"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M5.05.31c.81 2.17.41 3.38-.52 4.31C3.55 5.67 1.98 6.45.9 7.98c-1.45 2.05-1.7 6.53 3.53 7.7-2.2-1.16-2.67-4.52-.3-6.61-.61 2.03.53 3.33 1.94 2.86 1.39-.47 2.3.53 2.27 1.67-.02.78-.31 1.44-1.13 1.81 3.42-.59 4.78-3.42 4.78-5.56 0-2.84-2.53-3.22-1.25-5.61-1.52.13-2.03 1.13-1.89 2.75.09 1.08-1.02 1.8-1.86 1.33-.67-.41-.66-1.19-.06-1.78C8.18 5.31 8.68 2.45 5.05.32L5.03.3l.02.01z"></path></svg></span>danger</div><div class="admonitionContent_S0QG"><p>This is the work-in-progress documentation for Animator As Code <strong>V1</strong>, which has not yet been released. The last public version of Animator As Code is V0.</p></div></div><div class="theme-admonition theme-admonition-info alert alert--info admonition_LlT9"><div class="admonitionHeading_tbUL"><span class="admonitionIcon_kALy"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>info</div><div class="admonitionContent_S0QG"><p>New additions in V1 are indicated with a light bulb 💡 icon.</p></div></div><h4 class="anchor anchorWithStickyNavbar_LWe7" id="animator-creation-overview">Animator creation overview<a href="#animator-creation-overview" class="hash-link" aria-label="Direct link to Animator creation overview" title="Direct link to Animator creation overview">​</a></h4><h4 class="anchor anchorWithStickyNavbar_LWe7" id="asset-creation-overview">Asset creation overview<a href="#asset-creation-overview" class="hash-link" aria-label="Direct link to Asset creation overview" title="Direct link to Asset creation overview">​</a></h4><h2 class="anchor anchorWithStickyNavbar_LWe7" id="animator-as-code-aacv1">Animator As Code (AacV1)<a href="#animator-as-code-aacv1" class="hash-link" aria-label="Direct link to Animator As Code (AacV1)" title="Direct link to Animator As Code (AacV1)">​</a></h2><ul><li><code>static AacFlBase Create(AacConfiguration configuration)</code> <br>
-Create an Animator As Code (AAC) base.</li></ul><h2 class="anchor anchorWithStickyNavbar_LWe7" id="base-aacflbase">Base (AacFlBase)<a href="#base-aacflbase" class="hash-link" aria-label="Direct link to Base (AacFlBase)" title="Direct link to Base (AacFlBase)">​</a></h2><h4 class="anchor anchorWithStickyNavbar_LWe7" id="create-assets">Create assets<a href="#create-assets" class="hash-link" aria-label="Direct link to Create assets" title="Direct link to Create assets">​</a></h4><ul><li><p><code>AacFlClip NewClip()</code> <br>
-Create a new clip. The asset is generated into the container.</p></li><li><p><code>AacFlClip CopyClip(AnimationClip originalClip)</code> <br>
-Create a new clip that is a copy of <code>originalClip</code>. The asset is generated into the container.</p></li><li><p><code>AacFlNonInitializedBlendTree NewBlendTree()</code> 💡<br>
-Create a new BlendTree asset. The asset is generated into the container.</p></li><li><p><code>BlendTree NewBlendTreeAsRaw()</code> <br>
-Create a new BlendTree asset and returns a native BlendTree object. The asset is generated into the container. 💡 You may use NewBlendTree() instead to obtain a fluent interface.</p></li><li><p><code>AacFlClip NewClip(string name)</code> <br>
-Create a new clip with a name. However, the name is only used as a suffix for the asset. The asset is generated into the container. FIXME: This is quite pointless because the name is mangled anyways.</p></li><li><p><code>AacFlClip DummyClipLasting(float numberOf, AacFlUnit unit)</code> <br>
-Create a new clip which animates a dummy transform for a specific duration specified in an unit (Frames or Seconds).</p></li><li><p><code>AacFlController NewAnimatorController()</code> 💡<br>
-Create a new animator controller. The asset is generated into the container.</p></li><li><p><code>AacFlController NewAnimatorController(string name)</code> 💡<br>
-Create a new animator controller with a name. However, the name is only used as a suffix for the asset. The asset is generated into the container.</p></li><li><p><code>T DuplicateAsset&lt;T&gt;(T assetToDuplicate) where T : Object</code> 💡<br>
-Duplicate a new asset into the container and return it. For example, use this to create modified material variants. This asset will be removed the same way as other generated assets.</p></li></ul><h4 class="anchor anchorWithStickyNavbar_LWe7" id="reference-vrchat-assets">Reference VRChat assets<a href="#reference-vrchat-assets" class="hash-link" aria-label="Direct link to Reference VRChat assets" title="Direct link to Reference VRChat assets">​</a></h4><div class="theme-admonition theme-admonition-info alert alert--info admonition_LlT9"><div class="admonitionHeading_tbUL"><span class="admonitionIcon_kALy"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>info</div><div class="admonitionContent_S0QG"><p>See functions specific to <a href="/docs/products/animator-as-code/functions/vrchat#base-aacflbase">VRChat</a>.</p></div></div><h4 class="anchor anchorWithStickyNavbar_LWe7" id="maintain-assets">Maintain assets<a href="#maintain-assets" class="hash-link" aria-label="Direct link to Maintain assets" title="Direct link to Maintain assets">​</a></h4><ul><li><code>void ClearPreviousAssets()</code> <br>
-Removes all assets from the asset container matching the specified asset key.</li></ul><h4 class="anchor anchorWithStickyNavbar_LWe7" id="create-layers-destructive-workflow">Create layers (Destructive workflow)<a href="#create-layers-destructive-workflow" class="hash-link" aria-label="Direct link to Create layers (Destructive workflow)" title="Direct link to Create layers (Destructive workflow)">​</a></h4><div class="theme-admonition theme-admonition-info alert alert--info admonition_LlT9"><div class="admonitionHeading_tbUL"><span class="admonitionIcon_kALy"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>info</div><div class="admonitionContent_S0QG"><p>For VRChat-specific functions, see <a href="/docs/products/animator-as-code/functions/vrchat-destructive-workflow#extensions-for-base-aacflbase">VRChat (Destructive workflow)</a></p></div></div><ul><li><p><code>AacFlLayer CreateMainArbitraryControllerLayer(AnimatorController controller)</code> <br>
-Create a main layer for an arbitrary AnimatorController, clearing the previous one of the same system. You are not obligated to have a main layer.</p></li><li><p><code>AacFlLayer CreateSupportingArbitraryControllerLayer(AnimatorController controller, string suffix)</code> <br>
-Create a supporting layer for an arbitrary AnimatorController, clearing the previous one of the same system and suffix. You can create multiple supporting layers with different suffixes, and you are not obligated to have a main layer to create a supporting layer.</p></li><li><p><code>AacFlLayer CreateFirstArbitraryControllerLayer(AnimatorController controller)</code> <br>
-Clears the topmost layer of an arbitrary AnimatorController, and returns it.</p></li></ul><h4 class="anchor anchorWithStickyNavbar_LWe7" id="remove-layers-destructive-workflow">Remove layers (Destructive workflow)<a href="#remove-layers-destructive-workflow" class="hash-link" aria-label="Direct link to Remove layers (Destructive workflow)" title="Direct link to Remove layers (Destructive workflow)">​</a></h4><div class="theme-admonition theme-admonition-info alert alert--info admonition_LlT9"><div class="admonitionHeading_tbUL"><span class="admonitionIcon_kALy"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>info</div><div class="admonitionContent_S0QG"><p>See functions specific to <a href="/docs/products/animator-as-code/functions/vrchat-destructive-workflow#extensions-for-base-aacflbase">VRChat (Destructive workflow)</a></p></div></div><h4 class="anchor anchorWithStickyNavbar_LWe7" id="create-parameters-without-an-animator-">Create parameters without an animator 💡<a href="#create-parameters-without-an-animator-" class="hash-link" aria-label="Direct link to Create parameters without an animator 💡" title="Direct link to Create parameters without an animator 💡">​</a></h4><ul><li><code>AacFlNoAnimator NoAnimator()</code> 💡<br>
-If you are not creating an animator, this returns an object from which you can obtain animator parameter objects. You should use this class if you are creating BlendTree assets without any animator controllers to back it. Otherwise, it is strongly recommended to obtain animator parameter objects directly from the layer objects instead of using NoAnimator(), as the use of NoAnimator() will not result in the registration of any parameters inside the animator controller.</li></ul><h2 class="anchor anchorWithStickyNavbar_LWe7" id="controller-aacflcontroller-">Controller (AacFlController) 💡<a href="#controller-aacflcontroller-" class="hash-link" aria-label="Direct link to Controller (AacFlController) 💡" title="Direct link to Controller (AacFlController) 💡">​</a></h2><ul><li><p><code>AacFlLayer NewLayer(string suffix)</code> 💡<br>
-Create a new layer with a specific suffix. You cannot create multiple layers with the same suffix on the same controller.</p></li><li><p><code>AacFlLayer NewLayer()</code> 💡<br>
-Create a new layer. You cannot invoke this method multiple times on the same controller.</p></li></ul><h2 class="anchor anchorWithStickyNavbar_LWe7" id="layer-aacfllayer">Layer (AacFlLayer)<a href="#layer-aacfllayer" class="hash-link" aria-label="Direct link to Layer (AacFlLayer)" title="Direct link to Layer (AacFlLayer)">​</a></h2><ul><li><p><code>AacFlState NewState(string name)</code> 🔺<br>
-Create a new state, initially positioned below the last generated state of this layer. 🔺 If the name is already used, a number will be appended at the end.</p></li><li><p><code>AacFlState NewState(string name, int x, int y)</code> 🔺<br>
-Create a new state at a specific position <code>x</code> and <code>y</code>, in grid units. The grid size is defined in the DefaultsProvider of the AacConfiguration of AAC. <code>x</code> positive goes right, <code>y</code> positive goes down. 🔺 If the name is already used, a number will be appended at the end.</p></li><li><p><code>AacFlStateMachine NewSubStateMachine(string name)</code> 💡<br>
-Create a new state machine, initially positioned below the last generated state of this layer. 🔺 If the name is already used, a number will be appended at the end.</p></li></ul><h4 class="anchor anchorWithStickyNavbar_LWe7" id="create-layer-transitions">Create layer transitions<a href="#create-layer-transitions" class="hash-link" aria-label="Direct link to Create layer transitions" title="Direct link to Create layer transitions">​</a></h4><ul><li><p><code>AacFlTransition AnyTransitionsTo(AacFlState destination)</code> <br>
-Create a transition from Any to the <code>destination</code> state.</p></li><li><p><code>AacFlEntryTransition EntryTransitionsTo(AacFlState destination)</code> <br>
-Create a transition from the Entry to the <code>destination</code> state.</p></li></ul><h4 class="anchor anchorWithStickyNavbar_LWe7" id="create-parameters">Create parameters<a href="#create-parameters" class="hash-link" aria-label="Direct link to Create parameters" title="Direct link to Create parameters">​</a></h4><ul><li><p><code>AacFlBoolParameter BoolParameter(string parameterName)</code> <br>
-Create a Bool parameter in the animator.</p></li><li><p><code>AacFlBoolParameter TriggerParameterAsBool(string parameterName)</code> <br>
-Create a Trigger parameter in the animator, but returns a Bool parameter for use in AAC.</p></li><li><p><code>AacFlFloatParameter FloatParameter(string parameterName)</code> <br>
-Create a Float parameter in the animator.</p></li><li><p><code>AacFlIntParameter IntParameter(string parameterName)</code> <br>
-Create an Int parameter in the animator.</p></li></ul><h4 class="anchor anchorWithStickyNavbar_LWe7" id="create-parameter-groups">Create parameter groups<a href="#create-parameter-groups" class="hash-link" aria-label="Direct link to Create parameter groups" title="Direct link to Create parameter groups">​</a></h4><ul><li><p><code>AacFlBoolParameterGroup BoolParameters(params string[] parameterNames)</code> <br>
-Create multiple Bool parameters in the animator, and returns a group of multiple Bools.</p></li><li><p><code>AacFlBoolParameterGroup TriggerParametersAsBools(params string[] parameterNames)</code> <br>
-Create multiple Trigger parameters in the animator, but returns a group of multiple Bools for use in AAC.</p></li><li><p><code>AacFlFloatParameterGroup FloatParameters(params string[] parameterNames)</code> <br>
-Create multiple Float parameters in the animator, and returns a group of multiple Bools.</p></li><li><p><code>AacFlIntParameterGroup IntParameters(params string[] parameterNames)</code> <br>
-Create multiple Int parameters in the animator, and returns a group of multiple Bools.</p></li><li><p><code>AacFlBoolParameterGroup BoolParameters(params AacFlBoolParameter[] parameters)</code> <br>
-Combine multiple Int parameters into a group.</p></li><li><p><code>AacFlBoolParameterGroup TriggerParametersAsBools(params AacFlBoolParameter[] parameters)</code> <br>
-Combine multiple Trigger parameters into a group. FIXME: This is a pointless function because BoolParameters already exists.</p></li><li><p><code>AacFlFloatParameterGroup FloatParameters(params AacFlFloatParameter[] parameters)</code> <br>
-Combine multiple Int parameters into a group.</p></li><li><p><code>AacFlIntParameterGroup IntParameters(params AacFlIntParameter[] parameters)</code> <br>
-Combine multiple Int parameters into a group.
-</p></li></ul><h4 class="anchor anchorWithStickyNavbar_LWe7" id="set-animator-parameter-value">Set animator parameter value<a href="#set-animator-parameter-value" class="hash-link" aria-label="Direct link to Set animator parameter value" title="Direct link to Set animator parameter value">​</a></h4><ul><li><p><code>AacFlLayer OverrideValue(AacFlBoolParameter toBeForced, bool value)</code> <br>
-Set the Bool value of <code>toBeForced</code> parameter to <code>value</code> in the animator.</p></li><li><p><code>AacFlLayer OverrideValue(AacFlFloatParameter toBeForced, float value)</code> <br>
-Set the Float value of <code>toBeForced</code> parameter to <code>value</code> in the animator.</p></li><li><p><code>AacFlLayer OverrideValue(AacFlIntParameter toBeForced, int value)</code> <br>
-Set the Int value of <code>toBeForced</code> parameter to <code>value</code> in the animator.</p></li></ul><h4 class="anchor anchorWithStickyNavbar_LWe7" id="edit-avatar-mask">Edit avatar mask<a href="#edit-avatar-mask" class="hash-link" aria-label="Direct link to Edit avatar mask" title="Direct link to Edit avatar mask">​</a></h4><ul><li><p><code>AacFlLayer WithAvatarMask(AvatarMask avatarMask)</code> <br>
-Set the Avatar Mask of the layer.</p></li><li><p><code>AacFlLayer WithAvatarMaskNoTransforms()</code> <br>
-Set the Avatar Mask of the layer to be an Avatar Mask which denies all transforms. The asset is generated into the container.</p></li><li><p><code>AacFlLayer ResolveAvatarMask(Transform[] paths)</code> <br>
-Set the Avatar Mask of the layer to be an Avatar Mask that allows the specified transforms. If <code>paths</code> is an empty array, all transforms are denied, which is effectively the same as calling <code>.WithAvatarMaskNoTransforms()</code>. The asset is generated into the container.</p></li></ul><h2 class="anchor anchorWithStickyNavbar_LWe7" id="sub-state-machine-aacflstatemachine-">Sub State Machine (AacFlStateMachine) 💡<a href="#sub-state-machine-aacflstatemachine-" class="hash-link" aria-label="Direct link to Sub State Machine (AacFlStateMachine) 💡" title="Direct link to Sub State Machine (AacFlStateMachine) 💡">​</a></h2><ul><li><p><code>AacFlStateMachine NewSubStateMachine(string name)</code> 💡<br>
-Create a new state machine, initially positioned below the last generated state of this layer.</p></li><li><p><code>AacFlStateMachine Restarts()</code> 💡<br>
-Creates a new transition of the entire state machine node to itself, which is evaluated after the state machine commits to an exit transitions.</p></li><li><p><code>AacFlStateMachine Exits()</code> 💡<br>
-Create a transition from this state machine node to the exit. 🔺 If the name is already used, a number will be appended at the end.
-</p></li></ul><h2 class="anchor anchorWithStickyNavbar_LWe7" id="no-animator-aacflnoanimator-">No Animator (AacFlNoAnimator) 💡<a href="#no-animator-aacflnoanimator-" class="hash-link" aria-label="Direct link to No Animator (AacFlNoAnimator) 💡" title="Direct link to No Animator (AacFlNoAnimator) 💡">​</a></h2><div class="theme-admonition theme-admonition-caution alert alert--warning admonition_LlT9"><div class="admonitionHeading_tbUL"><span class="admonitionIcon_kALy"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>caution</div><div class="admonitionContent_S0QG"><p>You should use this class if you are creating BlendTree assets without any animator controllers to back it.</p><p>Otherwise, it is strongly recommended to obtain animator parameter objects directly from the <a href="#create-parameters">layer objects</a> instead of using NoAnimator(), as the use of NoAnimator() will not result in the registration of any parameters inside the animator controller.</p></div></div><ul><li><p><code>AacFlFloatParameter FloatParameter(string parameterName)</code> 💡<br>
-Create a Float parameter, for use without a backing animator.</p></li><li><p><code>AacFlIntParameter IntParameter(string parameterName)</code> 💡<br>
-Create a Int parameter, for use without a backing animator.</p></li><li><p><code>AacFlBoolParameter BoolParameter(string parameterName)</code> 💡<br>
-Create a Bool parameter, for use without a backing animator.</p></li></ul><h2 class="anchor anchorWithStickyNavbar_LWe7" id="state-aacflstate">State (AacFlState)<a href="#state-aacflstate" class="hash-link" aria-label="Direct link to State (AacFlState)" title="Direct link to State (AacFlState)">​</a></h2><ul><li><code>AnimatorState State;</code> <br>
-Expose the underlying State object.</li></ul><h3 class="anchor anchorWithStickyNavbar_LWe7" id="graph-positioning">Graph Positioning<a href="#graph-positioning" class="hash-link" aria-label="Direct link to Graph Positioning" title="Direct link to Graph Positioning">​</a></h3><ul><li><p><code>AacFlState LeftOf(AacFlState otherState)</code> <br>
-Move the state to be left of the other state in the graph.</p></li><li><p><code>AacFlState RightOf(AacFlState otherState)</code> <br>
-Move the state to be right of the other state in the graph.</p></li><li><p><code>AacFlState Over(AacFlState otherState)</code> <br>
-Move the state to be over the other state in the graph.</p></li><li><p><code>AacFlState Under(AacFlState otherState)</code> <br>
-Move the state to be under the other state in the graph.</p></li><li><p><code>AacFlState LeftOf()</code> <br>
-Move the state to be left of the last created state of the state machine this belongs to in the graph.</p></li><li><p><code>AacFlState RightOf()</code> <br>
-Move the state to be right of the last created state of the state machine this belongs to in the graph.</p></li><li><p><code>AacFlState Over()</code> <br>
-Move the state to be over the last created state of the state machine this belongs to in the graph.</p></li><li><p><code>AacFlState Under()</code> <br>
-Move the state to be under the last created state of the state machine this belongs to in the graph.</p></li><li><p><code>AacFlState Shift(AacFlState otherState, int shiftX, int shiftY)</code> <br>
-Move the state to be shifted next to the other state in the graph, in grid units. <code>shiftX</code> positive goes right, <code>shiftY</code> positive goes down.</p></li><li><p><code>AacFlState Shift(Vector3 otherPosition, int shiftX, int shiftY)</code> <br>
-Move the state to be shifted next to another position in the graph, in grid units. <code>shiftX</code> positive goes right, <code>shiftY</code> positive goes down. // FIXME: Vector3 is really odd as a type.</p></li></ul><h3 class="anchor anchorWithStickyNavbar_LWe7" id="attributes">Attributes<a href="#attributes" class="hash-link" aria-label="Direct link to Attributes" title="Direct link to Attributes">​</a></h3><ul><li><p><code>AacFlState WithAnimation(Motion clip)</code> <br>
-Set a specific raw Motion for the state. This could be a blend tree.</p></li><li><p><code>AacFlState WithAnimation(AacFlClip clip)</code> <br>
-Set a specific clip for the state. See <code>(AacFlBase).NewClip()</code> and similar.</p></li><li><p><code>AacFlState WithAnimation(AacFlBlendTree clip)</code> 💡<br>
-Set a specific blend tree for the state. See <code>(AacFlBase).NewBlendTree()</code> and similar.</p></li><li><p><code>AacFlState MotionTime(AacFlFloatParameter floatParam)</code> <br>
-Set the Motion Time, formerly known as Normalized Time.</p></li><li><p><code>AacFlState WithSpeed(AacFlFloatParameter parameter)</code> <br>
-Set the Speed.</p></li><li><p><code>AacFlState WithWriteDefaultsSetTo(bool shouldWriteDefaults)</code> <br>
-Set Write Defaults. If you need to do this to many states, consider changing the AacConfiguration DefaultsProvider when creating Animator As Code.</p></li></ul><h3 class="anchor anchorWithStickyNavbar_LWe7" id="transitions">Transitions<a href="#transitions" class="hash-link" aria-label="Direct link to Transitions" title="Direct link to Transitions">​</a></h3><ul><li><p><code>AacFlTransition TransitionsTo(AacFlState destination)</code> <br>
-Create a new transition from this state to the destination state.</p></li><li><p><code>AacFlTransition TransitionsFromAny()</code> <br>
-Create a new transition from Any to this state.</p></li><li><p><code>AacFlEntryTransition TransitionsFromEntry()</code> <br>
-Create a new transition from Entry to this state. Note that the first created state is the default state, so generally this function does not need to be invoked onto the first created state. Calling this function will not define this state to be the default state.</p></li><li><p><code>AacFlState AutomaticallyMovesTo(AacFlState destination)</code> <br>
-Create a transition with no exit time to the destination state, and does not return the transition.</p></li><li><p><code>AacFlTransition Exits()</code> <br>
-Create a transition from this state to the exit.</p></li></ul><h3 class="anchor anchorWithStickyNavbar_LWe7" id="state-behaviours">State behaviours<a href="#state-behaviours" class="hash-link" aria-label="Direct link to State behaviours" title="Direct link to State behaviours">​</a></h3><div class="theme-admonition theme-admonition-info alert alert--info admonition_LlT9"><div class="admonitionHeading_tbUL"><span class="admonitionIcon_kALy"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>info</div><div class="admonitionContent_S0QG"><p>See functions specific to <a href="/docs/products/animator-as-code/functions/vrchat#state-aacflstate">VRChat</a>.</p></div></div><h2 class="anchor anchorWithStickyNavbar_LWe7" id="clip-aacflclip">Clip (AacFlClip)<a href="#clip-aacflclip" class="hash-link" aria-label="Direct link to Clip (AacFlClip)" title="Direct link to Clip (AacFlClip)">​</a></h2><ul><li><code>AnimationClip Clip;</code>  <br>
-Expose the underlying Clip object.</li></ul><h3 class="anchor anchorWithStickyNavbar_LWe7" id="attributes-1">Attributes<a href="#attributes-1" class="hash-link" aria-label="Direct link to Attributes" title="Direct link to Attributes">​</a></h3><ul><li><p><code>AacFlClip Looping()</code> <br>
-Set the clip to be looping.</p></li><li><p><code>AacFlClip NonLooping()</code> <br>
-Set the clip to be non-looping.</p></li></ul><h3 class="anchor anchorWithStickyNavbar_LWe7" id="single-frame-animations">Single-frame Animations<a href="#single-frame-animations" class="hash-link" aria-label="Direct link to Single-frame Animations" title="Direct link to Single-frame Animations">​</a></h3><ul><li><p><code>AacFlClip Toggling(GameObject[] gameObjectsWithNulls, bool value)</code> <br>
-Enable or disable GameObjects. This lasts one frame. The array can safely contain null values.</p></li><li><p><code>AacFlClip BlendShape(SkinnedMeshRenderer renderer, string blendShapeName, float value)</code> <br>
-Change a blendShape of a skinned mesh. This lasts one frame.</p></li><li><p><code>AacFlClip BlendShape(SkinnedMeshRenderer[] rendererWithNulls, string blendShapeName, float value)</code> <br>
-Change a blendShape of multiple skinned meshes. This lasts one frame. The array can safely contain null values.</p></li><li><p><code>AacFlClip Positioning(GameObject[] gameObjectsWithNulls, Vector3 localPosition)</code> 💡<br>
-Change the position of a GameObject in local space. This lasts one frame. This lasts one frame. The array can safely contain null values. // FIXME: This is weird, this should be a Transform array, and also this needs a single-object overload.</p></li><li><p><code>AacFlClip RotatingUsingEulerInterpolation(GameObject[] gameObjectsWithNulls, Vector3 localEulerAngles)</code> 💡<br>
-Change the rotation of GameObjects in local space, with Euler interpolation. This lasts one frame. The array can safely contain null values. // FIXME: This is weird, this should be a Transform array, and also this needs a single-object overload.</p></li><li><p><code>AacFlClip RotatingUsingQuaternionInterpolation(GameObject[] gameObjectsWithNulls, Quaternion localQuaternionAngles)</code> 💡<br>
-Change the rotation of GameObjects in local space, with Quaternion interpolation. This lasts one frame. The array can safely contain null values. // FIXME: This is weird, this should be a Transform array, and also this needs a single-object overload.</p></li><li><p><code>AacFlClip Scaling(GameObject[] gameObjectsWithNulls, Vector3 scale)</code> <br>
-Change the local scale of GameObjects. This lasts one frame. The array can safely contain null values. // FIXME: This is weird, this should be a Transform array, and also this needs a single-object overload.</p></li><li><p><code>AacFlClip Toggling(GameObject gameObject, bool value)</code> <br>
-Enable or disable a GameObject. This lasts one frame.</p></li><li><p><code>AacFlClip TogglingComponent(Component[] componentsWithNulls, bool value)</code> <br>
-Toggle several components. This lasts one frame. The runtime type of each individual component will be used. The array can safely contain null values.</p></li><li><p><code>AacFlClip TogglingComponent(Component component, bool value)</code> <br>
-Toggle a component. This lasts one frame. The runtime type of the component will be used.</p></li><li><p><code>AacFlClip SwappingMaterial(Renderer renderer, int slot, Material material)</code> <br>
-Swap a material of a Renderer on the specified slot (indexed at 0). This lasts one frame.</p></li><li><p><code>AacFlClip SwappingMaterial(ParticleSystem particleSystem, int slot, Material material)</code> <br>
-Swap a material of a Particle System on the specified slot (indexed at 0). This lasts one frame. This effectively takes the ParticleSystemRenderer of the component.</p></li></ul><h3 class="anchor anchorWithStickyNavbar_LWe7" id="mutli-frame-animations-">Mutli-frame Animations 💡<a href="#mutli-frame-animations-" class="hash-link" aria-label="Direct link to Mutli-frame Animations 💡" title="Direct link to Mutli-frame Animations 💡">​</a></h3><ul><li><p><code>AacFlClip BlendShape(SkinnedMeshRenderer renderer, string blendShapeName, AnimationCurve animationCurve)</code> 💡<br>
-Change a blendShape of a skinned meshe, with an animation curve.</p></li><li><p><code>AacFlClip BlendShape(SkinnedMeshRenderer[] rendererWithNulls, string blendShapeName, AnimationCurve animationCurve)</code> 💡<br>
-Change a blendShape of multiple skinned meshes, with an animation curve. The array can safely contain null values.</p></li></ul><h3 class="anchor anchorWithStickyNavbar_LWe7" id="clip-editing">Clip Editing<a href="#clip-editing" class="hash-link" aria-label="Direct link to Clip Editing" title="Direct link to Clip Editing">​</a></h3><ul><li><code>AacFlClip Animating(Action&lt;AacFlEditClip&gt; action)</code> <br>
-Start editing the clip with a lambda expression.</li></ul><h2 class="anchor anchorWithStickyNavbar_LWe7" id="clip-editing-aacfleditclip">Clip editing (AacFlEditClip)<a href="#clip-editing-aacfleditclip" class="hash-link" aria-label="Direct link to Clip editing (AacFlEditClip)" title="Direct link to Clip editing (AacFlEditClip)">​</a></h2><div class="theme-admonition theme-admonition-tip alert alert--success admonition_LlT9"><div class="admonitionHeading_tbUL"><span class="admonitionIcon_kALy"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path></svg></span>tip</div><div class="admonitionContent_S0QG"><p>Consider using <a href="/docs/products/property-finder">Property Finder</a> to locate the animatable properties that you are interested in.</p><p><img loading="lazy" alt="property-finder-aac.png" src="/assets/images/property-finder-aac-ad528bb1464916671d19fa51b24e86b7.png" width="370" height="259" class="img_ev3q"></p></div></div><ul><li><code>AnimationClip Clip;</code>  <br>
-Expose the underlying Clip object.</li></ul><ul><li><p><code>AacFlSettingCurve Animates(string path, Type type, string propertyName)</code> <br>
-Animates a path the traditional way.</p></li><li><p><code>AacFlSettingCurve Animates(Transform transform, Type type, string propertyName)</code> <br>
-Animates an object in the hierarchy relative to the animator root, the traditional way.</p></li><li><p><code>AacFlSettingCurve Animates(GameObject gameObject)</code> <br>
-Animates the active property of a GameObject, toggling it.</p></li><li><p><code>AacFlSettingCurve Animates(Component anyComponent, string property)</code> <br>
-Animates the enabled property of a component, toggling it. The runtime type of the component will be used.</p></li><li><p><code>AacFlSettingCurve Animates(Component[] anyComponents, string property)</code> <br>
-Animates the enabled property of several components, toggling them. The runtime type of the component will be used. // FIXME: Safety is not provived on nulls. It should probably be, for convenience.</p></li><li><p><code>AacFlSettingCurve AnimatesAnimator(AacFlParameter floatParameter)</code> <br>
-Animates a Float parameter of the animator (may sometimes be referred to as an Animated Animator Parameter, or AAP).</p></li><li><p><code>AacFlSettingCurveColor AnimatesColor(Component anyComponent, string property)</code> <br>
-Animates a color property of a component. The runtime type of the component will be used.</p></li><li><p><code>AacFlSettingCurveColor AnimatesColor(Component[] anyComponents, string property)</code> <br>
-Animates a color property of several components. The runtime type of the component will be used. // FIXME: Safety is not provived on nulls. It should probably be, for convenience.</p></li><li><p><code>AacFlSettingCurveColor AnimatesHDRColor(Component anyComponent, string property)</code> 💡<br>
-Animates a HDR color property of a component (uses XYZW instead of RGBA). The runtime type of the component will be used. // FIXME: this needs multi-component, with safety</p></li><li><p><code>AacFlSettingCurveObjectReference AnimatesObjectReference(Component anyComponent, string property)</code> 💡<br>
-Animates an object reference of a component. The runtime type of the component will be used. // FIXME: this needs multi-component, with safety</p></li><li><p><code>EditorCurveBinding BindingFromComponent(Component anyComponent, string propertyName)</code> <br>
-Returns an EditorCurveBinding of a component, relative to the animator root. The runtime type of the component will be used. This is meant to be used in conjunction with traditional animation APIs.</p></li></ul><h3 class="anchor anchorWithStickyNavbar_LWe7" id="curve-of-type-float-aacflsettingcurve">Curve of type Float (AacFlSettingCurve)<a href="#curve-of-type-float-aacflsettingcurve" class="hash-link" aria-label="Direct link to Curve of type Float (AacFlSettingCurve)" title="Direct link to Curve of type Float (AacFlSettingCurve)">​</a></h3><ul><li><p><code>void WithOneFrame(float desiredValue)</code> <br>
-Define the curve to be exactly one frame by defining two constant keyframes, usually lasting 1/60th of a second, with the desired value.</p></li><li><p><code>void WithFixedSeconds(float seconds, float desiredValue)</code> <br>
-Define the curve to last a specific amount of seconds by defining two constant keyframes, with the desired value.</p></li><li><p><code>void WithSecondsUnit(Action&lt;AacFlSettingKeyframes&gt; action)</code> <br>
-Start defining the keyframes with a lambda expression, expressing the unit to be in seconds.</p></li><li><p><code>void WithFrameCountUnit(Action&lt;AacFlSettingKeyframes&gt; action)</code> <br>
-Start defining the keyframes with a lambda expression, expressing the unit in frames.</p></li><li><p><code>void WithUnit(AacFlUnit unit, Action&lt;AacFlSettingKeyframes&gt; action)</code> <br>
-Start defining the keyframes with a lambda expression, expressing the unit.</p></li></ul><h3 class="anchor anchorWithStickyNavbar_LWe7" id="curve-of-type-color-aacflsettingcurvecolor">Curve of type Color (AacFlSettingCurveColor)<a href="#curve-of-type-color-aacflsettingcurvecolor" class="hash-link" aria-label="Direct link to Curve of type Color (AacFlSettingCurveColor)" title="Direct link to Curve of type Color (AacFlSettingCurveColor)">​</a></h3><ul><li><code>void WithOneFrame(Color desiredValue)</code> <br>
-Define the curve to be exactly one frame by defining two constant keyframes, usually lasting 1/60th of a second, with the desired object reference value.</li></ul><h3 class="anchor anchorWithStickyNavbar_LWe7" id="curve-of-type-objectreference-aacflsettingcurveobjectreference-">Curve of type ObjectReference (AacFlSettingCurveObjectReference) 💡<a href="#curve-of-type-objectreference-aacflsettingcurveobjectreference-" class="hash-link" aria-label="Direct link to Curve of type ObjectReference (AacFlSettingCurveObjectReference) 💡" title="Direct link to Curve of type ObjectReference (AacFlSettingCurveObjectReference) 💡">​</a></h3><ul><li><code>void WithOneFrame(Object objectReference)</code> 💡<br>
-Define the curve to be exactly one frame by defining two constant keyframes, usually lasting 1/60th of a second, with the desired color value.</li></ul><h3 class="anchor anchorWithStickyNavbar_LWe7" id="keyframes-of-type-float-aacflsettingkeyframes">Keyframes of type Float (AacFlSettingKeyframes)<a href="#keyframes-of-type-float-aacflsettingkeyframes" class="hash-link" aria-label="Direct link to Keyframes of type Float (AacFlSettingKeyframes)" title="Direct link to Keyframes of type Float (AacFlSettingKeyframes)">​</a></h3><ul><li><p><code>AacFlSettingKeyframes Easing(float timeInUnit, float value)</code> <br>
-Create a curved spline keyframe. The unit is defined by the function that invokes this lambda expression.</p></li><li><p><code>AacFlSettingKeyframes Linear(float timeInUnit, float value)</code> <br>
-Create a linear keyframe. The unit is defined by the function that invokes this lambda expression.</p></li><li><p><code>AacFlSettingKeyframes Constant(float timeInUnit, float value)</code> <br>
-Create a constant keyframe. The unit is defined by the function that invokes this lambda expression.</p></li></ul><h3 class="anchor anchorWithStickyNavbar_LWe7" id="keyframes-of-type-color-aacflsettingkeyframescolor">Keyframes of type Color (AacFlSettingKeyframesColor)<a href="#keyframes-of-type-color-aacflsettingkeyframescolor" class="hash-link" aria-label="Direct link to Keyframes of type Color (AacFlSettingKeyframesColor)" title="Direct link to Keyframes of type Color (AacFlSettingKeyframesColor)">​</a></h3><ul><li><p><code>AacFlSettingKeyframesColor Easing(int frame, Color value)</code> <br>
-Create a curved spline keyframe. The unit is defined by the function that invokes this lambda expression.</p></li><li><p><code>AacFlSettingKeyframesColor Linear(float frame, Color value)</code> <br>
-Create a linear keyframe. The unit is defined by the function that invokes this lambda expression.</p></li><li><p><code>AacFlSettingKeyframesColor Constant(int frame, Color value)</code> <br>
-Create a constant keyframe. The unit is defined by the function that invokes this lambda expression.</p></li></ul><h2 class="anchor anchorWithStickyNavbar_LWe7" id="blend-trees-aacflblendtree-">Blend Trees (AacFlBlendTree) 💡<a href="#blend-trees-aacflblendtree-" class="hash-link" aria-label="Direct link to Blend Trees (AacFlBlendTree) 💡" title="Direct link to Blend Trees (AacFlBlendTree) 💡">​</a></h2><ul><li><code>BlendTree BlendTree;</code> 💡<br>
-Expose the underlying BlendTree object.</li></ul><h3 class="anchor anchorWithStickyNavbar_LWe7" id="initialization-aacflnoninitializedblendtree--aacflblendtree-">Initialization (AacFlNonInitializedBlendTree : AacFlBlendTree) 💡<a href="#initialization-aacflnoninitializedblendtree--aacflblendtree-" class="hash-link" aria-label="Direct link to Initialization (AacFlNonInitializedBlendTree : AacFlBlendTree) 💡" title="Direct link to Initialization (AacFlNonInitializedBlendTree : AacFlBlendTree) 💡">​</a></h3><ul><li><p><code>AacFlBlendTree2D FreeformCartesian2D(AacFlFloatParameter parameterX, AacFlFloatParameter parameterY)</code> 💡<br>
-Define this BlendTree as being FreeformCartesian2D.</p></li><li><p><code>AacFlBlendTree2D FreeformDirectional2D(AacFlFloatParameter parameterX, AacFlFloatParameter parameterY)</code> 💡<br>
-Define this BlendTree as being FreeformDirectional2D.</p></li><li><p><code>AacFlBlendTree2D SimpleDirectional2D(AacFlFloatParameter parameterX, AacFlFloatParameter parameterY)</code> 💡<br>
-Define this BlendTree as being SimpleDirectional2D.</p></li><li><p><code>AacFlBlendTree1D Simple1D(AacFlFloatParameter parameter)</code> 💡<br>
-Define this BlendTree as being Simple1D.</p></li><li><p><code>AacFlBlendTreeDirect Direct()</code> 💡<br>
-Define this BlendTree as being Direct.</p></li></ul><h3 class="anchor anchorWithStickyNavbar_LWe7" id="2d-blend-tree-aacflblendtree2d--aacflblendtree-">2D Blend Tree (AacFlBlendTree2D : AacFlBlendTree) 💡<a href="#2d-blend-tree-aacflblendtree2d--aacflblendtree-" class="hash-link" aria-label="Direct link to 2D Blend Tree (AacFlBlendTree2D : AacFlBlendTree) 💡" title="Direct link to 2D Blend Tree (AacFlBlendTree2D : AacFlBlendTree) 💡">​</a></h3><ul><li><p><code>AacFlBlendTree2D WithAnimation(AacFlBlendTree blendTree, Vector2 pos, Action&lt;AacFlBlendTreeChildMotion&gt; furtherDefiningChild = null)</code> 💡<br>
-Add a BlendTree in the specified coordinates. The last parameter overload is optional: by default, the timeScale is 1, cycle offset is 0, mirror is false.</p></li><li><p><code>AacFlBlendTree2D WithAnimation(AacFlBlendTree blendTree, float x, float y, Action&lt;AacFlBlendTreeChildMotion&gt; furtherDefiningChild = null)</code> 💡<br>
-Add a BlendTree in the specified <code>x</code> and <code>y</code> coordinates. The last parameter overload is optional: by default, the timeScale is 1, cycle offset is 0, mirror is false.</p></li><li><p><code>AacFlBlendTree2D WithAnimation(AacFlClip clip, Vector2 pos, Action&lt;AacFlBlendTreeChildMotion&gt; furtherDefiningChild = null)</code> 💡<br>
-Add a Clip in the specified coordinates. The last parameter overload is optional: by default, the timeScale is 1, cycle offset is 0, mirror is false.</p></li><li><p><code>AacFlBlendTree2D WithAnimation(AacFlClip clip, float x, float y, Action&lt;AacFlBlendTreeChildMotion&gt; furtherDefiningChild = null)</code> 💡<br>
-Add a Clip in the specified <code>x</code> and <code>y</code> coordinates. The last parameter overload is optional: by default, the timeScale is 1, cycle offset is 0, mirror is false.</p></li><li><p><code>AacFlBlendTree2D WithAnimation(Motion motion, Vector2 pos, Action&lt;AacFlBlendTreeChildMotion&gt; furtherDefiningChild = null)</code> 💡<br>
-Add a raw motion in the specified coordinates. The last parameter overload is optional: by default, the timeScale is 1, cycle offset is 0, mirror is false.</p></li><li><p><code>AacFlBlendTree2D WithAnimation(Motion motion, float x, float y, Action&lt;AacFlBlendTreeChildMotion&gt; furtherDefiningChild = null)</code> 💡<br>
-Add a raw motion in the specified <code>x</code> and <code>y</code> coordinates. The last parameter overload is optional: by default, the timeScale is 1, cycle offset is 0, mirror is false.</p></li></ul><h3 class="anchor anchorWithStickyNavbar_LWe7" id="1d-blend-tree-aacflblendtree1d--aacflblendtree-">1D Blend Tree (AacFlBlendTree1D : AacFlBlendTree) 💡<a href="#1d-blend-tree-aacflblendtree1d--aacflblendtree-" class="hash-link" aria-label="Direct link to 1D Blend Tree (AacFlBlendTree1D : AacFlBlendTree) 💡" title="Direct link to 1D Blend Tree (AacFlBlendTree1D : AacFlBlendTree) 💡">​</a></h3><ul><li><p><code>AacFlBlendTree1D WithAnimation(AacFlBlendTree blendTree, float threshold, Action&lt;AacFlBlendTreeChildMotion&gt; furtherDefiningChild = null)</code> 💡<br>
-Add a BlendTree in the specified threshold. The last parameter overload is optional: by default, the timeScale is 1, cycle offset is 0, mirror is false.</p></li><li><p><code>AacFlBlendTree1D WithAnimation(AacFlClip clip, float threshold, Action&lt;AacFlBlendTreeChildMotion&gt; furtherDefiningChild = null)</code> 💡<br>
-Add a Clip in the specified threshold. The last parameter overload is optional: by default, the timeScale is 1, cycle offset is 0, mirror is false.</p></li><li><p><code>AacFlBlendTree1D WithAnimation(Motion motion, float threshold, Action&lt;AacFlBlendTreeChildMotion&gt; furtherDefiningChild = null)</code> 💡<br>
-Add a raw motion in the specified threshold. The last parameter overload is optional: by default, the timeScale is 1, cycle offset is 0, mirror is false.</p></li></ul><h3 class="anchor anchorWithStickyNavbar_LWe7" id="direct-blend-tree-aacflblendtreedirect--aacflblendtree-">Direct Blend Tree (AacFlBlendTreeDirect : AacFlBlendTree) 💡<a href="#direct-blend-tree-aacflblendtreedirect--aacflblendtree-" class="hash-link" aria-label="Direct link to Direct Blend Tree (AacFlBlendTreeDirect : AacFlBlendTree) 💡" title="Direct link to Direct Blend Tree (AacFlBlendTreeDirect : AacFlBlendTree) 💡">​</a></h3><ul><li><p><code>AacFlBlendTreeDirect WithAnimation(AacFlBlendTree blendTree, AacFlFloatParameter parameter, Action&lt;AacFlBlendTreeChildMotion&gt; furtherDefiningChild = null)</code> 💡<br>
-Add a BlendTree driven by the specified parameter. The last parameter overload is optional: by default, the timeScale is 1, cycle offset is 0, mirror is false.</p></li><li><p><code>AacFlBlendTreeDirect WithAnimation(AacFlClip clip, AacFlFloatParameter parameter, Action&lt;AacFlBlendTreeChildMotion&gt; furtherDefiningChild = null)</code> 💡<br>
-Add a Clip driven by the specified parameter. The last parameter overload is optional: by default, the timeScale is 1, cycle offset is 0, mirror is false.</p></li><li><p><code>AacFlBlendTreeDirect WithAnimation(Motion motion, AacFlFloatParameter parameter, Action&lt;AacFlBlendTreeChildMotion&gt; furtherDefiningChild = null)</code> 💡<br>
-Add a raw motion driven by the specified parameter. The last parameter overload is optional: by default, the timeScale is 1, cycle offset is 0, mirror is false.</p></li></ul><h3 class="anchor anchorWithStickyNavbar_LWe7" id="further-define-a-blend-tree-child-aacflblendtreechildmotion-">Further define a blend tree child (AacFlBlendTreeChildMotion) 💡<a href="#further-define-a-blend-tree-child-aacflblendtreechildmotion-" class="hash-link" aria-label="Direct link to Further define a blend tree child (AacFlBlendTreeChildMotion) 💡" title="Direct link to Further define a blend tree child (AacFlBlendTreeChildMotion) 💡">​</a></h3><ul><li><p><code>AacFlBlendTreeChildMotion WithTimeScaleSetTo(float timeScale)</code> 💡<br>
-Set the time scale. The time scale value is 1 by default.</p></li><li><p><code>AacFlBlendTreeChildMotion WithMirrorSetTo(bool mirror)</code> 💡<br>
-Set the mirror option. The mirror option value is false by default.</p></li><li><p><code>AacFlBlendTreeChildMotion WithCycleOffsetSetTo(float cycleOffset)</code> 💡<br>
-Set the cycle offset. The cycle offset value is 0 by default.</p></li></ul><h2 class="anchor anchorWithStickyNavbar_LWe7" id="transitions-1">Transitions<a href="#transitions-1" class="hash-link" aria-label="Direct link to Transitions" title="Direct link to Transitions">​</a></h2><p><code>AnimatorTransitionBase Transition;</code>  <br>
-Expose the underlying Transition object (from AacFlNewTransitionContinuation)</p><h3 class="anchor anchorWithStickyNavbar_LWe7" id="attributes-aacfltransition--aacflnewtransitioncontinuation">Attributes (AacFlTransition : AacFlNewTransitionContinuation)<a href="#attributes-aacfltransition--aacflnewtransitioncontinuation" class="hash-link" aria-label="Direct link to Attributes (AacFlTransition : AacFlNewTransitionContinuation)" title="Direct link to Attributes (AacFlTransition : AacFlNewTransitionContinuation)">​</a></h3><ul><li><p><code>AacFlTransition WithSourceInterruption()</code> <br>
-Set interruption source to be Source. // FIXME: Clunky interface.</p></li><li><p><code>AacFlTransition WithTransitionDurationSeconds(float transitionDuration)</code> <br>
-Set a fixed transition duration in seconds.</p></li><li><p><code>AacFlTransition WithTransitionDurationPercent(float transitionDurationNormalized)</code> <br>
-Set a non-fixed transition duration in a normalized amount. // FIXME: Percent is a misnomer.</p></li><li><p><code>AacFlTransition WithOrderedInterruption()</code> <br>
-Enable ordered interruption.</p></li><li><p><code>AacFlTransition WithNoOrderedInterruption()</code> <br>
-Disable ordered interruption.</p></li><li><p><code>AacFlTransition WithTransitionToSelf()</code> <br>
-Enable transition to self.</p></li><li><p><code>AacFlTransition WithNoTransitionToSelf()</code> <br>
-Disable transition to self.</p></li><li><p><code>AacFlTransition AfterAnimationFinishes()</code> <br>
-Set an exit time at 1, where the animation finishes.</p></li><li><p><code>AacFlTransition AfterAnimationIsAtLeastAtPercent(float exitTimeNormalized)</code> <br>
-Set the exit time at a specific normalized amount. // FIXME: Percent is a misnomer.</p></li></ul><h3 class="anchor anchorWithStickyNavbar_LWe7" id="chaining-conditions">Chaining conditions<a href="#chaining-conditions" class="hash-link" aria-label="Direct link to Chaining conditions" title="Direct link to Chaining conditions">​</a></h3><h4 class="anchor anchorWithStickyNavbar_LWe7" id="starting-conditions-aacflnewtransitioncontinuation--aacflentrytransition--aacflnewtransitioncontinuation">Starting Conditions (AacFlNewTransitionContinuation) &amp; (AacFlEntryTransition : AacFlNewTransitionContinuation)<a href="#starting-conditions-aacflnewtransitioncontinuation--aacflentrytransition--aacflnewtransitioncontinuation" class="hash-link" aria-label="Direct link to Starting Conditions (AacFlNewTransitionContinuation) &amp; (AacFlEntryTransition : AacFlNewTransitionContinuation)" title="Direct link to Starting Conditions (AacFlNewTransitionContinuation) &amp; (AacFlEntryTransition : AacFlNewTransitionContinuation)">​</a></h4><ul><li><p><code>AacFlTransitionContinuation When(IAacFlCondition action)</code> <br>
-Start defining conditions.</p></li><li><p><code>AacFlMultiTransitionContinuation When(IAacFlOrCondition actionsWithOr)</code> <br>
-Start defining conditions from a condition which may generate multiple transitions. Any And operator subsequently invoked as a result will apply to all transitions that would be generated by that condition, until the Or operator, if any.</p></li><li><p><code>AacFlTransitionContinuation When(Action&lt;AacFlTransitionContinuationWithoutOr&gt; actionsWithoutOr)</code> <br>
-Start defining conditions using a lambda expression that cannot contain Or operators.</p></li><li><p><code>AacFlTransitionContinuationOnlyOr When(Action&lt;AacFlNewTransitionContinuation&gt; actionsWithOr)</code> <br>
-Start defining conditions using a lambda expression that can contain Or operators, however the next operator, if any, must be Or.</p></li><li><p><code>AacFlTransitionContinuation WhenConditions()</code> <br>
-Provides an handle to start defining conditions using the And operator, for use in loops. The Or operator may be invoked at any point.</p></li></ul><h4 class="anchor anchorWithStickyNavbar_LWe7" id="single-transition-continuation-aacfltransitioncontinuation--aacfltransitioncontinuationabstractwithor">Single-transition continuation (AacFlTransitionContinuation : AacFlTransitionContinuationAbstractWithOr)<a href="#single-transition-continuation-aacfltransitioncontinuation--aacfltransitioncontinuationabstractwithor" class="hash-link" aria-label="Direct link to Single-transition continuation (AacFlTransitionContinuation : AacFlTransitionContinuationAbstractWithOr)" title="Direct link to Single-transition continuation (AacFlTransitionContinuation : AacFlTransitionContinuationAbstractWithOr)">​</a></h4><ul><li><p><code>AacFlTransitionContinuation And(IAacFlCondition action)</code> <br>
-Add another condition to this transition. A transition requires all of its conditions to pass.</p></li><li><p><code>AacFlTransitionContinuation And(Action&lt;AacFlTransitionContinuationWithoutOr&gt; actionsWithoutOr)</code> <br>
-Add another condition to this transition. A transition requires all of its conditions to pass.</p></li></ul><h4 class="anchor anchorWithStickyNavbar_LWe7" id="multi-transition-continuation-aacflmultitransitioncontinuation--aacfltransitioncontinuationabstractwithor">Multi-transition continuation (AacFlMultiTransitionContinuation : AacFlTransitionContinuationAbstractWithOr)<a href="#multi-transition-continuation-aacflmultitransitioncontinuation--aacfltransitioncontinuationabstractwithor" class="hash-link" aria-label="Direct link to Multi-transition continuation (AacFlMultiTransitionContinuation : AacFlTransitionContinuationAbstractWithOr)" title="Direct link to Multi-transition continuation (AacFlMultiTransitionContinuation : AacFlTransitionContinuationAbstractWithOr)">​</a></h4><ul><li><p><code>AacFlMultiTransitionContinuation And(IAacFlCondition action)</code> <br>
-Add another condition to all of the transitions generated by the previous conditions since the last When operator invocation. A transition requires all of its conditions to pass.</p></li><li><p><code>AacFlMultiTransitionContinuation And(Action&lt;AacFlTransitionContinuationWithoutOr&gt; actionsWithoutOr)</code> <br>
-Add another condition to all of the transitions generated by the previous conditions since the last When operator invocation. A transition requires all of its conditions to pass.</p></li></ul><h4 class="anchor anchorWithStickyNavbar_LWe7" id="continuation-aacfltransitioncontinuationabstractwithor">Continuation (AacFlTransitionContinuationAbstractWithOr)<a href="#continuation-aacfltransitioncontinuationabstractwithor" class="hash-link" aria-label="Direct link to Continuation (AacFlTransitionContinuationAbstractWithOr)" title="Direct link to Continuation (AacFlTransitionContinuationAbstractWithOr)">​</a></h4><ul><li><code>AacFlNewTransitionContinuation Or()</code> <br>
-Creates a single new transition, copying the attributes of the one this was invoked on. This has no conditions yet, so invoking a When operator immediately after this is expected here.</li></ul><h4 class="anchor anchorWithStickyNavbar_LWe7" id="continuation-wihtout-or-aacfltransitioncontinuationwithoutor">Continuation wihtout Or (AacFlTransitionContinuationWithoutOr)<a href="#continuation-wihtout-or-aacfltransitioncontinuationwithoutor" class="hash-link" aria-label="Direct link to Continuation wihtout Or (AacFlTransitionContinuationWithoutOr)" title="Direct link to Continuation wihtout Or (AacFlTransitionContinuationWithoutOr)">​</a></h4><ul><li><p><code>AacFlTransitionContinuationWithoutOr And(IAacFlCondition action)</code> <br>
-Add another condition to this transition. A transition requires all of its conditions to pass.</p></li><li><p><code>AacFlTransitionContinuationWithoutOr AndWhenever(Action&lt;AacFlTransitionContinuationWithoutOr&gt; action)</code> <br>
-Add additional conditions using a lambda expression that cannot contain Or operators. A transition requires all of its conditions to pass.</p></li></ul><h2 class="anchor anchorWithStickyNavbar_LWe7" id="conditions-iaacflcondition-iaacflorcondition">Conditions (IAacFlCondition, IAacFlOrCondition)<a href="#conditions-iaacflcondition-iaacflorcondition" class="hash-link" aria-label="Direct link to Conditions (IAacFlCondition, IAacFlOrCondition)" title="Direct link to Conditions (IAacFlCondition, IAacFlOrCondition)">​</a></h2><h4 class="anchor anchorWithStickyNavbar_LWe7" id="aacflfloatparameter">AacFlFloatParameter<a href="#aacflfloatparameter" class="hash-link" aria-label="Direct link to AacFlFloatParameter" title="Direct link to AacFlFloatParameter">​</a></h4><ul><li><p><code>IsGreaterThan(float other)</code> <br>
-Float is greater than <code>other</code>; be mindful of minifloat imprecision over the network.</p></li><li><p><code>IsLessThan(float other)</code> <br>
-Float is less than <code>other</code>; be mindful of minifloat imprecision over the network.</p></li></ul><h4 class="anchor anchorWithStickyNavbar_LWe7" id="aacflintparameter">AacFlIntParameter<a href="#aacflintparameter" class="hash-link" aria-label="Direct link to AacFlIntParameter" title="Direct link to AacFlIntParameter">​</a></h4><ul><li><p><code>IsGreaterThan(int other)</code> <br>
-Int is strictly greater than <code>other</code></p></li><li><p><code>IsLessThan(int other)</code> <br>
-Int is strictly less than <code>other</code></p></li><li><p><code>IsEqualTo(int other)</code> <br>
-Int is equal to <code>other</code></p></li><li><p><code>IsNotEqualTo(int other)</code> <br>
-Int is not equal to <code>other</code></p></li></ul><h4 class="anchor anchorWithStickyNavbar_LWe7" id="aacflenumintparametertenum-where-tenum--enum">AacFlEnumIntParameter&lt;TEnum<!-- -->&gt;<!-- --> where TEnum : Enum<a href="#aacflenumintparametertenum-where-tenum--enum" class="hash-link" aria-label="Direct link to aacflenumintparametertenum-where-tenum--enum" title="Direct link to aacflenumintparametertenum-where-tenum--enum">​</a></h4><ul><li><p><code>IsEqualTo(TEnum other)</code> <br>
-Int is not equal to <code>(int)other</code></p></li><li><p><code>IsNotEqualTo(TEnum other)</code> <br>
-Int is equal to <code>(int)other</code></p></li><li><p><code>IsGreaterThan(int other)</code> <br>
-(inherited from AacFlIntParameter) Int is strictly greater than <code>other</code></p></li><li><p><code>IsLessThan(int other)</code> <br>
-(inherited from AacFlIntParameter) Int is strictly less than <code>other</code></p></li><li><p><code>IsEqualTo(int other)</code> <br>
-(inherited from AacFlIntParameter)</p></li><li><p><code>IsNotEqualTo(int other)</code> <br>
-(inherited from AacFlIntParameter)</p></li></ul><h4 class="anchor anchorWithStickyNavbar_LWe7" id="aacflboolparameter">AacFlBoolParameter<a href="#aacflboolparameter" class="hash-link" aria-label="Direct link to AacFlBoolParameter" title="Direct link to AacFlBoolParameter">​</a></h4><ul><li><p><code>IsTrue()</code> <br>
-Bool is true</p></li><li><p><code>IsFalse()</code> <br>
-Bool is false</p></li><li><p><code>IsEqualTo(bool other)</code> <br>
-Bool is equal to <code>other</code></p></li><li><p><code>IsNotEqualTo(bool other)</code> <br>
-Bool is not equal to <code>other</code></p></li></ul><h4 class="anchor anchorWithStickyNavbar_LWe7" id="aacflfloatparametergroup">AacFlFloatParameterGroup<a href="#aacflfloatparametergroup" class="hash-link" aria-label="Direct link to AacFlFloatParameterGroup" title="Direct link to AacFlFloatParameterGroup">​</a></h4><ul><li><p><code>AreGreaterThan(float other)</code> <br>
-All of the Floats are greater than <code>other</code>; be mindful of minifloat imprecision over the network.</p></li><li><p><code>AreLessThan(float other)</code> <br>
-All of the Floats are less than <code>other</code>; be mindful of minifloat imprecision over the network.</p></li></ul><h4 class="anchor anchorWithStickyNavbar_LWe7" id="aacflintparametergroup">AacFlIntParameterGroup<a href="#aacflintparametergroup" class="hash-link" aria-label="Direct link to AacFlIntParameterGroup" title="Direct link to AacFlIntParameterGroup">​</a></h4><ul><li><p><code>AreGreaterThan(float other)</code> <br>
-All of the Ints are strictly greater than <code>other</code></p></li><li><p><code>AreLessThan(float other)</code> <br>
-All of the Ints are strictly less than <code>other</code></p></li><li><p><code>AreEqualTo(float other)</code> <br>
-All of the Ints are equal to <code>other</code></p></li><li><p><code>AreNotEqualTo(float other)</code> <br>
-All of the Ints are not equal to <code>other</code></p></li></ul><h4 class="anchor anchorWithStickyNavbar_LWe7" id="aacflboolparametergroup">AacFlBoolParameterGroup<a href="#aacflboolparametergroup" class="hash-link" aria-label="Direct link to AacFlBoolParameterGroup" title="Direct link to AacFlBoolParameterGroup">​</a></h4><ul><li><p><code>AreTrue()</code> <br>
-All of the Bools are true</p></li><li><p><code>AreFalse()</code> <br>
-All of the Bools are false</p></li><li><p><code>AreEqualTo(bool other)</code> <br>
-All of the Bools are equal to <code>other</code></p></li><li><p><code>AreFalseExcept(AacFlBoolParameter exceptThisMustBeTrue)</code> <br>
-All of the Bools except <code>exceptThisMustBeTrue</code> are false, and the Bool of <code>exceptThisMustBeTrue</code> must be true.</p></li><li><p><code>AreFalseExcept(params AacFlBoolParameter[] exceptTheseMustBeTrue)</code> <br>
-All of the Bools except those in <code>exceptTheseMustBeTrue</code> are false, and all of the Bools in <code>exceptTheseMustBeTrue</code> must be true.</p></li><li><p><code>AreFalseExcept(AacFlBoolParameterGroup exceptTheseMustBeTrue)</code> <br>
-All of the Bools except those in <code>exceptTheseMustBeTrue</code> are false, and all of the Bools in <code>exceptTheseMustBeTrue</code> must be true.</p></li><li><p><code>AreTrueExcept(AacFlBoolParameter exceptThisMustBeFalse)</code> <br>
-All of the Bools except <code>exceptThisMustBeTrue</code> are true, and the Bool of <code>exceptThisMustBeTrue</code> must be false.</p></li><li><p><code>AreTrueExcept(params AacFlBoolParameter[] exceptTheseMustBeFalse)</code> <br>
-All of the Bools except those in <code>exceptTheseMustBeTrue</code> are true, and all of the Bools in <code>exceptTheseMustBeTrue</code> must be false.</p></li><li><p><code>AreTrueExcept(AacFlBoolParameterGroup exceptTheseMustBeFalse)</code> <br>
-All of the Bools except those in <code>exceptTheseMustBeTrue</code> are true, and all of the Bools in <code>exceptTheseMustBeTrue</code> must be false.</p></li><li><p><code>IsAnyTrue()</code> -&gt; returns <code>IAacFlOrCondition</code>, can only be used inside <code>.When(...)</code> <br>
-Generates multiple transitions, verifying whether any Bool is true</p></li><li><p><code>IsAnyFalse()</code> -&gt; returns <code>IAacFlOrCondition</code>, can only be used inside <code>.When(...)</code> <br>
-Generates multiple transitions, verifying whether any Bool is false</p></li></ul></div></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/docs/products/animator-as-code/reference"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Reference manual</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/docs/products/animator-as-code/functions/vrchat"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">VRChat</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#animator-as-code-aacv1" class="table-of-contents__link toc-highlight">Animator As Code (AacV1)</a></li><li><a href="#base-aacflbase" class="table-of-contents__link toc-highlight">Base (AacFlBase)</a></li><li><a href="#controller-aacflcontroller-" class="table-of-contents__link toc-highlight">Controller (AacFlController) 💡</a></li><li><a href="#layer-aacfllayer" class="table-of-contents__link toc-highlight">Layer (AacFlLayer)</a></li><li><a href="#sub-state-machine-aacflstatemachine-" class="table-of-contents__link toc-highlight">Sub State Machine (AacFlStateMachine) 💡</a></li><li><a href="#no-animator-aacflnoanimator-" class="table-of-contents__link toc-highlight">No Animator (AacFlNoAnimator) 💡</a></li><li><a href="#state-aacflstate" class="table-of-contents__link toc-highlight">State (AacFlState)</a><ul><li><a href="#graph-positioning" class="table-of-contents__link toc-highlight">Graph Positioning</a></li><li><a href="#attributes" class="table-of-contents__link toc-highlight">Attributes</a></li><li><a href="#transitions" class="table-of-contents__link toc-highlight">Transitions</a></li><li><a href="#state-behaviours" class="table-of-contents__link toc-highlight">State behaviours</a></li></ul></li><li><a href="#clip-aacflclip" class="table-of-contents__link toc-highlight">Clip (AacFlClip)</a><ul><li><a href="#attributes-1" class="table-of-contents__link toc-highlight">Attributes</a></li><li><a href="#single-frame-animations" class="table-of-contents__link toc-highlight">Single-frame Animations</a></li><li><a href="#mutli-frame-animations-" class="table-of-contents__link toc-highlight">Mutli-frame Animations 💡</a></li><li><a href="#clip-editing" class="table-of-contents__link toc-highlight">Clip Editing</a></li></ul></li><li><a href="#clip-editing-aacfleditclip" class="table-of-contents__link toc-highlight">Clip editing (AacFlEditClip)</a><ul><li><a href="#curve-of-type-float-aacflsettingcurve" class="table-of-contents__link toc-highlight">Curve of type Float (AacFlSettingCurve)</a></li><li><a href="#curve-of-type-color-aacflsettingcurvecolor" class="table-of-contents__link toc-highlight">Curve of type Color (AacFlSettingCurveColor)</a></li><li><a href="#curve-of-type-objectreference-aacflsettingcurveobjectreference-" class="table-of-contents__link toc-highlight">Curve of type ObjectReference (AacFlSettingCurveObjectReference) 💡</a></li><li><a href="#keyframes-of-type-float-aacflsettingkeyframes" class="table-of-contents__link toc-highlight">Keyframes of type Float (AacFlSettingKeyframes)</a></li><li><a href="#keyframes-of-type-color-aacflsettingkeyframescolor" class="table-of-contents__link toc-highlight">Keyframes of type Color (AacFlSettingKeyframesColor)</a></li></ul></li><li><a href="#blend-trees-aacflblendtree-" class="table-of-contents__link toc-highlight">Blend Trees (AacFlBlendTree) 💡</a><ul><li><a href="#initialization-aacflnoninitializedblendtree--aacflblendtree-" class="table-of-contents__link toc-highlight">Initialization (AacFlNonInitializedBlendTree : AacFlBlendTree) 💡</a></li><li><a href="#2d-blend-tree-aacflblendtree2d--aacflblendtree-" class="table-of-contents__link toc-highlight">2D Blend Tree (AacFlBlendTree2D : AacFlBlendTree) 💡</a></li><li><a href="#1d-blend-tree-aacflblendtree1d--aacflblendtree-" class="table-of-contents__link toc-highlight">1D Blend Tree (AacFlBlendTree1D : AacFlBlendTree) 💡</a></li><li><a href="#direct-blend-tree-aacflblendtreedirect--aacflblendtree-" class="table-of-contents__link toc-highlight">Direct Blend Tree (AacFlBlendTreeDirect : AacFlBlendTree) 💡</a></li><li><a href="#further-define-a-blend-tree-child-aacflblendtreechildmotion-" class="table-of-contents__link toc-highlight">Further define a blend tree child (AacFlBlendTreeChildMotion) 💡</a></li></ul></li><li><a href="#transitions-1" class="table-of-contents__link toc-highlight">Transitions</a><ul><li><a href="#attributes-aacfltransition--aacflnewtransitioncontinuation" class="table-of-contents__link toc-highlight">Attributes (AacFlTransition : AacFlNewTransitionContinuation)</a></li><li><a href="#chaining-conditions" class="table-of-contents__link toc-highlight">Chaining conditions</a></li></ul></li><li><a href="#conditions-iaacflcondition-iaacflorcondition" class="table-of-contents__link toc-highlight">Conditions (IAacFlCondition, IAacFlOrCondition)</a></li></ul></div></div></div></div></main></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="col footer__col"><div class="footer__title">Docs</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/docs/products">Products</a></li><li class="footer__item"><a class="footer__link-item" href="/docs/resilience">ResilienceVR</a></li></ul></div><div class="col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://www.patreon.com/vr_hai" target="_blank" rel="noopener noreferrer" class="footer__link-item">Patreon<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://hai-vr.fanbox.cc/" target="_blank" rel="noopener noreferrer" class="footer__link-item">pixivFANBOX<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://twitter.com/vr_hai" target="_blank" rel="noopener noreferrer" class="footer__link-item">Twitter<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a class="footer__link-item" href="/docs/other/discord">Discord</a></li></ul></div><div class="col footer__col"><div class="footer__title">More</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://github.com/hai-vr/" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://hai-vr.dev/" target="_blank" rel="noopener noreferrer" class="footer__link-item">hai-vr.dev<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2023 Invitational Software. Built with Docusaurus.</div></div></div></footer></div>
-<script src="/assets/js/runtime~main.df588d96.js"></script>
-<script src="/assets/js/main.faaebf96.js"></script>
+<script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="navbar navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/"><div class="navbar__logo"><img src="/img/hai-avi.png" alt="My Site Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/img/hai-avi.png" alt="My Site Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">Haï~</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/docs/products">Products</a><a class="navbar__item navbar__link" href="/docs/resilience">ResilienceVR</a><a class="navbar__item navbar__link" href="/docs/other/discord">Help &amp; Discord</a><a class="navbar__item navbar__link" href="/docs/other/patreon">Patreon rewards</a></div><div class="navbar__items navbar__items--right"><a href="https://www.patreon.com/vr_hai" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">Patreon<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a><a href="https://github.com/hai-vr/" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="Switch between dark and light mode (currently light mode)" aria-label="Switch between dark and light mode (currently light mode)" aria-live="polite"><svg viewBox="0 0 24 24" width="24" height="24" class="lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" class="darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/docs/products">All products 🗒️</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/docs/products/animation-viewer">Animation Viewer</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--active" aria-expanded="true" href="/docs/products/animator-as-code">Animator As Code (V1)</a><button aria-label="Collapse sidebar category &#x27;Animator As Code (V1)&#x27;" type="button" class="clean-btn menu__caret"></button></div><ul style="display:block;overflow:visible;height:auto" class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/products/animator-as-code/install">Install</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/products/animator-as-code/getting-started">Getting started</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/products/animator-as-code/examples">Examples</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/products/animator-as-code/reference">Reference manual</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" aria-expanded="true" tabindex="0" href="/docs/products/animator-as-code/functions/base">Functions</a></div><ul style="display:block;overflow:visible;height:auto" class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/docs/products/animator-as-code/functions/base">Base functions</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/products/animator-as-code/functions/vrchat">VRChat</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/products/animator-as-code/functions/vrchat-destructive-workflow">VRChat (Destructive workflow)</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/products/animator-as-code/functions/modular-avatar">Modular Avatar</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/products/animator-as-code/functions/ndmf-processor">NDMF Processor</a></li></ul></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/products/animator-as-code/reference-barebones">Barebones way</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/products/animator-as-code/migrating-v0-to-v1">Migrating from V0 to V1</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/products/animator-as-code/examples-maac">Non-destructive workflow examples</a></li></ul></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/docs/products/blendshape-viewer">Blendshape Viewer</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/docs/products/blendtree-viewer">BlendTree Viewer</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/docs/products/cloth-transfer">Cloth Transfer</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/docs/products/combo-gesture-expressions">ComboGestureExpressions</a><button aria-label="Expand sidebar category &#x27;ComboGestureExpressions&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/docs/products/constraint-track-animation-creator">Constraint Track Animation Creator</a><button aria-label="Expand sidebar category &#x27;Constraint Track Animation Creator&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/docs/products/double-hip-tracker">⭐ Double Hip Tracker</a><button aria-label="Expand sidebar category &#x27;⭐ Double Hip Tracker&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/docs/products/expressions-menu-hierarchy-editor">Expressions Menu Hierarchy Editor</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/docs/products/facetra-shape-creator">⭐ FaceTra Shape Creator</a><button aria-label="Expand sidebar category &#x27;⭐ FaceTra Shape Creator&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/docs/products/icon-gen">⭐ IconGen</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/docs/products/lightbox-viewer">Lightbox Viewer</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/docs/products/property-finder">Property Finder</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/docs/products/very-h">  🔒 VeryHaï</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/docs/products/visual-expressions-editor">Visual Expressions Editor</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/docs/products/vixen">⭐ Vixen</a><button aria-label="Expand sidebar category &#x27;⭐ Vixen&#x27;" type="button" class="clean-btn menu__caret"></button></div></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs" itemscope="" itemtype="https://schema.org/BreadcrumbList"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item"><a class="breadcrumbs__link" itemprop="item" href="/docs/products/animator-as-code"><span itemprop="name">Animator As Code (V1)</span></a><meta itemprop="position" content="1"></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">Functions</span><meta itemprop="position" content="2"></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link" itemprop="name">Base functions</span><meta itemprop="position" content="3"></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><h1>Functions</h1>
+<div class="theme-admonition theme-admonition-danger admonition_xJq3 alert alert--danger"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M5.05.31c.81 2.17.41 3.38-.52 4.31C3.55 5.67 1.98 6.45.9 7.98c-1.45 2.05-1.7 6.53 3.53 7.7-2.2-1.16-2.67-4.52-.3-6.61-.61 2.03.53 3.33 1.94 2.86 1.39-.47 2.3.53 2.27 1.67-.02.78-.31 1.44-1.13 1.81 3.42-.59 4.78-3.42 4.78-5.56 0-2.84-2.53-3.22-1.25-5.61-1.52.13-2.03 1.13-1.89 2.75.09 1.08-1.02 1.8-1.86 1.33-.67-.41-.66-1.19-.06-1.78C8.18 5.31 8.68 2.45 5.05.32L5.03.3l.02.01z"></path></svg></span>danger</div><div class="admonitionContent_BuS1"><p>This is the work-in-progress documentation for Animator As Code <strong>V1</strong>, which has not yet been released. The last public version of Animator As Code is V0.</p></div></div>
+<div class="theme-admonition theme-admonition-info admonition_xJq3 alert alert--info"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>info</div><div class="admonitionContent_BuS1"><p>New additions in V1 are indicated with a light bulb 💡 icon.</p></div></div>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="animator-creation-overview">Animator creation overview<a href="#animator-creation-overview" class="hash-link" aria-label="Direct link to Animator creation overview" title="Direct link to Animator creation overview">​</a></h4>
+<!-- -->
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="asset-creation-overview">Asset creation overview<a href="#asset-creation-overview" class="hash-link" aria-label="Direct link to Asset creation overview" title="Direct link to Asset creation overview">​</a></h4>
+<!-- -->
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="animator-as-code-aacv1">Animator As Code (AacV1)<a href="#animator-as-code-aacv1" class="hash-link" aria-label="Direct link to Animator As Code (AacV1)" title="Direct link to Animator As Code (AacV1)">​</a></h2>
+<ul>
+<li><code>static AacFlBase Create(AacConfiguration configuration)</code> <br>
+Create an Animator As Code (AAC) base.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="base-aacflbase">Base (AacFlBase)<a href="#base-aacflbase" class="hash-link" aria-label="Direct link to Base (AacFlBase)" title="Direct link to Base (AacFlBase)">​</a></h2>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="create-assets">Create assets<a href="#create-assets" class="hash-link" aria-label="Direct link to Create assets" title="Direct link to Create assets">​</a></h4>
+<ul>
+<li>
+<p><code>AacFlClip NewClip()</code> <br>
+Create a new clip. The asset is generated into the container.</p>
+</li>
+<li>
+<p><code>AacFlClip CopyClip(AnimationClip originalClip)</code> <br>
+Create a new clip that is a copy of <code>originalClip</code>. The asset is generated into the container.</p>
+</li>
+<li>
+<p><code>AacFlNonInitializedBlendTree NewBlendTree()</code> 💡<br>
+Create a new BlendTree asset. The asset is generated into the container.</p>
+</li>
+<li>
+<p><code>BlendTree NewBlendTreeAsRaw()</code> <br>
+Create a new BlendTree asset and returns a native BlendTree object. The asset is generated into the container. 💡 You may use NewBlendTree() instead to obtain a fluent interface.</p>
+</li>
+<li>
+<p><code>AacFlClip NewClip(string name)</code> <br>
+Create a new clip with a name. However, the name is only used as a suffix for the asset. The asset is generated into the container. FIXME: This is quite pointless because the name is mangled anyways.</p>
+</li>
+<li>
+<p><code>AacFlClip DummyClipLasting(float numberOf, AacFlUnit unit)</code> <br>
+Create a new clip which animates a dummy transform for a specific duration specified in an unit (Frames or Seconds).</p>
+</li>
+<li>
+<p><code>AacFlController NewAnimatorController()</code> 💡<br>
+Create a new animator controller. The asset is generated into the container.</p>
+</li>
+<li>
+<p><code>AacFlController NewAnimatorController(string name)</code> 💡<br>
+Create a new animator controller with a name. However, the name is only used as a suffix for the asset. The asset is generated into the container.</p>
+</li>
+<li>
+<p><code>T DuplicateAsset&lt;T&gt;(T assetToDuplicate) where T : Object</code> 💡<br>
+Duplicate a new asset into the container and return it. For example, use this to create modified material variants. This asset will be removed the same way as other generated assets.</p>
+</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="reference-vrchat-assets">Reference VRChat assets<a href="#reference-vrchat-assets" class="hash-link" aria-label="Direct link to Reference VRChat assets" title="Direct link to Reference VRChat assets">​</a></h4>
+<div class="theme-admonition theme-admonition-info admonition_xJq3 alert alert--info"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>info</div><div class="admonitionContent_BuS1"><p>See functions specific to <a href="/docs/products/animator-as-code/functions/vrchat#base-aacflbase">VRChat</a>.</p></div></div>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="maintain-assets">Maintain assets<a href="#maintain-assets" class="hash-link" aria-label="Direct link to Maintain assets" title="Direct link to Maintain assets">​</a></h4>
+<ul>
+<li><code>void ClearPreviousAssets()</code> <br>
+Removes all assets from the asset container matching the specified asset key.</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="create-layers-destructive-workflow">Create layers (Destructive workflow)<a href="#create-layers-destructive-workflow" class="hash-link" aria-label="Direct link to Create layers (Destructive workflow)" title="Direct link to Create layers (Destructive workflow)">​</a></h4>
+<div class="theme-admonition theme-admonition-info admonition_xJq3 alert alert--info"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>info</div><div class="admonitionContent_BuS1"><p>For VRChat-specific functions, see <a href="/docs/products/animator-as-code/functions/vrchat-destructive-workflow#extensions-for-base-aacflbase">VRChat (Destructive workflow)</a></p></div></div>
+<ul>
+<li>
+<p><code>AacFlLayer CreateMainArbitraryControllerLayer(AnimatorController controller)</code> <br>
+Create a main layer for an arbitrary AnimatorController, clearing the previous one of the same system. You are not obligated to have a main layer.</p>
+</li>
+<li>
+<p><code>AacFlLayer CreateSupportingArbitraryControllerLayer(AnimatorController controller, string suffix)</code> <br>
+Create a supporting layer for an arbitrary AnimatorController, clearing the previous one of the same system and suffix. You can create multiple supporting layers with different suffixes, and you are not obligated to have a main layer to create a supporting layer.</p>
+</li>
+<li>
+<p><code>AacFlLayer CreateFirstArbitraryControllerLayer(AnimatorController controller)</code> <br>
+Clears the topmost layer of an arbitrary AnimatorController, and returns it.</p>
+</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="remove-layers-destructive-workflow">Remove layers (Destructive workflow)<a href="#remove-layers-destructive-workflow" class="hash-link" aria-label="Direct link to Remove layers (Destructive workflow)" title="Direct link to Remove layers (Destructive workflow)">​</a></h4>
+<div class="theme-admonition theme-admonition-info admonition_xJq3 alert alert--info"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>info</div><div class="admonitionContent_BuS1"><p>See functions specific to <a href="/docs/products/animator-as-code/functions/vrchat-destructive-workflow#extensions-for-base-aacflbase">VRChat (Destructive workflow)</a></p></div></div>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="create-parameters-without-an-animator-">Create parameters without an animator 💡<a href="#create-parameters-without-an-animator-" class="hash-link" aria-label="Direct link to Create parameters without an animator 💡" title="Direct link to Create parameters without an animator 💡">​</a></h4>
+<ul>
+<li><code>AacFlNoAnimator NoAnimator()</code> 💡<br>
+If you are not creating an animator, this returns an object from which you can obtain animator parameter objects. You should use this class if you are creating BlendTree assets without any animator controllers to back it. Otherwise, it is strongly recommended to obtain animator parameter objects directly from the layer objects instead of using NoAnimator(), as the use of NoAnimator() will not result in the registration of any parameters inside the animator controller.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="controller-aacflcontroller-">Controller (AacFlController) 💡<a href="#controller-aacflcontroller-" class="hash-link" aria-label="Direct link to Controller (AacFlController) 💡" title="Direct link to Controller (AacFlController) 💡">​</a></h2>
+<ul>
+<li>
+<p><code>AacFlLayer NewLayer(string suffix)</code> 💡<br>
+Create a new layer with a specific suffix. You cannot create multiple layers with the same suffix on the same controller.</p>
+</li>
+<li>
+<p><code>AacFlLayer NewLayer()</code> 💡<br>
+Create a new layer. You cannot invoke this method multiple times on the same controller.</p>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="layer-aacfllayer">Layer (AacFlLayer)<a href="#layer-aacfllayer" class="hash-link" aria-label="Direct link to Layer (AacFlLayer)" title="Direct link to Layer (AacFlLayer)">​</a></h2>
+<ul>
+<li>
+<p><code>AacFlState NewState(string name)</code> 🔺<br>
+Create a new state, initially positioned below the last generated state of this layer. 🔺 If the name is already used, a number will be appended at the end.</p>
+</li>
+<li>
+<p><code>AacFlState NewState(string name, int x, int y)</code> 🔺<br>
+Create a new state at a specific position <code>x</code> and <code>y</code>, in grid units. The grid size is defined in the DefaultsProvider of the AacConfiguration of AAC. <code>x</code> positive goes right, <code>y</code> positive goes down. 🔺 If the name is already used, a number will be appended at the end.</p>
+</li>
+<li>
+<p><code>AacFlStateMachine NewSubStateMachine(string name)</code> 💡<br>
+Create a new state machine, initially positioned below the last generated state of this layer. 🔺 If the name is already used, a number will be appended at the end.</p>
+</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="create-layer-transitions">Create layer transitions<a href="#create-layer-transitions" class="hash-link" aria-label="Direct link to Create layer transitions" title="Direct link to Create layer transitions">​</a></h4>
+<ul>
+<li>
+<p><code>AacFlTransition AnyTransitionsTo(AacFlState destination)</code> <br>
+Create a transition from Any to the <code>destination</code> state.</p>
+</li>
+<li>
+<p><code>AacFlEntryTransition EntryTransitionsTo(AacFlState destination)</code> <br>
+Create a transition from the Entry to the <code>destination</code> state.</p>
+</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="create-parameters">Create parameters<a href="#create-parameters" class="hash-link" aria-label="Direct link to Create parameters" title="Direct link to Create parameters">​</a></h4>
+<ul>
+<li>
+<p><code>AacFlBoolParameter BoolParameter(string parameterName)</code> <br>
+Create a Bool parameter in the animator.</p>
+</li>
+<li>
+<p><code>AacFlBoolParameter TriggerParameterAsBool(string parameterName)</code> <br>
+Create a Trigger parameter in the animator, but returns a Bool parameter for use in AAC.</p>
+</li>
+<li>
+<p><code>AacFlFloatParameter FloatParameter(string parameterName)</code> <br>
+Create a Float parameter in the animator.</p>
+</li>
+<li>
+<p><code>AacFlIntParameter IntParameter(string parameterName)</code> <br>
+Create an Int parameter in the animator.</p>
+</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="create-parameter-groups">Create parameter groups<a href="#create-parameter-groups" class="hash-link" aria-label="Direct link to Create parameter groups" title="Direct link to Create parameter groups">​</a></h4>
+<ul>
+<li>
+<p><code>AacFlBoolParameterGroup BoolParameters(params string[] parameterNames)</code> <br>
+Create multiple Bool parameters in the animator, and returns a group of multiple Bools.</p>
+</li>
+<li>
+<p><code>AacFlBoolParameterGroup TriggerParametersAsBools(params string[] parameterNames)</code> <br>
+Create multiple Trigger parameters in the animator, but returns a group of multiple Bools for use in AAC.</p>
+</li>
+<li>
+<p><code>AacFlFloatParameterGroup FloatParameters(params string[] parameterNames)</code> <br>
+Create multiple Float parameters in the animator, and returns a group of multiple Bools.</p>
+</li>
+<li>
+<p><code>AacFlIntParameterGroup IntParameters(params string[] parameterNames)</code> <br>
+Create multiple Int parameters in the animator, and returns a group of multiple Bools.</p>
+</li>
+<li>
+<p><code>AacFlBoolParameterGroup BoolParameters(params AacFlBoolParameter[] parameters)</code> <br>
+Combine multiple Int parameters into a group.</p>
+</li>
+<li>
+<p><code>AacFlBoolParameterGroup TriggerParametersAsBools(params AacFlBoolParameter[] parameters)</code> <br>
+Combine multiple Trigger parameters into a group. FIXME: This is a pointless function because BoolParameters already exists.</p>
+</li>
+<li>
+<p><code>AacFlFloatParameterGroup FloatParameters(params AacFlFloatParameter[] parameters)</code> <br>
+Combine multiple Int parameters into a group.</p>
+</li>
+<li>
+<p><code>AacFlIntParameterGroup IntParameters(params AacFlIntParameter[] parameters)</code> <br>
+Combine multiple Int parameters into a group.</p>
+</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="set-animator-parameter-value">Set animator parameter value<a href="#set-animator-parameter-value" class="hash-link" aria-label="Direct link to Set animator parameter value" title="Direct link to Set animator parameter value">​</a></h4>
+<ul>
+<li>
+<p><code>AacFlLayer OverrideValue(AacFlBoolParameter toBeForced, bool value)</code> <br>
+Set the Bool value of <code>toBeForced</code> parameter to <code>value</code> in the animator.</p>
+</li>
+<li>
+<p><code>AacFlLayer OverrideValue(AacFlFloatParameter toBeForced, float value)</code> <br>
+Set the Float value of <code>toBeForced</code> parameter to <code>value</code> in the animator.</p>
+</li>
+<li>
+<p><code>AacFlLayer OverrideValue(AacFlIntParameter toBeForced, int value)</code> <br>
+Set the Int value of <code>toBeForced</code> parameter to <code>value</code> in the animator.</p>
+</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="edit-avatar-mask">Edit avatar mask<a href="#edit-avatar-mask" class="hash-link" aria-label="Direct link to Edit avatar mask" title="Direct link to Edit avatar mask">​</a></h4>
+<ul>
+<li>
+<p><code>AacFlLayer WithAvatarMask(AvatarMask avatarMask)</code> <br>
+Set the Avatar Mask of the layer.</p>
+</li>
+<li>
+<p><code>AacFlLayer WithAvatarMaskNoTransforms()</code> <br>
+Set the Avatar Mask of the layer to be an Avatar Mask which denies all transforms. The asset is generated into the container.</p>
+</li>
+<li>
+<p><code>AacFlLayer ResolveAvatarMask(Transform[] paths)</code> <br>
+Set the Avatar Mask of the layer to be an Avatar Mask that allows the specified transforms. If <code>paths</code> is an empty array, all transforms are denied, which is effectively the same as calling <code>.WithAvatarMaskNoTransforms()</code>. The asset is generated into the container.</p>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="sub-state-machine-aacflstatemachine-">Sub State Machine (AacFlStateMachine) 💡<a href="#sub-state-machine-aacflstatemachine-" class="hash-link" aria-label="Direct link to Sub State Machine (AacFlStateMachine) 💡" title="Direct link to Sub State Machine (AacFlStateMachine) 💡">​</a></h2>
+<ul>
+<li>
+<p><code>AacFlStateMachine NewSubStateMachine(string name)</code> 💡<br>
+Create a new state machine, initially positioned below the last generated state of this layer.</p>
+</li>
+<li>
+<p><code>AacFlStateMachine Restarts()</code> 💡<br>
+Creates a new transition of the entire state machine node to itself, which is evaluated after the state machine commits to an exit transitions.</p>
+</li>
+<li>
+<p><code>AacFlStateMachine Exits()</code> 💡<br>
+Create a transition from this state machine node to the exit. 🔺 If the name is already used, a number will be appended at the end.</p>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="no-animator-aacflnoanimator-">No Animator (AacFlNoAnimator) 💡<a href="#no-animator-aacflnoanimator-" class="hash-link" aria-label="Direct link to No Animator (AacFlNoAnimator) 💡" title="Direct link to No Animator (AacFlNoAnimator) 💡">​</a></h2>
+<div class="theme-admonition theme-admonition-caution admonition_xJq3 alert alert--warning"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>caution</div><div class="admonitionContent_BuS1"><p>You should use this class if you are creating BlendTree assets without any animator controllers to back it.</p><p>Otherwise, it is strongly recommended to obtain animator parameter objects directly from the <a href="#create-parameters">layer objects</a> instead of using NoAnimator(), as the use of NoAnimator() will not result in the registration of any parameters inside the animator controller.</p></div></div>
+<ul>
+<li>
+<p><code>AacFlFloatParameter FloatParameter(string parameterName)</code> 💡<br>
+Create a Float parameter, for use without a backing animator.</p>
+</li>
+<li>
+<p><code>AacFlIntParameter IntParameter(string parameterName)</code> 💡<br>
+Create a Int parameter, for use without a backing animator.</p>
+</li>
+<li>
+<p><code>AacFlBoolParameter BoolParameter(string parameterName)</code> 💡<br>
+Create a Bool parameter, for use without a backing animator.</p>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="state-aacflstate">State (AacFlState)<a href="#state-aacflstate" class="hash-link" aria-label="Direct link to State (AacFlState)" title="Direct link to State (AacFlState)">​</a></h2>
+<ul>
+<li><code>AnimatorState State;</code> <br>
+Expose the underlying State object.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="graph-positioning">Graph Positioning<a href="#graph-positioning" class="hash-link" aria-label="Direct link to Graph Positioning" title="Direct link to Graph Positioning">​</a></h3>
+<ul>
+<li>
+<p><code>AacFlState LeftOf(AacFlState otherState)</code> <br>
+Move the state to be left of the other state in the graph.</p>
+</li>
+<li>
+<p><code>AacFlState RightOf(AacFlState otherState)</code> <br>
+Move the state to be right of the other state in the graph.</p>
+</li>
+<li>
+<p><code>AacFlState Over(AacFlState otherState)</code> <br>
+Move the state to be over the other state in the graph.</p>
+</li>
+<li>
+<p><code>AacFlState Under(AacFlState otherState)</code> <br>
+Move the state to be under the other state in the graph.</p>
+</li>
+<li>
+<p><code>AacFlState LeftOf()</code> <br>
+Move the state to be left of the last created state of the state machine this belongs to in the graph.</p>
+</li>
+<li>
+<p><code>AacFlState RightOf()</code> <br>
+Move the state to be right of the last created state of the state machine this belongs to in the graph.</p>
+</li>
+<li>
+<p><code>AacFlState Over()</code> <br>
+Move the state to be over the last created state of the state machine this belongs to in the graph.</p>
+</li>
+<li>
+<p><code>AacFlState Under()</code> <br>
+Move the state to be under the last created state of the state machine this belongs to in the graph.</p>
+</li>
+<li>
+<p><code>AacFlState Shift(AacFlState otherState, int shiftX, int shiftY)</code> <br>
+Move the state to be shifted next to the other state in the graph, in grid units. <code>shiftX</code> positive goes right, <code>shiftY</code> positive goes down.</p>
+</li>
+<li>
+<p><code>AacFlState Shift(Vector3 otherPosition, int shiftX, int shiftY)</code> <br>
+Move the state to be shifted next to another position in the graph, in grid units. <code>shiftX</code> positive goes right, <code>shiftY</code> positive goes down. // FIXME: Vector3 is really odd as a type.</p>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="attributes">Attributes<a href="#attributes" class="hash-link" aria-label="Direct link to Attributes" title="Direct link to Attributes">​</a></h3>
+<ul>
+<li>
+<p><code>AacFlState WithAnimation(Motion clip)</code> <br>
+Set a specific raw Motion for the state. This could be a blend tree.</p>
+</li>
+<li>
+<p><code>AacFlState WithAnimation(AacFlClip clip)</code> <br>
+Set a specific clip for the state. See <code>(AacFlBase).NewClip()</code> and similar.</p>
+</li>
+<li>
+<p><code>AacFlState WithAnimation(AacFlBlendTree clip)</code> 💡<br>
+Set a specific blend tree for the state. See <code>(AacFlBase).NewBlendTree()</code> and similar.</p>
+</li>
+<li>
+<p><code>AacFlState MotionTime(AacFlFloatParameter floatParam)</code> <br>
+Set the Motion Time, formerly known as Normalized Time.</p>
+</li>
+<li>
+<p><code>AacFlState WithSpeed(AacFlFloatParameter parameter)</code> <br>
+Set the Speed.</p>
+</li>
+<li>
+<p><code>AacFlState WithWriteDefaultsSetTo(bool shouldWriteDefaults)</code> <br>
+Set Write Defaults. If you need to do this to many states, consider changing the AacConfiguration DefaultsProvider when creating Animator As Code.</p>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="transitions">Transitions<a href="#transitions" class="hash-link" aria-label="Direct link to Transitions" title="Direct link to Transitions">​</a></h3>
+<ul>
+<li>
+<p><code>AacFlTransition TransitionsTo(AacFlState destination)</code> <br>
+Create a new transition from this state to the destination state.</p>
+</li>
+<li>
+<p><code>AacFlTransition TransitionsFromAny()</code> <br>
+Create a new transition from Any to this state.</p>
+</li>
+<li>
+<p><code>AacFlEntryTransition TransitionsFromEntry()</code> <br>
+Create a new transition from Entry to this state. Note that the first created state is the default state, so generally this function does not need to be invoked onto the first created state. Calling this function will not define this state to be the default state.</p>
+</li>
+<li>
+<p><code>AacFlState AutomaticallyMovesTo(AacFlState destination)</code> <br>
+Create a transition with no exit time to the destination state, and does not return the transition.</p>
+</li>
+<li>
+<p><code>AacFlTransition Exits()</code> <br>
+Create a transition from this state to the exit.</p>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="state-behaviours">State behaviours<a href="#state-behaviours" class="hash-link" aria-label="Direct link to State behaviours" title="Direct link to State behaviours">​</a></h3>
+<div class="theme-admonition theme-admonition-info admonition_xJq3 alert alert--info"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>info</div><div class="admonitionContent_BuS1"><p>See functions specific to <a href="/docs/products/animator-as-code/functions/vrchat#state-aacflstate">VRChat</a>.</p></div></div>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="clip-aacflclip">Clip (AacFlClip)<a href="#clip-aacflclip" class="hash-link" aria-label="Direct link to Clip (AacFlClip)" title="Direct link to Clip (AacFlClip)">​</a></h2>
+<ul>
+<li><code>AnimationClip Clip;</code>  <br>
+Expose the underlying Clip object.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="attributes-1">Attributes<a href="#attributes-1" class="hash-link" aria-label="Direct link to Attributes" title="Direct link to Attributes">​</a></h3>
+<ul>
+<li>
+<p><code>AacFlClip Looping()</code> <br>
+Set the clip to be looping.</p>
+</li>
+<li>
+<p><code>AacFlClip NonLooping()</code> <br>
+Set the clip to be non-looping.</p>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="single-frame-animations">Single-frame Animations<a href="#single-frame-animations" class="hash-link" aria-label="Direct link to Single-frame Animations" title="Direct link to Single-frame Animations">​</a></h3>
+<ul>
+<li>
+<p><code>AacFlClip Toggling(GameObject[] gameObjectsWithNulls, bool value)</code> <br>
+Enable or disable GameObjects. This lasts one frame. The array can safely contain null values.</p>
+</li>
+<li>
+<p><code>AacFlClip BlendShape(SkinnedMeshRenderer renderer, string blendShapeName, float value)</code> <br>
+Change a blendShape of a skinned mesh. This lasts one frame.</p>
+</li>
+<li>
+<p><code>AacFlClip BlendShape(SkinnedMeshRenderer[] rendererWithNulls, string blendShapeName, float value)</code> <br>
+Change a blendShape of multiple skinned meshes. This lasts one frame. The array can safely contain null values.</p>
+</li>
+<li>
+<p><code>AacFlClip Positioning(GameObject[] gameObjectsWithNulls, Vector3 localPosition)</code> 💡<br>
+Change the position of a GameObject in local space. This lasts one frame. This lasts one frame. The array can safely contain null values. // FIXME: This is weird, this should be a Transform array, and also this needs a single-object overload.</p>
+</li>
+<li>
+<p><code>AacFlClip RotatingUsingEulerInterpolation(GameObject[] gameObjectsWithNulls, Vector3 localEulerAngles)</code> 💡<br>
+Change the rotation of GameObjects in local space, with Euler interpolation. This lasts one frame. The array can safely contain null values. // FIXME: This is weird, this should be a Transform array, and also this needs a single-object overload.</p>
+</li>
+<li>
+<p><code>AacFlClip RotatingUsingQuaternionInterpolation(GameObject[] gameObjectsWithNulls, Quaternion localQuaternionAngles)</code> 💡<br>
+Change the rotation of GameObjects in local space, with Quaternion interpolation. This lasts one frame. The array can safely contain null values. // FIXME: This is weird, this should be a Transform array, and also this needs a single-object overload.</p>
+</li>
+<li>
+<p><code>AacFlClip Scaling(GameObject[] gameObjectsWithNulls, Vector3 scale)</code> <br>
+Change the local scale of GameObjects. This lasts one frame. The array can safely contain null values. // FIXME: This is weird, this should be a Transform array, and also this needs a single-object overload.</p>
+</li>
+<li>
+<p><code>AacFlClip Toggling(GameObject gameObject, bool value)</code> <br>
+Enable or disable a GameObject. This lasts one frame.</p>
+</li>
+<li>
+<p><code>AacFlClip TogglingComponent(Component[] componentsWithNulls, bool value)</code> <br>
+Toggle several components. This lasts one frame. The runtime type of each individual component will be used. The array can safely contain null values.</p>
+</li>
+<li>
+<p><code>AacFlClip TogglingComponent(Component component, bool value)</code> <br>
+Toggle a component. This lasts one frame. The runtime type of the component will be used.</p>
+</li>
+<li>
+<p><code>AacFlClip SwappingMaterial(Renderer renderer, int slot, Material material)</code> <br>
+Swap a material of a Renderer on the specified slot (indexed at 0). This lasts one frame.</p>
+</li>
+<li>
+<p><code>AacFlClip SwappingMaterial(ParticleSystem particleSystem, int slot, Material material)</code> <br>
+Swap a material of a Particle System on the specified slot (indexed at 0). This lasts one frame. This effectively takes the ParticleSystemRenderer of the component.</p>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="mutli-frame-animations-">Mutli-frame Animations 💡<a href="#mutli-frame-animations-" class="hash-link" aria-label="Direct link to Mutli-frame Animations 💡" title="Direct link to Mutli-frame Animations 💡">​</a></h3>
+<ul>
+<li>
+<p><code>AacFlClip BlendShape(SkinnedMeshRenderer renderer, string blendShapeName, AnimationCurve animationCurve)</code> 💡<br>
+Change a blendShape of a skinned meshe, with an animation curve.</p>
+</li>
+<li>
+<p><code>AacFlClip BlendShape(SkinnedMeshRenderer[] rendererWithNulls, string blendShapeName, AnimationCurve animationCurve)</code> 💡<br>
+Change a blendShape of multiple skinned meshes, with an animation curve. The array can safely contain null values.</p>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="clip-editing">Clip Editing<a href="#clip-editing" class="hash-link" aria-label="Direct link to Clip Editing" title="Direct link to Clip Editing">​</a></h3>
+<ul>
+<li><code>AacFlClip Animating(Action&lt;AacFlEditClip&gt; action)</code> <br>
+Start editing the clip with a lambda expression.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="clip-editing-aacfleditclip">Clip editing (AacFlEditClip)<a href="#clip-editing-aacfleditclip" class="hash-link" aria-label="Direct link to Clip editing (AacFlEditClip)" title="Direct link to Clip editing (AacFlEditClip)">​</a></h2>
+<div class="theme-admonition theme-admonition-tip admonition_xJq3 alert alert--success"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path></svg></span>tip</div><div class="admonitionContent_BuS1"><p>Consider using <a href="/docs/products/property-finder">Property Finder</a> to locate the animatable properties that you are interested in.</p><p><img loading="lazy" alt="property-finder-aac.png" src="/assets/images/property-finder-aac-ad528bb1464916671d19fa51b24e86b7.png" width="370" height="259" class="img_ev3q"></p></div></div>
+<ul>
+<li>
+<p><code>AnimationClip Clip;</code>  <br>
+Expose the underlying Clip object.</p>
+</li>
+<li>
+<p><code>AacFlSettingCurve Animates(string path, Type type, string propertyName)</code> <br>
+Animates a path the traditional way.</p>
+</li>
+<li>
+<p><code>AacFlSettingCurve Animates(Transform transform, Type type, string propertyName)</code> <br>
+Animates an object in the hierarchy relative to the animator root, the traditional way.</p>
+</li>
+<li>
+<p><code>AacFlSettingCurve Animates(GameObject gameObject)</code> <br>
+Animates the active property of a GameObject, toggling it.</p>
+</li>
+<li>
+<p><code>AacFlSettingCurve Animates(Component anyComponent, string property)</code> <br>
+Animates the enabled property of a component, toggling it. The runtime type of the component will be used.</p>
+</li>
+<li>
+<p><code>AacFlSettingCurve Animates(Component[] anyComponents, string property)</code> <br>
+Animates the enabled property of several components, toggling them. The runtime type of the component will be used. // FIXME: Safety is not provived on nulls. It should probably be, for convenience.</p>
+</li>
+<li>
+<p><code>AacFlSettingCurve AnimatesAnimator(AacFlParameter floatParameter)</code> <br>
+Animates a Float parameter of the animator (may sometimes be referred to as an Animated Animator Parameter, or AAP).</p>
+</li>
+<li>
+<p><code>AacFlSettingCurveColor AnimatesColor(Component anyComponent, string property)</code> <br>
+Animates a color property of a component. The runtime type of the component will be used.</p>
+</li>
+<li>
+<p><code>AacFlSettingCurveColor AnimatesColor(Component[] anyComponents, string property)</code> <br>
+Animates a color property of several components. The runtime type of the component will be used. // FIXME: Safety is not provived on nulls. It should probably be, for convenience.</p>
+</li>
+<li>
+<p><code>AacFlSettingCurveColor AnimatesHDRColor(Component anyComponent, string property)</code> 💡<br>
+Animates a HDR color property of a component (uses XYZW instead of RGBA). The runtime type of the component will be used. // FIXME: this needs multi-component, with safety</p>
+</li>
+<li>
+<p><code>AacFlSettingCurveObjectReference AnimatesObjectReference(Component anyComponent, string property)</code> 💡<br>
+Animates an object reference of a component. The runtime type of the component will be used. // FIXME: this needs multi-component, with safety</p>
+</li>
+<li>
+<p><code>EditorCurveBinding BindingFromComponent(Component anyComponent, string propertyName)</code> <br>
+Returns an EditorCurveBinding of a component, relative to the animator root. The runtime type of the component will be used. This is meant to be used in conjunction with traditional animation APIs.</p>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="curve-of-type-float-aacflsettingcurve">Curve of type Float (AacFlSettingCurve)<a href="#curve-of-type-float-aacflsettingcurve" class="hash-link" aria-label="Direct link to Curve of type Float (AacFlSettingCurve)" title="Direct link to Curve of type Float (AacFlSettingCurve)">​</a></h3>
+<ul>
+<li>
+<p><code>void WithOneFrame(float desiredValue)</code> <br>
+Define the curve to be exactly one frame by defining two constant keyframes, usually lasting 1/60th of a second, with the desired value.</p>
+</li>
+<li>
+<p><code>void WithFixedSeconds(float seconds, float desiredValue)</code> <br>
+Define the curve to last a specific amount of seconds by defining two constant keyframes, with the desired value.</p>
+</li>
+<li>
+<p><code>void WithSecondsUnit(Action&lt;AacFlSettingKeyframes&gt; action)</code> <br>
+Start defining the keyframes with a lambda expression, expressing the unit to be in seconds.</p>
+</li>
+<li>
+<p><code>void WithFrameCountUnit(Action&lt;AacFlSettingKeyframes&gt; action)</code> <br>
+Start defining the keyframes with a lambda expression, expressing the unit in frames.</p>
+</li>
+<li>
+<p><code>void WithUnit(AacFlUnit unit, Action&lt;AacFlSettingKeyframes&gt; action)</code> <br>
+Start defining the keyframes with a lambda expression, expressing the unit.</p>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="curve-of-type-color-aacflsettingcurvecolor">Curve of type Color (AacFlSettingCurveColor)<a href="#curve-of-type-color-aacflsettingcurvecolor" class="hash-link" aria-label="Direct link to Curve of type Color (AacFlSettingCurveColor)" title="Direct link to Curve of type Color (AacFlSettingCurveColor)">​</a></h3>
+<ul>
+<li><code>void WithOneFrame(Color desiredValue)</code> <br>
+Define the curve to be exactly one frame by defining two constant keyframes, usually lasting 1/60th of a second, with the desired object reference value.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="curve-of-type-objectreference-aacflsettingcurveobjectreference-">Curve of type ObjectReference (AacFlSettingCurveObjectReference) 💡<a href="#curve-of-type-objectreference-aacflsettingcurveobjectreference-" class="hash-link" aria-label="Direct link to Curve of type ObjectReference (AacFlSettingCurveObjectReference) 💡" title="Direct link to Curve of type ObjectReference (AacFlSettingCurveObjectReference) 💡">​</a></h3>
+<ul>
+<li><code>void WithOneFrame(Object objectReference)</code> 💡<br>
+Define the curve to be exactly one frame by defining two constant keyframes, usually lasting 1/60th of a second, with the desired color value.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="keyframes-of-type-float-aacflsettingkeyframes">Keyframes of type Float (AacFlSettingKeyframes)<a href="#keyframes-of-type-float-aacflsettingkeyframes" class="hash-link" aria-label="Direct link to Keyframes of type Float (AacFlSettingKeyframes)" title="Direct link to Keyframes of type Float (AacFlSettingKeyframes)">​</a></h3>
+<ul>
+<li>
+<p><code>AacFlSettingKeyframes Easing(float timeInUnit, float value)</code> <br>
+Create a curved spline keyframe. The unit is defined by the function that invokes this lambda expression.</p>
+</li>
+<li>
+<p><code>AacFlSettingKeyframes Linear(float timeInUnit, float value)</code> <br>
+Create a linear keyframe. The unit is defined by the function that invokes this lambda expression.</p>
+</li>
+<li>
+<p><code>AacFlSettingKeyframes Constant(float timeInUnit, float value)</code> <br>
+Create a constant keyframe. The unit is defined by the function that invokes this lambda expression.</p>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="keyframes-of-type-color-aacflsettingkeyframescolor">Keyframes of type Color (AacFlSettingKeyframesColor)<a href="#keyframes-of-type-color-aacflsettingkeyframescolor" class="hash-link" aria-label="Direct link to Keyframes of type Color (AacFlSettingKeyframesColor)" title="Direct link to Keyframes of type Color (AacFlSettingKeyframesColor)">​</a></h3>
+<ul>
+<li>
+<p><code>AacFlSettingKeyframesColor Easing(int frame, Color value)</code> <br>
+Create a curved spline keyframe. The unit is defined by the function that invokes this lambda expression.</p>
+</li>
+<li>
+<p><code>AacFlSettingKeyframesColor Linear(float frame, Color value)</code> <br>
+Create a linear keyframe. The unit is defined by the function that invokes this lambda expression.</p>
+</li>
+<li>
+<p><code>AacFlSettingKeyframesColor Constant(int frame, Color value)</code> <br>
+Create a constant keyframe. The unit is defined by the function that invokes this lambda expression.</p>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="blend-trees-aacflblendtree-">Blend Trees (AacFlBlendTree) 💡<a href="#blend-trees-aacflblendtree-" class="hash-link" aria-label="Direct link to Blend Trees (AacFlBlendTree) 💡" title="Direct link to Blend Trees (AacFlBlendTree) 💡">​</a></h2>
+<ul>
+<li><code>BlendTree BlendTree;</code> 💡<br>
+Expose the underlying BlendTree object.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="initialization-aacflnoninitializedblendtree--aacflblendtree-">Initialization (AacFlNonInitializedBlendTree : AacFlBlendTree) 💡<a href="#initialization-aacflnoninitializedblendtree--aacflblendtree-" class="hash-link" aria-label="Direct link to Initialization (AacFlNonInitializedBlendTree : AacFlBlendTree) 💡" title="Direct link to Initialization (AacFlNonInitializedBlendTree : AacFlBlendTree) 💡">​</a></h3>
+<ul>
+<li>
+<p><code>AacFlBlendTree2D FreeformCartesian2D(AacFlFloatParameter parameterX, AacFlFloatParameter parameterY)</code> 💡<br>
+Define this BlendTree as being FreeformCartesian2D.</p>
+</li>
+<li>
+<p><code>AacFlBlendTree2D FreeformDirectional2D(AacFlFloatParameter parameterX, AacFlFloatParameter parameterY)</code> 💡<br>
+Define this BlendTree as being FreeformDirectional2D.</p>
+</li>
+<li>
+<p><code>AacFlBlendTree2D SimpleDirectional2D(AacFlFloatParameter parameterX, AacFlFloatParameter parameterY)</code> 💡<br>
+Define this BlendTree as being SimpleDirectional2D.</p>
+</li>
+<li>
+<p><code>AacFlBlendTree1D Simple1D(AacFlFloatParameter parameter)</code> 💡<br>
+Define this BlendTree as being Simple1D.</p>
+</li>
+<li>
+<p><code>AacFlBlendTreeDirect Direct()</code> 💡<br>
+Define this BlendTree as being Direct.</p>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="2d-blend-tree-aacflblendtree2d--aacflblendtree-">2D Blend Tree (AacFlBlendTree2D : AacFlBlendTree) 💡<a href="#2d-blend-tree-aacflblendtree2d--aacflblendtree-" class="hash-link" aria-label="Direct link to 2D Blend Tree (AacFlBlendTree2D : AacFlBlendTree) 💡" title="Direct link to 2D Blend Tree (AacFlBlendTree2D : AacFlBlendTree) 💡">​</a></h3>
+<ul>
+<li>
+<p><code>AacFlBlendTree2D WithAnimation(AacFlBlendTree blendTree, Vector2 pos, Action&lt;AacFlBlendTreeChildMotion&gt; furtherDefiningChild = null)</code> 💡<br>
+Add a BlendTree in the specified coordinates. The last parameter overload is optional: by default, the timeScale is 1, cycle offset is 0, mirror is false.</p>
+</li>
+<li>
+<p><code>AacFlBlendTree2D WithAnimation(AacFlBlendTree blendTree, float x, float y, Action&lt;AacFlBlendTreeChildMotion&gt; furtherDefiningChild = null)</code> 💡<br>
+Add a BlendTree in the specified <code>x</code> and <code>y</code> coordinates. The last parameter overload is optional: by default, the timeScale is 1, cycle offset is 0, mirror is false.</p>
+</li>
+<li>
+<p><code>AacFlBlendTree2D WithAnimation(AacFlClip clip, Vector2 pos, Action&lt;AacFlBlendTreeChildMotion&gt; furtherDefiningChild = null)</code> 💡<br>
+Add a Clip in the specified coordinates. The last parameter overload is optional: by default, the timeScale is 1, cycle offset is 0, mirror is false.</p>
+</li>
+<li>
+<p><code>AacFlBlendTree2D WithAnimation(AacFlClip clip, float x, float y, Action&lt;AacFlBlendTreeChildMotion&gt; furtherDefiningChild = null)</code> 💡<br>
+Add a Clip in the specified <code>x</code> and <code>y</code> coordinates. The last parameter overload is optional: by default, the timeScale is 1, cycle offset is 0, mirror is false.</p>
+</li>
+<li>
+<p><code>AacFlBlendTree2D WithAnimation(Motion motion, Vector2 pos, Action&lt;AacFlBlendTreeChildMotion&gt; furtherDefiningChild = null)</code> 💡<br>
+Add a raw motion in the specified coordinates. The last parameter overload is optional: by default, the timeScale is 1, cycle offset is 0, mirror is false.</p>
+</li>
+<li>
+<p><code>AacFlBlendTree2D WithAnimation(Motion motion, float x, float y, Action&lt;AacFlBlendTreeChildMotion&gt; furtherDefiningChild = null)</code> 💡<br>
+Add a raw motion in the specified <code>x</code> and <code>y</code> coordinates. The last parameter overload is optional: by default, the timeScale is 1, cycle offset is 0, mirror is false.</p>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="1d-blend-tree-aacflblendtree1d--aacflblendtree-">1D Blend Tree (AacFlBlendTree1D : AacFlBlendTree) 💡<a href="#1d-blend-tree-aacflblendtree1d--aacflblendtree-" class="hash-link" aria-label="Direct link to 1D Blend Tree (AacFlBlendTree1D : AacFlBlendTree) 💡" title="Direct link to 1D Blend Tree (AacFlBlendTree1D : AacFlBlendTree) 💡">​</a></h3>
+<ul>
+<li>
+<p><code>AacFlBlendTree1D WithAnimation(AacFlBlendTree blendTree, float threshold, Action&lt;AacFlBlendTreeChildMotion&gt; furtherDefiningChild = null)</code> 💡<br>
+Add a BlendTree in the specified threshold. The last parameter overload is optional: by default, the timeScale is 1, cycle offset is 0, mirror is false.</p>
+</li>
+<li>
+<p><code>AacFlBlendTree1D WithAnimation(AacFlClip clip, float threshold, Action&lt;AacFlBlendTreeChildMotion&gt; furtherDefiningChild = null)</code> 💡<br>
+Add a Clip in the specified threshold. The last parameter overload is optional: by default, the timeScale is 1, cycle offset is 0, mirror is false.</p>
+</li>
+<li>
+<p><code>AacFlBlendTree1D WithAnimation(Motion motion, float threshold, Action&lt;AacFlBlendTreeChildMotion&gt; furtherDefiningChild = null)</code> 💡<br>
+Add a raw motion in the specified threshold. The last parameter overload is optional: by default, the timeScale is 1, cycle offset is 0, mirror is false.</p>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="direct-blend-tree-aacflblendtreedirect--aacflblendtree-">Direct Blend Tree (AacFlBlendTreeDirect : AacFlBlendTree) 💡<a href="#direct-blend-tree-aacflblendtreedirect--aacflblendtree-" class="hash-link" aria-label="Direct link to Direct Blend Tree (AacFlBlendTreeDirect : AacFlBlendTree) 💡" title="Direct link to Direct Blend Tree (AacFlBlendTreeDirect : AacFlBlendTree) 💡">​</a></h3>
+<ul>
+<li>
+<p><code>AacFlBlendTreeDirect WithAnimation(AacFlBlendTree blendTree, AacFlFloatParameter parameter, Action&lt;AacFlBlendTreeChildMotion&gt; furtherDefiningChild = null)</code> 💡<br>
+Add a BlendTree driven by the specified parameter. The last parameter overload is optional: by default, the timeScale is 1, cycle offset is 0, mirror is false.</p>
+</li>
+<li>
+<p><code>AacFlBlendTreeDirect WithAnimation(AacFlClip clip, AacFlFloatParameter parameter, Action&lt;AacFlBlendTreeChildMotion&gt; furtherDefiningChild = null)</code> 💡<br>
+Add a Clip driven by the specified parameter. The last parameter overload is optional: by default, the timeScale is 1, cycle offset is 0, mirror is false.</p>
+</li>
+<li>
+<p><code>AacFlBlendTreeDirect WithAnimation(Motion motion, AacFlFloatParameter parameter, Action&lt;AacFlBlendTreeChildMotion&gt; furtherDefiningChild = null)</code> 💡<br>
+Add a raw motion driven by the specified parameter. The last parameter overload is optional: by default, the timeScale is 1, cycle offset is 0, mirror is false.</p>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="further-define-a-blend-tree-child-aacflblendtreechildmotion-">Further define a blend tree child (AacFlBlendTreeChildMotion) 💡<a href="#further-define-a-blend-tree-child-aacflblendtreechildmotion-" class="hash-link" aria-label="Direct link to Further define a blend tree child (AacFlBlendTreeChildMotion) 💡" title="Direct link to Further define a blend tree child (AacFlBlendTreeChildMotion) 💡">​</a></h3>
+<ul>
+<li>
+<p><code>AacFlBlendTreeChildMotion WithTimeScaleSetTo(float timeScale)</code> 💡<br>
+Set the time scale. The time scale value is 1 by default.</p>
+</li>
+<li>
+<p><code>AacFlBlendTreeChildMotion WithMirrorSetTo(bool mirror)</code> 💡<br>
+Set the mirror option. The mirror option value is false by default.</p>
+</li>
+<li>
+<p><code>AacFlBlendTreeChildMotion WithCycleOffsetSetTo(float cycleOffset)</code> 💡<br>
+Set the cycle offset. The cycle offset value is 0 by default.</p>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="transitions-1">Transitions<a href="#transitions-1" class="hash-link" aria-label="Direct link to Transitions" title="Direct link to Transitions">​</a></h2>
+<p><code>AnimatorTransitionBase Transition;</code>  <br>
+Expose the underlying Transition object (from AacFlNewTransitionContinuation)</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="attributes-aacfltransition--aacflnewtransitioncontinuation">Attributes (AacFlTransition : AacFlNewTransitionContinuation)<a href="#attributes-aacfltransition--aacflnewtransitioncontinuation" class="hash-link" aria-label="Direct link to Attributes (AacFlTransition : AacFlNewTransitionContinuation)" title="Direct link to Attributes (AacFlTransition : AacFlNewTransitionContinuation)">​</a></h3>
+<ul>
+<li>
+<p><code>AacFlTransition WithSourceInterruption()</code> <br>
+Set interruption source to be Source. // FIXME: Clunky interface.</p>
+</li>
+<li>
+<p><code>AacFlTransition WithTransitionDurationSeconds(float transitionDuration)</code> <br>
+Set a fixed transition duration in seconds.</p>
+</li>
+<li>
+<p><code>AacFlTransition WithTransitionDurationPercent(float transitionDurationNormalized)</code> <br>
+Set a non-fixed transition duration in a normalized amount. // FIXME: Percent is a misnomer.</p>
+</li>
+<li>
+<p><code>AacFlTransition WithOrderedInterruption()</code> <br>
+Enable ordered interruption.</p>
+</li>
+<li>
+<p><code>AacFlTransition WithNoOrderedInterruption()</code> <br>
+Disable ordered interruption.</p>
+</li>
+<li>
+<p><code>AacFlTransition WithTransitionToSelf()</code> <br>
+Enable transition to self.</p>
+</li>
+<li>
+<p><code>AacFlTransition WithNoTransitionToSelf()</code> <br>
+Disable transition to self.</p>
+</li>
+<li>
+<p><code>AacFlTransition AfterAnimationFinishes()</code> <br>
+Set an exit time at 1, where the animation finishes.</p>
+</li>
+<li>
+<p><code>AacFlTransition AfterAnimationIsAtLeastAtPercent(float exitTimeNormalized)</code> <br>
+Set the exit time at a specific normalized amount. // FIXME: Percent is a misnomer.</p>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="chaining-conditions">Chaining conditions<a href="#chaining-conditions" class="hash-link" aria-label="Direct link to Chaining conditions" title="Direct link to Chaining conditions">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="starting-conditions-aacflnewtransitioncontinuation--aacflentrytransition--aacflnewtransitioncontinuation">Starting Conditions (AacFlNewTransitionContinuation) &amp; (AacFlEntryTransition : AacFlNewTransitionContinuation)<a href="#starting-conditions-aacflnewtransitioncontinuation--aacflentrytransition--aacflnewtransitioncontinuation" class="hash-link" aria-label="Direct link to Starting Conditions (AacFlNewTransitionContinuation) &amp; (AacFlEntryTransition : AacFlNewTransitionContinuation)" title="Direct link to Starting Conditions (AacFlNewTransitionContinuation) &amp; (AacFlEntryTransition : AacFlNewTransitionContinuation)">​</a></h4>
+<ul>
+<li>
+<p><code>AacFlTransitionContinuation When(IAacFlCondition action)</code> <br>
+Start defining conditions.</p>
+</li>
+<li>
+<p><code>AacFlMultiTransitionContinuation When(IAacFlOrCondition actionsWithOr)</code> <br>
+Start defining conditions from a condition which may generate multiple transitions. Any And operator subsequently invoked as a result will apply to all transitions that would be generated by that condition, until the Or operator, if any.</p>
+</li>
+<li>
+<p><code>AacFlTransitionContinuation When(Action&lt;AacFlTransitionContinuationWithoutOr&gt; actionsWithoutOr)</code> <br>
+Start defining conditions using a lambda expression that cannot contain Or operators.</p>
+</li>
+<li>
+<p><code>AacFlTransitionContinuationOnlyOr When(Action&lt;AacFlNewTransitionContinuation&gt; actionsWithOr)</code> <br>
+Start defining conditions using a lambda expression that can contain Or operators, however the next operator, if any, must be Or.</p>
+</li>
+<li>
+<p><code>AacFlTransitionContinuation WhenConditions()</code> <br>
+Provides an handle to start defining conditions using the And operator, for use in loops. The Or operator may be invoked at any point.</p>
+</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="single-transition-continuation-aacfltransitioncontinuation--aacfltransitioncontinuationabstractwithor">Single-transition continuation (AacFlTransitionContinuation : AacFlTransitionContinuationAbstractWithOr)<a href="#single-transition-continuation-aacfltransitioncontinuation--aacfltransitioncontinuationabstractwithor" class="hash-link" aria-label="Direct link to Single-transition continuation (AacFlTransitionContinuation : AacFlTransitionContinuationAbstractWithOr)" title="Direct link to Single-transition continuation (AacFlTransitionContinuation : AacFlTransitionContinuationAbstractWithOr)">​</a></h4>
+<ul>
+<li>
+<p><code>AacFlTransitionContinuation And(IAacFlCondition action)</code> <br>
+Add another condition to this transition. A transition requires all of its conditions to pass.</p>
+</li>
+<li>
+<p><code>AacFlTransitionContinuation And(Action&lt;AacFlTransitionContinuationWithoutOr&gt; actionsWithoutOr)</code> <br>
+Add another condition to this transition. A transition requires all of its conditions to pass.</p>
+</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="multi-transition-continuation-aacflmultitransitioncontinuation--aacfltransitioncontinuationabstractwithor">Multi-transition continuation (AacFlMultiTransitionContinuation : AacFlTransitionContinuationAbstractWithOr)<a href="#multi-transition-continuation-aacflmultitransitioncontinuation--aacfltransitioncontinuationabstractwithor" class="hash-link" aria-label="Direct link to Multi-transition continuation (AacFlMultiTransitionContinuation : AacFlTransitionContinuationAbstractWithOr)" title="Direct link to Multi-transition continuation (AacFlMultiTransitionContinuation : AacFlTransitionContinuationAbstractWithOr)">​</a></h4>
+<ul>
+<li>
+<p><code>AacFlMultiTransitionContinuation And(IAacFlCondition action)</code> <br>
+Add another condition to all of the transitions generated by the previous conditions since the last When operator invocation. A transition requires all of its conditions to pass.</p>
+</li>
+<li>
+<p><code>AacFlMultiTransitionContinuation And(Action&lt;AacFlTransitionContinuationWithoutOr&gt; actionsWithoutOr)</code> <br>
+Add another condition to all of the transitions generated by the previous conditions since the last When operator invocation. A transition requires all of its conditions to pass.</p>
+</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="continuation-aacfltransitioncontinuationabstractwithor">Continuation (AacFlTransitionContinuationAbstractWithOr)<a href="#continuation-aacfltransitioncontinuationabstractwithor" class="hash-link" aria-label="Direct link to Continuation (AacFlTransitionContinuationAbstractWithOr)" title="Direct link to Continuation (AacFlTransitionContinuationAbstractWithOr)">​</a></h4>
+<ul>
+<li><code>AacFlNewTransitionContinuation Or()</code> <br>
+Creates a single new transition, copying the attributes of the one this was invoked on. This has no conditions yet, so invoking a When operator immediately after this is expected here.</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="continuation-wihtout-or-aacfltransitioncontinuationwithoutor">Continuation wihtout Or (AacFlTransitionContinuationWithoutOr)<a href="#continuation-wihtout-or-aacfltransitioncontinuationwithoutor" class="hash-link" aria-label="Direct link to Continuation wihtout Or (AacFlTransitionContinuationWithoutOr)" title="Direct link to Continuation wihtout Or (AacFlTransitionContinuationWithoutOr)">​</a></h4>
+<ul>
+<li>
+<p><code>AacFlTransitionContinuationWithoutOr And(IAacFlCondition action)</code> <br>
+Add another condition to this transition. A transition requires all of its conditions to pass.</p>
+</li>
+<li>
+<p><code>AacFlTransitionContinuationWithoutOr AndWhenever(Action&lt;AacFlTransitionContinuationWithoutOr&gt; action)</code> <br>
+Add additional conditions using a lambda expression that cannot contain Or operators. A transition requires all of its conditions to pass.</p>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="conditions-iaacflcondition-iaacflorcondition">Conditions (IAacFlCondition, IAacFlOrCondition)<a href="#conditions-iaacflcondition-iaacflorcondition" class="hash-link" aria-label="Direct link to Conditions (IAacFlCondition, IAacFlOrCondition)" title="Direct link to Conditions (IAacFlCondition, IAacFlOrCondition)">​</a></h2>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="aacflfloatparameter">AacFlFloatParameter<a href="#aacflfloatparameter" class="hash-link" aria-label="Direct link to AacFlFloatParameter" title="Direct link to AacFlFloatParameter">​</a></h4>
+<ul>
+<li>
+<p><code>IsGreaterThan(float other)</code> <br>
+Float is greater than <code>other</code>; be mindful of minifloat imprecision over the network.</p>
+</li>
+<li>
+<p><code>IsLessThan(float other)</code> <br>
+Float is less than <code>other</code>; be mindful of minifloat imprecision over the network.</p>
+</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="aacflintparameter">AacFlIntParameter<a href="#aacflintparameter" class="hash-link" aria-label="Direct link to AacFlIntParameter" title="Direct link to AacFlIntParameter">​</a></h4>
+<ul>
+<li>
+<p><code>IsGreaterThan(int other)</code> <br>
+Int is strictly greater than <code>other</code></p>
+</li>
+<li>
+<p><code>IsLessThan(int other)</code> <br>
+Int is strictly less than <code>other</code></p>
+</li>
+<li>
+<p><code>IsEqualTo(int other)</code> <br>
+Int is equal to <code>other</code></p>
+</li>
+<li>
+<p><code>IsNotEqualTo(int other)</code> <br>
+Int is not equal to <code>other</code></p>
+</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="aacflenumintparametertenum-where-tenum--enum">AacFlEnumIntParameter&lt;TEnum&gt; where TEnum : Enum<a href="#aacflenumintparametertenum-where-tenum--enum" class="hash-link" aria-label="Direct link to AacFlEnumIntParameter&lt;TEnum&gt; where TEnum : Enum" title="Direct link to AacFlEnumIntParameter&lt;TEnum&gt; where TEnum : Enum">​</a></h4>
+<ul>
+<li>
+<p><code>IsEqualTo(TEnum other)</code> <br>
+Int is not equal to <code>(int)other</code></p>
+</li>
+<li>
+<p><code>IsNotEqualTo(TEnum other)</code> <br>
+Int is equal to <code>(int)other</code></p>
+</li>
+<li>
+<p><code>IsGreaterThan(int other)</code> <br>
+(inherited from AacFlIntParameter) Int is strictly greater than <code>other</code></p>
+</li>
+<li>
+<p><code>IsLessThan(int other)</code> <br>
+(inherited from AacFlIntParameter) Int is strictly less than <code>other</code></p>
+</li>
+<li>
+<p><code>IsEqualTo(int other)</code> <br>
+(inherited from AacFlIntParameter)</p>
+</li>
+<li>
+<p><code>IsNotEqualTo(int other)</code> <br>
+(inherited from AacFlIntParameter)</p>
+</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="aacflboolparameter">AacFlBoolParameter<a href="#aacflboolparameter" class="hash-link" aria-label="Direct link to AacFlBoolParameter" title="Direct link to AacFlBoolParameter">​</a></h4>
+<ul>
+<li>
+<p><code>IsTrue()</code> <br>
+Bool is true</p>
+</li>
+<li>
+<p><code>IsFalse()</code> <br>
+Bool is false</p>
+</li>
+<li>
+<p><code>IsEqualTo(bool other)</code> <br>
+Bool is equal to <code>other</code></p>
+</li>
+<li>
+<p><code>IsNotEqualTo(bool other)</code> <br>
+Bool is not equal to <code>other</code></p>
+</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="aacflfloatparametergroup">AacFlFloatParameterGroup<a href="#aacflfloatparametergroup" class="hash-link" aria-label="Direct link to AacFlFloatParameterGroup" title="Direct link to AacFlFloatParameterGroup">​</a></h4>
+<ul>
+<li>
+<p><code>AreGreaterThan(float other)</code> <br>
+All of the Floats are greater than <code>other</code>; be mindful of minifloat imprecision over the network.</p>
+</li>
+<li>
+<p><code>AreLessThan(float other)</code> <br>
+All of the Floats are less than <code>other</code>; be mindful of minifloat imprecision over the network.</p>
+</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="aacflintparametergroup">AacFlIntParameterGroup<a href="#aacflintparametergroup" class="hash-link" aria-label="Direct link to AacFlIntParameterGroup" title="Direct link to AacFlIntParameterGroup">​</a></h4>
+<ul>
+<li>
+<p><code>AreGreaterThan(float other)</code> <br>
+All of the Ints are strictly greater than <code>other</code></p>
+</li>
+<li>
+<p><code>AreLessThan(float other)</code> <br>
+All of the Ints are strictly less than <code>other</code></p>
+</li>
+<li>
+<p><code>AreEqualTo(float other)</code> <br>
+All of the Ints are equal to <code>other</code></p>
+</li>
+<li>
+<p><code>AreNotEqualTo(float other)</code> <br>
+All of the Ints are not equal to <code>other</code></p>
+</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="aacflboolparametergroup">AacFlBoolParameterGroup<a href="#aacflboolparametergroup" class="hash-link" aria-label="Direct link to AacFlBoolParameterGroup" title="Direct link to AacFlBoolParameterGroup">​</a></h4>
+<ul>
+<li>
+<p><code>AreTrue()</code> <br>
+All of the Bools are true</p>
+</li>
+<li>
+<p><code>AreFalse()</code> <br>
+All of the Bools are false</p>
+</li>
+<li>
+<p><code>AreEqualTo(bool other)</code> <br>
+All of the Bools are equal to <code>other</code></p>
+</li>
+<li>
+<p><code>AreFalseExcept(AacFlBoolParameter exceptThisMustBeTrue)</code> <br>
+All of the Bools except <code>exceptThisMustBeTrue</code> are false, and the Bool of <code>exceptThisMustBeTrue</code> must be true.</p>
+</li>
+<li>
+<p><code>AreFalseExcept(params AacFlBoolParameter[] exceptTheseMustBeTrue)</code> <br>
+All of the Bools except those in <code>exceptTheseMustBeTrue</code> are false, and all of the Bools in <code>exceptTheseMustBeTrue</code> must be true.</p>
+</li>
+<li>
+<p><code>AreFalseExcept(AacFlBoolParameterGroup exceptTheseMustBeTrue)</code> <br>
+All of the Bools except those in <code>exceptTheseMustBeTrue</code> are false, and all of the Bools in <code>exceptTheseMustBeTrue</code> must be true.</p>
+</li>
+<li>
+<p><code>AreTrueExcept(AacFlBoolParameter exceptThisMustBeFalse)</code> <br>
+All of the Bools except <code>exceptThisMustBeTrue</code> are true, and the Bool of <code>exceptThisMustBeTrue</code> must be false.</p>
+</li>
+<li>
+<p><code>AreTrueExcept(params AacFlBoolParameter[] exceptTheseMustBeFalse)</code> <br>
+All of the Bools except those in <code>exceptTheseMustBeTrue</code> are true, and all of the Bools in <code>exceptTheseMustBeTrue</code> must be false.</p>
+</li>
+<li>
+<p><code>AreTrueExcept(AacFlBoolParameterGroup exceptTheseMustBeFalse)</code> <br>
+All of the Bools except those in <code>exceptTheseMustBeTrue</code> are true, and all of the Bools in <code>exceptTheseMustBeTrue</code> must be false.</p>
+</li>
+<li>
+<p><code>IsAnyTrue()</code> -&gt; returns <code>IAacFlOrCondition</code>, can only be used inside <code>.When(...)</code> <br>
+Generates multiple transitions, verifying whether any Bool is true</p>
+</li>
+<li>
+<p><code>IsAnyFalse()</code> -&gt; returns <code>IAacFlOrCondition</code>, can only be used inside <code>.When(...)</code> <br>
+Generates multiple transitions, verifying whether any Bool is false</p>
+</li>
+</ul></div></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/docs/products/animator-as-code/reference"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Reference manual</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/docs/products/animator-as-code/functions/vrchat"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">VRChat</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#animator-as-code-aacv1" class="table-of-contents__link toc-highlight">Animator As Code (AacV1)</a></li><li><a href="#base-aacflbase" class="table-of-contents__link toc-highlight">Base (AacFlBase)</a></li><li><a href="#controller-aacflcontroller-" class="table-of-contents__link toc-highlight">Controller (AacFlController) 💡</a></li><li><a href="#layer-aacfllayer" class="table-of-contents__link toc-highlight">Layer (AacFlLayer)</a></li><li><a href="#sub-state-machine-aacflstatemachine-" class="table-of-contents__link toc-highlight">Sub State Machine (AacFlStateMachine) 💡</a></li><li><a href="#no-animator-aacflnoanimator-" class="table-of-contents__link toc-highlight">No Animator (AacFlNoAnimator) 💡</a></li><li><a href="#state-aacflstate" class="table-of-contents__link toc-highlight">State (AacFlState)</a><ul><li><a href="#graph-positioning" class="table-of-contents__link toc-highlight">Graph Positioning</a></li><li><a href="#attributes" class="table-of-contents__link toc-highlight">Attributes</a></li><li><a href="#transitions" class="table-of-contents__link toc-highlight">Transitions</a></li><li><a href="#state-behaviours" class="table-of-contents__link toc-highlight">State behaviours</a></li></ul></li><li><a href="#clip-aacflclip" class="table-of-contents__link toc-highlight">Clip (AacFlClip)</a><ul><li><a href="#attributes-1" class="table-of-contents__link toc-highlight">Attributes</a></li><li><a href="#single-frame-animations" class="table-of-contents__link toc-highlight">Single-frame Animations</a></li><li><a href="#mutli-frame-animations-" class="table-of-contents__link toc-highlight">Mutli-frame Animations 💡</a></li><li><a href="#clip-editing" class="table-of-contents__link toc-highlight">Clip Editing</a></li></ul></li><li><a href="#clip-editing-aacfleditclip" class="table-of-contents__link toc-highlight">Clip editing (AacFlEditClip)</a><ul><li><a href="#curve-of-type-float-aacflsettingcurve" class="table-of-contents__link toc-highlight">Curve of type Float (AacFlSettingCurve)</a></li><li><a href="#curve-of-type-color-aacflsettingcurvecolor" class="table-of-contents__link toc-highlight">Curve of type Color (AacFlSettingCurveColor)</a></li><li><a href="#curve-of-type-objectreference-aacflsettingcurveobjectreference-" class="table-of-contents__link toc-highlight">Curve of type ObjectReference (AacFlSettingCurveObjectReference) 💡</a></li><li><a href="#keyframes-of-type-float-aacflsettingkeyframes" class="table-of-contents__link toc-highlight">Keyframes of type Float (AacFlSettingKeyframes)</a></li><li><a href="#keyframes-of-type-color-aacflsettingkeyframescolor" class="table-of-contents__link toc-highlight">Keyframes of type Color (AacFlSettingKeyframesColor)</a></li></ul></li><li><a href="#blend-trees-aacflblendtree-" class="table-of-contents__link toc-highlight">Blend Trees (AacFlBlendTree) 💡</a><ul><li><a href="#initialization-aacflnoninitializedblendtree--aacflblendtree-" class="table-of-contents__link toc-highlight">Initialization (AacFlNonInitializedBlendTree : AacFlBlendTree) 💡</a></li><li><a href="#2d-blend-tree-aacflblendtree2d--aacflblendtree-" class="table-of-contents__link toc-highlight">2D Blend Tree (AacFlBlendTree2D : AacFlBlendTree) 💡</a></li><li><a href="#1d-blend-tree-aacflblendtree1d--aacflblendtree-" class="table-of-contents__link toc-highlight">1D Blend Tree (AacFlBlendTree1D : AacFlBlendTree) 💡</a></li><li><a href="#direct-blend-tree-aacflblendtreedirect--aacflblendtree-" class="table-of-contents__link toc-highlight">Direct Blend Tree (AacFlBlendTreeDirect : AacFlBlendTree) 💡</a></li><li><a href="#further-define-a-blend-tree-child-aacflblendtreechildmotion-" class="table-of-contents__link toc-highlight">Further define a blend tree child (AacFlBlendTreeChildMotion) 💡</a></li></ul></li><li><a href="#transitions-1" class="table-of-contents__link toc-highlight">Transitions</a><ul><li><a href="#attributes-aacfltransition--aacflnewtransitioncontinuation" class="table-of-contents__link toc-highlight">Attributes (AacFlTransition : AacFlNewTransitionContinuation)</a></li><li><a href="#chaining-conditions" class="table-of-contents__link toc-highlight">Chaining conditions</a></li></ul></li><li><a href="#conditions-iaacflcondition-iaacflorcondition" class="table-of-contents__link toc-highlight">Conditions (IAacFlCondition, IAacFlOrCondition)</a></li></ul></div></div></div></div></main></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="col footer__col"><div class="footer__title">Docs</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/docs/products">Products</a></li><li class="footer__item"><a class="footer__link-item" href="/docs/resilience">ResilienceVR</a></li></ul></div><div class="col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://www.patreon.com/vr_hai" target="_blank" rel="noopener noreferrer" class="footer__link-item">Patreon<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://hai-vr.fanbox.cc/" target="_blank" rel="noopener noreferrer" class="footer__link-item">pixivFANBOX<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://twitter.com/vr_hai" target="_blank" rel="noopener noreferrer" class="footer__link-item">Twitter<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a class="footer__link-item" href="/docs/other/discord">Discord</a></li></ul></div><div class="col footer__col"><div class="footer__title">More</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://github.com/hai-vr/" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://hai-vr.dev/" target="_blank" rel="noopener noreferrer" class="footer__link-item">hai-vr.dev<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2023 Invitational Software. Built with Docusaurus.</div></div></div></footer></div>
 </body>
 </html>
