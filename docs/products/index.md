@@ -42,6 +42,7 @@ Many of these products can be installed using our VCC listing.
 | [Animator As Code](./products/animator-as-code)                                     | 📐 Unity Editor API   | 🗨️ VRChat optional | MIT         |                                                      | ✅    |
 | [Modular Avatar As Code](./products/animator-as-code/functions/modular-avatar)      | 📐 Unity Editor API   | ⚠️ VRChat required  | MIT         |                                                      | ✅    |
 | **Patchers**                                                                        |                       |                     |             |                                                      |      |
+| [Auto-reset OSC config](./products/auto-reset-osc-config)                           | 🛠️ Unity Editor tool | ⚠️ VRChat required  | MIT         |                                                      | ✅    |
 | [Unity 2018 to 2019 Cloth Transfer](./products/cloth-transfer)                      | 🛠️ Unity Editor tool |                     | Unlicense   | [Booth](https://hai-vr.booth.pm/items/3136328)       |      |
 
 \* These downloads on Booth are not currently compatible with VCC.

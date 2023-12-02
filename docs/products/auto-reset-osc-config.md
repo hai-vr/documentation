@@ -4,6 +4,10 @@ title: Auto-reset OSC config
 
 This tool will automatically reset the OSC config after every successful VRChat avatar upload.
 
+<video controls width="816">
+    <source src={require('./img/auto-reset-osc-config/auto-remove-osc-f.mp4').default}/>
+</video>
+
 ## Download
 
 The tool is free for download using VCC.
