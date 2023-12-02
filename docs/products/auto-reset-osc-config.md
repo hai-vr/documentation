@@ -1,8 +1,8 @@
 ﻿---
-title: Auto-remove OSC config
+title: Auto-reset OSC config
 ---
 
-This tool will automatically remove the OSC config after every successful VRChat avatar upload.
+This tool will automatically reset the OSC config after every successful VRChat avatar upload.
 
 ## Download
 
@@ -11,7 +11,7 @@ The tool is free for download using VCC.
 ### VCC
 
 - Use this link to **[install our listing to VCC](vcc://vpm/addRepo?url=https://hai-vr.github.io/vpm-listing/index.json)**.
-- Add *Haï ~ Auto-remove OSC config* to your project using VCC.
+- Add *Haï ~ Auto-reset OSC config* to your project using VCC.
 
 ## How to use
 
@@ -21,7 +21,7 @@ Note that if you load your avatar in-game too shortly after the upload, the game
 
 ## When to use this tool?
 
-*Auto-remove OSC config* is meant to be used by OSC users (face tracking, connected objects, special overlays, and other tricks).
+*Auto-reset OSC config* is meant to be used by OSC users (face tracking, connected objects, special overlays, and other tricks).
 
 When the avatar is loaded for the first time, VRChat generates a JSON file located in `/Users/{windowsUser}/AppData/LocalLow/VRChat/VRChat/OSC/{userId}/Avatars/{avatarId}.json`
 
