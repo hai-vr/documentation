@@ -4,8 +4,10 @@ title: ⚠️ Prefabulous Avatar
 
 # Prefabulous Avatar
 
-*Prefabulous Avatar* contains **non-destructive** components to automate common changes in your personal avatar. These components can be reused across
-multiple avatars when you turn it into a prefab.
+*Prefabulous Avatar* contains **non-destructive** components to automate invasive tasks in your personal avatar.
+
+Meant to be used primarily by users of **[Modular Avatar](https://modular-avatar.nadena.dev/)** components,
+our components can be reused across multiple avatars when you turn them into a prefab.
 
 - Edit all [mesh bounds](./prefabulous-avatar/component-reference/edit-mesh-bounds)
 and all [mesh anchor override](./prefabulous-avatar/component-reference/edit-mesh-anchor-override) for consistent visibility and lighting.
