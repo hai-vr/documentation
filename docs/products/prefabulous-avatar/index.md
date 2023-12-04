@@ -8,7 +8,7 @@ title: ⚠️ Prefabulous Avatar
 multiple avatars when you turn it into a prefab.
 
 - Edit all [mesh bounds](./prefabulous-avatar/component-reference/edit-mesh-bounds)
-and all [mesh anchor override](./prefabulous-avatar/component-reference/edit-mesh-anchor-override) for consistent lighting.
+and all [mesh anchor override](./prefabulous-avatar/component-reference/edit-mesh-anchor-override) for consistent visibility and lighting.
 - [Change the avatar scale](./prefabulous-avatar/component-reference/change-avatar-scale) and viewpoint without rescaling the avatar in the scene.
 - [Import an existing VRC Expression Parameters](./prefabulous-avatar/component-reference/import-expression-parameters) asset, such as face tracking parameters.
 - Reset parts of the VRC Avatar Descriptor component without modifying it.
