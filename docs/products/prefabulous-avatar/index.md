@@ -14,6 +14,7 @@ and all [mesh anchor override](./prefabulous-avatar/component-reference/edit-all
 - [Change the avatar scale](./prefabulous-avatar/component-reference/change-avatar-scale) and viewpoint without rescaling the avatar in the scene.
 - [Import an existing VRC Expression Parameters](./prefabulous-avatar/component-reference/import-expression-parameters) asset, such as face tracking parameters.
 - Reset parts of the VRC Avatar Descriptor component without modifying it.
+- Add a [menu item to lock locomotion](./prefabulous-avatar/hai-components/lock-locomotion-menu-item).
 
 Although *Prefabulous Avatar* is meant to be used alongside **[Modular Avatar](https://modular-avatar.nadena.dev/)**, our components are not
 really destined to be used inside distributed assets:
