@@ -1,3 +1,3 @@
-﻿# Edit Mesh Anchor Override
+﻿# Edit All Mesh Anchor Override
 
 Finds all SkinnedMeshRenderers and all MeshRenderers of the avatar and changes the Anchor Override.
