@@ -1,3 +1,3 @@
 ﻿# Change Avatar Scale
 
-Rescale the avatar, and the viewpoint will be adjusted accordingly.
+Rescales the avatar. The viewpoint will be adjusted accordingly.

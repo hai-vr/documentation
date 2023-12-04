@@ -13,12 +13,14 @@ and all [mesh anchor override](./prefabulous-avatar/component-reference/edit-mes
 - [Import an existing VRC Expression Parameters](./prefabulous-avatar/component-reference/import-expression-parameters) asset, such as face tracking parameters.
 - Reset parts of the VRC Avatar Descriptor component without modifying it.
 
-Although *Prefabulous Avatar* is meant to be used alongside *Modular Avatar*, our components are not
+Although *Prefabulous Avatar* is meant to be used alongside *[Modular Avatar](https://modular-avatar.nadena.dev/)*, our components are not
 really destined to be used inside distributed assets. They are meant to be used in personal avatars.
 
 :::danger
 *Prefabulous Avatar* is still in an early stage of development.
 :::
+
+![](img/pvsUzAgoIb.png)
 
 ## Download
 

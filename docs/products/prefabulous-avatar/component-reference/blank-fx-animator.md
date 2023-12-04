@@ -1,3 +1,10 @@
 ﻿# Blank FX Animator
 
-Replace the FX animator of the avatar with a blank one.
+Replaces the FX animator of the avatar with a blank one, as early as possible.
+
+This ensures that FX layers created by other non-destructive tooling will begin with a blank state.
+
+:::info
+This component exists so that you can drop a prefab containing this component into an avatar in order to reset it,
+without having to modify the original avatar descriptor by hand.
+:::

@@ -1,3 +1,3 @@
 ﻿# Edit Mesh Bounds
 
-Find all SkinnedMeshRenderers of the avatar and change the bounds.
+Finds all SkinnedMeshRenderers of the avatar and changes the bounds.
