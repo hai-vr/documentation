@@ -4,7 +4,7 @@ Adds a new FX layer containing support for the non-standard face tracking blends
 
 ## Use with FaceTra Shape Creator
 
-[FaceTra Shape Creator](./facetra-shape-creator) has a section called *Non-standard shapes (Experimental)*.
+[FaceTra Shape Creator](/docs/products/facetra-shape-creator) has a section called *Non-standard shapes (Experimental)*.
 
 This section is dedicated to the creation of non-standard face tracking blendshapes.
 
