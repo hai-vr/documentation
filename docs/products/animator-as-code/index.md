@@ -23,8 +23,7 @@ It is written with VRChat Avatars 3.0 use cases in mind; the API is opinionated 
 
 # Install
 
-There are currently no releases.
+At this time of writing, Animator As Code V1, **and this documentation**, are a work in progress.
 
-Clone the repository within a subfolder of your Unity project, or download the source code and install in any subfolder of your project.
-
-The project can be located within `Assets/AnimatorAsCodeFramework` but you can choose any location.
+You can install Animator As Code V1 using VCC, but the API is not deemed stable at the moment, and therefore is not currently suitable
+for use in public-facing projects by third parties.
