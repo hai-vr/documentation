@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="generator" content="Docusaurus v3.0.0">
 <title data-rh="true">Modular Avatar | Haï~</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://docs.hai-vr.dev/img/hai-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://docs.hai-vr.dev/img/hai-social-card.jpg"><meta data-rh="true" property="og:url" content="https://docs.hai-vr.dev/docs/products/animator-as-code/functions/modular-avatar"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Modular Avatar | Haï~"><meta data-rh="true" name="description" content="This is the work-in-progress documentation for Animator As Code V1, which has not yet been released. The last public version of Animator As Code is V0."><meta data-rh="true" property="og:description" content="This is the work-in-progress documentation for Animator As Code V1, which has not yet been released. The last public version of Animator As Code is V0."><link data-rh="true" rel="icon" href="/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://docs.hai-vr.dev/docs/products/animator-as-code/functions/modular-avatar"><link data-rh="true" rel="alternate" href="https://docs.hai-vr.dev/docs/products/animator-as-code/functions/modular-avatar" hreflang="en"><link data-rh="true" rel="alternate" href="https://docs.hai-vr.dev/docs/products/animator-as-code/functions/modular-avatar" hreflang="x-default"><link rel="stylesheet" href="/assets/css/styles.ceb50ace.css">
-<script src="/assets/js/runtime~main.65c5b36d.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.a895cfeb.js" defer="defer"></script>
 <script src="/assets/js/main.9133865c.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -36,61 +36,61 @@ Create a new instance of MaAc targeting another object. Beware that this new ins
 <ul>
 <li>
 <p><code>MaAc ImportParameters(VRCExpressionParameters parameters)</code> <br>
-Import parameters from an existing VRCExpressionParameters asset. If the object already contains a ModularAvatarParameters component: The first invocation of this function, or NewParameter function, whichever happens first, will wipe all existing parameters from that component.</p>
+Import parameters from an existing VRCExpressionParameters asset. This creates a ModularAvatarParameters on the targeted object if it doesn&#x27;t already exist.</p>
 </li>
 <li>
 <p><code>MaacParameter&lt;float&gt; NewParameter(MaacParameterType parameterType, string parameter)</code> <br>
-Declare a new parameter of the given type. If you use Animator As Code, you can reuse the parameters using the other <code>NewParameter</code> method overloads or the <code>NewBoolToFloatParameter</code> method. Function calls on the resulting objects will affect all parameters of that group. If the object already contains a ModularAvatarParameters component: The first invocation of this function, or ImportParameters function, whichever happens first, will wipe all existing parameters from that component.</p>
+Declare a new parameter of the given type. If you use Animator As Code, you can reuse the parameters using the other <code>NewParameter</code> method overloads or the <code>NewBoolToFloatParameter</code> method. Function calls on the resulting objects will affect all parameters of that group. This creates a ModularAvatarParameters on the targeted object if it doesn&#x27;t already exist.</p>
 </li>
 <li>
 <p><code>MaacParameter&lt;float&gt; NewParameter(AacFlFloatParameter aacParameter)</code> <br>
-Declare a new Float parameter, by default saved and synced. This creates a ModularAvatarParameters on the targeted object if it doesn&#x27;t already exist. If the object already contains a ModularAvatarParameters component: The first invocation of this function, or ImportParameters function, whichever happens first, will wipe all existing parameters from that component.</p>
+Declare a new Float parameter, by default saved and synced. This creates a ModularAvatarParameters on the targeted object if it doesn&#x27;t already exist.</p>
 </li>
 <li>
 <p><code>MaacParameter&lt;int&gt; NewParameter(AacFlIntParameter aacParameter)</code> <br>
-Declare a new Int parameter, by default saved and synced. This creates a ModularAvatarParameters on the targeted object if it doesn&#x27;t already exist. If the object already contains a ModularAvatarParameters component: The first invocation of this function, or ImportParameters function, whichever happens first, will wipe all existing parameters from that component.</p>
+Declare a new Int parameter, by default saved and synced. This creates a ModularAvatarParameters on the targeted object if it doesn&#x27;t already exist.</p>
 </li>
 <li>
 <p><code>MaacParameter&lt;bool&gt; NewParameter(AacFlBoolParameter aacParameter)</code> <br>
-Declare a new Bool parameter, by default saved and synced. This creates a ModularAvatarParameters on the targeted object if it doesn&#x27;t already exist. If the object already contains a ModularAvatarParameters component: The first invocation of this function, or ImportParameters function, whichever happens first, will wipe all existing parameters from that component.</p>
+Declare a new Bool parameter, by default saved and synced. This creates a ModularAvatarParameters on the targeted object if it doesn&#x27;t already exist.</p>
 </li>
 <li>
 <p><code>MaacParameter&lt;bool&gt; NewBoolToFloatParameter(AacFlFloatParameter aacParameter)</code> <br>
-Declare a new Bool parameter, acknowledging that the animator has exposed it as a Float. By default it is saved and synced. This creates a ModularAvatarParameters on the targeted object if it doesn&#x27;t already exist. If the object already contains a ModularAvatarParameters component: The first invocation of this function, or ImportParameters function, whichever happens first, will wipe all existing parameters from that component.</p>
+Declare a new Bool parameter, acknowledging that the animator has exposed it as a Float. By default it is saved and synced. This creates a ModularAvatarParameters on the targeted object if it doesn&#x27;t already exist.</p>
 </li>
 </ul>
 <h4 class="anchor anchorWithStickyNavbar_LWe7" id="parameter-groups">Parameter groups<a href="#parameter-groups" class="hash-link" aria-label="Direct link to Parameter groups" title="Direct link to Parameter groups">​</a></h4>
 <ul>
 <li>
 <p><code>MaacParameter&lt;float&gt; NewParameter(MaacParameterType parameterType, params string[] parametersWithNulls)</code> <br>
-Declare new parameters of the given type. If you use Animator As Code, you can reuse the parameters using the other <code>NewParameter</code> method overloads or the <code>NewBoolToFloatParameter</code> method. The array can safely contain null values.</p>
+Declare new parameters of the given type. If you use Animator As Code, you can reuse the parameters using the other <code>NewParameter</code> method overloads or the <code>NewBoolToFloatParameter</code> method. The array can safely contain null values. This creates a ModularAvatarParameters on the targeted object if it doesn&#x27;t already exist.</p>
 </li>
 <li>
 <p><code>MaacParameter&lt;float&gt; NewParameter(AacFlFloatParameterGroup aacParameterGroup)</code> <br>
-Declare new Float parameters, by default saved and synced. This creates a ModularAvatarParameters on the targeted object if it doesn&#x27;t already exist. Function calls on the resulting objects will affect all parameters of that group.</p>
+Declare new Float parameters, by default saved and synced. This creates a ModularAvatarParameters on the targeted object if it doesn&#x27;t already exist. Function calls on the resulting objects will affect all parameters of that group. This creates a ModularAvatarParameters on the targeted object if it doesn&#x27;t already exist.</p>
 </li>
 <li>
 <p><code>MaacParameter&lt;int&gt; NewParameter(AacFlIntParameterGroup aacParameterGroup)</code> <br>
-Declare new Int parameters, by default saved and synced. This creates a ModularAvatarParameters on the targeted object if it doesn&#x27;t already exist. Function calls on the resulting objects will affect all parameters of that group.</p>
+Declare new Int parameters, by default saved and synced. This creates a ModularAvatarParameters on the targeted object if it doesn&#x27;t already exist. Function calls on the resulting objects will affect all parameters of that group. This creates a ModularAvatarParameters on the targeted object if it doesn&#x27;t already exist.</p>
 </li>
 <li>
 <p><code>MaacParameter&lt;bool&gt; NewParameter(AacFlBoolParameterGroup aacParameterGroup)</code> <br>
-Declare new Bool parameters, by default saved and synced. This creates a ModularAvatarParameters on the targeted object if it doesn&#x27;t already exist. Function calls on the resulting objects will affect all parameters of that group.</p>
+Declare new Bool parameters, by default saved and synced. This creates a ModularAvatarParameters on the targeted object if it doesn&#x27;t already exist. Function calls on the resulting objects will affect all parameters of that group. This creates a ModularAvatarParameters on the targeted object if it doesn&#x27;t already exist.</p>
 </li>
 <li>
 <p><code>MaacParameter&lt;bool&gt; NewBoolToFloatParameter(AacFlFloatParameterGroup aacParameterGroup)</code> <br>
-Declare new Bool parameters, acknowledging that the animator has exposed them as Floats. By default it is saved and synced. This creates a ModularAvatarParameters on the targeted object if it doesn&#x27;t already exist. Function calls on the resulting objects will affect all parameters of that group.</p>
+Declare new Bool parameters, acknowledging that the animator has exposed them as Floats. By default it is saved and synced. This creates a ModularAvatarParameters on the targeted object if it doesn&#x27;t already exist. Function calls on the resulting objects will affect all parameters of that group. This creates a ModularAvatarParameters on the targeted object if it doesn&#x27;t already exist.</p>
 </li>
 </ul>
 <h4 class="anchor anchorWithStickyNavbar_LWe7" id="merge-animator">Merge Animator<a href="#merge-animator" class="hash-link" aria-label="Direct link to Merge Animator" title="Direct link to Merge Animator">​</a></h4>
 <ul>
 <li>
 <p><code>MaacMergeAnimator NewMergeAnimator(AacFlController controller, VRCAvatarDescriptor.AnimLayerType layerType)</code> <br>
-Declare a new animator to be merged. Every call to NewMergeAnimator will create a new ModularAvatarMergeAnimator, as long as this instance of MaAc is reused. The path mode is set to Absolute.</p>
+Declare a new animator to be merged. Every call to NewMergeAnimator will create an additional ModularAvatarMergeAnimator component. The path mode is set to Absolute.</p>
 </li>
 <li>
 <p><code>MaacMergeAnimator NewMergeAnimator(AnimatorController animator, VRCAvatarDescriptor.AnimLayerType layerType)</code> <br>
-Declare a new raw animator to be merged. Every call to NewMergeAnimator will create a new ModularAvatarMergeAnimator, as long as this instance of MaAc is reused. The path mode is set to Absolute.</p>
+Declare a new raw animator to be merged. Every call to NewMergeAnimator will create an additional ModularAvatarMergeAnimator component. The path mode is set to Absolute.</p>
 </li>
 <li>
 <p><code>MaacMergeAnimator UsingMergeAnimator(ModularAvatarMergeAnimator mergeAnimator, AacFlController controller, VRCAvatarDescriptor.AnimLayerType layerType)</code> <br>
@@ -113,7 +113,7 @@ Edit one menu item on the receiver object. It is not possible to declare multipl
 </li>
 <li>
 <p><code>MaacMenuItem EditMenuItem(params GameObject[] receiversWithNulls)</code> <br>
-Edit one menu item on all of the receiver objects. It is not possible to declare multiple menu items on those same objects. Function calls on the resulting objects will affect all of those menu items. Use this in case you have multiple identical menu items scattered across different menus. The array can safely contain null values.</p>
+Edit one menu item on all of the receiver objects. It is not possible to declare multiple menu items on those same objects. Function calls on the resulting object will affect all of those menu items. Use this in case you have multiple identical menu items scattered across different menus. The array can safely contain null values.</p>
 </li>
 </ul>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="merge-animator-maacmergeanimator">Merge Animator (MaacMergeAnimator)<a href="#merge-animator-maacmergeanimator" class="hash-link" aria-label="Direct link to Merge Animator (MaacMergeAnimator)" title="Direct link to Merge Animator (MaacMergeAnimator)">​</a></h2>
