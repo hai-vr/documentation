@@ -54,47 +54,47 @@ Create a new instance of MaAc targeting another object. Beware that this new ins
 #### Parameters
 
 - `MaAc ImportParameters(VRCExpressionParameters parameters)` <br/>
-Import parameters from an existing VRCExpressionParameters asset. If the object already contains a ModularAvatarParameters component: The first invocation of this function, or NewParameter function, whichever happens first, will wipe all existing parameters from that component.
+Import parameters from an existing VRCExpressionParameters asset. This creates a ModularAvatarParameters on the targeted object if it doesn't already exist.
 
 - `MaacParameter<float> NewParameter(MaacParameterType parameterType, string parameter)` <br/>
-Declare a new parameter of the given type. If you use Animator As Code, you can reuse the parameters using the other `NewParameter` method overloads or the `NewBoolToFloatParameter` method. Function calls on the resulting objects will affect all parameters of that group. If the object already contains a ModularAvatarParameters component: The first invocation of this function, or ImportParameters function, whichever happens first, will wipe all existing parameters from that component.
+Declare a new parameter of the given type. If you use Animator As Code, you can reuse the parameters using the other `NewParameter` method overloads or the `NewBoolToFloatParameter` method. Function calls on the resulting objects will affect all parameters of that group. This creates a ModularAvatarParameters on the targeted object if it doesn't already exist.
 
 - `MaacParameter<float> NewParameter(AacFlFloatParameter aacParameter)` <br/>
-Declare a new Float parameter, by default saved and synced. This creates a ModularAvatarParameters on the targeted object if it doesn't already exist. If the object already contains a ModularAvatarParameters component: The first invocation of this function, or ImportParameters function, whichever happens first, will wipe all existing parameters from that component.
+Declare a new Float parameter, by default saved and synced. This creates a ModularAvatarParameters on the targeted object if it doesn't already exist.
 
 - `MaacParameter<int> NewParameter(AacFlIntParameter aacParameter)` <br/>
-Declare a new Int parameter, by default saved and synced. This creates a ModularAvatarParameters on the targeted object if it doesn't already exist. If the object already contains a ModularAvatarParameters component: The first invocation of this function, or ImportParameters function, whichever happens first, will wipe all existing parameters from that component.
+Declare a new Int parameter, by default saved and synced. This creates a ModularAvatarParameters on the targeted object if it doesn't already exist.
 
 - `MaacParameter<bool> NewParameter(AacFlBoolParameter aacParameter)` <br/>
-Declare a new Bool parameter, by default saved and synced. This creates a ModularAvatarParameters on the targeted object if it doesn't already exist. If the object already contains a ModularAvatarParameters component: The first invocation of this function, or ImportParameters function, whichever happens first, will wipe all existing parameters from that component.
+Declare a new Bool parameter, by default saved and synced. This creates a ModularAvatarParameters on the targeted object if it doesn't already exist.
 
 - `MaacParameter<bool> NewBoolToFloatParameter(AacFlFloatParameter aacParameter)` <br/>
-Declare a new Bool parameter, acknowledging that the animator has exposed it as a Float. By default it is saved and synced. This creates a ModularAvatarParameters on the targeted object if it doesn't already exist. If the object already contains a ModularAvatarParameters component: The first invocation of this function, or ImportParameters function, whichever happens first, will wipe all existing parameters from that component.
+Declare a new Bool parameter, acknowledging that the animator has exposed it as a Float. By default it is saved and synced. This creates a ModularAvatarParameters on the targeted object if it doesn't already exist.
 
 #### Parameter groups
 
 - `MaacParameter<float> NewParameter(MaacParameterType parameterType, params string[] parametersWithNulls)` <br/>
-  Declare new parameters of the given type. If you use Animator As Code, you can reuse the parameters using the other `NewParameter` method overloads or the `NewBoolToFloatParameter` method. The array can safely contain null values.
+  Declare new parameters of the given type. If you use Animator As Code, you can reuse the parameters using the other `NewParameter` method overloads or the `NewBoolToFloatParameter` method. The array can safely contain null values. This creates a ModularAvatarParameters on the targeted object if it doesn't already exist.
 
 - `MaacParameter<float> NewParameter(AacFlFloatParameterGroup aacParameterGroup)` <br/>
-Declare new Float parameters, by default saved and synced. This creates a ModularAvatarParameters on the targeted object if it doesn't already exist. Function calls on the resulting objects will affect all parameters of that group.
+Declare new Float parameters, by default saved and synced. This creates a ModularAvatarParameters on the targeted object if it doesn't already exist. Function calls on the resulting objects will affect all parameters of that group. This creates a ModularAvatarParameters on the targeted object if it doesn't already exist.
 
 - `MaacParameter<int> NewParameter(AacFlIntParameterGroup aacParameterGroup)` <br/>
-Declare new Int parameters, by default saved and synced. This creates a ModularAvatarParameters on the targeted object if it doesn't already exist. Function calls on the resulting objects will affect all parameters of that group.
+Declare new Int parameters, by default saved and synced. This creates a ModularAvatarParameters on the targeted object if it doesn't already exist. Function calls on the resulting objects will affect all parameters of that group. This creates a ModularAvatarParameters on the targeted object if it doesn't already exist.
 
 - `MaacParameter<bool> NewParameter(AacFlBoolParameterGroup aacParameterGroup)` <br/>
-Declare new Bool parameters, by default saved and synced. This creates a ModularAvatarParameters on the targeted object if it doesn't already exist. Function calls on the resulting objects will affect all parameters of that group.
+Declare new Bool parameters, by default saved and synced. This creates a ModularAvatarParameters on the targeted object if it doesn't already exist. Function calls on the resulting objects will affect all parameters of that group. This creates a ModularAvatarParameters on the targeted object if it doesn't already exist.
 
 - `MaacParameter<bool> NewBoolToFloatParameter(AacFlFloatParameterGroup aacParameterGroup)` <br/>
-Declare new Bool parameters, acknowledging that the animator has exposed them as Floats. By default it is saved and synced. This creates a ModularAvatarParameters on the targeted object if it doesn't already exist. Function calls on the resulting objects will affect all parameters of that group.
+Declare new Bool parameters, acknowledging that the animator has exposed them as Floats. By default it is saved and synced. This creates a ModularAvatarParameters on the targeted object if it doesn't already exist. Function calls on the resulting objects will affect all parameters of that group. This creates a ModularAvatarParameters on the targeted object if it doesn't already exist.
 
 #### Merge Animator
 
 - `MaacMergeAnimator NewMergeAnimator(AacFlController controller, VRCAvatarDescriptor.AnimLayerType layerType)` <br/>
-Declare a new animator to be merged. Every call to NewMergeAnimator will create a new ModularAvatarMergeAnimator, as long as this instance of MaAc is reused. The path mode is set to Absolute.
+Declare a new animator to be merged. Every call to NewMergeAnimator will create an additional ModularAvatarMergeAnimator component. The path mode is set to Absolute.
 
 - `MaacMergeAnimator NewMergeAnimator(AnimatorController animator, VRCAvatarDescriptor.AnimLayerType layerType)` <br/>
-Declare a new raw animator to be merged. Every call to NewMergeAnimator will create a new ModularAvatarMergeAnimator, as long as this instance of MaAc is reused. The path mode is set to Absolute.
+Declare a new raw animator to be merged. Every call to NewMergeAnimator will create an additional ModularAvatarMergeAnimator component. The path mode is set to Absolute.
 
 - `MaacMergeAnimator UsingMergeAnimator(ModularAvatarMergeAnimator mergeAnimator, AacFlController controller, VRCAvatarDescriptor.AnimLayerType layerType)` <br/>
 Writes over an existing MergeAnimator component, setting the controller and layer type to be merged. The path mode is set to Absolute.
@@ -111,7 +111,7 @@ Edit one menu item on this object. It is not possible to declare multiple menu i
 Edit one menu item on the receiver object. It is not possible to declare multiple menu items on that same object.
 
 - `MaacMenuItem EditMenuItem(params GameObject[] receiversWithNulls)` <br/>
-Edit one menu item on all of the receiver objects. It is not possible to declare multiple menu items on those same objects. Function calls on the resulting objects will affect all of those menu items. Use this in case you have multiple identical menu items scattered across different menus. The array can safely contain null values.
+Edit one menu item on all of the receiver objects. It is not possible to declare multiple menu items on those same objects. Function calls on the resulting object will affect all of those menu items. Use this in case you have multiple identical menu items scattered across different menus. The array can safely contain null values.
 
 ## Merge Animator (MaacMergeAnimator)
 
