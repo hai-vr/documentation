@@ -1,7 +1,6 @@
 ﻿---
 title: VCC Listing
 sidebar_position: 2
-unlisted: true
 ---
 
 Many of these products can be installed using our VCC listing.
