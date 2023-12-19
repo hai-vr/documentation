@@ -1,6 +1,6 @@
 # Convert to FaceEmo
 
-:::danger
+:::warning
 This functionality is currently in public Beta, and may be unstable for regular use.
 :::
 
