@@ -1,5 +1,5 @@
 ﻿---
-title: Auto-remove OSC config
+title: Auto-reset OSC config
 ---
 
 ## 1.1.3
