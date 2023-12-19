@@ -1,7 +1,7 @@
 # Convert to FaceEmo
 
 :::danger
-This functionality is not released yet.
+This functionality is currently in public Beta, and may be unstable for regular use.
 :::
 
 You can convert ComboGestureExpressions to **[FaceEmo](https://suzuryg.github.io/face-emo/)**
