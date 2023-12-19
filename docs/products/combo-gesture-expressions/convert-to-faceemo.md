@@ -7,6 +7,10 @@ This functionality is not released yet.
 You can convert ComboGestureExpressions to **[FaceEmo](https://suzuryg.github.io/face-emo/)**
 if you still have the ComboGesture components in your scene.
 
+<video controls width="816">
+<source src={require('./videos/NWB6b75D8N.mp4').default}/>
+</video>
+
 ## Limitations
 
 Conversion to FaceEmo has the following limitations:
