@@ -91,6 +91,12 @@ const config = {
           },
           {
             type: 'docSidebar',
+            sidebarId: 'changelogsSidebar',
+            position: 'left',
+            label: 'Changelogs',
+          },
+          {
+            type: 'docSidebar',
             sidebarId: 'otherSidebar',
             position: 'left',
             label: 'Help & Discord',
