@@ -5,7 +5,7 @@ title: "Getting started"
 
 # Early testers: Getting started
 
-:::caution
+:::warning
 ResilienceVR is not a good place to start discovering social VR; it is better suited for seasoned social VR users who want to try complementary ways to explore and communicate.
 
 If this is your first time in social VR, you should try other social VR applications.

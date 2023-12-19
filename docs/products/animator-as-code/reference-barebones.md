@@ -29,7 +29,7 @@ If you use Animator As Code barebones, it is generally used in the following ste
 
 ## Declare an Animator As Code (AAC)
 
-:::caution
+:::warning
 These steps describe how to use Animator As Code without the help of any other dependency.
 
 In VRChat Avatars, it may be much easier to use Animator As Code [when it is integrated with Modular Avatar and NDMF](getting-started).

@@ -2,7 +2,7 @@
 
 While working on ComboGestureExpressions 1.4, I had a lot of struggles with Write Defaults OFF. I have consolidated everything I've learned along the way on this page.
 
-:::caution
+:::warning
 ⚠️ The article below was written in March 2021.
 
 Research on this subject has evolved since then, and as of September 2023, I recommend you [read this other article instead](https://notes.sleightly.dev/write-defaults/).
@@ -49,7 +49,7 @@ There is an unknown:
 
 ### Quirks
 
-:::caution
+:::warning
 ⚠️ The article was written in March 2021.
 
 Research on this subject has evolved since then, and as of September 2023, I recommend you [read this other article instead](https://notes.sleightly.dev/write-defaults/).

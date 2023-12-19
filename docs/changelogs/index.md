@@ -3,7 +3,7 @@ title: Changelogs
 sidebar_position: 1
 ---
 
-:::caution
+:::warning
 The changelogs of some products aren't available at this time.
 :::
 

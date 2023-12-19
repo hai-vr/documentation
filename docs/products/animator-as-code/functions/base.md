@@ -252,7 +252,7 @@ Create a transition from this state machine node to the exit. 🔺 If the name i
 
 ## No Animator (AacFlNoAnimator) 💡
 
-:::caution
+:::warning
 You should use this class if you are creating BlendTree assets without any animator controllers to back it.
 
 Otherwise, it is strongly recommended to obtain animator parameter objects directly from the [layer objects](#create-parameters) instead of using NoAnimator(), as the use of NoAnimator() will not result in the registration of any parameters inside the animator controller.

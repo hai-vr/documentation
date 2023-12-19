@@ -4,7 +4,7 @@ title: ComboGestureExpressions
 
 *ComboGestureExpressions* is an Unity Editor tool that lets you attach face expressions to hand gestures, and make it react to other *Avatars 3.0*'s features, including *Contacts*, *PhysBones* and *OSC*.
 
-:::caution
+:::warning
 This tool requires VRChat, and is incompatible with other apps and platforms.
 :::
 

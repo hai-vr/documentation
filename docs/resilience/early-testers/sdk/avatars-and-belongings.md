@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # Avatars and Belongings
 
-:::caution
+:::warning
 The ResilienceVR SDK is only available to testers.
 :::
 

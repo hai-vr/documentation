@@ -194,7 +194,7 @@ The *Save again* button will save the picture at the previously saved location.
 
 ![Unity_xuolgaXxqS.png](./img/icon-gen/Unity_xuolgaXxqS.png)
 
-:::caution
+:::warning
 Click *Stop capturing* when you're done, as the tool will consume resources during use.
 :::
 

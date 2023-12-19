@@ -4,7 +4,7 @@ sidebar_position: 3
 
 # Mementos
 
-:::caution
+:::warning
 The ResilienceVR SDK is only available to testers.
 :::
 

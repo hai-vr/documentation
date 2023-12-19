@@ -5,7 +5,7 @@ title: SDK
 
 # SDK
 
-:::caution
+:::warning
 The ResilienceVR SDK is only available to testers.
 :::
 

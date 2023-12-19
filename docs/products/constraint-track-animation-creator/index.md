@@ -4,7 +4,7 @@
 
 *Constraint Track Animation Creator* is a Unity Editor tool which automates the creation of a gimmick that lets you animate an object to slide along a track using constraints.
 
-:::caution
+:::warning
 This tool requires VRChat, and is incompatible with other apps and platforms.
 :::
 

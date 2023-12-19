@@ -11,7 +11,7 @@ import cloakdr2expf2 from './reference-img/cloakdr2-exp-f2.mp4';
 
 This is the **reference manual!** This reference will go through the essentials of the tool.
 
-:::caution
+:::warning
 In the current version of this tool, the **VRChat Avatars 3.0 SDK is required** in order to generate the animations.
 The system itself doesn’t need the VRChat SDK to function, so this limitation may be removed [at a later date](https://github.com/hai-vr/av3-constraint-track-animation-creator/issues/8).
 :::
