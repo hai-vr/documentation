@@ -2,7 +2,7 @@
 title: ComboGestureExpressions
 ---
 
-## 3.1.5100 (Beta)
+## 3.1.5101 (Beta)
 
 - First public VCC beta of ComboGestureExpressions.
 
