@@ -36,5 +36,12 @@ or reuse the one you have.
 - Press Convert.
 - When satisfied, you can safely delete the *ComboGesture to FaceEmo Converter* component from your scene.
 
+:::warning
+Don't use ComboGestureExpressions and FaceEmo simultaneously in the same avatar!
+
+If you are going to use FaceEmo, make sure you have removed the CGE layers from your FX and Gesture layers,
+along with any Expressions Menu and Expression Parameters related to CGE.
+:::
+
 When done, remove the package *Haï ~ Convert ComboGesture to FaceEmo* so that it doesn't interfere with the installation
 of future FaceEmo updates.
