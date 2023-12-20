@@ -28,9 +28,11 @@ With *ComboGestureExpressions*:
 
 ## Download
 
-The tool is free for download.
+The tool is free for download on VCC.
 
-- GitHub ([hai-vr/combo-gesture-expressions-av3/releases](https://github.com/hai-vr/combo-gesture-expressions-av3/releases))
-- Booth.pm ([ComboGestureExpressions - hai-vr - BOOTH](https://hai-vr.booth.pm/items/2219616))
+### VCC
+
+- Use this link to **[install our listing to VCC](vcc://vpm/addRepo?url=https://hai-vr.github.io/vpm-listing/index.json)**.
+- Add *Haï ~ ComboGestureExpressions* to your project using VCC.
 
 [//]: # (![EeCgeLogo3.png]&#40;EeCgeLogo3.png&#41;)

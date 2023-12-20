@@ -45,16 +45,18 @@ With *ComboGestureExpressions*:
 
 ## Download
 
-The tool is free for download.
+The tool is free for download on VCC.
 
-- GitHub ([hai-vr/combo-gesture-expressions-av3/releases](https://github.com/hai-vr/combo-gesture-expressions-av3/releases))
-- Booth.pm ([ComboGestureExpressions - hai-vr - BOOTH](https://hai-vr.booth.pm/items/2219616))
+### VCC
+
+- Use this link to **[install our listing to VCC](vcc://vpm/addRepo?url=https://hai-vr.github.io/vpm-listing/index.json)**.
+- Add *Haï ~ ComboGestureExpressions* to your project using VCC.
 
 ## Installation for V1 users
 
-The components used in ComboGestureExpressions V1 and V2 are the same. You will not lose your work.
+The components used in ComboGestureExpressions V1, V2, and V3 are the same. You will not lose your work.
 
-To install ComboGestureExpressions V2, **ComboGestureExpressions V1 must be removed** by hand first if it is installed.
+To install ComboGestureExpressions V2 or V3, **ComboGestureExpressions V1 must be removed** by hand first if it is installed.
 - Delete the `Assets/Hai/ComboGesture` folder.
 - Delete the `Assets/Hai/ExpressionsEditor` folder.
 
