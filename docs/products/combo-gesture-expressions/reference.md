@@ -426,7 +426,7 @@ When the parameter is active, the face expressions of your avatar will stop play
 ## Disable blinking prevention when using eye tracking
 
 :::warning
-This functionality is currently in public Beta, and may be unstable for regular use.
+This functionality is currently in public Beta.
 :::
 
 If you use an eye tracking hardware device on your HMD, you can choose to turn off ComboGestureExpressions' [eyes blinking prevention feature](#do-not-blink-when-eyes-are-closed) when eye tracking is enabled. **If you don't use an eye tracking hardware device on your HMD, don't bother with this!.**
