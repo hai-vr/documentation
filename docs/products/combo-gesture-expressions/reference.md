@@ -372,7 +372,13 @@ Illustration of a puppet mood set.
 
 ## Animate cat ears, wings and more
 
-This section has moved to [its own documentation page](additional-pages/v2-animate-transforms).
+In ComboGestureExpressions V3, if you want to animate ears, wings, tails, or other transform animations, animate those in the same animations as the one you use for your face expressions.
+
+*If you're familiar with ComboGestureExpressions V2:*
+
+The Gesture Playable Layer is no longer used. You can check "Clean up old layers" to instruct the tool to clear old Gesture layers when synchronizing. This only needs to be done once.
+
+If you still use ComboGestureExpressions V2, the section has moved to [its own documentation page](additional-pages/v2-animate-transforms).
 
 ## Permutations
 
