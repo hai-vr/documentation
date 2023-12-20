@@ -6,7 +6,7 @@ const lightCodeTheme = themes.github;
 const darkCodeTheme = themes.dracula;
 
 /** @type {import('@docusaurus/types').Config} */
-const config = {
+export default {
   title: 'Haï~',
   tagline: 'Virtual reality tools and apps',
   favicon: 'img/favicon.ico',
@@ -181,5 +181,3 @@ const config = {
       },
     }),
 };
-
-module.exports = config;
