@@ -28,7 +28,8 @@ title: ComboGestureExpressions
 
 - **Synchronization should now be dramatically faster.**
     - Fix an issue where asset generation was made slower because code sections with intensive asset creation were not properly marked.
+- Fix synchronization should no longer fail when animations still contain references to Dynamic Bones component toggle while Dynamic Bones is not installed in the project.
 - Fix an issue where ComboGestureDynamics related to a boolean parameter could not be tied to a specific activity.
-- Fix text becoming red after entering Play mode.
+- Fix text should no longer be red after entering Play mode.
 - Documentation now leads to docs.hai-vr.dev instead of hai-vr.github.io.
 - Japanese localization file name has changed.
