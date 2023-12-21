@@ -31,6 +31,7 @@ In VCC, install the additional package *Haï ~ Convert ComboGesture to FaceEmo*.
 - In the scene that contains the ComboGesture components and your avatar, create a [New Expression Menu in FaceEmo](https://suzuryg.github.io/face-emo/docs/tutorials/simple-menu/)
 or reuse the one you have.
 - Outside the avatar, create a GameObject and add a *ComboGesture to FaceEmo Converter* component (search for "convert").
+
 ![img/convert.png](img/convert.png)
 - Specify the ComboGestureCompiler component and the FaceEmo component.
 - Choose whether you want to ignore fist triggers (see limitations above).
