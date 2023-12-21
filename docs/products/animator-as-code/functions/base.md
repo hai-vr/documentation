@@ -416,7 +416,7 @@ Swap a material of a Particle System on the specified slot (indexed at 0). This 
 ### Mutli-frame Animations 💡
 
 - `AacFlClip BlendShape(SkinnedMeshRenderer renderer, string blendShapeName, AnimationCurve animationCurve)` 💡<br/>
-Change a blendShape of a skinned meshe, with an animation curve.
+Change a blendShape of a skinned mesh, with an animation curve.
 
 - `AacFlClip BlendShape(SkinnedMeshRenderer[] rendererWithNulls, string blendShapeName, AnimationCurve animationCurve)` 💡<br/>
 Change a blendShape of multiple skinned meshes, with an animation curve. The array can safely contain null values.
