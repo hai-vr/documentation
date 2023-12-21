@@ -70,7 +70,7 @@ Find out [what's new in V2](./v2.0-whats-new).
 
 ## Having issues? Join my Discord Server
 
-I will try to provide help on the #cge channel when I can.
+I will try to provide help on the #combogesture-vrc channel when I can.
 
 [Join the Invitation Discord (https://discord.gg/58fWAUTYF8)](https://discord.gg/58fWAUTYF8).
 
