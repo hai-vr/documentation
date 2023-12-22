@@ -12,6 +12,8 @@ To use this component:
 - Add a "PA-H Recalculate Normals" component anywhere in your avatar.
 - Add blendshapes that you want to recalculate. Any SkinnedMeshRenderer that has that blendshape will be affected.
 
+Enter Play Mode or upload the avatar to test the results: as this is a non-destructive component, the original mesh remains intact.
+
 <video controls autoplay muted>
     <source src={require('../img/uI4KB1Gj4Y.mp4').default}/>
 </video>
