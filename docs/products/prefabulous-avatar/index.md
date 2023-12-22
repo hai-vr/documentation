@@ -42,7 +42,7 @@ You need to add **two** listings:
 - Add **[Modular Avatar listing](https://modular-avatar.nadena.dev/)** by clicking on *Download (using VCC)*, and
 - also **[install Haï~'s listing to VCC](vcc://vpm/addRepo?url=https://hai-vr.github.io/vpm-listing/index.json)**.
 
-Then, add *Haï ~ Prefabulous Avatar (Alpha)* to your project using VCC.
+Then, add *Haï ~ Prefabulous Avatar* to your project using VCC.
 
 ## How to use
 
