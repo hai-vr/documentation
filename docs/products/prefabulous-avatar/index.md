@@ -9,6 +9,7 @@ title: ⚠️ Prefabulous Avatar
 Meant to be used primarily by users of **[Modular Avatar](https://modular-avatar.nadena.dev/)** components,
 our components can be reused across multiple avatars when you turn them into a prefab.
 
+- Improve the [shading of blendshape normals](./prefabulous-avatar/hai-components/recalculate-normals)
 - Edit all [mesh bounds](./prefabulous-avatar/component-reference/edit-all-mesh-bounds)
 and all [mesh anchor override](./prefabulous-avatar/component-reference/edit-all-mesh-anchor-override) for consistent visibility and lighting.
 - [Change the avatar scale](./prefabulous-avatar/component-reference/change-avatar-scale) and viewpoint without rescaling the avatar in the scene.

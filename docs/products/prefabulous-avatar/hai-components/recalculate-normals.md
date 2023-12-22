@@ -1,10 +1,14 @@
 ﻿# Recalculate Normals
 
-:::danger
-This feature is not released yet.
-:::
-
 Improves the shading of SkinnedMeshRenderers by recalculating select blendshape normals (and tangents).
+
+<video controls autoplay muted>
+    <source src={require('../img/mS1cQ7EheE.mp4').default}/>
+</video>
+
+To use this component:
+- Add a "PA-H Recalculate Normals" component anywhere in your avatar.
+- Add blendshapes that you want to recalculate. Any SkinnedMeshRenderer that has that blendshape will be affected.
 
 You should **not** use Recalculate Normals on the following blendshapes:
 
