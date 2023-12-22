@@ -1,5 +1,5 @@
 ﻿---
-title: ⚠️ Prefabulous Avatar
+title: Prefabulous Avatar
 ---
 
 ## 1.3.0

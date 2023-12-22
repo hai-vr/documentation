@@ -1,5 +1,5 @@
 ﻿---
-title: ⚠️ Prefabulous Avatar
+title: Prefabulous Avatar
 ---
 
 # Prefabulous Avatar

@@ -6,9 +6,17 @@ Improves the shading of SkinnedMeshRenderers by recalculating select blendshape 
     <source src={require('../img/mS1cQ7EheE.mp4').default}/>
 </video>
 
+## How to use
+
 To use this component:
 - Add a "PA-H Recalculate Normals" component anywhere in your avatar.
 - Add blendshapes that you want to recalculate. Any SkinnedMeshRenderer that has that blendshape will be affected.
+
+<video controls autoplay muted>
+    <source src={require('../img/uI4KB1Gj4Y.mp4').default}/>
+</video>
+
+## Other notes
 
 You should **not** use Recalculate Normals on the following blendshapes:
 
@@ -23,3 +31,7 @@ You should use Recalculate Normals on the following blendshapes:
 
 - Body shape customization blendshapes that flatten, emboss, or enlarge areas of the body, whether it is the body flesh or clothing.
 - Body adjustment blendshapes to fit clothing, such as heel adapters, or clothing that pinch the body.
+
+<video controls autoplay muted>
+    <source src={require('../img/JiHvKYMj8A.mp4').default}/>
+</video>
