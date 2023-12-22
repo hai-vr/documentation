@@ -6,6 +6,8 @@ Improves the shading of SkinnedMeshRenderers by recalculating select blendshape 
     <source src={require('../img/mS1cQ7EheE.mp4').default}/>
 </video>
 
+*Left: Recalculate Normals active. Right: Original avatar.<br />Notice how the original avatar rim light shading behaves as if the chest were not flattened.*
+
 ## How to use
 
 To use this component:
@@ -37,3 +39,5 @@ You should use Recalculate Normals on the following blendshapes:
 <video controls autoplay muted>
     <source src={require('../img/JiHvKYMj8A.mp4').default}/>
 </video>
+
+*Left: Recalculate Normals active. Right: Original avatar.<br />Notice the shadows better match the chest shape when Recalculate Normals is active.*
