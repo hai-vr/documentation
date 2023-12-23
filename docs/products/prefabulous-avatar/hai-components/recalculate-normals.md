@@ -50,3 +50,7 @@ You should use Recalculate Normals on the following blendshapes:
 - [Technical retrospective](https://hai-vr.notion.site/Recalculate-Normals-Retrospective-e8b319e25c5a4b779c220a4d8286ded4).
   This is an article I've written that describes the quirks I had to overcome to build this tool,
   and provides some background about how blendshape normals are relevant.
+
+## Versions
+
+- **1.3.0**: Added.

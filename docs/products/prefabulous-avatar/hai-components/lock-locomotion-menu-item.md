@@ -7,3 +7,7 @@ This prevents the avatar collider from moving when the user moves the analog sti
 ## Other notes
 
 You can have multiple Lock Locomotion Menu Item components across multiple menus in your avatar, and the FX layer will only ever be created once.
+
+## Versions
+
+- **1.2.0**: Added.

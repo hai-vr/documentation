@@ -26,3 +26,7 @@ The `HaiXT_EyeClosedInverse_SmileLeft` and `HaiXT_EyeClosedInverse_SmileRight` b
 (Left eyelid and Right eyelid animated separately)
 
 This effectively makes it into a new blendshape capable of morphing the standard EyeClosed blendshape into the artist-authored ^_^ blendshape.
+
+## Versions
+
+- **1.2.0**: Added.

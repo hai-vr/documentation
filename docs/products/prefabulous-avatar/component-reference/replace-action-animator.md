@@ -9,3 +9,7 @@ The latter will append layers to the existing action layer, which is almost neve
 This component exists so that you can drop a prefab containing this component into an avatar in order to reset it,
 without having to modify the original avatar descriptor by hand.
 :::
+
+## Versions
+
+- **1.2.0**: Added.

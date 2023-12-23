@@ -8,3 +8,7 @@ This ensures that menus and parameters created by other non-destructive tooling 
 This component exists so that you can drop a prefab containing this component into an avatar in order to reset it,
 without having to modify the original avatar descriptor by hand.
 :::
+
+## Versions
+
+- **1.2.0**: Added.
