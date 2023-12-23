@@ -10,6 +10,9 @@ Improves the shading of SkinnedMeshRenderers by recalculating select blendshape 
 
 ## How to use
 
+This component will improve the shading of your avatar by recalculating blendshape normals:
+Light, reflections, and rims are affected by the altered mesh surfaces.
+
 To use this component:
 - Add a "PA-H Recalculate Normals" component anywhere in your avatar.
 - Add blendshapes that you want to recalculate. Any SkinnedMeshRenderer that has that blendshape will be affected.
@@ -41,3 +44,9 @@ You should use Recalculate Normals on the following blendshapes:
 </video>
 
 *Left: Recalculate Normals active. Right: Original avatar.<br />Notice the shadows better match the chest shape when Recalculate Normals is active.*
+
+## Learn more
+
+- [Technical retrospective](https://hai-vr.notion.site/Recalculate-Normals-Retrospective-e8b319e25c5a4b779c220a4d8286ded4).
+  This is an article I've written that describes the quirks I had to overcome to build this tool,
+  and provides some background about how blendshape normals are relevant.
