@@ -1,4 +1,7 @@
-﻿# Help & Discord
+﻿---
+sidebar_position: 1
+---
+# Help & Discord
 
 If you need help with any of the products, please join the Discord server. I will try to help when I can:
 
