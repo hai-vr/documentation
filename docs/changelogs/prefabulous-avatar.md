@@ -31,8 +31,9 @@ Change Avatar Scale now uses the Avatar Descriptor view position as the source s
 
 ### Fixes
 
-- Edit Mesh Anchor Override: Fix NDMF PrefabulousEditAllMeshAnchorOverridePlugin build step is now correctly named "Edit Mesh Anchor Override"
-- Recalculate Normals: Update conflict prevention filter to include "hidemesh_".
+- Edit Mesh Anchor Override: Fix NDMF PrefabulousEditAllMeshAnchorOverridePlugin build step is now correctly named "Edit Mesh Anchor Override".
+- Update Recalculate Normals conflict prevention filter to include "hidemesh_".
+- Fix Recalculate Normals will no longer process the same blendshapes multiple times when they are specified multiple times.
 
 ## 1.3.0
 
