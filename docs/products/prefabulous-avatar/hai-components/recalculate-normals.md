@@ -57,6 +57,10 @@ negatively interfere with blendshapes that cause a significant change in the bod
 In particular, **if you have a blendshape that flattens part of the body**, the default recalculated normals can cause visible tearing due to the presence
 of custom split normals that were optimally designed for that part of the body in the default shape.
 
+Enabling Erase Custom Split Normals will erase the custom split normals data on the vertices affected by the specified blendshapes, **only when that blendshape is active**.
+
+The custom split normals data remains intact on the mesh when the specified blendshapes are inactive.
+
 :::danger
 Enabling Erase Custom Split Normals can result in **worse results** in meshes that don't have custom split normals.
 
