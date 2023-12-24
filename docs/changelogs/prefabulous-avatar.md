@@ -2,6 +2,28 @@
 title: Prefabulous Avatar
 ---
 
+## 1.4.0
+
+### Update [Recalculate Normals](/docs/products/prefabulous-avatar/hai-components/recalculate-normals)
+
+Recalculate Normals now has Erase Custom Split Normals option:
+- Add "Erase Custom Split Normals" option.
+- When "Erase Custom Split Normals" is enabled, the recalculation will perform a second pass where all vertices that have a non-zero delta pos or a non-zero recalculated delta normals will have new deltas calculated: instead of calculating the difference from the base recalculated mesh, it will calculate the difference from the original mesh.
+- In effects, this erases custom split normals data for that blendshape.
+- Since this only affects some vertices (non-zero delta pos or a non-zero recalculated delta normals), this prevents incorrect delta normals from contaminating unrelated vertices in the mesh.
+
+### Update [Change Avatar Scale](/docs/products/prefabulous-avatar/component-reference/change-avatar-scale)
+
+ChangeAvatarScale now uses the Avatar Descriptor view position as the source size:
+- ChangeAvatarScale reads the Avatar Descriptor view position Y coordinate and uses it as the source size.
+- This is now the default behaviour.
+- Old behaviour can be restored by checking "Custom Source Size".
+
+### Fixes
+
+- Edit Mesh Anchor Override: Fix NDMF PrefabulousEditAllMeshAnchorOverridePlugin build step is now correctly named "Edit Mesh Anchor Override"
+- Recalculate Normals: Update conflict prevention filter to include "hidemesh_".
+
 ## 1.3.0
 
 ### New component: [Recalculate Normals](/docs/products/prefabulous-avatar/hai-components/recalculate-normals)

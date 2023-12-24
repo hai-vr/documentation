@@ -45,6 +45,44 @@ You should use Recalculate Normals on the following blendshapes:
 
 *Left: Recalculate Normals active. Right: Original avatar.<br />Notice the shadows better match the chest shape when Recalculate Normals is active.*
 
+## Option: Erase Custom Split Normals
+
+*This feature was added in 1.4.0*.
+
+The original mesh may have been edited with custom split normals, which means the artist has manually edited the normals to improve the shading on the base pose.
+
+Most of the time, these custom split normals won't cause an issue on blendshapes, but in **rare cases**, these custom split normals might
+negatively interfere with blendshapes that cause a significant change in the body shape.
+
+In particular, **if you have a blendshape that flattens part of the body**, the default recalculated normals can cause visible tearing due to the presence
+of custom split normals that were optimally designed for that part of the body in the default shape.
+
+:::danger
+Enabling Erase Custom Split Normals can result in **worse results** in meshes that don't have custom split normals.
+
+Only give this a try on blendshapes where shading defects are clearly visible only after you've tried Recalculate Normals first without this option.
+
+In all other cases, **keep this option off!**
+:::
+
+In such cases, you can try the following to see if it improves it:
+
+- Create **another** "PA-H Recalculate Normals" component on your avatar. 
+  - You are allowed to add that component multiple times on the same object.
+- In that new component, enable Erase Custom Split Normals.
+- Add the blendshape that you want to recalculate while removing Custom Split Normals.
+- If that blendshape is present in multiple SkinnedMeshRenderers, **you should limit the selection to only the SkinnedMeshRenderer that has custom split normals**:
+  - Enable "Limit To Specific Meshes".
+  - In the "Renderers" list, only add the SkinnedMeshRenderer that has custom split normals.
+
+:::tip
+You can have the same blendshape specified on multiple "PA-H Recalculate Normals" components.
+
+If a blendshape of SkinnedMeshRenderer is affected by multiple components, the "Erase Custom Split Normals" option will take priority.
+:::
+
+If you see no improvement, cancel your changes and add your blendshape back to your original "PA-H Recalculate Normals" component.
+
 ## Learn more
 
 - [Technical retrospective](https://hai-vr.notion.site/Recalculate-Normals-Retrospective-e8b319e25c5a4b779c220a4d8286ded4).
@@ -53,4 +91,5 @@ You should use Recalculate Normals on the following blendshapes:
 
 ## Versions
 
+- **1.4.0**: Add "Erase Custom Split Normals" option.
 - **1.3.0**: Added.
