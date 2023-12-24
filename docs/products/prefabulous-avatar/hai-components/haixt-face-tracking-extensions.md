@@ -11,6 +11,10 @@ When your eyes are closed, the shape of your eyes will change when you're smilin
 - Add another component called [HaiXT Generate Blendshapes for Face Tracking Extensions](./haixt-generate-blendshapes-for-face-tracking-extensions), which can create those blendshapes for you.
 - If you use FaceTra Shape Creator, these blendshapes are already created for you, see below.
 
+<video controls muted width="816">
+<source src={require('../img/smile-f.mp4').default}/>
+</video>
+
 ## Use with FaceTra Shape Creator
 
 [FaceTra Shape Creator](/docs/products/facetra-shape-creator) has a section called *Non-standard shapes (Experimental)*.

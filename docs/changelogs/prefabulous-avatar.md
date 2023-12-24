@@ -12,6 +12,10 @@ If you have an avatar that already supports face tracking, this will generate ad
 
 When your eyes are closed, the shape of your eyes will change when you're smiling.
 
+<video controls muted width="816">
+<source src={require('/docs/products/prefabulous-avatar/img/smile-f.mp4').default}/>
+</video>
+
 ### Fixes
 
 - Try to fix compatibility issues with Unity 2019.
