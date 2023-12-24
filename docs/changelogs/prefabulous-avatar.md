@@ -2,6 +2,37 @@
 title: Prefabulous Avatar
 ---
 
+## 1.5.0
+
+### New component: [HaiXT Generate Blendshapes for Face Tracking Extensions](/docs/products/prefabulous-avatar/hai-components/haixt-generate-blendshapes-for-face-tracking-extensions)
+
+A new component, [HaiXT Generate Blendshapes for Face Tracking Extensions](/docs/products/prefabulous-avatar/hai-components/haixt-generate-blendshapes-for-face-tracking-extensions), has been added to Prefabulous Avatar.
+
+If you have an avatar that already supports face tracking, this will generate additional non-standard blendshapes for use with [HaiXT Face Tracking Extensions](/docs/products/prefabulous-avatar/hai-components/haixt-face-tracking-extensions).
+
+When your eyes are closed, the shape of your eyes will change when you're smiling.
+
+### Fixes
+
+- Try to fix compatibility issues with Unity 2019.
+
+### Technical notes
+
+Add Generate Blendshapes for Face Tracking Extensions:
+
+- Generate Blendshapes for Face Tracking Extensions can add extension blendshapes to avatar that already support face tracking.
+- Add support for generating the HaiXT_EyeClosedInverse_Smile blendshapes.
+- The blendshapes will be generated only under these conditions:
+  - the face mesh must be called Body, and
+  - the avatar must already have EyeClosedLeft or EyeClosedRight blendshapes, and
+  - the avatar must NOT already have the HaiXT_EyeClosedInverse_SmileLeft or HaiXT_EyeClosedInverse_SmileRight blendshapes
+- All of these evaluations are done right before this NDMF handler executes:
+  - These conditions do not need to be true during Edit mode.
+  - A non-destructive processor running before this NDMF handler may still be able to cause these conditions to pass, or conversely, invalidate it.
+
+In addition:
+- Recalculate Normals NDMF handler is now constrainted to run after PrefabulousHaiGenerateBlendshapesFTEPlugin.
+
 ## 1.4.0
 
 ### Update [Recalculate Normals](/docs/products/prefabulous-avatar/hai-components/recalculate-normals)

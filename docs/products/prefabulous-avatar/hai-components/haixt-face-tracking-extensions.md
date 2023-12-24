@@ -1,6 +1,15 @@
 ﻿# HaiXT Face Tracking Extensions
 
-Adds a new FX layer containing support for the non-standard face tracking blendshapes used in FaceTra Shape Creator.
+Adds a new FX layer containing support for the non-standard face tracking blendshapes.
+
+:::warning
+The layer is only compatible with [Adjerry91's VRCTraceTracking-Templates](https://github.com/Adjerry91/VRCFaceTracking-Templates) animators.
+:::
+
+When your eyes are closed, the shape of your eyes will change when you're smiling.
+
+- Add another component called [HaiXT Generate Blendshapes for Face Tracking Extensions](./haixt-generate-blendshapes-for-face-tracking-extensions), which can create those blendshapes for you.
+- If you use FaceTra Shape Creator, these blendshapes are already created for you, see below.
 
 ## Use with FaceTra Shape Creator
 
@@ -14,7 +23,11 @@ Use that section to configure your avatar and generate the blendshapes that will
 
 ## Create blendshapes yourself in Blender
 
-If you don't use *FaceTra Shape Creator*, you can still create this non-standard face tracking blendshape in Blender or the editor of your choice.
+You can still create this non-standard face tracking blendshape in Blender or the editor of your choice.
+
+:::info
+Strongly consider using the [HaiXT Generate Blendshapes for Face Tracking Extensions](./haixt-generate-blendshapes-for-face-tracking-extensions) component.
+:::
 
 ### HaiXT_EyeClosedInverse_Smile*
 
