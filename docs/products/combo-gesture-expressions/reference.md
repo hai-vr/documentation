@@ -72,7 +72,7 @@ Find out [what's new in V2](./v2.0-whats-new).
 
 I will try to provide help on the #combogesture-vrc channel when I can.
 
-[Join the Invitation Discord (https://discord.gg/58fWAUTYF8)](https://discord.gg/58fWAUTYF8).
+[Join the Invitational Discord (https://discord.gg/58fWAUTYF8)](https://discord.gg/58fWAUTYF8).
 
 ## Set up the prefab and open the CGE Editor
 

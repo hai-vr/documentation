@@ -346,7 +346,7 @@ When done editing, you need to click the “Fix Model Update” in your Bone Det
 
 If you encounter an issue when trying to Fix Model Update, post a message in **#constraint-track** channel on Discord:
 
-[Join the Invitation Discord Server!](https://discord.com/invite/58fWAUTYF8)
+[Join the Invitational Discord Server!](https://discord.com/invite/58fWAUTYF8)
 
 ![Untitled](reference-img/Untitled%208.png)
 
