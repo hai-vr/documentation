@@ -8,6 +8,12 @@ When your eyes are closed, the shape of your eyes will change when you're smilin
 <source src={require('../img/smile-f.mp4').default}/>
 </video>
 
+:::warning
+If you use FaceTra Shape Creator, you do not need this component as this feature already exists within FaceTra Shape Creator.
+
+However, you will still need the [HaiXT Face Tracking Extensions](./haixt-face-tracking-extensions) component.
+:::
+
 ## How to use
 
 To use this component:
