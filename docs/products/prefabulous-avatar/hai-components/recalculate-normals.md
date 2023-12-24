@@ -62,7 +62,7 @@ Enabling Erase Custom Split Normals will erase the custom split normals data on 
 The custom split normals data remains intact on the mesh when the specified blendshapes are inactive.
 
 :::danger
-Enabling Erase Custom Split Normals can result in **worse results** in meshes that don't have custom split normals.
+Enabling Erase Custom Split Normals can lead to **worse results** in meshes that don't have custom split normals.
 
 Only give this a try on blendshapes where shading defects are clearly visible only after you've tried Recalculate Normals first without this option.
 

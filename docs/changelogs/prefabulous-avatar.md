@@ -13,7 +13,7 @@ Recalculate Normals now has [Erase Custom Split Normals](/docs/products/prefabul
 - Since this only affects some vertices (non-zero delta pos or a non-zero recalculated delta normals), this prevents incorrect delta normals from contaminating unrelated vertices in the mesh.
 
 :::danger
-Enabling Erase Custom Split Normals can result in **worse results** in meshes that don't have custom split normals.
+Enabling Erase Custom Split Normals can lead to **worse results** in meshes that don't have custom split normals.
 
 Only give this a try on blendshapes where shading defects are clearly visible only after you've tried Recalculate Normals first without this option.
 
