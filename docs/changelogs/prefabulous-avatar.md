@@ -6,15 +6,25 @@ title: Prefabulous Avatar
 
 ### Update [Recalculate Normals](/docs/products/prefabulous-avatar/hai-components/recalculate-normals)
 
-Recalculate Normals now has Erase Custom Split Normals option:
+Recalculate Normals now has [Erase Custom Split Normals](/docs/products/prefabulous-avatar/hai-components/recalculate-normals#option-erase-custom-split-normals) option:
 - Add "Erase Custom Split Normals" option.
 - When "Erase Custom Split Normals" is enabled, the recalculation will perform a second pass where all vertices that have a non-zero delta pos or a non-zero recalculated delta normals will have new deltas calculated: instead of calculating the difference from the base recalculated mesh, it will calculate the difference from the original mesh.
 - In effects, this erases custom split normals data for that blendshape.
 - Since this only affects some vertices (non-zero delta pos or a non-zero recalculated delta normals), this prevents incorrect delta normals from contaminating unrelated vertices in the mesh.
 
+:::danger
+Enabling Erase Custom Split Normals can result in **worse results** in meshes that don't have custom split normals.
+
+Only give this a try on blendshapes where shading defects are clearly visible only after you've tried Recalculate Normals first without this option.
+
+In all other cases, **keep this option off!**
+
+For more details, [please consult the Erase Custom Split Normals documentation](/docs/products/prefabulous-avatar/hai-components/recalculate-normals#option-erase-custom-split-normals).
+:::
+
 ### Update [Change Avatar Scale](/docs/products/prefabulous-avatar/component-reference/change-avatar-scale)
 
-ChangeAvatarScale now uses the Avatar Descriptor view position as the source size:
+Change Avatar Scale now uses the Avatar Descriptor view position as the source size:
 - ChangeAvatarScale reads the Avatar Descriptor view position Y coordinate and uses it as the source size.
 - This is now the default behaviour.
 - Old behaviour can be restored by checking "Custom Source Size".
