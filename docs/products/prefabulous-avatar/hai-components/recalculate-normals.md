@@ -11,7 +11,7 @@ Improves the shading of SkinnedMeshRenderers by recalculating select blendshape 
 ## How to use
 
 This component will improve the shading of your avatar by recalculating blendshape normals:
-Light, reflections, and rims are affected by the altered mesh surfaces.
+Light, reflections, rims, matcaps, and many more shader features are affected by the altered mesh surfaces.
 
 To use this component:
 - Add a "PA-H Recalculate Normals" component anywhere in your avatar.
