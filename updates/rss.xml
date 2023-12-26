@@ -49,8 +49,8 @@
 <p>I am releasing "Recalculate Normals", a new Prefabulous Avatar component 🔥</p>
 <p>This component will improve the shading of your avatar by recalculating blendshape normals: Light, reflections, rim lights, matcaps,
 and many more shader features are affected by the altered mesh surfaces.</p>
-<video controls="" muted="" width="816"><source src="/assets/medias/2023-12-22-p0-recalc-norms-f-eb61649c20cdb776b7ec5b2cf21d591e.mp4"></video>
-<p>🔍 <a href="https://docs.hai-vr.dev/docs/changelogs/prefabulous-avatar#1.3.0">View changelog</a></p>]]></content:encoded>
+<p>🔍 <a href="https://docs.hai-vr.dev/docs/changelogs/prefabulous-avatar#1.3.0">View changelog</a></p>
+<video controls="" muted="" width="816"><source src="/assets/medias/2023-12-22-p0-recalc-norms-f-eb61649c20cdb776b7ec5b2cf21d591e.mp4"></video>]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[🧪 Knowledge sharing "Recalculate Normals, Retrospective"]]></title>
