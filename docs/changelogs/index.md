@@ -1,13 +1,16 @@
 ﻿---
-title: Changelogs
+title: Version table 🗒️
 sidebar_position: 1
+#hide_table_of_contents: true
+#hide_title: true
+description: List of all current versions
 ---
 
 :::warning
 The changelogs of some products aren't available at this time.
 :::
 
-## Product listing
+## Version listing
 
 |                                                                     | Version  | Last update |
 |---------------------------------------------------------------------|----------|-------------|

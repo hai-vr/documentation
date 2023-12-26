@@ -50,14 +50,20 @@ export default {
           // Remove this to remove the "edit this page" links.
           // editUrl: 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
-        blog: false
-            // {
-          // showReadingTime: true,
+        blog: {
+          postsPerPage: 100, // CHANGE ME from 100 to a lower number (or default) after January 2024
+          routeBasePath: 'updates',
+          path: './updates',
+          blogSidebarTitle: 'Updates (since January 2023)',
+          blogSidebarCount: 'ALL',
+          showReadingTime: false,
+          blogTitle: 'Updates',
+          blogDescription: 'All updates',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          // editUrl: 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-        // }
-        ,
+          // editUrl:
+          //     'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+        },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
@@ -88,6 +94,10 @@ export default {
             sidebarId: 'resilienceSidebar',
             position: 'left',
             label: 'ResilienceVR',
+          },
+          {
+            label: 'Updates',
+            to: '/updates',
           },
           {
             type: 'docSidebar',
