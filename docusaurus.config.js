@@ -141,6 +141,10 @@ export default {
                 label: 'ResilienceVR',
                 to: '/docs/resilience',
               },
+              {
+                label: 'What\'s new?',
+                to: '/updates',
+              },
             ],
           },
           {
