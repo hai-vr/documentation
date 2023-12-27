@@ -14,6 +14,6 @@ You can find development articles in [my sharing space](https://mysharingspace.h
 - 2022-04-04 ["Subtitles postmortem"](https://hai-vr.notion.site/Subtitles-postmortem-20f2ed507348459fb7c0d6ff7bba48fa)
 - 2022-02-22 [“Animation Viewer postmortem"](https://hai-vr.notion.site/Animation-Viewer-postmortem-3ec6616a3b874bf7bfc3eaff709e7bb3)
 
-### Knowledge sharing
+### Technical bits
 
 - 2023-09-01 ["How to use TeleportTo continuously without causing the avatar to spin out of control"](https://hai-vr.notion.site/How-to-use-TeleportTo-continuously-without-causing-the-avatar-to-spin-out-of-control-ec7680d96ac0489b91c09b0ac2df3735)
