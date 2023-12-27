@@ -91,7 +91,8 @@ If you are using ComboGestureExpressions V3, the prefab is now part of the `Pack
 :::
 
 ## Visualize your animation files and preview using AnimationViewer
-![NewInV2TagSmall](https://user-images.githubusercontent.com/60819407/167145432-89428be9-9f16-4795-98ce-093a0c96837c.png)
+
+[//]: # (![NewInV2TagSmall]&#40;https://user-images.githubusercontent.com/60819407/167145432-89428be9-9f16-4795-98ce-093a0c96837c.png&#41;)
 <video controls width="816" autostart="false">
     <source src={FyjXwkdmJA} type="video/mp4" />
 </video>
@@ -105,7 +106,8 @@ This can cost a little bit of performance, so click the *Activate Viewer* button
 For more information, see [AnimationViewer manual](https://hai-vr.notion.site/Animation-Viewer-2a4bc319631c44d383174bd140722e38)
 
 ## Create a new set of face expressions
-![ChangedInV2TagSmall](https://user-images.githubusercontent.com/60819407/167145687-6fb677af-43e0-473e-ab91-66d000619125.png)
+
+[//]: # (![ChangedInV2TagSmall]&#40;https://user-images.githubusercontent.com/60819407/167145687-6fb677af-43e0-473e-ab91-66d000619125.png&#41;)
 <video controls width="816" autostart="false">
     <source src={p2kFer4X67} type="video/mp4" />
 </video>
@@ -132,7 +134,8 @@ Gesture names for reference ([VRChat documentation](https://docs.vrchat.com/docs
 - *...on both hands* / *x2*: 🙌
 
 ## Edit or create animations with Visual Expressions Editor
-![ChangedInV2TagSmall](https://user-images.githubusercontent.com/60819407/167145687-6fb677af-43e0-473e-ab91-66d000619125.png)
+
+[//]: # (![ChangedInV2TagSmall]&#40;https://user-images.githubusercontent.com/60819407/167145687-6fb677af-43e0-473e-ab91-66d000619125.png&#41;)
 <video controls width="816" autostart="false">
     <source src={_07ZREXTDvt} type="video/mp4" />
 </video>
@@ -232,7 +235,8 @@ On many avatar bases, the left eyelid and right eyelid can be animated independe
 :::
 
 ## Add some Dynamics using PhysBones, Contacts, OSC, and other Avatars 3.0 parameters
-![NewInV2TagSmall](https://user-images.githubusercontent.com/60819407/167145432-89428be9-9f16-4795-98ce-093a0c96837c.png)
+
+[//]: # (![NewInV2TagSmall]&#40;https://user-images.githubusercontent.com/60819407/167145432-89428be9-9f16-4795-98ce-093a0c96837c.png&#41;)
 <video controls width="816" autostart="false">
     <source src={YTbmBZpWFo} type="video/mp4" />
 </video>
@@ -423,7 +427,8 @@ When placing a blend tree in a single Fist gesture, the parameter `_AutoGestureW
 When placing a blend tree in the Fist x2 slot, the parameters `GestureLeftWeight` and `GestureRightWeight` will be how much the left and right triggers are squeezed respectively.
 
 ## MMD worlds compatibility option
-![NewInV2TagSmall](https://user-images.githubusercontent.com/60819407/167145432-89428be9-9f16-4795-98ce-093a0c96837c.png)
+
+[//]: # (![NewInV2TagSmall]&#40;https://user-images.githubusercontent.com/60819407/167145432-89428be9-9f16-4795-98ce-093a0c96837c.png&#41;)
 
 MMD worlds are particular in regards to face expressions. If you are a regular user of MMD worlds and need your avatar to be compatible, the avatar needs to be set up in a specific way in order to get face expressions working. **If you don't use MMD worlds, don't bother with this!.**
 
