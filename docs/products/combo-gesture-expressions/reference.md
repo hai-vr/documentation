@@ -80,8 +80,15 @@ I will try to provide help on the #combogesture-vrc channel when I can.
     <source src={LrodZ6DkxP} type="video/mp4" />
 </video>
 
-Add the prefab to the scene located in `Assets/Hai/ComboGesture/ComboGestureExpressions.prefab`. Right-click on the newly inserted prefab and click <span class={styles.hai_btn}>Unpack prefab completely</span>.
+Add the prefab to the scene located in *Project View > `Packages/` folder  > "Haï ~ ComboGestureExpressions" package -> `ComboGestureExpressions.prefab`*. Right-click on the newly inserted prefab and click <span class={styles.hai_btn}>Unpack prefab completely</span>.
 Select the `Default` object which contains a *Combo Gesture Activity* component, then click the <span class={styles.hai_btn}>Open editor</span> button in the Inspector to open the CGE Editor.
+
+:::info
+If you are using ComboGestureExpressions V2, the prefab is in `Assets/Hai/ComboGesture/ComboGestureExpressions.prefab`.
+
+If you are using ComboGestureExpressions V3, the prefab is now part of the `Packages/` folder instead of `Assets/`:
+- Project View > `Packages/` folder  > "Haï ~ ComboGestureExpressions" package -> `ComboGestureExpressions.prefab`
+:::
 
 ## Visualize your animation files and preview using AnimationViewer
 ![NewInV2TagSmall](https://user-images.githubusercontent.com/60819407/167145432-89428be9-9f16-4795-98ce-093a0c96837c.png)
@@ -230,7 +237,14 @@ On many avatar bases, the left eyelid and right eyelid can be animated independe
     <source src={YTbmBZpWFo} type="video/mp4" />
 </video>
 
-To make your face expression react to interactions and other Dynamics, add the prefab to the scene located in `Assets/Hai/ComboGesture/CGEDynamics.prefab`. Right-click on the newly inserted prefab and click <span class={styles.hai_btn}>Unpack prefab completely</span>.
+To make your face expression react to interactions and other Dynamics, add the prefab to the scene located in *Project View > `Packages/` folder  > "Haï ~ ComboGestureExpressions" package -> `CGEDynamics.prefab`*. Right-click on the newly inserted prefab and click <span class={styles.hai_btn}>Unpack prefab completely</span>.
+
+:::info
+If you are using ComboGestureExpressions V2, the prefab is in `Assets/Hai/ComboGesture/CGEDynamics.prefab`.
+
+If you are using ComboGestureExpressions V3, the prefab is now part of the `Packages/` folder instead of `Assets/`:
+- Project View > `Packages/` folder  > "Haï ~ ComboGestureExpressions" package -> `CGEDynamics.prefab`
+:::
 
 This component lets you define Dynamics. Press the `+` button to add a new element in the list.
 
