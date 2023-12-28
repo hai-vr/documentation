@@ -1,0 +1,57 @@
+.holder {
+  display: inline;
+}
+.element {
+  display: inline-block;
+  /*border: 1px solid red;*/
+  padding: 0.5em;
+  margin-left: 0.1em;
+  margin-right: 0.1em;
+  line-height: 1em;
+  color: var(--hai-fade);
+  background-color: var(--hai-bg);
+}
+.ias {
+  color: var(--ifm-color-primary-lighter);
+}
+.sp {
+  border: 2px solid var(--hai-gold);
+}
+.k10 {
+  font-weight: bold;
+  color: var(--ifm-color-primary-lightest);
+  background-color: var(--hai-gold);
+  border: 2px solid var(--hai-gold-grad);
+  margin-left: 0.2em;
+  margin-right: 0.2em;
+  padding-right: 0.7em;
+}
+.k5 {
+  font-weight: bold;
+  color: var(--ifm-color-primary-lightest);
+  background-color: var(--hai-gold);
+  border: 2px solid var(--hai-gold-grad);
+  margin-left: 0.2em;
+  margin-right: 0.2em;
+  padding-right: 0.7em;
+}
+.k3 {
+  font-weight: bold;
+  color: var(--ifm-color-primary-lightest);
+  background-color: var(--hai-gold);
+  border: 2px solid var(--hai-gold-grad);
+  margin-left: 0.2em;
+  margin-right: 0.2em;
+  padding-right: 0.7em;
+}
+.k2 {
+  font-weight: bold;
+  color: var(--ifm-color-primary-lightest);
+  background-color: var(--hai-gold);
+  border: 2px solid rgba(0, 0, 0, 0);
+  margin-left: 0.2em;
+  margin-right: 0.2em;
+  padding-right: 0.7em;
+}
+.k0 {
+}

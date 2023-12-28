@@ -14,6 +14,10 @@
   --ifm-color-primary-lighter: #c10a90;
   --ifm-color-primary-lightest: #da0ca2;
   --ifm-code-font-size: 95%;
+  --hai-gold: #fff6de;
+  --hai-gold-grad: #ffd774;
+  --hai-fade: #a1a1a1;
+  --hai-bg: white;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 }
 
@@ -26,5 +30,8 @@
   --ifm-color-primary-light: #ffb1ea;
   --ifm-color-primary-lighter: #ffc5f0;
   --ifm-color-primary-lightest: #ffffff;
+  --hai-gold: #8c650a;
+  --hai-fade: #8a8a8a;
+  --hai-bg: #1b1b1d;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }

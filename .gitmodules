@@ -1,0 +1,4 @@
+[submodule "src/pages/internal"]
+	path = src/pages/internal
+	url = https://github.com/hai-vr/h-internal-supporters
+	branch = main

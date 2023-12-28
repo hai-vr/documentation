@@ -31,3 +31,9 @@ Patreonをご利用になりたくないサポーターの方は、同じコン�
 Are you already a supporter?
 
 - [Download your rewards on Patreon](https://www.patreon.com/vr_hai)
+
+## Supporters
+
+import Supporters from './supporters.md'
+
+<Supporters />

@@ -12,6 +12,11 @@ import Gallery from '@site/src/pages/gallery.mdx'
 import styles from './index.module.css';
 import Link from "@docusaurus/Link";
 
+import patreonStyles from './patreon.module.css';
+import {Patronelt} from '@site/src/components/Patronelt';
+import PatreonPlus from '@site/src/pages/internal/patreonplus.mdx'
+import PatreonReg from '@site/src/pages/internal/patreonreg.mdx'
+
 <header className={clsx('hero hero--primary', styles.heroBanner)}>
     <div className="container">
         <h1 className="hero__title">Haï~</h1>
@@ -31,6 +36,24 @@ import Link from "@docusaurus/Link";
     </div>
 </header>
 
+<div className={clsx(patreonStyles.centerline)}>
+<p>*Thank you to all of my supporters on [Patreon](/docs/other/patreon)* ⭐</p>
+<PatreonPlus />
+<Patronelt>**⭐ and more [Patreon Supporters ...](/docs/other/supporters)**</Patronelt>
+</div>
+
 <br />
 
 <Gallery />
+
+<br />
+
+---
+
+<div className={clsx(patreonStyles.centerline)}>
+<p>*Thank you to all of my supporters on [Patreon](/docs/other/patreon)* ⭐</p>
+<PatreonPlus />
+<PatreonReg />
+</div>
+
+<br />
