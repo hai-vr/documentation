@@ -16,6 +16,8 @@ jobs:
       - uses: actions/checkout@v3
         with:
           submodules: true
+      - name: Submodule update
+        run: git submodule update --remote
       - uses: actions/setup-node@v3
         with:
           node-version: 18
