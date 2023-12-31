@@ -9,6 +9,8 @@ Delete polygons that are moved by a blendshape.
 This component will delete all polygons that are moved by a blendshape. This can be used to remove polygons affected by conflict prevention blendshapes,
 and also to remove unused decorations hidden inside the mesh, such as eye decorations, blush patterns, piercings, earrings, bandages, or other clothing accessories.
 
+This will lower your avatar polygon count.
+
 To use this component:
 - Add a "PA-H Delete Polygons" component anywhere in your avatar.
 - Add blendshapes which move the polygons that you want to delete. Any SkinnedMeshRenderer that has that blendshape will be affected.
