@@ -10,6 +10,7 @@ Meant to be used primarily by users of **[Modular Avatar](https://modular-avatar
 our components can be reused across multiple avatars when you turn them into a prefab.
 
 - Improve the [shading of blendshape normals](./prefabulous-avatar/hai-components/recalculate-normals).
+- [Delete polygons](./prefabulous-avatar/hai-components/delete-polygons) hidden by conflict prevention blendshapes.
 - Edit all [mesh bounds](./prefabulous-avatar/component-reference/edit-all-mesh-bounds)
 and all [mesh anchor override](./prefabulous-avatar/component-reference/edit-all-mesh-anchor-override) for consistent visibility and lighting.
 - [Change the avatar scale](./prefabulous-avatar/component-reference/change-avatar-scale) and viewpoint without rescaling the avatar in the scene.

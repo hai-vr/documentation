@@ -2,6 +2,36 @@
 title: Prefabulous Avatar
 ---
 
+## 1.6.0
+
+### New component: [Delete Polygons](/docs/products/prefabulous-avatar/hai-components/delete-polygons)
+
+A new component, [Delete Polygons](/docs/products/prefabulous-avatar/hai-components/delete-polygons), has been added to Prefabulous Avatar.
+
+Remove polygons affected by conflict prevention blendshapes, and other unused decorations hidden inside the mesh
+(such as star-shaped eyes and other eye decorations; piercings, bandages, and other accessories).
+
+![delete-polygons-compare.png](../products/prefabulous-avatar/img/delete-polygons-compare.png)
+
+### Technical notes
+
+Add Delete Polygons:
+- Delete Polygons will delete polygons associated with moved vertices of a blendshape.
+- It will not delete polygons if the vertex of that blendshape is not moved, even if the normal or tangent changes.
+- Portions of d4rkpl4y3r's https://github.com/d4rkc0d3r/d4rkAvatarOptimizer (MIT License) is used as a reference for the mesh reconstruction.
+
+### Other
+
+Make Recalculate Normals editor animator introspection aware of Prefabulous components:
+- Recalculate Normals editor introspects animators from the descriptor, however, it was not aware of Prefabulous Blank/Replace Animator components.
+- It no longer introspects playable layers affected by Blank Animator components.
+- It no longer introspects playable layers affected by Replace Animator components.
+- It now introspects the controllers from Replace Animator components.
+
+### Special thanks
+
+- [d4rkpl4y3r](https://github.com/d4rkc0d3r/) for the references on [mesh reconstruction](https://github.com/d4rkc0d3r/d4rkAvatarOptimizer)!
+
 ## 1.5.0
 
 ### New component: [HaiXT Generate Blendshapes for Face Tracking Extensions](/docs/products/prefabulous-avatar/hai-components/haixt-generate-blendshapes-for-face-tracking-extensions)
