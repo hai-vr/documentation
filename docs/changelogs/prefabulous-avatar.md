@@ -8,7 +8,7 @@ title: Prefabulous Avatar
 
 A new component, [Delete Polygons](/docs/products/prefabulous-avatar/hai-components/delete-polygons), has been added to Prefabulous Avatar.
 
-Remove polygons affected by conflict prevention blendshapes, and other unused decorations hidden inside the mesh
+Delete polygons affected by conflict prevention blendshapes, and other unused decorations hidden inside the mesh
 (such as star-shaped eyes and other eye decorations; piercings, bandages, and other accessories).
 
 ![delete-polygons-compare.png](../products/prefabulous-avatar/img/delete-polygons-compare.png)
