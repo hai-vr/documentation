@@ -11,7 +11,7 @@ and also to remove unused decorations hidden inside the mesh, such as eye decora
 
 To use this component:
 - Add a "PA-H Delete Polygons" component anywhere in your avatar.
-- Add blendshapes that you want to delete. Any SkinnedMeshRenderer that has that blendshape will be affected.
+- Add blendshapes which move the polygons that you want to delete. Any SkinnedMeshRenderer that has that blendshape will be affected.
 
 Enter Play Mode or upload the avatar to test the results: as this is a non-destructive component, the original mesh remains intact.
 
