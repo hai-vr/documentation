@@ -2,11 +2,25 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://docs.hai-vr.dev/updates</id>
     <title>Haï~ Blog</title>
-    <updated>2023-12-24T00:00:00.000Z</updated>
+    <updated>2023-12-31T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://docs.hai-vr.dev/updates"/>
     <subtitle>Haï~ Blog</subtitle>
     <icon>https://docs.hai-vr.dev/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[☀️ Delete Polygons (Prefabulous V1.6)]]></title>
+        <id>https://docs.hai-vr.dev/updates/2023/12/31/p0</id>
+        <link href="https://docs.hai-vr.dev/updates/2023/12/31/p0"/>
+        <updated>2023-12-31T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[V1.6]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="v16">V1.6<a href="https://docs.hai-vr.dev/updates/2023/12/31/p0#v16" class="hash-link" aria-label="Direct link to V1.6" title="Direct link to V1.6">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="new-component-delete-polygons">New component: <a href="https://docs.hai-vr.dev/docs/products/prefabulous-avatar/hai-components/delete-polygons">Delete Polygons</a><a href="https://docs.hai-vr.dev/updates/2023/12/31/p0#new-component-delete-polygons" class="hash-link" aria-label="Direct link to new-component-delete-polygons" title="Direct link to new-component-delete-polygons">​</a></h3>
+<p>A new component, <a href="https://docs.hai-vr.dev/docs/products/prefabulous-avatar/hai-components/delete-polygons">Delete Polygons</a>, has been added to Prefabulous Avatar.</p>
+<p>Use it to delete polygons affected by conflict prevention blendshapes, and other unused decorations hidden inside the mesh.</p>
+<p><img loading="lazy" alt="delete-polygons-compare.png" src="https://docs.hai-vr.dev/assets/images/delete-polygons-compare-ab931bc24ce5fe7296442930e49c7ce5.png" width="1247" height="807" class="img_ev3q"></p>
+<p>🗒️ <a href="https://docs.hai-vr.dev/docs/products/prefabulous-avatar/hai-components/delete-polygons">Open documentation</a></p>
+<p>🔍 <a href="https://docs.hai-vr.dev/docs/changelogs/prefabulous-avatar#1.6.0">View changelog</a></p>]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[☀️ Generate Blendshapes for Face Tracking Extensions (Prefabulous V1.5)]]></title>
         <id>https://docs.hai-vr.dev/updates/2023/12/24/p0</id>
@@ -255,22 +269,5 @@ Added Double Chest Tracker.</p>
 <p>Use two Chest trackers, or two Hip trackers, or all four simultaneously. The functionality of the double Hip tracker remains unchanged.</p>
 <p>🗒️ <a href="https://docs.hai-vr.dev/docs/products/double-hip-tracker/double-chest-tracker">Open documentation</a></p>
 <video controls="" width="816"><source src="/assets/medias/2023-08-22-p0-doublechesttrackerprio-f-c87d9112bdd9af796520e5cb3e54303a.mp4"></video>]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[☕ VRWare 2023 (World)]]></title>
-        <id>https://docs.hai-vr.dev/updates/2023/08/12/p0-c</id>
-        <link href="https://docs.hai-vr.dev/updates/2023/08/12/p0-c"/>
-        <updated>2023-08-12T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[I've begun updating VRWare throughout the past couple weeks. So far:]]></summary>
-        <content type="html"><![CDATA[<p>I've begun updating VRWare throughout the past couple weeks. So far:</p>
-<ul>
-<li>VRChat Quest is no longer Quest-only</li>
-<li>Hard difficulty</li>
-<li>Spectator area</li>
-<li>StringLoader translations (<a href="https://github.com/hai-vr/vrw-t" target="_blank" rel="noopener noreferrer">https://github.com/hai-vr/vrw-t</a>)</li>
-<li>New appearance</li>
-<li>General project cleanup &amp; VCC upgrade</li>
-</ul>
-<video controls="" width="816"><source src="/assets/medias/2023-08-12-p0-c-spectator-f-5bcda513ed63a1357fa3a205c7713cef.mp4"></video>]]></content>
     </entry>
 </feed>
