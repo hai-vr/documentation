@@ -26,10 +26,6 @@ or may not be able to coexist with other components.
 
 Therefore you are encouraged to use these components only within personal avatars, and not as part of assets distributed to other users.
 
-:::danger
-*Prefabulous Avatar* is still in an early stage of development.
-:::
-
 ![](img/pvsUzAgoIb.png)
 
 ## Download
