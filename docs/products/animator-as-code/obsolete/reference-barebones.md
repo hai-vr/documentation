@@ -1,11 +1,16 @@
 ﻿---
 sidebar_position: 8
+title: (OBSOLETE)Barebones way
 ---
 
-# Barebones way
+# (OBSOLETE)Barebones way
 
 :::danger
 This is the work-in-progress documentation for Animator As Code **V1**, which has not yet been released. The last public version of Animator As Code is V0.
+:::
+
+:::danger
+🚫 This documentation is obsolete, and **contains errors**. 🚫
 :::
 
 This section describes how to initialize Animator As Code in an environment where no integration is available.

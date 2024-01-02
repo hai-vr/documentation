@@ -1,12 +1,16 @@
 ﻿---
 sidebar_position: 2
-title: Getting started
+title: (OBSOLETE)Getting started
 ---
 
-# Getting started (Modular Avatar)
+# (OBSOLETE)Getting started (Modular Avatar)
 
 :::danger
 This is the work-in-progress documentation for Animator As Code **V1**, which has not yet been released. The last public version of Animator As Code is V0.
+:::
+
+:::danger
+🚫 This documentation is obsolete, and **contains errors**. 🚫
 :::
 
 Animator As Code is split into different packages, which you will select depending on your integration needs.
