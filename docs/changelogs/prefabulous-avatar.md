@@ -2,6 +2,36 @@
 title: Prefabulous Avatar
 ---
 
+## 1.7.0
+
+### New component: [Assign UV Tile](/docs/products/prefabulous-avatar/hai-components/assign-uv-tile)
+
+A new component, [Assign UV Tile](/docs/products/prefabulous-avatar/hai-components/assign-uv-tile), has been added to Prefabulous Avatar.
+
+Sets the UV Tile of vertices that are moved by a blendshape.
+
+This is meant to be used in tandem with shader features, especially [Poiyomi's UV Tile Discard](https://www.poiyomi.com/special-fx/uv-tile-discard).
+
+<video controls muted width="816">
+    <source src={require('/docs/products/prefabulous-avatar/img/13rQ7HGwPr.mp4').default}/>
+</video>
+
+### Technical notes
+
+Add Assign UV Tile:
+- Assign UV Tile will change the UVs of vertices moved by a blendshape.
+- This component is built to closely match Poiyomi "UV Tile Discard" feature.
+- It uses the same vertex selection algorithm as Delete Polygons.
+- The UV tile has an offset of 0.5.
+
+### Update [Delete Polygons](/docs/products/prefabulous-avatar/hai-components/delete-polygons)
+
+Delete Polygons now has Keep Partial Polygons option:
+- Add "Keep Partial Polygons" option.
+- When "Keep Partial Polygons" is enabled, vertices of blendshapes that are marked as such will be preserved if that vertex is still connected to a triangle that has at least one vertex that is not deleted.
+- In effect, this preserves polygons that are still connected to the rest of the mesh.
+- This might help with some avatar models that rely on the conflict prevention blendshape to intersect polygons with clothing.
+
 ## 1.6.0
 
 ### New component: [Delete Polygons](/docs/products/prefabulous-avatar/hai-components/delete-polygons)
