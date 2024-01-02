@@ -29,9 +29,9 @@
   background-size: cover;
   background-position-x: center;
   background-position-y: center;
-  height: 300px;
-  width: 100vw;
-  margin-left: calc(50% - 50vw);
+  height: 325px;
+  width: calc(100vw - 25px);
+  margin-left: calc(50% - (100vw - 25px) / 2);
   margin-bottom: 2em;
 }
 

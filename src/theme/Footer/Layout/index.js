@@ -7,7 +7,9 @@ import {Patronelt} from '@site/src/components/Patronelt';
 
 export default function FooterLayout({style, links, logo, copyright}) {
     let footer;
-    if (typeof window !== "undefined" && window.location.pathname === "/") {
+    if (typeof window !== "undefined"
+        && (window.location.pathname === "/" || window.location.pathname === "/welcome")
+    ) {
         footer = undefined;
     }
     else {
