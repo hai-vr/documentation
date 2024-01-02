@@ -36,11 +36,11 @@ Enter Play Mode or upload the avatar to test the results: as this is a non-destr
 
 ## Option: Keep Partial Polygons
 
-If you want to exclude the polygons that are still connected to the mesh from being affected, check "Keep Partial Polygons".
+If you want to exclude the vertices of polygons that are still connected to the mesh from being affected, check "Keep Partial Polygons".
 
 On blendshapes that shrink the body, this preserves the end caps, so the blendshape still has an effect on the mesh.
 
-This might help with some avatar models.
+This might help with some avatar models, **however, this will have no effect effect on blendshapes that have no edge loops separating vertices apart.**
 
 <video controls muted width="816">
     <source src={require('../img/YkcjjmKw2G.mp4').default}/>
