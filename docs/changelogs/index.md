@@ -22,7 +22,7 @@ The changelogs of some products aren't available at this time.
 | [BlendTree Viewer](./changelogs/blendtree-viewer)                   | 1.0.7    | 2023-11     |
 | **Editors**                                                         |          |             |
 | [ComboGestureExpressions](./changelogs/combo-gesture-expressions)   | 3.1.5101 | **2023-12** |
-| [Prefabulous Avatar](./changelogs/prefabulous-avatar)               | 1.7.1    | **2021-01** |
+| [Prefabulous Avatar](./changelogs/prefabulous-avatar)               | 1.7.1    | **2024-01** |
 | [Visual Expressions Editor](./changelogs/visual-expressions-editor) | 2.0.3    | 2023-11     |
 | **Patchers**                                                        |          |             |           
 | [Auto-reset OSC config](./changelogs/auto-reset-osc-config)         | 1.1.3    | **2023-12** |       
