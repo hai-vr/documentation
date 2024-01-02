@@ -23,7 +23,7 @@ To use this component:
 
 You will need to add a [HaiXT Face Tracking Extensions](./haixt-face-tracking-extensions) component to create the animator layers.
 
-<video controls autoplay muted>
+<video controls width="816" autostart="false">
 <source src={require('../img/yMoiPf8x3S.mp4').default}/>
 </video>
 

@@ -2,7 +2,7 @@
 
 Improves the shading of SkinnedMeshRenderers by recalculating select blendshape normals (and tangents).
 
-<video controls autoplay muted>
+<video controls width="816" autostart="false">
     <source src={require('../img/mS1cQ7EheE.mp4').default}/>
 </video>
 
@@ -19,7 +19,7 @@ To use this component:
 
 Enter Play Mode or upload the avatar to test the results: as this is a non-destructive component, the original mesh remains intact.
 
-<video controls autoplay muted>
+<video controls width="816" autostart="false">
     <source src={require('../img/uI4KB1Gj4Y.mp4').default}/>
 </video>
 
@@ -39,7 +39,7 @@ You should use Recalculate Normals on the following blendshapes:
 - Body shape customization blendshapes that flatten, emboss, or enlarge areas of the body, whether it is the body flesh or clothing.
 - Body adjustment blendshapes to fit clothing, such as heel adapters, or clothing that pinch the body.
 
-<video controls autoplay muted>
+<video controls width="816" autostart="false">
     <source src={require('../img/JiHvKYMj8A.mp4').default}/>
 </video>
 

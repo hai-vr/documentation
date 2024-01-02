@@ -145,7 +145,7 @@ A new component, [Recalculate Normals](/docs/products/prefabulous-avatar/hai-com
 
 This component improves the shading of SkinnedMeshRenderers by recalculating select blendshape normals (and tangents).
 
-<video controls autoplay muted>
+<video controls width="816" autostart="false">
     <source src={require('/docs/products/prefabulous-avatar/img/mS1cQ7EheE.mp4').default}/>
 </video>
 

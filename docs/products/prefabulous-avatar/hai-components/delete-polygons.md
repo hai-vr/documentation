@@ -18,7 +18,7 @@ To use this component:
 
 Enter Play Mode or upload the avatar to test the results: as this is a non-destructive component, the original mesh remains intact.
 
-<video controls autoplay muted>
+<video controls width="816" autostart="false">
     <source src={require('../img/Unity_bcEzE8pap9.mp4').default}/>
 </video>
 
