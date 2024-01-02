@@ -54,7 +54,7 @@ Using UV0 with "UV Tile Discard" through this component is not recommended, but 
 
 If you use [SCSS's Inventory System](https://gitlab.com/s-ilent/SCSS/-/wikis/Manual/Inventory-System):
 
-You cannot use the Inventory System to partially hide meshes that are part of the body.
+You cannot use the Inventory System to partially hide meshes that are part of the body, as this would result in the texture visibly warping along the seams of the blendshape.
 This feature should only be used with individual pieces of clothing or accessories.
 
 - Set the "UV Channel" to UV0.
