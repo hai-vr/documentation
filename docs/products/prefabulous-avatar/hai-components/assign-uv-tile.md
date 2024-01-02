@@ -40,7 +40,7 @@ If you want to exclude the vertices of polygons that are still connected to the 
 
 On blendshapes that shrink the body, this preserves the end caps, so the blendshape still has an effect on the mesh.
 
-This might help with some avatar models, **however, this will have no effect effect on blendshapes that have no edge loops separating vertices apart.**
+This might help with some avatar models, however, this will have no effect on blendshapes that have no edge loops separating vertices apart.
 
 <video controls muted width="816">
     <source src={require('../img/YkcjjmKw2G.mp4').default}/>
