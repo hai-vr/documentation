@@ -23,3 +23,20 @@
   justify-content: center;
   gap: 2rem;
 }
+
+.haiBanner {
+  background-image: url("/static/img/main.jpg");
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: center;
+  height: 300px;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-bottom: 2em;
+}
+
+@media screen and (max-width: 996px) {
+  .haiBanner {
+    height: 150px;
+  }
+}

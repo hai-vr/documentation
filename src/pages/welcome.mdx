@@ -1,0 +1,62 @@
+﻿---
+title: My name is Haï~
+sidebar_position: 1
+hide_table_of_contents: true
+hide_title: true
+description: Documentation and gallery of Haï's tools and apps
+---
+
+import clsx from 'clsx';
+import Link from '@docusaurus/Link';
+
+import patreonStyles from './patreon.module.css';
+import {Patronelt} from '@site/src/components/Patronelt';
+import PatreonPlus from '@site/src/pages/internal/patreonplus.mdx'
+import PatreonReg from '@site/src/pages/internal/patreonreg.mdx'
+
+import Gallery from '@site/src/pages/gallery.mdx'
+import styles from './index.module.css';
+
+<div class={clsx(styles.haiBanner)}>
+</div>
+
+# My name is Haï~
+I create tools and content on social VR apps.<br/>Creativity drives me.
+
+<div className="row">
+    <div className="col col--4 margin-bottom--lg">
+        <div className="card">
+            <div className="card__body">
+                <Link to="https://github.com/hai-vr/">GitHub</Link>
+            </div>
+        </div>
+    </div>
+    
+    <div className="col col--4 margin-bottom--lg">
+        <div className="card">
+            <div className="card__body">
+                <Link to="https://twitter.com/vr_hai/">Twitter</Link>
+            </div>
+        </div>
+    </div>
+    
+    <div className="col col--4 margin-bottom--lg">
+        <div className="card">
+            <div className="card__body">
+                <Link to="https://hai-vr.booth.pm/">Booth.pm</Link>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div className={clsx(patreonStyles.centerline)}>
+<p>*Thank you to all of my supporters on [Patreon](/docs/other/patreon)* ⭐</p>
+<PatreonPlus />
+<Patronelt>**⭐ and more [Patreon Supporters ...](/docs/other/supporters)**</Patronelt>
+</div>
+
+<br />
+
+<Gallery />
+
+<br />
