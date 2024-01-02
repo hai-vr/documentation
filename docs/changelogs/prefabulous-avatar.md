@@ -4,7 +4,7 @@ title: Prefabulous Avatar
 
 ## 1.7.1
 
-Assign UV tile has been rectified to work with shaders like SCSS that expect the UVs to be shifted rather than overriden.
+Assign UV tile has been rectified to work with shaders like SCSS that expect the UVs to be shifted rather than overridden.
 
 This patch was pushed before any 1.7.0 social media announcement.
 
