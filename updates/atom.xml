@@ -2,11 +2,30 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://docs.hai-vr.dev/updates</id>
     <title>Haï~ Blog</title>
-    <updated>2023-12-31T00:00:00.000Z</updated>
+    <updated>2024-01-02T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://docs.hai-vr.dev/updates"/>
     <subtitle>Haï~ Blog</subtitle>
     <icon>https://docs.hai-vr.dev/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[☀️ Assign UV Tile (Prefabulous V1.7)]]></title>
+        <id>https://docs.hai-vr.dev/updates/2024/01/02/p0</id>
+        <link href="https://docs.hai-vr.dev/updates/2024/01/02/p0"/>
+        <updated>2024-01-02T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[V1.7]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="v17">V1.7<a href="https://docs.hai-vr.dev/updates/2024/01/02/p0#v17" class="hash-link" aria-label="Direct link to V1.7" title="Direct link to V1.7">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="new-component-assign-uv-tile">New component: <a href="https://docs.hai-vr.dev/docs/products/prefabulous-avatar/hai-components/assign-uv-tile">Assign UV Tile</a><a href="https://docs.hai-vr.dev/updates/2024/01/02/p0#new-component-assign-uv-tile" class="hash-link" aria-label="Direct link to new-component-assign-uv-tile" title="Direct link to new-component-assign-uv-tile">​</a></h3>
+<p>A new component, <a href="https://docs.hai-vr.dev/docs/products/prefabulous-avatar/hai-components/assign-uv-tile">Assign UV Tile</a>, has been added to Prefabulous Avatar.</p>
+<p>If you use Poiyomi's shader, this new component can be used in tandem
+with <a href="https://www.poiyomi.com/special-fx/uv-tile-discard" target="_blank" rel="noopener noreferrer">Poiyomi's "Special FX &gt; UV Tile Discard"</a> to toggle portions of a model on and off at runtime.</p>
+<video controls="" muted="" width="816"><source src="/assets/medias/13rQ7HGwPr-ec5d550ea5727a70033b65daa55d19b7.mp4"></video>
+<p>🗒️ <a href="https://docs.hai-vr.dev/docs/products/prefabulous-avatar/hai-components/delete-polygons">Open documentation</a></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="update-delete-polygons">Update <a href="https://docs.hai-vr.dev/docs/products/prefabulous-avatar/hai-components/delete-polygons">Delete Polygons</a><a href="https://docs.hai-vr.dev/updates/2024/01/02/p0#update-delete-polygons" class="hash-link" aria-label="Direct link to update-delete-polygons" title="Direct link to update-delete-polygons">​</a></h3>
+<p>Delete Polygons now has an option to keep the polygons that are still connected to the mesh.</p>
+<p>On blendshapes that shrink the body, this preserves the end caps, so the blendshape still has an effect on the mesh.</p>
+<p>This might help with some avatar models.</p>
+<p>🔍 <a href="https://docs.hai-vr.dev/docs/changelogs/prefabulous-avatar#170">View changelog</a></p>]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[☀️ Delete Polygons (Prefabulous V1.6)]]></title>
         <id>https://docs.hai-vr.dev/updates/2023/12/31/p0</id>
@@ -257,17 +276,5 @@ and many more shader features are affected by the altered mesh surfaces.</p>
 <p>This tool can cover for VRChat SDK's temporarily lost ability to take thumbnails in Play Mode, when the avatar is playing an animation.</p>
 <p>🗒️ <a href="https://docs.hai-vr.dev/docs/products/icon-gen#capture-thumbnails-for-vrchat-in-play-mode'">Open documentation</a></p>
 <video controls="" width="816"><source src="/assets/medias/2023-09-12-p0-thumb-trim-f-fb863e0d107706bcd9defb2d72ca0bde.mp4"></video>]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[✨ Double Hip Tracker V1.1: Double Chest Tracker]]></title>
-        <id>https://docs.hai-vr.dev/updates/2023/08/22/p0</id>
-        <link href="https://docs.hai-vr.dev/updates/2023/08/22/p0"/>
-        <updated>2023-08-22T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[I am releasing "DoubleHipTracker" V1.1.0:]]></summary>
-        <content type="html"><![CDATA[<p>I am releasing "DoubleHipTracker" V1.1.0:
-Added Double Chest Tracker.</p>
-<p>Use two Chest trackers, or two Hip trackers, or all four simultaneously. The functionality of the double Hip tracker remains unchanged.</p>
-<p>🗒️ <a href="https://docs.hai-vr.dev/docs/products/double-hip-tracker/double-chest-tracker">Open documentation</a></p>
-<video controls="" width="816"><source src="/assets/medias/2023-08-22-p0-doublechesttrackerprio-f-c87d9112bdd9af796520e5cb3e54303a.mp4"></video>]]></content>
     </entry>
 </feed>
