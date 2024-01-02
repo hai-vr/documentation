@@ -10,7 +10,8 @@ A new component, [Assign UV Tile](/docs/products/prefabulous-avatar/hai-componen
 
 Sets the UV Tile of vertices that are moved by a blendshape.
 
-This is meant to be used in tandem with shader features, especially [Poiyomi's UV Tile Discard](https://www.poiyomi.com/special-fx/uv-tile-discard).
+This is meant to be used in tandem with shader features, especially [Poiyomi Toon UV Tile Discard](https://www.poiyomi.com/special-fx/uv-tile-discard),
+and may also be used with [SCSS's Inventory System](https://gitlab.com/s-ilent/SCSS/-/wikis/Manual/Inventory-System).
 
 <video controls muted width="816">
     <source src={require('/docs/products/prefabulous-avatar/img/13rQ7HGwPr.mp4').default}/>

@@ -6,7 +6,7 @@ title: Assign UV Tile (UDIM)
 
 Sets the UV Tile of vertices that are moved by a blendshape.
 
-This is meant to be used in tandem with shader features, especially [Poiyomi's UV Tile Discard](https://www.poiyomi.com/special-fx/uv-tile-discard).
+This is meant to be used in tandem with shader features, especially [Poiyomi Toon UV Tile Discard](https://www.poiyomi.com/special-fx/uv-tile-discard).
 
 <video controls muted width="816">
     <source src={require('../img/13rQ7HGwPr.mp4').default}/>
@@ -16,23 +16,50 @@ This is meant to be used in tandem with shader features, especially [Poiyomi's U
 
 This component will assign the UV tile of vertices that are moved by a blendshape.
 
-This is meant to be used in tandem with shader features, especially [Poiyomi's UV Tile Discard](https://www.poiyomi.com/special-fx/uv-tile-discard),
+This is meant to be used in tandem with shader features, especially [Poiyomi Toon UV Tile Discard](https://www.poiyomi.com/special-fx/uv-tile-discard),
 which in this case "*provides an efficient way to toggle portions of a model on and off at runtime*".
 
-- Using *[Poiyomi's UV Tile Discard](https://www.poiyomi.com/special-fx/uv-tile-discard)* makes this effectively similar to [Delete Polygons](./delete-polygons),
+- Using *[Poiyomi Toon UV Tile Discard](https://www.poiyomi.com/special-fx/uv-tile-discard)* makes this effectively similar to [Delete Polygons](./delete-polygons),
 except that this will **not** lower your avatar polygon count; instead it will ease the rendering load when the toggle is off.
 - *If you do not animate the shader feature, use [Delete Polygons](./delete-polygons) instead, which will lower your avatar polygon count.*
 
 To use this component:
 - Add one or several "PA-H Assign UV Tile" component anywhere in your avatar.
 - Add blendshapes which move the polygons that you want shader features to affect. Any SkinnedMeshRenderer that has that blendshape will be affected.
-- For each component, assign the channel. The UI is built to closely mirror [Poiyomi's UV Tile Discard](https://www.poiyomi.com/special-fx/uv-tile-discard).
+- For each component, assign the channel and the corresponding checkbox. The UI is built to closely mirror [Poiyomi Toon UV Tile Discard](https://www.poiyomi.com/special-fx/uv-tile-discard).
 
 Enter Play Mode or upload the avatar to test the results: as this is a non-destructive component, the original mesh remains intact.
 
 <video controls muted width="816">
     <source src={require('../img/pOxhnkOYpj.mp4').default}/>
 </video>
+
+## Shader-specific uses
+
+### Poiyomi Toon "UV Tile Discard"
+
+If you use [Poiyomi Toon UV Tile Discard](https://www.poiyomi.com/special-fx/uv-tile-discard):
+
+- Set the "UV Channel" to UV1, UV2, or UV3.
+- Use the checkbox grid, The UI is built to closely mirror Poiyomi Toon UV Tile Discard.
+- Keep the "UV Channel" to UV1.
+- Keep the "Existing UV Data" to *Do Not Clear*.
+  - If you are experiencing issues caused by an existing UV channel, change the UV channel, or set "Existing UV Data" to *Set to Zero*.
+
+Using UV0 with "UV Tile Discard" through this component is not recommended, but if you really want to:
+
+- Set the "UV Channel" to UV0, and set the "Existing UV Data" to *Shift*.
+
+### SCSS "Inventory System"
+
+If you use [SCSS's Inventory System](https://gitlab.com/s-ilent/SCSS/-/wikis/Manual/Inventory-System):
+
+You cannot use the Inventory System to partially hide meshes that are part of the body.
+This feature should only be used with individual pieces of clothing or accessories.
+
+- Set the "UV Channel" to UV0.
+- Set "Existing UV Data" to *Shift*.
+- Set the "U" value to the corresponding Inventory System slot.
 
 ## Option: Keep Partial Polygons
 
