@@ -60,6 +60,7 @@ This feature should only be used with individual pieces of clothing or accessori
 - Set the "UV Channel" to UV0.
 - Set "Existing UV Data" to *Shift*.
 - Set the "U" value to the corresponding Inventory System slot.
+- Keep the "V" value to zero.
 
 ## Option: Keep Partial Polygons
 
