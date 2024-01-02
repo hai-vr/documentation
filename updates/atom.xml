@@ -16,7 +16,7 @@
         <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="v17">V1.7<a href="https://docs.hai-vr.dev/updates/2024/01/02/p0#v17" class="hash-link" aria-label="Direct link to V1.7" title="Direct link to V1.7">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="new-component-assign-uv-tile">New component: <a href="https://docs.hai-vr.dev/docs/products/prefabulous-avatar/hai-components/assign-uv-tile">Assign UV Tile</a><a href="https://docs.hai-vr.dev/updates/2024/01/02/p0#new-component-assign-uv-tile" class="hash-link" aria-label="Direct link to new-component-assign-uv-tile" title="Direct link to new-component-assign-uv-tile">​</a></h3>
 <p>A new component, <a href="https://docs.hai-vr.dev/docs/products/prefabulous-avatar/hai-components/assign-uv-tile">Assign UV Tile</a>, has been added to Prefabulous Avatar.</p>
-<p>If you use Poiyomi's shader, this new component can be used in tandem
+<p>If you use Poiyomi Toon shader, this new component can be used in tandem
 with <a href="https://www.poiyomi.com/special-fx/uv-tile-discard" target="_blank" rel="noopener noreferrer">Poiyomi's "Special FX &gt; UV Tile Discard"</a> to toggle portions of a model on and off at runtime.</p>
 <video controls="" muted="" width="816"><source src="/assets/medias/13rQ7HGwPr-ec5d550ea5727a70033b65daa55d19b7.mp4"></video>
 <p>🗒️ <a href="https://docs.hai-vr.dev/docs/products/prefabulous-avatar/hai-components/delete-polygons">Open documentation</a></p>
