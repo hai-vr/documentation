@@ -46,16 +46,20 @@ If you use [Poiyomi Toon UV Tile Discard](https://www.poiyomi.com/special-fx/uv-
 - Keep the "Existing UV Data" to *Do Not Clear*.
   - If you are experiencing issues caused by an existing UV channel, change the UV channel, or set "Existing UV Data" to *Set to Zero*.
 
-Using UV0 with "UV Tile Discard" through this component is not recommended, but if you really want to:
-
-- Set the "UV Channel" to UV0, and set the "Existing UV Data" to *Shift*.
+:::danger
+Using UV0 with "UV Tile Discard" through this component is not recommended, but if you really want to use UV0,
+then set the "Existing UV Data" to *Shift*.
+:::
 
 ### SCSS "Inventory System"
 
 If you use [SCSS's Inventory System](https://gitlab.com/s-ilent/SCSS/-/wikis/Manual/Inventory-System):
 
-You cannot use the Inventory System to partially hide meshes that are part of the body, as this would result in the texture visibly warping along the seams of the blendshape.
-This feature should only be used with individual pieces of clothing or accessories.
+:::danger
+You cannot use the SCSS Inventory System to partially hide meshes that are part of the body flesh, as this would result in the texture visibly warping along the seams of the blendshape.
+
+In SCSS, this feature should only be used with individual pieces of clothing or accessories.
+:::
 
 - Set the "UV Channel" to UV0.
 - Set "Existing UV Data" to *Shift*.
