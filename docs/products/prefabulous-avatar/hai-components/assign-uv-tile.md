@@ -41,7 +41,7 @@ Enter Play Mode or upload the avatar to test the results: as this is a non-destr
 If you use [Poiyomi Toon UV Tile Discard](https://www.poiyomi.com/special-fx/uv-tile-discard):
 
 - Set the "UV Channel" to UV1, UV2, or UV3.
-- Use the checkbox grid, The UI is built to closely mirror Poiyomi Toon UV Tile Discard.
+- Use the checkbox grid. The UI is built to closely mirror Poiyomi Toon UV Tile Discard.
 - Keep the "UV Channel" to UV1.
 - Keep the "Existing UV Data" to *Do Not Clear*.
   - If you are experiencing issues caused by an existing UV channel, change the UV channel, or set "Existing UV Data" to *Set to Zero*.
