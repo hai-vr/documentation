@@ -43,6 +43,15 @@ Then, add *Haï ~ Prefabulous Avatar* to your project using VCC.
 
 ## How to use
 
+Unless stated otherwise, **you can place the components anywhere inside your avatar**, and *Prefabulous Avatar* will try its best to affect all
+eligible components on your avatar without needing you to manually target individual components.
+
+For example, most of our blendshape manipulation components such as [Recalculate Normals](./prefabulous-avatar/hai-components/recalculate-normals)
+or [Delete polygons](./prefabulous-avatar/hai-components/delete-polygons) will target all SkinnedMeshRenderers of your avatar by default as long as that
+SkinnedMeshRenderer has one of the blendshapes in question, in order to keep manual labor to a minimum.
+
+Check out the **[Reference manual](./prefabulous-avatar/reference)** for more details.
+
 Add any of those components to any location inside your avatar. It is recommended that you put them in one or several child objects
 so that you can reuse them on other avatars as a prefab:
 
