@@ -18,7 +18,7 @@
 <p>If you use Poiyomi Toon shader, this new component can be used in tandem
 with <a href="https://www.poiyomi.com/special-fx/uv-tile-discard" target="_blank" rel="noopener noreferrer">Poiyomi Toon "Special FX &gt; UV Tile Discard"</a> to toggle portions of a model on and off at runtime.</p>
 <video controls="" muted="" width="816"><source src="/assets/medias/13rQ7HGwPr-ec5d550ea5727a70033b65daa55d19b7.mp4"></video>
-<p>🗒️ <a href="https://docs.hai-vr.dev/docs/products/prefabulous-avatar/hai-components/delete-polygons">Open documentation</a></p>
+<p>🗒️ <a href="https://docs.hai-vr.dev/docs/products/prefabulous-avatar/hai-components/assign-uv-tile">Open documentation</a></p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="update-delete-polygons">Update <a href="https://docs.hai-vr.dev/docs/products/prefabulous-avatar/hai-components/delete-polygons">Delete Polygons</a><a href="https://docs.hai-vr.dev/updates/2024/01/02/p0#update-delete-polygons" class="hash-link" aria-label="Direct link to update-delete-polygons" title="Direct link to update-delete-polygons">​</a></h3>
 <p>Delete Polygons now has an option to keep the polygons that are still connected to the mesh.</p>
 <p>On blendshapes that shrink the body, this preserves the end caps, so the blendshape still has an effect on the mesh.</p>
