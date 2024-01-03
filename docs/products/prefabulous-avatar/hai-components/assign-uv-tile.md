@@ -46,9 +46,10 @@ If you use [Poiyomi Toon UV Tile Discard](https://www.poiyomi.com/special-fx/uv-
   - If you are experiencing issues caused by an existing UV channel, change the UV channel, or set "Existing UV Data" to *Set to Zero*.
 
 :::danger
-Using UV0 with "UV Tile Discard" through this component is not recommended, but if you really want to use UV0,
-then set the "Existing UV Data" to *Shift*. If you decide to use UV0, you cannot partially hide meshes that are part of the body flesh,
+Using UV0 with "UV Tile Discard" through this component is not recommended, because you cannot partially hide meshes that are part of the body flesh,
 as this would result in the texture visibly warping along the seams of the blendshape; in this case, use UV1, UV2, or UV3.
+
+That said, if you really want to use UV0, then set the "Existing UV Data" to *Shift*.
 :::
 
 ### SCSS "Inventory System"
