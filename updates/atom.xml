@@ -12,9 +12,8 @@
         <id>https://docs.hai-vr.dev/updates/2024/01/02/p0</id>
         <link href="https://docs.hai-vr.dev/updates/2024/01/02/p0"/>
         <updated>2024-01-02T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[V1.7]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="v17">V1.7<a href="https://docs.hai-vr.dev/updates/2024/01/02/p0#v17" class="hash-link" aria-label="Direct link to V1.7" title="Direct link to V1.7">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="new-component-assign-uv-tile">New component: <a href="https://docs.hai-vr.dev/docs/products/prefabulous-avatar/hai-components/assign-uv-tile">Assign UV Tile</a><a href="https://docs.hai-vr.dev/updates/2024/01/02/p0#new-component-assign-uv-tile" class="hash-link" aria-label="Direct link to new-component-assign-uv-tile" title="Direct link to new-component-assign-uv-tile">​</a></h3>
+        <summary type="html"><![CDATA[New component: Assign UV Tile]]></summary>
+        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="new-component-assign-uv-tile">New component: <a href="https://docs.hai-vr.dev/docs/products/prefabulous-avatar/hai-components/assign-uv-tile">Assign UV Tile</a><a href="https://docs.hai-vr.dev/updates/2024/01/02/p0#new-component-assign-uv-tile" class="hash-link" aria-label="Direct link to new-component-assign-uv-tile" title="Direct link to new-component-assign-uv-tile">​</a></h3>
 <p>A new component, <a href="https://docs.hai-vr.dev/docs/products/prefabulous-avatar/hai-components/assign-uv-tile">Assign UV Tile</a>, has been added to Prefabulous Avatar.</p>
 <p>If you use Poiyomi Toon shader, this new component can be used in tandem
 with <a href="https://www.poiyomi.com/special-fx/uv-tile-discard" target="_blank" rel="noopener noreferrer">Poiyomi Toon "Special FX &gt; UV Tile Discard"</a> to toggle portions of a model on and off at runtime.</p>
@@ -31,9 +30,8 @@ with <a href="https://www.poiyomi.com/special-fx/uv-tile-discard" target="_blank
         <id>https://docs.hai-vr.dev/updates/2023/12/31/p0</id>
         <link href="https://docs.hai-vr.dev/updates/2023/12/31/p0"/>
         <updated>2023-12-31T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[V1.6]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="v16">V1.6<a href="https://docs.hai-vr.dev/updates/2023/12/31/p0#v16" class="hash-link" aria-label="Direct link to V1.6" title="Direct link to V1.6">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="new-component-delete-polygons">New component: <a href="https://docs.hai-vr.dev/docs/products/prefabulous-avatar/hai-components/delete-polygons">Delete Polygons</a><a href="https://docs.hai-vr.dev/updates/2023/12/31/p0#new-component-delete-polygons" class="hash-link" aria-label="Direct link to new-component-delete-polygons" title="Direct link to new-component-delete-polygons">​</a></h3>
+        <summary type="html"><![CDATA[New component: Delete Polygons]]></summary>
+        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="new-component-delete-polygons">New component: <a href="https://docs.hai-vr.dev/docs/products/prefabulous-avatar/hai-components/delete-polygons">Delete Polygons</a><a href="https://docs.hai-vr.dev/updates/2023/12/31/p0#new-component-delete-polygons" class="hash-link" aria-label="Direct link to new-component-delete-polygons" title="Direct link to new-component-delete-polygons">​</a></h3>
 <p>A new component, <a href="https://docs.hai-vr.dev/docs/products/prefabulous-avatar/hai-components/delete-polygons">Delete Polygons</a>, has been added to Prefabulous Avatar.</p>
 <p>Use it to delete polygons affected by conflict prevention blendshapes, and other unused decorations hidden inside the mesh.</p>
 <p><img loading="lazy" alt="delete-polygons-compare.png" src="https://docs.hai-vr.dev/assets/images/delete-polygons-compare-ab931bc24ce5fe7296442930e49c7ce5.png" width="1247" height="807" class="img_ev3q"></p>
