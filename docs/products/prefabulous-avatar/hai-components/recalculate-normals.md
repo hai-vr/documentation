@@ -97,3 +97,5 @@ If you see no improvement, cancel your changes and add your blendshape back to y
 
 - **1.4.0**: Add "Erase Custom Split Normals" option.
 - **1.3.0**: Added.
+
+Classification: *This component is application-agnostic.*

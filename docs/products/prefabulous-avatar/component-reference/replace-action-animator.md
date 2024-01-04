@@ -13,3 +13,5 @@ without having to modify the original avatar descriptor by hand.
 ## Versions
 
 - **1.2.0**: Added.
+
+Classification: *This component is **VRChat only**.*

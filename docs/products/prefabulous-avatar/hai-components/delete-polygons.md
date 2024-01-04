@@ -44,3 +44,5 @@ This might help with some avatar models.
 
 - **1.7.0**: Add "Keep Partial Polygons" option.
 - **1.6.0**: Added.
+
+Classification: *This component is application-agnostic.*

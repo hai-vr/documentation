@@ -91,3 +91,5 @@ This might help with some avatar models, however, this will have no effect on bl
 ## Versions
 
 - **1.7.0**: Added.
+
+Classification: *This component is application-agnostic.*

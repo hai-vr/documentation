@@ -30,3 +30,5 @@ You can have multiple Lock Locomotion Menu Item components across multiple menus
 ## Versions
 
 - **1.2.0**: Added.
+
+Classification: *This component is **VRChat only**.*

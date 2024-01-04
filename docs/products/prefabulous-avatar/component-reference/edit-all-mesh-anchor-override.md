@@ -8,3 +8,5 @@ use [Modular Avatar Mesh Settings](https://modular-avatar.nadena.dev/docs/refere
 ## Versions
 
 - **1.2.0**: Added.
+
+Classification: *This component is application-agnostic.*

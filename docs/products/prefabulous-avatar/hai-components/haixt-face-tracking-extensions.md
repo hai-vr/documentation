@@ -47,3 +47,5 @@ This effectively makes it into a new blendshape capable of morphing the standard
 ## Versions
 
 - **1.2.0**: Added.
+
+Classification: *This component is **VRChat only**.*

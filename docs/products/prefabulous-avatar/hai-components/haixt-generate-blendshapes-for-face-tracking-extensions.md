@@ -30,3 +30,5 @@ You will need to add a [HaiXT Face Tracking Extensions](./haixt-face-tracking-ex
 ## Versions
 
 - **1.5.0**: Added.
+
+Classification: *This component is application-agnostic.*
