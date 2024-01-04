@@ -2,6 +2,13 @@
 title: ComboGestureExpressions
 ---
 
+## 3.1.5102 (Beta)
+
+### Fixes
+
+Deselect old clip before opening clip in Visual Expressions Editor:
+- Try to fix an issue where Visual Expressions Editor will focus the wrong clip if the Project view already has another clip selected.
+
 ## 3.1.5101 (Beta)
 
 - First public VCC beta of ComboGestureExpressions.

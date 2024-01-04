@@ -21,7 +21,7 @@ The changelogs of some products aren't available at this time.
 | [Property Finder](./changelogs/property-finder)                     | 2.0.3                 | 2023-11     |
 | [BlendTree Viewer](./changelogs/blendtree-viewer)                   | 1.0.7                 | 2023-11     |
 | **Editors**                                                         |                       |             |
-| [ComboGestureExpressions](./changelogs/combo-gesture-expressions)   | 3.1.5101              | **2023-12** |
+| [ComboGestureExpressions](./changelogs/combo-gesture-expressions)   | 3.1.5102              | **2023-12** |
 | [FaceTra Shape Creator](./changelogs/facetra-shape-creator)         | 0.3.0-2023-11-13-2123 | *2023-11*   |
 | [Prefabulous Avatar](./changelogs/prefabulous-avatar)               | 1.7.1                 | **2024-01** |
 | [Visual Expressions Editor](./changelogs/visual-expressions-editor) | 2.0.3                 | 2023-11     |
