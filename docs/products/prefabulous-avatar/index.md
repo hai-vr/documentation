@@ -26,6 +26,10 @@ or may not be able to coexist with other components.
 
 Therefore you are encouraged to use these components only within personal avatars, and not as part of assets distributed to other users.
 
+:::warning
+The components of this tool require VRChat; They are currently incompatible with other apps and platforms.
+:::
+
 ![](img/pvsUzAgoIb.png)
 
 ## Download
