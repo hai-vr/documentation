@@ -8,7 +8,7 @@ This prevents the avatar collider from moving when the user moves the analog sti
 
 This component will add a menu item, which when toggled, will prevent your avatar from being moved with the analog stick.
 
-This also prevents the avatar collider from moving you physically move around in your playspace, so you won't go up and down on ledges and stairs.
+This also prevents the avatar collider from moving when you physically move around in your playspace, so you won't go up and down on ledges and stairs.
 
 To use this component:
 - Add a "PA-H Lock Locomotion Menu Item" component in a new GameObject of your avatar.
