@@ -13,7 +13,7 @@ For example, most of our blendshape manipulation components such as [Recalculate
 or [Delete polygons](./hai-components/delete-polygons) will target all SkinnedMeshRenderers of your avatar by default as long as that
 SkinnedMeshRenderer has one of the blendshapes in question, in order to keep manual labor to a minimum.
 
-<video controls width="816" autostart="false">
+<video controls autostart="false">
     <source src={require('./img/uI4KB1Gj4Y.mp4').default}/>
 </video>
 
