@@ -19,7 +19,7 @@ To use this component:
 
 Enter Play Mode or upload the avatar to test the results: as this is a non-destructive component, the original mesh remains intact.
 
-<video controls width="816" autostart="false">
+<video controls autostart="false">
     <source src={require('../img/uI4KB1Gj4Y.mp4').default}/>
 </video>
 
