@@ -26,7 +26,6 @@ Most other shapes will involve pulling and twisting parts of the mesh. If you’
 **When building shapes for the first time, the shapes will look mangled.**
 Systematically press the “Reset position and rotation” buttons to fix the shape before you start working on it the first time.
 
-❄️❄️❄️❄️❄️ INSERT VIDEO HERE ❄️❄️❄️❄️❄️
 <video controls muted width="816">
 <source src={require('../img/shapes/Unity_S2iRD530sU.mp4').default}/>
 </video>

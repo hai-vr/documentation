@@ -17,7 +17,7 @@ This requires the use of the VRChat Creator Companion in order to automatically 
 - Add **[Modular Avatar listing](https://modular-avatar.nadena.dev/)** by clicking on *Download (using VCC).*
 - In VCC, add the **"Non-Destructive Modular Framework"** package to your project.
 
-![Untitled.png](img%2FUntitled.png)
+![Untitled.png](img/Untitled.png)
 
 Open the downloaded archive and install the .unitypackage in your project.
 
