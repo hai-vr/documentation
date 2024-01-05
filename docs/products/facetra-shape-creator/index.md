@@ -24,3 +24,29 @@ If you use this tool, it is highly recommended that you join the [Discord server
 
 The [documentation for *Haï's FaceTra Shape Creator* is currently located in a different page](https://hai-vr.notion.site/hai-vr/Ha-s-FaceTra-Shape-Creator-f1d95d4459e54fc3b2f166d9ebb5ebf3).
 
+## Examples
+
+The tool has been designed primarily for anime-like avatars.
+
+It should also perform well with kemono avatars, and it has been used with furry avatars with some success.
+
+### Anime-like avatar
+
+<video controls width="816">
+    <source src={require('./img/haolan-facetra-test-f.mp4').default}/>
+</video>
+*Haolan*
+
+### Kemono avatar
+
+<video controls width="816">
+    <source src={require('./img/foshunia-facetra-f-an.mp4').default}/>
+</video>
+*Foshunia*
+
+### Furry avatar
+
+<video controls width="816">
+    <source src={require('./img/actias-demo-f-an.mp4').default}/>
+</video>
+*Actias*
