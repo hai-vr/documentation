@@ -2,6 +2,23 @@
 title: FaceTra Shape Creator
 ---
 
+## 0.4.0-2024-01-05-0349
+
+- Change mesh calibration to support meshes that have a non-zero origin (offset).
+    - Mesh calibration is now done by converting vertices to avatar space through the 0th bindpose, which is generally the hip bone.
+    - ⚠️⚡ This means **if the user shifts the hip up or down**, this could cause existing FaceTra rigs to cease functioning as expected.
+      - Contact me on [Discord](/docs/other/discord) if this happens to you.
+    - For this reason there is now a "Override Bone Zero" option in mesh calibration to recalibrate the existing FaceTra data if necessary.
+    - Existing mesh calibration options have been grayed out.
+
+- Make vertex selection more aggressive.
+    - Vertex selection will now add neighbours of vertices that have the exact same position.
+    - This is intended to correct for teeth/tongue selection issues some users were having.
+    - ⚠️⚡ Since the selection is more aggressive, **this might expand the existing selections**.
+      - Contact me on [Discord](/docs/other/discord) if this happens to you.
+
+- Add FTWireMeshDebugger component for support requests.
+
 ## 0.3.0-2023-11-13-2123
 
 - (fix) The component is now removed from the baked version
@@ -14,7 +31,7 @@ title: FaceTra Shape Creator
 
 ### Fixes
 - (fix) MouthApeShape now uses the same pullers as MouthClosed
-    - :warning::zap: *The appearance of MouthApeShape will change, but most face tracking animators do not use this shape.*
+    - ⚠️⚡ *The appearance of MouthApeShape will change, but most face tracking animators do not use this shape.*
 - (fix) originalMesh must now be non-null for our systems to run
 - Add error messages when configuration may be incorrect
 
@@ -62,11 +79,11 @@ title: FaceTra Shape Creator
 
 ## 0.0.5-2023-11-08-0052
 - (bug) Fix eye divider was incorrect is now mirrored on the X axis
-  :warning::zap: **Fixes the incorrect appearance of all Eye shapes**: Please reupload your avatar on your respective platforms
+  ⚠️⚡ **Fixes the incorrect appearance of all Eye shapes**: Please reupload your avatar on your respective platforms
 - (bug) Fix null dereference on serialized object
 
 - MouthClosed now has its own shapes for the mouth, and only reuses JawOpen's Jaw Puller
-  :warning::zap: **Changes the appearance of MouthClosed**: You **must** check MouthClosed again.
+  ⚠️⚡ **Changes the appearance of MouthClosed**: You **must** check MouthClosed again.
 - Overwrite and choose which blendshapes to export
     - Existing blendshapes are now overwritten instead of skipped
     - In the component, the new Output section can be used to choose which shapes to write

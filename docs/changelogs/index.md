@@ -21,13 +21,13 @@ The changelogs of some products aren't available at this time.
 | [Property Finder](./changelogs/property-finder)                     | 2.0.3                 | 2023-11     |
 | [BlendTree Viewer](./changelogs/blendtree-viewer)                   | 1.0.7                 | 2023-11     |
 | **Editors**                                                         |                       |             |
-| [ComboGestureExpressions](./changelogs/combo-gesture-expressions)   | 3.1.5102              | **2023-12** |
-| [FaceTra Shape Creator](./changelogs/facetra-shape-creator)         | 0.3.0-2023-11-13-2123 | *2023-11*   |
+| [ComboGestureExpressions](./changelogs/combo-gesture-expressions)   | 3.1.5102              | 2023-12     |
+| [FaceTra Shape Creator](./changelogs/facetra-shape-creator)         | 0.4.0-2024-01-05-0349 | **2024-01** |
 | [Prefabulous Avatar](./changelogs/prefabulous-avatar)               | 1.7.1                 | **2024-01** |
 | [Visual Expressions Editor](./changelogs/visual-expressions-editor) | 2.0.3                 | 2023-11     |
 | **Patchers**                                                        |                       |             |           
-| [Auto-reset OSC config](./changelogs/auto-reset-osc-config)         | 1.1.3                 | **2023-12** |       
-| [Convert ComboGesture to FaceEmo](./changelogs/cge-to-faceemo)      | 0.1.5100              | **2023-12** |
+| [Auto-reset OSC config](./changelogs/auto-reset-osc-config)         | 1.1.3                 | 2023-12     |       
+| [Convert ComboGesture to FaceEmo](./changelogs/cge-to-faceemo)      | 0.1.5100              | 2023-12     |
 
 [//]: # (| [**ResilienceVR**]&#40;./resilience&#41;                                                    |      |)
 [//]: # (| [⭐ Double Hip Tracker]&#40;./changelogs/double-hip-tracker&#41;                               |      |)
