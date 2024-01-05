@@ -2,11 +2,24 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://docs.hai-vr.dev/updates</id>
     <title>Haï~ Blog</title>
-    <updated>2024-01-02T00:00:00.000Z</updated>
+    <updated>2024-01-05T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://docs.hai-vr.dev/updates"/>
     <subtitle>Haï~ Blog</subtitle>
     <icon>https://docs.hai-vr.dev/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[⚙️ ComboGestureExpressions 3.1.5102]]></title>
+        <id>https://docs.hai-vr.dev/updates/2024/01/05/p0</id>
+        <link href="https://docs.hai-vr.dev/updates/2024/01/05/p0"/>
+        <updated>2024-01-05T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Fixes]]></summary>
+        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="fixes">Fixes<a href="https://docs.hai-vr.dev/updates/2024/01/05/p0#fixes" class="hash-link" aria-label="Direct link to Fixes" title="Direct link to Fixes">​</a></h3>
+<p>Deselect old clip before opening clip in Visual Expressions Editor:</p>
+<ul>
+<li>Try to fix an issue where Visual Expressions Editor will focus the wrong clip if the Project view already has another clip selected.</li>
+</ul>
+<p>🔍 <a href="https://docs.hai-vr.dev/docs/changelogs/combo-gesture-expressions#315102-beta">View changelog</a></p>]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[☀️ Assign UV Tile (Prefabulous V1.7)]]></title>
         <id>https://docs.hai-vr.dev/updates/2024/01/02/p0</id>
@@ -263,16 +276,5 @@ and many more shader features are affected by the altered mesh surfaces.</p>
 <p>Thank you for your support! ⭐</p>
 <p>🗒️ <a href="https://docs.hai-vr.dev/docs/products/icon-gen">Open documentation</a></p>
 <video controls="" width="816"><source src="/assets/medias/2023-09-22-p0-icongen-demo-f-c6808df69a28348323544b508aff38c9.mp4"></video>]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[☀️ IconGen Thumbnail]]></title>
-        <id>https://docs.hai-vr.dev/updates/2023/09/13/p0</id>
-        <link href="https://docs.hai-vr.dev/updates/2023/09/13/p0"/>
-        <updated>2023-09-13T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[I'm releasing "IconGen Thumbnail (Play Mode)".]]></summary>
-        <content type="html"><![CDATA[<p>I'm releasing "IconGen Thumbnail (Play Mode)".</p>
-<p>This tool can cover for VRChat SDK's temporarily lost ability to take thumbnails in Play Mode, when the avatar is playing an animation.</p>
-<p>🗒️ <a href="https://docs.hai-vr.dev/docs/products/icon-gen#capture-thumbnails-for-vrchat-in-play-mode'">Open documentation</a></p>
-<video controls="" width="816"><source src="/assets/medias/2023-09-12-p0-thumb-trim-f-fb863e0d107706bcd9defb2d72ca0bde.mp4"></video>]]></content>
     </entry>
 </feed>
