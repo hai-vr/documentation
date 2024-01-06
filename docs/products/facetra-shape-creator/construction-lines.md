@@ -4,14 +4,6 @@ sidebar_position: 2
 
 # Construction lines
 
-:::danger
-The documentation for *Haï's FaceTra Shape Creator* is currently located [in a different page](https://hai-vr.notion.site/hai-vr/Ha-s-FaceTra-Shape-Creator-f1d95d4459e54fc3b2f166d9ebb5ebf3).
-:::
-
-:::danger
-The documentation page is currently being written.
-:::
-
 The shape creator works by defining construction lines that will let the tool know where are the major facial features of your mesh.
 
 In your Scene view, make sure you have **Gizmos** shown, and move your Scene view to focus on the face of your avatar.
@@ -177,16 +169,12 @@ The nose is the tip of your nose.
     </div>
 </div>
 
-:::danger
-The documentation page is currently being written.
-:::
-
 ### Jaw Puller
 
 The jaw puller is roughly located on your chin. It will be used to move the jaw of your avatar.
 
 - Do the same as previously described using the “Select Vertex…” button.
-- 
+
 <div className="row">
     <div className="col col--4 margin-bottom--lg">
         <div className="card">
@@ -225,12 +213,16 @@ This will be used to cut existing artist-authored blendshapes in half, so that y
 - Press the “Select Vertex…” button and click somewhere in the middle of the eye.
 - Press “Stop” when you are done.
 - Move and rotate the gizmo to better match your eye shape.
+- Use the red cubic handle to shift the red parallel lines closer or further apart. 
+  The area inside that region will be smoothed when dividing the blendshapes. The lines need to be apart so that there is not an abrupt cut when dividing the blendshapes,
+  but it must not go past the most sensitive parts of the top and bottom eyelids.
 
 <div className="row">
     <div className="col col--4 margin-bottom--lg">
         <div className="card">
             <div className="card__body">
 ![karin.png](img%2Fconstruction%2F11_eyedivider%2Fkarin.png)
+*Try to make the parallel lines roughly cross through the middle, but don't let the parallel lines interfere with the top and bottom eyelid.*
             </div>
         </div>
     </div>
@@ -238,7 +230,7 @@ This will be used to cut existing artist-authored blendshapes in half, so that y
         <div className="card">
             <div className="card__body">
 ![foshunia.png](img%2Fconstruction%2F11_eyedivider%2Ffoshunia.png)
-*Eye shapes can vary a lot. A guidance is to avoid dividing the top part of the eyelid. Rotate the gizmo along the blue axis if necessary.*
+*Eye shapes can vary a lot. A guidance is to follow the direction of the top part of the eyelid. Rotate the gizmo along the blue axis if necessary.*
             </div>
         </div>
     </div>
@@ -246,15 +238,27 @@ This will be used to cut existing artist-authored blendshapes in half, so that y
         <div className="card">
             <div className="card__body">
 ![actias.png](img%2Fconstruction%2F11_eyedivider%2Factias.png)
-*On furry avatars where the eye is very angled, rotate the gizmo around the green axis so that you can better visualize it.*
+*If the left and right side of the face are at a sharp angle, rotate the gizmo around the green axis so that you can better visualize it.*
             </div>
         </div>
     </div>
 </div>
 
-- Use the red cubic handle to shift the red parallel lines closer or further apart. The area inside that region will be smoothed when dividing the blendshapes. The lines need to be apart so that there is not an abrupt cut when dividing the blendshapes, but it must not go past the most sensitive parts of the top and bottom eyelids.
-
 ### Mouth Divider
+
+The mouth divider splits the mouth in half, so that there is the upper and lower lips.
+
+This will be used to morph only the upper lips or only the lower lips when necessary.
+
+In order to use this divider, we need to open the mouth first.
+
+- Press “Add +” to add an existing blendshape.
+- Set the blendshape to one that represents the jaw being open. You need to look at your avatar blendshapes to select one that fits. You can use [Blendshape Viewer](https://docs.hai-vr.dev/docs/products/blendshape-viewer) to help you with this.
+
+Then:
+- Press the “Select Vertex…” button and click the vertex used in the corner of your mouth.
+- Move and rotate the gizmo so that the parallel lines, but **keep it as horizontal as you can**.
+- Use the red cubic handle to shift the red parallel lines closer or further apart. The area inside that region will be smoothed. The lines need to be apart so that there is not an abrupt cut, but it must not go past the most sensitive parts of the top and bottom lips.
 
 <div className="row">
     <div className="col col--4 margin-bottom--lg">
@@ -284,6 +288,14 @@ This will be used to cut existing artist-authored blendshapes in half, so that y
 
 ### Mouth Left/Right Divider
 
+The mouth Left/Right divider is used to split some of our shapes that strictly divide the face in half.
+
+Many of our shapes can pull the right-side of the face while affecting the left side of the face, but some cannot do this if it involves moving a muscle in the middle of the face.
+
+- Use the red cubic handle to shift the red parallel lines closer or further apart. The area inside that region will be smoothed.
+  - The lines need to be apart so that there is not an abrupt cut.
+  - The divider must smooth the middle of the lips, but not the entire length of the lips.
+
 <div className="row">
     <div className="col col--4 margin-bottom--lg">
         <div className="card">
@@ -310,6 +322,17 @@ This will be used to cut existing artist-authored blendshapes in half, so that y
 
 ### Optional: Nose Projection
 
+The Nose Projection is an optional divider. Most of the times the Nose Projection will not be necessary, but some of the deformation may accidentally affect the nose too much.
+In those cases, you may be able to use the Nose Projection to reduce the influence the deformation of the nose.
+
+- Press the “Select Vertex…” button and click on your nose.
+- Press “Stop” when you are done.
+- Use the handle to push the division plane towards your nose.
+- Use the red handles to reduce the selection in the X (red) and Y (green) directions. Keep the rectangle away from your forehead or cheeks.
+- If you need more control, rotate the handle to skew the selection.
+- Use the red cubic handle to shift the red parallel lines closer or further apart. The area inside that region will be smoothed.
+  - The lines need to be apart so that there is not an abrupt cut.
+
 <div className="row">
     <div className="col col--4 margin-bottom--lg">
         <div className="card">
@@ -322,6 +345,17 @@ This will be used to cut existing artist-authored blendshapes in half, so that y
 </div>
 
 ### Optional: Neck Separator
+
+The Neck Separator is an optional divider. Use it if your face mesh includes part of your neck or upper body.
+This is useful if some deformations of the jaw affect too much of the neck.
+
+For example, some avatars, especially those modelled after animals, have a neck that is inseparable from the upper body.
+
+- Press the “Select Vertex…” button and click on the side of your neck.
+- Press “Stop” when you are done.
+- Rotate the handle to better divide your neck.
+- Use the red cubic handle to shift the red parallel lines closer or further apart. The area inside that region will be smoothed.
+  - The lines need to be apart so that there is not an abrupt cut.
 
 <div className="row">
     <div className="col col--4 margin-bottom--lg">
@@ -349,7 +383,25 @@ This will be used to cut existing artist-authored blendshapes in half, so that y
 
 ## Setup construction lines: Vertex filters
 
+Some parts of the face shouldn’t be affected by some types of deformations.
+
+- Moving the lips should not deform the teeth or the tongue.
+- Moving the cheeks should not deform the pupils (in most cases).
+- Some artist-authored eye blendshapes deform the pupils, but this is a problem when dividing the eye blendshapes in half.
+
+Vertex filters are used to isolate parts of your face so that they remain unaffected by some deformations and other operations.
+
 ### Upper Teeth and Lower Teeth Selection
+
+You need to do the teeth selection separately for the upper teeth and the lower teeth.
+
+Select the teeth (and fangs, if you have some).
+
+- Press “Add +” to add a vertex selection.
+- Press the “Select Vertex…” button and click on the teeth at the bottom of your mouth.
+- Press “Stop” when you are done.
+
+If you have fangs, press “Add +” and do this again with your fangs. Some avatars don’t have perfectly symmetrical fangs, so make sure you have selected all of the fangs of your avatar.
 
 <div className="row">
     <div className="col col--4 margin-bottom--lg">
@@ -369,6 +421,14 @@ This will be used to cut existing artist-authored blendshapes in half, so that y
 </div>
 
 ### Tongue Selection
+
+Select your tongue (and tongue piercings if you have some).
+
+- Press “Add +” to add a vertex selection.
+- Press the “Select Vertex…” button and click on your tongue.
+- Press “Stop” when you are done.
+
+If you have piercings on your tongue, press “Add +” and do this again on your piercings.
 
 :::danger
 You **must** select the tongue, even if your hardware or software doesn't support tongue tracking.
@@ -401,6 +461,17 @@ Selecting the tongue prevents shapes that affect the lips from affecting the ton
 </div>
 
 ### Pupil Selection
+
+To select the pupil and iris, you can do it in two ways:
+
+- The recommended way is to click “Add +” on the lower section named **Pupil Blendshapes**, and select some of the artist-authored blendshapes that:
+  - Moves the iris,
+  - Moves the pupil (i.e. blendshapes that make the pupil go big or small),
+  - Moves the highlights of the pupil,
+  - Moves the alternative decorations of the pupil (star shape, heart shape, vortex (guru guru), etc.),
+  - but, must NOT move the white interior of the eye, and must NOT move the eyelids.
+- In some cases there may not be such artist-authored blendshapes. In this case, click “Add +” on the **Pupil Vertices** and select the pupil vertices.
+  - Many avatars do not have symmetrical eye highlights, so make sure you select the highlights on both the left eye and right eye separately.
 
 <div className="row">
     <div className="col col--4 margin-bottom--lg">
@@ -449,7 +520,15 @@ Make sure you include the decorations inside your eye.
 
 ## Setup construction lines: Special
 
+There are some special cases.
+
 ### Mouth Press direction
+
+The mouth press direction is always relative to the Mouth Center, and represents the inclination of the face.
+
+This construction line is used by the Mouth Press shape as a hint to know how the lips should be compressed together.
+
+- Decide whether you want to shift the press direction forward or not to better match the shape of your avatar. Results may vary.
 
 <div className="row">
     <div className="col col--4 margin-bottom--lg">
@@ -480,6 +559,13 @@ Make sure you include the decorations inside your eye.
 
 ### Tongue Puller
 
+The tongue puller represents the position of the tongue as it rests when the avatar’s jaw is open.
+
+- Press the “Select Vertex…” button and click somewhere near the tip of the tongue.
+- Press “Stop” when you are done.
+
+You can further adjust the position with the handle in the scene view if necessary.
+
 <div className="row">
     <div className="col col--4 margin-bottom--lg">
         <div className="card">
@@ -503,13 +589,3 @@ Make sure you include the decorations inside your eye.
         </div>
     </div>
 </div>
-
-:::danger
-The documentation page is currently being written.
-:::
-
-
-
-
-
-

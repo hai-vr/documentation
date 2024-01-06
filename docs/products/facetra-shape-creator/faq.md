@@ -1,9 +1,5 @@
 ﻿# FAQ
 
-:::danger
-The documentation page is currently being written.
-:::
-
 ### Is this compatible with models edited in Blender?
 
 Yes, it is compatible.

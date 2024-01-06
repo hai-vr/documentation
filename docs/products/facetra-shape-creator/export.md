@@ -4,10 +4,6 @@ sidebar_position: 6
 
 # Upload and Export
 
-:::danger
-The documentation page is currently being written.
-:::
-
 FaceTra Shape Creator does only one thing: create face tracking blendshapes on your avatar.
 
 To make your avatar actually use of those fresh new blendshapes, you need to integrate with your
