@@ -315,7 +315,7 @@ This will be used to cut existing artist-authored blendshapes in half, so that y
         <div className="card">
             <div className="card__body">
 ![foshunia.png](img%2Fconstruction%2F14_noseprojection%2Ffoshunia.png)
-*The limits of the rectangle matter, so that it doesn't include the forehead.*
+*The limits of the rectangle matters, so that it doesn't include the forehead.*
             </div>
         </div>
     </div>
@@ -371,7 +371,7 @@ This will be used to cut existing artist-authored blendshapes in half, so that y
 ### Tongue Selection
 
 :::danger
-You must select the tongue, even if your hardware or software doesn't support tongue tracking.
+You **must** select the tongue, even if your hardware or software doesn't support tongue tracking.
 
 Selecting the tongue prevents shapes that affect the lips from affecting the tongue.
 :::
@@ -464,7 +464,7 @@ Make sure you include the decorations inside your eye.
         <div className="card">
             <div className="card__body">
 ![foshunia.png](img%2Fconstruction%2F41_mouthpressdirection%2Ffoshunia.png)
-*The mouth press direction can be down to preference.*
+*The mouth press direction is down to preference. If your mouth is slightly curved forwards, you can try to keep the mouth press direction perpendicular to that lip curve.*
             </div>
         </div>
     </div>
@@ -472,7 +472,7 @@ Make sure you include the decorations inside your eye.
         <div className="card">
             <div className="card__body">
 ![actias.png](img%2Fconstruction%2F41_mouthpressdirection%2Factias.png)
-*On furry avatars with long beaks or snouts, it may be relevant to keep the mouth direction perpendicular to the direction of that beak or snout.*
+*On furry avatars with long beaks or snouts, it may be relevant to keep the mouth press direction perpendicular to the direction of that beak or snout.*
             </div>
         </div>
     </div>

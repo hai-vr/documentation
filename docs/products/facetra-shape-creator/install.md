@@ -9,7 +9,7 @@ The documentation page is currently being written.
 :::
 
 :::tip
-This does not require VRChat to run. It has been tested to work on Unity 2019, and should work on newer versions.
+This does not require VRChat to run. It has been tested to work on Unity 2019 and Unity 2022, and should work on newer versions.
 
 *To install without VRChat support, you must follow special installation instructions described below.*
 :::
