@@ -120,26 +120,27 @@ It is mainly used later for puffing the cheeks.
 - Do the same as previously described using the “Select Vertex…” button.
     - Don’t think too much about this, and just put the cheek somewhere around the same level as your lips.
 
-
 <div className="row">
     <div className="col col--4 margin-bottom--lg">
         <div className="card">
             <div className="card__body">
-XXX
+![karin.png](img%2Fconstruction%2F3_cheek%2Fkarin.png)
             </div>
         </div>
     </div>
     <div className="col col--4 margin-bottom--lg">
         <div className="card">
             <div className="card__body">
-YYY
+![foshunia.png](img%2Fconstruction%2F3_cheek%2Ffoshunia.png)
             </div>
         </div>
     </div>
     <div className="col col--4 margin-bottom--lg">
         <div className="card">
             <div className="card__body">
-ZZZ
+![actias.png](img%2Fconstruction%2F3_cheek%2Factias.png)
+*The location of your cheek may be up to interpretation. Don't necessarily follow this example, experiment with it.
+Maybe it should be more towards the back.*
             </div>
         </div>
     </div>
@@ -150,7 +151,6 @@ ZZZ
 The nose is the tip of your nose.
 
 - Do the same as previously described using the “Select Vertex…” button.
-
 
 <div className="row">
     <div className="col col--4 margin-bottom--lg">
@@ -171,6 +171,7 @@ The nose is the tip of your nose.
         <div className="card">
             <div className="card__body">
 ![actias.png](img%2Fconstruction%2F4_nose%2Factias.png)
+*If the location of the nose is ambiguous, put it somewhere over the tip of the jaw.*
             </div>
         </div>
     </div>
@@ -185,6 +186,31 @@ The documentation page is currently being written.
 The jaw puller is roughly located on your chin. It will be used to move the jaw of your avatar.
 
 - Do the same as previously described using the “Select Vertex…” button.
+- 
+<div className="row">
+    <div className="col col--4 margin-bottom--lg">
+        <div className="card">
+            <div className="card__body">
+![karin.png](img%2Fconstruction%2F5_jawpuller%2Fkarin.png)
+            </div>
+        </div>
+    </div>
+    <div className="col col--4 margin-bottom--lg">
+        <div className="card">
+            <div className="card__body">
+![foshunia.png](img%2Fconstruction%2F5_jawpuller%2Ffoshunia.png)
+            </div>
+        </div>
+    </div>
+    <div className="col col--4 margin-bottom--lg">
+        <div className="card">
+            <div className="card__body">
+![actias.png](img%2Fconstruction%2F5_jawpuller%2Factias.png)
+*On furry avatars have a long face structure, put it on the tip of the bottom jaw.*
+            </div>
+        </div>
+    </div>
+</div>
 
 ## Setup construction lines: Dividers
 
@@ -204,21 +230,23 @@ This will be used to cut existing artist-authored blendshapes in half, so that y
     <div className="col col--4 margin-bottom--lg">
         <div className="card">
             <div className="card__body">
-XXX
+![karin.png](img%2Fconstruction%2F11_eyedivider%2Fkarin.png)
             </div>
         </div>
     </div>
     <div className="col col--4 margin-bottom--lg">
         <div className="card">
             <div className="card__body">
-YYY
+![foshunia.png](img%2Fconstruction%2F11_eyedivider%2Ffoshunia.png)
+*Eye shapes can vary a lot. A guidance is to avoid dividing the top part of the eyelid. Rotate the gizmo along the blue axis if necessary.*
             </div>
         </div>
     </div>
     <div className="col col--4 margin-bottom--lg">
         <div className="card">
             <div className="card__body">
-ZZZ
+![actias.png](img%2Fconstruction%2F11_eyedivider%2Factias.png)
+*On furry avatars where the eye is very angled, rotate the gizmo around the green axis so that you can better visualize it.*
             </div>
         </div>
     </div>
@@ -228,25 +256,253 @@ ZZZ
 
 ### Mouth Divider
 
+<div className="row">
+    <div className="col col--4 margin-bottom--lg">
+        <div className="card">
+            <div className="card__body">
+![karin.png](img%2Fconstruction%2F12_mouthdivider%2Fkarin.png)
+*The middle line of the mouth divider should go through the vertex that is located on the mouth commissure.*
+            </div>
+        </div>
+    </div>
+    <div className="col col--4 margin-bottom--lg">
+        <div className="card">
+            <div className="card__body">
+![foshunia.png](img%2Fconstruction%2F12_mouthdivider%2Ffoshunia.png)
+            </div>
+        </div>
+    </div>
+    <div className="col col--4 margin-bottom--lg">
+        <div className="card">
+            <div className="card__body">
+![actias.png](img%2Fconstruction%2F12_mouthdivider%2Factias.png)
+*If your avatar has a beak, make sure that the divider does not cross the beak.*
+            </div>
+        </div>
+    </div>
+</div>
+
 ### Mouth Left/Right Divider
+
+<div className="row">
+    <div className="col col--4 margin-bottom--lg">
+        <div className="card">
+            <div className="card__body">
+![karin.png](img%2Fconstruction%2F13_mouthleftrightdivider%2Fkarin.png)
+            </div>
+        </div>
+    </div>
+    <div className="col col--4 margin-bottom--lg">
+        <div className="card">
+            <div className="card__body">
+![foshunia.png](img%2Fconstruction%2F13_mouthleftrightdivider%2Ffoshunia.png)
+            </div>
+        </div>
+    </div>
+    <div className="col col--4 margin-bottom--lg">
+        <div className="card">
+            <div className="card__body">
+![actias.png](img%2Fconstruction%2F13_mouthleftrightdivider%2Factias.png)
+            </div>
+        </div>
+    </div>
+</div>
 
 ### Optional: Nose Projection
 
+<div className="row">
+    <div className="col col--4 margin-bottom--lg">
+        <div className="card">
+            <div className="card__body">
+![foshunia.png](img%2Fconstruction%2F14_noseprojection%2Ffoshunia.png)
+*The limits of the rectangle matter, so that it doesn't include the forehead.*
+            </div>
+        </div>
+    </div>
+</div>
+
 ### Optional: Neck Separator
+
+<div className="row">
+    <div className="col col--4 margin-bottom--lg">
+        <div className="card">
+            <div className="card__body">
+*Most avatars that aren't based on animals have a face separate from the body, so it is not necessary to set up a neck separator on those.*
+            </div>
+        </div>
+    </div>
+    <div className="col col--4 margin-bottom--lg">
+        <div className="card">
+            <div className="card__body">
+![foshunia.png](img%2Fconstruction%2F15_neckseparator%2Ffoshunia.png)
+            </div>
+        </div>
+    </div>
+    <div className="col col--4 margin-bottom--lg">
+        <div className="card">
+            <div className="card__body">
+![actias.png](img%2Fconstruction%2F15_neckseparator%2Factias.png)
+            </div>
+        </div>
+    </div>
+</div>
 
 ## Setup construction lines: Vertex filters
 
 ### Upper Teeth and Lower Teeth Selection
 
+<div className="row">
+    <div className="col col--4 margin-bottom--lg">
+        <div className="card">
+            <div className="card__body">
+![upper.png](img%2Fconstruction%2F16_teethselection%2Fupper.png)
+            </div>
+        </div>
+    </div>
+    <div className="col col--4 margin-bottom--lg">
+        <div className="card">
+            <div className="card__body">
+![lower.png](img%2Fconstruction%2F16_teethselection%2Flower.png)
+            </div>
+        </div>
+    </div>
+</div>
+
 ### Tongue Selection
 
+:::danger
+You must select the tongue, even if your hardware or software doesn't support tongue tracking.
+
+Selecting the tongue prevents shapes that affect the lips from affecting the tongue.
+:::
+
+<div className="row">
+    <div className="col col--4 margin-bottom--lg">
+        <div className="card">
+            <div className="card__body">
+![karin.png](img%2Fconstruction%2F17_tongueselection%2Fkarin.png)
+            </div>
+        </div>
+    </div>
+    <div className="col col--4 margin-bottom--lg">
+        <div className="card">
+            <div className="card__body">
+![foshunia.png](img%2Fconstruction%2F17_tongueselection%2Ffoshunia.png)
+            </div>
+        </div>
+    </div>
+    <div className="col col--4 margin-bottom--lg">
+        <div className="card">
+            <div className="card__body">
+![actias.png](img%2Fconstruction%2F17_tongueselection%2Factias.png)
+            </div>
+        </div>
+    </div>
+</div>
+
 ### Pupil Selection
+
+<div className="row">
+    <div className="col col--4 margin-bottom--lg">
+        <div className="card">
+            <div className="card__body">
+![karin.png](img%2Fconstruction%2F18_pupilselection%2Fkarin.png)
+            </div>
+        </div>
+    </div>
+    <div className="col col--4 margin-bottom--lg">
+        <div className="card">
+            <div className="card__body">
+![foshunia.png](img%2Fconstruction%2F18_pupilselection%2Ffoshunia.png)
+            </div>
+        </div>
+    </div>
+    <div className="col col--4 margin-bottom--lg">
+        <div className="card">
+            <div className="card__body">
+![actias.png](img%2Fconstruction%2F18_pupilselection%2Factias.png)
+            </div>
+        </div>
+    </div>
+</div>
+
+:::warning
+Make sure you include the decorations inside your eye.
+:::
+
+<div className="row">
+    <div className="col col--4 margin-bottom--lg">
+        <div className="card">
+            <div className="card__body">
+![karin.png](img%2Fconstruction%2F19_pupilinner%2Fkarin.png)
+            </div>
+        </div>
+    </div>
+    <div className="col col--4 margin-bottom--lg">
+        <div className="card">
+            <div className="card__body">
+![foshunia.png](img%2Fconstruction%2F19_pupilinner%2Ffoshunia.png)
+            </div>
+        </div>
+    </div>
+</div>
 
 ## Setup construction lines: Special
 
 ### Mouth Press direction
 
+<div className="row">
+    <div className="col col--4 margin-bottom--lg">
+        <div className="card">
+            <div className="card__body">
+![karin.png](img%2Fconstruction%2F41_mouthpressdirection%2Fkarin.png)
+*The mouth press direction is down to preference. You can keep it vertical, or make it angled.*
+            </div>
+        </div>
+    </div>
+    <div className="col col--4 margin-bottom--lg">
+        <div className="card">
+            <div className="card__body">
+![foshunia.png](img%2Fconstruction%2F41_mouthpressdirection%2Ffoshunia.png)
+*The mouth press direction can be down to preference.*
+            </div>
+        </div>
+    </div>
+    <div className="col col--4 margin-bottom--lg">
+        <div className="card">
+            <div className="card__body">
+![actias.png](img%2Fconstruction%2F41_mouthpressdirection%2Factias.png)
+*On furry avatars with long beaks or snouts, it may be relevant to keep the mouth direction perpendicular to the direction of that beak or snout.*
+            </div>
+        </div>
+    </div>
+</div>
+
 ### Tongue Puller
+
+<div className="row">
+    <div className="col col--4 margin-bottom--lg">
+        <div className="card">
+            <div className="card__body">
+![karin.png](img%2Fconstruction%2F42_tonguepuller%2Fkarin.png)
+            </div>
+        </div>
+    </div>
+    <div className="col col--4 margin-bottom--lg">
+        <div className="card">
+            <div className="card__body">
+![foshunia.png](img%2Fconstruction%2F42_tonguepuller%2Ffoshunia.png)
+            </div>
+        </div>
+    </div>
+    <div className="col col--4 margin-bottom--lg">
+        <div className="card">
+            <div className="card__body">
+![actias.png](img%2Fconstruction%2F42_tonguepuller%2Factias.png)
+            </div>
+        </div>
+    </div>
+</div>
 
 :::danger
 The documentation page is currently being written.
