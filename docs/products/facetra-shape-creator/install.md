@@ -8,7 +8,11 @@ sidebar_position: -1
 The documentation page is currently being written.
 :::
 
-*This tool can be used without VRChat. The VRChat SDK is not required to run this tool.*
+:::tip
+This does not require VRChat to run. It has been tested to work on Unity 2019, and should work on newer versions.
+
+*To install without VRChat support, you must follow special installation instructions described below.*
+:::
 
 # Download
 
