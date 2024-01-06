@@ -4,19 +4,11 @@ sidebar_position: 1
 
 # Eye Shapes: Building new shapes from existing ones
 
-:::danger
-The documentation page is currently being written.
-:::
-
-:::warning
-**Are you familiar with making face tracking shapes?**
+:::warning[**Are you familiar with making face tracking shapes?**]
 
 If you are not familiar with creating shapes yourself, the [Unified Expressions documentation on VRCFaceTracking](https://docs.vrcft.io/docs/tutorial-avatars/tutorial-avatars-extras/unified-blendshapes)
 can be a good reference.
-
-Feel free to ask on Discord about it.
 :::
-
 
 Most eye shapes consist in assembling existing blendshapes into a new shape.
 

@@ -4,17 +4,10 @@ sidebar_position: 7
 
 # Jaw Left/Jaw Right and Jaw Forward
 
-:::danger
-The documentation page is currently being written.
-:::
-
-:::warning
-**Are you familiar with making face tracking shapes?**
+:::warning[**Are you familiar with making face tracking shapes?**]
 
 If you are not familiar with creating shapes yourself, the [Unified Expressions documentation on VRCFaceTracking](https://docs.vrcft.io/docs/tutorial-avatars/tutorial-avatars-extras/unified-blendshapes)
 can be a good reference.
-
-Feel free to ask on Discord about it.
 :::
 
 These shapes allow you to move the jaw, but by default, this includes the upper side of the mouth in order to create smoother deformations on anime-style avatars.

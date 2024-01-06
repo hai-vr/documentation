@@ -4,10 +4,6 @@ sidebar_position: 1
 
 # Create asset and component
 
-:::danger
-The documentation page is currently being written.
-:::
-
 ## Create a FaceTra asset
 
 In the Project tab, right click in one of the folders, and create a “Hai/FaceTra” asset for your avatar.

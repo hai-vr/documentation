@@ -4,15 +4,15 @@ sidebar_position: 5
 
 # Improve eye tracking
 
-:::danger
-The documentation page is currently being written.
-:::
-
 Eye tracking on avatars can come with drawbacks, especially if eye tracking was not part of the design of the avatar.
 
 The elements of this section may improve the looks of your eye tracking, if you have noticed shortcomings during use.
 
 You should not blindly enable these improvements as there are unnecessary if your avatar does not have shortcomings.
+
+:::tip
+This section is optional. There is no need to go through this process if your iris and pupils are fine during eye tracking.
+:::
 
 ### Make eye sockets deeper (Experimental)
 

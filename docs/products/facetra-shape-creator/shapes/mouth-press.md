@@ -4,17 +4,10 @@ sidebar_position: 5
 
 # Mouth Press
 
-:::danger
-The documentation page is currently being written.
-:::
-
-:::warning
-**Are you familiar with making face tracking shapes?**
+:::warning[**Are you familiar with making face tracking shapes?**]
 
 If you are not familiar with creating shapes yourself, the [Unified Expressions documentation on VRCFaceTracking](https://docs.vrcft.io/docs/tutorial-avatars/tutorial-avatars-extras/unified-blendshapes)
 can be a good reference.
-
-Feel free to ask on Discord about it.
 :::
 
 Mouth press uses a special handle, as it involves pressing the lips together.
@@ -24,6 +17,6 @@ The meshes will be squished onto the lip.
 - Use the purple handles to define the radius around the lip. The purple line represents the location where the brush is at 50% of the maximum distance after which vertices will be unaffected.
 - Use the blue handle to choose how much the lips will be pressed together.
 
-<video controls muted width="816">
+<video controls muted>
     <source src={require('../img/shapes/Unity_UzoJzHx3LT.mp4').default}/>
 </video>
