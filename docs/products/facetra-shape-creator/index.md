@@ -14,7 +14,7 @@ This does not require VRChat to run. It has been tested to work on Unity 2019, a
 *To install without VRChat support, you must follow special installation instructions below.*
 :::
 
-# Download
+## Download
 
 The tool is available to [Patreon supporters](https://www.patreon.com/vr_hai), **but it is currently a work in progress** as part of the [Face Tracking Trials](https://www.notion.so/f4032b4827e146fe9d2d3776e5da0f3b?pvs=21).
 

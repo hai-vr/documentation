@@ -18,6 +18,12 @@ In your Scene view, make sure you have **Gizmos** shown, and move your Scene vie
 
 ![gizmos.png](img%2Fgizmos.png)
 
+### Facial structures
+
+The examples in this document will show three avatars (Karin, Foshunia, and Actias) as supporting examples.
+
+These three avatars have different facial structures. Use them as references for your own construction lines.
+
 ## Setup construction lines: Points
 
 ### Mouth Commissure
@@ -119,21 +125,21 @@ It is mainly used later for puffing the cheeks.
     <div className="col col--4 margin-bottom--lg">
         <div className="card">
             <div className="card__body">
-
+XXX
             </div>
         </div>
     </div>
     <div className="col col--4 margin-bottom--lg">
         <div className="card">
             <div className="card__body">
-
+YYY
             </div>
         </div>
     </div>
     <div className="col col--4 margin-bottom--lg">
         <div className="card">
             <div className="card__body">
-
+ZZZ
             </div>
         </div>
     </div>
@@ -176,10 +182,49 @@ The documentation page is currently being written.
 
 ### Jaw Puller
 
+The jaw puller is roughly located on your chin. It will be used to move the jaw of your avatar.
+
+- Do the same as previously described using the “Select Vertex…” button.
 
 ## Setup construction lines: Dividers
 
+Dividers provide hints on how to divide existing shapes in half.
+
 ### Eye Divider
+
+The eye divider splits the eye in half, so that there is the top half and the bottom half of the eye.
+
+This will be used to cut existing artist-authored blendshapes in half, so that you can derive new animations by combining existing blendshapes.
+
+- Press the “Select Vertex…” button and click somewhere in the middle of the eye.
+- Press “Stop” when you are done.
+- Move and rotate the gizmo to better match your eye shape.
+
+<div className="row">
+    <div className="col col--4 margin-bottom--lg">
+        <div className="card">
+            <div className="card__body">
+XXX
+            </div>
+        </div>
+    </div>
+    <div className="col col--4 margin-bottom--lg">
+        <div className="card">
+            <div className="card__body">
+YYY
+            </div>
+        </div>
+    </div>
+    <div className="col col--4 margin-bottom--lg">
+        <div className="card">
+            <div className="card__body">
+ZZZ
+            </div>
+        </div>
+    </div>
+</div>
+
+- Use the red cubic handle to shift the red parallel lines closer or further apart. The area inside that region will be smoothed when dividing the blendshapes. The lines need to be apart so that there is not an abrupt cut when dividing the blendshapes, but it must not go past the most sensitive parts of the top and bottom eyelids.
 
 ### Mouth Divider
 
