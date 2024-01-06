@@ -4,10 +4,6 @@ sidebar_position: -1
 
 # Install
 
-:::danger
-The documentation page is currently being written.
-:::
-
 :::tip
 This does not require VRChat to run. It has been tested to work on Unity 2019 and Unity 2022, and should work on newer versions.
 

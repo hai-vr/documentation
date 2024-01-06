@@ -1,9 +1,5 @@
 ﻿# My avatar already has face tracking
 
-:::danger
-The documentation page is currently being written.
-:::
-
 If your avatar already has face tracking, you can use FaceTra Shape Creator to partially overwrite existing face tracking blendshapes.
 
 You can use this to tweak some shapes that you are not satisfied with.

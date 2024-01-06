@@ -5,7 +5,7 @@ sidebar_position: 7
 # Non-standard blendshapes
 
 :::danger
-The documentation page is currently being written.
+The page is currently being written.
 :::
 
 Although FaceTra shape creator can create many of the [standard face tracking blendshapes](https://docs.vrcft.io/docs/tutorial-avatars/tutorial-avatars-extras/unified-blendshapes),
