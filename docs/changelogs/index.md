@@ -14,6 +14,8 @@ The changelogs of some products aren't available at this time.
 
 |                                                                     | Version               | Last update |
 |---------------------------------------------------------------------|-----------------------|-------------|
+| **Applications**                                                    |                       |             |
+| [VRWare](./changelogs/vrware) (World)                               | 2024-01-07            | **2024-01** |
 | **Viewers**                                                         |                       |             |
 | [Lightbox Viewer](./changelogs/lightbox-viewer)                     | 2.0.2                 | 2023-11     |
 | [Animation Viewer](./changelogs/animation-viewer)                   | 2.0.3                 | 2023-11     |
