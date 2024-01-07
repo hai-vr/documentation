@@ -18,9 +18,11 @@ the community or natively, depending on your app.
 
 The blendshapes will be created automatically when you enter Play mode or when you build your avatar.
 
-:::warning
-If you use VRCFury **and simultaneously** use Avatars 3.0 Emulator, you must enable Avatars 3.0 Emulator’s “Run Preprocess Avatar Hook” to test the avatar in Play Mode.
-:::
+[//]: # (:::warning)
+
+[//]: # (If you use VRCFury **and simultaneously** use Avatars 3.0 Emulator, you must enable Avatars 3.0 Emulator’s “Run Preprocess Avatar Hook” to test the avatar in Play Mode.)
+
+[//]: # (:::)
 
 ### Use in-game
 
