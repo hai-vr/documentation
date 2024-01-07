@@ -28,7 +28,6 @@ Systematically press the “Reset position and rotation” buttons to fix the sh
 - Rotate the gizmo to twist the vertices.
 - Use the purple cubic handle to increase the range of the selection (the size of the brush).
   The purple circle represents the location where the brush is at 50% of the maximum distance after which vertices will be unaffected.
-
 - The curve in the inspector defines how the vertices are smoothed. The default value should be fine for most, but in some cases like Lip Funnel,
 - Lip Pucker, Mouth Upper Up, Mouth Lower Down, and some others, you may want to look into changing that shape.
 

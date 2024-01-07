@@ -194,7 +194,7 @@ The jaw puller is roughly located on your chin. It will be used to move the jaw 
         <div className="card">
             <div className="card__body">
 ![actias.png](img%2Fconstruction%2F5_jawpuller%2Factias.png)
-*On furry avatars have a long face structure, put it on the tip of the bottom jaw.*
+*On furry avatars that have a long face structure, put it on the tip of the bottom jaw.*
             </div>
         </div>
     </div>
