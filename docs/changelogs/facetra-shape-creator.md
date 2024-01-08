@@ -2,6 +2,16 @@
 title: FaceTra Shape Creator
 ---
 
+## 0.5.0
+
+- Add option for a less greedy vertex selection:
+  - On some models, the tongue may share vertices with the rest of the face.
+  - Add an option on each vertex selection section to switch to a less greedy vertex selection.
+
+- The documentation has been moved from Notion to [this location](/docs/products/facetra-shape-creator),
+  with additional illustrations.
+
+
 ## 0.4.0-2024-01-05-0349
 
 - Change mesh calibration to support meshes that have a non-zero origin (offset).
