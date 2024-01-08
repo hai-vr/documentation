@@ -2,7 +2,7 @@
 title: FaceTra Shape Creator
 ---
 
-## 0.5.0
+## 0.5.0-2024-01-08-0549
 
 - Add option for a less greedy vertex selection:
   - On some models, the tongue may share vertices with the rest of the face.
