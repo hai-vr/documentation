@@ -2,11 +2,33 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://docs.hai-vr.dev/updates</id>
     <title>Haï~ Blog</title>
-    <updated>2024-01-05T04:00:00.000Z</updated>
+    <updated>2024-01-08T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://docs.hai-vr.dev/updates"/>
     <subtitle>Haï~ Blog</subtitle>
     <icon>https://docs.hai-vr.dev/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[✨ FaceTra Shape Creator V0.5]]></title>
+        <id>https://docs.hai-vr.dev/updates/2024/01/08/p0</id>
+        <link href="https://docs.hai-vr.dev/updates/2024/01/08/p0"/>
+        <updated>2024-01-08T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[- Add option for a less greedy vertex selection:]]></summary>
+        <content type="html"><![CDATA[<ul>
+<li>
+<p>Add option for a less greedy vertex selection:</p>
+<ul>
+<li>On some models, the tongue may share vertices with the rest of the face.</li>
+<li>Add an option on each vertex selection section to switch to a less greedy vertex selection.</li>
+</ul>
+</li>
+<li>
+<p>The documentation has been moved from Notion to <a href="https://docs.hai-vr.dev/docs/products/facetra-shape-creator">this location</a>,
+with additional illustrations.</p>
+</li>
+</ul>
+<p>🔍 <a href="https://docs.hai-vr.dev/docs/changelogs/facetra-shape-creator#050">View changelog</a></p>
+<p>🗒️ <a href="https://docs.hai-vr.dev/docs/products/facetra-shape-creator">Open documentation</a></p>]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[✨ FaceTra Shape Creator V0.4]]></title>
         <id>https://docs.hai-vr.dev/updates/2024/01/05/p1</id>
@@ -293,16 +315,5 @@ and many more shader features are affected by the altered mesh surfaces.</p>
 <li>Fix the UI should no longer crash if a toggled object/component is removed from the scene.</li>
 </ul>
 <p>🗒️ <a href="https://docs.hai-vr.dev/docs/products/vixen">Open documentation</a></p>]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[☀️ Vixen (⭐)]]></title>
-        <id>https://docs.hai-vr.dev/updates/2023/10/21/p0</id>
-        <link href="https://docs.hai-vr.dev/updates/2023/10/21/p0"/>
-        <updated>2023-10-21T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[I am releasing "Vixen", a Unity Editor tool that provides another approach to create interactive elements and toggles on your avatar.]]></summary>
-        <content type="html"><![CDATA[<p>I am releasing "Vixen", a Unity Editor tool that provides another approach to create interactive elements and toggles on your avatar.</p>
-<p>Thank you for your support! ⭐</p>
-<p>🗒️ <a href="https://docs.hai-vr.dev/docs/products/vixen">Open documentation</a></p>
-<video controls="" width="816"><source src="/assets/medias/2023-10-21-p0-vixen-demo-f-58e702e4271170aaa8193995d99ac54d.mp4"></video>]]></content>
     </entry>
 </feed>

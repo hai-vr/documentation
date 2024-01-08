@@ -4,10 +4,32 @@
         <title>Haï~ Blog</title>
         <link>https://docs.hai-vr.dev/updates</link>
         <description>Haï~ Blog</description>
-        <lastBuildDate>Fri, 05 Jan 2024 04:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 08 Jan 2024 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[✨ FaceTra Shape Creator V0.5]]></title>
+            <link>https://docs.hai-vr.dev/updates/2024/01/08/p0</link>
+            <guid>https://docs.hai-vr.dev/updates/2024/01/08/p0</guid>
+            <pubDate>Mon, 08 Jan 2024 00:00:00 GMT</pubDate>
+            <description><![CDATA[- Add option for a less greedy vertex selection:]]></description>
+            <content:encoded><![CDATA[<ul>
+<li>
+<p>Add option for a less greedy vertex selection:</p>
+<ul>
+<li>On some models, the tongue may share vertices with the rest of the face.</li>
+<li>Add an option on each vertex selection section to switch to a less greedy vertex selection.</li>
+</ul>
+</li>
+<li>
+<p>The documentation has been moved from Notion to <a href="https://docs.hai-vr.dev/docs/products/facetra-shape-creator">this location</a>,
+with additional illustrations.</p>
+</li>
+</ul>
+<p>🔍 <a href="https://docs.hai-vr.dev/docs/changelogs/facetra-shape-creator#050">View changelog</a></p>
+<p>🗒️ <a href="https://docs.hai-vr.dev/docs/products/facetra-shape-creator">Open documentation</a></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[✨ FaceTra Shape Creator V0.4]]></title>
             <link>https://docs.hai-vr.dev/updates/2024/01/05/p1</link>
@@ -294,17 +316,6 @@ and many more shader features are affected by the altered mesh surfaces.</p>
 <li>Fix the UI should no longer crash if a toggled object/component is removed from the scene.</li>
 </ul>
 <p>🗒️ <a href="https://docs.hai-vr.dev/docs/products/vixen">Open documentation</a></p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[☀️ Vixen (⭐)]]></title>
-            <link>https://docs.hai-vr.dev/updates/2023/10/21/p0</link>
-            <guid>https://docs.hai-vr.dev/updates/2023/10/21/p0</guid>
-            <pubDate>Sat, 21 Oct 2023 00:00:00 GMT</pubDate>
-            <description><![CDATA[I am releasing "Vixen", a Unity Editor tool that provides another approach to create interactive elements and toggles on your avatar.]]></description>
-            <content:encoded><![CDATA[<p>I am releasing "Vixen", a Unity Editor tool that provides another approach to create interactive elements and toggles on your avatar.</p>
-<p>Thank you for your support! ⭐</p>
-<p>🗒️ <a href="https://docs.hai-vr.dev/docs/products/vixen">Open documentation</a></p>
-<video controls="" width="816"><source src="/assets/medias/2023-10-21-p0-vixen-demo-f-58e702e4271170aaa8193995d99ac54d.mp4"></video>]]></content:encoded>
         </item>
     </channel>
 </rss>
