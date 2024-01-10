@@ -1,5 +1,6 @@
 ﻿---
 unlisted: true
+sidebar_position: 2
 ---
 
 # Cross-Control Effects
@@ -34,6 +35,7 @@ In this documentation page, we will use two similar terms to describe distinct c
 When a control is **Active**, the effects of that control will be visible: Objects will be toggled, properties will change, etc.
 
 It is possible for the user to **Switch ON** a control without causing any effect to be visible if the additional conditions are not satisfied.
+Therefore, a control can be *Switched ON* and still remain *Inactive*.
 
 
 ## Item slots
@@ -45,6 +47,10 @@ The simplest form of cross-control effect is an item slot.
 - One of the items of that slot can be set to be Default. If none of the items in that slot is active, then this slot will be switched ON.
 - A control can belong to multiple item slots.
 
+![Unity_bnsUCjNr33.png](img%2Fcce%2FUnity_bnsUCjNr33.png)
+
+*Pictured above: This control is part of the Outer item slot. Whenever this control becomes active, all other items in the Outer item slot will be switched OFF.*
+
 ### When to use it?
 
 An item slot is best used for items of the same category that occupy the same space, where only one of those items may be visible at once time.
@@ -54,6 +60,10 @@ An item slot is best used for items of the same category that occupy the same sp
 ### How to use
 
 TODO
+
+:::tip
+You can reuse the same *Vixen Item Slot* assets across different unrelated avatars.
+:::
 
 
 ## Flags
@@ -83,12 +93,20 @@ Flags can be used when multiple items change the same properties of a object.
 
 TODO
 
+:::tip
+You can reuse the same *Vixen Flag* assets across different unrelated avatars.
+:::
+
 
 ## Ejects
 
 Ejects can handle situations that aren't covered by flags or item slots.
 
 - When a control with an eject **becomes** active, other controls of your choice will be switched ON or OFF.
+
+![Unity_b9eNE22OLp.png](img%2Fcce%2FUnity_b9eNE22OLp.png)
+
+*Pictured above: When this control becomes active, this will switch a clothing item ON, and switch three other clothing items OFF.*
 
 ### When to use it?
 
