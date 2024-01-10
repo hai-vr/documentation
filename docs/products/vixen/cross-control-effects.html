@@ -5,7 +5,7 @@
 <meta name="generator" content="Docusaurus v3.0.0">
 <title data-rh="true">Cross-Control Effects | Haï~</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://docs.hai-vr.dev/img/hai-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://docs.hai-vr.dev/img/hai-social-card.jpg"><meta data-rh="true" property="og:url" content="https://docs.hai-vr.dev/docs/products/vixen/cross-control-effects"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Cross-Control Effects | Haï~"><meta data-rh="true" name="description" content="Sometimes you may want a control to affect another control."><meta data-rh="true" property="og:description" content="Sometimes you may want a control to affect another control."><meta data-rh="true" name="robots" content="noindex, nofollow"><link data-rh="true" rel="icon" href="/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://docs.hai-vr.dev/docs/products/vixen/cross-control-effects"><link data-rh="true" rel="alternate" href="https://docs.hai-vr.dev/docs/products/vixen/cross-control-effects" hreflang="en"><link data-rh="true" rel="alternate" href="https://docs.hai-vr.dev/docs/products/vixen/cross-control-effects" hreflang="x-default"><link rel="alternate" type="application/rss+xml" href="/updates/rss.xml" title="Haï~ RSS Feed">
 <link rel="alternate" type="application/atom+xml" href="/updates/atom.xml" title="Haï~ Atom Feed"><link rel="stylesheet" href="/assets/css/styles.65e60896.css">
-<script src="/assets/js/runtime~main.6e5dddf4.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.f70aa737.js" defer="defer"></script>
 <script src="/assets/js/main.cdc307f4.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -14,41 +14,112 @@
 <p>We&#x27;ve split those into three major categories: <strong>Item slots, Flags, and Ejects</strong>.</p>
 <ul>
 <li>
-<p>If a control toggles an item that completely replaces the item of another control, you may want to switch the other controls off.</p>
+<p><strong>Item slots:</strong> If a control toggles an item that completely replaces the item of another control, you may want to switch the other controls off.</p>
 <ul>
 <li>Those controls belong to the same <strong>Item slot</strong>.</li>
-<li>Example: You can&#x27;t wear a sweater and a kimono at the same time.</li>
+<li>Example: A crop-top and a sweater shouldn&#x27;t be worn at the same time.</li>
+<li>Example: A bra and a bikini shouldn&#x27;t be worn at the same time.</li>
 </ul>
 </li>
 <li>
-<p>If a control toggles an item that is drawn on top of an item of another control, you may want to hide the other item <strong>without switching the other control off</strong>.</p>
+<p><strong>Flags:</strong> If a control toggles an item that is drawn on top of an item of another control, you may want to hide the other item <strong>without switching the other control off</strong>.</p>
 <ul>
 <li>That control raises a <strong>Flag</strong> that the other control listens to.</li>
-<li>Example: You can wear a sweater and a bra at the same time, but the bra is not visible when the sweater is active.</li>
+<li>Example:<!-- -->
+<ul>
+<li>You can wear a crop-top and a bra/bikini at the same time, and the bra/bikini still remains visible.</li>
+<li>You can wear a sweater and a bra/bikini at the same time, but the bra/bikini is not visible when the sweater is active.</li>
+<li>However, if you take off your sweater, then either the bra or the bikini should show back up.</li>
+</ul>
+</li>
 </ul>
 </li>
 <li>
-<p>A control may be used to switch other controls on and off.</p>
+<p><strong>Ejects:</strong> A control may be used to switch other controls on and off.</p>
 <ul>
 <li>That control <strong>Ejects and Sets</strong> other controls.</li>
-<li>Example: You may want a button that, when clicked, sets all of your clothing to be themed for Valentine&#x27;s Day, and ejects all items that are out of theme.</li>
+<li>Example: You can create a button that, when clicked, sets all of your clothing to be a swimsuit, and ejects all items that are not normally worn with a swimsuit.</li>
 </ul>
 </li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="switched-on-and-active-are-different-things">&quot;Switched ON&quot; and &quot;Active&quot; are different things<a href="#switched-on-and-active-are-different-things" class="hash-link" aria-label="Direct link to &quot;Switched ON&quot; and &quot;Active&quot; are different things" title="Direct link to &quot;Switched ON&quot; and &quot;Active&quot; are different things">​</a></h2>
-<p>There is an important distinction to be made first between a control being &quot;Switched ON&quot; and a control being &quot;Active&quot;.</p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="switched-on-and-conditions--active">&quot;Switched ON&quot; AND &quot;Conditions&quot; =&gt; &quot;Active&quot;<a href="#switched-on-and-conditions--active" class="hash-link" aria-label="Direct link to &quot;Switched ON&quot; AND &quot;Conditions&quot; =&gt; &quot;Active&quot;" title="Direct link to &quot;Switched ON&quot; AND &quot;Conditions&quot; =&gt; &quot;Active&quot;">​</a></h3>
-<p>The toggles and properties that you define in a control play when the control is &quot;Active&quot;.
-Generally, the control becomes &quot;Active&quot; when the user &quot;Switches ON&quot; that control.</p>
-<p>However, when a control is &quot;Switched ON&quot;, it does not necessarily mean that the control becomes &quot;Active&quot;.
-For a control to be &quot;Active&quot;, the control must be &quot;Switched ON&quot;, while simultaneously the additional conditions of the control must pass.</p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="cross-control-effects-are-tied-to-active">Cross-Control Effects are tied to &quot;Active&quot;<a href="#cross-control-effects-are-tied-to-active" class="hash-link" aria-label="Direct link to Cross-Control Effects are tied to &quot;Active&quot;" title="Direct link to Cross-Control Effects are tied to &quot;Active&quot;">​</a></h3>
-<p>The three major categories of Cross-Control Effects trigger when the control becomes &quot;Active&quot;:</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="active-and-switch-on">&quot;Active&quot; and &quot;Switch ON&quot;<a href="#active-and-switch-on" class="hash-link" aria-label="Direct link to &quot;Active&quot; and &quot;Switch ON&quot;" title="Direct link to &quot;Active&quot; and &quot;Switch ON&quot;">​</a></h2>
+<p>In this documentation page, we will use two similar terms to describe distinct concepts:</p>
 <ul>
-<li>The control replaces the item in the slot <em>when the control becomes active</em>; not necessarily when the control is switched on in the menu.</li>
-<li>The control raises the flags <em>when the control becomes active</em>; not necessarily when the control is switched on in the menu.</li>
-<li>The control ejects and sets other control <em>when the control becomes active</em>; not necessarily when the control is switched on in the menu.</li>
-</ul></div></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages"></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#switched-on-and-active-are-different-things" class="table-of-contents__link toc-highlight">&quot;Switched ON&quot; and &quot;Active&quot; are different things</a><ul><li><a href="#switched-on-and-conditions--active" class="table-of-contents__link toc-highlight">&quot;Switched ON&quot; AND &quot;Conditions&quot; =&gt; &quot;Active&quot;</a></li><li><a href="#cross-control-effects-are-tied-to-active" class="table-of-contents__link toc-highlight">Cross-Control Effects are tied to &quot;Active&quot;</a></li></ul></li></ul></div></div></div></div></main></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="col footer__col"><div class="footer__title">Docs</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/docs/products">Products</a></li><li class="footer__item"><a class="footer__link-item" href="/docs/resilience">ResilienceVR</a></li><li class="footer__item"><a class="footer__link-item" href="/updates">What&#x27;s new?</a></li></ul></div><div class="col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://www.patreon.com/vr_hai" target="_blank" rel="noopener noreferrer" class="footer__link-item">Patreon<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://hai-vr.fanbox.cc/" target="_blank" rel="noopener noreferrer" class="footer__link-item">pixivFANBOX<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://twitter.com/vr_hai" target="_blank" rel="noopener noreferrer" class="footer__link-item">Twitter<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a class="footer__link-item" href="/docs/other/discord">Discord</a></li></ul></div><div class="col footer__col"><div class="footer__title">More</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://github.com/hai-vr/" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://hai-vr.dev/" target="_blank" rel="noopener noreferrer" class="footer__link-item">hai-vr.dev<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2024 Invitational Software. Built with Docusaurus.</div></div></div><br><div class="centerline_SA5j" data-theme="dark"><p>Thank you to all of my supporters on Patreon ⭐</p><div class="card element_KzhA sp_qcMM k10_P0Dq ias_qO18">☀️ <!-- -->Jordo</div>
+<li>A control is <strong>Switched ON</strong> when the user toggles the item on the Menu ON.</li>
+<li>A control is <strong>Active</strong> when the control is simultaneously <em>Switched ON</em> <strong>and</strong> additional conditions of the control are satisfied.</li>
+</ul>
+<p>When a control is <strong>Active</strong>, the effects of that control will be visible: Objects will be toggled, properties will change, etc.</p>
+<p>It is possible for the user to <strong>Switch ON</strong> a control without causing any effect to be visible if the additional conditions are not satisfied.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="item-slots">Item slots<a href="#item-slots" class="hash-link" aria-label="Direct link to Item slots" title="Direct link to Item slots">​</a></h2>
+<p>The simplest form of cross-control effect is an item slot.</p>
+<ul>
+<li>Only one control can be active with that item slot.</li>
+<li>When a control of that item slot becomes active, all the other items in that slot will be switched OFF.</li>
+<li>One of the items of that slot can be set to be Default. If none of the items in that slot is active, then this slot will be switched ON.</li>
+<li>A control can belong to multiple item slots.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="when-to-use-it">When to use it?<a href="#when-to-use-it" class="hash-link" aria-label="Direct link to When to use it?" title="Direct link to When to use it?">​</a></h3>
+<p>An item slot is best used for items of the same category that occupy the same space, where only one of those items may be visible at once time.</p>
+<ul>
+<li>Example: A crop-top and a sweater shouldn&#x27;t be worn at the same time.</li>
+<li>Example: A bra and a bikini shouldn&#x27;t be worn at the same time.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="how-to-use">How to use<a href="#how-to-use" class="hash-link" aria-label="Direct link to How to use" title="Direct link to How to use">​</a></h3>
+<p>TODO</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="flags">Flags<a href="#flags" class="hash-link" aria-label="Direct link to Flags" title="Direct link to Flags">​</a></h2>
+<p>Flags provide an opportunity to handle visibility interactions between items.</p>
+<ul>
+<li>Controls can raise flags as long as they&#x27;re active.<!-- -->
+<ul>
+<li>Multiple controls can raise the same flag simultaneously.</li>
+<li>The flag is lowered down when no control is raising that flag.</li>
+</ul>
+</li>
+<li>Other controls can listen to a flag as part of their additional conditions.<!-- -->
+<ul>
+<li>The flag becomes a requirement for that other control to become active.</li>
+<li>There is also a Control mode which only listens to a flag.</li>
+</ul>
+</li>
+<li>Flags do not switch any control ON or OFF (however see <a href="#ejects">Ejects</a> section below).</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="when-to-use-it-1">When to use it?<a href="#when-to-use-it-1" class="hash-link" aria-label="Direct link to When to use it?" title="Direct link to When to use it?">​</a></h3>
+<p>Flags can be used when the items of a control needs to remain inactive while still keeping the control switched ON.</p>
+<ul>
+<li>Example:<!-- -->
+<ul>
+<li>You can wear a crop-top and a bra/bikini at the same time, and the bra/bikini still remains visible.</li>
+<li>You can wear a sweater and a bra/bikini at the same time, but the bra/bikini is not visible when the sweater is active.</li>
+<li>However, if you take off your sweater, then either the bra or the bikini should show back up.</li>
+</ul>
+</li>
+</ul>
+<p>Flags can be used when multiple items change the same properties of a object.</p>
+<ul>
+<li>Example: A crop-top and a sweater should change a conflict prevention blendshape of the body.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="how-to-use-1">How to use<a href="#how-to-use-1" class="hash-link" aria-label="Direct link to How to use" title="Direct link to How to use">​</a></h3>
+<p>TODO</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="ejects">Ejects<a href="#ejects" class="hash-link" aria-label="Direct link to Ejects" title="Direct link to Ejects">​</a></h2>
+<p>Ejects can handle situations that aren&#x27;t covered by flags or item slots.</p>
+<ul>
+<li>When a control with an eject <strong>becomes</strong> active, other controls of your choice will be switched ON or OFF.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="when-to-use-it-2">When to use it?<a href="#when-to-use-it-2" class="hash-link" aria-label="Direct link to When to use it?" title="Direct link to When to use it?">​</a></h3>
+<p>Ejects can be used for item sets:</p>
+<ul>
+<li>Example: You can create a button that, when clicked, sets all of your clothing to be a swimsuit, and ejects all items that are not normally worn with a swimsuit.</li>
+</ul>
+<p>Ejects can be used for turning specific objects ON or OFF.</p>
+<ul>
+<li>Example: You can make it so that when a specific summer-themed dress becomes active, then a specific summer-themed hat will be switched ON.</li>
+</ul>
+<p>Ejects can be used alongside flags to turn specific objects ON or OFF.</p>
+<ul>
+<li>Example: You can make it so that when some specific items raise a flag, then a specific item will be switched OFF.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="how-to-use-2">How to use<a href="#how-to-use-2" class="hash-link" aria-label="Direct link to How to use" title="Direct link to How to use">​</a></h3>
+<p>TODO</p></div></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages"></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#active-and-switch-on" class="table-of-contents__link toc-highlight">&quot;Active&quot; and &quot;Switch ON&quot;</a></li><li><a href="#item-slots" class="table-of-contents__link toc-highlight">Item slots</a><ul><li><a href="#when-to-use-it" class="table-of-contents__link toc-highlight">When to use it?</a></li><li><a href="#how-to-use" class="table-of-contents__link toc-highlight">How to use</a></li></ul></li><li><a href="#flags" class="table-of-contents__link toc-highlight">Flags</a><ul><li><a href="#when-to-use-it-1" class="table-of-contents__link toc-highlight">When to use it?</a></li><li><a href="#how-to-use-1" class="table-of-contents__link toc-highlight">How to use</a></li></ul></li><li><a href="#ejects" class="table-of-contents__link toc-highlight">Ejects</a><ul><li><a href="#when-to-use-it-2" class="table-of-contents__link toc-highlight">When to use it?</a></li><li><a href="#how-to-use-2" class="table-of-contents__link toc-highlight">How to use</a></li></ul></li></ul></div></div></div></div></main></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="col footer__col"><div class="footer__title">Docs</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/docs/products">Products</a></li><li class="footer__item"><a class="footer__link-item" href="/docs/resilience">ResilienceVR</a></li><li class="footer__item"><a class="footer__link-item" href="/updates">What&#x27;s new?</a></li></ul></div><div class="col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://www.patreon.com/vr_hai" target="_blank" rel="noopener noreferrer" class="footer__link-item">Patreon<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://hai-vr.fanbox.cc/" target="_blank" rel="noopener noreferrer" class="footer__link-item">pixivFANBOX<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://twitter.com/vr_hai" target="_blank" rel="noopener noreferrer" class="footer__link-item">Twitter<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a class="footer__link-item" href="/docs/other/discord">Discord</a></li></ul></div><div class="col footer__col"><div class="footer__title">More</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://github.com/hai-vr/" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://hai-vr.dev/" target="_blank" rel="noopener noreferrer" class="footer__link-item">hai-vr.dev<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2024 Invitational Software. Built with Docusaurus.</div></div></div><br><div class="centerline_SA5j" data-theme="dark"><p>Thank you to all of my supporters on Patreon ⭐</p><div class="card element_KzhA sp_qcMM k10_P0Dq ias_qO18">☀️ <!-- -->Jordo</div>
 <div class="card element_KzhA sp_qcMM k5_NYOb ias_qO18">🌟 <!-- -->bd_</div>
 <div class="card element_KzhA sp_qcMM k3_DDJv ias_qO18">⭐ <!-- -->Vianvolaeus</div>
 <div class="card element_KzhA sp_qcMM k3_DDJv ias_qO18">⭐ <!-- -->Nayir</div>
