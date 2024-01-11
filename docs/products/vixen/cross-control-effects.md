@@ -134,7 +134,7 @@ There are several ways, depending on your flag type:
       - Make sure the Type is set to **Listen To Flag**.
       - Assign the Flag to that field.
       - If you want the control to become active when that flag is raised (while the control is switched ON), then make sure the Operator is set to **Is True**.
-      - If you want the control to remain inactive when that flag is raised (while the control is switched ON), then set the Operator to **Is False**.
+      - If you want the control to become or remain inactive when that flag is raised (while the control is switched ON), then set the Operator to **Is False**.
 
 - If you want to create a new control that listens to **multiple** flags, then:
   - Create a new Control, and instead of a Menu, set the control mode to **Conditional**.
