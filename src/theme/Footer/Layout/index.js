@@ -2,6 +2,7 @@ import React from 'react';
 import clsx from 'clsx';
 
 import PatreonPlus from '@site/src/pages/internal/patreonplus.mdx'
+import PatreonMore from '@site/src/pages/internal/patreonmore.json'
 import patreonStyles from '@site/src/pages/patreon.module.css';
 import {Patronelt} from '@site/src/components/Patronelt';
 
@@ -16,7 +17,7 @@ export default function FooterLayout({style, links, logo, copyright}) {
         footer = <div className={clsx(patreonStyles.centerline)} data-theme="dark">
             <p>Thank you to all of my supporters on Patreon ⭐</p>
             <PatreonPlus />
-            <Patronelt>⭐ and more <a href="/docs/other/supporters" className={clsx(patreonStyles.footerlink)}>Patreon Supporters ...</a></Patronelt>
+            <Patronelt k="-1">⭐ and <strong>{PatreonMore.regactive}</strong> more <strong><a href="/docs/other/supporters" className={clsx(patreonStyles.footerlink)}>Patreon Supporters ...</a></strong></Patronelt>
         </div>
     }
     

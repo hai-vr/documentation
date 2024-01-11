@@ -14,6 +14,7 @@ export function Patronelt({k, ias, sp, children}: Props): JSX.Element {
     return (
         <div className={clsx('card',
             styles.element,
+            (k == -1 ? styles.andmore : undefined),
             (sp == 1 ? styles.sp : undefined),
             (k == 10 ? styles.k10 : undefined),
             (k == 5 ? styles.k5 : undefined),

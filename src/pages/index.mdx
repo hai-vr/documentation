@@ -16,6 +16,7 @@ import patreonStyles from './patreon.module.css';
 import {Patronelt} from '@site/src/components/Patronelt';
 import PatreonPlus from '@site/src/pages/internal/patreonplus.mdx'
 import PatreonReg from '@site/src/pages/internal/patreonreg.mdx'
+import PatreonMore from '@site/src/pages/internal/patreonmore.json'
 
 <header className={clsx('hero hero--primary', styles.heroBanner)}>
     <div className="container">
@@ -39,7 +40,7 @@ import PatreonReg from '@site/src/pages/internal/patreonreg.mdx'
 <div className={clsx(patreonStyles.centerline)}>
 <p>*Thank you to all of my supporters on [Patreon](/docs/other/patreon)* ⭐</p>
 <PatreonPlus />
-<Patronelt>**⭐ and more [Patreon Supporters ...](/docs/other/supporters)**</Patronelt>
+<Patronelt k="-1">⭐ and **{PatreonMore.regactive}** more **[Patreon Supporters ...](/docs/other/supporters)**</Patronelt>
 </div>
 
 <br />
