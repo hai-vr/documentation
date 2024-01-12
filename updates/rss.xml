@@ -4,10 +4,22 @@
         <title>Haï~ Blog</title>
         <link>https://docs.hai-vr.dev/updates</link>
         <description>Haï~ Blog</description>
-        <lastBuildDate>Fri, 12 Jan 2024 19:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 13 Jan 2024 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[⚙️ Vixen V1.0.1]]></title>
+            <link>https://docs.hai-vr.dev/updates/2024/01/13/p0</link>
+            <guid>https://docs.hai-vr.dev/updates/2024/01/13/p0</guid>
+            <pubDate>Sat, 13 Jan 2024 00:00:00 GMT</pubDate>
+            <description><![CDATA[- Try to fix accidental incompatibility with Unity 2019. This update is not necessary if you are on Unity 2022.]]></description>
+            <content:encoded><![CDATA[<ul>
+<li>Try to fix accidental incompatibility with Unity 2019. This update is not necessary if you are on Unity 2022.</li>
+</ul>
+<p>🔍 <a href="https://docs.hai-vr.dev/docs/changelogs/vixen#101">View changelog</a></p>
+<p>🗒️ <a href="https://docs.hai-vr.dev/docs/products/vixen/cross-control-effects">Open documentation</a></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[✨ Blendshape Viewer V2.1.0]]></title>
             <link>https://docs.hai-vr.dev/updates/2024/01/12/p1</link>
@@ -308,20 +320,6 @@ and many more shader features are affected by the altered mesh surfaces.</p>
 </ul>
 <p>🗒️ <a href="https://docs.hai-vr.dev/docs/products/facetra-shape-creator">Open documentation</a></p>
 <video controls="" width="816"><source src="/assets/medias/2023-11-12-p0-2023-11-12_19-51-20_ShareX-b40acc23d4126e50d18517565684de15.mp4"></video>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[✨ FaceTra Shape Creator V0.1]]></title>
-            <link>https://docs.hai-vr.dev/updates/2023/11/09/p0</link>
-            <guid>https://docs.hai-vr.dev/updates/2023/11/09/p0</guid>
-            <pubDate>Thu, 09 Nov 2023 00:00:00 GMT</pubDate>
-            <description><![CDATA[- Jaw* optionally excludes the upper mouth]]></description>
-            <content:encoded><![CDATA[<ul>
-<li>Jaw* optionally excludes the upper mouth</li>
-<li>Meshes exported with different scale now supported</li>
-<li>LookIn/LookOut can now be built from LookLeft/LookRight</li>
-<li>Newtonsoft.Json no longer required for Resonite export</li>
-</ul>
-<p>🗒️ <a href="https://docs.hai-vr.dev/docs/products/facetra-shape-creator">Open documentation</a></p>]]></content:encoded>
         </item>
     </channel>
 </rss>
