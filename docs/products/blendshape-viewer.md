@@ -54,6 +54,7 @@ The tool is free for download. It can also be downloaded using VCC.
 - **Use Compute Shader**: Accelerates difference calculation when checked.
 - **Thumbnail Size**: Size of the pictures.
 - **Update button**: Click to refresh the pictures.
+- **Search**: Filter the results further by adding search terms. You can separate search terms with a space, so the search query `eye down` can find results such as `eye_lookdown`.
 
 ## Additional notes
 
@@ -68,6 +69,7 @@ The tool is free for download. It can also be downloaded using VCC.
 </video>
 
 - The text of the blendshape labels can be selected and copied.
+- Press the icon next to the blendshape to copy the name your clipboard.
 
 ![Untitled](blendshape-viewer-img/Untitled%206.png)
 

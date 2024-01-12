@@ -2,6 +2,12 @@
 title: Blendshape Viewer
 ---
 
+## 2.1.0
+
+Add Search and Copy to Clipboard:
+- Add a Search field.
+- Add Copy to Clipboard button.
+
 ## 2.0.3
 
 - Fix an issue where avatars would fail to upload.

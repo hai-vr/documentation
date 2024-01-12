@@ -19,7 +19,7 @@ The changelogs of some products aren't available at this time.
 | **Viewers**                                                         |                       |             |
 | [Lightbox Viewer](./changelogs/lightbox-viewer)                     | 2.0.2                 | 2023-11     |
 | [Animation Viewer](./changelogs/animation-viewer)                   | 2.0.3                 | 2023-11     |
-| [Blendshape Viewer](./changelogs/blendshape-viewer)                 | 2.0.3                 | 2023-11     |
+| [Blendshape Viewer](./changelogs/blendshape-viewer)                 | 2.1.0                 | **2024-01** |
 | [Property Finder](./changelogs/property-finder)                     | 2.0.3                 | 2023-11     |
 | [BlendTree Viewer](./changelogs/blendtree-viewer)                   | 1.0.7                 | 2023-11     |
 | **Editors**                                                         |                       |             |
