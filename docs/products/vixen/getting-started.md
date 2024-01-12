@@ -94,6 +94,7 @@ Move the slider of the property to change the value. You can also choose a value
 
 - If the button on the right says "When active", it means the value will be changed to that value when the menu is active.
 - If the button on the right says "When inactive", it means the value will be changed to that value when the menu is inactive.
+- Press that button to switch between the two.
 
 ### Change all renderers of the avatar at once
 
