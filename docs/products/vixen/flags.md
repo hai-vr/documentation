@@ -37,7 +37,7 @@ Flags provide an opportunity to handle visibility interactions between items.
     - There is also a Control mode which only listens to a flag.
 - Flags do not switch any control ON or OFF (however see [Ejects](#ejects) section below).
 
-### When to use it?
+## When to use it?
 
 Flags can be used when the items of a control needs to remain inactive while still keeping the control switched ON.
 - Example:
@@ -48,7 +48,7 @@ Flags can be used when the items of a control needs to remain inactive while sti
 Flags can be used when multiple items change the same properties of a object.
 - Example: A crop-top and a sweater should change a conflict prevention blendshape of the body.
 
-### How to use
+## How to use
 
 To use flags, first we need to create a Flag, and then we need to assign it to the items that should raise that flag.
 

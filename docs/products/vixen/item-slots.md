@@ -35,13 +35,13 @@ The simplest form of cross-control effect is an item slot.
 
 *Pictured above: This control is part of the Outer item slot. Whenever this control becomes active, all other items in the Outer item slot will be switched OFF.*
 
-### When to use it?
+## When to use it?
 
 An item slot is best used for items of the same category that occupy the same space, where only one of those items may be visible at once time.
 - Example: A crop-top and a sweater shouldn't be worn at the same time.
 - Example: A bra and a bikini shouldn't be worn at the same time.
 
-### How to use
+## How to use
 
 To use item slots, first we need to create an Item Slot, and then we need to assign it to the items that belong in this item slot.
 

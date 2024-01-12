@@ -36,7 +36,7 @@ Ejects can handle situations that aren't covered by flags or item slots.
 Ejects do not permanently switch other slots ON or OFF; the other controls are switched when the current control **becomes** active (or when it becomes inactive).
 :::
 
-### When to use it?
+## When to use it?
 
 Ejects can be used for item sets:
 - Example: You can create a button that, when clicked, sets all of your clothing to be a swimsuit, and ejects all items that are not normally worn with a swimsuit.
@@ -47,7 +47,7 @@ Ejects can be used for turning specific objects ON or OFF.
 Ejects can be used alongside flags to turn specific objects ON or OFF.
 - Example: You can make it so that when some specific items raise a flag, then a specific item will be switched OFF.
 
-### How to use
+## How to use
 
 - In one of your controls:
   - In the *Ejects and Sets* panel:
