@@ -19,9 +19,9 @@
 <li>Add a Search field.</li>
 <li>Add Copy to Clipboard button next to each blendshape.</li>
 </ul>
-<video controls=""><source src="/assets/medias/2024-01-12-p1-7BbtsLNQac-211c3051e5804d4ecb71c55d980d8c8e.mp4"></video>
 <p>🔍 <a href="https://docs.hai-vr.dev/docs/changelogs/blendshape-viewer#210">View changelog</a></p>
-<p>🗒️ <a href="https://docs.hai-vr.dev/docs/products/blendshape-viewer">Open documentation</a></p>]]></content:encoded>
+<p>🗒️ <a href="https://docs.hai-vr.dev/docs/products/blendshape-viewer">Open documentation</a></p>
+<video controls=""><source src="/assets/medias/2024-01-12-p1-7BbtsLNQac-211c3051e5804d4ecb71c55d980d8c8e.mp4"></video>]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[✨ Vixen V1.0]]></title>
@@ -62,6 +62,16 @@ with additional illustrations.</p>
 </ul>
 <p>🔍 <a href="https://docs.hai-vr.dev/docs/changelogs/facetra-shape-creator#050-2024-01-08-0549">View changelog</a></p>
 <p>🗒️ <a href="https://docs.hai-vr.dev/docs/products/facetra-shape-creator">Open documentation</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[☕ VRWare Fonts update]]></title>
+            <link>https://docs.hai-vr.dev/updates/2024/01/07/p0-c</link>
+            <guid>https://docs.hai-vr.dev/updates/2024/01/07/p0-c</guid>
+            <pubDate>Sun, 07 Jan 2024 00:00:00 GMT</pubDate>
+            <description><![CDATA[VRWare has been updated with additional fonts to support community translations.]]></description>
+            <content:encoded><![CDATA[<p>VRWare has been updated with additional fonts to support community translations.</p>
+<p>🔍 <a href="https://docs.hai-vr.dev/docs/changelogs/vrware#2024-01-07---fonts-update">View changelog</a></p>
+<p><img loading="lazy" alt="2024-01-07-p0-c-VRChat_2024-01-07_05-27-54.204_1920x1080.png" src="https://docs.hai-vr.dev/assets/images/2024-01-07-p0-c-VRChat_2024-01-07_05-27-54.204_1920x1080-2d72653e0b2567c1e50610d9350bde02.png" width="1920" height="1080" class="img_ev3q"></p>]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[✨ FaceTra Shape Creator V0.4]]></title>
@@ -125,8 +135,8 @@ with additional illustrations.</p>
 <p>A new component, <a href="https://docs.hai-vr.dev/docs/products/prefabulous-avatar/hai-components/assign-uv-tile">Assign UV Tile</a>, has been added to Prefabulous Avatar.</p>
 <p>If you use Poiyomi Toon shader, this new component can be used in tandem
 with <a href="https://www.poiyomi.com/special-fx/uv-tile-discard" target="_blank" rel="noopener noreferrer">Poiyomi Toon "Special FX &gt; UV Tile Discard"</a> to toggle portions of a model on and off at runtime.</p>
-<video controls="" muted="" width="816"><source src="/assets/medias/13rQ7HGwPr-ec5d550ea5727a70033b65daa55d19b7.mp4"></video>
 <p>🗒️ <a href="https://docs.hai-vr.dev/docs/products/prefabulous-avatar/hai-components/assign-uv-tile">Open documentation</a></p>
+<video controls="" muted="" width="816"><source src="/assets/medias/13rQ7HGwPr-ec5d550ea5727a70033b65daa55d19b7.mp4"></video>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="update-delete-polygons">Update <a href="https://docs.hai-vr.dev/docs/products/prefabulous-avatar/hai-components/delete-polygons">Delete Polygons</a><a href="https://docs.hai-vr.dev/updates/2024/01/02/p0#update-delete-polygons" class="hash-link" aria-label="Direct link to update-delete-polygons" title="Direct link to update-delete-polygons">​</a></h3>
 <p>Delete Polygons now has an option to keep the polygons that are still connected to the mesh.</p>
 <p>On blendshapes that shrink the body, this preserves the end caps, so the blendshape still has an effect on the mesh.</p>
@@ -142,9 +152,9 @@ with <a href="https://www.poiyomi.com/special-fx/uv-tile-discard" target="_blank
             <content:encoded><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="new-component-delete-polygons">New component: <a href="https://docs.hai-vr.dev/docs/products/prefabulous-avatar/hai-components/delete-polygons">Delete Polygons</a><a href="https://docs.hai-vr.dev/updates/2023/12/31/p0#new-component-delete-polygons" class="hash-link" aria-label="Direct link to new-component-delete-polygons" title="Direct link to new-component-delete-polygons">​</a></h3>
 <p>A new component, <a href="https://docs.hai-vr.dev/docs/products/prefabulous-avatar/hai-components/delete-polygons">Delete Polygons</a>, has been added to Prefabulous Avatar.</p>
 <p>Use it to delete polygons affected by conflict prevention blendshapes, and other unused decorations hidden inside the mesh.</p>
-<p><img loading="lazy" alt="delete-polygons-compare.png" src="https://docs.hai-vr.dev/assets/images/delete-polygons-compare-ab931bc24ce5fe7296442930e49c7ce5.png" width="1247" height="807" class="img_ev3q"></p>
 <p>🗒️ <a href="https://docs.hai-vr.dev/docs/products/prefabulous-avatar/hai-components/delete-polygons">Open documentation</a></p>
-<p>🔍 <a href="https://docs.hai-vr.dev/docs/changelogs/prefabulous-avatar#160">View changelog</a></p>]]></content:encoded>
+<p>🔍 <a href="https://docs.hai-vr.dev/docs/changelogs/prefabulous-avatar#160">View changelog</a></p>
+<p><img loading="lazy" alt="delete-polygons-compare.png" src="https://docs.hai-vr.dev/assets/images/delete-polygons-compare-ab931bc24ce5fe7296442930e49c7ce5.png" width="1247" height="807" class="img_ev3q"></p>]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[☀️ Generate Blendshapes for Face Tracking Extensions (Prefabulous V1.5)]]></title>
@@ -310,19 +320,6 @@ and many more shader features are affected by the altered mesh surfaces.</p>
 <li>Meshes exported with different scale now supported</li>
 <li>LookIn/LookOut can now be built from LookLeft/LookRight</li>
 <li>Newtonsoft.Json no longer required for Resonite export</li>
-</ul>
-<p>🗒️ <a href="https://docs.hai-vr.dev/docs/products/facetra-shape-creator">Open documentation</a></p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[✨ FaceTra Shape Creator V0.0.5]]></title>
-            <link>https://docs.hai-vr.dev/updates/2023/11/08/p0</link>
-            <guid>https://docs.hai-vr.dev/updates/2023/11/08/p0</guid>
-            <pubDate>Wed, 08 Nov 2023 00:00:00 GMT</pubDate>
-            <description><![CDATA[- If your model already has face tracking, you can select which shapes to override]]></description>
-            <content:encoded><![CDATA[<ul>
-<li>If your model already has face tracking, you can select which shapes to override</li>
-<li>⚠️ Fix MouthLowerDown, MouthUpperUp, and symmetry issues on all Eye* shapes and CheekSquint</li>
-<li>⚠️ MouthClosed has new handles</li>
 </ul>
 <p>🗒️ <a href="https://docs.hai-vr.dev/docs/products/facetra-shape-creator">Open documentation</a></p>]]></content:encoded>
         </item>
