@@ -4,10 +4,6 @@ title: Vixen
 
 ## 1.0.0
 
-:::warning
-This is a planned release, and hasn't been released yet.
-:::
-
 Although the version number is now V1 instead of V0, this is not a breaking change (I don't want the major version to be zero any longer).
 Existing components are the same, and you will not lose your work.
 
