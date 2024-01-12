@@ -2,6 +2,10 @@
 title: Vixen
 ---
 
+## 1.0.1
+
+- Try to fix accidental incompatibility with Unity 2019. This update is not necessary if you are on Unity 2022.
+
 ## 1.0.0
 
 Although the version number is now V1 instead of V0, this is not a breaking change (I don't want the major version to be zero any longer).
