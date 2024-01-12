@@ -2,11 +2,44 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://docs.hai-vr.dev/updates</id>
     <title>Haï~ Blog</title>
-    <updated>2024-01-08T00:00:00.000Z</updated>
+    <updated>2024-01-12T19:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://docs.hai-vr.dev/updates"/>
     <subtitle>Haï~ Blog</subtitle>
     <icon>https://docs.hai-vr.dev/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[✨ Blendshape Viewer V2.1.0]]></title>
+        <id>https://docs.hai-vr.dev/updates/2024/01/12/p1</id>
+        <link href="https://docs.hai-vr.dev/updates/2024/01/12/p1"/>
+        <updated>2024-01-12T19:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Add Search and Copy to Clipboard:]]></summary>
+        <content type="html"><![CDATA[<p>Add Search and Copy to Clipboard:</p>
+<ul>
+<li>Add a Search field.</li>
+<li>Add Copy to Clipboard button next to each blendshape.</li>
+</ul>
+<video controls=""><source src="/assets/medias/2024-01-12-p1-7BbtsLNQac-211c3051e5804d4ecb71c55d980d8c8e.mp4"></video>
+<p>🔍 <a href="https://docs.hai-vr.dev/docs/changelogs/blendshape-viewer#210">View changelog</a></p>
+<p>🗒️ <a href="https://docs.hai-vr.dev/docs/products/blendshape-viewer">Open documentation</a></p>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[✨ Vixen V1.0]]></title>
+        <id>https://docs.hai-vr.dev/updates/2024/01/12/p0</id>
+        <link href="https://docs.hai-vr.dev/updates/2024/01/12/p0"/>
+        <updated>2024-01-12T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[This is a significant update.]]></summary>
+        <content type="html"><![CDATA[<p>This is a <strong>significant</strong> update.</p>
+<p>Controls can now affect other controls using <strong>Item slots, Flags, and Ejects</strong>.</p>
+<ul>
+<li>They can switch other menus ON or OFF.</li>
+<li>They can make other controls active or inactive, without switching that menu ON or OFF.</li>
+</ul>
+<p>Although the version number is now V1 instead of V0, this is not a breaking change (I don't want the major version to be zero any longer).
+Existing components are the same, and you will not lose your work.</p>
+<p>🔍 <a href="https://docs.hai-vr.dev/docs/changelogs/vixen#100">View changelog</a></p>
+<p>🗒️ <a href="https://docs.hai-vr.dev/docs/products/vixen/cross-control-effects">Open documentation</a></p>
+<p><img loading="lazy" alt="2024-01-12-p0-Fm4J7w3YFD.png" src="https://docs.hai-vr.dev/assets/images/2024-01-12-p0-Fm4J7w3YFD-7e356f582a4a51527e01093affb40484.png" width="1052" height="566" class="img_ev3q"></p>]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[✨ FaceTra Shape Creator V0.5]]></title>
         <id>https://docs.hai-vr.dev/updates/2024/01/08/p0</id>
@@ -291,29 +324,5 @@ and many more shader features are affected by the altered mesh surfaces.</p>
 <li>⚠️ MouthClosed has new handles</li>
 </ul>
 <p>🗒️ <a href="https://docs.hai-vr.dev/docs/products/facetra-shape-creator">Open documentation</a></p>]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[☀️ FaceTra Shape Creator (⭐)]]></title>
-        <id>https://docs.hai-vr.dev/updates/2023/11/07/p0</id>
-        <link href="https://docs.hai-vr.dev/updates/2023/11/07/p0"/>
-        <updated>2023-11-07T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[The early access for "Haï's FaceTra Shape Creator" tool is starting now for Patreon supporters ⭐]]></summary>
-        <content type="html"><![CDATA[<p>The early access for "Haï's FaceTra Shape Creator" tool is starting now for Patreon supporters ⭐</p>
-<p>During those trials, the tool will be rough to use, and it is strongly recommended that you join Discord when using the tool. Thank you! ✨</p>
-<p>🗒️ <a href="https://docs.hai-vr.dev/docs/products/facetra-shape-creator">Open documentation</a></p>
-<video controls="" width="816"><source src="/assets/medias/2023-11-07-p0-haolan-facetra-test-f-fc9d4ba5286fd473422310af4ea4745e.mp4"></video>]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[✨ Vixen V0.1]]></title>
-        <id>https://docs.hai-vr.dev/updates/2023/10/27/p0</id>
-        <link href="https://docs.hai-vr.dev/updates/2023/10/27/p0"/>
-        <updated>2023-10-27T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[I have updated Vixen to V0.1.0, this is a small change:]]></summary>
-        <content type="html"><![CDATA[<p>I have updated Vixen to V0.1.0, this is a small change:</p>
-<ul>
-<li>If you change a material property that affects all SkinnedMeshRenderers on the avatar, it will now also affect all MeshRenderers.</li>
-<li>Fix the UI should no longer crash if a toggled object/component is removed from the scene.</li>
-</ul>
-<p>🗒️ <a href="https://docs.hai-vr.dev/docs/products/vixen">Open documentation</a></p>]]></content>
     </entry>
 </feed>
