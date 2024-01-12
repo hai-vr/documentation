@@ -92,8 +92,8 @@ When done, press the _ button at the top right to minimize the search.
 
 Move the slider of the property to change the value. You can also choose a value out of range of the slider by editing the number above the slider.
 
-- The checkbox on the left means the value will be changed to that value when the menu is turned on.
-- If that checkbox is ticked off, it means the value will be changed to that value when the menu is turned off.
+- If the button on the right says "When active", it means the value will be changed to that value when the menu is active.
+- If the button on the right says "When inactive", it means the value will be changed to that value when the menu is inactive.
 
 ### Change all renderers of the avatar at once
 
