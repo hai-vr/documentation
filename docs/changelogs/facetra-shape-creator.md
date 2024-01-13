@@ -2,7 +2,7 @@
 title: FaceTra Shape Creator
 ---
 
-## V0.5.1-2024-01-13-1051
+## 0.5.1-2024-01-13-1051
 
 Try to fix an issue with direction vectors when the avatar has an offset:
 - Direction vectors may have been miscalculated in avatars that have an offset.
