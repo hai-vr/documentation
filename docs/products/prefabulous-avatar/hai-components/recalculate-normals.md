@@ -47,8 +47,6 @@ You should use Recalculate Normals on the following blendshapes:
 
 ## Option: Erase Custom Split Normals
 
-*This feature was added in 1.4.0*.
-
 The original mesh may have been edited with custom split normals, which means the artist has manually edited the normals to improve the shading on the base pose.
 
 Most of the time, these custom split normals won't cause an issue on blendshapes, but in **rare cases**, these custom split normals might
@@ -61,6 +59,10 @@ Enabling Erase Custom Split Normals will erase the custom split normals data on 
 
 The custom split normals data remains intact on the mesh when the specified blendshapes are inactive.
 
+![erase-split-normals.png](..%2Fimg%2Ferase-split-normals.png)
+
+*Top: Erase Custom Split Normals enabled. Bottom: Not active<br />In this case, the lower portion was affected by custom split normals. Enabling Erase Custom Split Normals in this specific case can improve the shading by removing the smudges and inadequate surface direction in some areas.*
+
 :::danger
 Enabling Erase Custom Split Normals can lead to **worse results** in meshes that don't have custom split normals.
 
@@ -69,7 +71,7 @@ Only give this a try on blendshapes where shading defects are clearly visible on
 In all other cases, **keep this option off!**
 :::
 
-In such cases, you can try the following to see if it improves it:
+If you suspect that custom split normals negatively affects your shading, you can try the following to see if it improves it:
 
 - Create **another** "PA-H Recalculate Normals" component on your avatar. 
   - You are allowed to add that component multiple times on the same object.
