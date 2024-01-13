@@ -2,6 +2,10 @@
 title: Blendshape Viewer
 ---
 
+## 2.1.1
+
+- Fix error when no mesh was selected.
+
 ## 2.1.0
 
 Add Search and Copy to Clipboard:

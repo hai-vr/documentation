@@ -19,12 +19,12 @@ The changelogs of some products aren't available at this time.
 | **Viewers**                                                         |                       |             |
 | [Lightbox Viewer](./changelogs/lightbox-viewer)                     | 2.0.2                 | 2023-11     |
 | [Animation Viewer](./changelogs/animation-viewer)                   | 2.0.3                 | 2023-11     |
-| [Blendshape Viewer](./changelogs/blendshape-viewer)                 | 2.1.0                 | **2024-01** |
+| [Blendshape Viewer](./changelogs/blendshape-viewer)                 | 2.1.1                 | **2024-01** |
 | [Property Finder](./changelogs/property-finder)                     | 2.0.3                 | 2023-11     |
 | [BlendTree Viewer](./changelogs/blendtree-viewer)                   | 1.0.7                 | 2023-11     |
 | **Editors**                                                         |                       |             |
 | [ComboGestureExpressions](./changelogs/combo-gesture-expressions)   | 3.1.5102              | 2023-12     |
-| [FaceTra Shape Creator](./changelogs/facetra-shape-creator)         | 0.4.0-2024-01-05-0349 | **2024-01** |
+| [FaceTra Shape Creator](./changelogs/facetra-shape-creator)         | 0.5.1-2024-01-13-1051 | **2024-01** |
 | [Prefabulous Avatar](./changelogs/prefabulous-avatar)               | 1.7.1                 | **2024-01** |
 | [Visual Expressions Editor](./changelogs/visual-expressions-editor) | 2.0.3                 | 2023-11     |
 | [Vixen](./changelogs/vixen)                                         | 1.0.1                 | **2024-01** |

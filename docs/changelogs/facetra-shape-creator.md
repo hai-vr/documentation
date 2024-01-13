@@ -2,6 +2,13 @@
 title: FaceTra Shape Creator
 ---
 
+## V0.5.1-2024-01-13-1051
+
+Try to fix an issue with direction vectors when the avatar has an offset:
+- Direction vectors may have been miscalculated in avatars that have an offset.
+- Direction vectors are now converted between spaces by converting the start and end position between spaces.
+
+
 ## 0.5.0-2024-01-08-0549
 
 - Add option for a less greedy vertex selection:
