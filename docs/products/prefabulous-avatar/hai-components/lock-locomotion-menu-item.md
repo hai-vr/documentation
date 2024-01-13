@@ -19,7 +19,7 @@ To use this component:
 
 ### Notes for regular Modular Avatar users
 
-If you are a regular Modular Avatar user, this component is equivalent to a [Modular Avatar Menu Item](https://modular-avatar.nadena.dev/docs/reference/menu-item).
+If you are a regular Modular Avatar user, this component behaves similarly to a [Modular Avatar Menu Item](https://modular-avatar.nadena.dev/docs/reference/menu-item).
 
 You can follow the same rules as if you were dealing with a Modular Avatar Menu Item.
 
