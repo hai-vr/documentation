@@ -2,20 +2,42 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://docs.hai-vr.dev/updates</id>
     <title>Haï~ Blog</title>
-    <updated>2024-01-13T00:00:00.000Z</updated>
+    <updated>2024-01-13T11:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://docs.hai-vr.dev/updates"/>
     <subtitle>Haï~ Blog</subtitle>
     <icon>https://docs.hai-vr.dev/img/favicon.ico</icon>
     <entry>
+        <title type="html"><![CDATA[⚙️ Blendshape Viewer V2.1.1]]></title>
+        <id>https://docs.hai-vr.dev/updates/2024/01/13/p2</id>
+        <link href="https://docs.hai-vr.dev/updates/2024/01/13/p2"/>
+        <updated>2024-01-13T11:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Fix an error when no mesh was selected.]]></summary>
+        <content type="html"><![CDATA[<p>Fix an error when no mesh was selected.</p>
+<p>🔍 <a href="https://docs.hai-vr.dev/docs/changelogs/blendshape-viewer#211">View changelog</a></p>
+<p>🗒️ <a href="https://docs.hai-vr.dev/docs/products/blendshape-viewer">Open documentation</a></p>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[⚙️ FaceTra Shape Creator V0.5.1]]></title>
+        <id>https://docs.hai-vr.dev/updates/2024/01/13/p1</id>
+        <link href="https://docs.hai-vr.dev/updates/2024/01/13/p1"/>
+        <updated>2024-01-13T10:00:00.000Z</updated>
+        <summary type="html"><![CDATA[There may have been an issue preventing the tool from being usable on avatars that have a position offset]]></summary>
+        <content type="html"><![CDATA[<p>There may have been an issue preventing the tool from being usable on avatars that have a position offset
+(when the avatar root is not at the origin in the FBX).</p>
+<p>The main visible effect was that dividers would not function properly.</p>
+<p>This patch attempts to fix that issue.</p>
+<p>🔍 <a href="https://docs.hai-vr.dev/docs/changelogs/facetra-shape-creator#051-2024-01-13-1051">View changelog</a></p>
+<p>🗒️ <a href="https://docs.hai-vr.dev/docs/products/facetra-shape-creator">Open documentation</a></p>]]></content>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[⚙️ Vixen V1.0.1]]></title>
         <id>https://docs.hai-vr.dev/updates/2024/01/13/p0</id>
         <link href="https://docs.hai-vr.dev/updates/2024/01/13/p0"/>
         <updated>2024-01-13T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[- Try to fix accidental incompatibility with Unity 2019. This update is not necessary if you are on Unity 2022.]]></summary>
-        <content type="html"><![CDATA[<ul>
-<li>Try to fix accidental incompatibility with Unity 2019. This update is not necessary if you are on Unity 2022.</li>
-</ul>
+        <summary type="html"><![CDATA[Try to fix accidental incompatibility with Unity 2019.]]></summary>
+        <content type="html"><![CDATA[<p>Try to fix accidental incompatibility with Unity 2019.</p>
+<p>This update is not necessary if you are on Unity 2022.</p>
 <p>🔍 <a href="https://docs.hai-vr.dev/docs/changelogs/vixen#101">View changelog</a></p>
 <p>🗒️ <a href="https://docs.hai-vr.dev/docs/products/vixen/cross-control-effects">Open documentation</a></p>]]></content>
     </entry>
@@ -292,32 +314,5 @@ and many more shader features are affected by the altered mesh surfaces.</p>
         <content type="html"><![CDATA[<p>I am releasing "Lightbox Viewer", "Animation Viewer", "Blendshape Viewer", "Visual Expressions Editor", and "Property Finder" to my VCC listing ✨</p>
 <p>Additional free tools such as ComboGestureExpressions will soon be available there too 📚</p>
 <p>🗒️ <a href="https://docs.hai-vr.dev/docs/products#vcc-listing">Open documentation</a></p>]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[✨ FaceTra Shape Creator V0.3: Deepen Eye Socket]]></title>
-        <id>https://docs.hai-vr.dev/updates/2023/11/13/p0</id>
-        <link href="https://docs.hai-vr.dev/updates/2023/11/13/p0"/>
-        <updated>2023-11-13T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[I've added an experimental option to let you modify the eye socket so that it is deeper.]]></summary>
-        <content type="html"><![CDATA[<p>I've added an experimental option to let you modify the eye socket so that it is deeper.</p>
-<p>This could help on avatars that were not designed with extreme eye angles, which can commonly happen with eye tracking 👀</p>
-<p>🗒️ <a href="https://docs.hai-vr.dev/docs/products/facetra-shape-creator">Open documentation</a></p>
-<video controls="" width="816"><source src="/assets/medias/2023-11-12-p0-deepen-f-9be8e28579c111fa2661ab159ad56427.mp4"></video>]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[✨ FaceTra Shape Creator V0.2]]></title>
-        <id>https://docs.hai-vr.dev/updates/2023/11/12/p0</id>
-        <link href="https://docs.hai-vr.dev/updates/2023/11/12/p0"/>
-        <updated>2023-11-12T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[- Split Upper and Lower Teeth]]></summary>
-        <content type="html"><![CDATA[<ul>
-<li>Split Upper and Lower Teeth</li>
-<li>Lower Jaw movement can affect the tongue and Lower Teeth</li>
-<li>Nose can be excluded from Mouth Left/Right</li>
-<li>Neck can be ignored on merged meshes</li>
-<li>Some Mouth shapes can reuse blendshapes</li>
-</ul>
-<p>🗒️ <a href="https://docs.hai-vr.dev/docs/products/facetra-shape-creator">Open documentation</a></p>
-<video controls="" width="816"><source src="/assets/medias/2023-11-12-p0-2023-11-12_19-51-20_ShareX-b40acc23d4126e50d18517565684de15.mp4"></video>]]></content>
     </entry>
 </feed>
