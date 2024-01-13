@@ -114,7 +114,7 @@ In the Menu category, you can choose other modes:
 - **Simplified Menu** shows the essentials of a menu.
 - **Advanced Menu** shows all options of a menu, including the parameter name, and whether it is synced.
 - **Export Animations** disables the menu, and lets your export the animations to files every time the avatar is being built, so that you may be able to use these animations inside other animators.
-- Do not use **Conditional** for now, as it will be developed further in later versions.
+- **Conditional** is explained in the next few documentation pages (the Flags section), and lets you combine multiple conditions.
 - **OSC** is a like an invisible menu item. You will need to control it using an OSC program. You **must not** use this for Contacts or PhysBones.
 - **Contact** lets you use a VRC Contact to control the animation.
 - **PhysBone** lets you use a VRC PhysBone to control the animation.
