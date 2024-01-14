@@ -13,6 +13,7 @@ import patreonStyles from './patreon.module.css';
 import {Patronelt} from '@site/src/components/Patronelt';
 import PatreonPlus from '@site/src/pages/internal/patreonplus.mdx'
 import PatreonReg from '@site/src/pages/internal/patreonreg.mdx'
+import PatreonMore from '@site/src/pages/internal/patreonmore.json'
 
 import Gallery from '@site/src/pages/gallery.mdx'
 import styles from './index.module.css';
@@ -52,7 +53,7 @@ I create tools and content on social VR apps.<br/>Creativity drives me.
 <div className={clsx(patreonStyles.centerline)}>
 <p>*Thank you to all of my supporters on [Patreon](/docs/other/patreon)* ⭐</p>
 <PatreonPlus />
-<Patronelt>**⭐ and more [Patreon Supporters ...](/docs/other/supporters)**</Patronelt>
+<Patronelt k="-1">⭐ {PatreonMore.plusactive} and **{PatreonMore.regactive}** more **[Patreon Supporters ...](/docs/other/supporters)**</Patronelt>
 </div>
 
 <br />
