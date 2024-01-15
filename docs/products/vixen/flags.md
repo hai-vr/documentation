@@ -11,6 +11,7 @@ If a control toggles an item that is drawn on top of an item of another control,
     - You can wear a crop-top and a bra/bikini at the same time, and the bra/bikini still remains visible.
     - You can wear a sweater and a bra/bikini at the same time, but the bra/bikini is not visible when the sweater is active.
     - However, if you take off your sweater, then either the bra or the bikini should show back up.
+- Other example: A crop-top and a sweater should change a conflict prevention blendshape of the body.
 
 :::note
 In this documentation page, we will use two similar terms to describe distinct concepts:
@@ -39,7 +40,7 @@ Flags provide an opportunity to handle visibility interactions between items.
 
 ## When to use it?
 
-Flags can be used when the items of a control needs to remain inactive while still keeping the control switched ON.
+Flags can be used when the items of a control need to remain inactive while still keeping the control switched ON.
 - Example:
   - You can wear a crop-top and a bra/bikini at the same time, and the bra/bikini still remains visible.
   - You can wear a sweater and a bra/bikini at the same time, but the bra/bikini is not visible when the sweater is active.
