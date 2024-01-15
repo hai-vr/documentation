@@ -6,7 +6,7 @@ sidebar_position: 6
 
 FaceTra Shape Creator does only one thing: create face tracking blendshapes on your avatar.
 
-To make your avatar actually use of those fresh new blendshapes, you need to integrate with your
+To make your avatar actually make use of those fresh new blendshapes, you need to integrate with your
 preferred application (VRChat, Resonite, VSeeFace, ...).
 
 Integrations are not handled by FaceTra Shape Creator, but by other assets and tools created by either
