@@ -6,7 +6,9 @@ title: Assign UV Tile (UDIM)
 
 Sets the UV Tile of vertices that are moved by a blendshape.
 
-This is meant to be used in tandem with shader features, especially [Poiyomi Toon UV Tile Discard](https://www.poiyomi.com/special-fx/uv-tile-discard).
+This is meant to be used in tandem with shader features, especially:
+- [Poiyomi Toon UV Tile Discard](https://www.poiyomi.com/special-fx/uv-tile-discard),
+- [lilToon 1.7.1 and above using UV Tile Discard](https://twitter.com/lil_xyzw/status/1747601947069464752) since mid-January 2024.
 
 <video controls muted width="816">
     <source src={require('../img/13rQ7HGwPr.mp4').default}/>
@@ -16,17 +18,17 @@ This is meant to be used in tandem with shader features, especially [Poiyomi Too
 
 This component will assign the UV tile of vertices that are moved by a blendshape.
 
-This is meant to be used in tandem with shader features, especially [Poiyomi Toon UV Tile Discard](https://www.poiyomi.com/special-fx/uv-tile-discard),
+This is meant to be used in tandem with shader features, especially [Poiyomi Toon UV Tile Discard](https://www.poiyomi.com/special-fx/uv-tile-discard) and [lilToon UV Tile Discard](https://twitter.com/lil_xyzw/status/1747601947069464752) (since mid-January 2024),
 which in this case "*provides an efficient way to toggle portions of a model on and off at runtime*".
 
-- Using *[Poiyomi Toon UV Tile Discard](https://www.poiyomi.com/special-fx/uv-tile-discard)* makes this effectively similar to [Delete Polygons](./delete-polygons),
+- Using *[Poiyomi Toon](https://www.poiyomi.com/special-fx/uv-tile-discard)* or [lilToon](https://twitter.com/lil_xyzw/status/1747601947069464752) UV Tile Discard makes this effectively similar to [Delete Polygons](./delete-polygons),
 except that this will **not** lower your avatar polygon count; instead it will ease the rendering load when the toggle is off.
 - *If you do not animate the shader feature, use [Delete Polygons](./delete-polygons) instead, which will lower your avatar polygon count.*
 
 To use this component:
 - Add one or several "PA-H Assign UV Tile" component anywhere in your avatar.
 - Add blendshapes which move the polygons that you want shader features to affect. Any SkinnedMeshRenderer that has that blendshape will be affected.
-- For each component, assign the channel and the corresponding checkbox. The UI is built to closely mirror [Poiyomi Toon UV Tile Discard](https://www.poiyomi.com/special-fx/uv-tile-discard).
+- For each component, assign the channel and the corresponding checkbox. The UI is built to closely mirror [Poiyomi Toon UV Tile Discard](https://www.poiyomi.com/special-fx/uv-tile-discard), and [lilToon](https://twitter.com/lil_xyzw/status/1747601947069464752)'s layout is just as similar.
 
 Enter Play Mode or upload the avatar to test the results: as this is a non-destructive component, the original mesh remains intact.
 
@@ -47,6 +49,26 @@ please upgrade to Poiyomi Toon version 8.1 or higher.
 
 - Set the "UV Channel" to UV1, UV2, or UV3, so that it matches the "Discard UV" setting of your material.
 - Use the checkbox grid. The UI is built to closely mirror Poiyomi Toon UV Tile Discard.
+- Keep the "Existing UV Data" to *Do Not Clear*.
+  - If you are experiencing issues caused by an existing UV channel, change the UV channel, or set "Existing UV Data" to *Set to Zero*.
+
+:::danger
+Using UV0 with "UV Tile Discard" through this component is not recommended, because you cannot partially hide meshes that are part of the body flesh,
+as this would result in the texture visibly warping along the seams of the blendshape; in this case, use UV1, UV2, or UV3.
+
+That said, if you really want to use UV0, then set the "Existing UV Data" to *Shift*.
+:::
+
+### lilToon "UV Tile Discard"
+
+- If you use [lilToon UV Tile Discard](https://twitter.com/lil_xyzw/status/1747601947069464752)
+
+:::warning
+You must use lilToon 1.7.1 or above.
+:::
+
+- Set the "UV Channel" to UV1, UV2, or UV3, so that it matches the "Discard UV" setting of your material.
+- Use the checkbox grid to match your setting from the UV Tile Discard tab.
 - Keep the "Existing UV Data" to *Do Not Clear*.
   - If you are experiencing issues caused by an existing UV channel, change the UV channel, or set "Existing UV Data" to *Set to Zero*.
 
