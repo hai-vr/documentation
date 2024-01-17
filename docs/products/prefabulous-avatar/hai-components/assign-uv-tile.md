@@ -68,6 +68,7 @@ You must use lilToon 1.7.1 or above.
 :::
 
 - Set the "UV Channel" to UV1, UV2, or UV3, so that it matches the "Discard UV" setting of your material.
+  - It is **strongly recommended** that you switch the UV channel of the material to something other than UV0.
 - Use the checkbox grid to match your setting from the UV Tile Discard tab.
 - Keep the "Existing UV Data" to *Do Not Clear*.
   - If you are experiencing issues caused by an existing UV channel, change the UV channel, or set "Existing UV Data" to *Set to Zero*.
