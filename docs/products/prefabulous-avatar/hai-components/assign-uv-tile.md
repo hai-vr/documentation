@@ -61,7 +61,7 @@ That said, if you really want to use UV0, then set the "Existing UV Data" to *Sh
 
 ### lilToon "UV Tile Discard"
 
-- If you use [lilToon UV Tile Discard](https://twitter.com/lil_xyzw/status/1747601947069464752)
+- If you use [lilToon UV Tile Discard](https://twitter.com/lil_xyzw/status/1747601947069464752):
 
 :::warning
 You must use lilToon 1.7.1 or above.
