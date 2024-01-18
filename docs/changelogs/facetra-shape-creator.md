@@ -2,6 +2,11 @@
 title: FaceTra Shape Creator
 ---
 
+## 0.6.0-2024-01-18-0056
+
+- If your model already has face tracking blendshapes, you can now reuse the those existing blendshapes to build new shapes.
+  - Previously, using existing face tracking blendshapes was not supported as they were renamed before FaceTra creates its own blendshapes.
+
 ## 0.5.1-2024-01-13-1051
 
 Try to fix an issue with direction vectors when the avatar has an offset:
