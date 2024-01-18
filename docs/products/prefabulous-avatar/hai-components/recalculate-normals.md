@@ -97,7 +97,7 @@ If you see no improvement, cancel your changes and add your blendshape back to y
 
 ## Versions
 
-- **1.8.0** (Upcoming): Recalculate Normals should now properly work on avatars that were not posed like the model, or had a different orientation than the model.
+- **1.8.0**: Recalculate Normals should now properly work on avatars that were not posed like the model, or had a different orientation than the model.
 - **1.4.0**: Add "Erase Custom Split Normals" option.
 - **1.3.0**: Added.
 
