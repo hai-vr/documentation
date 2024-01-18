@@ -31,7 +31,7 @@ To use this component:
       - Keep the Mode to **"Blend Shapes"**.
       - Add blendshapes which move the polygons that you want shader features to affect. Any SkinnedMeshRenderer that has that blendshape will be affected.
     - If you want to affect the entire mesh:
-      - Keep the Mode to **"Entire Mesh"**.
+      - Set the Mode to **"Entire Mesh"**.
       - Click on *Meshes* to edit the list with the meshes you want to affect (or drag and drop meshes to it).
 - For each component, assign the channel and the corresponding checkbox. The UI is built to closely mirror [Poiyomi Toon UV Tile Discard](https://www.poiyomi.com/special-fx/uv-tile-discard), and [lilToon](https://twitter.com/lil_xyzw/status/1747601947069464752)'s layout is just as similar.
 
