@@ -4,7 +4,7 @@ title: Assign UV Tile (UDIM)
 
 # Assign UV Tile
 
-Sets the UV Tile of vertices that are moved by a blendshape.
+Sets the UV Tile of vertices that are moved by a blendshape, or optionally an entire mesh.
 
 This is meant to be used in tandem with shader features, especially:
 - [Poiyomi Toon UV Tile Discard](https://www.poiyomi.com/special-fx/uv-tile-discard),
@@ -16,7 +16,7 @@ This is meant to be used in tandem with shader features, especially:
 
 ## How to use
 
-This component will assign the UV tile of vertices that are moved by a blendshape.
+This component will assign the UV tile of vertices that are moved by a blendshape, or optionally an entire mesh.
 
 This is meant to be used in tandem with shader features, especially [Poiyomi Toon UV Tile Discard](https://www.poiyomi.com/special-fx/uv-tile-discard) and [lilToon UV Tile Discard](https://twitter.com/lil_xyzw/status/1747601947069464752) (since mid-January 2024),
 which in this case "*provides an efficient way to toggle portions of a model on and off at runtime*".
@@ -24,10 +24,15 @@ which in this case "*provides an efficient way to toggle portions of a model on 
 - Using *[Poiyomi Toon](https://www.poiyomi.com/special-fx/uv-tile-discard)* or [lilToon](https://twitter.com/lil_xyzw/status/1747601947069464752) UV Tile Discard makes this effectively similar to [Delete Polygons](./delete-polygons),
 except that this will **not** lower your avatar polygon count; instead it will ease the rendering load when the toggle is off.
 - *If you do not animate the shader feature, use [Delete Polygons](./delete-polygons) instead, which will lower your avatar polygon count.*
-
 To use this component:
 - Add one or several "PA-H Assign UV Tile" component anywhere in your avatar.
-- Add blendshapes which move the polygons that you want shader features to affect. Any SkinnedMeshRenderer that has that blendshape will be affected.
+- Then:
+    - If you want to affect some blendshapes:
+      - Keep the Mode to **"Blend Shapes"**.
+      - Add blendshapes which move the polygons that you want shader features to affect. Any SkinnedMeshRenderer that has that blendshape will be affected.
+    - If you want to affect the entire mesh:
+      - Keep the Mode to **"Entire Mesh"**.
+      - Click on *Meshes* to edit the list with the meshes you want to affect (or drag and drop meshes to it).
 - For each component, assign the channel and the corresponding checkbox. The UI is built to closely mirror [Poiyomi Toon UV Tile Discard](https://www.poiyomi.com/special-fx/uv-tile-discard), and [lilToon](https://twitter.com/lil_xyzw/status/1747601947069464752)'s layout is just as similar.
 
 Enter Play Mode or upload the avatar to test the results: as this is a non-destructive component, the original mesh remains intact.
@@ -113,6 +118,9 @@ This might help with some avatar models, however, this will have no effect on bl
 
 ## Versions
 
+- **1.9.0**:
+    - Assign UV Tile can now assign the **entire mesh** to an UV Tile.
+    - NDMF Compatibility: This component now runs before `com.anatawa12.avatar-optimizer` in order to make sure meshes are not merged and blendshapes are not lost before this runs.
 - **1.7.0**: Added.
 
 Classification: *This component is application-agnostic.*

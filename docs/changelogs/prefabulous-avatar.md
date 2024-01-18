@@ -2,6 +2,21 @@
 title: Prefabulous Avatar
 ---
 
+## 1.9.0
+
+### Update [Assign UV Tile](/docs/products/prefabulous-avatar/hai-components/assign-uv-tile)
+
+Add "Entire Mesh" mode to "Assign UV Tile":
+- UV Tile can now be assigned to an entire MeshRenderer or SkinnedMeshRenderer.
+- There is now a mode selection between BlendShapes and EntireMesh.
+- If a mesh is used by both a EntireMesh component and a BlendShapes component, EntireMesh is applied first, so that the BlendShapes components can further refine into other UV tiles.
+
+(NDMF Compatibility) Make sure UV Tile assignments are done before any large scale mesh optimization causes a loss of reference:
+- Delete Polygons now runs before com.anatawa12.avatar-optimizer
+- Assign UV Tile now runs before com.anatawa12.avatar-optimizer
+
+![2024-01-18-p2-Unity_OLXaqgjeBM.png](..%2F..%2Fupdates%2Fimg%2F2024-01-18-p2-Unity_OLXaqgjeBM.png)
+
 ## 1.8.0
 
 ### Update [Recalculate Normals](/docs/products/prefabulous-avatar/hai-components/recalculate-normals)
