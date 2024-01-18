@@ -4,10 +4,20 @@
         <title>Haï~ Blog</title>
         <link>https://docs.hai-vr.dev/updates</link>
         <description>Haï~ Blog</description>
-        <lastBuildDate>Sat, 13 Jan 2024 11:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 18 Jan 2024 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[✨ FaceTra Shape Creator V0.6.0]]></title>
+            <link>https://docs.hai-vr.dev/updates/2024/01/18/p0</link>
+            <guid>https://docs.hai-vr.dev/updates/2024/01/18/p0</guid>
+            <pubDate>Thu, 18 Jan 2024 00:00:00 GMT</pubDate>
+            <description><![CDATA[The tool now supports the reuse of existing face tracking blendshapes to build new shapes.]]></description>
+            <content:encoded><![CDATA[<p>The tool now supports the reuse of existing face tracking blendshapes to build new shapes.</p>
+<p>🔍 <a href="https://docs.hai-vr.dev/docs/changelogs/facetra-shape-creator#060-2024-01-18-0056">View changelog</a></p>
+<p>🗒️ <a href="https://docs.hai-vr.dev/docs/products/facetra-shape-creator">Open documentation</a></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[⚙️ Blendshape Viewer V2.1.1]]></title>
             <link>https://docs.hai-vr.dev/updates/2024/01/13/p2</link>
@@ -305,16 +315,6 @@ and many more shader features are affected by the altered mesh surfaces.</p>
             <content:encoded><![CDATA[<p>I am releasing "BlendTree Viewer", which lets you view large blend trees in a compact view.</p>
 <p>🗒️ <a href="https://docs.hai-vr.dev/docs/products/blendtree-viewer">Open documentation</a></p>
 <video controls="" width="816"><source src="/assets/medias/2023-11-17_00-10-56_ShareX-ac09a7438c7cc19945f32bf30e51967f.mp4"></video>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[⚙️ Lightbox Viewer, Animation Viewer, Blendshape Viewer, Visual Expressions Editor, and Property Finder for VCC]]></title>
-            <link>https://docs.hai-vr.dev/updates/2023/11/17/p1</link>
-            <guid>https://docs.hai-vr.dev/updates/2023/11/17/p1</guid>
-            <pubDate>Fri, 17 Nov 2023 00:00:00 GMT</pubDate>
-            <description><![CDATA[I am releasing "Lightbox Viewer", "Animation Viewer", "Blendshape Viewer", "Visual Expressions Editor", and "Property Finder" to my VCC listing ✨]]></description>
-            <content:encoded><![CDATA[<p>I am releasing "Lightbox Viewer", "Animation Viewer", "Blendshape Viewer", "Visual Expressions Editor", and "Property Finder" to my VCC listing ✨</p>
-<p>Additional free tools such as ComboGestureExpressions will soon be available there too 📚</p>
-<p>🗒️ <a href="https://docs.hai-vr.dev/docs/products#vcc-listing">Open documentation</a></p>]]></content:encoded>
         </item>
     </channel>
 </rss>
