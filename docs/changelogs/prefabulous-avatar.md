@@ -4,10 +4,6 @@ title: Prefabulous Avatar
 
 ## 1.8.0
 
-:::warning
-This is an upcoming update.
-:::
-
 ### Update [Recalculate Normals](/docs/products/prefabulous-avatar/hai-components/recalculate-normals)
 
 Recalculate Normals should now properly work on avatars that were not posed like the model, or had a different orientation than the model.
