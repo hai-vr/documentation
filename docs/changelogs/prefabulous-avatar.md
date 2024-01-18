@@ -17,6 +17,13 @@ Add "Entire Mesh" mode to "Assign UV Tile":
 
 ![2024-01-18-p2-Unity_OLXaqgjeBM.png](..%2F..%2Fupdates%2Fimg%2F2024-01-18-p2-Unity_OLXaqgjeBM.png)
 
+:::tip
+"Entire Mesh" should be used alongside an avatar optimization tool that will merge existing meshes, such as [d4rkpl4y3r's d4rkAvatarOptimizer](https://github.com/d4rkc0d3r/d4rkAvatarOptimizer)
+or [anatawa12's AvatarOptimizer](https://github.com/anatawa12/AvatarOptimizer).
+
+Prefabulous Avatar does not provide any mesh optimization components that rectifies animation paths at this time.
+:::
+
 ## 1.8.0
 
 ### Update [Recalculate Normals](/docs/products/prefabulous-avatar/hai-components/recalculate-normals)
