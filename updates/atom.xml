@@ -2,11 +2,22 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://docs.hai-vr.dev/updates</id>
     <title>Haï~ Blog</title>
-    <updated>2024-01-18T00:00:00.000Z</updated>
+    <updated>2024-01-18T10:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://docs.hai-vr.dev/updates"/>
     <subtitle>Haï~ Blog</subtitle>
     <icon>https://docs.hai-vr.dev/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[✨ Prefabulous Avatar V1.8]]></title>
+        <id>https://docs.hai-vr.dev/updates/2024/01/18/p1</id>
+        <link href="https://docs.hai-vr.dev/updates/2024/01/18/p1"/>
+        <updated>2024-01-18T10:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Update Recalculate Normals]]></summary>
+        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="update-recalculate-normals">Update <a href="https://docs.hai-vr.dev/docs/products/prefabulous-avatar/hai-components/recalculate-normals">Recalculate Normals</a><a href="https://docs.hai-vr.dev/updates/2024/01/18/p1#update-recalculate-normals" class="hash-link" aria-label="Direct link to update-recalculate-normals" title="Direct link to update-recalculate-normals">​</a></h3>
+<p>Recalculate Normals should now properly work on avatars that were not posed like the model, or had a different orientation than the model.</p>
+<p>🔍 <a href="https://docs.hai-vr.dev/docs/changelogs/prefabulous-avatar#180">View changelog</a></p>
+<p>🗒️ <a href="https://docs.hai-vr.dev/docs/products/prefabulous-avatar/hai-components/recalculate-normals">Open documentation</a></p>]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[✨ FaceTra Shape Creator V0.6.0]]></title>
         <id>https://docs.hai-vr.dev/updates/2024/01/18/p0</id>
@@ -304,15 +315,5 @@ and many more shader features are affected by the altered mesh surfaces.</p>
 <p>Did you forget to reset your OSC config, again? Once installed, this tool will automatically reset the OSC config after every successful VRChat avatar upload.</p>
 <p>🗒️ <a href="https://docs.hai-vr.dev/docs/products/auto-reset-osc-config">Open documentation</a></p>
 <video controls="" width="816"><source src="/assets/medias/auto-remove-osc-f-5f2d6aa200e8c32517926d678987ca78.mp4"></video>]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[☀️ BlendTree Viewer]]></title>
-        <id>https://docs.hai-vr.dev/updates/2023/11/17/p0</id>
-        <link href="https://docs.hai-vr.dev/updates/2023/11/17/p0"/>
-        <updated>2023-11-17T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[I am releasing "BlendTree Viewer", which lets you view large blend trees in a compact view.]]></summary>
-        <content type="html"><![CDATA[<p>I am releasing "BlendTree Viewer", which lets you view large blend trees in a compact view.</p>
-<p>🗒️ <a href="https://docs.hai-vr.dev/docs/products/blendtree-viewer">Open documentation</a></p>
-<video controls="" width="816"><source src="/assets/medias/2023-11-17_00-10-56_ShareX-ac09a7438c7cc19945f32bf30e51967f.mp4"></video>]]></content>
     </entry>
 </feed>
