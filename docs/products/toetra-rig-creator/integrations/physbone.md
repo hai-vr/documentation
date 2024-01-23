@@ -8,7 +8,7 @@ sidebar_position: 2
 This tool is currently not available, and this documentation is currently being written.
 :::
 
-The tool can attach a PhysBone component of your choice to your toe bones.
+The tool can attach a PhysBone component of your choice to your toe bones in the *Avatar integration > PhysBone tab*.
 
 # Single root mode
 
@@ -18,7 +18,7 @@ If you want to use only one PhysBone for all of your toes:
 
 # Big toe and other toes
 
-If you want to have a Big toe that behave differently than the other toes:
+If you want to have a Big toe that behaves differently than the other toes:
 
 - Switch the PhysBone mode to Big toe And Other Toes.
 - Select a PhysBone component for the Big toe.
