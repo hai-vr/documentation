@@ -1,6 +1,5 @@
 ﻿---
 title: ⭐ ToeTra Rig Creator
-unlisted: true
 ---
 
 # Haï's ToeTra Rig Creator
@@ -9,6 +8,11 @@ unlisted: true
 This tool requires VRChat, and is incompatible with other apps and platforms.
 
 Some other platforms will be supported in the future.
+:::
+## Download
+
+:::danger
+This tool is currently not available, and this documentation is currently being written.
 :::
 
 [//]: # (## Download)

@@ -5,6 +5,10 @@ unlisted: true
 
 # PhysBone
 
+:::danger
+This tool is currently not available, and this documentation is currently being written.
+:::
+
 The tool can attach a PhysBone component of your choice to your toe bones.
 
 # Single root mode
