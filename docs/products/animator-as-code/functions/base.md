@@ -237,6 +237,14 @@ Set the Avatar Mask of the layer to be an Avatar Mask which denies all transform
 - `AacFlLayer ResolveAvatarMask(Transform[] paths)` <br/>
 Set the Avatar Mask of the layer to be an Avatar Mask that allows the specified transforms. If `paths` is an empty array, all transforms are denied, which is effectively the same as calling `.WithAvatarMaskNoTransforms()`. The asset is generated into the container.
 
+#### Edit layer attributes
+
+- `AacFlLater WithWeight(float weight)` <br />
+Set the weight of the layer.
+
+- `AacFlLater WithBlendingMode(AnimatorLayerBlendingMode blendingMode)` <br />
+Set the blending mode of the layer.
+
 
 ## Sub State Machine (AacFlStateMachine) 💡
 
