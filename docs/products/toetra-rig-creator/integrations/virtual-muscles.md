@@ -25,154 +25,165 @@ These parameters are for the purposes of reusing animation files across differen
 This is a work in progress.
 :::
 
-### Pitch
+### Pitch (Up/Down)
 
 Range:
-- 1 is 180 degrees in the curling direction.
+- 1 is 180 degrees in the curling direction (down).
 - 0 is the rest pose at 0 degrees.
-- -1 is 180 degrees in the lifting direction.
+- -1 is 180 degrees in the lifting direction (up).
 
 Parameters:
-- `HaiToeTraV1/Animation/Left/1_Metatarsal_Pitch`
-- `HaiToeTraV1/Animation/Left/1_Proximal_Pitch`
-- `HaiToeTraV1/Animation/Left/1_Intermediate_Pitch`
-- `HaiToeTraV1/Animation/Left/1_Distal_Pitch`
-- `HaiToeTraV1/Animation/Left/2_Metatarsal_Pitch`
-- `HaiToeTraV1/Animation/Left/2_Proximal_Pitch`
-- `HaiToeTraV1/Animation/Left/2_Intermediate_Pitch`
-- `HaiToeTraV1/Animation/Left/2_Distal_Pitch`
-- `HaiToeTraV1/Animation/Left/3_Metatarsal_Pitch`
-- `HaiToeTraV1/Animation/Left/3_Proximal_Pitch`
-- `HaiToeTraV1/Animation/Left/3_Intermediate_Pitch`
-- `HaiToeTraV1/Animation/Left/3_Distal_Pitch`
-- `HaiToeTraV1/Animation/Left/4_Metatarsal_Pitch`
-- `HaiToeTraV1/Animation/Left/4_Proximal_Pitch`
-- `HaiToeTraV1/Animation/Left/4_Intermediate_Pitch`
-- `HaiToeTraV1/Animation/Left/4_Distal_Pitch`
-- `HaiToeTraV1/Animation/Left/5_Metatarsal_Pitch`
-- `HaiToeTraV1/Animation/Left/5_Proximal_Pitch`
-- `HaiToeTraV1/Animation/Left/5_Intermediate_Pitch`
-- `HaiToeTraV1/Animation/Left/5_Distal_Pitch`
-- `HaiToeTraV1/Animation/Right/1_Metatarsal_Pitch`
-- `HaiToeTraV1/Animation/Right/1_Proximal_Pitch`
-- `HaiToeTraV1/Animation/Right/1_Intermediate_Pitch`
-- `HaiToeTraV1/Animation/Right/1_Distal_Pitch`
-- `HaiToeTraV1/Animation/Right/2_Metatarsal_Pitch`
-- `HaiToeTraV1/Animation/Right/2_Proximal_Pitch`
-- `HaiToeTraV1/Animation/Right/2_Intermediate_Pitch`
-- `HaiToeTraV1/Animation/Right/2_Distal_Pitch`
-- `HaiToeTraV1/Animation/Right/3_Metatarsal_Pitch`
-- `HaiToeTraV1/Animation/Right/3_Proximal_Pitch`
-- `HaiToeTraV1/Animation/Right/3_Intermediate_Pitch`
-- `HaiToeTraV1/Animation/Right/3_Distal_Pitch`
-- `HaiToeTraV1/Animation/Right/4_Metatarsal_Pitch`
-- `HaiToeTraV1/Animation/Right/4_Proximal_Pitch`
-- `HaiToeTraV1/Animation/Right/4_Intermediate_Pitch`
-- `HaiToeTraV1/Animation/Right/4_Distal_Pitch`
-- `HaiToeTraV1/Animation/Right/5_Metatarsal_Pitch`
-- `HaiToeTraV1/Animation/Right/5_Proximal_Pitch`
-- `HaiToeTraV1/Animation/Right/5_Intermediate_Pitch`
-- `HaiToeTraV1/Animation/Right/5_Distal_Pitch`
+- `HaiToeTraV1/Animation/Left/1_Metatarsal_UpDown`
+- `HaiToeTraV1/Animation/Left/1_Proximal_UpDown`
+- `HaiToeTraV1/Animation/Left/1_Intermediate_UpDown`
+- `HaiToeTraV1/Animation/Left/1_Distal_UpDown`
+- `HaiToeTraV1/Animation/Left/2_Metatarsal_UpDown`
+- `HaiToeTraV1/Animation/Left/2_Proximal_UpDown`
+- `HaiToeTraV1/Animation/Left/2_Intermediate_UpDown`
+- `HaiToeTraV1/Animation/Left/2_Distal_UpDown`
+- `HaiToeTraV1/Animation/Left/3_Metatarsal_UpDown`
+- `HaiToeTraV1/Animation/Left/3_Proximal_UpDown`
+- `HaiToeTraV1/Animation/Left/3_Intermediate_UpDown`
+- `HaiToeTraV1/Animation/Left/3_Distal_UpDown`
+- `HaiToeTraV1/Animation/Left/4_Metatarsal_UpDown`
+- `HaiToeTraV1/Animation/Left/4_Proximal_UpDown`
+- `HaiToeTraV1/Animation/Left/4_Intermediate_UpDown`
+- `HaiToeTraV1/Animation/Left/4_Distal_UpDown`
+- `HaiToeTraV1/Animation/Left/5_Metatarsal_UpDown`
+- `HaiToeTraV1/Animation/Left/5_Proximal_UpDown`
+- `HaiToeTraV1/Animation/Left/5_Intermediate_UpDown`
+- `HaiToeTraV1/Animation/Left/5_Distal_UpDown`
+- `HaiToeTraV1/Animation/Right/1_Metatarsal_UpDown`
+- `HaiToeTraV1/Animation/Right/1_Proximal_UpDown`
+- `HaiToeTraV1/Animation/Right/1_Intermediate_UpDown`
+- `HaiToeTraV1/Animation/Right/1_Distal_UpDown`
+- `HaiToeTraV1/Animation/Right/2_Metatarsal_UpDown`
+- `HaiToeTraV1/Animation/Right/2_Proximal_UpDown`
+- `HaiToeTraV1/Animation/Right/2_Intermediate_UpDown`
+- `HaiToeTraV1/Animation/Right/2_Distal_UpDown`
+- `HaiToeTraV1/Animation/Right/3_Metatarsal_UpDown`
+- `HaiToeTraV1/Animation/Right/3_Proximal_UpDown`
+- `HaiToeTraV1/Animation/Right/3_Intermediate_UpDown`
+- `HaiToeTraV1/Animation/Right/3_Distal_UpDown`
+- `HaiToeTraV1/Animation/Right/4_Metatarsal_UpDown`
+- `HaiToeTraV1/Animation/Right/4_Proximal_UpDown`
+- `HaiToeTraV1/Animation/Right/4_Intermediate_UpDown`
+- `HaiToeTraV1/Animation/Right/4_Distal_UpDown`
+- `HaiToeTraV1/Animation/Right/5_Metatarsal_UpDown`
+- `HaiToeTraV1/Animation/Right/5_Proximal_UpDown`
+- `HaiToeTraV1/Animation/Right/5_Intermediate_UpDown`
+- `HaiToeTraV1/Animation/Right/5_Distal_UpDown`
 
-### Yaw
+### Chiral Yaw (In/Out)
 
 Range:
-- 1 is 180 degrees in the inwards direction (towards your head when looking down).
+- 1 is 180 degrees in the outwards direction (towards your head when looking down).
+    - On the left foot, it aims the toes to the left.
+    - On the right foot, it aims the toes to the right.
 - 0 is the rest pose at 0 degrees.
-- -1 is 180 degrees in the outwards direction (away from your head when looking down).
+- -1 is 180 degrees in the inwards direction (away from your head when looking down).
+    - On the left foot, it aims the toes to the right.
+    - On the right foot, it aims the toes to the left.
 
 Parameters:
-- `HaiToeTraV1/Animation/Left/1_Metatarsal_Yaw`
-- `HaiToeTraV1/Animation/Left/1_Proximal_Yaw`
-- `HaiToeTraV1/Animation/Left/1_Intermediate_Yaw`
-- `HaiToeTraV1/Animation/Left/1_Distal_Yaw`
-- `HaiToeTraV1/Animation/Left/2_Metatarsal_Yaw`
-- `HaiToeTraV1/Animation/Left/2_Proximal_Yaw`
-- `HaiToeTraV1/Animation/Left/2_Intermediate_Yaw`
-- `HaiToeTraV1/Animation/Left/2_Distal_Yaw`
-- `HaiToeTraV1/Animation/Left/3_Metatarsal_Yaw`
-- `HaiToeTraV1/Animation/Left/3_Proximal_Yaw`
-- `HaiToeTraV1/Animation/Left/3_Intermediate_Yaw`
-- `HaiToeTraV1/Animation/Left/3_Distal_Yaw`
-- `HaiToeTraV1/Animation/Left/4_Metatarsal_Yaw`
-- `HaiToeTraV1/Animation/Left/4_Proximal_Yaw`
-- `HaiToeTraV1/Animation/Left/4_Intermediate_Yaw`
-- `HaiToeTraV1/Animation/Left/4_Distal_Yaw`
-- `HaiToeTraV1/Animation/Left/5_Metatarsal_Yaw`
-- `HaiToeTraV1/Animation/Left/5_Proximal_Yaw`
-- `HaiToeTraV1/Animation/Left/5_Intermediate_Yaw`
-- `HaiToeTraV1/Animation/Left/5_Distal_Yaw`
-- `HaiToeTraV1/Animation/Right/1_Metatarsal_Yaw`
-- `HaiToeTraV1/Animation/Right/1_Proximal_Yaw`
-- `HaiToeTraV1/Animation/Right/1_Intermediate_Yaw`
-- `HaiToeTraV1/Animation/Right/1_Distal_Yaw`
-- `HaiToeTraV1/Animation/Right/2_Metatarsal_Yaw`
-- `HaiToeTraV1/Animation/Right/2_Proximal_Yaw`
-- `HaiToeTraV1/Animation/Right/2_Intermediate_Yaw`
-- `HaiToeTraV1/Animation/Right/2_Distal_Yaw`
-- `HaiToeTraV1/Animation/Right/3_Metatarsal_Yaw`
-- `HaiToeTraV1/Animation/Right/3_Proximal_Yaw`
-- `HaiToeTraV1/Animation/Right/3_Intermediate_Yaw`
-- `HaiToeTraV1/Animation/Right/3_Distal_Yaw`
-- `HaiToeTraV1/Animation/Right/4_Metatarsal_Yaw`
-- `HaiToeTraV1/Animation/Right/4_Proximal_Yaw`
-- `HaiToeTraV1/Animation/Right/4_Intermediate_Yaw`
-- `HaiToeTraV1/Animation/Right/4_Distal_Yaw`
-- `HaiToeTraV1/Animation/Right/5_Metatarsal_Yaw`
-- `HaiToeTraV1/Animation/Right/5_Proximal_Yaw`
-- `HaiToeTraV1/Animation/Right/5_Intermediate_Yaw`
-- `HaiToeTraV1/Animation/Right/5_Distal_Yaw`
+- `HaiToeTraV1/Animation/Left/1_Metatarsal_InOut`
+- `HaiToeTraV1/Animation/Left/1_Proximal_InOut`
+- `HaiToeTraV1/Animation/Left/1_Intermediate_InOut`
+- `HaiToeTraV1/Animation/Left/1_Distal_InOut`
+- `HaiToeTraV1/Animation/Left/2_Metatarsal_InOut`
+- `HaiToeTraV1/Animation/Left/2_Proximal_InOut`
+- `HaiToeTraV1/Animation/Left/2_Intermediate_InOut`
+- `HaiToeTraV1/Animation/Left/2_Distal_InOut`
+- `HaiToeTraV1/Animation/Left/3_Metatarsal_InOut`
+- `HaiToeTraV1/Animation/Left/3_Proximal_InOut`
+- `HaiToeTraV1/Animation/Left/3_Intermediate_InOut`
+- `HaiToeTraV1/Animation/Left/3_Distal_InOut`
+- `HaiToeTraV1/Animation/Left/4_Metatarsal_InOut`
+- `HaiToeTraV1/Animation/Left/4_Proximal_InOut`
+- `HaiToeTraV1/Animation/Left/4_Intermediate_InOut`
+- `HaiToeTraV1/Animation/Left/4_Distal_InOut`
+- `HaiToeTraV1/Animation/Left/5_Metatarsal_InOut`
+- `HaiToeTraV1/Animation/Left/5_Proximal_InOut`
+- `HaiToeTraV1/Animation/Left/5_Intermediate_InOut`
+- `HaiToeTraV1/Animation/Left/5_Distal_InOut`
+- `HaiToeTraV1/Animation/Right/1_Metatarsal_InOut`
+- `HaiToeTraV1/Animation/Right/1_Proximal_InOut`
+- `HaiToeTraV1/Animation/Right/1_Intermediate_InOut`
+- `HaiToeTraV1/Animation/Right/1_Distal_InOut`
+- `HaiToeTraV1/Animation/Right/2_Metatarsal_InOut`
+- `HaiToeTraV1/Animation/Right/2_Proximal_InOut`
+- `HaiToeTraV1/Animation/Right/2_Intermediate_InOut`
+- `HaiToeTraV1/Animation/Right/2_Distal_InOut`
+- `HaiToeTraV1/Animation/Right/3_Metatarsal_InOut`
+- `HaiToeTraV1/Animation/Right/3_Proximal_InOut`
+- `HaiToeTraV1/Animation/Right/3_Intermediate_InOut`
+- `HaiToeTraV1/Animation/Right/3_Distal_InOut`
+- `HaiToeTraV1/Animation/Right/4_Metatarsal_InOut`
+- `HaiToeTraV1/Animation/Right/4_Proximal_InOut`
+- `HaiToeTraV1/Animation/Right/4_Intermediate_InOut`
+- `HaiToeTraV1/Animation/Right/4_Distal_InOut`
+- `HaiToeTraV1/Animation/Right/5_Metatarsal_InOut`
+- `HaiToeTraV1/Animation/Right/5_Proximal_InOut`
+- `HaiToeTraV1/Animation/Right/5_Intermediate_InOut`
+- `HaiToeTraV1/Animation/Right/5_Distal_InOut`
 
-### Roll
+### Chiral Roll (Twist)
 
-Range for the left foot:
-- 1 is 180 degrees counter-clockwise on the left foot, when looking down with the feet pointing down.
-- 0 is the rest pose at 0 degrees.
-- -1 is 180 degrees clockwise on the left foot, when looking down with the feet pointing down.
+:::danger
+Due to technical limitations, animating the toe roll is not supported.
+:::
 
-Range for the right foot:
-- 1 is 180 degrees clockwise on the right foot, when looking down with the feet pointing down.
-- 0 is the rest pose at 0 degrees.
-- -1 is 180 degrees counter-clockwise on the right foot, when looking down with the feet pointing down.
+[//]: # (Range for the left foot:)
+
+[//]: # (- 1 is 180 degrees counter-clockwise on the left foot, when looking down with the feet pointing down.)
+[//]: # (- 0 is the rest pose at 0 degrees.)
+[//]: # (- -1 is 180 degrees clockwise on the left foot, when looking down with the feet pointing down.)
+
+[//]: # ()
+[//]: # (Range for the right foot:)
+
+[//]: # (- 1 is 180 degrees clockwise on the right foot, when looking down with the feet pointing down.)
+[//]: # (- 0 is the rest pose at 0 degrees.)
+[//]: # (- -1 is 180 degrees counter-clockwise on the right foot, when looking down with the feet pointing down.)
 
 Parameters:
-- `HaiToeTraV1/Animation/Left/1_Metatarsal_Roll`
-- `HaiToeTraV1/Animation/Left/1_Proximal_Roll`
-- `HaiToeTraV1/Animation/Left/1_Intermediate_Roll`
-- `HaiToeTraV1/Animation/Left/1_Distal_Roll`
-- `HaiToeTraV1/Animation/Left/2_Metatarsal_Roll`
-- `HaiToeTraV1/Animation/Left/2_Proximal_Roll`
-- `HaiToeTraV1/Animation/Left/2_Intermediate_Roll`
-- `HaiToeTraV1/Animation/Left/2_Distal_Roll`
-- `HaiToeTraV1/Animation/Left/3_Metatarsal_Roll`
-- `HaiToeTraV1/Animation/Left/3_Proximal_Roll`
-- `HaiToeTraV1/Animation/Left/3_Intermediate_Roll`
-- `HaiToeTraV1/Animation/Left/3_Distal_Roll`
-- `HaiToeTraV1/Animation/Left/4_Metatarsal_Roll`
-- `HaiToeTraV1/Animation/Left/4_Proximal_Roll`
-- `HaiToeTraV1/Animation/Left/4_Intermediate_Roll`
-- `HaiToeTraV1/Animation/Left/4_Distal_Roll`
-- `HaiToeTraV1/Animation/Left/5_Metatarsal_Roll`
-- `HaiToeTraV1/Animation/Left/5_Proximal_Roll`
-- `HaiToeTraV1/Animation/Left/5_Intermediate_Roll`
-- `HaiToeTraV1/Animation/Left/5_Distal_Roll`
-- `HaiToeTraV1/Animation/Right/1_Metatarsal_Roll`
-- `HaiToeTraV1/Animation/Right/1_Proximal_Roll`
-- `HaiToeTraV1/Animation/Right/1_Intermediate_Roll`
-- `HaiToeTraV1/Animation/Right/1_Distal_Roll`
-- `HaiToeTraV1/Animation/Right/2_Metatarsal_Roll`
-- `HaiToeTraV1/Animation/Right/2_Proximal_Roll`
-- `HaiToeTraV1/Animation/Right/2_Intermediate_Roll`
-- `HaiToeTraV1/Animation/Right/2_Distal_Roll`
-- `HaiToeTraV1/Animation/Right/3_Metatarsal_Roll`
-- `HaiToeTraV1/Animation/Right/3_Proximal_Roll`
-- `HaiToeTraV1/Animation/Right/3_Intermediate_Roll`
-- `HaiToeTraV1/Animation/Right/3_Distal_Roll`
-- `HaiToeTraV1/Animation/Right/4_Metatarsal_Roll`
-- `HaiToeTraV1/Animation/Right/4_Proximal_Roll`
-- `HaiToeTraV1/Animation/Right/4_Intermediate_Roll`
-- `HaiToeTraV1/Animation/Right/4_Distal_Roll`
-- `HaiToeTraV1/Animation/Right/5_Metatarsal_Roll`
-- `HaiToeTraV1/Animation/Right/5_Proximal_Roll`
-- `HaiToeTraV1/Animation/Right/5_Intermediate_Roll`
-- `HaiToeTraV1/Animation/Right/5_Distal_Roll`
+- `HaiToeTraV1/Animation/Left/1_Metatarsal_Twist`
+- `HaiToeTraV1/Animation/Left/1_Proximal_Twist`
+- `HaiToeTraV1/Animation/Left/1_Intermediate_Twist`
+- `HaiToeTraV1/Animation/Left/1_Distal_Twist`
+- `HaiToeTraV1/Animation/Left/2_Metatarsal_Twist`
+- `HaiToeTraV1/Animation/Left/2_Proximal_Twist`
+- `HaiToeTraV1/Animation/Left/2_Intermediate_Twist`
+- `HaiToeTraV1/Animation/Left/2_Distal_Twist`
+- `HaiToeTraV1/Animation/Left/3_Metatarsal_Twist`
+- `HaiToeTraV1/Animation/Left/3_Proximal_Twist`
+- `HaiToeTraV1/Animation/Left/3_Intermediate_Twist`
+- `HaiToeTraV1/Animation/Left/3_Distal_Twist`
+- `HaiToeTraV1/Animation/Left/4_Metatarsal_Twist`
+- `HaiToeTraV1/Animation/Left/4_Proximal_Twist`
+- `HaiToeTraV1/Animation/Left/4_Intermediate_Twist`
+- `HaiToeTraV1/Animation/Left/4_Distal_Twist`
+- `HaiToeTraV1/Animation/Left/5_Metatarsal_Twist`
+- `HaiToeTraV1/Animation/Left/5_Proximal_Twist`
+- `HaiToeTraV1/Animation/Left/5_Intermediate_Twist`
+- `HaiToeTraV1/Animation/Left/5_Distal_Twist`
+- `HaiToeTraV1/Animation/Right/1_Metatarsal_Twist`
+- `HaiToeTraV1/Animation/Right/1_Proximal_Twist`
+- `HaiToeTraV1/Animation/Right/1_Intermediate_Twist`
+- `HaiToeTraV1/Animation/Right/1_Distal_Twist`
+- `HaiToeTraV1/Animation/Right/2_Metatarsal_Twist`
+- `HaiToeTraV1/Animation/Right/2_Proximal_Twist`
+- `HaiToeTraV1/Animation/Right/2_Intermediate_Twist`
+- `HaiToeTraV1/Animation/Right/2_Distal_Twist`
+- `HaiToeTraV1/Animation/Right/3_Metatarsal_Twist`
+- `HaiToeTraV1/Animation/Right/3_Proximal_Twist`
+- `HaiToeTraV1/Animation/Right/3_Intermediate_Twist`
+- `HaiToeTraV1/Animation/Right/3_Distal_Twist`
+- `HaiToeTraV1/Animation/Right/4_Metatarsal_Twist`
+- `HaiToeTraV1/Animation/Right/4_Proximal_Twist`
+- `HaiToeTraV1/Animation/Right/4_Intermediate_Twist`
+- `HaiToeTraV1/Animation/Right/4_Distal_Twist`
+- `HaiToeTraV1/Animation/Right/5_Metatarsal_Twist`
+- `HaiToeTraV1/Animation/Right/5_Proximal_Twist`
+- `HaiToeTraV1/Animation/Right/5_Intermediate_Twist`
+- `HaiToeTraV1/Animation/Right/5_Distal_Twist`
