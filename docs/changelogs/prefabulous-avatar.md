@@ -2,6 +2,10 @@
 title: Prefabulous Avatar
 ---
 
+## 1.9.1
+
+- Update dependencies to allow NDMF 1.3
+
 ## 1.9.0
 
 ### Update [Assign UV Tile](/docs/products/prefabulous-avatar/hai-components/assign-uv-tile)
