@@ -107,6 +107,12 @@ export default {
           },
           {
             type: 'docSidebar',
+            sidebarId: 'researchSidebar',
+            position: 'left',
+            label: 'Research',
+          },
+          {
+            type: 'docSidebar',
             sidebarId: 'otherSidebar',
             position: 'left',
             label: 'Help & Discord',
