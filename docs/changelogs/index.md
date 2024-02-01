@@ -30,7 +30,7 @@ The changelogs of some products aren't available at this time.
 | [Vixen](./changelogs/vixen)                                         | 1.0.1                 | **2024-01** |
 | **Patchers**                                                        |                       |             |           
 | [Auto-reset OSC config](./changelogs/auto-reset-osc-config)         | 1.1.3                 | 2023-12     |       
-| [Convert ComboGesture to FaceEmo](./changelogs/cge-to-faceemo)      | 0.1.5100              | 2023-12     |
+| [Convert ComboGesture to FaceEmo](./changelogs/cge-to-faceemo)      | 0.2.0                 | **2024-02** |
 
 [//]: # (| [**ResilienceVR**]&#40;./resilience&#41;                                                    |      |)
 [//]: # (| [⭐ Double Hip Tracker]&#40;./changelogs/double-hip-tracker&#41;                               |      |)
