@@ -4,10 +4,19 @@
         <title>Haï~ Blog</title>
         <link>https://docs.hai-vr.dev/updates</link>
         <description>Haï~ Blog</description>
-        <lastBuildDate>Tue, 30 Jan 2024 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 01 Feb 2024 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[⚙️ Convert ComboGesture to FaceEmo V0.2.0]]></title>
+            <link>https://docs.hai-vr.dev/updates/2024/02/01/p0</link>
+            <guid>https://docs.hai-vr.dev/updates/2024/02/01/p0</guid>
+            <pubDate>Thu, 01 Feb 2024 00:00:00 GMT</pubDate>
+            <description><![CDATA[Update dependencies to allow installing Convert ComboGesture to FaceEmo with FaceEmo 1.5]]></description>
+            <content:encoded><![CDATA[<p>Update dependencies to allow installing Convert ComboGesture to FaceEmo with FaceEmo 1.5</p>
+<p>🔍 <a href="https://docs.hai-vr.dev/docs/changelogs/cge-to-faceemo#020">View changelog</a></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[⚙️ Prefabulous Avatar V1.9.1]]></title>
             <link>https://docs.hai-vr.dev/updates/2024/01/30/p0</link>
@@ -305,19 +314,6 @@ and many more shader features are affected by the altered mesh surfaces.</p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="new-package-convert-combogesturetofaceemo">New package: <a href="https://docs.hai-vr.dev/docs/products/combo-gesture-expressions/convert-to-faceemo">Convert ComboGestureToFaceEmo</a><a href="https://docs.hai-vr.dev/updates/2023/12/20/p0#new-package-convert-combogesturetofaceemo" class="hash-link" aria-label="Direct link to new-package-convert-combogesturetofaceemo" title="Direct link to new-package-convert-combogesturetofaceemo">​</a></h3>
 <p>The VCC version of ComboGestureExpressions can be used to convert your existing ComboGesture components to <a href="https://suzuryg.github.io/face-emo/" target="_blank" rel="noopener noreferrer">FaceEmo</a>.</p>
 <p>🗒️ <a href="https://docs.hai-vr.dev/docs/products/combo-gesture-expressions/convert-to-faceemo">Open documentation</a></p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[🧪 Knowledge sharing "Using Udon MIDI as a data bus, retrospective"]]></title>
-            <link>https://docs.hai-vr.dev/updates/2023/12/11/p0-ks</link>
-            <guid>https://docs.hai-vr.dev/updates/2023/12/11/p0-ks</guid>
-            <pubDate>Mon, 11 Dec 2023 00:00:00 GMT</pubDate>
-            <description><![CDATA[A new knowledge sharing article has been published, "Using Udon MIDI as a data bus, retrospective".]]></description>
-            <content:encoded><![CDATA[<p>A new knowledge sharing article has been published, "Using Udon MIDI as a data bus, retrospective".</p>
-<ul>
-<li>2023-12-10 <a href="https://hai-vr.notion.site/Using-Udon-MIDI-as-a-data-bus-retrospective-3fe223a25f81446b8407ca3e2bfc7608" target="_blank" rel="noopener noreferrer">"Using Udon MIDI as a data bus, retrospective"</a></li>
-</ul>
-<p>🔍 <a href="https://docs.hai-vr.dev/docs/other/articles">View articles</a></p>
-<video controls="" width="816"><source src="/assets/medias/2023-12-11-p0-ks-UpkShSw54X-7ba79855f1cc76a1f0f1c9c9d9663bad.mp4"></video>]]></content:encoded>
         </item>
     </channel>
 </rss>
