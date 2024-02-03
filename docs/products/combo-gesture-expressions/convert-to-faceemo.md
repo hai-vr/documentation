@@ -1,9 +1,5 @@
 # Convert to FaceEmo
 
-:::warning
-This functionality is currently in public Beta.
-:::
-
 You can convert ComboGestureExpressions to **[FaceEmo](https://suzuryg.github.io/face-emo/)**
 if you still have the ComboGesture components in your scene.
 
