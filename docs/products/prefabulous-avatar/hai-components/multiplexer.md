@@ -27,13 +27,17 @@ By default, this component will not create the multiplexer if you are not exceed
 
 If you find any reason to create the multiplexer regardless, you can choose to do so.
 
-### Option: Remove sync from unused parameters
+[//]: # (### Option: Remove sync from unused parameters)
 
-This component can inform you of unused parameters, and take the initiative to remove those unused parameters from your avatar.
+[//]: # ()
+[//]: # (This component can inform you of unused parameters, and take the initiative to remove those unused parameters from your avatar.)
 
-:::danger
-If your avatar is meant to work cross-platform (PC & Quest/Android), **you must keep this option turned OFF**.
-:::
+[//]: # ()
+[//]: # (:::danger)
+
+[//]: # (If your avatar is meant to work cross-platform &#40;PC & Quest/Android&#41;, **you must keep this option turned OFF**.)
+
+[//]: # (:::)
 
 ## Versions
 
