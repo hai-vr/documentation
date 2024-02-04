@@ -13,8 +13,10 @@ These are not ready-to-print files.
 ## Materials
 
 Materials:
-- TPU 95A (Personally, I've used "SUNLU Flexible Filament TPU 1.75mm, 95A")
-- Non-textured (smooth) print bed
+- TPU 95A (Personally, I've used "SUNLU Flexible Filament TPU 1.75mm, 95A").
+- Non-textured (smooth) print bed.
+- Electrical tape.
+- One of the parts will need a separately-printed support in order to print clean bridges.
 
 ## Files
 
@@ -28,8 +30,8 @@ This print is meant to fit exactly my foot.
 
 This part has an embedded protection for the 5th toe splay sensor.
 
-:::danger
-The toe splay sensor must be oriented with the striped side facing against the skin.
+:::info
+During assembly, the toe splay sensor must be oriented with the striped side facing against the skin.
 :::
 
 ### tt-belt-button.step
@@ -54,11 +56,11 @@ because I estimate that specific sensor is sufficiently protected.
 This is a pathway for the flex sensor of the 2nd toe to slide through.
 
 :::warning
-In order to print this, we need to print **cleanest bridges**, because the flex sensor that slides under it
+In order to use this, we need to print with **some really clean bridges**, because the flex sensor that slides under it
 will have a friction contact with the bottom of that bridge.
 
-To print the cleanest bridges, I recommend printing a PLA bridge support (file not provided).
-*It involves pausing the TPU print in order for you to insert the PLA bridge support before the bridge layer is printed.*
+To print the clean bridges, I recommend printing a PLA or PETG bridge support (file not provided).<br />
+*(It involves pausing the TPU print before the bridge layer is printed, in order for you to insert the PLA bridge support)*
 :::
 
 ### tt-2nd-phalange-sensor-hook.step
@@ -76,11 +78,15 @@ because we want the smooth bottom face to slide against the underside bridging o
 
 - [https://github.com/hai-vr/hai-3d-printing](https://github.com/hai-vr/hai-3d-printing)
 
+This is the ring that attaches to the 2nd toe distal.
+
 This ring is sized to fit my toe.
 
 Attach to your toe with the triangle pointing side facing away from you.
-Make sure you attach that ring onto the before you start soldering the cables onto your flex sensor,
-otherwise assembling this will be a more annoying challenge.
+
+:::info
+During assembly, make sure you attach that ring onto the hook the before you secure the flex sensor with electrical tape.
+:::
 
 You need socks with individual toes, or redesign this part.
 This ring will just slide off your toe if you don't use socks, due to the way the bare skin moves when curling.
