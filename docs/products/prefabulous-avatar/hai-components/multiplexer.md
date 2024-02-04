@@ -16,7 +16,7 @@ This component will sync the parameters of your choice using a multiplexer if yo
 
 This benefit comes with a time trade-off: Those parameters will take longer to sync.
 - Use this on parameters that you change rarely, where you can afford to have a delay.
-- Do not use this on parameters that you change rarely, where the effect must be instantaneously seen by others.
+- Do not use this on parameters where the effect must be instantaneously seen by others, even if the parameter is changed rarely.
 - Do not use this on parameters that you need to update in real-time, such as face tracking and eye tracking.
 
 The sync delay will depend on the overall amount of bits of parameters that you want to sync.
