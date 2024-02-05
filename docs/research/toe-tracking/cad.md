@@ -20,6 +20,8 @@ Materials:
 
 ## Files
 
+---
+
 ### tt-belt.step
 
 - [https://github.com/hai-vr/hai-3d-printing](https://github.com/hai-vr/hai-3d-printing)
@@ -34,11 +36,19 @@ This part has an embedded protection for the 5th toe splay sensor.
 During assembly, the toe splay sensor must be oriented with the striped side facing against the skin.
 :::
 
+![Fusion360_bbe9NJyL9a.png](img%2FFusion360_bbe9NJyL9a.png)
+
+---
+
 ### tt-belt-button.step
 
 - [https://github.com/hai-vr/hai-3d-printing](https://github.com/hai-vr/hai-3d-printing)
 
 This button needs to be printed twice, and it serves to prevent the belt holder from retracting.
+
+![Fusion360_6z7EopoKDs.png](img%2FFusion360_6z7EopoKDs.png)
+
+---
 
 ### tt-big-toe-inserter.step
 
@@ -48,6 +58,10 @@ This is a pathway for the flex sensor of the Big toe to slide through.
 
 In my personal prototype, the flex sensor of the toe is bare, with the exception of the root,
 because I estimate that specific sensor is sufficiently protected.
+
+![Fusion360_kioQZWK3TF.png](img%2FFusion360_kioQZWK3TF.png)
+
+---
 
 ### tt-2nd-phalange-inserter.step
 
@@ -63,6 +77,10 @@ To print the clean bridges, I recommend printing a PLA or PETG bridge support (f
 *(It involves pausing the TPU print before the bridge layer is printed, in order for you to insert the PLA bridge support)*
 :::
 
+![Fusion360_nigZjLMstK.png](img%2FFusion360_nigZjLMstK.png)
+
+---
+
 ### tt-2nd-phalange-sensor-hook.step
 
 - [https://github.com/hai-vr/hai-3d-printing](https://github.com/hai-vr/hai-3d-printing)
@@ -73,6 +91,10 @@ It has a hook part, which attaches to the 2nd distal ring.
 
 Once the print is complete, the face that is printed on the print bed will be facing up,
 because we want the smooth bottom face to slide against the underside bridging of the pathway for the 2nd toe.
+
+![Fusion360_9ql4Iv7vAP.png](img%2FFusion360_9ql4Iv7vAP.png)
+
+---
 
 ### tt-2nd-distal-ring.step
 
@@ -90,3 +112,7 @@ During assembly, make sure you attach that ring onto the hook the before you sec
 
 You need socks with individual toes, or redesign this part.
 This ring will just slide off your toe if you don't use socks, due to the way the bare skin moves when curling.
+
+![Fusion360_8LRS45XQYH.png](img%2FFusion360_8LRS45XQYH.png)
+
+---
