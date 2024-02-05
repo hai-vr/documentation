@@ -1,8 +1,14 @@
 ﻿# Multi-Toe Tracking
 
+This page records my attempts to build a toe tracking device that supports multiple toes.
+
 :::danger
 This page is currently being written, and is a living document.
 :::
+
+<video controls width="816">
+    <source src={require('./img/vr-socks-f.mp4').default}/>
+</video>
 
 ## Design goals
 
@@ -64,6 +70,8 @@ Contrary to fingers, I don't have the dexterity to move each of my toes independ
 I can make use of this and only track some characteristics of the toes rather than all of them, as the movement of one toe can imply the movement of other toes.
 
 ## Attachment side
+
+![result.jpg](img%2Fresult.jpg)
 
 ### Detecting splay
 
