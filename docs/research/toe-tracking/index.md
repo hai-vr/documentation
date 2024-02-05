@@ -33,9 +33,20 @@ Public displays of toe tracking include:
 
 I am not aware of public displays of multi-toe tracking, but I'm sure considering the vast landscape of DIY hardware creators that it must have been done before.
 
-### Materials considered
+### Materials in use
 
-For this project, I've only used Flex sensors so far, and I'm using 3D printing with flexible filament (TPU 95A).
+For this project, I've only used Flex sensors so far, and I'm using 3D printing with flexible filament (TPU 95A):
+- Flex sensor (2.2 inch = 5.6 cm) [https://www.aliexpress.com/item/33006987477.html](https://www.aliexpress.com/item/33006987477.html)
+- Sunlu TPU 95A [https://www.amazon.fr/dp/B07R7SCM5G](https://www.amazon.fr/dp/B07R7SCM5G)
+- Mini Micro JST 2.0 PH Male Female Connector (2 pins = 2P) [https://www.aliexpress.com/item/4000091077742.html](https://www.aliexpress.com/item/4000091077742.html)
+- Several 10K ohm resistor (not by conscious choice, it's the only ones I had in hand when I started)
+- Electrical tape
+- (Some PLA was needed for prototyping and printing clean bridges, but it is not part of the wearable prototype)
+
+For the board, I'm currently using an AZ-Delivery ESP-32 Dev Kit C because that was the only thing I had in hand,
+but I have some Tundra Tracker Developer Boards that will arrive in the future.
+
+#### Other materials considered
 
 Other materials have been suggested, and could be used in the future, such as:
 - Magnets with Hall effect sensors (i.e. 49E linear hall effect sensor, [https://twitter.com/Ybalrid/status/1751409384431686041](https://twitter.com/Ybalrid/status/1751409384431686041) & [https://twitter.com/Ybalrid/status/1751409954248864097](https://twitter.com/Ybalrid/status/1751409954248864097)),
