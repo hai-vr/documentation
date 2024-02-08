@@ -10,7 +10,7 @@ I've had two separate electronics implementations:
 
 ## Pins used
 
-Because of Wi-Fi I've had to use the ADC pins 36, 32, and 34:
+Because of Wi-Fi I've had to use the ADC pins 36, 39, and 34:
 ```cpp
 adcAttachPin(36);
 adcAttachPin(39);
