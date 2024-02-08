@@ -16,3 +16,50 @@ adcAttachPin(36);
 adcAttachPin(39);
 adcAttachPin(34);
 ```
+
+## Libraries
+
+This uses the WiFi capabilities of the ESP32.
+
+```cpp
+const char * ssid = "############MyWiFiNetworkSSID############";
+const char * password = "############MyWiFiNetworkPassword############";
+
+void setup()
+{
+// ...
+    WiFi.mode(WIFI_STA);
+
+    WiFi.begin(ssid, password);
+    while (WiFi.status() != WL_CONNECTED) {
+        delay(10);
+    }
+    if (WiFi.waitForConnectResult() != WL_CONNECTED) {
+        while(1) {
+            delay(1000);
+        }
+    }
+```
+
+### OSC
+
+In `platformio.ini`, I've added the ArduinoOSC lib.
+
+```ini
+[env]
+lib_deps =
+    hideakitai/ArduinoOSC@^0.3.29
+```
+
+This lets the ESP32 communicate directly with VRChat through the default port 9000.
+
+```cpp
+#include "ArduinoOSCWiFi.h"
+#include "WiFi.h"
+
+OscWiFiClient  client;
+// ...
+    client.send("192.168.1.99", 9000, "/avatar/parameters/Toe_1st_Down", ioAcomp);
+    client.send("192.168.1.99", 9000, "/avatar/parameters/Toe_2nd_Down", ioBcomp);
+    client.send("192.168.1.99", 9000, "/avatar/parameters/Toe_5th_Splay", ioCcomp);
+```
