@@ -102,7 +102,7 @@ The shape of the flex sensor was extended using the TPU printing so that the toe
 
 I've had two separate electronics implementations:
 - [ESP32 with Wi-Fi and OSC](esp32.md)
-- [Tundra Tracker Developer board with SteamVR Input](tundra.md) and a separate OSC application
+- [Tundra Tracker Developer board with SteamVR Input](tundra.md) and a separate OSC application to process those inputs
 
 ## Software side
 
