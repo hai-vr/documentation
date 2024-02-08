@@ -98,6 +98,12 @@ During one of the prototypes, I've put the sensor on the side of the foot, and i
 
 The shape of the flex sensor was extended using the TPU printing so that the toe could activate the splay sensor even when the little toe is pointing higher up, or lower down.
 
+## Electronics side
+
+I've had two separate electronics implementations:
+- [ESP32 with Wi-Fi and OSC](esp32.md)
+- [Tundra Tracker Developer board with SteamVR Input](tundra.md) and a separate OSC application
+
 ## Software side
 
 ## Interpretation of signals
