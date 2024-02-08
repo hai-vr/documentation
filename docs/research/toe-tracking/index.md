@@ -43,8 +43,8 @@ For this project, I've only used Flex sensors so far, and I'm using 3D printing 
 - Electrical tape
 - (Some PLA was needed for prototyping and printing clean bridges, but it is not part of the wearable prototype)
 
-For the board, I'm currently using an AZ-Delivery ESP-32 Dev Kit C because that was the only thing I had in hand,
-but I have some Tundra Tracker Developer Boards that will arrive in the future.
+For the board, I had used an AZ-Delivery ESP-32 Dev Kit C because that was the only thing I had in hand while I was waiting for
+some Tundra Tracker Developer Boards to arrive.
 
 #### Other materials considered
 
