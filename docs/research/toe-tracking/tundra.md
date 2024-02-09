@@ -15,7 +15,7 @@ which at this time of writing suggests:
 - use the Arduino IDE,
 - in the Arduino IDE, add the RP2040 Arduino Board Library to the Arduino IDE ([read the README on how to install it](https://github.com/earlephilhower/arduino-pico?tab=readme-ov-file#installing-via-arduino-boards-manager)),
 - turn the tracker ON,
-- connect the the USB programming port (not the tracker USB port),
+- connect the USB programming port (not the tracker USB port),
 - in the Arduino IDE, select the *Adafruit ItsyBitsy RP2040* board on COM port to upload to.
 
 ## Pins used
