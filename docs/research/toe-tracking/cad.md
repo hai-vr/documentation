@@ -1,4 +1,8 @@
-﻿# CAD Models
+﻿---
+sidebar_position: 2
+---
+
+# CAD Models
 
 :::danger
 This page is currently being written.

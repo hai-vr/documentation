@@ -1,4 +1,8 @@
-﻿# ESP32
+﻿---
+sidebar_position: 4
+---
+
+# Option 2: ESP32
 
 :::danger
 This page is currently being written.

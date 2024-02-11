@@ -35,6 +35,10 @@ I am not aware of public displays of multi-toe tracking, but I'm sure considerin
 
 ### Materials in use
 
+:::tip
+Are you looking to make your own toe tracker? You may want to read the "[build your own](./toe-tracking/build-your-own)" page.
+:::
+
 For this project, I've only used Flex sensors so far, and I'm using 3D printing with flexible filament (TPU 95A):
 - Flex sensor (2.2 inch = 5.6 cm) [https://www.aliexpress.com/item/33006987477.html](https://www.aliexpress.com/item/33006987477.html)
 - Sunlu TPU 95A [https://www.amazon.fr/dp/B07R7SCM5G](https://www.amazon.fr/dp/B07R7SCM5G)

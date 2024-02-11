@@ -1,4 +1,8 @@
-﻿# Tundra Tracker Developer Board
+﻿---
+sidebar_position: 3
+---
+
+# Option 1: Tundra Tracker Developer Board
 
 :::danger
 This page is currently being written.
