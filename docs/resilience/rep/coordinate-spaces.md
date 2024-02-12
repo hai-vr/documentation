@@ -1,4 +1,8 @@
-﻿# Coordinate spaces
+﻿---
+unlisted: true
+---
+
+# Coordinate spaces
 
 In order to favor experimentation 🧪, Resilience has several interpretations for what is normally referred to as the playspace.
 
