@@ -1,10 +1,6 @@
-﻿---
-unlisted: true
----
+﻿# Coordinate spaces
 
-# Coordinate spaces
-
-In order to favor experimentation 🧪, Resilience has several interpretations for what is normally referred to as the playspace.
+In order to favor experimentation 🧪, Metabus has several interpretations for what is normally referred to as the playspace.
 
 In the real-world playspace, the center of the playspace is at (0,0,0), and 1 meter is 1 unit.
 This space contains representations of the hardware placed in the physical world.
@@ -15,12 +11,9 @@ The objects in this real-world playspace are copied to both the **Camera space**
 
 Most of the time, the Camera space and Avatar space will be the same: Your camera (HMD) will be the point of view of your avatar.
 
-However, in Resilience, the two spaces can be separated.
+However, in Metabus, the two spaces can be separated.
 
 For example, it is possible to switch to a third-person view, where you can observe your avatar in VR while being outside of it.
-
-*(It might even be possible to envision a scenario where a single user could puppeteer multiple avatars at the same time,
-but for now we should only assume that there is only one Avatar space active at one time)*
 
 - The position will differ when separating.
 - The rotation may be different between the two spaces, so you could look at your avatar from the front.

@@ -1,5 +1,2 @@
-﻿---
-unlisted: true
----
-# Metabus
+﻿# Metabus
 
