@@ -36,7 +36,7 @@ Flags provide an opportunity to handle visibility interactions between items.
 - Other controls can listen to a flag as part of their additional conditions.
     - The flag becomes a requirement for that other control to become active.
     - There is also a Control mode which only listens to a flag.
-- Flags do not switch any control ON or OFF (however see [Ejects](#ejects) section below).
+- Flags do not switch any control ON or OFF (this is covered in the next section "Ejects").
 
 ## When to use it?
 
@@ -105,7 +105,7 @@ There are several ways, depending on your flag type:
 *Pictured above: This control is a Menu, but it also requires a flag to be lowered (False). If both the Menu is switched ON **and** the flag is lowered, it enables an object.*
 
 :::note
-For performance reasons, please refrain from creating more than 5 conditions.
+For performance reasons, please refrain from creating more than 5 conditions within the same control.
 
 *In VRChat, Vixen internally uses Blend Tree recursive nesting to create conditions, but Blend Trees have a serious performance impact when recursive nesting is excessively used.*
 :::
