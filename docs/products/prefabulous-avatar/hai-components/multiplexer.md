@@ -3,8 +3,12 @@ unlisted: true
 ---
 # Multiplexer (Experimental)
 
-Allows an avatar to have more than 256 bits of synced parameters during the build process, by allowing some parameters of your choice
-to be synced at a slower rate than others.
+Allows an avatar to temporarily exceed 256 bits of synced parameters during the non-destructive build process.
+
+Excess bits from parameters of your choice will be synced at a slower rate using a [multiplexer-styled](https://en.wikipedia.org/wiki/Multiplexing) data synchronization strategy,
+bringing your avatar back under the limit.
+
+It is ideally used on parameters that are rarely updated.
 
 :::danger
 This component is in an experimental phase, and may be subject to significant changes in the future.
