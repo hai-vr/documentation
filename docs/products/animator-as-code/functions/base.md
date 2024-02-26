@@ -421,7 +421,7 @@ Swap a material of a Renderer on the specified slot (indexed at 0). This lasts o
 Swap a material of a Particle System on the specified slot (indexed at 0). This lasts one frame. This effectively takes the ParticleSystemRenderer of the component.
 
 
-### Mutli-frame Animations 💡
+### Multi-frame Animations 💡
 
 - `AacFlClip BlendShape(SkinnedMeshRenderer renderer, string blendShapeName, AnimationCurve animationCurve)` 💡<br/>
 Change a blendShape of a skinned mesh, with an animation curve.
@@ -504,13 +504,13 @@ Start defining the keyframes with a lambda expression, expressing the unit.
 ### Curve of type Color (AacFlSettingCurveColor)
 
 - `void WithOneFrame(Color desiredValue)` <br/>
-Define the curve to be exactly one frame by defining two constant keyframes, usually lasting 1/60th of a second, with the desired object reference value.
+Define the curve to be exactly one frame by defining two constant keyframes, usually lasting 1/60th of a second, with the desired color value.
 
 
 ### Curve of type ObjectReference (AacFlSettingCurveObjectReference) 💡
 
 - `void WithOneFrame(Object objectReference)` 💡<br/>
-  Define the curve to be exactly one frame by defining two constant keyframes, usually lasting 1/60th of a second, with the desired color value.
+  Define the curve to be exactly one frame by defining two constant keyframes, usually lasting 1/60th of a second, with the desired object reference value.
 
 
 ### Keyframes of type Float (AacFlSettingKeyframes)
