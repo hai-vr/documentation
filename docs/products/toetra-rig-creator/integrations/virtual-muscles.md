@@ -77,11 +77,11 @@ Parameters:
 ### Chiral Yaw (In/Out)
 
 Range:
-- 1 is 180 degrees in the outwards direction (towards your head when looking down).
+- 1 is 180 degrees in the outwards direction (away from your head when looking down).
     - On the left foot, it aims the toes to the left.
     - On the right foot, it aims the toes to the right.
 - 0 is the rest pose at 0 degrees.
-- -1 is 180 degrees in the inwards direction (away from your head when looking down).
+- -1 is 180 degrees in the inwards direction (towards your head when looking down).
     - On the left foot, it aims the toes to the right.
     - On the right foot, it aims the toes to the left.
 
