@@ -1,4 +1,8 @@
-﻿# Execution order
+﻿---
+sidebar_position: 2
+---
+
+# Execution order
 
 - Acquire all hardware tracker placements. (**+800** : PartialVR module :: )
 - Convert hardware trackers to humanoid standins. (**+900** : Interaction module :: )

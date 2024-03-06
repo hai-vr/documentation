@@ -1,4 +1,8 @@
-﻿# Coordinate spaces
+﻿---
+sidebar_position: 1
+---
+
+# Coordinate spaces
 
 In order to favor experimentation 🧪, Metabus has several interpretations for what is normally referred to as the playspace.
 
