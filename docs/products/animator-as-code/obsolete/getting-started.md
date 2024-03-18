@@ -1,6 +1,7 @@
 ﻿---
 sidebar_position: 2
 title: (OBSOLETE)Getting started
+unlisted: true
 ---
 
 # (OBSOLETE)Getting started (Modular Avatar)
@@ -26,7 +27,7 @@ Animator As Code V1 can be installed using VRChat Creator Companion.
 
 Then, add the following packages to your avatar project:
 
-- Animator As Code - NDMF Processor
+[//]: # (- Animator As Code - NDMF Processor)
 - Animator As Code - Modular Avatar
 - Animator As Code - VRChat
 
