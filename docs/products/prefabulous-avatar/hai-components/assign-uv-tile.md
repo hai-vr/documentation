@@ -24,6 +24,7 @@ which in this case "*provides an efficient way to toggle portions of a model on 
 - Using *[Poiyomi Toon](https://www.poiyomi.com/special-fx/uv-tile-discard)* or [lilToon](https://twitter.com/lil_xyzw/status/1747601947069464752) UV Tile Discard makes this effectively similar to [Delete Polygons](./delete-polygons),
 except that this will **not** lower your avatar polygon count; instead it will ease the rendering load when the toggle is off.
 - *If you do not animate the shader feature, use [Delete Polygons](./delete-polygons) instead, which will lower your avatar polygon count.*
+
 To use this component:
 - Add one or several "PA-H Assign UV Tile" component anywhere in your avatar.
 - Then:
