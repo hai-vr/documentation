@@ -2,6 +2,29 @@
 title: Prefabulous Avatar
 ---
 
+## 1.10.0 (Planned)
+
+Three new components have been added to Prefabulous Avatar.
+
+### New component: [Replace Textures](/docs/products/prefabulous-avatar/hai-components/replace-textures)
+
+This component lets you upload multiple versions of your avatar but with different textures, without needing to duplicate the materials.
+
+### New component: [Convert Blendshape Conventions](/docs/products/prefabulous-avatar/hai-components/convert-blendshape-conventions)
+
+This component lets you convert blendshapes from one naming convention to another naming convention, such as converting Unified Expressions blendshapes to ARKit blendshapes.
+
+### New component: [Mass Blendshape Sync](/docs/products/prefabulous-avatar/hai-components/mass-blendshape-sync)
+
+This component will synchronize all blendshapes that two meshes share in common.
+
+This is ideally used with renderers that have a massive quantity of blendshapes that need to be synced, such as face tracking.
+
+### Other
+
+- All Prefabulous components will now be removed after baking, so that uploading a baked avatar will not bake them twice.
+- Blank Gesture Animator now generates one animator layer that VRChat requires, instead of zero layers.
+
 ## 1.9.1
 
 - Update dependencies to allow NDMF 1.3

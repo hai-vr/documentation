@@ -11,6 +11,7 @@ without having to modify the original avatar descriptor by hand.
 
 ## Versions
 
+- **1.10.0**: Blank Gesture Animator now generates one animator layer that VRChat requires, instead of zero layers.
 - **1.2.0**: Added.
 
 Classification: *This component is **VRChat only**.*
