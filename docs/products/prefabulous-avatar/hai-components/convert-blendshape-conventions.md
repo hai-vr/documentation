@@ -18,7 +18,7 @@ For instance, you can convert [Unified Expressions](https://docs.vrcft.io/docs/t
 
 To use this component:
 - Add a "PA-H Convert Blendshape Conventions" component anywhere in your avatar.
-- In the "Key Value Store" field, in each line, provide two blendshape names separated with the character of your choice.
+- In the "Key Value Mapping" field, in each line, provide two blendshape names separated with the character of your choice.
 - In the "Key Value Separator", specify the character of your choice.
   - Press the "Use TAB as separator" if you are using TAB-separated values.
 - By default, the left side will be the name to copy, and the right-hand side will be the name to write to.
@@ -31,7 +31,7 @@ The following list is a copy of the blendshape table located in [VRCFaceTracking
 This allows you to convert Unified Expressions blendshapes to ARKit blendshapes, or inversely if you use the "Reverse" checkbox.
 
 - Key Value Separator: `=`
-- Key Value Store:
+- Key Value Mapping:
 
 ```ini
 EyeLookUpRight=eyeLookUpRight
