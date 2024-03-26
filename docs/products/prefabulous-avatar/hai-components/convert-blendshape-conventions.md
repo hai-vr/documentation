@@ -11,7 +11,8 @@ This component not currently available, but is coming soon.
 This component will copy existing blendshapes and gives them new names.
 
 You can use this if you need to convert a lot of blendshapes from one naming convention to another naming convention.
-For instance, you can convert [Unified Expressions]((https://docs.vrcft.io/docs/tutorial-avatars/tutorial-avatars-extras/unified-blendshapes) blendshapes into [ARKit](https://docs.vrcft.io/docs/tutorial-avatars/tutorial-avatars-extras/compatibility/arkit) blendshapes. 
+
+For instance, you can convert [Unified Expressions](https://docs.vrcft.io/docs/tutorial-avatars/tutorial-avatars-extras/unified-blendshapes) blendshapes into [ARKit](https://docs.vrcft.io/docs/tutorial-avatars/tutorial-avatars-extras/compatibility/arkit) blendshapes. 
 
 **This process does not overwrite blendshapes that already exist.**
 
