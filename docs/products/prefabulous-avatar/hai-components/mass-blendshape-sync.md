@@ -1,12 +1,13 @@
-﻿---
-unlisted: true
----
-# Mass Blendshape Sync
+﻿# 🚫 Mass Blendshape Sync
 
 Generates a [Modular Avatar Blendshape Sync](https://modular-avatar.nadena.dev/docs/reference/blendshape-sync) component when the avatar is built,
 which will sync as many blendshapes that exist in the *source* renderer to the renderers in *targets*.
 
 This is ideally used with renderers that have a massive quantity of blendshapes that need to be synced, such as face tracking.
+
+:::danger
+This component not currently available, but is coming soon.
+:::
 
 ## How to use
 

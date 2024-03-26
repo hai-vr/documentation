@@ -1,17 +1,29 @@
-﻿---
-unlisted: true
----
-# Replace Textures
+﻿# 🚫 Replace Textures
 
 Replaces textures inside materials with other ones.
 
-This can be used to quickly create a version of your avatar with lower resolution textures.
+This can be used to quickly create a version of your avatar with lower resolution textures, while still letting you upload an avatar with its original textures.
+
+:::danger
+This component not currently available, but is coming soon.
+:::
 
 ## How to use
 
 This component will find materials that are configured to use a texture, and replaces those textures with other ones.
 
 This is non-destructive: the materials in your project are not modified.
+
+:::warning
+Material located inside animations are not currently supported:
+The textures contained inside those animations will not be replaced.
+:::
+
+To use this component:
+- Add a "PA-H Replace Textures" component anywhere in your avatar.
+- The component will list all textures found inside renderers your avatar, as long as the renderer or any of its parents is not inside an "Editor Only"-tagged object.
+- Press "+ Add" on any texture that you would like to replace.
+- Provide a new texture in the field located below "Replace with".
 
 ## Danger: Execute in Play Mode
 
