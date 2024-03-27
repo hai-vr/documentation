@@ -2,7 +2,7 @@
 title: Prefabulous Avatar
 ---
 
-## 1.10.0
+## 1.10.1
 
 Three new components have been added to Prefabulous Avatar.
 
