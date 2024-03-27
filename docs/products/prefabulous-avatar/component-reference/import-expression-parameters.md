@@ -6,6 +6,7 @@ Use this component when you're trying to adapt an existing prefab that was creat
 
 ## Versions
 
+- **1.10.2-beta.1**: The number of synced bits used by Import Parameters is now shown in the Modular Avatar Information panel.
 - **1.2.0**: Added.
 
 Classification: *This component is **VRChat only**.*
