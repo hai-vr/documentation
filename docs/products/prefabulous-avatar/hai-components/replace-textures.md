@@ -13,7 +13,7 @@ This component will find materials that are configured to use a texture, and rep
 This is non-destructive: the materials in your project are not modified.
 
 :::warning
-Material located inside animations are not currently supported:
+Materials located inside animations are not currently supported:
 The textures contained inside those animations will not be replaced.
 :::
 
