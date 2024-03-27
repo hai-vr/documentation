@@ -4,10 +4,36 @@
         <title>Haï~ Blog</title>
         <link>https://docs.hai-vr.dev/updates</link>
         <description>Haï~ Blog</description>
-        <lastBuildDate>Thu, 01 Feb 2024 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 27 Mar 2024 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[☀️ Replace Textures, Convert Blendshape Conventions, Mass Blendshape Sync (Prefabulous V1.10)]]></title>
+            <link>https://docs.hai-vr.dev/updates/2024/03/27/p0</link>
+            <guid>https://docs.hai-vr.dev/updates/2024/03/27/p0</guid>
+            <pubDate>Wed, 27 Mar 2024 00:00:00 GMT</pubDate>
+            <description><![CDATA[Three new components have been added to Prefabulous Avatar.]]></description>
+            <content:encoded><![CDATA[<p>Three new components have been added to Prefabulous Avatar.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="new-component-replace-textures">New component: <a href="https://docs.hai-vr.dev/docs/products/prefabulous-avatar/hai-components/replace-textures">Replace Textures</a><a href="https://docs.hai-vr.dev/updates/2024/03/27/p0#new-component-replace-textures" class="hash-link" aria-label="Direct link to new-component-replace-textures" title="Direct link to new-component-replace-textures">​</a></h3>
+<p>This component lets you upload multiple versions of your avatar but with different textures, without needing to duplicate the materials.</p>
+<p>It also displays which materials use which textures, although you could also be using lilAvatarUtils for this.</p>
+<p><img loading="lazy" alt="Unity_lJ03XfMYPW.png" src="https://docs.hai-vr.dev/assets/images/Unity_lJ03XfMYPW-b73799405be8566b388657c346162d89.png" width="397" height="432" class="img_ev3q"></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="new-component-convert-blendshape-conventions">New component: <a href="https://docs.hai-vr.dev/docs/products/prefabulous-avatar/hai-components/convert-blendshape-conventions">Convert Blendshape Conventions</a><a href="https://docs.hai-vr.dev/updates/2024/03/27/p0#new-component-convert-blendshape-conventions" class="hash-link" aria-label="Direct link to new-component-convert-blendshape-conventions" title="Direct link to new-component-convert-blendshape-conventions">​</a></h3>
+<p>This component lets you convert blendshapes from one naming convention to another naming convention, such as converting Unified Expressions blendshapes to ARKit blendshapes.</p>
+<p><img loading="lazy" alt="Unity_Kwht5QWD83.png" src="https://docs.hai-vr.dev/assets/images/Unity_Kwht5QWD83-c40d00ccaf123909a4d07f7bd59e5ad8.png" width="459" height="328" class="img_ev3q"></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="new-component-mass-blendshape-sync">New component: <a href="https://docs.hai-vr.dev/docs/products/prefabulous-avatar/hai-components/mass-blendshape-sync">Mass Blendshape Sync</a><a href="https://docs.hai-vr.dev/updates/2024/03/27/p0#new-component-mass-blendshape-sync" class="hash-link" aria-label="Direct link to new-component-mass-blendshape-sync" title="Direct link to new-component-mass-blendshape-sync">​</a></h3>
+<p>This component will synchronize all blendshapes that two meshes share in common.</p>
+<p>This is ideally used with renderers that have a massive quantity of blendshapes that need to be synced, such as face tracking.</p>
+<p><img loading="lazy" alt="Unity_kmeSxcDqt8.png" src="https://docs.hai-vr.dev/assets/images/Unity_kmeSxcDqt8-88766b41d70491686f3af85ce84bc8ed.png" width="410" height="132" class="img_ev3q"></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="other">Other<a href="https://docs.hai-vr.dev/updates/2024/03/27/p0#other" class="hash-link" aria-label="Direct link to Other" title="Direct link to Other">​</a></h3>
+<ul>
+<li>All Prefabulous components will now be removed after baking, so that uploading a baked avatar will not bake them twice.</li>
+<li>Blank Gesture Animator now generates one animator layer that VRChat requires, instead of zero layers.</li>
+<li>The dependency to "Animator As Code - NDMF Processor (Alpha)" has been removed.</li>
+</ul>
+<p>🔍 <a href="https://docs.hai-vr.dev/docs/changelogs/cge-to-faceemo#020">View changelog</a></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[⚙️ Convert ComboGesture to FaceEmo V0.2.0]]></title>
             <link>https://docs.hai-vr.dev/updates/2024/02/01/p0</link>
@@ -300,20 +326,6 @@ with <a href="https://www.poiyomi.com/special-fx/uv-tile-discard" target="_blank
 and many more shader features are affected by the altered mesh surfaces.</p>
 <p>🔍 <a href="https://docs.hai-vr.dev/docs/changelogs/prefabulous-avatar#130">View changelog</a></p>
 <video controls="" muted="" width="816"><source src="/assets/medias/2023-12-22-p0-recalc-norms-f-eb61649c20cdb776b7ec5b2cf21d591e.mp4"></video>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[☀️ ComboGestureExpressions V3 for VCC]]></title>
-            <link>https://docs.hai-vr.dev/updates/2023/12/20/p0</link>
-            <guid>https://docs.hai-vr.dev/updates/2023/12/20/p0</guid>
-            <pubDate>Wed, 20 Dec 2023 00:00:00 GMT</pubDate>
-            <description><![CDATA[Update ComboGestureExpressions]]></description>
-            <content:encoded><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="update-combogestureexpressions">Update <a href="https://docs.hai-vr.dev/docs/products/combo-gesture-expressions/v3.0-vcc">ComboGestureExpressions</a><a href="https://docs.hai-vr.dev/updates/2023/12/20/p0#update-combogestureexpressions" class="hash-link" aria-label="Direct link to update-combogestureexpressions" title="Direct link to update-combogestureexpressions">​</a></h3>
-<p>Starting from versions 3.x and onwards, ComboGestureExpressions will be distributed on VCC.</p>
-<p>Transform animations are now generated in the FX layer instead of Gesture, and synchronization should be faster.</p>
-<p>🔍 <a href="https://docs.hai-vr.dev/docs/changelogs/combo-gesture-expressions#315101-beta">View changelog</a></p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="new-package-convert-combogesturetofaceemo">New package: <a href="https://docs.hai-vr.dev/docs/products/combo-gesture-expressions/convert-to-faceemo">Convert ComboGestureToFaceEmo</a><a href="https://docs.hai-vr.dev/updates/2023/12/20/p0#new-package-convert-combogesturetofaceemo" class="hash-link" aria-label="Direct link to new-package-convert-combogesturetofaceemo" title="Direct link to new-package-convert-combogesturetofaceemo">​</a></h3>
-<p>The VCC version of ComboGestureExpressions can be used to convert your existing ComboGesture components to <a href="https://suzuryg.github.io/face-emo/" target="_blank" rel="noopener noreferrer">FaceEmo</a>.</p>
-<p>🗒️ <a href="https://docs.hai-vr.dev/docs/products/combo-gesture-expressions/convert-to-faceemo">Open documentation</a></p>]]></content:encoded>
         </item>
     </channel>
 </rss>
