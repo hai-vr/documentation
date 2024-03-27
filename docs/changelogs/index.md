@@ -15,22 +15,22 @@ The changelogs of some products aren't available at this time.
 |                                                                     | Version               | Last update |
 |---------------------------------------------------------------------|-----------------------|-------------|
 | **Applications**                                                    |                       |             |
-| [VRWare](./changelogs/vrware) (World)                               | 2024-01-07            | **2024-01** |
+| [VRWare](./changelogs/vrware) (World)                               | 2024-01-07            | 2024-01     |
 | **Viewers**                                                         |                       |             |
 | [Lightbox Viewer](./changelogs/lightbox-viewer)                     | 2.0.2                 | 2023-11     |
 | [Animation Viewer](./changelogs/animation-viewer)                   | 2.0.3                 | 2023-11     |
-| [Blendshape Viewer](./changelogs/blendshape-viewer)                 | 2.1.1                 | **2024-01** |
+| [Blendshape Viewer](./changelogs/blendshape-viewer)                 | 2.1.1                 | 2024-01     |
 | [Property Finder](./changelogs/property-finder)                     | 2.0.3                 | 2023-11     |
 | [BlendTree Viewer](./changelogs/blendtree-viewer)                   | 1.0.7                 | 2023-11     |
 | **Editors**                                                         |                       |             |
 | [ComboGestureExpressions](./changelogs/combo-gesture-expressions)   | 3.1.5102              | 2023-12     |
-| [FaceTra Shape Creator](./changelogs/facetra-shape-creator)         | 0.6.0-2024-01-18-0056 | **2024-01** |
-| [Prefabulous Avatar](./changelogs/prefabulous-avatar)               | 1.9.1                 | **2024-01** |
+| [FaceTra Shape Creator](./changelogs/facetra-shape-creator)         | 0.6.0-2024-01-18-0056 | 2024-01     |
+| [Prefabulous Avatar](./changelogs/prefabulous-avatar)               | 1.10.0                | **2024-03** |
 | [Visual Expressions Editor](./changelogs/visual-expressions-editor) | 2.0.3                 | 2023-11     |
-| [Vixen](./changelogs/vixen)                                         | 1.0.1                 | **2024-01** |
+| [Vixen](./changelogs/vixen)                                         | 1.0.1                 | 2024-01     |
 | **Patchers**                                                        |                       |             |           
 | [Auto-reset OSC config](./changelogs/auto-reset-osc-config)         | 1.1.3                 | 2023-12     |       
-| [Convert ComboGesture to FaceEmo](./changelogs/cge-to-faceemo)      | 0.2.0                 | **2024-02** |
+| [Convert ComboGesture to FaceEmo](./changelogs/cge-to-faceemo)      | 0.2.0                 | 2024-02     |
 
 [//]: # (| [**ResilienceVR**]&#40;./resilience&#41;                                                    |      |)
 [//]: # (| [⭐ Double Hip Tracker]&#40;./changelogs/double-hip-tracker&#41;                               |      |)

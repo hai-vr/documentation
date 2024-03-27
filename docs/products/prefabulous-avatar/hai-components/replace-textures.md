@@ -1,12 +1,10 @@
-﻿# 🚫 Replace Textures
+﻿# Replace Textures
 
 Replaces textures inside materials with other ones.
 
 This can be used to quickly create a version of your avatar with lower resolution textures, while still letting you upload an avatar with its original textures.
 
-:::danger
-This component not currently available, but is coming soon.
-:::
+![Unity_lJ03XfMYPW.png](..%2Fimg%2FUnity_lJ03XfMYPW.png)
 
 ## How to use
 

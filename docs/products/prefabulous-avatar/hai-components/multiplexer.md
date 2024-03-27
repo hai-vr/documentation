@@ -1,7 +1,7 @@
 ﻿---
 unlisted: true
 ---
-# Multiplexer (Experimental)
+# ⛔ Multiplexer (Experimental)
 
 Allows an avatar to temporarily exceed 256 bits of synced parameters during the non-destructive build process.
 
@@ -45,6 +45,6 @@ If you find any reason to create the multiplexer regardless, you can choose to d
 
 ## Versions
 
-- **1.10.0**: Added.
+- **1.11.0**: Added.
 
 Classification: *This component is **VRChat only**.*

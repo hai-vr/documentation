@@ -1,10 +1,8 @@
-﻿# 🚫 Convert Blendshape Conventions
+﻿# Convert Blendshape Conventions
 
 Copies blendshapes from one naming convention to another naming convention.
 
-:::danger
-This component not currently available, but is coming soon.
-:::
+![Unity_Kwht5QWD83.png](..%2Fimg%2FUnity_Kwht5QWD83.png)
 
 ## How to use
 
@@ -14,7 +12,7 @@ You can use this if you need to convert a lot of blendshapes from one naming con
 
 For instance, you can convert [Unified Expressions](https://docs.vrcft.io/docs/tutorial-avatars/tutorial-avatars-extras/unified-blendshapes) blendshapes into [ARKit](https://docs.vrcft.io/docs/tutorial-avatars/tutorial-avatars-extras/compatibility/arkit) blendshapes. 
 
-**This process does not overwrite blendshapes that already exist.**
+This process does not overwrite blendshapes that already exist.
 
 To use this component:
 - Add a "PA-H Convert Blendshape Conventions" component anywhere in your avatar.

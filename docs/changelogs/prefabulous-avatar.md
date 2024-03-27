@@ -2,7 +2,7 @@
 title: Prefabulous Avatar
 ---
 
-## 1.10.0 (Planned)
+## 1.10.0
 
 Three new components have been added to Prefabulous Avatar.
 
@@ -10,9 +10,15 @@ Three new components have been added to Prefabulous Avatar.
 
 This component lets you upload multiple versions of your avatar but with different textures, without needing to duplicate the materials.
 
+It also displays which materials use which textures, although you could also be using lilAvatarUtils for this.
+
+![Unity_lJ03XfMYPW.png](..%2Fproducts%2Fprefabulous-avatar%2Fimg%2FUnity_lJ03XfMYPW.png)
+
 ### New component: [Convert Blendshape Conventions](/docs/products/prefabulous-avatar/hai-components/convert-blendshape-conventions)
 
 This component lets you convert blendshapes from one naming convention to another naming convention, such as converting Unified Expressions blendshapes to ARKit blendshapes.
+
+![Unity_Kwht5QWD83.png](..%2Fproducts%2Fprefabulous-avatar%2Fimg%2FUnity_Kwht5QWD83.png)
 
 ### New component: [Mass Blendshape Sync](/docs/products/prefabulous-avatar/hai-components/mass-blendshape-sync)
 
@@ -20,10 +26,13 @@ This component will synchronize all blendshapes that two meshes share in common.
 
 This is ideally used with renderers that have a massive quantity of blendshapes that need to be synced, such as face tracking.
 
+![Unity_kmeSxcDqt8.png](..%2Fproducts%2Fprefabulous-avatar%2Fimg%2FUnity_kmeSxcDqt8.png)
+
 ### Other
 
 - All Prefabulous components will now be removed after baking, so that uploading a baked avatar will not bake them twice.
 - Blank Gesture Animator now generates one animator layer that VRChat requires, instead of zero layers.
+- The dependency to "Animator As Code - NDMF Processor (Alpha)" has been removed.
 
 ## 1.9.1
 
