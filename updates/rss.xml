@@ -17,7 +17,7 @@
             <content:encoded><![CDATA[<p>This is a technical update for Prefabulous Avatar:</p>
 <ul>
 <li>This version now requires Modular Avatar V1.9.9 minimum.</li>
-<li>This version now requires NDMF V1.9.9 minimum.</li>
+<li>This version now requires NDMF V1.4.0 minimum.</li>
 <li>Integrate <a href="https://docs.hai-vr.dev/docs/products/prefabulous-avatar/component-reference/import-expression-parameters">Import Expression Parameters</a> with Modular Avatar Information.<!-- -->
 <ul>
 <li>The number of synced bits used by Import Parameters is now shown in the Modular Avatar Information panel.</li>
