@@ -2,7 +2,7 @@
 title: Vixen
 ---
 
-## 1.2.0 (Planned)
+## 1.1.0
 
 ### Custom opposite values in Properties
 
