@@ -17,7 +17,7 @@
             <content:encoded><![CDATA[<p>Circumvent a possible bug in VCC by removing NDMF 1.4 from vpmDependencies:</p>
 <ul>
 <li>VCC fails to update Prefabulous, with an error message.</li>
-<li>This might to be caused by there being a 3-package deep chain dependency, although this is not confirmed.</li>
+<li>This might be caused by there being a 3-package deep chain dependency, although this is not confirmed.</li>
 <li>To alleviate this, remove the dependency to NDMF 1.4 from vpmDependencies.</li>
 <li>NDMF 1.4 is still implied by the use of Modular Avatar 1.9.9 minimum.</li>
 </ul>]]></content:encoded>
