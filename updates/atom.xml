@@ -2,11 +2,25 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://docs.hai-vr.dev/updates</id>
     <title>Haï~ Blog</title>
-    <updated>2024-03-27T13:00:00.000Z</updated>
+    <updated>2024-03-28T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://docs.hai-vr.dev/updates"/>
     <subtitle>Haï~ Blog</subtitle>
     <icon>https://docs.hai-vr.dev/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[⚙️ Prefabulous Avatar V1.10.2-beta.2]]></title>
+        <id>https://docs.hai-vr.dev/updates/2024/03/28/p0</id>
+        <link href="https://docs.hai-vr.dev/updates/2024/03/28/p0"/>
+        <updated>2024-03-28T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Circumvent a possible bug in VCC by removing NDMF 1.4 from vpmDependencies:]]></summary>
+        <content type="html"><![CDATA[<p>Circumvent a possible bug in VCC by removing NDMF 1.4 from vpmDependencies:</p>
+<ul>
+<li>VCC fails to update Prefabulous, with an error message.</li>
+<li>This might to be caused by there being a 3-package deep chain dependency, although this is not confirmed.</li>
+<li>To alleviate this, remove the dependency to NDMF 1.4 from vpmDependencies.</li>
+<li>NDMF 1.4 is still implied by the use of Modular Avatar 1.9.9 minimum.</li>
+</ul>]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[⚙️ Prefabulous Avatar V1.10.2-beta.1]]></title>
         <id>https://docs.hai-vr.dev/updates/2024/03/27/p1</id>
@@ -319,18 +333,5 @@ with <a href="https://www.poiyomi.com/special-fx/uv-tile-discard" target="_blank
 </ul>
 <p>🗒️ <a href="https://docs.hai-vr.dev/docs/products/prefabulous-avatar/component-reference/change-avatar-scale">Open documentation</a></p>
 <p>🔍 <a href="https://docs.hai-vr.dev/docs/changelogs/prefabulous-avatar#140">View changelog</a></p>]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[🧪 Knowledge sharing "Recalculate Normals, Retrospective"]]></title>
-        <id>https://docs.hai-vr.dev/updates/2023/12/22/p1-ks</id>
-        <link href="https://docs.hai-vr.dev/updates/2023/12/22/p1-ks"/>
-        <updated>2023-12-22T10:00:00.000Z</updated>
-        <summary type="html"><![CDATA[A new knowledge sharing article has been published, "Recalculate Normals, Retrospective".]]></summary>
-        <content type="html"><![CDATA[<p>A new knowledge sharing article has been published, "Recalculate Normals, Retrospective".</p>
-<ul>
-<li>2023-12-22 <a href="https://hai-vr.notion.site/Recalculate-Normals-Retrospective-e8b319e25c5a4b779c220a4d8286ded4" target="_blank" rel="noopener noreferrer">"Recalculate Normals, Retrospective"</a></li>
-</ul>
-<p>🔍 <a href="https://docs.hai-vr.dev/docs/other/articles">View articles</a></p>
-<video controls="" width="816"><source src="/assets/medias/JiHvKYMj8A-8a224deb042d815298a64db001970322.mp4"></video>]]></content>
     </entry>
 </feed>
