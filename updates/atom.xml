@@ -2,11 +2,24 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://docs.hai-vr.dev/updates</id>
     <title>Haï~ Blog</title>
-    <updated>2024-03-28T08:00:00.000Z</updated>
+    <updated>2024-03-28T10:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://docs.hai-vr.dev/updates"/>
     <subtitle>Haï~ Blog</subtitle>
     <icon>https://docs.hai-vr.dev/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[✨ Lightbox Viewer V2.1.0]]></title>
+        <id>https://docs.hai-vr.dev/updates/2024/03/28/p3</id>
+        <link href="https://docs.hai-vr.dev/updates/2024/03/28/p3"/>
+        <updated>2024-03-28T10:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Re-bake lighting of Lightbox scene in Unity 2022:]]></summary>
+        <content type="html"><![CDATA[<p>Re-bake lighting of Lightbox scene in Unity 2022:</p>
+<ul>
+<li>The current lightmap seems to misbehave in Unity 2022, especially the White box.</li>
+<li>Lighting has been re-baked in Unity 2022.</li>
+<li>The package is now classified as being a Unity 2022.3 package.</li>
+</ul>]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[✨ Double Hip Tracker V1.2.0]]></title>
         <id>https://docs.hai-vr.dev/updates/2024/03/28/p2</id>
@@ -346,23 +359,5 @@ with additional illustrations.</p>
 <li>Try to fix an issue where Visual Expressions Editor will focus the wrong clip if the Project view already has another clip selected.</li>
 </ul>
 <p>🔍 <a href="https://docs.hai-vr.dev/docs/changelogs/combo-gesture-expressions#315102-beta">View changelog</a></p>]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[☀️ Assign UV Tile (Prefabulous V1.7)]]></title>
-        <id>https://docs.hai-vr.dev/updates/2024/01/02/p0</id>
-        <link href="https://docs.hai-vr.dev/updates/2024/01/02/p0"/>
-        <updated>2024-01-02T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[New component: Assign UV Tile]]></summary>
-        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="new-component-assign-uv-tile">New component: <a href="https://docs.hai-vr.dev/docs/products/prefabulous-avatar/hai-components/assign-uv-tile">Assign UV Tile</a><a href="https://docs.hai-vr.dev/updates/2024/01/02/p0#new-component-assign-uv-tile" class="hash-link" aria-label="Direct link to new-component-assign-uv-tile" title="Direct link to new-component-assign-uv-tile">​</a></h3>
-<p>A new component, <a href="https://docs.hai-vr.dev/docs/products/prefabulous-avatar/hai-components/assign-uv-tile">Assign UV Tile</a>, has been added to Prefabulous Avatar.</p>
-<p>If you use Poiyomi Toon shader, this new component can be used in tandem
-with <a href="https://www.poiyomi.com/special-fx/uv-tile-discard" target="_blank" rel="noopener noreferrer">Poiyomi Toon "Special FX &gt; UV Tile Discard"</a> to toggle portions of a model on and off at runtime.</p>
-<p>🗒️ <a href="https://docs.hai-vr.dev/docs/products/prefabulous-avatar/hai-components/assign-uv-tile">Open documentation</a></p>
-<video controls="" muted="" width="816"><source src="/assets/medias/13rQ7HGwPr-ec5d550ea5727a70033b65daa55d19b7.mp4"></video>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="update-delete-polygons">Update <a href="https://docs.hai-vr.dev/docs/products/prefabulous-avatar/hai-components/delete-polygons">Delete Polygons</a><a href="https://docs.hai-vr.dev/updates/2024/01/02/p0#update-delete-polygons" class="hash-link" aria-label="Direct link to update-delete-polygons" title="Direct link to update-delete-polygons">​</a></h3>
-<p>Delete Polygons now has an option to keep the polygons that are still connected to the mesh.</p>
-<p>On blendshapes that shrink the body, this preserves the end caps, so the blendshape still has an effect on the mesh.</p>
-<p>This might help with some avatar models.</p>
-<p>🔍 <a href="https://docs.hai-vr.dev/docs/changelogs/prefabulous-avatar#170">View changelog</a></p>]]></content>
     </entry>
 </feed>
