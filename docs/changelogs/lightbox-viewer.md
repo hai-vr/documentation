@@ -2,7 +2,7 @@
 title: Lightbox Viewer
 ---
 
-## 2.1.0 (Planned)
+## 2.1.0
 
 Re-bake lighting of Lightbox scene in Unity 2022:
 - The current lightmap seems to misbehave in Unity 2022, especially the White box.
