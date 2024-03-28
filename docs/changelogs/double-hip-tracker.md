@@ -2,7 +2,7 @@
 title: Double Hip Tracker
 ---
 
-## 1.2.0 (Planned)
+## 1.2.0
 
 This update provides no changes on the trackers themselves, only compatibility improvements.
 
