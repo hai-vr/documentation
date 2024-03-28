@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://docs.hai-vr.dev/updates</id>
     <title>Haï~ Blog</title>
-    <updated>2024-03-28T10:00:00.000Z</updated>
+    <updated>2024-03-28T11:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://docs.hai-vr.dev/updates"/>
     <subtitle>Haï~ Blog</subtitle>
@@ -11,7 +11,7 @@
         <title type="html"><![CDATA[✨ Lightbox Viewer V2.1.0]]></title>
         <id>https://docs.hai-vr.dev/updates/2024/03/28/p3</id>
         <link href="https://docs.hai-vr.dev/updates/2024/03/28/p3"/>
-        <updated>2024-03-28T10:00:00.000Z</updated>
+        <updated>2024-03-28T11:00:00.000Z</updated>
         <summary type="html"><![CDATA[Re-bake lighting of Lightbox scene in Unity 2022:]]></summary>
         <content type="html"><![CDATA[<p>Re-bake lighting of Lightbox scene in Unity 2022:</p>
 <ul>
@@ -24,7 +24,7 @@
         <title type="html"><![CDATA[✨ Double Hip Tracker V1.2.0]]></title>
         <id>https://docs.hai-vr.dev/updates/2024/03/28/p2</id>
         <link href="https://docs.hai-vr.dev/updates/2024/03/28/p2"/>
-        <updated>2024-03-28T08:00:00.000Z</updated>
+        <updated>2024-03-28T10:00:00.000Z</updated>
         <summary type="html"><![CDATA[This update provides no changes on the trackers themselves, only compatibility improvements.]]></summary>
         <content type="html"><![CDATA[<p>This update provides no changes on the trackers themselves, only compatibility improvements.</p>
 <ul>
@@ -41,24 +41,10 @@
 <div class="language-json codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-json codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">{</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  "useHip": true,</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  "useChest": false,</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  "chestSerialA": "",</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  "chestSerialB": "",</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  "chestPrioritize": false,</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  "noUi": false,</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  "vrcOscPort": -1</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">}</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[⚙️ Prefabulous Avatar V1.10.2-beta.2]]></title>
-        <id>https://docs.hai-vr.dev/updates/2024/03/28/p0</id>
-        <link href="https://docs.hai-vr.dev/updates/2024/03/28/p0"/>
-        <updated>2024-03-28T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Circumvent a possible bug in VCC by removing NDMF 1.4 from vpmDependencies:]]></summary>
-        <content type="html"><![CDATA[<p>Circumvent a possible bug in VCC by removing NDMF 1.4 from vpmDependencies:</p>
-<ul>
-<li>VCC fails to update Prefabulous, with an error message.</li>
-<li>This might be caused by there being a 3-package deep chain dependency, although this is not confirmed.</li>
-<li>To alleviate this, remove the dependency to NDMF 1.4 from vpmDependencies.</li>
-<li>NDMF 1.4 is still implied by the use of Modular Avatar 1.9.9 minimum.</li>
-</ul>]]></content>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[✨ Vixen V1.1.0]]></title>
         <id>https://docs.hai-vr.dev/updates/2024/03/28/p1</id>
         <link href="https://docs.hai-vr.dev/updates/2024/03/28/p1"/>
-        <updated>2024-03-28T00:00:00.000Z</updated>
+        <updated>2024-03-28T09:00:00.000Z</updated>
         <summary type="html"><![CDATA[Custom opposite values in Properties]]></summary>
         <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="custom-opposite-values-in-properties">Custom opposite values in Properties<a href="https://docs.hai-vr.dev/updates/2024/03/28/p1#custom-opposite-values-in-properties" class="hash-link" aria-label="Direct link to Custom opposite values in Properties" title="Direct link to Custom opposite values in Properties">​</a></h2>
 <p>Until this update, properties were using the value in the Scene as the "opposite" value.
@@ -107,6 +93,20 @@ This means you only need to specify the new value of the property, and Vixen wou
 </li>
 <li>Controls of type OSC should now be created properly. They were previously created with an generated parameter name instead of the specified one.</li>
 <li>The "Fix invalid references" buttons now use the correct path, instead of incorrectly interpreting the path as being a parameter name.</li>
+</ul>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[⚙️ Prefabulous Avatar V1.10.2-beta.2]]></title>
+        <id>https://docs.hai-vr.dev/updates/2024/03/28/p0</id>
+        <link href="https://docs.hai-vr.dev/updates/2024/03/28/p0"/>
+        <updated>2024-03-28T08:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Circumvent a possible bug in VCC by removing NDMF 1.4 from vpmDependencies:]]></summary>
+        <content type="html"><![CDATA[<p>Circumvent a possible bug in VCC by removing NDMF 1.4 from vpmDependencies:</p>
+<ul>
+<li>VCC fails to update Prefabulous, with an error message.</li>
+<li>This might be caused by there being a 3-package deep chain dependency, although this is not confirmed.</li>
+<li>To alleviate this, remove the dependency to NDMF 1.4 from vpmDependencies.</li>
+<li>NDMF 1.4 is still implied by the use of Modular Avatar 1.9.9 minimum.</li>
 </ul>]]></content>
     </entry>
     <entry>
