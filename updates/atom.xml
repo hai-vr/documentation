@@ -2,11 +2,31 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://docs.hai-vr.dev/updates</id>
     <title>Haï~ Blog</title>
-    <updated>2024-03-28T00:00:00.000Z</updated>
+    <updated>2024-03-28T08:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://docs.hai-vr.dev/updates"/>
     <subtitle>Haï~ Blog</subtitle>
     <icon>https://docs.hai-vr.dev/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[✨ Double Hip Tracker V1.2.0]]></title>
+        <id>https://docs.hai-vr.dev/updates/2024/03/28/p2</id>
+        <link href="https://docs.hai-vr.dev/updates/2024/03/28/p2"/>
+        <updated>2024-03-28T08:00:00.000Z</updated>
+        <summary type="html"><![CDATA[This update provides no changes on the trackers themselves, only compatibility improvements.]]></summary>
+        <content type="html"><![CDATA[<p>This update provides no changes on the trackers themselves, only compatibility improvements.</p>
+<ul>
+<li>Update OpenVR DLL to 2.5.1. This seems to improve a weird compatibility issue where trackers are not detected, which had affected a Pico 4 user.</li>
+<li>Update ImGui versions, in an attempt to troubleshoot an user whose window seemed to be crashing on AMD GPU.</li>
+<li>Add noUi and vrcOscPort config options:<!-- -->
+<ul>
+<li>A custom vrcOscPort can now be set in the JSON config.</li>
+<li>The program can now start without an UI in the JSON config.</li>
+<li>The JSON config can be created (user_config.json in the same folder as the .exe) by toggling the Double Chest Tracker checkbox ON and OFF.</li>
+</ul>
+</li>
+</ul>
+<div class="language-json codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-json codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">{</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  "useHip": true,</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  "useChest": false,</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  "chestSerialA": "",</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  "chestSerialB": "",</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  "chestPrioritize": false,</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  "noUi": false,</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  "vrcOscPort": -1</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">}</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[⚙️ Prefabulous Avatar V1.10.2-beta.2]]></title>
         <id>https://docs.hai-vr.dev/updates/2024/03/28/p0</id>
@@ -19,6 +39,61 @@
 <li>This might be caused by there being a 3-package deep chain dependency, although this is not confirmed.</li>
 <li>To alleviate this, remove the dependency to NDMF 1.4 from vpmDependencies.</li>
 <li>NDMF 1.4 is still implied by the use of Modular Avatar 1.9.9 minimum.</li>
+</ul>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[✨ Vixen V1.1.0]]></title>
+        <id>https://docs.hai-vr.dev/updates/2024/03/28/p1</id>
+        <link href="https://docs.hai-vr.dev/updates/2024/03/28/p1"/>
+        <updated>2024-03-28T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Custom opposite values in Properties]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="custom-opposite-values-in-properties">Custom opposite values in Properties<a href="https://docs.hai-vr.dev/updates/2024/03/28/p1#custom-opposite-values-in-properties" class="hash-link" aria-label="Direct link to Custom opposite values in Properties" title="Direct link to Custom opposite values in Properties">​</a></h2>
+<p>Until this update, properties were using the value in the Scene as the "opposite" value.
+This means you only need to specify the new value of the property, and Vixen would animate between your value and the scene value.</p>
+<p>Properties can now use a Custom value of your choice as the "opposite" value.</p>
+<ul>
+<li>In this new mode called <strong>"C" for "Custom"</strong>, the value in the scene objects are ignored.<!-- -->
+<ul>
+<li>The scene objects remain unchanged, the opposite value is not baked.</li>
+<li>This means that if the user has safety settings set to keep animations OFF, Vixen Control has no effect on the appearance of your avatar: the scene remains the source of truth.</li>
+<li>When multiple objects are used (i.e. selecting multiple objects, or recursive selection), the value in the Scene may be different for each object (i.e. different outline width for each object).<!-- -->
+<ul>
+<li>They will effectively be overriden by the opposite value.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>The previous mode called <strong>"S" for "Scene"</strong> remains the default:<!-- -->
+<ul>
+<li>When multiple objects are used (i.e. selecting multiple objects, or recursive selection), the value in the Scene may be different for each object (i.e. different outline width for each object).<!-- -->
+<ul>
+<li>Contrary to <strong>"C"</strong> mode, Vixen will animate all of these values independently from the value of each respective object to the scene value.</li>
+<li>This is already the default behaviour in past versions.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="other">Other<a href="https://docs.hai-vr.dev/updates/2024/03/28/p1#other" class="hash-link" aria-label="Direct link to Other" title="Direct link to Other">​</a></h2>
+<ul>
+<li>When baking, all Vixen Control components are now deleted so that further bakes will not repeat those operations.</li>
+<li>Vixen now provides the synced parameters to NDMF, which is shown in the Modular Avatar Information panel.</li>
+<li>Now requires Modular Avatar 1.9.9 minimum.</li>
+<li>Now requires NDMF 1.4.0 minimum.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="fixes">Fixes<a href="https://docs.hai-vr.dev/updates/2024/03/28/p1#fixes" class="hash-link" aria-label="Direct link to Fixes" title="Direct link to Fixes">​</a></h2>
+<ul>
+<li>Attempt to fix incorrect behaviour of Item slot, Flags, and Ejects in some complex scenarios:<!-- -->
+<ul>
+<li>When an item slot exits, delay everything by 1 frame so that the animator has time to acknowledge a change in its parameters caused by switching OFF other controls.</li>
+<li>Remove the default state transition-to-entering shortcut because that transition incorrectly conflates Switch ON and Active.</li>
+<li>Remove the unconditional transition to the default state because that transition incorrectly conflates Switch ON and Active.</li>
+<li>All item slots now generate a None state, even slots with default, as slots with default may need to remain inactive.</li>
+<li>The None slot is now responsible for switching on the default slot, which may or may not result in the default slot becoming active.</li>
+</ul>
+</li>
+<li>Controls of type OSC should now be created properly. They were previously created with an generated parameter name instead of the specified one.</li>
+<li>The "Fix invalid references" buttons now use the correct path, instead of incorrectly interpreting the path as being a parameter name.</li>
 </ul>]]></content>
     </entry>
     <entry>
@@ -289,49 +364,5 @@ with <a href="https://www.poiyomi.com/special-fx/uv-tile-discard" target="_blank
 <p>On blendshapes that shrink the body, this preserves the end caps, so the blendshape still has an effect on the mesh.</p>
 <p>This might help with some avatar models.</p>
 <p>🔍 <a href="https://docs.hai-vr.dev/docs/changelogs/prefabulous-avatar#170">View changelog</a></p>]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[☀️ Delete Polygons (Prefabulous V1.6)]]></title>
-        <id>https://docs.hai-vr.dev/updates/2023/12/31/p0</id>
-        <link href="https://docs.hai-vr.dev/updates/2023/12/31/p0"/>
-        <updated>2023-12-31T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[New component: Delete Polygons]]></summary>
-        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="new-component-delete-polygons">New component: <a href="https://docs.hai-vr.dev/docs/products/prefabulous-avatar/hai-components/delete-polygons">Delete Polygons</a><a href="https://docs.hai-vr.dev/updates/2023/12/31/p0#new-component-delete-polygons" class="hash-link" aria-label="Direct link to new-component-delete-polygons" title="Direct link to new-component-delete-polygons">​</a></h3>
-<p>A new component, <a href="https://docs.hai-vr.dev/docs/products/prefabulous-avatar/hai-components/delete-polygons">Delete Polygons</a>, has been added to Prefabulous Avatar.</p>
-<p>Use it to delete polygons affected by conflict prevention blendshapes, and other unused decorations hidden inside the mesh.</p>
-<p>🗒️ <a href="https://docs.hai-vr.dev/docs/products/prefabulous-avatar/hai-components/delete-polygons">Open documentation</a></p>
-<p>🔍 <a href="https://docs.hai-vr.dev/docs/changelogs/prefabulous-avatar#160">View changelog</a></p>
-<p><img loading="lazy" alt="delete-polygons-compare.png" src="https://docs.hai-vr.dev/assets/images/delete-polygons-compare-ab931bc24ce5fe7296442930e49c7ce5.png" width="1247" height="807" class="img_ev3q"></p>]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[☀️ Generate Blendshapes for Face Tracking Extensions (Prefabulous V1.5)]]></title>
-        <id>https://docs.hai-vr.dev/updates/2023/12/24/p0</id>
-        <link href="https://docs.hai-vr.dev/updates/2023/12/24/p0"/>
-        <updated>2023-12-24T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[V1.5]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="v15">V1.5<a href="https://docs.hai-vr.dev/updates/2023/12/24/p0#v15" class="hash-link" aria-label="Direct link to V1.5" title="Direct link to V1.5">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="new-component-haixt-generate-blendshapes-for-face-tracking-extensions">New component: <a href="https://docs.hai-vr.dev/docs/products/prefabulous-avatar/hai-components/haixt-generate-blendshapes-for-face-tracking-extensions">HaiXT Generate Blendshapes for Face Tracking Extensions</a><a href="https://docs.hai-vr.dev/updates/2023/12/24/p0#new-component-haixt-generate-blendshapes-for-face-tracking-extensions" class="hash-link" aria-label="Direct link to new-component-haixt-generate-blendshapes-for-face-tracking-extensions" title="Direct link to new-component-haixt-generate-blendshapes-for-face-tracking-extensions">​</a></h3>
-<p>A new component, <a href="https://docs.hai-vr.dev/docs/products/prefabulous-avatar/hai-components/haixt-generate-blendshapes-for-face-tracking-extensions">HaiXT Generate Blendshapes for Face Tracking Extensions</a>, has been added to Prefabulous Avatar.</p>
-<p>If you have an avatar that already supports face tracking, a new component in Prefabulous Avatar V1.5 can generate non-standard face tracking blendshapes.</p>
-<p>When your eyes are closed, the shape of your eyes will change when you're smiling.</p>
-<p>🗒️ <a href="https://docs.hai-vr.dev/docs/products/prefabulous-avatar/hai-components/haixt-generate-blendshapes-for-face-tracking-extensions">Open documentation</a></p>
-<video controls="" muted="" width="816"><source src="/assets/medias/smile-f-9f551c5938309cd2bf003bfb42d8ea80.mp4"></video>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="other">Other<a href="https://docs.hai-vr.dev/updates/2023/12/24/p0#other" class="hash-link" aria-label="Direct link to Other" title="Direct link to Other">​</a></h3>
-<p>I've also tried to fix compatibility issues with Unity 2019.</p>
-<p>🔍 <a href="https://docs.hai-vr.dev/docs/changelogs/prefabulous-avatar#150">View changelog</a></p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="v14">V1.4<a href="https://docs.hai-vr.dev/updates/2023/12/24/p0#v14" class="hash-link" aria-label="Direct link to V1.4" title="Direct link to V1.4">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="update-recalculate-normals">Update <a href="https://docs.hai-vr.dev/docs/products/prefabulous-avatar/hai-components/recalculate-normals">Recalculate Normals</a><a href="https://docs.hai-vr.dev/updates/2023/12/24/p0#update-recalculate-normals" class="hash-link" aria-label="Direct link to update-recalculate-normals" title="Direct link to update-recalculate-normals">​</a></h3>
-<p>Recalculate Normals has an option to Erase Custom Split Normals data on some blendshapes, which might improve blendshapes that flatten the chest.</p>
-<p>Do NOT try this option unless defects are visible.</p>
-<p>🗒️ <a href="https://docs.hai-vr.dev/docs/products/prefabulous-avatar/hai-components/recalculate-normals">Open documentation</a></p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="update-change-avatar-scale">Update <a href="https://docs.hai-vr.dev/docs/products/prefabulous-avatar/component-reference/change-avatar-scale">Change Avatar Scale</a><a href="https://docs.hai-vr.dev/updates/2023/12/24/p0#update-change-avatar-scale" class="hash-link" aria-label="Direct link to update-change-avatar-scale" title="Direct link to update-change-avatar-scale">​</a></h3>
-<p>Change Avatar Scale now uses the Avatar Descriptor view position as the source size:</p>
-<ul>
-<li>ChangeAvatarScale reads the Avatar Descriptor view position Y coordinate and uses it as the source size.</li>
-<li>This is now the default behaviour.</li>
-<li>Old behaviour can be restored by checking "Custom Source Size".</li>
-</ul>
-<p>🗒️ <a href="https://docs.hai-vr.dev/docs/products/prefabulous-avatar/component-reference/change-avatar-scale">Open documentation</a></p>
-<p>🔍 <a href="https://docs.hai-vr.dev/docs/changelogs/prefabulous-avatar#140">View changelog</a></p>]]></content>
     </entry>
 </feed>
