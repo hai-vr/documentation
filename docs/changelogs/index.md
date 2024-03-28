@@ -28,7 +28,7 @@ The changelogs of some products aren't available at this time.
 | [FaceTra Shape Creator](./changelogs/facetra-shape-creator)         | 0.6.0-2024-01-18-0056 | 2024-01     |
 | [Prefabulous Avatar](./changelogs/prefabulous-avatar)               | 1.10.1                | **2024-03** |
 | [Visual Expressions Editor](./changelogs/visual-expressions-editor) | 2.0.3                 | 2023-11     |
-| [Vixen](./changelogs/vixen)                                         | 1.0.1                 | 2024-01     |
+| [Vixen](./changelogs/vixen)                                         | 1.1.0                 | **2024-03** |
 | **Patchers**                                                        |                       |             |           
 | [Auto-reset OSC config](./changelogs/auto-reset-osc-config)         | 1.1.3                 | 2023-12     |       
 | [Convert ComboGesture to FaceEmo](./changelogs/cge-to-faceemo)      | 0.2.0                 | 2024-02     |
