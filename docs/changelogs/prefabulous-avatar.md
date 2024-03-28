@@ -2,6 +2,16 @@
 title: Prefabulous Avatar
 ---
 
+# 1.10.2
+
+This is a technical update for Prefabulous Avatar:
+- This version now requires Modular Avatar V1.9.9 minimum.
+- Modular Avatar V1.9.9 requires NDMF V1.4.0 minimum.
+- Integrate [Import Expression Parameters](/docs/products/prefabulous-avatar/component-reference/import-expression-parameters) with Modular Avatar Information.
+  - The number of synced bits used by Import Parameters is now shown in the Modular Avatar Information panel.
+
+![2024-03-27-p1-Unity_yH0bzcLRVK.png](..%2F..%2Fupdates%2Fimg%2F2024-03-27-p1-Unity_yH0bzcLRVK.png)
+
 ## 1.10.1
 
 Three new components have been added to Prefabulous Avatar.
