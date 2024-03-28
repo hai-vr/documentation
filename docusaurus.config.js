@@ -54,7 +54,7 @@ export default {
           postsPerPage: 100, // CHANGE ME from 100 to a lower number (or default) after January 2024
           routeBasePath: 'updates',
           path: './updates',
-          blogSidebarTitle: 'Updates (since January 2023)',
+          blogSidebarTitle: 'Updates',
           blogSidebarCount: 'ALL',
           showReadingTime: false,
           blogTitle: 'Updates',
