@@ -9,6 +9,10 @@ you can use Tailoring to reuse that file with a completely different avatar base
 
 For example, you can transfer from Karin to Lime, or transfer from Kikyo to Moe.
 
+<video controls muted width="816">
+    <source src={require('/docs/products/facetra-shape-creator/img/tailoring/T5A5uJCB8L.mp4').default}/>
+</video>
+
 :::note
 The Tailoring feature was added in V0.7.0.
 :::
@@ -65,6 +69,8 @@ After you're done with the construction lines:
 - In the Tailoring section, tick the "Use Tailoring" checkbox.
 - In the "Adaptive File" field, specify the FaceTra File asset of the **other** avatar base that you've successfully completed before.
 - The contents of the "Adaptive File" will not be modified when you're editing this component.
+
+![tailoring-loc.png](img%2Ftailoring%2Ftailoring-loc.png)
 
 ### Blendshape Tailoring
 

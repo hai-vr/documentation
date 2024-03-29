@@ -2,6 +2,35 @@
 title: FaceTra Shape Creator
 ---
 
+## 0.7.0-2024-03-29-0903
+
+### Major feature: Add [Tailoring](/docs/products/facetra-shape-creator/tailoring)
+
+- Tailoring allows you to transfer a FaceTra file made for one avatar base, to a completely different avatar base.
+- For example: Transfer from Karin to Lime, or transfer from Kikyo to Moe.
+- Tailoring works by transferring deformations relative to the Construction Lines of the original avatar base, to the Construction Lines of your new avatar base.
+  - The difference in size of the Construction Lines is taken into account. For example, when the width of the mouth differs greatly between the two avatar bases, the deformations will be scaled accordingly.
+- When using Tailoring, you only need to specify the Construction Lines of your new avatar base, and the blendshapes of your new avatar base.
+- This feature is experimental.
+
+<video controls muted width="816">
+    <source src={require('/docs/products/facetra-shape-creator/img/tailoring/T5A5uJCB8L.mp4').default}/>
+</video>
+
+### Fix: Add workaround for small meshes
+- Some meshes exported from Blender have an incorrect scale of 0.01 or similar.
+- This triggers an internal conflict with Unity.
+- Due to the nature of purchased avatars and reimporting models with different scale or coordinate system, it is preferable not ask the user to fix the export themselves.
+- To fix this, if the Workaround for small meshes is enabled in Data Calibration, then:
+  - We create a blendshape with a maximum weight of 10000 instead of the usual 100 (a hundred times larger).
+  - The components (vertex, normal, tangent) are a hundred times larger.
+  - This hundred times factor prevent the vertices from being discarded.
+  - Since the controlling animators only animate blendshapes to the value of 100 (and even then, in the case of VRChat, it clamps to 100), the blendshapes are effectively at the expected weight at 100.
+
+### Other fixes
+- Unassigning the Face Mesh is now done by pressing a "×" button, so that the face tracking mesh is safely removed from the mesh.
+- The user is warned if the model was imported with no normals or tangents, as this is not supported.
+
 ## 0.6.0-2024-01-18-0056
 
 - If your model already has face tracking blendshapes, you can now reuse the those existing blendshapes to build new shapes.
