@@ -1,4 +1,8 @@
-﻿# My avatar already has face tracking
+﻿---
+sidebar_position: 9
+---
+
+# My avatar already has face tracking
 
 If your avatar already has face tracking, you can use FaceTra Shape Creator to partially overwrite existing face tracking blendshapes.
 
