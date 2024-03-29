@@ -4,10 +4,51 @@
         <title>Haï~ Blog</title>
         <link>https://docs.hai-vr.dev/updates</link>
         <description>Haï~ Blog</description>
-        <lastBuildDate>Thu, 28 Mar 2024 12:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 29 Mar 2024 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[✨ FaceTra Shape Creator V0.7]]></title>
+            <link>https://docs.hai-vr.dev/updates/2024/03/29/p0</link>
+            <guid>https://docs.hai-vr.dev/updates/2024/03/29/p0</guid>
+            <pubDate>Fri, 29 Mar 2024 00:00:00 GMT</pubDate>
+            <description><![CDATA[Major feature: Add Tailoring]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="major-feature-add-tailoring">Major feature: Add <a href="https://docs.hai-vr.dev/docs/products/facetra-shape-creator/tailoring">Tailoring</a><a href="https://docs.hai-vr.dev/updates/2024/03/29/p0#major-feature-add-tailoring" class="hash-link" aria-label="Direct link to major-feature-add-tailoring" title="Direct link to major-feature-add-tailoring">​</a></h2>
+<ul>
+<li>Tailoring allows you to transfer a FaceTra file made for one avatar base, to a completely different avatar base.</li>
+<li>For example: Transfer from Karin to Lime, or transfer from Kikyo to Moe.</li>
+<li>Tailoring works by transferring deformations relative to the Construction Lines of the original avatar base, to the Construction Lines of your new avatar base.<!-- -->
+<ul>
+<li>The difference in size of the Construction Lines is taken into account. For example, when the width of the mouth differs greatly between the two avatar bases, the deformations will be scaled accordingly.</li>
+</ul>
+</li>
+<li>When using Tailoring, you only need to specify the Construction Lines of your new avatar base, and the blendshapes of your new avatar base.</li>
+<li>This feature is experimental.</li>
+</ul>
+<p>🗒️ <a href="https://docs.hai-vr.dev/docs/products/facetra-shape-creator/tailoring">Open documentation</a></p>
+<video controls="" muted="" width="816"><source src="/assets/medias/T5A5uJCB8L-5318f28dc0dc38729a1452a2cf6aa53d.mp4"></video>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="fix-add-workaround-for-small-meshes">Fix: Add workaround for small meshes<a href="https://docs.hai-vr.dev/updates/2024/03/29/p0#fix-add-workaround-for-small-meshes" class="hash-link" aria-label="Direct link to Fix: Add workaround for small meshes" title="Direct link to Fix: Add workaround for small meshes">​</a></h2>
+<ul>
+<li>Some meshes exported from Blender have an incorrect scale of 0.01 or similar.</li>
+<li>This triggers an internal conflict with Unity.</li>
+<li>Due to the nature of purchased avatars and reimporting models with different scale or coordinate system, it is preferable not ask the user to fix the export themselves.</li>
+<li>To fix this, if the Workaround for small meshes is enabled in Data Calibration, then:<!-- -->
+<ul>
+<li>We create a blendshape with a maximum weight of 10000 instead of the usual 100 (a hundred times larger).</li>
+<li>The components (vertex, normal, tangent) are a hundred times larger.</li>
+<li>This hundred times factor prevent the vertices from being discarded.</li>
+<li>Since the controlling animators only animate blendshapes to the value of 100 (and even then, in the case of VRChat, it clamps to 100), the blendshapes are effectively at the expected weight at 100.</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="other-fixes">Other fixes<a href="https://docs.hai-vr.dev/updates/2024/03/29/p0#other-fixes" class="hash-link" aria-label="Direct link to Other fixes" title="Direct link to Other fixes">​</a></h2>
+<ul>
+<li>Unassigning the Face Mesh is now done by pressing a "×" button, so that the face tracking mesh is safely removed from the mesh.</li>
+<li>The user is warned if the model was imported with no normals or tangents, as this is not supported.</li>
+</ul>
+<p>🔍 <a href="https://docs.hai-vr.dev/docs/changelogs/facetra-shape-creator#070-2024-03-29-0903">View changelog</a></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[⚙️ Prefabulous Avatar V1.10.2]]></title>
             <link>https://docs.hai-vr.dev/updates/2024/03/28/p4</link>
@@ -326,45 +367,6 @@ with additional illustrations.</p>
             <content:encoded><![CDATA[<p>VRWare has been updated with additional fonts to support community translations.</p>
 <p>🔍 <a href="https://docs.hai-vr.dev/docs/changelogs/vrware#2024-01-07---fonts-update">View changelog</a></p>
 <p><img loading="lazy" alt="2024-01-07-p0-c-VRChat_2024-01-07_05-27-54.204_1920x1080.png" src="https://docs.hai-vr.dev/assets/images/2024-01-07-p0-c-VRChat_2024-01-07_05-27-54.204_1920x1080-2d72653e0b2567c1e50610d9350bde02.png" width="1920" height="1080" class="img_ev3q"></p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[✨ FaceTra Shape Creator V0.4]]></title>
-            <link>https://docs.hai-vr.dev/updates/2024/01/05/p1</link>
-            <guid>https://docs.hai-vr.dev/updates/2024/01/05/p1</guid>
-            <pubDate>Fri, 05 Jan 2024 04:00:00 GMT</pubDate>
-            <description><![CDATA[- Change mesh calibration to support meshes that have a non-zero origin (offset).]]></description>
-            <content:encoded><![CDATA[<ul>
-<li>
-<p>Change mesh calibration to support meshes that have a non-zero origin (offset).</p>
-<ul>
-<li>Mesh calibration is now done by converting vertices to avatar space through the 0th bindpose, which is generally the hip bone.</li>
-<li>⚠️⚡ This means <strong>if the user shifts the hip up or down</strong>, this could cause existing FaceTra rigs to cease functioning as expected.<!-- -->
-<ul>
-<li>Contact me on <a href="https://docs.hai-vr.dev/docs/other/discord">Discord</a> if this happens to you.</li>
-</ul>
-</li>
-<li>For this reason there is now a "Override Bone Zero" option in mesh calibration to recalibrate the existing FaceTra data if necessary.</li>
-<li>Existing mesh calibration options have been grayed out.</li>
-</ul>
-</li>
-<li>
-<p>Make vertex selection more aggressive.</p>
-<ul>
-<li>Vertex selection will now add neighbours of vertices that have the exact same position.</li>
-<li>This is intended to correct for teeth/tongue selection issues some users were having.</li>
-<li>⚠️⚡ Since the selection is more aggressive, <strong>this might expand the existing selections</strong>.<!-- -->
-<ul>
-<li>Contact me on <a href="https://docs.hai-vr.dev/docs/other/discord">Discord</a> if this happens to you.</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>
-<p>Add FTWireMeshDebugger component for support requests.</p>
-</li>
-</ul>
-<p>🔍 <a href="https://docs.hai-vr.dev/docs/changelogs/facetra-shape-creator#040-2024-01-05-0349">View changelog</a></p>
-<p>🗒️ <a href="https://docs.hai-vr.dev/docs/products/facetra-shape-creator">Open documentation</a></p>]]></content:encoded>
         </item>
     </channel>
 </rss>
