@@ -4,10 +4,18 @@
         <title>Haï~ Blog</title>
         <link>https://docs.hai-vr.dev/updates</link>
         <description>Haï~ Blog</description>
-        <lastBuildDate>Fri, 29 Mar 2024 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 02 Apr 2024 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[⚙️ Prefabulous Avatar V1.10.3]]></title>
+            <link>https://docs.hai-vr.dev/updates/2024/04/02/p0</link>
+            <guid>https://docs.hai-vr.dev/updates/2024/04/02/p0</guid>
+            <pubDate>Tue, 02 Apr 2024 00:00:00 GMT</pubDate>
+            <description><![CDATA[Fix Replace Textures should no longer ignore disabled objects.]]></description>
+            <content:encoded><![CDATA[<p>Fix Replace Textures should no longer ignore disabled objects.</p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[✨ FaceTra Shape Creator V0.7]]></title>
             <link>https://docs.hai-vr.dev/updates/2024/03/29/p0</link>
@@ -357,16 +365,6 @@ with additional illustrations.</p>
 </ul>
 <p>🔍 <a href="https://docs.hai-vr.dev/docs/changelogs/facetra-shape-creator#050-2024-01-08-0549">View changelog</a></p>
 <p>🗒️ <a href="https://docs.hai-vr.dev/docs/products/facetra-shape-creator">Open documentation</a></p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[☕ VRWare Fonts update]]></title>
-            <link>https://docs.hai-vr.dev/updates/2024/01/07/p0-c</link>
-            <guid>https://docs.hai-vr.dev/updates/2024/01/07/p0-c</guid>
-            <pubDate>Sun, 07 Jan 2024 00:00:00 GMT</pubDate>
-            <description><![CDATA[VRWare has been updated with additional fonts to support community translations.]]></description>
-            <content:encoded><![CDATA[<p>VRWare has been updated with additional fonts to support community translations.</p>
-<p>🔍 <a href="https://docs.hai-vr.dev/docs/changelogs/vrware#2024-01-07---fonts-update">View changelog</a></p>
-<p><img loading="lazy" alt="2024-01-07-p0-c-VRChat_2024-01-07_05-27-54.204_1920x1080.png" src="https://docs.hai-vr.dev/assets/images/2024-01-07-p0-c-VRChat_2024-01-07_05-27-54.204_1920x1080-2d72653e0b2567c1e50610d9350bde02.png" width="1920" height="1080" class="img_ev3q"></p>]]></content:encoded>
         </item>
     </channel>
 </rss>
