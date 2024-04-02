@@ -2,6 +2,10 @@
 title: Prefabulous Avatar
 ---
 
+# 1.10.3
+
+Fix Replace Textures should no longer ignore disabled objects.
+
 # 1.10.2
 
 This is a technical update for Prefabulous Avatar:

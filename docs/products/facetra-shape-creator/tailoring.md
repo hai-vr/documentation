@@ -60,7 +60,7 @@ In the scene that contains your new avatar base, add a GameObject somewhere on y
 
 ### Define the construction lines for your new avatar base
 
-Define all of the the [Construction lines](construction-lines) for your new avatar base.
+Define all the [Construction lines](construction-lines) for your new avatar base.
 
 ### Enable Tailoring
 
