@@ -54,13 +54,13 @@ By default, you define properties by specifying a new value, and the default val
 
 If you have a reason not to use the scene value, you can choose a custom value.
 
+:::warning
+The Custom feature was added in V1.1.0.
+:::
+
 - The property has a button labelled **"S" for "Scene"**. When the button shows **"S"**, it uses the Scene values.
   - When multiple objects are used (i.e. selecting multiple objects, or recursive selection), the value in the Scene may be different for each object (i.e. different outline width for each object).
     - Vixen will animate all of these values independently from the value of each respective object to the scene value.
-
-:::warning
-This feature is planned in the next version of Vixen, 1.2.0
-:::
     
 - If you click that button, it will change to **"C" for "Custom"**: The value in the scene objects are ignored.
   - The scene objects remain unchanged, the default value is not baked.
