@@ -1,4 +1,4 @@
-﻿# Blank FX Animator
+﻿# 💬 Blank FX Animator
 
 Replaces the FX animator of the avatar with a blank one, as early as possible.
 
@@ -13,4 +13,4 @@ without having to modify the original avatar descriptor by hand.
 
 - **1.2.0**: Added.
 
-Classification: *This component is **VRChat only**.*
+Classification: *This component is **💬 VRChat Only**.*

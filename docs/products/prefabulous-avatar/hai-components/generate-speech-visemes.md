@@ -1,7 +1,7 @@
 ﻿---
 unlisted: true
 ---
-# ⛔ Generate Speech Visemes
+# ⛔💬 Generate Speech Visemes
 
 If you have an avatar that has face tracking, you can generate speech visemes using those face tracking blendshapes.
 The avatar descriptor will be modified to use those visemes.
@@ -19,4 +19,4 @@ To use this component:
 
 - **1.11.0**: Added.
 
-Classification: *This component is **VRChat only**.*
+Classification: *This component is **💬 VRChat Only**.*

@@ -1,4 +1,4 @@
-﻿# HaiXT Face Tracking Extensions
+﻿# 💬 HaiXT Face Tracking Extensions
 
 Adds a new FX layer containing support for the non-standard face tracking blendshapes.
 
@@ -48,4 +48,4 @@ This effectively makes it into a new blendshape capable of morphing the standard
 
 - **1.2.0**: Added.
 
-Classification: *This component is **VRChat only**.*
+Classification: *This component is **💬 VRChat Only**.*

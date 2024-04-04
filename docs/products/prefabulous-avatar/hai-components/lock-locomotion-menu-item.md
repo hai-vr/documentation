@@ -1,4 +1,4 @@
-﻿# Lock Locomotion Menu Item
+﻿# 💬 Lock Locomotion Menu Item
 
 Adds a new FX layer and creates a menu item to lock locomotion.
 
@@ -31,4 +31,4 @@ You can have multiple Lock Locomotion Menu Item components across multiple menus
 
 - **1.2.0**: Added.
 
-Classification: *This component is **VRChat only**.*
+Classification: *This component is **💬 VRChat Only**.*

@@ -1,4 +1,4 @@
-﻿# Blank Expressions Menu and Parameters
+﻿# 💬 Blank Expressions Menu and Parameters
 
 Replaces the expressions menu and the expression parameters with blank ones, as early as possible.
 
@@ -13,4 +13,4 @@ without having to modify the original avatar descriptor by hand.
 
 - **1.2.0**: Added.
 
-Classification: *This component is **VRChat only**.*
+Classification: *This component is **💬 VRChat Only**.*

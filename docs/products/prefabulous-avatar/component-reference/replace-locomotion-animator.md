@@ -1,4 +1,4 @@
-﻿# Replace Locomotion Animator
+﻿# 💬 Replace Locomotion Animator
 
 Replace the locomotion animator of the avatar with this one.
 
@@ -14,4 +14,4 @@ without having to modify the original avatar descriptor by hand.
 
 - **1.2.0**: Added.
 
-Classification: *This component is **VRChat only**.*
+Classification: *This component is **💬 VRChat Only**.*
