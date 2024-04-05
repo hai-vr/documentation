@@ -81,7 +81,8 @@ If you are a developer who internally references classes or entities within Pref
 <li>Classes will be moved across packages.</li>
 <li>Many classes used internally by Prefabulous will change name or will be moved around.</li>
 <li>The technical package name of Prefabulous for VRChat will be the same as the one currently used for Prefabulous Avatar.</li>
-</ul>]]></content>
+</ul>
+<p>If you're a developer who might be concerned by such changes, you're invited to let me know about it on the <a href="https://docs.hai-vr.dev/docs/other/discord">Discord server</a>.</p>]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[⚙️ Prefabulous Avatar V1.10.3]]></title>
