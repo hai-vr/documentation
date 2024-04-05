@@ -2,11 +2,86 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://docs.hai-vr.dev/updates</id>
     <title>Haï~ Blog</title>
-    <updated>2024-04-02T00:00:00.000Z</updated>
+    <updated>2024-04-05T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://docs.hai-vr.dev/updates"/>
     <subtitle>Haï~ Blog</subtitle>
     <icon>https://docs.hai-vr.dev/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[⚠️ Advance notice for Prefabulous 2.0]]></title>
+        <id>https://docs.hai-vr.dev/updates/2024/04/05/p0</id>
+        <link href="https://docs.hai-vr.dev/updates/2024/04/05/p0"/>
+        <updated>2024-04-05T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Hello,]]></summary>
+        <content type="html"><![CDATA[<p>Hello,</p>
+<p>This is an advance notice regarding a future change for Prefabulous Avatar.</p>
+<p>In a future update, Prefabulous will be split into two packages:</p>
+<ul>
+<li><strong>Prefabulous Native</strong> will be a package that does not require VRChat, and will contain the following components:<!-- -->
+<ul>
+<li>Change Avatar Scale</li>
+<li>Edit All Mesh Anchor Override</li>
+<li>Edit All Mesh Bounds</li>
+<li>Assign UV Tile</li>
+<li>Convert Blendshape Conventions</li>
+<li>Delete Polygons</li>
+<li>HaiXT Generate Blendshapes for Face Tracking Extensions</li>
+<li>Recalculate Normals</li>
+<li>Replace Textures</li>
+</ul>
+</li>
+<li><strong>Prefabulous for VRChat</strong> will be a package that requires VRChat, and will contain the following components:<!-- -->
+<ul>
+<li>HaiXT Face Tracking Extensions</li>
+<li>Lock Locomotion Menu Item</li>
+<li>Mass Blendshape Sync</li>
+<li>Import Expression Parameters</li>
+<li>Blank Expressions Menu and Parameters</li>
+<li>Blank FX Animator</li>
+<li>Blank Gesture Animator</li>
+<li>Replace Action Animator</li>
+<li>Replace Locomotion Animator</li>
+</ul>
+</li>
+</ul>
+<p>The aim of this split is to allow the development of <em>Prefabulous Native</em> components in a way that benefits avatar frameworks
+of other social VR platforms, apps, and non-social VR apps (for instance, any VRM-compatible app).</p>
+<p>Most <em>Prefabulous for VRChat</em> components will depend on VRChat-specific animators and animation quirks,
+or component structures pertaining specifically to VRChat that would be uncommon in other social VR apps.</p>
+<p>For most VRChat users, this change should be invisible if you use VCC.
+If you are a developer who internally references classes or entities within Prefabulous, some changes are expected as described below.</p>
+<p>Thank you for your understanding.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="anticipated-changes">Anticipated changes<a href="https://docs.hai-vr.dev/updates/2024/04/05/p0#anticipated-changes" class="hash-link" aria-label="Direct link to Anticipated changes" title="Direct link to Anticipated changes">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="for-vrchat-users">For VRChat users<a href="https://docs.hai-vr.dev/updates/2024/04/05/p0#for-vrchat-users" class="hash-link" aria-label="Direct link to For VRChat users" title="Direct link to For VRChat users">​</a></h3>
+<div class="theme-admonition theme-admonition-warning admonition_xJq3 alert alert--warning"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>warning</div><div class="admonitionContent_BuS1"><p>This describes a future update, this has not yet been released at this time of writing.</p></div></div>
+<p>For most VRChat users, this change should be invisible.</p>
+<ul>
+<li>Installing Prefabulous for VRChat will automatically install Prefabulous Native as a VCC dependency.</li>
+<li>The existing components in your scenes will continue working as if nothing has changed.</li>
+</ul>
+<p>However, if you're installing Prefabulous without VCC, you will need to:</p>
+<ul>
+<li>Open a blank scene in Unity Editor.</li>
+<li>Remove the Packages/dev.hai-vr.resilience.prefabulous folder</li>
+<li>Install the Prefabulous Native package on GitHub.</li>
+<li>Install the Prefabulous for VRChat package on GitHub.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="for-developers-who-might-be-referencing-prefabulous-entities">For developers who might be referencing Prefabulous entities<a href="https://docs.hai-vr.dev/updates/2024/04/05/p0#for-developers-who-might-be-referencing-prefabulous-entities" class="hash-link" aria-label="Direct link to For developers who might be referencing Prefabulous entities" title="Direct link to For developers who might be referencing Prefabulous entities">​</a></h3>
+<ul>
+<li>The GUIDs for these components will not change.</li>
+<li>The assemblies for most of these components <strong>will</strong> change.</li>
+<li>The namespace for most of these components <strong>will</strong> change.</li>
+<li>Some component names <strong>will</strong> change.<!-- -->
+<ul>
+<li>The prefix "PrefabulousHai" is likely to be changed to just "Prefabulous".</li>
+</ul>
+</li>
+<li>The NDMF plugin names <strong>will</strong> change.</li>
+<li>Classes will be moved across packages.</li>
+<li>Many classes used internally by Prefabulous will change name or will be moved around.</li>
+<li>The technical package name of Prefabulous for VRChat will be the same as the one currently used for Prefabulous Avatar.</li>
+</ul>]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[⚙️ Prefabulous Avatar V1.10.3]]></title>
         <id>https://docs.hai-vr.dev/updates/2024/04/02/p0</id>
@@ -342,27 +417,5 @@ Existing components are the same, and you will not lose your work.</p>
 <p>🔍 <a href="https://docs.hai-vr.dev/docs/changelogs/vixen#100">View changelog</a></p>
 <p>🗒️ <a href="https://docs.hai-vr.dev/docs/products/vixen/cross-control-effects">Open documentation</a></p>
 <p><img loading="lazy" alt="2024-01-12-p0-Fm4J7w3YFD.png" src="https://docs.hai-vr.dev/assets/images/2024-01-12-p0-Fm4J7w3YFD-7e356f582a4a51527e01093affb40484.png" width="1052" height="566" class="img_ev3q"></p>]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[✨ FaceTra Shape Creator V0.5]]></title>
-        <id>https://docs.hai-vr.dev/updates/2024/01/08/p0</id>
-        <link href="https://docs.hai-vr.dev/updates/2024/01/08/p0"/>
-        <updated>2024-01-08T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[- Add option for a less greedy vertex selection:]]></summary>
-        <content type="html"><![CDATA[<ul>
-<li>
-<p>Add option for a less greedy vertex selection:</p>
-<ul>
-<li>On some models, the tongue may share vertices with the rest of the face.</li>
-<li>Add an option on each vertex selection section to switch to a less greedy vertex selection.</li>
-</ul>
-</li>
-<li>
-<p>The documentation has been moved from Notion to <a href="https://docs.hai-vr.dev/docs/products/facetra-shape-creator">this location</a>,
-with additional illustrations.</p>
-</li>
-</ul>
-<p>🔍 <a href="https://docs.hai-vr.dev/docs/changelogs/facetra-shape-creator#050-2024-01-08-0549">View changelog</a></p>
-<p>🗒️ <a href="https://docs.hai-vr.dev/docs/products/facetra-shape-creator">Open documentation</a></p>]]></content>
     </entry>
 </feed>
