@@ -50,6 +50,7 @@ of other social VR platforms, apps, and non-social VR apps (for instance, any VR
 or component structures pertaining specifically to VRChat that would be uncommon in other social VR apps.</p>
 <p>For most VRChat users, this change should be invisible if you use VCC.
 If you are a developer who internally references classes or entities within Prefabulous, some changes are expected as described below.</p>
+<p>If you have any questions, please ask me about it on the <a href="https://docs.hai-vr.dev/docs/other/discord">Discord server</a>.</p>
 <p>Thank you for your understanding.</p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="anticipated-changes">Anticipated changes<a href="https://docs.hai-vr.dev/updates/2024/04/05/p0#anticipated-changes" class="hash-link" aria-label="Direct link to Anticipated changes" title="Direct link to Anticipated changes">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="for-vrchat-users">For VRChat users<a href="https://docs.hai-vr.dev/updates/2024/04/05/p0#for-vrchat-users" class="hash-link" aria-label="Direct link to For VRChat users" title="Direct link to For VRChat users">​</a></h3>
