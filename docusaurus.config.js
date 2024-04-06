@@ -200,4 +200,66 @@ export default {
         darkTheme: darkCodeTheme,
       },
     }),
+  
+  plugins: [
+      [
+      '@docusaurus/plugin-client-redirects',
+      {
+        redirects: [
+          { from: '/docs/changelogs/prefabulous-avatar', to: '/docs/changelogs/prefabulous' },
+          { from: '/docs/products/prefabulous-avatar', to: '/docs/products/prefabulous' },
+          { from: '/docs/products/prefabulous-avatar/reference', to: '/docs/products/prefabulous/reference' },
+          { from: '/docs/products/prefabulous-avatar/component-reference', to: '/docs/products/prefabulous/universal' },
+          { from: '/docs/products/prefabulous-avatar/component-reference/blank-expressions-menu-and-parameters', to: '/docs/products/prefabulous/vrchat/blank-expressions-menu-and-parameters' },
+          { from: '/docs/products/prefabulous-avatar/component-reference/blank-fx-animator', to: '/docs/products/prefabulous/vrchat/blank-fx-animator' },
+          { from: '/docs/products/prefabulous-avatar/component-reference/blank-gesture-animator', to: '/docs/products/prefabulous/vrchat/blank-gesture-animator' },
+          { from: '/docs/products/prefabulous-avatar/component-reference/change-avatar-scale', to: '/docs/products/prefabulous/universal/change-avatar-scale' },
+          { from: '/docs/products/prefabulous-avatar/component-reference/edit-all-mesh-anchor-override', to: '/docs/products/prefabulous/universal/edit-all-mesh-anchor-override' },
+          { from: '/docs/products/prefabulous-avatar/component-reference/edit-all-mesh-bounds', to: '/docs/products/prefabulous/universal/edit-all-mesh-bounds' },
+          { from: '/docs/products/prefabulous-avatar/component-reference/import-expression-parameters', to: '/docs/products/prefabulous/vrchat/import-expression-parameters' },
+          { from: '/docs/products/prefabulous-avatar/component-reference/replace-action-animator', to: '/docs/products/prefabulous/vrchat/replace-action-animator' },
+          { from: '/docs/products/prefabulous-avatar/component-reference/replace-locomotion-animator', to: '/docs/products/prefabulous/vrchat/replace-locomotion-animator' },
+          { from: '/docs/products/prefabulous-avatar/hai-components', to: '/docs/products/prefabulous/vrchat' },
+          { from: '/docs/products/prefabulous-avatar/hai-components/assign-uv-tile', to: '/docs/products/prefabulous/universal/assign-uv-tile' },
+          { from: '/docs/products/prefabulous-avatar/hai-components/convert-blendshape-conventions', to: '/docs/products/prefabulous/universal/convert-blendshape-conventions' },
+          { from: '/docs/products/prefabulous-avatar/hai-components/delete-polygons', to: '/docs/products/prefabulous/universal/delete-polygons' },
+          { from: '/docs/products/prefabulous-avatar/hai-components/haixt-face-tracking-extensions', to: '/docs/products/prefabulous/vrchat/haixt-face-tracking-extensions' },
+          { from: '/docs/products/prefabulous-avatar/hai-components/haixt-generate-blendshapes-for-face-tracking-extensions', to: '/docs/products/prefabulous/universal/haixt-generate-blendshapes-for-face-tracking-extensions' },
+          { from: '/docs/products/prefabulous-avatar/hai-components/lock-locomotion-menu-item', to: '/docs/products/prefabulous/vrchat/lock-locomotion-menu-item' },
+          { from: '/docs/products/prefabulous-avatar/hai-components/mass-blendshape-sync', to: '/docs/products/prefabulous/vrchat/mass-blendshape-sync' },
+          { from: '/docs/products/prefabulous-avatar/hai-components/recalculate-normals', to: '/docs/products/prefabulous/universal/recalculate-normals' },
+          { from: '/docs/products/prefabulous-avatar/hai-components/replace-textures', to: '/docs/products/prefabulous/universal/replace-textures' },
+
+          { from: '/docs/products/prefabulous/component-reference', to: '/docs/products/prefabulous/universal' },
+          { from: '/docs/products/prefabulous/component-reference/blank-expressions-menu-and-parameters', to: '/docs/products/prefabulous/vrchat/blank-expressions-menu-and-parameters' },
+          { from: '/docs/products/prefabulous/component-reference/blank-fx-animator', to: '/docs/products/prefabulous/vrchat/blank-fx-animator' },
+          { from: '/docs/products/prefabulous/component-reference/blank-gesture-animator', to: '/docs/products/prefabulous/vrchat/blank-gesture-animator' },
+          { from: '/docs/products/prefabulous/component-reference/change-avatar-scale', to: '/docs/products/prefabulous/universal/change-avatar-scale' },
+          { from: '/docs/products/prefabulous/component-reference/edit-all-mesh-anchor-override', to: '/docs/products/prefabulous/universal/edit-all-mesh-anchor-override' },
+          { from: '/docs/products/prefabulous/component-reference/edit-all-mesh-bounds', to: '/docs/products/prefabulous/universal/edit-all-mesh-bounds' },
+          { from: '/docs/products/prefabulous/component-reference/import-expression-parameters', to: '/docs/products/prefabulous/vrchat/import-expression-parameters' },
+          { from: '/docs/products/prefabulous/component-reference/replace-action-animator', to: '/docs/products/prefabulous/vrchat/replace-action-animator' },
+          { from: '/docs/products/prefabulous/component-reference/replace-locomotion-animator', to: '/docs/products/prefabulous/vrchat/replace-locomotion-animator' },
+          { from: '/docs/products/prefabulous/hai-components', to: '/docs/products/prefabulous/vrchat' },
+          { from: '/docs/products/prefabulous/hai-components/assign-uv-tile', to: '/docs/products/prefabulous/universal/assign-uv-tile' },
+          { from: '/docs/products/prefabulous/hai-components/convert-blendshape-conventions', to: '/docs/products/prefabulous/universal/convert-blendshape-conventions' },
+          { from: '/docs/products/prefabulous/hai-components/delete-polygons', to: '/docs/products/prefabulous/universal/delete-polygons' },
+          { from: '/docs/products/prefabulous/hai-components/haixt-face-tracking-extensions', to: '/docs/products/prefabulous/vrchat/haixt-face-tracking-extensions' },
+          { from: '/docs/products/prefabulous/hai-components/haixt-generate-blendshapes-for-face-tracking-extensions', to: '/docs/products/prefabulous/universal/haixt-generate-blendshapes-for-face-tracking-extensions' },
+          { from: '/docs/products/prefabulous/hai-components/lock-locomotion-menu-item', to: '/docs/products/prefabulous/vrchat/lock-locomotion-menu-item' },
+          { from: '/docs/products/prefabulous/hai-components/mass-blendshape-sync', to: '/docs/products/prefabulous/vrchat/mass-blendshape-sync' },
+          { from: '/docs/products/prefabulous/hai-components/recalculate-normals', to: '/docs/products/prefabulous/universal/recalculate-normals' },
+          { from: '/docs/products/prefabulous/hai-components/replace-textures', to: '/docs/products/prefabulous/universal/replace-textures' },
+        ],
+        // createRedirects(existingPath) {
+        //   if (existingPath.includes('/prefabulous')) {
+        //     return [
+        //       existingPath.replace('/prefabulous', '/prefabulous-avatar'),
+        //     ];
+        //   }
+        //   return undefined; // Return a falsy value: no redirect created
+        // },
+      },
+    ],
+  ],
 };

@@ -1,5 +1,5 @@
 ﻿---
-title: Prefabulous Avatar
+title: Prefabulous
 ---
 
 # 1.10.3
@@ -8,39 +8,39 @@ Fix Replace Textures should no longer ignore disabled objects.
 
 # 1.10.2
 
-This is a technical update for Prefabulous Avatar:
+This is a technical update for Prefabulous:
 - This version now requires Modular Avatar V1.9.9 minimum.
 - Modular Avatar V1.9.9 requires NDMF V1.4.0 minimum.
-- Integrate [Import Expression Parameters](/docs/products/prefabulous-avatar/component-reference/import-expression-parameters) with Modular Avatar Information.
+- Integrate [Import Expression Parameters](/docs/products/prefabulous/vrchat/import-expression-parameters) with Modular Avatar Information.
   - The number of synced bits used by Import Parameters is now shown in the Modular Avatar Information panel.
 
 ![2024-03-27-p1-Unity_yH0bzcLRVK.png](..%2F..%2Fupdates%2Fimg%2F2024-03-27-p1-Unity_yH0bzcLRVK.png)
 
 ## 1.10.1
 
-Three new components have been added to Prefabulous Avatar.
+Three new components have been added to Prefabulous.
 
-### New component: [Replace Textures](/docs/products/prefabulous-avatar/hai-components/replace-textures)
+### New component: [Replace Textures](/docs/products/prefabulous/universal/replace-textures)
 
 This component lets you upload multiple versions of your avatar but with different textures, without needing to duplicate the materials.
 
 It also displays which materials use which textures, although you could also be using lilAvatarUtils for this.
 
-![Unity_lJ03XfMYPW.png](..%2Fproducts%2Fprefabulous-avatar%2Fimg%2FUnity_lJ03XfMYPW.png)
+![Unity_lJ03XfMYPW.png](..%2Fproducts%2Fprefabulous%2Fimg%2FUnity_lJ03XfMYPW.png)
 
-### New component: [Convert Blendshape Conventions](/docs/products/prefabulous-avatar/hai-components/convert-blendshape-conventions)
+### New component: [Convert Blendshape Conventions](/docs/products/prefabulous/universal/convert-blendshape-conventions)
 
 This component lets you convert blendshapes from one naming convention to another naming convention, such as converting Unified Expressions blendshapes to ARKit blendshapes.
 
-![Unity_Kwht5QWD83.png](..%2Fproducts%2Fprefabulous-avatar%2Fimg%2FUnity_Kwht5QWD83.png)
+![Unity_Kwht5QWD83.png](..%2Fproducts%2Fprefabulous%2Fimg%2FUnity_Kwht5QWD83.png)
 
-### New component: [Mass Blendshape Sync](/docs/products/prefabulous-avatar/hai-components/mass-blendshape-sync)
+### New component: [Mass Blendshape Sync](/docs/products/prefabulous/vrchat/mass-blendshape-sync)
 
 This component will synchronize all blendshapes that two meshes share in common.
 
 This is ideally used with renderers that have a massive quantity of blendshapes that need to be synced, such as face tracking.
 
-![Unity_kmeSxcDqt8.png](..%2Fproducts%2Fprefabulous-avatar%2Fimg%2FUnity_kmeSxcDqt8.png)
+![Unity_kmeSxcDqt8.png](..%2Fproducts%2Fprefabulous%2Fimg%2FUnity_kmeSxcDqt8.png)
 
 ### Other
 
@@ -56,7 +56,7 @@ This is ideally used with renderers that have a massive quantity of blendshapes 
 
 ## 1.9.0
 
-### Update [Assign UV Tile](/docs/products/prefabulous-avatar/hai-components/assign-uv-tile)
+### Update [Assign UV Tile](/docs/products/prefabulous/universal/assign-uv-tile)
 
 Add "Entire Mesh" mode to "Assign UV Tile":
 - UV Tile can now be assigned to an entire MeshRenderer or SkinnedMeshRenderer.
@@ -73,12 +73,12 @@ Add "Entire Mesh" mode to "Assign UV Tile":
 "Entire Mesh" should be used alongside an avatar optimization tool that will merge existing meshes, such as [d4rkpl4y3r's d4rkAvatarOptimizer](https://github.com/d4rkc0d3r/d4rkAvatarOptimizer)
 or [anatawa12's AvatarOptimizer](https://github.com/anatawa12/AvatarOptimizer).
 
-Prefabulous Avatar does not provide any mesh optimization components that rectifies animation paths at this time.
+Prefabulous does not provide any mesh optimization components that rectifies animation paths at this time.
 :::
 
 ## 1.8.0
 
-### Update [Recalculate Normals](/docs/products/prefabulous-avatar/hai-components/recalculate-normals)
+### Update [Recalculate Normals](/docs/products/prefabulous/universal/recalculate-normals)
 
 Recalculate Normals should now properly work on avatars that were not posed like the model, or had a different orientation than the model.
 
@@ -90,9 +90,9 @@ This patch was pushed before any 1.7.0 social media announcement.
 
 ## 1.7.0
 
-### New component: [Assign UV Tile](/docs/products/prefabulous-avatar/hai-components/assign-uv-tile)
+### New component: [Assign UV Tile](/docs/products/prefabulous/universal/assign-uv-tile)
 
-A new component, [Assign UV Tile](/docs/products/prefabulous-avatar/hai-components/assign-uv-tile), has been added to Prefabulous Avatar.
+A new component, [Assign UV Tile](/docs/products/prefabulous/universal/assign-uv-tile), has been added to Prefabulous.
 
 Sets the UV Tile of vertices that are moved by a blendshape.
 
@@ -100,7 +100,7 @@ This is meant to be used in tandem with shader features, especially [Poiyomi Too
 and may also be used with [SCSS's Inventory System](https://gitlab.com/s-ilent/SCSS/-/wikis/Manual/Inventory-System).
 
 <video controls muted width="816">
-    <source src={require('/docs/products/prefabulous-avatar/img/13rQ7HGwPr.mp4').default}/>
+    <source src={require('/docs/products/prefabulous/img/13rQ7HGwPr.mp4').default}/>
 </video>
 
 ### Technical notes
@@ -111,7 +111,7 @@ Add Assign UV Tile:
 - It uses the same vertex selection algorithm as Delete Polygons.
 - The UV tile has an offset of 0.5.
 
-### Update [Delete Polygons](/docs/products/prefabulous-avatar/hai-components/delete-polygons)
+### Update [Delete Polygons](/docs/products/prefabulous/universal/delete-polygons)
 
 Delete Polygons now has Keep Partial Polygons option:
 - Add "Keep Partial Polygons" option.
@@ -121,14 +121,14 @@ Delete Polygons now has Keep Partial Polygons option:
 
 ## 1.6.0
 
-### New component: [Delete Polygons](/docs/products/prefabulous-avatar/hai-components/delete-polygons)
+### New component: [Delete Polygons](/docs/products/prefabulous/universal/delete-polygons)
 
-A new component, [Delete Polygons](/docs/products/prefabulous-avatar/hai-components/delete-polygons), has been added to Prefabulous Avatar.
+A new component, [Delete Polygons](/docs/products/prefabulous/universal/delete-polygons), has been added to Prefabulous.
 
 Delete polygons affected by conflict prevention blendshapes, and other unused decorations hidden inside the mesh
 (such as star-shaped eyes and other eye decorations; piercings, bandages, and other accessories).
 
-![delete-polygons-compare.png](../products/prefabulous-avatar/img/delete-polygons-compare.png)
+![delete-polygons-compare.png](../products/prefabulous/img/delete-polygons-compare.png)
 
 ### Technical notes
 
@@ -151,16 +151,16 @@ Make Recalculate Normals editor animator introspection aware of Prefabulous comp
 
 ## 1.5.0
 
-### New component: [HaiXT Generate Blendshapes for Face Tracking Extensions](/docs/products/prefabulous-avatar/hai-components/haixt-generate-blendshapes-for-face-tracking-extensions)
+### New component: [HaiXT Generate Blendshapes for Face Tracking Extensions](/docs/products/prefabulous/universal/haixt-generate-blendshapes-for-face-tracking-extensions)
 
-A new component, [HaiXT Generate Blendshapes for Face Tracking Extensions](/docs/products/prefabulous-avatar/hai-components/haixt-generate-blendshapes-for-face-tracking-extensions), has been added to Prefabulous Avatar.
+A new component, [HaiXT Generate Blendshapes for Face Tracking Extensions](/docs/products/prefabulous/universal/haixt-generate-blendshapes-for-face-tracking-extensions), has been added to Prefabulous.
 
-If you have an avatar that already supports face tracking, this will generate additional non-standard blendshapes for use with [HaiXT Face Tracking Extensions](/docs/products/prefabulous-avatar/hai-components/haixt-face-tracking-extensions).
+If you have an avatar that already supports face tracking, this will generate additional non-standard blendshapes for use with [HaiXT Face Tracking Extensions](/docs/products/prefabulous/vrchat/haixt-face-tracking-extensions).
 
 When your eyes are closed, the shape of your eyes will change when you're smiling.
 
 <video controls muted width="816">
-<source src={require('/docs/products/prefabulous-avatar/img/smile-f.mp4').default}/>
+<source src={require('/docs/products/prefabulous/img/smile-f.mp4').default}/>
 </video>
 
 ### Fixes
@@ -186,9 +186,9 @@ In addition:
 
 ## 1.4.0
 
-### Update [Recalculate Normals](/docs/products/prefabulous-avatar/hai-components/recalculate-normals)
+### Update [Recalculate Normals](/docs/products/prefabulous/universal/recalculate-normals)
 
-Recalculate Normals now has [Erase Custom Split Normals](/docs/products/prefabulous-avatar/hai-components/recalculate-normals#option-erase-custom-split-normals) option:
+Recalculate Normals now has [Erase Custom Split Normals](/docs/products/prefabulous/universal/recalculate-normals#option-erase-custom-split-normals) option:
 - Add "Erase Custom Split Normals" option.
 - When "Erase Custom Split Normals" is enabled, the recalculation will perform a second pass where all vertices that have a non-zero delta pos or a non-zero recalculated delta normals will have new deltas calculated: instead of calculating the difference from the base recalculated mesh, it will calculate the difference from the original mesh.
 - In effect, this erases custom split normals data for that blendshape.
@@ -201,10 +201,10 @@ Only give this a try on blendshapes where shading defects are clearly visible on
 
 In all other cases, **keep this option off!**
 
-For more details, [please consult the Erase Custom Split Normals documentation](/docs/products/prefabulous-avatar/hai-components/recalculate-normals#option-erase-custom-split-normals).
+For more details, [please consult the Erase Custom Split Normals documentation](/docs/products/prefabulous/universal/recalculate-normals#option-erase-custom-split-normals).
 :::
 
-### Update [Change Avatar Scale](/docs/products/prefabulous-avatar/component-reference/change-avatar-scale)
+### Update [Change Avatar Scale](/docs/products/prefabulous/universal/change-avatar-scale)
 
 Change Avatar Scale now uses the Avatar Descriptor view position as the source size:
 - ChangeAvatarScale reads the Avatar Descriptor view position Y coordinate and uses it as the source size.
@@ -219,14 +219,14 @@ Change Avatar Scale now uses the Avatar Descriptor view position as the source s
 
 ## 1.3.0
 
-### New component: [Recalculate Normals](/docs/products/prefabulous-avatar/hai-components/recalculate-normals)
+### New component: [Recalculate Normals](/docs/products/prefabulous/universal/recalculate-normals)
 
-A new component, [Recalculate Normals](/docs/products/prefabulous-avatar/hai-components/recalculate-normals), has been added to Prefabulous Avatar.
+A new component, [Recalculate Normals](/docs/products/prefabulous/universal/recalculate-normals), has been added to Prefabulous.
 
 This component improves the shading of SkinnedMeshRenderers by recalculating select blendshape normals (and tangents).
 
 <video controls width="816" autostart="false">
-    <source src={require('/docs/products/prefabulous-avatar/img/mS1cQ7EheE.mp4').default}/>
+    <source src={require('/docs/products/prefabulous/img/mS1cQ7EheE.mp4').default}/>
 </video>
 
 ### Technical notes

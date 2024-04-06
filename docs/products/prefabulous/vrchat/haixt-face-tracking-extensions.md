@@ -8,7 +8,7 @@ The layer is only compatible with [Adjerry91's VRCTraceTracking-Templates](https
 
 When your eyes are closed, the shape of your eyes will change when you're smiling.
 
-- Add another component called [HaiXT Generate Blendshapes for Face Tracking Extensions](./haixt-generate-blendshapes-for-face-tracking-extensions), which can create those blendshapes for you.
+- Add another component called [HaiXT Generate Blendshapes for Face Tracking Extensions](../universal/haixt-generate-blendshapes-for-face-tracking-extensions), which can create those blendshapes for you.
 - If you use FaceTra Shape Creator, these blendshapes are already created for you, see below.
 
 <video controls muted width="816">
@@ -30,7 +30,7 @@ Use that section to configure your avatar and generate the blendshapes that will
 You can still create this non-standard face tracking blendshape in Blender or the editor of your choice.
 
 :::info
-Strongly consider using the [HaiXT Generate Blendshapes for Face Tracking Extensions](./haixt-generate-blendshapes-for-face-tracking-extensions) component.
+Strongly consider using the [HaiXT Generate Blendshapes for Face Tracking Extensions](../universal/haixt-generate-blendshapes-for-face-tracking-extensions) component.
 :::
 
 ### HaiXT_EyeClosedInverse_Smile*

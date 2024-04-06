@@ -25,7 +25,7 @@ Deselect old clip before opening clip in Visual Expressions Editor:
 ### Other changes
 
 - Completely remove ComboGestureIntegrator.
-    - ComboGestureIntegrator is generally made obsolete by non-destructive workflows (and may be migrated to [Prefabulous Avatar](/docs/products/prefabulous-avatar) in the future).
+    - ComboGestureIntegrator is generally made obsolete by non-destructive workflows (and may be migrated to [Prefabulous](/docs/products/prefabulous) in the future).
 - Add the possibility to make the eye blinking prevention coexist with eye tracking animators:
     - CGE can now integrate with existing *Eye Tracking Enabled* parameters from eye tracking animators.
     - When the *Eye Tracking Enabled* parameter is toggled on, CGE's blink prevention layer will be suspended.

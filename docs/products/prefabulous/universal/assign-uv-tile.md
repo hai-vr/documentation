@@ -47,7 +47,7 @@ Enter Play Mode or upload the avatar to test the results: as this is a non-destr
 "Entire Mesh" should be used alongside an avatar optimization tool that will merge existing meshes, such as [d4rkpl4y3r's d4rkAvatarOptimizer](https://github.com/d4rkc0d3r/d4rkAvatarOptimizer)
 or [anatawa12's AvatarOptimizer](https://github.com/anatawa12/AvatarOptimizer).
 
-Prefabulous Avatar does not provide any mesh optimization components that rectifies animation paths at this time.
+Prefabulous does not provide any mesh optimization components that rectifies animation paths at this time.
 
 ## Shader-specific uses
 

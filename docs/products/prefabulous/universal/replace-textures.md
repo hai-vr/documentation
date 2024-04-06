@@ -37,6 +37,7 @@ Check the *"(DANGER) Execute in Play Mode"* checkbox to execute it anyways.
 
 ## Versions
 
+- **1.10.3**: Fix Replace Textures should no longer ignore disabled objects.
 - **1.10.0**: Added.
 
 Classification: *This component is application-agnostic.*

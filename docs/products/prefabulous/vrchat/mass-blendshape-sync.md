@@ -1,4 +1,4 @@
-﻿# Mass Blendshape Sync
+﻿# 💬 Mass Blendshape Sync
 
 Generates a [Modular Avatar Blendshape Sync](https://modular-avatar.nadena.dev/docs/reference/blendshape-sync) component when the avatar is built,
 which will sync as many blendshapes that exist in the *source* renderer to the renderers in *targets*.
@@ -23,4 +23,4 @@ To use this component:
 
 - **1.10.0**: Added.
 
-Classification: *The classification of this component is not determined.*
+Classification: *This component is **💬 VRChat Only**.*
