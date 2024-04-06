@@ -18,7 +18,7 @@
 <p>This is an advance notice regarding a future change for Prefabulous Avatar.</p>
 <p>In a future update, Prefabulous will be split into two packages:</p>
 <ul>
-<li><strong>Prefabulous Native</strong> will be a package that does not require VRChat, and will contain the following components:<!-- -->
+<li><strong>Prefabulous Universal</strong> will be a package that does not require VRChat, and will contain the following components:<!-- -->
 <ul>
 <li>Change Avatar Scale</li>
 <li>Edit All Mesh Anchor Override</li>
@@ -45,7 +45,7 @@
 </ul>
 </li>
 </ul>
-<p>The aim of this split is to allow the development of <em>Prefabulous Native</em> components in a way that benefits avatar frameworks
+<p>The aim of this split is to allow the development of <em>Prefabulous Universal</em> components in a way that benefits avatar frameworks
 of other social VR platforms, apps, and non-social VR apps (for instance, any VRM-compatible app).</p>
 <p>Most <em>Prefabulous for VRChat</em> components will depend on VRChat-specific animators and animation quirks,
 or component structures pertaining specifically to VRChat that would be uncommon in other social VR apps.</p>
@@ -58,14 +58,14 @@ If you are a developer who internally references classes or entities within Pref
 <div class="theme-admonition theme-admonition-warning admonition_xJq3 alert alert--warning"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>warning</div><div class="admonitionContent_BuS1"><p>This describes a future update, this has not yet been released at this time of writing.</p></div></div>
 <p>For most VRChat users, this change should be invisible.</p>
 <ul>
-<li>Installing Prefabulous for VRChat will automatically install Prefabulous Native as a VCC dependency.</li>
+<li>Installing Prefabulous for VRChat will automatically install Prefabulous Universal as a VCC dependency.</li>
 <li>The existing components in your scenes will continue working as if nothing has changed.</li>
 </ul>
 <p>However, if you're installing Prefabulous without VCC, you will need to:</p>
 <ul>
 <li>Open a blank scene in Unity Editor.</li>
 <li>Remove the Packages/dev.hai-vr.resilience.prefabulous folder</li>
-<li>Install the Prefabulous Native package on GitHub.</li>
+<li>Install the Prefabulous Universal package on GitHub.</li>
 <li>Install the Prefabulous for VRChat package on GitHub.</li>
 </ul>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="for-developers-who-might-be-referencing-prefabulous-entities">For developers who might be referencing Prefabulous entities<a href="https://docs.hai-vr.dev/updates/2024/04/05/p0#for-developers-who-might-be-referencing-prefabulous-entities" class="hash-link" aria-label="Direct link to For developers who might be referencing Prefabulous entities" title="Direct link to For developers who might be referencing Prefabulous entities">​</a></h3>
@@ -144,7 +144,7 @@ If you are a developer who internally references classes or entities within Pref
 <ul>
 <li>This version now requires Modular Avatar V1.9.9 minimum.</li>
 <li>Modular Avatar V1.9.9 requires NDMF V1.4.0 minimum.</li>
-<li>Integrate <a href="https://docs.hai-vr.dev/docs/products/prefabulous-avatar/component-reference/import-expression-parameters">Import Expression Parameters</a> with Modular Avatar Information.<!-- -->
+<li>Integrate <a href="https://docs.hai-vr.dev/docs/products/prefabulous/vrchat/import-expression-parameters">Import Expression Parameters</a> with Modular Avatar Information.<!-- -->
 <ul>
 <li>The number of synced bits used by Import Parameters is now shown in the Modular Avatar Information panel.</li>
 </ul>
@@ -264,7 +264,7 @@ This means you only need to specify the new value of the property, and Vixen wou
 <ul>
 <li>This version now requires Modular Avatar V1.9.9 minimum.</li>
 <li>This version now requires NDMF V1.4.0 minimum.</li>
-<li>Integrate <a href="https://docs.hai-vr.dev/docs/products/prefabulous-avatar/component-reference/import-expression-parameters">Import Expression Parameters</a> with Modular Avatar Information.<!-- -->
+<li>Integrate <a href="https://docs.hai-vr.dev/docs/products/prefabulous/vrchat/import-expression-parameters">Import Expression Parameters</a> with Modular Avatar Information.<!-- -->
 <ul>
 <li>The number of synced bits used by Import Parameters is now shown in the Modular Avatar Information panel.</li>
 </ul>
@@ -279,14 +279,14 @@ This means you only need to specify the new value of the property, and Vixen wou
             <pubDate>Wed, 27 Mar 2024 00:00:00 GMT</pubDate>
             <description><![CDATA[Three new components have been added to Prefabulous Avatar.]]></description>
             <content:encoded><![CDATA[<p>Three new components have been added to Prefabulous Avatar.</p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="new-component-replace-textures">New component: <a href="https://docs.hai-vr.dev/docs/products/prefabulous-avatar/hai-components/replace-textures">Replace Textures</a><a href="https://docs.hai-vr.dev/updates/2024/03/27/p0#new-component-replace-textures" class="hash-link" aria-label="Direct link to new-component-replace-textures" title="Direct link to new-component-replace-textures">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="new-component-replace-textures">New component: <a href="https://docs.hai-vr.dev/docs/products/prefabulous/universal/replace-textures">Replace Textures</a><a href="https://docs.hai-vr.dev/updates/2024/03/27/p0#new-component-replace-textures" class="hash-link" aria-label="Direct link to new-component-replace-textures" title="Direct link to new-component-replace-textures">​</a></h3>
 <p>This component lets you upload multiple versions of your avatar but with different textures, without needing to duplicate the materials.</p>
 <p>It also displays which materials use which textures, although you could also be using lilAvatarUtils for this.</p>
 <p><img loading="lazy" alt="Unity_lJ03XfMYPW.png" src="https://docs.hai-vr.dev/assets/images/Unity_lJ03XfMYPW-b73799405be8566b388657c346162d89.png" width="397" height="432" class="img_ev3q"></p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="new-component-convert-blendshape-conventions">New component: <a href="https://docs.hai-vr.dev/docs/products/prefabulous-avatar/hai-components/convert-blendshape-conventions">Convert Blendshape Conventions</a><a href="https://docs.hai-vr.dev/updates/2024/03/27/p0#new-component-convert-blendshape-conventions" class="hash-link" aria-label="Direct link to new-component-convert-blendshape-conventions" title="Direct link to new-component-convert-blendshape-conventions">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="new-component-convert-blendshape-conventions">New component: <a href="https://docs.hai-vr.dev/docs/products/prefabulous/universal/convert-blendshape-conventions">Convert Blendshape Conventions</a><a href="https://docs.hai-vr.dev/updates/2024/03/27/p0#new-component-convert-blendshape-conventions" class="hash-link" aria-label="Direct link to new-component-convert-blendshape-conventions" title="Direct link to new-component-convert-blendshape-conventions">​</a></h3>
 <p>This component lets you convert blendshapes from one naming convention to another naming convention, such as converting Unified Expressions blendshapes to ARKit blendshapes.</p>
 <p><img loading="lazy" alt="Unity_Kwht5QWD83.png" src="https://docs.hai-vr.dev/assets/images/Unity_Kwht5QWD83-c40d00ccaf123909a4d07f7bd59e5ad8.png" width="459" height="328" class="img_ev3q"></p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="new-component-mass-blendshape-sync">New component: <a href="https://docs.hai-vr.dev/docs/products/prefabulous-avatar/hai-components/mass-blendshape-sync">Mass Blendshape Sync</a><a href="https://docs.hai-vr.dev/updates/2024/03/27/p0#new-component-mass-blendshape-sync" class="hash-link" aria-label="Direct link to new-component-mass-blendshape-sync" title="Direct link to new-component-mass-blendshape-sync">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="new-component-mass-blendshape-sync">New component: <a href="https://docs.hai-vr.dev/docs/products/prefabulous/vrchat/mass-blendshape-sync">Mass Blendshape Sync</a><a href="https://docs.hai-vr.dev/updates/2024/03/27/p0#new-component-mass-blendshape-sync" class="hash-link" aria-label="Direct link to new-component-mass-blendshape-sync" title="Direct link to new-component-mass-blendshape-sync">​</a></h3>
 <p>This component will synchronize all blendshapes that two meshes share in common.</p>
 <p>This is ideally used with renderers that have a massive quantity of blendshapes that need to be synced, such as face tracking.</p>
 <p><img loading="lazy" alt="Unity_kmeSxcDqt8.png" src="https://docs.hai-vr.dev/assets/images/Unity_kmeSxcDqt8-88766b41d70491686f3af85ce84bc8ed.png" width="410" height="132" class="img_ev3q"></p>
@@ -298,7 +298,7 @@ This means you only need to specify the new value of the property, and Vixen wou
 <li>Don't warn when using NDMF 1.4.x</li>
 <li>Don't warn when using Modular Avatar 1.9.x</li>
 </ul>
-<p>🔍 <a href="https://docs.hai-vr.dev/docs/changelogs/prefabulous-avatar#1101">View changelog</a></p>]]></content:encoded>
+<p>🔍 <a href="https://docs.hai-vr.dev/docs/changelogs/prefabulous#1101">View changelog</a></p>]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[⚙️ Convert ComboGesture to FaceEmo V0.2.0]]></title>
@@ -316,7 +316,7 @@ This means you only need to specify the new value of the property, and Vixen wou
             <pubDate>Tue, 30 Jan 2024 00:00:00 GMT</pubDate>
             <description><![CDATA[Update dependencies to allow installing Prefabulous Avatar with NDMF 1.3]]></description>
             <content:encoded><![CDATA[<p>Update dependencies to allow installing Prefabulous Avatar with NDMF 1.3</p>
-<p>🔍 <a href="https://docs.hai-vr.dev/docs/changelogs/prefabulous-avatar#191">View changelog</a></p>]]></content:encoded>
+<p>🔍 <a href="https://docs.hai-vr.dev/docs/changelogs/prefabulous#191">View changelog</a></p>]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[✨ Prefabulous Avatar V1.9]]></title>
@@ -324,14 +324,14 @@ This means you only need to specify the new value of the property, and Vixen wou
             <guid>https://docs.hai-vr.dev/updates/2024/01/18/p2</guid>
             <pubDate>Thu, 18 Jan 2024 13:00:00 GMT</pubDate>
             <description><![CDATA[Update Assign UV Tile]]></description>
-            <content:encoded><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="update-assign-uv-tile">Update <a href="https://docs.hai-vr.dev/docs/products/prefabulous-avatar/hai-components/assign-uv-tile">Assign UV Tile</a><a href="https://docs.hai-vr.dev/updates/2024/01/18/p2#update-assign-uv-tile" class="hash-link" aria-label="Direct link to update-assign-uv-tile" title="Direct link to update-assign-uv-tile">​</a></h3>
+            <content:encoded><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="update-assign-uv-tile">Update <a href="https://docs.hai-vr.dev/docs/products/prefabulous/universal/assign-uv-tile">Assign UV Tile</a><a href="https://docs.hai-vr.dev/updates/2024/01/18/p2#update-assign-uv-tile" class="hash-link" aria-label="Direct link to update-assign-uv-tile" title="Direct link to update-assign-uv-tile">​</a></h3>
 <p>Assign UV Tile can now assign the <strong>entire mesh</strong> to an UV Tile.</p>
 <p>Do this by switching the mode from BlendShapes to Entire Mesh.</p>
 <p><img loading="lazy" alt="2024-01-18-p2-Unity_OLXaqgjeBM.png" src="https://docs.hai-vr.dev/assets/images/2024-01-18-p2-Unity_OLXaqgjeBM-15a4abb3c5ae22c29a983d57b6754040.png" width="419" height="284" class="img_ev3q"></p>
 <div class="theme-admonition theme-admonition-tip admonition_xJq3 alert alert--success"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path></svg></span>tip</div><div class="admonitionContent_BuS1"><p>"Entire Mesh" should be used alongside an avatar optimization tool that will merge existing meshes, such as <a href="https://github.com/d4rkc0d3r/d4rkAvatarOptimizer" target="_blank" rel="noopener noreferrer">d4rkpl4y3r's d4rkAvatarOptimizer</a>
 or <a href="https://github.com/anatawa12/AvatarOptimizer" target="_blank" rel="noopener noreferrer">anatawa12's AvatarOptimizer</a>.</p><p>Prefabulous Avatar does not provide any mesh optimization components that rectifies animation paths at this time.</p></div></div>
-<p>🔍 <a href="https://docs.hai-vr.dev/docs/changelogs/prefabulous-avatar#190">View changelog</a></p>
-<p>🗒️ <a href="https://docs.hai-vr.dev/docs/products/prefabulous-avatar/hai-components/assign-uv-tile">Open documentation</a></p>]]></content:encoded>
+<p>🔍 <a href="https://docs.hai-vr.dev/docs/changelogs/prefabulous#190">View changelog</a></p>
+<p>🗒️ <a href="https://docs.hai-vr.dev/docs/products/prefabulous/universal/assign-uv-tile">Open documentation</a></p>]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[✨ Prefabulous Avatar V1.8]]></title>
@@ -339,10 +339,10 @@ or <a href="https://github.com/anatawa12/AvatarOptimizer" target="_blank" rel="n
             <guid>https://docs.hai-vr.dev/updates/2024/01/18/p1</guid>
             <pubDate>Thu, 18 Jan 2024 10:00:00 GMT</pubDate>
             <description><![CDATA[Update Recalculate Normals]]></description>
-            <content:encoded><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="update-recalculate-normals">Update <a href="https://docs.hai-vr.dev/docs/products/prefabulous-avatar/hai-components/recalculate-normals">Recalculate Normals</a><a href="https://docs.hai-vr.dev/updates/2024/01/18/p1#update-recalculate-normals" class="hash-link" aria-label="Direct link to update-recalculate-normals" title="Direct link to update-recalculate-normals">​</a></h3>
+            <content:encoded><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="update-recalculate-normals">Update <a href="https://docs.hai-vr.dev/docs/products/prefabulous/universal/recalculate-normals">Recalculate Normals</a><a href="https://docs.hai-vr.dev/updates/2024/01/18/p1#update-recalculate-normals" class="hash-link" aria-label="Direct link to update-recalculate-normals" title="Direct link to update-recalculate-normals">​</a></h3>
 <p>Recalculate Normals should now properly work on avatars that were not posed like the model, or had a different orientation than the model.</p>
-<p>🔍 <a href="https://docs.hai-vr.dev/docs/changelogs/prefabulous-avatar#180">View changelog</a></p>
-<p>🗒️ <a href="https://docs.hai-vr.dev/docs/products/prefabulous-avatar/hai-components/recalculate-normals">Open documentation</a></p>]]></content:encoded>
+<p>🔍 <a href="https://docs.hai-vr.dev/docs/changelogs/prefabulous#180">View changelog</a></p>
+<p>🗒️ <a href="https://docs.hai-vr.dev/docs/products/prefabulous/universal/recalculate-normals">Open documentation</a></p>]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[✨ FaceTra Shape Creator V0.6.0]]></title>
