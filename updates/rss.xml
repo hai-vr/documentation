@@ -4,10 +4,23 @@
         <title>Haï~ Blog</title>
         <link>https://docs.hai-vr.dev/updates</link>
         <description>Haï~ Blog</description>
-        <lastBuildDate>Fri, 05 Apr 2024 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 07 Apr 2024 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[🧪 Knowledge sharing "Animating locomotion using OSC Trackers"]]></title>
+            <link>https://docs.hai-vr.dev/updates/2024/04/07/p0-ks</link>
+            <guid>https://docs.hai-vr.dev/updates/2024/04/07/p0-ks</guid>
+            <pubDate>Sun, 07 Apr 2024 00:00:00 GMT</pubDate>
+            <description><![CDATA[A new knowledge sharing article has been published, "Animating locomotion using OSC Trackers".]]></description>
+            <content:encoded><![CDATA[<p>A new knowledge sharing article has been published, "Animating locomotion using OSC Trackers".</p>
+<ul>
+<li>2024-04-07 <a href="https://hai-vr.notion.site/Animating-locomotion-using-OSC-Trackers-Retrospective-449847c5407d4173b2c3562523c087ee" target="_blank" rel="noopener noreferrer">"Animating locomotion using OSC Trackers, Retrospective"</a></li>
+</ul>
+<p>🔍 <a href="https://docs.hai-vr.dev/docs/other/articles">View articles</a></p>
+<video controls="" width="816"><source src="/assets/medias/2024-04-07-p0-osc-locomotion-f-3a6648605af848dbc219f4d4b67fa9b7.mp4"></video>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[⚠️ Advance notice for Prefabulous 2.0]]></title>
             <link>https://docs.hai-vr.dev/updates/2024/04/05/p0</link>
@@ -402,24 +415,6 @@ or <a href="https://github.com/anatawa12/AvatarOptimizer" target="_blank" rel="n
 <p>🔍 <a href="https://docs.hai-vr.dev/docs/changelogs/blendshape-viewer#210">View changelog</a></p>
 <p>🗒️ <a href="https://docs.hai-vr.dev/docs/products/blendshape-viewer">Open documentation</a></p>
 <video controls=""><source src="/assets/medias/2024-01-12-p1-7BbtsLNQac-211c3051e5804d4ecb71c55d980d8c8e.mp4"></video>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[✨ Vixen V1.0]]></title>
-            <link>https://docs.hai-vr.dev/updates/2024/01/12/p0</link>
-            <guid>https://docs.hai-vr.dev/updates/2024/01/12/p0</guid>
-            <pubDate>Fri, 12 Jan 2024 00:00:00 GMT</pubDate>
-            <description><![CDATA[This is a significant update.]]></description>
-            <content:encoded><![CDATA[<p>This is a <strong>significant</strong> update.</p>
-<p>Controls can now affect other controls using <strong>Item slots, Flags, and Ejects</strong>.</p>
-<ul>
-<li>They can switch other menus ON or OFF.</li>
-<li>They can make other controls active or inactive, without switching that menu ON or OFF.</li>
-</ul>
-<p>Although the version number is now V1 instead of V0, this is not a breaking change (I don't want the major version to be zero any longer).
-Existing components are the same, and you will not lose your work.</p>
-<p>🔍 <a href="https://docs.hai-vr.dev/docs/changelogs/vixen#100">View changelog</a></p>
-<p>🗒️ <a href="https://docs.hai-vr.dev/docs/products/vixen/cross-control-effects">Open documentation</a></p>
-<p><img loading="lazy" alt="2024-01-12-p0-Fm4J7w3YFD.png" src="https://docs.hai-vr.dev/assets/images/2024-01-12-p0-Fm4J7w3YFD-7e356f582a4a51527e01093affb40484.png" width="1052" height="566" class="img_ev3q"></p>]]></content:encoded>
         </item>
     </channel>
 </rss>
