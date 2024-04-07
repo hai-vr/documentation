@@ -18,37 +18,39 @@ Many of these products can be installed using our VCC listing.
 
 ## Product listing
 
-|                                                                                     | Product type          | App / Platform      | License     | Booth                                                | VCC? |
-|-------------------------------------------------------------------------------------|-----------------------|---------------------|-------------|------------------------------------------------------|------|
-| **Applications**                                                                    |                       |                     |             |                                                      |      |
-| [**ResilienceVR**](./resilience)                                                    | 🖥️ Application       |                     | Proprietary |                                                      |      |
-| [Metabus](./resilience/metabus)                                                     | 🛠️ Unity Editor tool |                     | Apache 2.0  |                                                      |      |
-| [Metabus Kinematics](./resilience/metabus)                                          | 🛠️ Unity Editor tool |                     | Proprietary |                                                      |      |
-| [⭐ Double Hip Tracker](./products/double-hip-tracker)                               | 🖥️ Application (OSC) | ⚠️ VRChat required  | Proprietary |                                                      |      |
-| [🔒 VeryHaï](./products/very-h)                                                     | 🖥️️ Application      |                     | Proprietary |                                                      |      |
-| **Viewers**                                                                         |                       |                     |             |                                                      |      |
-| [Lightbox Viewer](./products/lightbox-viewer)                                       | 🛠️ Unity Editor tool |                     | MIT         | ~~[Booth](https://hai-vr.booth.pm/items/3870813)~~\* | ✅    |
-| [Animation Viewer](./products/animation-viewer)                                     | 🛠️ Unity Editor tool |                     | MIT         | ~~[Booth](https://hai-vr.booth.pm/items/3625699)~~\* | ✅    |
-| [Blendshape Viewer](./products/blendshape-viewer)                                   | 🛠️ Unity Editor tool |                     | MIT         | ~~[Booth](https://hai-vr.booth.pm/items/3582541)~~\* | ✅    |
-| [Property Finder](./products/property-finder)                                       | 🛠️ Unity Editor tool |                     | MIT         |                                                      | ✅    |
-| [BlendTree Viewer](./products/blendtree-viewer)                                     | 🛠️ Unity Editor tool |                     | MIT         |                                                      | ✅    |
-| **Editors**                                                                         |                       |                     |             |                                                      |      |
-| [ComboGestureExpressions](./products/combo-gesture-expressions)                     | 🛠️ Unity Editor tool | ⚠️ VRChat required  | MIT         | ~~[Booth](https://hai-vr.booth.pm/items/2219616)~~\* | ✅    |
-| [Constraint Track Animation Creator](./products/constraint-track-animation-creator) | 🛠️ Unity Editor tool | ⚠️ VRChat required  | MIT         | [Booth](https://hai-vr.booth.pm/items/3532857)       |      |
-| [Expressions Menu Hierarchy Editor](./products/expressions-menu-hierarchy-editor)   | 🛠️ Unity Editor tool | ⚠️ VRChat required  | MIT         | [Booth](https://hai-vr.booth.pm/items/3696355)       |      |
-| [⭐ FaceTra Shape Creator](./products/facetra-shape-creator)                         | 🛠️ Unity Editor tool | 🗨️ VRChat optional | Proprietary |                                                      |      |
-| [⭐ IconGen](./products/icon-gen)                                                    | 🛠️ Unity Editor tool |                     | Proprietary |                                                      |      |
-| [IconGen Thumbnail](./products/icon-gen#capture-thumbnails-for-vrchat-in-play-mode) | 🛠️ Unity Editor tool |                     | Proprietary | [Booth](https://hai-vr.booth.pm/items/5092126)       |      |
-| [Prefabulous](./products/prefabulous)                                               | 🛠️ Unity Editor tool | ⚠️ VRChat required  | MIT         |                                                      | ✅    |
-| [Prefabulous Universal](./products/prefabulous)                                     | 🛠️ Unity Editor tool |                     | MIT         |                                                      | ✅    |
-| [Visual Expressions Editor](./products/visual-expressions-editor)                   | 🛠️ Unity Editor tool |                     | MIT         | ~~[Booth](https://hai-vr.booth.pm/items/3708550)~~\* | ✅    |
-| [⭐ Vixen](./products/vixen)                                                         | 🛠️ Unity Editor tool | ⚠️ Hybrid\*\*       | Proprietary |                                                      |      |
-| [Animator As Code](./products/animator-as-code)                                     | 📐 Unity Editor API   | 🗨️ VRChat optional | MIT         |                                                      | ✅    |
-| [Modular Avatar As Code](./products/animator-as-code/functions/modular-avatar)      | 📐 Unity Editor API   | ⚠️ VRChat required  | MIT         |                                                      | ✅    |
-| **Patchers**                                                                        |                       |                     |             |                                                      |      |
-| [Auto-reset OSC config](./products/auto-reset-osc-config)                           | 🛠️ Unity Editor tool | ⚠️ VRChat required  | MIT         |                                                      | ✅    |
-| [Unity 2018 to 2019 Cloth Transfer](./products/cloth-transfer)                      | 🛠️ Unity Editor tool |                     | Unlicense   | [Booth](https://hai-vr.booth.pm/items/3136328)       |      |
+|                                                                                     | Product type          | App / Platform                         | License     | Booth                                                | VCC? |
+|-------------------------------------------------------------------------------------|-----------------------|----------------------------------------|-------------|------------------------------------------------------|------|
+| **Applications**                                                                    |                       |                                        |             |                                                      |      |
+| [**ResilienceVR**](./resilience)                                                    | 🖥️ Application       |                                        | Proprietary |                                                      |      |
+| [Metabus](./resilience/metabus)                                                     | 🛠️ Unity Editor tool | 🌊 Any                                 | Apache 2.0  |                                                      |      |
+| [Metabus Kinematics](./resilience/metabus)                                          | 🛠️ Unity Editor tool | 🌊 Any                                 | Proprietary |                                                      |      |
+| [⭐ Double Hip Tracker](./products/double-hip-tracker)                               | 🖥️ Application (OSC) | 🗨️ VRChat required                    | Proprietary |                                                      |      |
+| [🔒 VeryHaï](./products/very-h)                                                     | 🖥️️ Application      |                                        | Proprietary |                                                      |      |
+| **Viewers**                                                                         |                       |                                        |             |                                                      |      |
+| [Lightbox Viewer](./products/lightbox-viewer)                                       | 🛠️ Unity Editor tool | 🌊 Any                                 | MIT         | ~~[Booth](https://hai-vr.booth.pm/items/3870813)~~\* | ✅    |
+| [Animation Viewer](./products/animation-viewer)                                     | 🛠️ Unity Editor tool | 🌊 Any                                 | MIT         | ~~[Booth](https://hai-vr.booth.pm/items/3625699)~~\* | ✅    |
+| [Blendshape Viewer](./products/blendshape-viewer)                                   | 🛠️ Unity Editor tool | 🌊 Any                                 | MIT         | ~~[Booth](https://hai-vr.booth.pm/items/3582541)~~\* | ✅    |
+| [Property Finder](./products/property-finder)                                       | 🛠️ Unity Editor tool | 🌊 Any                                 | MIT         |                                                      | ✅    |
+| [BlendTree Viewer](./products/blendtree-viewer)                                     | 🛠️ Unity Editor tool | 🌊 Any                                 | MIT         |                                                      | ✅    |
+| **Editors**                                                                         |                       |                                        |             |                                                      |      |
+| [ComboGestureExpressions](./products/combo-gesture-expressions)                     | 🛠️ Unity Editor tool | 🗨️ VRChat required                    | MIT         | ~~[Booth](https://hai-vr.booth.pm/items/2219616)~~\* | ✅    |
+| [Constraint Track Animation Creator](./products/constraint-track-animation-creator) | 🛠️ Unity Editor tool | 🗨️ VRChat required                    | MIT         | [Booth](https://hai-vr.booth.pm/items/3532857)       |      |
+| [Expressions Menu Hierarchy Editor](./products/expressions-menu-hierarchy-editor)   | 🛠️ Unity Editor tool | 🗨️ VRChat required                    | MIT         | [Booth](https://hai-vr.booth.pm/items/3696355)       |      |
+| [⭐ FaceTra Shape Creator](./products/facetra-shape-creator)                         | 🛠️ Unity Editor tool | 🌊 Any, 🗨️ Special VRChat support\*\* | Proprietary |                                                      |      |
+| [⭐ IconGen](./products/icon-gen)                                                    | 🛠️ Unity Editor tool | 🌊 Any                                 | Proprietary |                                                      |      |
+| [IconGen Thumbnail](./products/icon-gen#capture-thumbnails-for-vrchat-in-play-mode) | 🛠️ Unity Editor tool | 🌊 Any                                 | Proprietary | [Booth](https://hai-vr.booth.pm/items/5092126)       |      |
+| [Prefabulous Universal](./products/prefabulous)                                     | 🛠️ Unity Editor tool | 🌊 Any                                 | MIT         |                                                      | ✅    |
+| [Prefabulous for VRChat](./products/prefabulous)                                    | 🛠️ Unity Editor tool | 🗨️ VRChat required                    | MIT         |                                                      | ✅    |
+| [Visual Expressions Editor](./products/visual-expressions-editor)                   | 🛠️ Unity Editor tool | 🌊 Any                                 | MIT         | ~~[Booth](https://hai-vr.booth.pm/items/3708550)~~\* | ✅    |
+| [⭐ Vixen](./products/vixen)                                                         | 🛠️ Unity Editor tool | 🗨️ VRChat required\*\*\*              | Proprietary |                                                      |      |
+| [Animator As Code](./products/animator-as-code)                                     | 📐 Unity Editor API   | 🌊 Any, 🗨️ Special VRChat support\*\* | MIT         |                                                      | ✅    |
+| [Modular Avatar As Code](./products/animator-as-code/functions/modular-avatar)      | 📐 Unity Editor API   | 🗨️ VRChat required                    | MIT         |                                                      | ✅    |
+| **Patchers**                                                                        |                       |                                        |             |                                                      |      |
+| [Auto-reset OSC config](./products/auto-reset-osc-config)                           | 🛠️ Unity Editor tool | 🗨️ VRChat required                    | MIT         |                                                      | ✅    |
+| [Unity 2018 to 2019 Cloth Transfer](./products/cloth-transfer)                      | 🛠️ Unity Editor tool | 🌊 Any                                 | Unlicense   | [Booth](https://hai-vr.booth.pm/items/3136328)       |      |
 
 \* These downloads on Booth are not currently compatible with VCC.
 
-\*\* VRChat is required, but the requirement is in the process of being removed for use with standalone Unity projects.
+\*\* VRChat is not required, but this tool also has a separate, dedicated support for better integrating with existing VRChat systems.
+
+\*\*\* VRChat is required, but the requirement is in the process of being removed for use with standalone Unity projects.
