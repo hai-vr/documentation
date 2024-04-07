@@ -7,6 +7,7 @@ You can find development articles in [my sharing space](https://mysharingspace.h
 
 ### Retrospectives
 
+- 2024-04-07 ["Animating locomotion using OSC Trackers, Retrospective"](https://hai-vr.notion.site/Animating-locomotion-using-OSC-Trackers-Retrospective-449847c5407d4173b2c3562523c087ee)
 - 2023-12-22 ["Recalculate Normals, Retrospective"](https://hai-vr.notion.site/Recalculate-Normals-Retrospective-e8b319e25c5a4b779c220a4d8286ded4)
 - 2023-12-10 ["Using Udon MIDI as a data bus, retrospective"](https://hai-vr.notion.site/Using-Udon-MIDI-as-a-data-bus-retrospective-3fe223a25f81446b8407ca3e2bfc7608)
 - 2023-05-07 ["ResilienceVR IK: Bonding interactions"](https://hai-vr.notion.site/ResilienceVR-IK-Bonding-interactions-0fbd88f066164ab09e629ece9e542f8a)
