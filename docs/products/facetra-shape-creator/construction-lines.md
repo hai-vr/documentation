@@ -589,3 +589,26 @@ You can further adjust the position with the handle in the scene view if necessa
         </div>
     </div>
 </div>
+
+## Optional: Blush Modifier Selection
+
+:::note
+This feature has been added in 0.8.0.
+:::
+
+Blush Modifier represents blendshapes hidden inside your head, which you can use to make your character blush.
+
+When you squint, or when you puff your cheeks, we will deform these blush blendshapes so that they don't clip through your cheeks.
+
+When blendshapes are added to the Blush Modifier Selection, the blendshape will be internally simulated to be visible,
+so that they will be moved by the following shapes:
+- Cheek Squint
+- Cheek Puff
+
+Select all the individual blush blendshapes that you use on your avatar.
+
+:::warning
+Unfortunately, this will not work with all avatar bases.
+
+The density of the blush mesh needs to be similar (or half as similar) to the face mesh itself. If it's a gigantic polygon, it will not work so well.
+:::
