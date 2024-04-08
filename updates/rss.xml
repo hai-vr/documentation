@@ -14,7 +14,7 @@
             <guid>https://docs.hai-vr.dev/updates/2024/04/08/p0</guid>
             <pubDate>Mon, 08 Apr 2024 00:00:00 GMT</pubDate>
             <description><![CDATA[New Construction Line: Blush Modifier Selection]]></description>
-            <content:encoded><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="new-construction-line-blush-modifier-selection">New Construction Line: <a href="https://docs.hai-vr.dev/docs/products/facetra-shape-creator/construction-lines#optional-blush-modifier-selection">Blush Modifier Selection</a><a href="https://docs.hai-vr.dev/updates/2024/04/08/p0#new-construction-line-blush-modifier-selection" class="hash-link" aria-label="Direct link to new-construction-line-blush-modifier-selection" title="Direct link to new-construction-line-blush-modifier-selection">​</a></h3>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="new-construction-line-blush-modifier-selection">New Construction Line: <a href="https://docs.hai-vr.dev/docs/products/facetra-shape-creator/construction-lines#optional-blush-modifier-selection">Blush Modifier Selection</a><a href="https://docs.hai-vr.dev/updates/2024/04/08/p0#new-construction-line-blush-modifier-selection" class="hash-link" aria-label="Direct link to new-construction-line-blush-modifier-selection" title="Direct link to new-construction-line-blush-modifier-selection">​</a></h2>
 <p>Many avatars have blendshapes hidden inside the head to make the character blush.</p>
 <p>However, when you squint, or when you puff your cheeks, these blush blendshapes will visibly clip through your face expressions.</p>
 <p>To address this, Blush Modifier Selection is a new construction line, which can only be selected using blendshapes (it is not a traditional vertex selection).
@@ -26,7 +26,7 @@ It can be left empty.</p>
 </ul>
 <p>Unfortunately, this will not work with all avatar bases. The density of the blush mesh needs to be similar (or half as similar) to the face mesh itself. If it's a gigantic polygon, it will not work so well.</p>
 <video controls="" width="816"><source src="/assets/medias/2024-04-07-p0-osc-locomotion-f-3a6648605af848dbc219f4d4b67fa9b7.mp4"></video>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="convert-from-unified-expressions-to-arkit">Convert from Unified Expressions to ARKit<a href="https://docs.hai-vr.dev/updates/2024/04/08/p0#convert-from-unified-expressions-to-arkit" class="hash-link" aria-label="Direct link to Convert from Unified Expressions to ARKit" title="Direct link to Convert from Unified Expressions to ARKit">​</a></h3>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="convert-from-unified-expressions-to-arkit">Convert from Unified Expressions to ARKit<a href="https://docs.hai-vr.dev/updates/2024/04/08/p0#convert-from-unified-expressions-to-arkit" class="hash-link" aria-label="Direct link to Convert from Unified Expressions to ARKit" title="Direct link to Convert from Unified Expressions to ARKit">​</a></h2>
 <p>Functionality almost identical to <a href="https://docs.hai-vr.dev/docs/products/prefabulous/universal/convert-blendshape-conventions">Prefabulous Convert Blendshape Conventions</a> has been added natively to FaceTra Shape Creator, in the Output section.
 This only affects blendshapes that FaceTra creates, and will not affect any other non-face tracking related blendshapes.</p>
 <ul>
