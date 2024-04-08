@@ -612,3 +612,7 @@ Unfortunately, this will not work with all avatar bases.
 
 The density of the blush mesh needs to be similar (or half as similar) to the face mesh itself. If it's a gigantic polygon, it will not work so well.
 :::
+
+<video controls muted width="816">
+    <source src={require('/docs/products/facetra-shape-creator/img/blush-facetra-f.mp4').default}/>
+</video>

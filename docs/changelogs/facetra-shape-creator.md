@@ -2,7 +2,7 @@
 title: FaceTra Shape Creator
 ---
 
-## 0.8.0-2024-04-08-2020 (Planned)
+## 0.8.0-2024-04-08-2020
 
 ### New Construction Line: [Blush Modifier Selection](/docs/products/facetra-shape-creator/construction-lines#optional-blush-modifier-selection)
 
@@ -18,6 +18,10 @@ When blendshapes are added to the Blush Modifier Selection, the blendshape will 
 - Cheek Puff
 
 Unfortunately, this will not work with all avatar bases. The density of the blush mesh needs to be similar (or half as similar) to the face mesh itself. If it's a gigantic polygon, it will not work so well.
+
+<video controls muted width="816">
+    <source src={require('/docs/products/facetra-shape-creator/img/blush-facetra-f.mp4').default}/>
+</video>
 
 ### Convert from Unified Expressions to ARKit
 
