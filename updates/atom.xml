@@ -24,7 +24,7 @@ It can be left empty.</p>
 <li>Cheek Puff</li>
 </ul>
 <p>Unfortunately, this will not work with all avatar bases. The density of the blush mesh needs to be similar (or half as similar) to the face mesh itself. If it's a gigantic polygon, it will not work so well.</p>
-<video controls="" width="816"><source src="/assets/medias/2024-04-07-p0-osc-locomotion-f-3a6648605af848dbc219f4d4b67fa9b7.mp4"></video>
+<video controls="" muted="" width="816"><source src="/assets/medias/blush-facetra-f-4708d05b30588cd4debebd542083ccec.mp4"></video>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="convert-from-unified-expressions-to-arkit">Convert from Unified Expressions to ARKit<a href="https://docs.hai-vr.dev/updates/2024/04/08/p0#convert-from-unified-expressions-to-arkit" class="hash-link" aria-label="Direct link to Convert from Unified Expressions to ARKit" title="Direct link to Convert from Unified Expressions to ARKit">​</a></h2>
 <p>Functionality almost identical to <a href="https://docs.hai-vr.dev/docs/products/prefabulous/universal/convert-blendshape-conventions">Prefabulous Convert Blendshape Conventions</a> has been added natively to FaceTra Shape Creator, in the Output section.
 This only affects blendshapes that FaceTra creates, and will not affect any other non-face tracking related blendshapes.</p>
