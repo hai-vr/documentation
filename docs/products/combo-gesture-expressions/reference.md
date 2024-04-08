@@ -188,17 +188,33 @@ On many avatar bases, the left eyelid and right eyelid can be animated independe
     <source src={rmaiRqGhCH} type="video/mp4" />
 </video>
 
+### Select the Avatar Descriptor
+
 Select the `ComboGestureExpressions` object of the prefab which contains a *Combo Gesture Compiler* component. In the inspector:
 - Drag and drop your avatar in the `Avatar descriptor` slot. The avatar will *not* be modified, this is only required to read the default animation values of the avatar, and also read the blink blendshapes in the Avatar Descriptor.
+
+### Select the animator controller
+
+The instructions will be different if you already use VRCFury, Modular Avatar, or neither of them.
+
+Choose the one that fits you:
+
+#### With a traditional workflow
+
+- If you do not use VRCFury nor Modular Avatar:
+    - Drag and drop your [FX playable layer](https://docs.vrchat.com/docs/playable-layers#fx) animator to the `FX Animator Controller` slot. **This asset will be modified: New layers and parameters will be added when synchronizing animations.** I recommend you to **make backups** of that FX Animator Controller!
+
+#### With VRCFury or Modular Avatar (non-destructive workflow)
+
 - If you use VRCFury or Modular Avatar, and you want to preserve your existing FX layer:
   - Create a new Animator Controller asset.
   - Drag and drop that new Animator Controller asset to the `FX Animator Controller` slot.
   - *If you have both VRCFury *and* Modular Avatar in your project, choose only one of the two below choices based on your preference.*
   - If you use VRCFury, add a [VRCFury Full Controller](https://vrcfury.com/components/full-controller) on your avatar that references that new Animator Controller asset.
   - If you use Modular Avatar, add a [Modular Avatar Merge Animator](https://modular-avatar.nadena.dev/docs/reference/merge-animator) on your avatar that references that new Animator Controller asset.
-    - Define the Modular Avatar Merge Animator component to use Absolute paths. 
-- If you do not use VRCFury nor Modular Avatar:
-  - Drag and drop your [FX playable layer](https://docs.vrchat.com/docs/playable-layers#fx) animator to the `FX Animator Controller` slot. **This asset will be modified: New layers and parameters will be added when synchronizing animations.** I recommend you to **make backups** of that FX Animator Controller!
+    - Define the Modular Avatar Merge Animator component to use Absolute paths.
+
+### Synchronize
 
 Depending on how your animator is built, choose the correct setting in `FX Playable Mode`: Choose Write Defaults OFF if you are following VRChat recommendations. Try to be consistent throughout your animator.
 
