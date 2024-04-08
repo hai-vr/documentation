@@ -2,11 +2,41 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://docs.hai-vr.dev/updates</id>
     <title>Haï~ Blog</title>
-    <updated>2024-04-07T00:00:00.000Z</updated>
+    <updated>2024-04-08T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://docs.hai-vr.dev/updates"/>
     <subtitle>Haï~ Blog</subtitle>
     <icon>https://docs.hai-vr.dev/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[✨ FaceTra Shape Creator V0.8]]></title>
+        <id>https://docs.hai-vr.dev/updates/2024/04/08/p0</id>
+        <link href="https://docs.hai-vr.dev/updates/2024/04/08/p0"/>
+        <updated>2024-04-08T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[New Construction Line: Blush Modifier Selection]]></summary>
+        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="new-construction-line-blush-modifier-selection">New Construction Line: <a href="https://docs.hai-vr.dev/docs/products/facetra-shape-creator/construction-lines#optional-blush-modifier-selection">Blush Modifier Selection</a><a href="https://docs.hai-vr.dev/updates/2024/04/08/p0#new-construction-line-blush-modifier-selection" class="hash-link" aria-label="Direct link to new-construction-line-blush-modifier-selection" title="Direct link to new-construction-line-blush-modifier-selection">​</a></h3>
+<p>Many avatars have blendshapes hidden inside the head to make the character blush.</p>
+<p>However, when you squint, or when you puff your cheeks, these blush blendshapes will visibly clip through your face expressions.</p>
+<p>To address this, Blush Modifier Selection is a new construction line, which can only be selected using blendshapes (it is not a traditional vertex selection).
+It can be left empty.</p>
+<p>When blendshapes are added to the Blush Modifier Selection, the blendshape will be simulated to be active, so that they will be moved by the following shapes:</p>
+<ul>
+<li>Cheek Squint</li>
+<li>Cheek Puff</li>
+</ul>
+<p>Unfortunately, this will not work with all avatar bases. The density of the blush mesh needs to be similar (or half as similar) to the face mesh itself. If it's a gigantic polygon, it will not work so well.</p>
+<video controls="" width="816"><source src="/assets/medias/2024-04-07-p0-osc-locomotion-f-3a6648605af848dbc219f4d4b67fa9b7.mp4"></video>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="convert-from-unified-expressions-to-arkit">Convert from Unified Expressions to ARKit<a href="https://docs.hai-vr.dev/updates/2024/04/08/p0#convert-from-unified-expressions-to-arkit" class="hash-link" aria-label="Direct link to Convert from Unified Expressions to ARKit" title="Direct link to Convert from Unified Expressions to ARKit">​</a></h3>
+<p>Functionality almost identical to <a href="https://docs.hai-vr.dev/docs/products/prefabulous/universal/convert-blendshape-conventions">Prefabulous Convert Blendshape Conventions</a> has been added natively to FaceTra Shape Creator, in the Output section.
+This only affects blendshapes that FaceTra creates, and will not affect any other non-face tracking related blendshapes.</p>
+<ul>
+<li>Contrary to Prefabulous, the VRChat SDK is not required.</li>
+<li>This allows you to export blendshapes using the ARKit naming convention. It will still be a bit messy as FaceTra creates many more blendshapes than ARKit needs, such as left/right variants for blendshapes that do not have left/right variants in ARKit.<!-- -->
+<ul>
+<li>The blendshapes will only be converted when entering Play mode, or baking the avatar using NDMF, or preparing a Resonite bake using FaceTra. Edit mode will still display the blendshapes using the Unified Expressions naming convention.</li>
+</ul>
+</li>
+</ul>]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[🧪 Knowledge sharing "Animating locomotion using OSC Trackers"]]></title>
         <id>https://docs.hai-vr.dev/updates/2024/04/07/p0-ks</id>
@@ -399,20 +429,5 @@ or <a href="https://github.com/anatawa12/AvatarOptimizer" target="_blank" rel="n
 <p>This update is not necessary if you are on Unity 2022.</p>
 <p>🔍 <a href="https://docs.hai-vr.dev/docs/changelogs/vixen#101">View changelog</a></p>
 <p>🗒️ <a href="https://docs.hai-vr.dev/docs/products/vixen/cross-control-effects">Open documentation</a></p>]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[✨ Blendshape Viewer V2.1.0]]></title>
-        <id>https://docs.hai-vr.dev/updates/2024/01/12/p1</id>
-        <link href="https://docs.hai-vr.dev/updates/2024/01/12/p1"/>
-        <updated>2024-01-12T19:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Add Search and Copy to Clipboard:]]></summary>
-        <content type="html"><![CDATA[<p>Add Search and Copy to Clipboard:</p>
-<ul>
-<li>Add a Search field.</li>
-<li>Add Copy to Clipboard button next to each blendshape.</li>
-</ul>
-<p>🔍 <a href="https://docs.hai-vr.dev/docs/changelogs/blendshape-viewer#210">View changelog</a></p>
-<p>🗒️ <a href="https://docs.hai-vr.dev/docs/products/blendshape-viewer">Open documentation</a></p>
-<video controls=""><source src="/assets/medias/2024-01-12-p1-7BbtsLNQac-211c3051e5804d4ecb71c55d980d8c8e.mp4"></video>]]></content>
     </entry>
 </feed>
