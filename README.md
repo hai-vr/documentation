@@ -10,6 +10,8 @@
 - products index.md hides the both TOC and the default title
 - TODO: I replaced the landing page with a redirect, but it makes the social embed look like shit, how to fix this?
 
+- Problem: Static videos are still copied and hashed and referenced somewhere else, despite being in the static folder (so it becomes duplicate). why is that the case????
+
 # Website
 
 This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.

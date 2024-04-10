@@ -28,9 +28,16 @@ This tool requires VRChat, and is incompatible with other apps and platforms.
 It is bundled with *Visual Expressions Editor*, an animation editor that lets you create face expressions with the help of previews.
 
 <video controls width="816" autostart="false">
-    <source src="https://hai-vr.github.io/combo-gesture-expressions-av3/videos/cge2-rc-github.mp4" type="video/mp4" />
+    <source src={require('../../../static/unsorted_ghc/githubio/cge2-rc-github.mp4').default}/>
 </video>
-<iframe src="https://streamable.com/e/t19nkm?loop=0" width="408" height="256" frameborder="0" allowfullscreen></iframe> <iframe src="https://streamable.com/e/bg1uoj?loop=0" width="408" height="256" frameborder="0" allowfullscreen></iframe>
+
+[//]: # (<iframe src="https://streamable.com/e/t19nkm?loop=0" width="408" height="256" frameborder="0" allowfullscreen></iframe> <iframe src="https://streamable.com/e/bg1uoj?loop=0" width="408" height="256" frameborder="0" allowfullscreen></iframe>)
+
+<video controls width="408" autostart="false">
+    <source src={require('/static/unsorted_ghc/streamable/t19nkm.mp4').default}/>
+</video><video controls width="408" autostart="false">
+    <source src={require('/static/unsorted_ghc/streamable/bg1uoj.mp4').default}/>
+</video>
 
 With *ComboGestureExpressions*:
 
@@ -366,7 +373,12 @@ For a boolean, *IsAboveThreshold* means the element is active when it's true.
 
 ## Using multiple mood sets
 
-<iframe src="https://streamable.com/e/c5x44o?loop=0" width="816" height="512" frameborder="0" allowfullscreen></iframe>
+[//]: # (<iframe src="https://streamable.com/e/c5x44o?loop=0" width="816" height="512" frameborder="0" allowfullscreen></iframe>)
+
+<video controls width="816" autostart="false">
+    <source src={require('/static/unsorted_ghc/streamable/c5x44o.mp4').default}/>
+</video>
+
 *(A [longer tutorial with audio commentary](./additional-pages/tutorial#using-multiple-mood-sets-tutorial-with-audio-commentary) is available)*
 
 Earlier, you set up face expressions within `Default` object of the prefab. This is the default mood set of face expressions of your avatar that is active after loading. However, you can have any number of mood sets and switch between them using the menu to increase the number of face expressions depending on the situation.
@@ -385,7 +397,12 @@ Add additional mood sets by clicking <span class={styles.hai_btn}>+</span> on th
 
 ## Standalone puppets and blend trees
 
-<iframe src="https://streamable.com/e/ai0fzb?loop=0" width="816" height="512" frameborder="0" allowfullscreen></iframe>
+[//]: # (<iframe src="https://streamable.com/e/ai0fzb?loop=0" width="816" height="512" frameborder="0" allowfullscreen></iframe>)
+
+<video controls width="816" autostart="false">
+    <source src={require('/static/unsorted_ghc/streamable/ai0fzb.mp4').default}/>
+</video>
+
 *(A [longer tutorial with audio commentary](./additional-pages/tutorial#standalone-puppets-and-blend-trees-tutorial-with-audio-commentary) is available)*
 
 So far we have set up *Activity* mood sets. Another type of mood set is available: *Puppet*, which can be controlled by an Expression Menu.
@@ -409,7 +426,12 @@ Select the `ComboGestureExpressions` object of the prefab. In the inspector, add
 I recommend creating two controls in your Expression Menu to control the puppet: A Toggle control to switch to the Puppet mood set, and separate Two-Axis Puppet to control the two parameters of your blend tree.
 
 :::note
-<iframe src="https://streamable.com/e/8u2sd5?loop=0" width="408" height="256" frameborder="0" allowfullscreen></iframe>
+
+[//]: # (<iframe src="https://streamable.com/e/8u2sd5?loop=0" width="408" height="256" frameborder="0" allowfullscreen></iframe>)
+
+<video controls width="408" autostart="false">
+    <source src={require('/static/unsorted_ghc/streamable/8u2sd5.mp4').default}/>
+</video>
 
 Illustration of a puppet mood set.
 :::
@@ -426,7 +448,12 @@ If you still use ComboGestureExpressions V2, the section has moved to [its own d
 
 ## Permutations
 
-<iframe src="https://streamable.com/e/2onv8c?loop=0" width="816" height="512" frameborder="0" allowfullscreen></iframe>
+[//]: # (<iframe src="https://streamable.com/e/2onv8c?loop=0" width="816" height="512" frameborder="0" allowfullscreen></iframe>)
+
+<video controls width="816" autostart="false">
+    <source src={require('/static/unsorted_ghc/streamable/2onv8c.mp4').default}/>
+</video>
+
 *(A [longer tutorial with audio commentary](./additional-pages/tutorial#permutations-tutorial-with-audio-commentary) is available)*
 
 For simplicity purposes, we've been using combinations of gestures, meaning that `Left Point + Right ThumbsUp` will show the same animation as `Left ThumbsUp + Right Point`. I encourage you [using multiple mood sets](#using-multiple-mood-sets) available in an Expressions menu to expand your expressions repertoire.
@@ -437,7 +464,12 @@ If you would like to create permutations of gestures, which I do recommend for a
 
 ## Mix puppets and gestures
 
-<iframe src="https://streamable.com/e/nvm1n0?loop=0" width="816" height="512" frameborder="0" allowfullscreen></iframe>
+[//]: # (<iframe src="https://streamable.com/e/nvm1n0?loop=0" width="816" height="512" frameborder="0" allowfullscreen></iframe>)
+
+<video controls width="816" autostart="false">
+    <source src={require('/static/unsorted_ghc/streamable/nvm1n0.mp4').default}/>
+</video>
+
 *(A [longer tutorial with audio commentary](./additional-pages/tutorial#mix-puppets-and-gestures-tutorial-with-audio-commentary) is available)*
 
 Any animation slot can have a blend tree within it instead. This means puppeteering is possible for specific combos of hand gestures.
