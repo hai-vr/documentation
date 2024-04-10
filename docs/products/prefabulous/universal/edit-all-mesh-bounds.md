@@ -1,4 +1,11 @@
-﻿# Edit All Mesh Bounds
+﻿import {HaiTags} from "/src/components/HaiTags";
+import {HaiTag} from "/src/components/HaiTag";
+
+# Edit All Mesh Bounds
+
+<HaiTags>
+<HaiTag isUniversal={true} />
+</HaiTags>
 
 Finds all SkinnedMeshRenderers of the avatar and changes the bounds.
 

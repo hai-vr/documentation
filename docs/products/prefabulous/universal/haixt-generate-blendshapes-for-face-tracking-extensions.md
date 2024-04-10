@@ -1,4 +1,11 @@
-﻿# HaiXT Generate Blendshapes for Face Tracking Extensions
+﻿import {HaiTags} from "/src/components/HaiTags";
+import {HaiTag} from "/src/components/HaiTag";
+
+# HaiXT Generate Blendshapes for Face Tracking Extensions
+
+<HaiTags>
+<HaiTag isUniversal={true} />
+</HaiTags>
 
 If you have an avatar that already supports face tracking, this will generate additional non-standard blendshapes for use with [HaiXT Face Tracking Extensions](../vrchat/haixt-face-tracking-extensions).
 

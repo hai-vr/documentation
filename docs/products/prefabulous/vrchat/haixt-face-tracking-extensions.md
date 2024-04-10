@@ -1,4 +1,11 @@
-﻿# 💬 HaiXT Face Tracking Extensions
+﻿import {HaiTags} from "/src/components/HaiTags";
+import {HaiTag} from "/src/components/HaiTag";
+
+# 💬 HaiXT Face Tracking Extensions
+
+<HaiTags>
+<HaiTag requiresVRChat={true} />
+</HaiTags>
 
 Adds a new FX layer containing support for the non-standard face tracking blendshapes.
 

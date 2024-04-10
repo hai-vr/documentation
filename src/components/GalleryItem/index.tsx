@@ -14,9 +14,9 @@
 // @ts-ignore
 import React from 'react';
 import clsx from 'clsx';
-import Translate from "@docusaurus/core/lib/client/exports/Translate";
 import Link from '@docusaurus/Link';
 import styles from './styles.module.css';
+import {HaiTag} from "../HaiTag";
 
 interface Props {
     name: string;
@@ -24,11 +24,12 @@ interface Props {
     url: string;
     urlTS: string;
     requiresVRChat: boolean;
+    requiresSteamVR: boolean;
     isUniversal: boolean;
     children: JSX.Element;
 }
 
-export function GalleryItem({name, image, url, urlTS, requiresVRChat, isUniversal, children}: Props): JSX.Element {
+export function GalleryItem({name, image, url, urlTS, requiresVRChat, requiresSteamVR, isUniversal, children}: Props): JSX.Element {
     return (
         <div className="col col--4 margin-bottom--lg">
             <div className={clsx('card', styles.gallery_card_overall)}>
@@ -46,8 +47,11 @@ export function GalleryItem({name, image, url, urlTS, requiresVRChat, isUniversa
                     <p>{children}</p>
                 </div>
                 <div className="card__footer">
-                    {requiresVRChat ? <div className={clsx(styles.gallery_card_requires_vrchat)}>💬 Requires VRChat</div> : ''}
-                    {isUniversal ? <div className={clsx(styles.gallery_card_universal)}>🌊 Any Platform</div> : ''}
+                    <HaiTag
+                            requiresVRChat = {requiresVRChat}
+                            isUniversal = {isUniversal}
+                            requiresSteamVR = {requiresSteamVR}
+                    />
                 </div>
             </div>
         </div>

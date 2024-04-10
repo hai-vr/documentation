@@ -1,4 +1,11 @@
-﻿# Delete Polygons
+﻿import {HaiTags} from "/src/components/HaiTags";
+import {HaiTag} from "/src/components/HaiTag";
+
+# Delete Polygons
+
+<HaiTags>
+<HaiTag isUniversal={true} />
+</HaiTags>
 
 Delete polygons that are moved by a blendshape.
 

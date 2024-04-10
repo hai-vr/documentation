@@ -1,6 +1,12 @@
 ﻿---
 title: Property Finder
 ---
+import {HaiTags} from "/src/components/HaiTags";
+import {HaiTag} from "/src/components/HaiTag";
+
+<HaiTags>
+<HaiTag isUniversal={true} />
+</HaiTags>
 
 *Property Finder* lets you view the animatable properties of an object.
 

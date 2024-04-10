@@ -1,4 +1,11 @@
-﻿# 💬 Import Expression Parameters
+﻿import {HaiTags} from "/src/components/HaiTags";
+import {HaiTag} from "/src/components/HaiTag";
+
+# 💬 Import Expression Parameters
+
+<HaiTags>
+<HaiTag requiresVRChat={true} />
+</HaiTags>
 
 Imports all parameters from an existing VRC Expression Parameters asset into the avatar.
 

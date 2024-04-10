@@ -1,6 +1,8 @@
 ﻿---
 sidebar_position: -1
 ---
+import {HaiTags} from "/src/components/HaiTags";
+import {HaiTag} from "/src/components/HaiTag";
 
 # Install
 
@@ -18,6 +20,10 @@ If you use this tool, it is highly recommended that you join the [Discord server
 
 ## Install for VRChat
 
+<HaiTags>
+<HaiTag requiresVRChat={true} />
+</HaiTags>
+
 This requires the use of the VRChat Creator Companion in order to automatically build the mesh before upload.
 
 - Add **[Modular Avatar listing](https://modular-avatar.nadena.dev/)** by clicking on *Download (using VCC).*
@@ -27,6 +33,10 @@ This requires the use of the VRChat Creator Companion in order to automatically 
 ![Untitled.png](img/Untitled.png)
 
 ## Install for Resonite or other apps
+
+<HaiTags>
+<HaiTag notVRChat={true} />
+</HaiTags>
 
 You can start a new Unity project in Unity 2022, or reuse a VRChat project in Unity 2022 or Unity 2019.
 

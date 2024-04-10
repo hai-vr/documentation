@@ -1,8 +1,14 @@
 ﻿---
 title: ⭐ IconGen
 ---
+import {HaiTags} from "/src/components/HaiTags";
+import {HaiTag} from "/src/components/HaiTag";
 
 # IconGen
+
+<HaiTags>
+<HaiTag isUniversal={true} />
+</HaiTags>
 
 *IconGen* is an Unity Editor tool that lets you capture icons from objects in your scene, and then decorate and crop them.
 

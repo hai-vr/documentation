@@ -1,7 +1,13 @@
 import uYmmptha2T from './animation-viewer-img/sx_2022-02-02_03-27-39_uYmmptha2T.mp4';
 import QdOYmOWyly from './animation-viewer-img/sx_2022-02-02_03-05-20_QdOYmOWyly.mp4';
+import {HaiTags} from "/src/components/HaiTags";
+import {HaiTag} from "/src/components/HaiTag";
 
 # Animation Viewer
+
+<HaiTags>
+<HaiTag isUniversal={true} />
+</HaiTags>
 
 *Animation Viewer* lets you preview animations in the Project view browser.
 

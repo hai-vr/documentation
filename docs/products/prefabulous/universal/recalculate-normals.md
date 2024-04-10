@@ -1,4 +1,11 @@
-﻿# Recalculate Normals
+﻿import {HaiTags} from "/src/components/HaiTags";
+import {HaiTag} from "/src/components/HaiTag";
+
+# Recalculate Normals
+
+<HaiTags>
+<HaiTag isUniversal={true} />
+</HaiTags>
 
 Improves the shading of SkinnedMeshRenderers by recalculating select blendshape normals (and tangents).
 

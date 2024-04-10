@@ -1,7 +1,14 @@
 ﻿---
 unlisted: true
 ---
+import {HaiTags} from "/src/components/HaiTags";
+import {HaiTag} from "/src/components/HaiTag";
+
 # ⛔ Generate Speech Visemes
+
+<HaiTags>
+<HaiTag isUniversal={true} />
+</HaiTags>
 
 If you have an avatar that has face tracking, you can generate speech visemes using those face tracking blendshapes.
 The avatar descriptor will be modified to use those visemes.

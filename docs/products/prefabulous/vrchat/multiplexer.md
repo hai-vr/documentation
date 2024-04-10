@@ -1,7 +1,14 @@
 ﻿---
 unlisted: true
 ---
+import {HaiTags} from "/src/components/HaiTags";
+import {HaiTag} from "/src/components/HaiTag";
+
 # ⛔💬 Multiplexer (Experimental)
+
+<HaiTags>
+<HaiTag requiresVRChat={true} />
+</HaiTags>
 
 Allows an avatar to temporarily exceed 256 bits of synced parameters during the non-destructive build process.
 

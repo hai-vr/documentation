@@ -1,8 +1,14 @@
 ---
 title: ⭐ Double Hip Tracker
 ---
+import {HaiTags} from "/src/components/HaiTags";
+import {HaiTag} from "/src/components/HaiTag";
 
 # Double Hip Tracker
+
+<HaiTags>
+<HaiTag requiresVRChat={true} /> <HaiTag requiresSteamVR={true} />
+</HaiTags>
 
 Double Hip Tracker lets you use two hip trackers on VRChat.
 

@@ -1,4 +1,11 @@
-﻿# 💬 Mass Blendshape Sync
+﻿import {HaiTags} from "/src/components/HaiTags";
+import {HaiTag} from "/src/components/HaiTag";
+
+# 💬 Mass Blendshape Sync
+
+<HaiTags>
+<HaiTag requiresVRChat={true} />
+</HaiTags>
 
 Generates a [Modular Avatar Blendshape Sync](https://modular-avatar.nadena.dev/docs/reference/blendshape-sync) component when the avatar is built,
 which will sync as many blendshapes that exist in the *source* renderer to the renderers in *targets*.

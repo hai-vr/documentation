@@ -1,6 +1,12 @@
 ﻿---
 title: Auto-reset OSC config
 ---
+import {HaiTags} from "/src/components/HaiTags";
+import {HaiTag} from "/src/components/HaiTag";
+
+<HaiTags>
+<HaiTag requiresVRChat={true} />
+</HaiTags>
 
 This tool will automatically reset the OSC config after every successful VRChat avatar upload.
 

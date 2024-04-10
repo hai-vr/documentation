@@ -1,0 +1,23 @@
+.hai_tag {
+  display: inline-block;
+  margin-left: 0.1em;
+  margin-right: 0.1em;
+  padding: 0.5em 1em 0.5em 0.5em;
+  line-height: 1em;
+
+  border-radius: 1em;
+  color: var(--hai-universal-label-text);
+}
+.hai_tag_requires_vrchat {
+  background-color: var(--hai-vrchat-label);
+}
+.hai_tag_requires_resonite {
+  background-color: var(--hai-resonite-label);
+}
+.hai_tag_requires_steamvr {
+  background-color: var(--hai-steamvr-label);
+  padding: 0.5em 1em 0.5em 1em;
+}
+.hai_tag_universal {
+  background-color: var(--hai-universal-label);
+}

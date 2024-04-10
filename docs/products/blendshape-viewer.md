@@ -3,6 +3,12 @@ title: Blendshape Viewer
 ---
 import Je9CWGeOH8 from './blendshape-viewer-img/sx_2022-01-15_00-25-45_Je9CWGeOH8.mp4';
 import xx4Kdbs1Hlck from './blendshape-viewer-img/sx_2022-01-15_00-18-15_4Kdbs1Hlck.mp4';
+import {HaiTags} from "/src/components/HaiTags";
+import {HaiTag} from "/src/components/HaiTag";
+
+<HaiTags>
+<HaiTag isUniversal={true} />
+</HaiTags>
 
 *Blendshape Viewer* lets you visually browse blendshapes.
 

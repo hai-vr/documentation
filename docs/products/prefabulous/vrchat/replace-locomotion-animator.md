@@ -1,4 +1,11 @@
-﻿# 💬 Replace Locomotion Animator
+﻿import {HaiTags} from "/src/components/HaiTags";
+import {HaiTag} from "/src/components/HaiTag";
+
+# 💬 Replace Locomotion Animator
+
+<HaiTags>
+<HaiTag requiresVRChat={true} />
+</HaiTags>
 
 Replace the locomotion animator of the avatar with this one.
 

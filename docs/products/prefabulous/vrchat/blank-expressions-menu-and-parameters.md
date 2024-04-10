@@ -1,4 +1,11 @@
-﻿# 💬 Blank Expressions Menu and Parameters
+﻿import {HaiTags} from "/src/components/HaiTags";
+import {HaiTag} from "/src/components/HaiTag";
+
+# 💬 Blank Expressions Menu and Parameters
+
+<HaiTags>
+<HaiTag requiresVRChat={true} />
+</HaiTags>
 
 Replaces the expressions menu and the expression parameters with blank ones, as early as possible.
 

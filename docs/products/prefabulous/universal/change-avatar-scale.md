@@ -1,4 +1,11 @@
-﻿# Change Avatar Scale
+﻿import {HaiTags} from "/src/components/HaiTags";
+import {HaiTag} from "/src/components/HaiTag";
+
+# Change Avatar Scale
+
+<HaiTags>
+<HaiTag requiresVRChat={true} />
+</HaiTags>
 
 Rescales the avatar. The viewpoint will be adjusted accordingly.
 

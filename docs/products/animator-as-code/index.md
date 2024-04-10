@@ -1,4 +1,11 @@
-﻿# Animator As Code V1
+﻿import {HaiTags} from "/src/components/HaiTags";
+import {HaiTag} from "/src/components/HaiTag";
+
+# Animator As Code V1
+
+<HaiTags>
+<HaiTag isUniversal={true} />
+</HaiTags>
 
 :::danger
 This is the work-in-progress documentation for Animator As Code **V1**, which has not yet been released. The last public version of Animator As Code is V0.

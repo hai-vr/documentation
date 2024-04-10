@@ -1,4 +1,11 @@
-﻿# Edit All Mesh Anchor Override
+﻿import {HaiTags} from "/src/components/HaiTags";
+import {HaiTag} from "/src/components/HaiTag";
+
+# Edit All Mesh Anchor Override
+
+<HaiTags>
+<HaiTag isUniversal={true} />
+</HaiTags>
 
 Finds all SkinnedMeshRenderers and all MeshRenderers of the avatar and changes the Anchor Override.
 

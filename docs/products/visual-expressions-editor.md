@@ -1,7 +1,13 @@
 import ochgB1a5VG from './visual-expressions-editor-img/sx_2022-03-08_16-17-04_ochgB1a5VG.mp4';
 import Kza0kEYwsf from './visual-expressions-editor-img/sx_2022-04-14_23-17-52_Kza0kEYwsf.mp4';
+import {HaiTags} from "/src/components/HaiTags";
+import {HaiTag} from "/src/components/HaiTag";
 
 # Visual Expressions Editor
+
+<HaiTags>
+<HaiTag isUniversal={true} />
+</HaiTags>
 
 *Visual Expressions Editor* lets you edit face expression animations.
 

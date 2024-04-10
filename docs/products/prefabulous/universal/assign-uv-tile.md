@@ -1,8 +1,14 @@
 ﻿---
 title: Assign UV Tile (UDIM)
 ---
+import {HaiTags} from "/src/components/HaiTags";
+import {HaiTag} from "/src/components/HaiTag";
 
 # Assign UV Tile
+
+<HaiTags>
+<HaiTag isUniversal={true} />
+</HaiTags>
 
 Sets the UV Tile of vertices that are moved by a blendshape, or optionally an entire mesh.
 

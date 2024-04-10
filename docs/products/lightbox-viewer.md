@@ -1,6 +1,12 @@
 ﻿---
 title: Lightbox Viewer
 ---
+import {HaiTags} from "/src/components/HaiTags";
+import {HaiTag} from "/src/components/HaiTag";
+
+<HaiTags>
+<HaiTag isUniversal={true} />
+</HaiTags>
 
 *Lightbox Viewer* lets you simultaneously visualize changes in shader material settings under different lighting conditions.
 

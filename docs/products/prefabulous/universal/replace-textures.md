@@ -1,4 +1,11 @@
-﻿# Replace Textures
+﻿import {HaiTags} from "/src/components/HaiTags";
+import {HaiTag} from "/src/components/HaiTag";
+
+# Replace Textures
+
+<HaiTags>
+<HaiTag isUniversal={true} />
+</HaiTags>
 
 Replaces textures inside materials with other ones.
 

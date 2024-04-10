@@ -1,6 +1,12 @@
 ﻿---
 title: BlendTree Viewer
 ---
+import {HaiTags} from "/src/components/HaiTags";
+import {HaiTag} from "/src/components/HaiTag";
+
+<HaiTags>
+<HaiTag isUniversal={true} />
+</HaiTags>
 
 *BlendTree Viewer* lets you browse large blend trees in a compact view.
 

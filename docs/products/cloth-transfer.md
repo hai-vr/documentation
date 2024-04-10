@@ -1,4 +1,11 @@
-﻿# Cloth Transfer
+﻿import {HaiTags} from "/src/components/HaiTags";
+import {HaiTag} from "/src/components/HaiTag";
+
+# Cloth Transfer
+
+<HaiTags>
+<HaiTag isUniversal={true} />
+</HaiTags>
 
 *Cloth Transfer* is a Unity Editor tool that lets you transfer cloth constraints of a mesh from a Unity 2018 project into a Unity 2019 project.
 

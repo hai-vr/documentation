@@ -1,6 +1,8 @@
 ﻿---
 sidebar_position: 6
 ---
+import {HaiTags} from "/src/components/HaiTags";
+import {HaiTag} from "/src/components/HaiTag";
 
 # Upload and Export
 
@@ -13,6 +15,10 @@ Integrations are not handled by FaceTra Shape Creator, but by other assets and t
 the community or natively, depending on your app.
 
 ## VRChat
+
+<HaiTags>
+<HaiTag requiresVRChat={true} />
+</HaiTags>
 
 ### Test in Play Mode
 
@@ -36,6 +42,10 @@ You need to install an existing VRCFaceTracking template on your avatar, for ins
 After uploading, make sure you reset your OSC config when you install face tracking on your avatar for the first time.
 
 ## Resonite
+
+<HaiTags>
+<HaiTag requiresResonite={true} />
+</HaiTags>
 
 To use the avatar in Resonite:
 

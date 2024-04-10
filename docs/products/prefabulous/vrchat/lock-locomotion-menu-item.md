@@ -1,4 +1,11 @@
-﻿# 💬 Lock Locomotion Menu Item
+﻿import {HaiTags} from "/src/components/HaiTags";
+import {HaiTag} from "/src/components/HaiTag";
+
+# 💬 Lock Locomotion Menu Item
+
+<HaiTags>
+<HaiTag requiresVRChat={true} />
+</HaiTags>
 
 Adds a new FX layer and creates a menu item to lock locomotion.
 

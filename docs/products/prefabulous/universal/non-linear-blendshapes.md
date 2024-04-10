@@ -1,7 +1,14 @@
 ﻿---
 unlisted: true
 ---
+import {HaiTags} from "/src/components/HaiTags";
+import {HaiTag} from "/src/components/HaiTag";
+
 # ⛔ Non-linear Blendshapes
+
+<HaiTags>
+<HaiTag isUniversal={true} />
+</HaiTags>
 
 Rewrites existing blendshapes by adding multiple regularly-spaced keyframes:
 - At the values of 0 and 100, the blendshape looks identical to the original,

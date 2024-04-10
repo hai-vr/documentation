@@ -1,6 +1,12 @@
 ﻿import KryfYW7TqN from './index-img/sx_2021-12-21_10-53-42_KryfYW7TqN.mp4';
+import {HaiTags} from "/src/components/HaiTags";
+import {HaiTag} from "/src/components/HaiTag";
 
 # Constraint Track Animation Creator
+
+<HaiTags>
+<HaiTag requiresVRChat={true} />
+</HaiTags>
 
 *Constraint Track Animation Creator* is a Unity Editor tool which automates the creation of a gimmick that lets you animate an object to slide along a track using constraints.
 

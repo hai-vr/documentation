@@ -1,8 +1,14 @@
 ﻿---
 title: ⭐ Vixen
 ---
+import {HaiTags} from "/src/components/HaiTags";
+import {HaiTag} from "/src/components/HaiTag";
 
 # Vixen
+
+<HaiTags>
+<HaiTag requiresVRChat={true} />
+</HaiTags>
 
 *Vixen* is an Unity Editor tool that provides another approach to create interactive elements and toggles on your avatar.
 

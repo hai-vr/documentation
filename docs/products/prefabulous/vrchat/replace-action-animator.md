@@ -1,4 +1,11 @@
-﻿# 💬 Replace Action Animator
+﻿import {HaiTags} from "/src/components/HaiTags";
+import {HaiTag} from "/src/components/HaiTag";
+
+# 💬 Replace Action Animator
+
+<HaiTags>
+<HaiTag requiresVRChat={true} />
+</HaiTags>
 
 Replace the action animator of the avatar with this one.
 

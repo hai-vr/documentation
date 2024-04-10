@@ -1,7 +1,13 @@
 import qwusFjCQsC from './expressions-menu-hierarchy-editor-img/sx_2022-03-03_03-36-12_qwusFjCQsC.mp4'
 import JfpvN3yRTz from './expressions-menu-hierarchy-editor-img/sx_2022-03-03_01-37-29_JfpvN3yRTz.mp4'
+import {HaiTags} from "/src/components/HaiTags";
+import {HaiTag} from "/src/components/HaiTag";
 
 # Expressions Menu Hierarchy Editor
+
+<HaiTags>
+<HaiTag requiresVRChat={true} />
+</HaiTags>
 
 *Expressions Menu Hierarchy Editor* lets you edit Avatars 3.0 menus as if they were objects in your scene hierarchy, making it easier to edit the menu by duplicating and moving items around.
 

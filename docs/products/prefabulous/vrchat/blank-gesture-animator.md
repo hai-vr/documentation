@@ -1,4 +1,11 @@
-﻿# 💬 Blank Gesture Animator
+﻿import {HaiTags} from "/src/components/HaiTags";
+import {HaiTag} from "/src/components/HaiTag";
+
+# 💬 Blank Gesture Animator
+
+<HaiTags>
+<HaiTag requiresVRChat={true} />
+</HaiTags>
 
 Replaces the Gesture animator of the avatar with a blank one, as early as possible.
 

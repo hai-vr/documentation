@@ -1,4 +1,11 @@
-﻿# Convert Blendshape Conventions
+﻿import {HaiTags} from "/src/components/HaiTags";
+import {HaiTag} from "/src/components/HaiTag";
+
+# Convert Blendshape Conventions
+
+<HaiTags>
+<HaiTag isUniversal={true} />
+</HaiTags>
 
 Copies blendshapes from one naming convention to another naming convention.
 

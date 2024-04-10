@@ -1,8 +1,14 @@
 ﻿---
 title: Prefabulous
 ---
+import {HaiTags} from "/src/components/HaiTags";
+import {HaiTag} from "/src/components/HaiTag";
 
 # Prefabulous
+
+<HaiTags>
+<HaiTag isUniversal={true} />
+</HaiTags>
 
 *Prefabulous* contains **non-destructive** components to automate invasive tasks in your personal avatar.
 
