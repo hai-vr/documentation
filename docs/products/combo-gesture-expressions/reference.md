@@ -460,7 +460,7 @@ For MMD worlds specifically, using **Write Defaults ON** is recommended.
 
 In the Compiler at the bottom, define the field called *MMD compatibility toggle parameter*. Create an Expressions Menu toggling that parameter.
 
-In the FX Playable Layer settings, set the FX Playable Mode to *Use Unsupported Write Defaults On*. Do the same for the Gesture Playable Layer if you have one.
+In the FX Playable Layer settings, set the FX Playable Mode to *Use Write Defaults On*. Do the same for the Gesture Playable Layer if you have one.
 
 ![fpl](/unsorted_ghc/167751873-cfc3bcd0-f82f-4670-8e85-a4fe44f40631.png)
 
