@@ -18,6 +18,28 @@ import PatreonPlus from '@site/src/pages/internal/patreonplus.mdx'
 import PatreonReg from '@site/src/pages/internal/patreonreg.mdx'
 import PatreonMore from '@site/src/pages/internal/patreonmore.json'
 
+<div class={clsx(styles.haiBanner2)}>
+    <header className={clsx('hero hero--primary', styles.heroBanner, styles.heroBannerMini)}>
+        <div className="container">
+            <h1 className="hero__title">Haï~</h1>
+            <p className="hero__subtitle">Tools and apps for VR</p>
+            <div className={styles.buttons}>
+                <Link
+                    className="button button--secondary button--lg"
+                    to="vcc://vpm/addRepo?url=https://hai-vr.github.io/vpm-listing/index.json">
+                    <span>Add listing to VCC</span>
+                </Link>
+                <Link
+                    className="button button--secondary button--lg"
+                    to="/updates">
+                    <span>What's new?</span>
+                </Link>
+            </div>
+        </div>
+    </header>
+</div>
+
+<!--
 <header className={clsx('hero hero--primary', styles.heroBanner)}>
     <div className="container">
         <h1 className="hero__title">Haï~</h1>
@@ -36,6 +58,7 @@ import PatreonMore from '@site/src/pages/internal/patreonmore.json'
         </div>
     </div>
 </header>
+-->
 
 <div className={clsx(patreonStyles.centerline)}>
 <p>*Thank you to all of my supporters on [Patreon](/docs/other/patreon)* ⭐</p>
