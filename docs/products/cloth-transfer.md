@@ -15,7 +15,7 @@ It was created mainly to assist migration from Unity 2018 to Unity 2019 in the V
 This does not require VRChat to run. It has been tested to work on Unity 2018, Unity 2019, Unity 2022.
 :::
 
-![](https://github.com/hai-vr/unity-2018-2019-cloth-transfer/raw/z-res-pictures/Documentation/illustration.gif)
+![](/unsorted_ghc/illustration.gif)
 
 ## Download
 
@@ -34,7 +34,7 @@ The *Cloth* component must be enabled and visible in the scene. Please make sure
     - 1.1) Install *Cloth Transfer*.
     - 1.2) Select your *Cloth* component.
     - 1.3) Click on the cog on the top right of the component and select *Haï Cloth Transfer*.
-      ![](https://github.com/hai-vr/unity-2018-2019-cloth-transfer/raw/z-res-pictures/Documentation/ct1.png)
+      ![](/unsorted_ghc/ct1.png)
         - **Warning:** If you do not see this menu item, make sure your project does not have compile errors. If your project does have compile errors, **it is very important that you do NOT delete the VRChat SDK**! Use a backup of your project, or create a new Unity 2018 project and copy the minimum necessary over to proceed.
     - 1.4) In the *Cloth Transfer* window, click *Save cloth data* button, and choose a location to save the asset.
 
@@ -43,7 +43,7 @@ The *Cloth* component must be enabled and visible in the scene. Please make sure
     - 2.2) Copy the asset that you saved earlier from **Unity 2018** to **Unity 2019** (in step 1.4)
     - 2.3) Select your *Cloth* component.
     - 2.4) Click on the three dots on the top right of the component and select *Haï Cloth Transfer*.
-      ![](https://github.com/hai-vr/unity-2018-2019-cloth-transfer/raw/z-res-pictures/Documentation/ct2.png)
+      ![](/unsorted_ghc/ct2.png)
     - 2.5) In the *Cloth Transfer* window, select the copied asset in the *Data* field.
     - 2.6) In the *Cloth Transfer* window, click on *Load cloth data* button.
 
