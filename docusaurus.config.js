@@ -51,7 +51,7 @@ export default {
           // editUrl: 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         blog: {
-          postsPerPage: 100, // CHANGE ME from 100 to a lower number (or default) after January 2024
+          postsPerPage: 20,
           routeBasePath: 'updates',
           path: './updates',
           blogSidebarTitle: 'Updates',
