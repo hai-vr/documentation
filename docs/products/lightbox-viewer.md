@@ -27,7 +27,7 @@ The tool is free for download. It can also be downloaded using VCC.
 
 To begin, choose an object, and click the three vertical dots `⋮` next to the Transform component, and select *Haï LightboxViewer*.
 
-![image](https://user-images.githubusercontent.com/60819407/168523708-b1f94066-af60-49f2-9d04-73763eba20dc.png)
+![image](/unsorted_ghc/168523708-b1f94066-af60-49f2-9d04-73763eba20dc.png)
 
 Then, press *Activate LightboxViewer*. You can now move the scene camera to reframe, move the object around, and do your lighting tests live.
 
@@ -51,13 +51,13 @@ If Post Processing is not installed, you can press *Install Post-processing*. Th
 
 Use the *Post Processing* checkbox to turn it on and off.
 
-![image](https://user-images.githubusercontent.com/60819407/168622378-444d3c29-f6bc-44ae-aae3-8233ef6f1724.png)
+![image](/unsorted_ghc/168622378-444d3c29-f6bc-44ae-aae3-8233ef6f1724.png)
 
 ### Lifting small objects off the ground
 
 When testing small objects, they may appear inside the ground. Press *Advanced*, and change the *Vertical Displacement* slider to lift it off the ground.
 
-![image](https://user-images.githubusercontent.com/60819407/168845888-17b8cf4b-de34-4614-b54b-b18a8dd551a9.png)
+![image](/unsorted_ghc/168845888-17b8cf4b-de34-4614-b54b-b18a8dd551a9.png)
 
 ### Disable a lightbox
 
@@ -73,7 +73,7 @@ Expand the `Lightboxes` object. If you tag one of them as `EditorOnly`, the ligh
 
 Likewise, a lightbox can be enabled by marking it as `Untagged`. The default lightbox scene contains a hidden lightbox called *Spotlight Cookie* that you can enable this way.
 
-![image](https://user-images.githubusercontent.com/60819407/168635901-c1f1581f-e20e-496b-bca7-274f5b88db0e.png)
+![image](/unsorted_ghc/168635901-c1f1581f-e20e-496b-bca7-274f5b88db0e.png)
 
 ## Advanced usage
 
@@ -109,11 +109,11 @@ These lightboxes are contained in a scene called `Lightbox.unity`. You can selec
 
 A lightbox scene is just a series of meshes put side by side with different lighting settings and post-processing settings.
 
-![image](https://user-images.githubusercontent.com/60819407/168620627-d1a7c300-ba8a-4668-b37d-fd8c34571c65.png)
+![image](/unsorted_ghc/168620627-d1a7c300-ba8a-4668-b37d-fd8c34571c65.png)
 
 In a lightbox scene, each lightbox is defined in an object in the root called `Lightboxes`. The position and rotation of the lightbox is used to determine where to place the object inside that lightbox.
 
-![image](https://user-images.githubusercontent.com/60819407/168619085-1b2a944d-b769-4551-b80e-2a4559da4483.png)
+![image](/unsorted_ghc/168619085-1b2a944d-b769-4551-b80e-2a4559da4483.png)
 
 Each lightbox can contain objects that are only enabled when taking a picture of that lightbox.
 

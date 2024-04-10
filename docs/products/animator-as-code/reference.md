@@ -67,7 +67,7 @@ For more control, states have `LeftOf`, `RightOf`, `Over`, `Under`, `Shift` oper
 
 The value is in grid units.
 
-![Untitled](https://user-images.githubusercontent.com/60819407/155912996-89369e2d-435d-4619-b5ee-3ac4b6f8827c.png)
+![Untitled](/unsorted_ghc/155912996-89369e2d-435d-4619-b5ee-3ac4b6f8827c.png)
 
 ```csharp
 var init = fx.NewState("Init"); // This is the first state. By default it is at (0, 0)

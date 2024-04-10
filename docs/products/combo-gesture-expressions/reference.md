@@ -92,7 +92,7 @@ If you are using ComboGestureExpressions V3, the prefab is now part of the `Pack
 
 ## Visualize your animation files and preview using AnimationViewer
 
-[//]: # (![NewInV2TagSmall]&#40;https://user-images.githubusercontent.com/60819407/167145432-89428be9-9f16-4795-98ce-093a0c96837c.png&#41;)
+[//]: # (![NewInV2TagSmall]&#40;/unsorted_ghc/167145432-89428be9-9f16-4795-98ce-093a0c96837c.png&#41;)
 <video controls width="816" autostart="false">
     <source src={FyjXwkdmJA} type="video/mp4" />
 </video>
@@ -107,7 +107,7 @@ For more information, see [AnimationViewer manual](https://hai-vr.notion.site/An
 
 ## Create a new set of face expressions
 
-[//]: # (![ChangedInV2TagSmall]&#40;https://user-images.githubusercontent.com/60819407/167145687-6fb677af-43e0-473e-ab91-66d000619125.png&#41;)
+[//]: # (![ChangedInV2TagSmall]&#40;/unsorted_ghc/167145687-6fb677af-43e0-473e-ab91-66d000619125.png&#41;)
 <video controls width="816" autostart="false">
     <source src={p2kFer4X67} type="video/mp4" />
 </video>
@@ -135,7 +135,7 @@ Gesture names for reference ([VRChat documentation](https://docs.vrchat.com/docs
 
 ## Edit or create animations with Visual Expressions Editor
 
-[//]: # (![ChangedInV2TagSmall]&#40;https://user-images.githubusercontent.com/60819407/167145687-6fb677af-43e0-473e-ab91-66d000619125.png&#41;)
+[//]: # (![ChangedInV2TagSmall]&#40;/unsorted_ghc/167145687-6fb677af-43e0-473e-ab91-66d000619125.png&#41;)
 <video controls width="816" autostart="false">
     <source src={_07ZREXTDvt} type="video/mp4" />
 </video>
@@ -260,7 +260,7 @@ On many avatar bases, the left eyelid and right eyelid can be animated independe
 
 ## Add some Dynamics using PhysBones, Contacts, OSC, and other Avatars 3.0 parameters
 
-[//]: # (![NewInV2TagSmall]&#40;https://user-images.githubusercontent.com/60819407/167145432-89428be9-9f16-4795-98ce-093a0c96837c.png&#41;)
+[//]: # (![NewInV2TagSmall]&#40;/unsorted_ghc/167145432-89428be9-9f16-4795-98ce-093a0c96837c.png&#41;)
 <video controls width="816" autostart="false">
     <source src={YTbmBZpWFo} type="video/mp4" />
 </video>
@@ -334,11 +334,11 @@ The animation will behave differently depending on the kind of Contact Receiver:
     - Set the animation duration.
     - If necessary, tweak the curve. The animation will be blended by this curve over the animation duration. Here are some examples of how to use it:
         - By default, the curve is shaped in a way that makes the animation blend almost instantly and smoothly fade over time:
-          ![sx_2022-05-06_15-15-17_RLkMuJ8Mue](https://user-images.githubusercontent.com/60819407/167138720-8ffa3446-e2ed-463f-b26a-b8f5d0ae4e01.png)
+          ![sx_2022-05-06_15-15-17_RLkMuJ8Mue](/unsorted_ghc/167138720-8ffa3446-e2ed-463f-b26a-b8f5d0ae4e01.png)
         - You can change the shape of the curve to make your animation last longer at full strength before blending out:
-          ![sx_2022-05-06_15-16-17_R47eUph0Kl](https://user-images.githubusercontent.com/60819407/167138920-48a4d80d-1990-4f93-badb-5a953978e4f5.png)
+          ![sx_2022-05-06_15-16-17_R47eUph0Kl](/unsorted_ghc/167138920-48a4d80d-1990-4f93-badb-5a953978e4f5.png)
         - You can also set the curve not to be at full strength to retain influence from your Mood set face expressions.
-          ![sx_2022-05-06_15-18-29_PqWy4xstDA](https://user-images.githubusercontent.com/60819407/167139155-fac2caf5-f2b2-4416-a85a-383c29f5d36d.png)
+          ![sx_2022-05-06_15-18-29_PqWy4xstDA](/unsorted_ghc/167139155-fac2caf5-f2b2-4416-a85a-383c29f5d36d.png)
     - Tweak the enter transition duration of the expression.
     - *Note: As of version V2.0.0, due to a limitation, you can only have one curve per Contact of type OnEnter. In addition, Dynamic Expressions priorities work slighly differently as a lower priority OnEnter Contact may be able to take over a high priority OnEnter Contact. This may change in future versions.*
 
@@ -452,7 +452,7 @@ When placing a blend tree in the Fist x2 slot, the parameters `GestureLeftWeight
 
 ## MMD worlds compatibility option
 
-[//]: # (![NewInV2TagSmall]&#40;https://user-images.githubusercontent.com/60819407/167145432-89428be9-9f16-4795-98ce-093a0c96837c.png&#41;)
+[//]: # (![NewInV2TagSmall]&#40;/unsorted_ghc/167145432-89428be9-9f16-4795-98ce-093a0c96837c.png&#41;)
 
 MMD worlds are particular in regards to face expressions. If you are a regular user of MMD worlds and need your avatar to be compatible, the avatar needs to be set up in a specific way in order to get face expressions working. **If you don't use MMD worlds, don't bother with this!.**
 
@@ -462,7 +462,7 @@ In the Compiler at the bottom, define the field called *MMD compatibility toggle
 
 In the FX Playable Layer settings, set the FX Playable Mode to *Use Unsupported Write Defaults On*. Do the same for the Gesture Playable Layer if you have one.
 
-![fpl](https://user-images.githubusercontent.com/60819407/167751873-cfc3bcd0-f82f-4670-8e85-a4fe44f40631.png)
+![fpl](/unsorted_ghc/167751873-cfc3bcd0-f82f-4670-8e85-a4fe44f40631.png)
 
 When the parameter is active, the face expressions of your avatar will stop playing whenever your avatar is in a chair or a *station*. *Stations* are what MMD worlds use to play animations on the avatar.
 

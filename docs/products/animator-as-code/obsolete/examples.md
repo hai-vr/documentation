@@ -29,7 +29,7 @@ This example shows:
 - Declaring a Bool parameter
 - Creating transitions with conditions
 -
-![sx_2022-02-25_00-47-15_dDwKV4bsE2](https://user-images.githubusercontent.com/60819407/155912947-7e5ac988-71f7-44cd-b526-2e245faffcd9.png)
+![sx_2022-02-25_00-47-15_dDwKV4bsE2](/unsorted_ghc/155912947-7e5ac988-71f7-44cd-b526-2e245faffcd9.png)
 
 ```csharp
 public class GenExample0_ToggleGo : MonoBehaviour
@@ -82,7 +82,7 @@ This example shows:
 - Groups of Bool parameters
 - Simple transitions
 
-![sx_2022-02-25_00-39-05_DbvwrouqFc](https://user-images.githubusercontent.com/60819407/155912964-ffdfe363-6c1f-41d4-b474-9f18e1749c4d.png)
+![sx_2022-02-25_00-39-05_DbvwrouqFc](/unsorted_ghc/155912964-ffdfe363-6c1f-41d4-b474-9f18e1749c4d.png)
 
 ```csharp
 public class GenExample1_ToggleSmr : MonoBehaviour
@@ -128,7 +128,7 @@ This example shows:
 - Describing animations with simplified keyframes
 - Animating a state with Motion Time (formerly known as Normalized Time)
 
-![sx_2022-02-25_01-25-53_2KNRPmra4o](https://user-images.githubusercontent.com/60819407/155912980-53ba1528-0872-4b65-a491-2e9442f48bae.png)
+![sx_2022-02-25_01-25-53_2KNRPmra4o](/unsorted_ghc/155912980-53ba1528-0872-4b65-a491-2e9442f48bae.png)
 
 
 ```csharp
