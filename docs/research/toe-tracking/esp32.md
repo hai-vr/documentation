@@ -12,6 +12,10 @@ I've had two separate electronics implementations:
 - ESP32 with Wi-Fi and OSC (this page)
 - [Tundra Tracker Developer board with SteamVR Input](tundra.md) and a separate OSC kapplication
 
+<video controls width="816">
+    <source src={require('./img/vr-socks-f.mp4').default}/>
+</video>
+
 ## Pins used
 
 Because of Wi-Fi I've had to use the ADC pins 36, 39, and 34:

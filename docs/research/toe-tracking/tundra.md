@@ -12,6 +12,10 @@ I've had two separate electronics implementations:
 - [ESP32 with Wi-Fi and OSC](esp32.md)
 - Tundra Tracker Developer board with SteamVR Input (this page) and a separate OSC application
 
+<video controls width="816">
+    <source src={require('./img/toetracking-tundra-f.mp4').default}/>
+</video>
+
 ## IDE
 
 I could not figure out how to make PlatformIO work with this, so I followed [Tundra's store page links](https://tundra-labs.com/products/tundra-tracker-developer-board),

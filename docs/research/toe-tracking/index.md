@@ -7,7 +7,7 @@ This page is currently being written, and is a living document.
 :::
 
 <video controls width="816">
-    <source src={require('./img/vr-socks-f.mp4').default}/>
+    <source src={require('./img/toetracking-tundra-f.mp4').default}/>
 </video>
 
 ## Design goals
