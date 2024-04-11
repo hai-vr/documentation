@@ -168,3 +168,26 @@ Instead of directly mapping individual toes, I want to interpret the few sensor 
 | 🔥       | 🔥🔥❗    | 🔇        | ⏬⏬⏬⏬⏬        | All of the toes proximal joints are curled. (⚠️ Stateful pose)                                                                                                                                                                                                                                                 |
 | 🔥❗      | 🔥🔥     | 🔇        | ▶️⏬⏬⏬⏬       | If the 2nd toe has a large down-curl force but the Big toe went from having no down-curl to having a normal down-curl, this could be interpreted as the Big toe being positioned over the 2nd toe (negative splay of the Big toe). In addition, all of the toes proximal joints are curled. (⚠️ Stateful pose) |
 | 🔥🔥     | 🔥🔥     | 🔇        | 🔻🔻⏬⏬⏬      | If the Big toe and the 2nd toe have large down-curl forces, all of the toes proximal joints are curled, but the Big toe and 2nd toe can curl much more together than alone.                                                                                                                                    |
+
+## Blend tree on paper
+
+I made a draft of the blend tree I was going to create:
+
+![tt-blendtree-draft.png](img%2Ftt-blendtree-draft.png)
+
+## First blend tree prototype
+
+This is the first blend tree I'm using, to give a sense, using the big toe and 2nd toe inputs.
+
+Each point has a different animation, although some are repeating in order to interpolate properly.
+
+Some of those points are blend trees themselves, in order to use the 5th toe input.
+
+![Unity_RctVfsgDbH.png](img%2FUnity_RctVfsgDbH.png)
+
+<video controls width="816">
+    <source src={require('./img/ashiyubitora-f.mp4').default}/>
+</video>
+<video controls width="816">
+    <source src={require('./img/lime-toetracking-f.mp4').default}/>
+</video>
