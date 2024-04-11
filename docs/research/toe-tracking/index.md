@@ -16,6 +16,41 @@ This page is currently being written, and is a living document.
     <source src={require('./img/lime-toetracking-f.mp4').default}/>
 </video>
 
+## Current state of this project (March 2024)
+
+The current state of this project is the following:
+
+For each foot:
+- The toe tracker uses 3 flex sensors (2.2 inch = 5.6 cm).
+- It uses a Tundra Developer Board for communication.
+- The resistors were picked at random (I used the resistors I had at that time), so they may be inappropriate for the measured value ranges.
+- The attachment is 3D-printed out of flexible filament (TPU 95A).
+- The tracker itself uses a newer version of the EOZ feet trackers (the ones with the clip belt).
+
+The solder joints of the tracker break often due to inappropriate stress, so for now my usage is limited to one foot until I can refine the design so that the solder joints would no longer be subject to stress.
+
+The multi-toe tracker is cabable of sensing:
+- The up-curl and down-curl of the big toe,
+  - Flex sensors can only sense bend in one direction, but the sensor on the big toe is bent by default when the foot is flat on the floor, therefore it can detect both directions by sensing the relaxation of the flex.
+- The down-curl of the 2nd toe,
+- The splay of the 5th toe.
+  - The splay is detected by installing the flex sensor "upside-down", on the side of the toe.
+
+Using a combination these sensors, and the fact that I don't have the dexterity to control of my 2nd to 5th toes:
+- The sensor as a whole can detect the toes being curled up (like tippy-toeing) or down (gripping),
+- It can move the big toe independently of the 2nd to 5th toes,
+- Using a combo of the big toe sensor and the 2nd toe sensor, it can detect the bend force of the big toe since it is correlated with the force of the 2nd toe.
+- It can make all toes splay by looking at how much the 5th toe is splaying.
+
+It is communicating with VRChat using the following:
+- The Tundra Developer Board exposes (processed) sensor values to SteamVR as part of the controller,
+- A Python script acting as a background SteamVR app reads those sensor values that have been bound in SteamVR bindings,
+- That Python script sends those values to VRChat through OSC.
+
+It is synced and animated in VRChat using a blend tree that takes these sensor values as blend tree inputs.
+
+That blend tree has a grid of animations that expresses the most likely pose for the toes for each combination of sensor outputs.
+
 ## Design goals
 
 Create and integrate some form of hardware-driven toe tracking on my avatar, with an emphasis on individual toe down-curls and toe splay,
