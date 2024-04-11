@@ -10,6 +10,12 @@ This page is currently being written, and is a living document.
     <source src={require('./img/toetracking-tundra-f.mp4').default}/>
 </video>
 
+<video controls width="408">
+    <source src={require('./img/ashiyubitora-f.mp4').default}/>
+</video><video controls width="408">
+    <source src={require('./img/lime-toetracking-f.mp4').default}/>
+</video>
+
 ## Design goals
 
 Create and integrate some form of hardware-driven toe tracking on my avatar, with an emphasis on individual toe down-curls and toe splay,
