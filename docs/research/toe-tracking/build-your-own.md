@@ -26,7 +26,7 @@ Quantities for 2 feet. Divide by 2 if you only want to make one foot.
 | 6 or 12  | Several 10K ohm resistor                                  |                                                                                                          |
 | -        | Electrical tape                                           |                                                                                                          |
 
-### Option 1: Tundra Tracker with Developer board
+## Option 1: Tundra Tracker with Developer board
 
 Quantities for 2 feet. Divide by 2 if you only want to make one foot.
 
@@ -38,9 +38,21 @@ Quantities for 2 feet. Divide by 2 if you only want to make one foot.
 
 My implementation requires the use of 3 ADC pins on the Tundra Tracker develoepr board.
 
-### Option 2: ESP32 or similar
+## Option 2: ESP32 or similar
 
 I will not provide a list of materials for this option, as I don't have the full materials list for all the components necessary to build a self-contained battery.
 Building a self-contained battery *should* be similar to SlimeVR.
 
 My implementation requires the use of 3 ADC pins, while the WiFi is connected.
+
+## Assembly notes
+
+Most of the item-specific assembly notes are specified in the [CAD](cad.md) section.
+
+The solder joints on the flex sensor must be relieved of stress by finding a way to clamp the wires,
+so that the wires itself bears mechanical stress.
+
+I've personally 3D-printed a small wire clamp which is secured using a screw and a heat-set insert, but there must
+be easier ways to do this using some thin metallic clamps.
+
+![clamp.png](img%2Fclamp.png)

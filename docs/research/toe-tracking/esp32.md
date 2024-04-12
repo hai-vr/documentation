@@ -18,6 +18,8 @@ I've had two separate electronics implementations:
 
 ## Pins used
 
+You need to attach each flex sensor to an ADC pin, by using a voltage divider.
+
 Because of Wi-Fi I've had to use the ADC pins 36, 39, and 34:
 ```cpp
 adcAttachPin(36);

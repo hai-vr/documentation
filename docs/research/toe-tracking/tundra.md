@@ -28,6 +28,8 @@ which at this time of writing suggests:
 
 ## Pins used
 
+You need to attach each flex sensor to an ADC pin, by using a voltage divider.
+
 At this time of writing (2024-02-07), the Tundra Tracker Developer Board store page has link to a schematic
 [which appears to be incorrect](https://twitter.com/ImmersiveDevice/status/1755296026301235333).
 
@@ -41,4 +43,4 @@ I have used the correct ADC pins on the IO_0, which are *27, 28, 29*.
 
 I've reused and modified Tundra's own sample code. [Tundra's README](https://github.com/tundra-labs/rp2040_examples) contains sufficient information to be autonomous.
 
-TODO
+[TODO github](https://github.com/hai-vr/toetracking-tundra)
