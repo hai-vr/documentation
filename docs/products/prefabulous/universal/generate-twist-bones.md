@@ -54,6 +54,9 @@ Each twist bone:
 
 By default, the component adds one twist bone for each arm, making for a total of 2 bones used by mesh skinning, and 2 constraints.
 
+If there are multiple components that create the same twist bone on different SkinnedMeshRenderers armatures, but it's effectively the same bone
+when the armatures are merged together, then only one constraint is created.
+
 ## Versions
 
 - **1.11.0**: Added.
