@@ -4,7 +4,7 @@ unlisted: true
 import {HaiTags} from "/src/components/HaiTags";
 import {HaiTag} from "/src/components/HaiTag";
 
-# ⛔ Generate Twist Bones
+# ⛔ Generate Twist Bones (Alpha)
 
 <HaiTags>
 <HaiTag isUniversal={true} />
@@ -13,6 +13,20 @@ import {HaiTag} from "/src/components/HaiTag";
 This component will generate twist bones, which improves the look of the elbow joint by twisting the part of the lower arm that is closer to the elbow.
 
 It creates new twist bones with constraints, and automatically repaints the bones weights of all meshes of the avatar which use that bone.
+
+:::warning
+**🚧🚧🚧 This component is currently in an alpha phase. 🚧🚧🚧**
+
+At the moment, it only fully supports meshes that are part of the base mesh armature.
+
+The current version **will not** be able to generate twist bones for additional meshes used by [VRCFury Armature Link](https://vrcfury.com/components/armature-link/),
+and **may not** be able to generate twist bones for additional meshes used by [Modular Avatar Merge Armature](https://modular-avatar.nadena.dev/docs/reference/merge-armature).
+
+Both are intended to be supported in the future, but it's significantly harder to do so.
+The component is still released in this state of development as it is beneficial for the bare skin of your avatar.
+
+Thank you for your understanding.
+:::
 
 ## How to use
 
@@ -40,7 +54,7 @@ By default, the component adds one twist bone for each arm, making for a total o
 
 ## Versions
 
-- **2.0.0**: Added.
+- **1.11.0**: Added.
 
 Classification: *This component is application-agnostic, however, the quality and relevance of the generated twist bones
 heavily depends on the inverse kinematics strategy or animation system used by your target platform or app, as different platforms and apps
