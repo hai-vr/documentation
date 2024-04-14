@@ -33,6 +33,8 @@ Thank you for your understanding.
 To use this component:
 - Add a "PA Generate Twist Bones" component anywhere in your avatar.
 - The tool will be setup to handle the elbow joint by twisting the part of the lower arm that is closer to the elbow.
+- If you're wearing arm bracelets, or a wristwatch, or any rigid object which is part of your arm as a SkinnedMeshRenderer (simple MeshRenderers do not count),
+  you need to specify blendshapes that either show or hide those bracelets. These blendshapes are used to figure out which vertices are part of that bracelet.
 
 ## Option: Custom weight distribution
 
