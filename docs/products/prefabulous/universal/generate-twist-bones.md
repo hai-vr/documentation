@@ -7,7 +7,7 @@ import {HaiTag} from "/src/components/HaiTag";
 <HaiTag isUniversal={true} />
 </HaiTags>
 
-This component will generate twist bones, which improves the look of the elbow joint by twisting the part of the lower arm that is closer to the elbow.
+Improves the look of the elbow joint by generating twist bones covering part of the lower arm that is closer to the elbow.
 
 It creates new twist bones with constraints, and automatically repaints the bones weights of all meshes of the avatar which use that bone.
 
