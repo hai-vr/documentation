@@ -93,8 +93,30 @@ when the armatures are merged together, then only one constraint is created.
 ## Experimental compatibility options
 
 :::note
-This section is currently unavailable.
+**🚧🚧🚧 These options are experimental and are likely to be removed in future updates. 🚧🚧🚧**
 :::
+
+This component is currently in an alpha stage, as there are technical difficulties to integrate this component so that it works with various armature merging systems
+such as [VRCFury Armature Link](https://vrcfury.com/components/armature-link/) and [Modular Avatar Merge Armature](https://modular-avatar.nadena.dev/docs/reference/merge-armature).
+
+For this reason, some experimental options are available during this alpha stage to try some things out.
+
+### Default mode
+
+By default, this component will execute after Modular Avatar Merge Armature executes.
+
+### "Execute before Modular Avatar Merge Armature"
+
+When enabled, this component will be processed before [Modular Avatar Merge Armature](https://modular-avatar.nadena.dev/docs/reference/merge-armature) executes.
+
+This can be used to create twist bones in other armatures using the *Use Custom* option, before Modular Avatar or VRCFury tries to merge armatures.
+
+### "Execute in Optimizing phase"
+
+When enabled, this component will be processed during the Optimization phase.
+
+This is supposed to be an incorrect use of the Optimization phase as generating twist bones is not an optimization, but it gives a chance to try executing this component in a
+particular point in the build process.
 
 ## Versions
 
