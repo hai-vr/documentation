@@ -1,10 +1,7 @@
-﻿---
-unlisted: true
----
-import {HaiTags} from "/src/components/HaiTags";
+﻿import {HaiTags} from "/src/components/HaiTags";
 import {HaiTag} from "/src/components/HaiTag";
 
-# ⛔ Generate Twist Bones (Alpha)
+# Generate Twist Bones (Alpha)
 
 <HaiTags>
 <HaiTag isUniversal={true} />

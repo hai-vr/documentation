@@ -2,41 +2,31 @@
 title: Prefabulous
 ---
 
-## Universal-2.0.0, VRChat-2.0.0 (Planned)
+## 1.11.0 (Planned)
 
 :::warning
 The following describes a future change.
 :::
 
-Prefabulous Avatar is split into two packages:
-- **Prefabulous Universal** which requires NDMF (but does not require VRChat), and
-- **Prefabulous for VRChat** which requires Prefabulous Universal, VRChat Avatars SDK, Modular Avatar, and Animator As Code.
+### ☀️ New component: [Generate Twist Bones (Alpha)](/docs/products/prefabulous/universal/generate-twist-bones.md)
 
-Prefabulous Avatar is now called **Prefabulous**.
+This component will generate twist bones, which improves the look of the elbow joint by twisting the part of the lower arm that is closer to the elbow.
 
-Prefabulous for VRChat inherits the same internal package name that Prefabulous Avatar bore prior to 2.0.0.
+It creates new twist bones with constraints, and automatically repaints the bones weights of all meshes of the avatar which use that bone.
 
-The following components from Prefabulous Avatar have been moved to Prefabulous Universal:
-- Change Avatar Scale
-- Edit All Mesh Anchor Override
-- Edit All Mesh Bounds
-- Assign UV Tile
-- Convert Blendshape Conventions
-- Delete Polygons
-- HaiXT Generate Blendshapes for Face Tracking Extensions
-- Recalculate Normals
-- Replace Textures
+:::warning
+**🚧🚧🚧 This component is currently in an alpha phase. 🚧🚧🚧**
 
-The following components from Prefabulous Avatar have been moved to Prefabulous for VRChat:
-- HaiXT Face Tracking Extensions
-- Lock Locomotion Menu Item
-- Mass Blendshape Sync
-- Import Expression Parameters
-- Blank Expressions Menu and Parameters
-- Blank FX Animator
-- Blank Gesture Animator
-- Replace Action Animator
-- Replace Locomotion Animator
+At the moment, it only fully supports meshes that are part of the base mesh armature.
+
+The current version **will not** be able to generate twist bones for additional meshes used by [VRCFury Armature Link](https://vrcfury.com/components/armature-link/),
+and **may not** be able to generate twist bones for additional meshes used by [Modular Avatar Merge Armature](https://modular-avatar.nadena.dev/docs/reference/merge-armature).
+
+Both are intended to be supported in the future, but it's significantly harder to do so.
+The component is still released in this state of development as it is beneficial for the bare skin of your avatar.
+
+Thank you for your understanding.
+:::
 
 ## 1.10.3
 
@@ -56,7 +46,7 @@ This is a technical update for Prefabulous:
 
 Three new components have been added to Prefabulous.
 
-### New component: [Replace Textures](/docs/products/prefabulous/universal/replace-textures)
+### ☀️ New component: [Replace Textures](/docs/products/prefabulous/universal/replace-textures)
 
 This component lets you upload multiple versions of your avatar but with different textures, without needing to duplicate the materials.
 
@@ -64,13 +54,13 @@ It also displays which materials use which textures, although you could also be 
 
 ![Unity_lJ03XfMYPW.png](..%2Fproducts%2Fprefabulous%2Fimg%2FUnity_lJ03XfMYPW.png)
 
-### New component: [Convert Blendshape Conventions](/docs/products/prefabulous/universal/convert-blendshape-conventions)
+### ☀️ New component: [Convert Blendshape Conventions](/docs/products/prefabulous/universal/convert-blendshape-conventions)
 
 This component lets you convert blendshapes from one naming convention to another naming convention, such as converting Unified Expressions blendshapes to ARKit blendshapes.
 
 ![Unity_Kwht5QWD83.png](..%2Fproducts%2Fprefabulous%2Fimg%2FUnity_Kwht5QWD83.png)
 
-### New component: [Mass Blendshape Sync](/docs/products/prefabulous/vrchat/mass-blendshape-sync)
+### ☀️ New component: [Mass Blendshape Sync](/docs/products/prefabulous/vrchat/mass-blendshape-sync)
 
 This component will synchronize all blendshapes that two meshes share in common.
 
@@ -126,7 +116,7 @@ This patch was pushed before any 1.7.0 social media announcement.
 
 ## 1.7.0
 
-### New component: [Assign UV Tile](/docs/products/prefabulous/universal/assign-uv-tile)
+### ☀️ New component: [Assign UV Tile](/docs/products/prefabulous/universal/assign-uv-tile)
 
 A new component, [Assign UV Tile](/docs/products/prefabulous/universal/assign-uv-tile), has been added to Prefabulous.
 
@@ -157,7 +147,7 @@ Delete Polygons now has Keep Partial Polygons option:
 
 ## 1.6.0
 
-### New component: [Delete Polygons](/docs/products/prefabulous/universal/delete-polygons)
+### ☀️ New component: [Delete Polygons](/docs/products/prefabulous/universal/delete-polygons)
 
 A new component, [Delete Polygons](/docs/products/prefabulous/universal/delete-polygons), has been added to Prefabulous.
 
@@ -187,7 +177,7 @@ Make Recalculate Normals editor animator introspection aware of Prefabulous comp
 
 ## 1.5.0
 
-### New component: [HaiXT Generate Blendshapes for Face Tracking Extensions](/docs/products/prefabulous/universal/haixt-generate-blendshapes-for-face-tracking-extensions)
+### ☀️ New component: [HaiXT Generate Blendshapes for Face Tracking Extensions](/docs/products/prefabulous/universal/haixt-generate-blendshapes-for-face-tracking-extensions)
 
 A new component, [HaiXT Generate Blendshapes for Face Tracking Extensions](/docs/products/prefabulous/universal/haixt-generate-blendshapes-for-face-tracking-extensions), has been added to Prefabulous.
 
@@ -255,7 +245,7 @@ Change Avatar Scale now uses the Avatar Descriptor view position as the source s
 
 ## 1.3.0
 
-### New component: [Recalculate Normals](/docs/products/prefabulous/universal/recalculate-normals)
+### ☀️ New component: [Recalculate Normals](/docs/products/prefabulous/universal/recalculate-normals)
 
 A new component, [Recalculate Normals](/docs/products/prefabulous/universal/recalculate-normals), has been added to Prefabulous.
 
