@@ -62,7 +62,7 @@ Vertices that are located inside the space between the lower arm bone and the ha
 
 The component will use a linear weight distribution by default, meaning that the weight is directly proportional to that distance.
 
-You can choose a custom weight distribution in the *transfer* curve. The X axis of the curve represents the normalized distance to the lower arm bone.
+You can choose a custom *Weight Distribution* curve. The X axis of the curve represents the normalized distance to the lower arm bone.
 
 The curve should look like a slope going uphill. Always keep the (0,0) and (1,1) points where they are.
 
