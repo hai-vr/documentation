@@ -2,13 +2,11 @@
 title: Prefabulous
 ---
 
-## 1.11.0 (Planned)
+## 1.11.0
 
-:::warning
-The following describes a future change.
-:::
+### ☀️ New component: [Generate Twist Bones (Alpha)](/docs/products/prefabulous/universal/generate-twist-bones)
 
-### ☀️ New component: [Generate Twist Bones (Alpha)](/docs/products/prefabulous/universal/generate-twist-bones.md)
+A new component, [Generate Twist Bones (Alpha)](/docs/products/prefabulous/universal/generate-twist-bones), has been added to Prefabulous.
 
 This component will generate twist bones, which improves the look of the elbow joint by twisting the part of the lower arm that is closer to the elbow.
 
@@ -27,6 +25,14 @@ The component is still released in this state of development as it is beneficial
 
 Thank you for your understanding.
 :::
+
+<video controls muted width="816">
+    <source src={require('/docs/products/prefabulous/img/5BVQrRO3s5.mp4').default}/>
+</video>
+
+<video controls muted width="816">
+    <source src={require('/docs/products/prefabulous/img/auto-twist-f.mp4').default}/>
+</video>
 
 ## 1.10.3
 
