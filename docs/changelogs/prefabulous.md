@@ -31,7 +31,7 @@ Thank you for your understanding.
 :::
 
 <video controls muted width="816">
-    <source src={require('/docs/products/prefabulous/img/5BVQrRO3s5.mp4').default}/>
+    <source src={require('/docs/products/prefabulous/img/ByAzbmmx4w.mp4').default}/>
 </video>
 
 <video controls muted width="816">

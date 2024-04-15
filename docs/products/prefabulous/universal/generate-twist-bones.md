@@ -26,13 +26,15 @@ Thank you for your understanding.
 :::
 
 <video controls muted width="816">
-    <source src={require('../img/5BVQrRO3s5.mp4').default}/>
+    <source src={require('../img/ByAzbmmx4w.mp4').default}/>
 </video>
 
 <video controls muted width="816">
     <source src={require('../img/auto-twist-f.mp4').default}/>
 </video>
 *Comparison before, and then, after twist bones are added on the arm. Notice how the outlines bite on the elbow joint.*
+
+![twist-compare.png](..%2Fimg%2Ftwist-compare.png)
 
 ## How to use
 
