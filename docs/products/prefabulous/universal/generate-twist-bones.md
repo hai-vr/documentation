@@ -98,6 +98,7 @@ This section is currently unavailable.
 
 ## Versions
 
+- **1.11.1**: Fix Generate Twist Bones help URL no longer points to localhost.
 - **1.11.0**: Added.
 
 Classification: *This component is application-agnostic, however, the quality and relevance of the generated twist bones
