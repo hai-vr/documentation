@@ -12,10 +12,11 @@ import {HaiTag} from "/src/components/HaiTag";
 
 *Prefabulous* contains **non-destructive** components to automate invasive tasks in your personal avatar.
 
-Meant to be used primarily by users of **[Modular Avatar](https://modular-avatar.nadena.dev/)** components,
-our components can be reused across multiple avatars when you turn them into a prefab.
+[//]: # (Meant to be used primarily by users of **[Modular Avatar]&#40;https://modular-avatar.nadena.dev/&#41;** components,)
+[//]: # (our components can be reused across multiple avatars when you turn them into a prefab.)
 
-- Improve the [shading of blendshape normals](./prefabulous/universal/recalculate-normals).
+- **Improve the [shading of blendshape normals](./prefabulous/universal/recalculate-normals).**
+- **Generate [twist bones](./prefabulous/universal/generate-twist-bones).**
 - [Delete polygons](./prefabulous/universal/delete-polygons) hidden by conflict prevention blendshapes.
 - Edit all [mesh bounds](./prefabulous/universal/edit-all-mesh-bounds)
 and all [mesh anchor override](./prefabulous/universal/edit-all-mesh-anchor-override) for consistent visibility and lighting.
