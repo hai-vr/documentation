@@ -40,6 +40,12 @@ To use this component:
 - Add a "PA Generate Twist Bones" component anywhere in your avatar.
 - The tool will be setup to handle the elbow joint by twisting the part of the lower arm that is closer to the elbow.
 
+:::info
+If you're encountering difficulties with the use of this component, **please report any issues on the [Discord server](/docs/other/discord)**. Thank you!
+
+このコンポーネントの使用に問題がある場合は、**[Discordサーバー](/docs/other/discord)**で問題を報告してください。ありがとうございます！
+:::
+
 ![Unity_N37ilQuCVl.png](..%2Fimg%2FUnity_N37ilQuCVl.png)
 
 :::warning
