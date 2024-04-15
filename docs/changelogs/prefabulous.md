@@ -2,6 +2,10 @@
 title: Prefabulous
 ---
 
+## 1.11.1
+
+Fix Generate Twist Bones help URL no longer points to localhost.
+
 ## 1.11.0
 
 ### ☀️ New component: [Generate Twist Bones (Alpha)](/docs/products/prefabulous/universal/generate-twist-bones)
