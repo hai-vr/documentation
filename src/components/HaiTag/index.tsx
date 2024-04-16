@@ -19,16 +19,18 @@ import styles from './styles.module.css';
 interface Props {
     requiresVRChat: boolean;
     requiresResonite: boolean;
+    requiresVRM: boolean;
     requiresSteamVR: boolean;
     notVRChat: boolean;
     isUniversal: boolean;
 }
 
-export function HaiTag({requiresVRChat, isUniversal, notVRChat, requiresResonite, requiresSteamVR}: Props): JSX.Element {
+export function HaiTag({requiresVRChat, isUniversal, notVRChat, requiresResonite, requiresSteamVR, requiresVRM}: Props): JSX.Element {
     return (
         <span>
                 {requiresVRChat ? <div className={clsx(styles.hai_tag, styles.hai_tag_requires_vrchat)}>💬 Requires VRChat</div> : ''}
                 {requiresResonite ? <div className={clsx(styles.hai_tag, styles.hai_tag_requires_resonite)}>⚡ Requires Resonite</div> : ''}
+                {requiresVRM ? <div className={clsx(styles.hai_tag, styles.hai_tag_requires_vrm)}>📹 Requires VRM</div> : ''}
                 {requiresSteamVR ? <div className={clsx(styles.hai_tag, styles.hai_tag_requires_steamvr)}>Requires SteamVR</div> : ''}
                 {isUniversal ? <div className={clsx(styles.hai_tag, styles.hai_tag_universal)}>🌊 Any Platform</div> : ''}
                 {notVRChat ? <div className={clsx(styles.hai_tag, styles.hai_tag_universal)}>🌊 Any Platform, except VRChat</div> : ''}
