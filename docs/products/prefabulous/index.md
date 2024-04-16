@@ -72,4 +72,4 @@ so that you can reuse them on other avatars as a prefab:
 
 - **[Universal Components](./prefabulous/universal)** lists components that can be used on any social VR platform, app, or non-social VR app.
 - **[VRChat Platform](./prefabulous/vrchat)** lists components that can only be used on the VRChat Platform.
-- **[VRM and VSeeFace](./prefabulous/vrm)** lists components that can only be used on the VRM-compatible apps, including VSeeFace.
+- **[VRM and VSFAvatar](./prefabulous/vrm)** lists components that can only be used on the VRM-compatible apps, and/or the VSFAvatar format.

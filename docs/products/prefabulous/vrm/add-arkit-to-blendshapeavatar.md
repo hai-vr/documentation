@@ -4,7 +4,7 @@ import {HaiTag} from "/src/components/HaiTag";
 # 📹 Add ARKit to BlendShapeAvatar
 
 <HaiTags>
-<HaiTag requiresVRM={true} />
+<HaiTag requiresVRM={true} compatibleWithVSFAvatar={true} />
 </HaiTags>
 
 Automatically links all ARKit-named blendshapes found in your meshes to the [VRM BlendShapeAvatar asset](https://vrm.dev/en/univrm/blendshape/univrm_blendshape/#blendshapeavatar)

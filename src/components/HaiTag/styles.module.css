@@ -18,6 +18,10 @@
   background-color: var(--hai-vrm-label);
   color: var(--hai-vrm-label-text);
 }
+.hai_tag_compatible_with_vsfavatar {
+  background-color: var(--hai-vsfavatar-label);
+  padding: 0.5em 1em 0.5em 1em;
+}
 .hai_tag_requires_steamvr {
   background-color: var(--hai-steamvr-label);
   padding: 0.5em 1em 0.5em 1em;
