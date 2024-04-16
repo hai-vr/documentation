@@ -4,6 +4,19 @@ sidebar_position: 1
 
 # Reference manual
 
+## Download
+
+The tool is free for download using VCC.
+
+### VCC
+
+You need to add **two** listings:
+
+- Add **[Modular Avatar listing](https://modular-avatar.nadena.dev/)** by clicking on *Download (using VCC)*, and
+- also **[install Haï~'s listing to VCC](vcc://vpm/addRepo?url=https://hai-vr.github.io/vpm-listing/index.json)**.
+
+Then, add *Haï ~ Prefabulous* to your project using VCC.
+
 ## Where to put the Prefabulous components?
 
 Unless stated otherwise, **you can place the components anywhere inside your avatar**, and *Prefabulous* will try its best to affect all
