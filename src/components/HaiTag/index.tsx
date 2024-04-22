@@ -22,11 +22,23 @@ interface Props {
     requiresVRM: boolean;
     requiresSteamVR: boolean;
     compatibleWithVSFAvatar: boolean;
+    compatibleWithVNyan: boolean;
+    compatibleWithWarudo: boolean;
     notVRChat: boolean;
     isUniversal: boolean;
 }
 
-export function HaiTag({requiresVRChat, isUniversal, notVRChat, requiresResonite, requiresSteamVR, requiresVRM, compatibleWithVSFAvatar}: Props): JSX.Element {
+export function HaiTag({
+                           requiresVRChat,
+                           isUniversal,
+                           notVRChat,
+                           requiresResonite,
+                           requiresSteamVR,
+                           requiresVRM,
+                           compatibleWithVSFAvatar,
+                           compatibleWithWarudo,
+                           compatibleWithVNyan
+}: Props): JSX.Element {
     return (
         <span>
                 {requiresVRChat ? <div className={clsx(styles.hai_tag, styles.hai_tag_requires_vrchat)}>💬 Requires VRChat</div> : ''}
@@ -34,6 +46,8 @@ export function HaiTag({requiresVRChat, isUniversal, notVRChat, requiresResonite
                 {requiresVRM ? <div className={clsx(styles.hai_tag, styles.hai_tag_requires_vrm)}>📹 Requires VRM</div> : ''}
                 {requiresSteamVR ? <div className={clsx(styles.hai_tag, styles.hai_tag_requires_steamvr)}>Requires SteamVR</div> : ''}
                 {compatibleWithVSFAvatar ? <div className={clsx(styles.hai_tag, styles.hai_tag_compatible_with_vsfavatar)}>Compatible with VSFAvatar</div> : ''}
+                {compatibleWithVNyan ? <div className={clsx(styles.hai_tag, styles.hai_tag_compatible_with_vnyan)}>Compatible with VNyan</div> : ''}
+                {compatibleWithWarudo ? <div className={clsx(styles.hai_tag, styles.hai_tag_compatible_with_warudo)}>Compatible with Warudo</div> : ''}
                 {isUniversal ? <div className={clsx(styles.hai_tag, styles.hai_tag_universal)}>🌊 Any Platform</div> : ''}
                 {notVRChat ? <div className={clsx(styles.hai_tag, styles.hai_tag_universal)}>🌊 Any Platform, except VRChat</div> : ''}
         </span>
