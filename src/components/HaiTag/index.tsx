@@ -22,6 +22,7 @@ interface Props {
     requiresVRM: boolean;
     requiresSteamVR: boolean;
     compatibleWithVSFAvatar: boolean;
+    compatibleWithVSeeFace: boolean;
     compatibleWithVNyan: boolean;
     compatibleWithWarudo: boolean;
     notVRChat: boolean;
@@ -36,6 +37,7 @@ export function HaiTag({
                            requiresSteamVR,
                            requiresVRM,
                            compatibleWithVSFAvatar,
+                           compatibleWithVSeeFace,
                            compatibleWithWarudo,
                            compatibleWithVNyan
 }: Props): JSX.Element {
@@ -46,6 +48,7 @@ export function HaiTag({
                 {requiresVRM ? <div className={clsx(styles.hai_tag, styles.hai_tag_requires_vrm)}>📹 Requires VRM</div> : ''}
                 {requiresSteamVR ? <div className={clsx(styles.hai_tag, styles.hai_tag_requires_steamvr)}>Requires SteamVR</div> : ''}
                 {compatibleWithVSFAvatar ? <div className={clsx(styles.hai_tag, styles.hai_tag_compatible_with_vsfavatar)}>Compatible with VSFAvatar</div> : ''}
+                {compatibleWithVSeeFace ? <div className={clsx(styles.hai_tag, styles.hai_tag_compatible_with_vsfavatar)}>Compatible with VSeeFace</div> : ''}
                 {compatibleWithVNyan ? <div className={clsx(styles.hai_tag, styles.hai_tag_compatible_with_vnyan)}>Compatible with VNyan</div> : ''}
                 {compatibleWithWarudo ? <div className={clsx(styles.hai_tag, styles.hai_tag_compatible_with_warudo)}>Compatible with Warudo</div> : ''}
                 {isUniversal ? <div className={clsx(styles.hai_tag, styles.hai_tag_universal)}>🌊 Any Platform</div> : ''}
