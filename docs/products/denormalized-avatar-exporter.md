@@ -8,12 +8,12 @@ import {HaiTag} from "/src/components/HaiTag";
 # Denormalized Avatar Exporter (Beta)
 
 <HaiTags>
-<HaiTag compatibleWithVNyan={true} compatibleWithWarudo={true} />
+<HaiTag compatibleWithVNyan={true} compatibleWithWarudo={true} compatibleWithVSeeFace={true} />
 </HaiTags>
 
 **Denormalized Avatar Exporter** lets you export avatars normally designed for use in VRChat into VTubing apps, without the disruptive pre-processing steps that would normally be needed:
-- using the [VSFAvatar](https://www.vseeface.icu/#vsfavatar) format used in the **[VNyan](https://suvidriel.itch.io/vnyan)** VTubing app,
-- and as a [Character Mod](https://docs.warudo.app/docs/modding/character-mod) for use in the **[Warudo](https://warudo.app/)** VTubing app.
+- using the [VSFAvatar](https://www.vseeface.icu/#vsfavatar) format used in the **[VNyan](https://suvidriel.itch.io/vnyan)** VTubing app and the **[VSeeFace](https://www.vseeface.icu/)** VTubing app,
+- and as a [Character Mod](https://docs.warudo.app/docs/modding/character-mod) for use in the **[Warudo](https://warudo.app/)** VTubing app,
 
 You don't have to normalize your avatar bones, and you don't have to export your avatar to VRM and import that VRM back into Unity.
 
@@ -48,16 +48,16 @@ does not require you to accept the VRChat Terms of Use).*
 :::
 
 Then:
-- [Read the VNyan section below](#usage-in-vnyan) if you are targeting the **VNyan** VTubing app.
+- [Read the VNyan section below](#usage-in-vnyan) if you are targeting the **VNyan** VTubing app or the **VSeeFace** VTubing app.
 - [Read the Warudo section below](#usage-in-warudo) if you are targeting the **Warudo** VTubing app.
 
 ## Usage in VNyan
 
 <HaiTags>
-<HaiTag compatibleWithVNyan={true} />
+<HaiTag compatibleWithVNyan={true} compatibleWithVSeeFace={true} />
 </HaiTags>
 
-Normally, exporting a VSFAvatar to VNyan requires you to [export your avatar to VRM first, and then reimport it back into Unity](https://www.vseeface.icu/#vsfavatar).
+Normally, exporting a VSFAvatar to VNyan or VSeeFace requires you to [export your avatar to VRM first, and then reimport it back into Unity](https://www.vseeface.icu/#vsfavatar).
 With Denormalized Avatar Exporter, **those steps are not needed**.
 
 However, please understand that during the export, this tool will modify your avatar in such a way that it may introduce incompatibilities
