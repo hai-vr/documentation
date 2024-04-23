@@ -24,6 +24,8 @@ add this in the *VPM Repositories* section of ALCOM:
 https://hai-vr.github.io/vpm-listing/index.json
 ```
 
+[ALCOM](https://vrc-get.anatawa12.com/alcom/)を使用する場合、ALCOMの*VPM Repositories*にこれを追加してください。
+
 <br />
 <br />
 <br />
