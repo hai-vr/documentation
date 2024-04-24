@@ -92,6 +92,7 @@ First of all, when using this tool, **you must not use the Character prefab**. T
 - If you're importing a new avatar, simply do not set it up.
 - If you're reusing an already set up avatar, rename your Character prefab in your project to something else.
 - Create a new Mod, or reuse your existing Character Mod.
+  - Please make sure your mod name does not contain any space in it.
 - Add a *Haï / Denormalized Avatar Exporter* component to any GameObject on your scene (it could be a new GameObject, or your avatar itself).
 - Set *Avatar Root* to be your avatar root.
 
