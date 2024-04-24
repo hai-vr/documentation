@@ -4,10 +4,29 @@
         <title>Haï~ Blog</title>
         <link>https://docs.hai-vr.dev/updates</link>
         <description>Haï~ Blog</description>
-        <lastBuildDate>Mon, 15 Apr 2024 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 24 Apr 2024 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[☀️ Denormalized Avatar Exporter]]></title>
+            <link>https://docs.hai-vr.dev/updates/2024/04/24/p0</link>
+            <guid>https://docs.hai-vr.dev/updates/2024/04/24/p0</guid>
+            <pubDate>Wed, 24 Apr 2024 00:00:00 GMT</pubDate>
+            <description><![CDATA[I am releasing "Denormalized Avatar Exporter", a Unity Editor tool that lets you export avatars normally designed for use in VRChat into VTubing apps, without the disruptive pre-processing steps that would normally be needed:]]></description>
+            <content:encoded><![CDATA[<div><p><span></span></p><div class="hai_tag_ZcC4 hai_tag_compatible_with_vsfavatar_gZ5Q">Compatible with VSeeFace</div><div class="hai_tag_ZcC4 hai_tag_compatible_with_vnyan_N46H">Compatible with VNyan</div><div class="hai_tag_ZcC4 hai_tag_compatible_with_warudo_YAVq">Compatible with Warudo</div><p></p></div>
+<p>I am releasing "Denormalized Avatar Exporter", a Unity Editor tool that lets you export avatars normally designed for use in VRChat into VTubing apps, without the disruptive pre-processing steps that would normally be needed:</p>
+<ul>
+<li>using the <a href="https://www.vseeface.icu/#vsfavatar" target="_blank" rel="noopener noreferrer">VSFAvatar</a> format used in the <strong><a href="https://suvidriel.itch.io/vnyan" target="_blank" rel="noopener noreferrer">VNyan</a></strong> VTubing app and the <strong><a href="https://www.vseeface.icu/" target="_blank" rel="noopener noreferrer">VSeeFace</a></strong> VTubing app,</li>
+<li>and as a <a href="https://docs.warudo.app/docs/modding/character-mod" target="_blank" rel="noopener noreferrer">Character Mod</a> for use in the <strong><a href="https://warudo.app/" target="_blank" rel="noopener noreferrer">Warudo</a></strong> VTubing app.</li>
+</ul>
+<p>You don't have to normalize your avatar bones, and you don't have to export your avatar to VRM and import that VRM back into Unity.</p>
+<p>Normalization is done when the avatar is being exported, so that you can keep editing the original avatar model file or prefabs just like anyone
+would normally do for a VRChat avatar.</p>
+<p>It will also permit the use of some non-destructive avatar tools initially created for VRChat that are based on NDMF (Non-Destructive Modular Framework).</p>
+<p>🗒️ <a href="https://docs.hai-vr.dev/docs/products/denormalized-avatar-exporter">Open documentation</a></p>
+<video controls="" width="816"><source src="/assets/medias/denormalized-f-a0f2c0c5cd96c69743e87b5f48c0cd76.mp4"></video>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[☀️ Generate Twist Bones (Prefabulous V1.11)]]></title>
             <link>https://docs.hai-vr.dev/updates/2024/04/15/p0</link>
@@ -426,19 +445,6 @@ or <a href="https://github.com/anatawa12/AvatarOptimizer" target="_blank" rel="n
             <content:encoded><![CDATA[<p>Fix an error when no mesh was selected.</p>
 <p>🔍 <a href="https://docs.hai-vr.dev/docs/changelogs/blendshape-viewer#211">View changelog</a></p>
 <p>🗒️ <a href="https://docs.hai-vr.dev/docs/products/blendshape-viewer">Open documentation</a></p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[⚙️ FaceTra Shape Creator V0.5.1]]></title>
-            <link>https://docs.hai-vr.dev/updates/2024/01/13/p1</link>
-            <guid>https://docs.hai-vr.dev/updates/2024/01/13/p1</guid>
-            <pubDate>Sat, 13 Jan 2024 10:00:00 GMT</pubDate>
-            <description><![CDATA[There may have been an issue preventing the tool from being usable on avatars that have a position offset]]></description>
-            <content:encoded><![CDATA[<p>There may have been an issue preventing the tool from being usable on avatars that have a position offset
-(when the avatar root is not at the origin in the FBX).</p>
-<p>The main visible effect was that dividers would not function properly.</p>
-<p>This patch attempts to fix that issue.</p>
-<p>🔍 <a href="https://docs.hai-vr.dev/docs/changelogs/facetra-shape-creator#051-2024-01-13-1051">View changelog</a></p>
-<p>🗒️ <a href="https://docs.hai-vr.dev/docs/products/facetra-shape-creator">Open documentation</a></p>]]></content:encoded>
         </item>
     </channel>
 </rss>
