@@ -14,7 +14,7 @@
             <guid>https://docs.hai-vr.dev/updates/2024/04/24/p0</guid>
             <pubDate>Wed, 24 Apr 2024 00:00:00 GMT</pubDate>
             <description><![CDATA[I am releasing "Denormalized Avatar Exporter", a Unity Editor tool that lets you export avatars normally designed for use in VRChat into VTubing apps, without the disruptive pre-processing steps that would normally be needed:]]></description>
-            <content:encoded><![CDATA[<div><p><span></span></p><div class="hai_tag_ZcC4 hai_tag_compatible_with_vsfavatar_gZ5Q">Compatible with VSeeFace</div><div class="hai_tag_ZcC4 hai_tag_compatible_with_vnyan_N46H">Compatible with VNyan</div><div class="hai_tag_ZcC4 hai_tag_compatible_with_warudo_YAVq">Compatible with Warudo</div><p></p></div>
+            <content:encoded><![CDATA[<div><p><span></span></p><div class="hai_tag_ZcC4 hai_tag_compatible_with_vsfavatar_gZ5Q">Compatible with <!-- -->VSeeFace</div><div class="hai_tag_ZcC4 hai_tag_compatible_with_vnyan_N46H">Compatible with <!-- -->VNyan</div><div class="hai_tag_ZcC4 hai_tag_compatible_with_warudo_YAVq">Compatible with <!-- -->Warudo</div><p></p></div>
 <p>I am releasing "Denormalized Avatar Exporter", a Unity Editor tool that lets you export avatars normally designed for use in VRChat into VTubing apps, without the disruptive pre-processing steps that would normally be needed:</p>
 <ul>
 <li>using the <a href="https://www.vseeface.icu/#vsfavatar" target="_blank" rel="noopener noreferrer">VSFAvatar</a> format used in the <strong><a href="https://suvidriel.itch.io/vnyan" target="_blank" rel="noopener noreferrer">VNyan</a></strong> VTubing app and the <strong><a href="https://www.vseeface.icu/" target="_blank" rel="noopener noreferrer">VSeeFace</a></strong> VTubing app,</li>
