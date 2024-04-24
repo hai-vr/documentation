@@ -4,7 +4,7 @@ import {HaiTag} from "/src/components/HaiTag";
 # 📹 Add ARKit to BlendShapeAvatar
 
 <HaiTags>
-<HaiTag requiresVRM={true} compatibleWithVSFAvatar={true} />
+<HaiTag requiresVRM={true} compatibleWithVSeeFace={true} compatibleWithVNyan={true} compatibleWithWarudo={true} />
 </HaiTags>
 
 :::warning
@@ -24,6 +24,10 @@ If a VRMBlendShapeProxy component does not exist, the VRMBlendShapeProxy compone
 
 To use this component:
 - Add a "PA Add ARKit to BlendShapeAvatar" component anywhere in your avatar.
+
+NDMF is required in your VTubing project:
+- You need to export the avatar using the [Denormalized Avatar Exporter](/docs/products/denormalized-avatar-exporter) tool.
+- You need NDMF.
 
 ## Versions
 
