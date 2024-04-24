@@ -25,11 +25,15 @@ interface Props {
     urlTS: string;
     requiresVRChat: boolean;
     requiresSteamVR: boolean;
+    compatibleWithVSeeFace: boolean;
+    compatibleWithWarudo: boolean;
+    compatibleWithVNyan: boolean;
+    short: boolean;
     isUniversal: boolean;
     children: JSX.Element;
 }
 
-export function GalleryItem({name, image, url, urlTS, requiresVRChat, requiresSteamVR, isUniversal, children}: Props): JSX.Element {
+export function GalleryItem({name, image, url, urlTS, requiresVRChat, requiresSteamVR, compatibleWithVSeeFace, compatibleWithWarudo, compatibleWithVNyan, short, isUniversal, children}: Props): JSX.Element {
     return (
         <div className="col col--4 margin-bottom--lg">
             <div className={clsx('card', styles.gallery_card_overall)}>
@@ -51,6 +55,10 @@ export function GalleryItem({name, image, url, urlTS, requiresVRChat, requiresSt
                             requiresVRChat = {requiresVRChat}
                             isUniversal = {isUniversal}
                             requiresSteamVR = {requiresSteamVR}
+                            compatibleWithVSeeFace = {compatibleWithVSeeFace}
+                            compatibleWithWarudo = {compatibleWithWarudo}
+                            compatibleWithVNyan = {compatibleWithVNyan}
+                            short = {short}
                     />
                 </div>
             </div>

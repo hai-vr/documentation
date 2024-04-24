@@ -27,6 +27,7 @@ interface Props {
     compatibleWithWarudo: boolean;
     notVRChat: boolean;
     isUniversal: boolean;
+    short: boolean;
 }
 
 export function HaiTag({
@@ -39,18 +40,21 @@ export function HaiTag({
                            compatibleWithVSFAvatar,
                            compatibleWithVSeeFace,
                            compatibleWithWarudo,
-                           compatibleWithVNyan
+                           compatibleWithVNyan,
+                            short
 }: Props): JSX.Element {
+    let div = short ? <></> : <>Compatible with </>;
     return (
         <span>
                 {requiresVRChat ? <div className={clsx(styles.hai_tag, styles.hai_tag_requires_vrchat)}>💬 Requires VRChat</div> : ''}
                 {requiresResonite ? <div className={clsx(styles.hai_tag, styles.hai_tag_requires_resonite)}>⚡ Requires Resonite</div> : ''}
                 {requiresVRM ? <div className={clsx(styles.hai_tag, styles.hai_tag_requires_vrm)}>📹 Requires VRM</div> : ''}
                 {requiresSteamVR ? <div className={clsx(styles.hai_tag, styles.hai_tag_requires_steamvr)}>Requires SteamVR</div> : ''}
-                {compatibleWithVSFAvatar ? <div className={clsx(styles.hai_tag, styles.hai_tag_compatible_with_vsfavatar)}>Compatible with VSFAvatar</div> : ''}
-                {compatibleWithVSeeFace ? <div className={clsx(styles.hai_tag, styles.hai_tag_compatible_with_vsfavatar)}>Compatible with VSeeFace</div> : ''}
-                {compatibleWithVNyan ? <div className={clsx(styles.hai_tag, styles.hai_tag_compatible_with_vnyan)}>Compatible with VNyan</div> : ''}
-                {compatibleWithWarudo ? <div className={clsx(styles.hai_tag, styles.hai_tag_compatible_with_warudo)}>Compatible with Warudo</div> : ''}
+                {compatibleWithVSFAvatar ? <div
+                    className={clsx(styles.hai_tag, styles.hai_tag_compatible_with_vsfavatar)}>{div}VSFAvatar</div> : ''}
+                {compatibleWithVSeeFace ? <div className={clsx(styles.hai_tag, styles.hai_tag_compatible_with_vsfavatar)}>{div}VSeeFace</div> : ''}
+                {compatibleWithVNyan ? <div className={clsx(styles.hai_tag, styles.hai_tag_compatible_with_vnyan)}>{div}VNyan</div> : ''}
+                {compatibleWithWarudo ? <div className={clsx(styles.hai_tag, styles.hai_tag_compatible_with_warudo)}>{div}Warudo</div> : ''}
                 {isUniversal ? <div className={clsx(styles.hai_tag, styles.hai_tag_universal)}>🌊 Any Platform</div> : ''}
                 {notVRChat ? <div className={clsx(styles.hai_tag, styles.hai_tag_universal)}>🌊 Any Platform, except VRChat</div> : ''}
         </span>

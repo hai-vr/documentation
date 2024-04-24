@@ -68,7 +68,7 @@ that would not be normally found in a traditional avatar, so the quality of the 
 
 To use this tool in VNyan:
 - Import your Unity avatar in your scene. You do not need to export it to VRM.
-- Add a *Hai/Denormalized Avatar Exporter* component to any GameObject on your scene (it could be a new GameObject, or your avatar itself).
+- Add a *Haï / Denormalized Avatar Exporter* component to any GameObject on your scene (it could be a new GameObject, or your avatar itself).
 - Set *Avatar Root* to be your avatar root.
 - Choose an *Export File Name*.
 
@@ -92,7 +92,7 @@ First of all, when using this tool, **you must not use the Character prefab**. T
 - If you're importing a new avatar, simply do not set it up.
 - If you're reusing an already set up avatar, rename your Character prefab in your project to something else.
 - Create a new Mod, or reuse your existing Character Mod.
-- Add a *Hai/Denormalized Avatar Exporter* component to any GameObject on your scene (it could be a new GameObject, or your avatar itself).
+- Add a *Haï / Denormalized Avatar Exporter* component to any GameObject on your scene (it could be a new GameObject, or your avatar itself).
 - Set *Avatar Root* to be your avatar root.
 
 You can now build the avatar in this way:
