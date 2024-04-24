@@ -13,7 +13,7 @@ import {HaiTag} from "/src/components/HaiTag";
 
 **Denormalized Avatar Exporter** lets you export avatars normally designed for use in VRChat into VTubing apps, without the disruptive pre-processing steps that would normally be needed:
 - using the [VSFAvatar](https://www.vseeface.icu/#vsfavatar) format used in the **[VNyan](https://suvidriel.itch.io/vnyan)** VTubing app and the **[VSeeFace](https://www.vseeface.icu/)** VTubing app,
-- and as a [Character Mod](https://docs.warudo.app/docs/modding/character-mod) for use in the **[Warudo](https://warudo.app/)** VTubing app,
+- and as a [Character Mod](https://docs.warudo.app/docs/modding/character-mod) for use in the **[Warudo](https://warudo.app/)** VTubing app.
 
 You don't have to normalize your avatar bones, and you don't have to export your avatar to VRM and import that VRM back into Unity.
 
@@ -67,6 +67,7 @@ To use this tool in VNyan:
 - Import your Unity avatar in your scene. You do not need to export it to VRM.
 - Add a *Hai/Denormalized Avatar Exporter* component to any GameObject on your scene (it could be a new GameObject, or your avatar itself).
 - Set *Avatar Root* to be your avatar root.
+- Choose an *Export File Name*.
 
 You can now build the avatar in this way:
 - Select the object that contains your *Denormalized Avatar Exporter* component.
