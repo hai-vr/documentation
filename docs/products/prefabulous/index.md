@@ -39,6 +39,9 @@ In Prefabulous V1, the components of this tool require VRChat.
 In an upcoming version (Prefabulous V2), components are split in two categories:
 - **Universal Components** will be usable on any social VR platform, app, or non-social VR app.
 - **VRChat Platform** components will only be usable on the VRChat Platform.
+
+A new category will be introduced:
+- **VRM and VTubing** components will be usable on apps such as VNyan, Warudo, and VSeeFace, by focusing on VRM components.
 :::
 
 ![](img/pvsUzAgoIb.png)
@@ -72,4 +75,4 @@ so that you can reuse them on other avatars as a prefab:
 
 - **[Universal Components](./prefabulous/universal)** lists components that can be used on any social VR platform, app, or non-social VR app.
 - **[VRChat Platform](./prefabulous/vrchat)** lists components that can only be used on the VRChat Platform.
-- **[VRM and VSFAvatar](./prefabulous/vrm)** lists components that can only be used on the VRM-compatible apps, and/or the VSFAvatar format.
+- **[VRM and VTubing](./prefabulous/vrm)** lists components that can only be used on the VRM-compatible apps and derived formats, such as VNyan, Warudo, and VSeeFace.
