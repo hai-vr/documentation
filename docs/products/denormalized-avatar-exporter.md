@@ -127,3 +127,39 @@ can be very disruptive to a user acquainted with the avatar creation workflow of
 - This modification is only done when you build the avatar, on a copy of the avatar. Your original avatar remains intact.
 
 Due to this, the avatar may operate slightly differently if you choose to use constraint components, or if you reference original humanoid bones in a particular way.
+
+## Using non-destructive workflow tools (NDMF)
+
+:::warning
+This section is not currently available.
+:::
+
+At this time of writing, this tool has *some* compatibility with non-destructive workflow tools.
+
+### NDMF
+
+:::warning
+This section is not currently available.
+:::
+
+Non-Destructive Modular Framework may be installed in your project, however, it requires you to add a `System.Collections.Immutable` DLL
+in the `Assets/Plugins` folder of your project.
+
+⚠️ **The exact steps to do this cleanly are not available in this documentation yet.**
+
+Once correctly installed, NDMF will execute automatically when trying to export a .vsfavatar, or when trying to build the Warudo mod.
+
+### Modular Avatar
+
+:::warning
+This section is not currently available.
+:::
+
+Even though Modular Avatar does not require the VRChat SDK to run, there are some quirks at the moment, so you cannot use it easily
+at this time of writing.
+
+⚠️ **If you really want to try** installing Modular Avatar, here's an advanced outline:
+- Add the Unity Mathematics package in your project using the Unity package manager.
+- Add the Unity Burst package in your project using the Unity package manager.
+- Download Modular Avatar on GitHub, and add it to your project using the Unity package manager.
+  - Fix around three lines of compilation errors located within Modular Avatar's source code.
