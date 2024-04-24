@@ -72,6 +72,8 @@ To use this tool in VNyan:
 - Set *Avatar Root* to be your avatar root.
 - Choose an *Export File Name*.
 
+*Customize your avatar as usual by adding a VRM BlendShapeProxy component, etc.*
+
 You can now build the avatar in this way:
 - Select the object that contains your *Denormalized Avatar Exporter* component.
 - Click the *Build .vsfavatar* button inside the inspector.
@@ -95,6 +97,8 @@ First of all, when using this tool, **you must not use the Character prefab**. T
   - Please make sure your mod name does not contain any space in it.
 - Add a *Haï / Denormalized Avatar Exporter* component to any GameObject on your scene (it could be a new GameObject, or your avatar itself).
 - Set *Avatar Root* to be your avatar root.
+
+*Customize your avatar as usual by adding a VRM BlendShapeProxy component, etc.*
 
 You can now build the avatar in this way:
 - Select the object that contains your *Denormalized Avatar Exporter* component.
