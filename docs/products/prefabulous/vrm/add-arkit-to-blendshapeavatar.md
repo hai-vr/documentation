@@ -11,7 +11,8 @@ import {HaiTag} from "/src/components/HaiTag";
 The following describes a future component and is not available yet.
 :::
 
-Automatically links all Unified Expressions or ARKit-named blendshapes found in your meshes as ARKit-named BlendShapeClips into the [VRM BlendShapeAvatar asset](https://vrm.dev/en/univrm/blendshape/univrm_blendshape/#blendshapeavatar)
+Automatically links all blendshapes found in your meshes which follow the Unified Expressions naming convention or ARKit naming convention,
+as ARKit-named BlendShapeClips into the [VRM BlendShapeAvatar asset](https://vrm.dev/en/univrm/blendshape/univrm_blendshape/#blendshapeavatar)
 used by your avatar [VRMBlendShapeProxy component](https://vrm.dev/en/univrm/blendshape/univrm_blendshape/#vrmblendshapeproxy).
 
 ## How to use
