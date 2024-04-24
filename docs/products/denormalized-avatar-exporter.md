@@ -28,6 +28,10 @@ since Modular Avatar is not fully supported outside VRChat, using them requires 
 If you were to try, shaders would fail to render in your VTubing app (it would be pink).
 :::
 
+<video controls width="816">
+    <source src={require('./img/denormalized-avatar-exporter/denormalized-f.mp4').default}/>
+</video>
+
 ## Install
 
 To install, you must use a Unity project that was properly initialized according to your VTubing application of choice.
