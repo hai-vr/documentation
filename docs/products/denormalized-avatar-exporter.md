@@ -66,6 +66,12 @@ With Denormalized Avatar Exporter, **those steps are not needed**.
 However, please understand that during the export, this tool will modify your avatar in such a way that it may introduce incompatibilities
 that would not be normally found in a traditional avatar, so the quality of the results may vary.
 
+:::warning
+Your project needs to be already setup according to the [VNyan manual](https://github.com/Suvidriel/VNyanDoc/wiki/VNyan-SDK) (or the [VSeeFace manual](https://www.vseeface.icu/#vsfavatar), if you use VSeeFace).
+
+This means you already have the correct **UniVRM** version installed in your project.
+:::
+
 To use this tool in VNyan:
 - Import your Unity avatar in your scene. You do not need to export it to VRM.
 - Add a *Haï / Denormalized Avatar Exporter* component to any GameObject on your scene (it could be a new GameObject, or your avatar itself).
@@ -89,6 +95,12 @@ With Denormalized Avatar Exporter, **this step is not needed**.
 
 However, please understand that during the export, this tool will modify your avatar in such a way that it may introduce incompatibilities
 that would not be normally found in a traditional avatar, so the quality of the results may vary.
+
+:::warning
+Your project needs to be already setup according to the [Warudo Modding manual](https://docs.warudo.app/docs/modding/sdk-installation).
+
+This means you already have the **Warudo SDK** installed in your project.
+:::
 
 First of all, when using this tool, **you must not use the Character prefab**. This tool will overwrite the Character prefab in order to build the mod.
 - If you're importing a new avatar, simply do not set it up.
