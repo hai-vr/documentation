@@ -16,9 +16,9 @@ The changelogs of some products aren't available at this time.
 |---------------------------------------------------------------------|-----------------------|-------------|
 | **Applications**                                                    |                       |             |
 | [VRWare](./changelogs/vrware) (World)                               | 2024-01-07            | 2024-01     |
-| [Double Hip Tracker](./changelogs/double-hip-tracker)               | 1.2.0                 | **2024-03** |
+| [Double Hip Tracker](./changelogs/double-hip-tracker)               | 1.2.0                 | 2024-03     |
 | **Viewers**                                                         |                       |             |
-| [Lightbox Viewer](./changelogs/lightbox-viewer)                     | 2.1.0                 | **2024-03** |
+| [Lightbox Viewer](./changelogs/lightbox-viewer)                     | 2.1.0                 | 2024-03     |
 | [Animation Viewer](./changelogs/animation-viewer)                   | 2.0.3                 | 2023-11     |
 | [Blendshape Viewer](./changelogs/blendshape-viewer)                 | 2.1.1                 | 2024-01     |
 | [Property Finder](./changelogs/property-finder)                     | 2.0.3                 | 2023-11     |
@@ -28,7 +28,7 @@ The changelogs of some products aren't available at this time.
 | [FaceTra Shape Creator](./changelogs/facetra-shape-creator)         | 0.8.0-2024-04-08-2020 | **2024-04** |
 | [Prefabulous](./changelogs/prefabulous)                             | 1.11.1                | **2024-04** |
 | [Visual Expressions Editor](./changelogs/visual-expressions-editor) | 2.0.3                 | 2023-11     |
-| [Vixen](./changelogs/vixen)                                         | 1.1.0                 | **2024-03** |
+| [Vixen](./changelogs/vixen)                                         | 1.1.0                 | 2024-03     |
 | **Patchers**                                                        |                       |             |           
 | [Auto-reset OSC config](./changelogs/auto-reset-osc-config)         | 1.1.3                 | 2023-12     |       
 | [Convert ComboGesture to FaceEmo](./changelogs/cge-to-faceemo)      | 0.2.0                 | 2024-02     |
