@@ -2,6 +2,10 @@
 title: Prefabulous
 ---
 
+## 1.11.2
+
+Fix Prefabulous was not able to compile because it was using a deprecated define `VRC_SDK_VRCSDK3` that was missing on some users' projects.
+
 ## 1.11.1
 
 Fix Generate Twist Bones help URL no longer points to localhost.
