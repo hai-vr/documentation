@@ -2,11 +2,19 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://docs.hai-vr.dev/updates</id>
     <title>Haï~ Blog</title>
-    <updated>2024-04-24T00:00:00.000Z</updated>
+    <updated>2024-04-28T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://docs.hai-vr.dev/updates"/>
     <subtitle>Haï~ Blog</subtitle>
     <icon>https://docs.hai-vr.dev/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[⚙️ Prefabulous Avatar V1.11.2]]></title>
+        <id>https://docs.hai-vr.dev/updates/2024/04/28/p0</id>
+        <link href="https://docs.hai-vr.dev/updates/2024/04/28/p0"/>
+        <updated>2024-04-28T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Fix Prefabulous was not able to compile because it was using a deprecated define VRCSDKVRCSDK3 that was missing on some users' projects.]]></summary>
+        <content type="html"><![CDATA[<p>Fix Prefabulous was not able to compile because it was using a deprecated define <code>VRC_SDK_VRCSDK3</code> that was missing on some users' projects.</p>]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[☀️ Denormalized Avatar Exporter]]></title>
         <id>https://docs.hai-vr.dev/updates/2024/04/24/p0</id>
@@ -434,15 +442,5 @@ or <a href="https://github.com/anatawa12/AvatarOptimizer" target="_blank" rel="n
         <content type="html"><![CDATA[<p>The tool now supports the reuse of existing face tracking blendshapes to build new shapes.</p>
 <p>🔍 <a href="https://docs.hai-vr.dev/docs/changelogs/facetra-shape-creator#060-2024-01-18-0056">View changelog</a></p>
 <p>🗒️ <a href="https://docs.hai-vr.dev/docs/products/facetra-shape-creator">Open documentation</a></p>]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[⚙️ Blendshape Viewer V2.1.1]]></title>
-        <id>https://docs.hai-vr.dev/updates/2024/01/13/p2</id>
-        <link href="https://docs.hai-vr.dev/updates/2024/01/13/p2"/>
-        <updated>2024-01-13T11:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Fix an error when no mesh was selected.]]></summary>
-        <content type="html"><![CDATA[<p>Fix an error when no mesh was selected.</p>
-<p>🔍 <a href="https://docs.hai-vr.dev/docs/changelogs/blendshape-viewer#211">View changelog</a></p>
-<p>🗒️ <a href="https://docs.hai-vr.dev/docs/products/blendshape-viewer">Open documentation</a></p>]]></content>
     </entry>
 </feed>

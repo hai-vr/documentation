@@ -4,10 +4,18 @@
         <title>Haï~ Blog</title>
         <link>https://docs.hai-vr.dev/updates</link>
         <description>Haï~ Blog</description>
-        <lastBuildDate>Wed, 24 Apr 2024 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 28 Apr 2024 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[⚙️ Prefabulous Avatar V1.11.2]]></title>
+            <link>https://docs.hai-vr.dev/updates/2024/04/28/p0</link>
+            <guid>https://docs.hai-vr.dev/updates/2024/04/28/p0</guid>
+            <pubDate>Sun, 28 Apr 2024 00:00:00 GMT</pubDate>
+            <description><![CDATA[Fix Prefabulous was not able to compile because it was using a deprecated define VRCSDKVRCSDK3 that was missing on some users' projects.]]></description>
+            <content:encoded><![CDATA[<p>Fix Prefabulous was not able to compile because it was using a deprecated define <code>VRC_SDK_VRCSDK3</code> that was missing on some users' projects.</p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[☀️ Denormalized Avatar Exporter]]></title>
             <link>https://docs.hai-vr.dev/updates/2024/04/24/p0</link>
@@ -435,16 +443,6 @@ or <a href="https://github.com/anatawa12/AvatarOptimizer" target="_blank" rel="n
             <content:encoded><![CDATA[<p>The tool now supports the reuse of existing face tracking blendshapes to build new shapes.</p>
 <p>🔍 <a href="https://docs.hai-vr.dev/docs/changelogs/facetra-shape-creator#060-2024-01-18-0056">View changelog</a></p>
 <p>🗒️ <a href="https://docs.hai-vr.dev/docs/products/facetra-shape-creator">Open documentation</a></p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[⚙️ Blendshape Viewer V2.1.1]]></title>
-            <link>https://docs.hai-vr.dev/updates/2024/01/13/p2</link>
-            <guid>https://docs.hai-vr.dev/updates/2024/01/13/p2</guid>
-            <pubDate>Sat, 13 Jan 2024 11:00:00 GMT</pubDate>
-            <description><![CDATA[Fix an error when no mesh was selected.]]></description>
-            <content:encoded><![CDATA[<p>Fix an error when no mesh was selected.</p>
-<p>🔍 <a href="https://docs.hai-vr.dev/docs/changelogs/blendshape-viewer#211">View changelog</a></p>
-<p>🗒️ <a href="https://docs.hai-vr.dev/docs/products/blendshape-viewer">Open documentation</a></p>]]></content:encoded>
         </item>
     </channel>
 </rss>
