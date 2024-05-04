@@ -43,4 +43,4 @@ Finalizers:
 ## Operator components
 - **[Compressive Deform](./operators/compressive-deform)** emulates the effect of a flat surface being compressed against that object.
 - **[Paint New Bone](./operators/paint-new-bone)** creates a new bone, and repaints as many meshes of your choosing to that bone.
-- **[Pull](./operators/pull)** creates a blendshape that pulls the affected vertices from one point and orientation to another.
+- **[Pull](./operators/translate-rotate-scale)** creates a blendshape that pulls the affected vertices from one point and orientation to another.
