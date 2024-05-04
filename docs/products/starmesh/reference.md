@@ -18,7 +18,7 @@ The operation of *Starmesh* is dictated by the use of two main categories of com
 ## Selector components
 
 Core selector:
-- **Select Meshes** lets you specify which meshes will be affected, including which bones, and which blendshapes should be considered as applied.
+- **Select Meshes** lets you specify which meshes will be affected, and which blendshapes should be considered as applied.
 
 Geometry:
 - **Select Radius** lets you select vertices around a radius.
@@ -32,6 +32,7 @@ Region:
 - **Select Gradient** lets you weight vertices across a region to a gradient.
 
 Mesh data:
+- **Select Bones** lets you select vertices of bones.
 - **Select Blendshapes** lets you select vertices affected by a blendshape.
 - **Select UV Mask** lets you select vertices using a mask texture.
 - **Select Flood Fill** lets you select all vertices connected to points.

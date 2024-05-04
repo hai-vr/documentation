@@ -12,18 +12,17 @@ This tool is currently not available, and this documentation is currently being 
 
 Specify which meshes will be affected.
 
-### Skinned Meshes
-
 - **Skinned Mesh Renderers**: Select SkinnedMeshRenderer components.
 - **Split Left/Right**: Mark this selection has having a Left/Right counterpart.
-- **Bones (Left/Right)**: Only the vertices attached to these bones will be selected. If there are no bones selected, then all vertices will be selected.
-  - *Use other Selector components below to reduce the selection.*
-- **Bone Weight Curve**: After all bones are selected, the weight will be remapped using this curve.
 - **Initial Blendshapes**: During the calculations, these blendshapes will be emulated to be active as part of the operations.
 
-### Non-Skinned Meshes
+## Select Bones
 
-- **Mesh Renderers**: Select all vertices of MeshRenderer components.
+Reduces the current selection so that only vertices weights to the specified bones will be affected.
+
+The weight is the sum of all bones that match.
+
+- **Bone Weight Curve**: After all bones are selected, the weight will be remapped using this curve.
 
 ## Select Radius
 
