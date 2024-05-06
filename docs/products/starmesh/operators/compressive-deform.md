@@ -8,6 +8,8 @@ The *Starmesh Op. Compressive Deform* component creates a blendshape that emulat
 against that object.
 
 This is different from rescaling. The surface of a non-flat object will be progressively flattened as it's being compressed.
-- It will move flatten vertices progressively (it will not flatten vertices far from the compression surface).
+- This blendshape has multiple frames, so it *emulates* a non-linear interpolation.
+- It will move vertices progressively as the blendshape progresses.
+- Tt will not flatten vertices far from the compression surface, unless the compression surface becomes closer.
 - It will expand the object laterally to the force.
-- The lateral expansion is limited by the proximity to the compression surface (it will not laterally expand the whole object at once).
+- The lateral expansion is limited by the proximity to the compression surface.

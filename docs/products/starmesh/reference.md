@@ -18,6 +18,9 @@ The operation of *Starmesh* is dictated by the use of two main categories of com
 
 Selector components lets you select vertices on meshes to affect.
 
+Vertex selection is not a binary mask, there is a **weight** attached to each selected vertex. The higher the weight, the more it will be
+affected by operators. *If you're familiar with Blender, this makes selections very similar to proportional editing and weight painting.*
+
 You must have a [**Select Meshes**](./selectors) component, which lets you specify which meshes will be affected,
 and which blendshapes should be considered as applied.
 
