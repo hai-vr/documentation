@@ -1,7 +1,4 @@
-﻿---
-unlisted: true
----
-import {HaiTags} from "/src/components/HaiTags";
+﻿import {HaiTags} from "/src/components/HaiTags";
 import {HaiTag} from "/src/components/HaiTag";
 
 # Examples
