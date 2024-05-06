@@ -12,7 +12,7 @@ This tool is currently not available, and this documentation is currently being 
 Specify which meshes will be affected.
 
 - **Skinned Mesh Renderers**: Select SkinnedMeshRenderer components.
-- **Initial Blendshapes**: During the calculations, these blendshapes will be emulated to be active as part of the operations.
+- **Active Blendshapes**: During the calculations, these blendshapes will be emulated to be active as part of the operations.
 
 ## Select Bones
 
