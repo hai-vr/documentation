@@ -1,7 +1,7 @@
 ﻿---
 unlisted: true
 ---
-# Unpaint Bone
+# ⛔ Unpaint Bone
 
 The *Starmesh Operator - Unpaint Bone* component unpaints vertices from bones of your choice.
 
