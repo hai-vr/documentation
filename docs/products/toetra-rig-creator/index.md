@@ -1,5 +1,5 @@
 ﻿---
-title: ⭐ ToeTra Rig Creator
+title: 🔒 ToeTra Rig Creator
 ---
 
 # Haï's ToeTra Rig Creator

@@ -1,5 +1,5 @@
 ﻿---
-title: ⭐ Starmesh
+title: 🔒 Starmesh
 ---
 import {HaiTags} from "/src/components/HaiTags";
 import {HaiTag} from "/src/components/HaiTag";
