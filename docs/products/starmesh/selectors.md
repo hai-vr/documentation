@@ -47,10 +47,10 @@ Reduces the current selection so that only vertices in proximity to a line will 
 - **Radius B**: The radius of the line at point B.
 - **Selection Curve A**: Vertices on the A side will have their normalized distance remapped to this curve.
 - **Selection Curve B**: Vertices on the B side will have their normalized distance remapped to this curve.
-- **A Transform**: *(Optional)* Choose a transform as the point A to sample the position from.
-- **B Transform**: *(Optional)* Choose a transform as the point B to sample the position from.
+- **A Root Transform**: *(Optional)* Choose a transform as the point A to sample the position from.
+- **B Root Transform**: *(Optional)* Choose a transform as the point B to sample the position from.
 
-Vertices between A and B will be will have their normalized distance will be remapped to both this curve and the Selection Curve B,
+Vertices between A and B will use a proportion of Selection Curve A and Selection Curve B,
 based on the projection of that vertex on that line.
 
 ## Select Connected Polygons
@@ -60,3 +60,12 @@ Reduces the current selection so that only vertices connected together via a cha
 ## Select Blendshapes
 
 Reduces the current selection so that vertices moved by a blendshape will be selected.
+
+## Selection order
+
+The selection will be done in this order:
+
+- `Union of all Select Meshes`
+- multiplied by (`Union of all Select Bones` or 1 if none selected)
+- multiplied by ((`Union of all Select Connected Polygons` union with `Union of all Select Blendshapes`) or 1 if none of either)
+- multiplied by ((`Sum of all Select Point Radius` added to `Sum of all Select Line Radius`) or 1 if none of either)
