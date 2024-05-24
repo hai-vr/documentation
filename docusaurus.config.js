@@ -186,8 +186,8 @@ export default {
                 href: 'https://github.com/hai-vr/',
               },
               {
-                label: 'hai-vr.dev',
-                href: 'https://hai-vr.dev/',
+                label: 'Links',
+                to: '/links',
               },
             ],
           },
