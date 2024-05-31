@@ -5,7 +5,7 @@
 <meta name="generator" content="Docusaurus v3.2.1">
 <title data-rh="true">Reference manual | Haï~</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://docs.hai-vr.dev/img/hai-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://docs.hai-vr.dev/img/hai-social-card.jpg"><meta data-rh="true" property="og:url" content="https://docs.hai-vr.dev/docs/products/starmesh/reference"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Reference manual | Haï~"><meta data-rh="true" name="description" content="This tool is currently not available, and this documentation is currently being written."><meta data-rh="true" property="og:description" content="This tool is currently not available, and this documentation is currently being written."><link data-rh="true" rel="icon" href="/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://docs.hai-vr.dev/docs/products/starmesh/reference"><link data-rh="true" rel="alternate" href="https://docs.hai-vr.dev/docs/products/starmesh/reference" hreflang="en"><link data-rh="true" rel="alternate" href="https://docs.hai-vr.dev/docs/products/starmesh/reference" hreflang="x-default"><link rel="alternate" type="application/rss+xml" href="/updates/rss.xml" title="Haï~ RSS Feed">
 <link rel="alternate" type="application/atom+xml" href="/updates/atom.xml" title="Haï~ Atom Feed"><link rel="stylesheet" href="/assets/css/styles.3a7c99e2.css">
-<script src="/assets/js/runtime~main.de9a3abc.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.6683bb01.js" defer="defer"></script>
 <script src="/assets/js/main.2a6f5985.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -29,25 +29,41 @@ If you&#x27;re creating an avatar for VRChat, you will need a VRCAvatarDescripto
 <li>If you decide to create a GameObject somewhere else in the avatar, the scale must be uniform (the same on all axes).</li>
 </ul>
 </li>
-<li>Add a <strong>Starmesh Op. Translate Rotate Scale (TRS)</strong> component.</li>
+<li>Add a <strong>Starmesh Op. Translate Rotate Scale (TRS)</strong> component. This is an <strong>operator</strong>.</li>
+<li><em>The following section will select the meshes:</em>
+<ul>
 <li>Click the <strong>Create Mesh Selector</strong> button.</li>
 <li>Look in the object hierarchy: A new Mesh Selector object has been added as a child of your GameObject. Select it.</li>
 <li>In that Mesh Selector, add the meshes of your avatar that you want to deform, such as your hair, or your lower body.</li>
-<li>Return to the GameObject that contains your operator.</li>
-<li>TODO</li>
+</ul>
+</li>
+<li><em>The following section will select a radius:</em>
+<ul>
+<li>Create a new GameObject under the hierarchy of the operator.</li>
+<li>Add a <strong>Starmesh Select Radius</strong> component.</li>
+<li>Move that object around the area of the avatar that you want to affect.</li>
+</ul>
+</li>
+<li><em>The following section will configure your operator:</em>
+<ul>
+<li>Select the object that contains the operator.</li>
+<li>Change the origin.</li>
+<li>Change the destination.</li>
+</ul>
+</li>
 </ul>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="operator-components">Operator components<a href="#operator-components" class="hash-link" aria-label="Direct link to Operator components" title="Direct link to Operator components">​</a></h2>
 <p>Operator components lets you modify vertices affected by the specified Selector components.</p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="blendshape-operators">Blendshape operators<a href="#blendshape-operators" class="hash-link" aria-label="Direct link to Blendshape operators" title="Direct link to Blendshape operators">​</a></h3>
 <p>These components create a blendshape.</p>
 <ul>
-<li><strong><a href="/docs/products/starmesh/operators/compressive-deform">Compressive Deform</a></strong> emulates the effect of a flat surface being compressed against that object.</li>
-<li><strong><a href="/docs/products/starmesh/operators/translate-rotate-scale">Translate Rotate Scale</a></strong> creates a blendshape that pulls the affected vertices from one point and orientation to another.</li>
+<li><strong><a href="/docs/products/starmesh/operators/translate-rotate-scale">Translate Rotate Scale</a></strong> creates a blendshape that pulls the affected vertices from one point and orientation to another. (🌶️)</li>
+<li><strong><a href="/docs/products/starmesh/operators/compressive-deform">Compressive Deform</a></strong> emulates the effect of a flat surface being compressed against that object. (🌶️🌶️)</li>
 </ul>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="bone-operators">Bone operators<a href="#bone-operators" class="hash-link" aria-label="Direct link to Bone operators" title="Direct link to Bone operators">​</a></h3>
 <p>These components create or edits bones.</p>
 <ul>
-<li><strong><a href="/docs/products/starmesh/operators/paint-new-bone">Paint New Bone</a></strong> creates a new bone, and repaints as many meshes of your choosing to that bone.</li>
+<li><strong><a href="/docs/products/starmesh/operators/paint-new-bone">Paint New Bone</a></strong> creates a new bone, and repaints as many meshes of your choosing to that bone. (🌶️)</li>
 </ul>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="selector-components">Selector components<a href="#selector-components" class="hash-link" aria-label="Direct link to Selector components" title="Direct link to Selector components">​</a></h2>
 <p>Selector components lets you select vertices on meshes to affect.</p>
@@ -84,7 +100,7 @@ and which blendshapes should be considered as applied.</p>
 <div class="card element_KzhA sp_qcMM k2_SBmZ ias_qO18">⭐ <!-- -->すいせい</div>
 <div class="card element_KzhA sp_qcMM k2_SBmZ ias_qO18">⭐ <!-- -->SuikaNishi </div>
 <div class="card element_KzhA k2_SBmZ ias_qO18">⭐ <!-- -->kittyn vr</div>
-<div class="card element_KzhA k2_SBmZ ias_qO18">  ⭐ <!-- -->Emmα</div>
+<div class="card element_KzhA k2_SBmZ ias_qO18">⭐ <!-- -->Emmα</div>
 <div class="card element_KzhA k2_SBmZ ias_qO18">⭐ <!-- -->milktame</div>
 <div class="card element_KzhA k2_SBmZ ias_qO18">⭐ <!-- -->Virgil drake</div>
 <div class="card element_KzhA k2_SBmZ ias_qO18">⭐ <!-- -->poiyomi</div>
