@@ -1,4 +1,8 @@
 {
   "label": "Operators",
-  "position": 3
+  "position": 3,
+  "link": {
+    "slug": "products/starmesh/operators",
+    "type": "generated-index"
+  }
 }
