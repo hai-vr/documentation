@@ -1,4 +1,7 @@
-﻿# Paint New Bone
+﻿import {HaiTags} from "/src/components/HaiTags";
+import {HaiTag} from "/src/components/HaiTag";
+
+# Paint New Bone
 
 The *Starmesh Op. Paint New Bone* component creates a new bone, and repaints as many meshes of your choosing to that bone.
 
@@ -32,6 +35,32 @@ Please note that many Unity applications (such as VRChat) cannot have more than 
 - Try not to paint in highly contentious areas.
 - If there are more than 4 bones on a vertex, that vertex may unpaint itself from the weaker bones.
 :::
+
+### Test the operator
+
+To test the new bone, you need to process the avatar.
+
+#### VRChat
+
+<HaiTags>
+<HaiTag requiresVRChat={true} />
+</HaiTags>
+
+Make sure your avatar has a valid VRCAvatarDescriptor component.
+
+If you use *Avatar 3.0 Emulator*, initialize it in your scene, either now, or during Play mode.
+
+Then, enter Play mode. This should create the bone.
+
+#### Other apps
+
+<HaiTags>
+<HaiTag notVRChat={true} />
+</HaiTags>
+
+- If your app supports NDMF with Play mode, then set up your avatar so that it is a valid avatar for your app, and enter Play mode.
+- If your app supports NDMF without Play mode, build your avatar in Edit mode.
+- If your app does not support NDMF at all, select your avatar in the scene, and go to *Tools > NDM Framework > Manual bake avatar*.
 
 ### Advanced settings
 
