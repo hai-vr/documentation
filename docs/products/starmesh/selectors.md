@@ -10,7 +10,7 @@ Specify which meshes will be affected.
 - **Skinned Mesh Renderers**: Select SkinnedMeshRenderer components.
 - **Active Blendshapes**: During the calculations, these blendshapes will be emulated to be active as part of the operations.
 
-<video controls muted width="816">
+<video controls muted>
     <source src={require('./img/v66A6bxugo.mp4').default}/>
 </video>
 
@@ -26,7 +26,7 @@ You can match bones by transform, or by object name. Matching by object name can
 - **Object Names**: Choose the name of the bone transforms that you want to affect.
 - **Include Child Bones**: Also includes all child bones.
 
-<video controls muted width="816">
+<video controls muted>
     <source src={require('./img/SQzLrkRyb2.mp4').default}/>
 </video>
 
