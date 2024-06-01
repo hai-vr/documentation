@@ -20,7 +20,7 @@ Specify which meshes will be affected.
 
 ## Select Bones
 
-Reduces the current selection so that only vertices weights to the specified bones will be affected.
+Reduces the current selection so that only vertices weighted to the specified bones will be affected.
 
 The weight is the sum of all bones that match.
 
@@ -72,9 +72,21 @@ based on the projection of that vertex on that line.
 
 Reduces the current selection so that vertices moved by a blendshape will be selected.
 
+- **Blendshapes**: The names of the blendshapes to affect.
+
 ## Select Connected Polygons
 
+:::danger
+This component is selectable, but the UI is not currently ready for prime time. Use at your own risk.
+
+There is no gizmo for this component at the moment.
+:::
+
 Reduces the current selection so that only vertices connected together via a chain of polygons will be selected.
+
+- **Points**: The points to sample the first vertices from.
+  - **Position**: The position of the point.
+  - **Distance**: The radius of influence of that point.
 
 ## Selection order
 
