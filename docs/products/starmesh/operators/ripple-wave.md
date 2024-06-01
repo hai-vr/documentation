@@ -1,4 +1,4 @@
-﻿# ⛔ Ripple Wave
+﻿# Ripple Wave
 
 The *Starmesh Op. Ripple Wave* component creates a blendshape which makes a wave ripple throughout the mesh, and dissipate.
 
