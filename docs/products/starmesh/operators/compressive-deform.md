@@ -1,9 +1,5 @@
 ﻿# Compressive Deform
 
-:::danger
-This tool is currently not available, and this documentation is currently being written.
-:::
-
 The *Starmesh Op. Compressive Deform* component creates a blendshape that emulates the [effect of a flat surface being compressed](https://en.wikipedia.org/wiki/Poisson%27s_ratio)
 against that object.
 
@@ -85,6 +81,11 @@ The Lateral deformation section configures how the vertices moves laterally away
     <source src={require('../img/0WoLXFb7oJ.mp4').default}/>
 </video>
 
+### Test the operator
+
+- Move the *Preview* slider at the top to test the blendshape.
+- Press the *Recalculate Normals* button to test the blendshape with proper shading. This is slower, so turn it off if you are not testing your materials.
+
 ### Advanced settings
 
 #### Configure the Displacement over %
@@ -98,3 +99,9 @@ As easy tweak you can try is to edit the *Surface Curve Response*, and tilt the 
 <video controls muted width="816">
     <source src={require('../img/XbNrbYjAKk.mp4').default}/>
 </video>
+
+#### Recalculate Normals
+
+Normals will be automatically recalculated for this blendshape.
+
+In general, you should recalculate normals. If you have any reason not to, check *Do Not Recalculate Normals* to disable it.

@@ -1,9 +1,5 @@
 ﻿# Translate Rotate Scale (TRS)
 
-:::danger
-This tool is currently not available, and this documentation is currently being written.
-:::
-
 The *Starmesh Op. Translate Rotate Scale (TRS)* component creates a blendshape that translates, rotates, and scales affected vertices
 from one point to another.
 
@@ -52,5 +48,10 @@ You can add selectors as children of this GameObject.
 
 ### Advanced settings
 
+#### Recalculate Normals
+
+Normals will be automatically recalculated for this blendshape.
+
+In general, you should recalculate normals, but there are a few exceptions to consider:
 - If your blendshape is a conflict prevention blendshape, check *Do Not Recalculate Normals*.
 - If your blendshape is a face expression, decide if you want to check *Do Not Recalculate Normals* by previewing your avatar with the *Recalculate Normals* button at the top.
