@@ -10,7 +10,7 @@ Specify which meshes will be affected.
 - **Skinned Mesh Renderers**: Select SkinnedMeshRenderer components.
 - **Active Blendshapes**: During the calculations, these blendshapes will be emulated to be active as part of the operations.
 
-<video controls muted>
+<video controls muted width="816">
     <source src={require('./img/v66A6bxugo.mp4').default}/>
 </video>
 
@@ -26,7 +26,7 @@ You can match bones by transform, or by object name. Matching by object name can
 - **Object Names**: Choose the name of the bone transforms that you want to affect.
 - **Include Child Bones**: Also includes all child bones.
 
-<video controls muted>
+<video controls muted width="816">
     <source src={require('./img/SQzLrkRyb2.mp4').default}/>
 </video>
 
@@ -39,8 +39,23 @@ Reduces the current selection so that only vertices within a radius around a poi
 - **Curve**: The normalized distance will be remapped to this curve.
 - **Root Transform**: *(Optional)* Choose a transform as the point to sample the position from.
 
-<video controls muted>
+The magenta line shows the halfway point. The faint pink line shows the maximum distance.
+
+<video controls muted width="816">
     <source src={require('./img/oiUmCmWHPk.mp4').default}/>
+</video>
+
+### Curve
+
+Selectors like *Select Point Radius* and *Select Line Radius* have a curve setting.
+
+The curve defines how much a vertex is going to be influenced by the operator over the specified distance.
+By changing the shape of the curve, you can make that influence stronger or weaker.
+
+The yellow line shows the threshold where vertices will be influenced by at least 50%].
+
+<video controls muted width="816">
+    <source src={require('./img/U7FXb8wgEL.mp4').default}/>
 </video>
 
 ## Select Line Radius
@@ -60,7 +75,11 @@ Reduces the current selection so that only vertices in proximity to a line will 
 Vertices between A and B will use a proportion of Selection Curve A and Selection Curve B,
 based on the projection of that vertex on that line.
 
-<video controls muted>
+The magenta line shows the halfway point. The faint pink line shows the maximum distance.
+
+If [you redefine the curves](#curve), the yellow line shows the threshold where vertices will be influenced by at least 50%.
+
+<video controls muted width="816">
     <source src={require('./img/zHCaHEnKu3.mp4').default}/>
 </video>
 
