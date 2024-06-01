@@ -1,7 +1,10 @@
-﻿import {HaiTags} from "/src/components/HaiTags";
+﻿---
+sidebar_position: 5
+---
+import {HaiTags} from "/src/components/HaiTags";
 import {HaiTag} from "/src/components/HaiTag";
 
-# Examples
+# Integration
 
 :::danger
 This documentation is currently being written.

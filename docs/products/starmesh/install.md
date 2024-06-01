@@ -1,5 +1,5 @@
 ﻿---
-sidebar_position: -1
+sidebar_position: 1
 ---
 import {HaiTags} from "/src/components/HaiTags";
 import {HaiTag} from "/src/components/HaiTag";
