@@ -5,7 +5,7 @@
 <meta name="generator" content="Docusaurus v3.2.1">
 <title data-rh="true">Selectors | Haï~</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://docs.hai-vr.dev/img/hai-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://docs.hai-vr.dev/img/hai-social-card.jpg"><meta data-rh="true" property="og:url" content="https://docs.hai-vr.dev/docs/products/starmesh/selectors"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Selectors | Haï~"><meta data-rh="true" name="description" content="This tool is currently not available, and this documentation is currently being written."><meta data-rh="true" property="og:description" content="This tool is currently not available, and this documentation is currently being written."><link data-rh="true" rel="icon" href="/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://docs.hai-vr.dev/docs/products/starmesh/selectors"><link data-rh="true" rel="alternate" href="https://docs.hai-vr.dev/docs/products/starmesh/selectors" hreflang="en"><link data-rh="true" rel="alternate" href="https://docs.hai-vr.dev/docs/products/starmesh/selectors" hreflang="x-default"><link rel="alternate" type="application/rss+xml" href="/updates/rss.xml" title="Haï~ RSS Feed">
 <link rel="alternate" type="application/atom+xml" href="/updates/atom.xml" title="Haï~ Atom Feed"><link rel="stylesheet" href="/assets/css/styles.3a7c99e2.css">
-<script src="/assets/js/runtime~main.16d2bd4f.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.1ca17f29.js" defer="defer"></script>
 <script src="/assets/js/main.cae9b504.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -17,15 +17,17 @@
 <li><strong>Skinned Mesh Renderers</strong>: Select SkinnedMeshRenderer components.</li>
 <li><strong>Active Blendshapes</strong>: During the calculations, these blendshapes will be emulated to be active as part of the operations.</li>
 </ul>
+<video controls="" muted=""><source src="/assets/medias/v66A6bxugo-8b9c029f95f21a66f0c83380e2c60ccc.mp4"></video>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="select-bones">Select Bones<a href="#select-bones" class="hash-link" aria-label="Direct link to Select Bones" title="Direct link to Select Bones">​</a></h2>
 <p>Reduces the current selection so that only vertices weights to the specified bones will be affected.</p>
 <p>The weight is the sum of all bones that match.</p>
-<p>You can match bones by transform, or by object name.</p>
+<p>You can match bones by transform, or by object name. Matching by object name can be useful if you want to affect bones across different hierarchies.</p>
 <ul>
 <li><strong>Bones</strong>: Select the bone transforms that you want to affect.</li>
 <li><strong>Object Names</strong>: Choose the name of the bone transforms that you want to affect.</li>
 <li><strong>Include Child Bones</strong>: Also includes all child bones.</li>
 </ul>
+<video controls="" muted=""><source src="/assets/medias/SQzLrkRyb2-673193c087f8ae19505c69215bcaf045.mp4"></video>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="select-point-radius">Select Point Radius<a href="#select-point-radius" class="hash-link" aria-label="Direct link to Select Point Radius" title="Direct link to Select Point Radius">​</a></h2>
 <p>Reduces the current selection so that only vertices within a radius around a point will be selected.</p>
 <ul>
@@ -34,6 +36,7 @@
 <li><strong>Curve</strong>: The normalized distance will be remapped to this curve.</li>
 <li><strong>Root Transform</strong>: <em>(Optional)</em> Choose a transform as the point to sample the position from.</li>
 </ul>
+<video controls="" muted=""><source src="/assets/medias/oiUmCmWHPk-618891c3e2d50ee951553fa040e95bd9.mp4"></video>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="select-line-radius">Select Line Radius<a href="#select-line-radius" class="hash-link" aria-label="Direct link to Select Line Radius" title="Direct link to Select Line Radius">​</a></h2>
 <p>Reduces the current selection so that only vertices in proximity to a line will be selected.</p>
 <ul>
@@ -49,6 +52,7 @@
 </ul>
 <p>Vertices between A and B will use a proportion of Selection Curve A and Selection Curve B,
 based on the projection of that vertex on that line.</p>
+<video controls="" muted=""><source src="/assets/medias/zHCaHEnKu3-ccb5170de9c8dacfb12434b8caef7736.mp4"></video>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="select-blendshapes">Select Blendshapes<a href="#select-blendshapes" class="hash-link" aria-label="Direct link to Select Blendshapes" title="Direct link to Select Blendshapes">​</a></h2>
 <p>Reduces the current selection so that vertices moved by a blendshape will be selected.</p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="select-connected-polygons">Select Connected Polygons<a href="#select-connected-polygons" class="hash-link" aria-label="Direct link to Select Connected Polygons" title="Direct link to Select Connected Polygons">​</a></h2>
