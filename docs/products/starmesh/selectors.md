@@ -14,17 +14,25 @@ Specify which meshes will be affected.
 - **Skinned Mesh Renderers**: Select SkinnedMeshRenderer components.
 - **Active Blendshapes**: During the calculations, these blendshapes will be emulated to be active as part of the operations.
 
+<video controls muted>
+    <source src={require('./img/v66A6bxugo.mp4').default}/>
+</video>
+
 ## Select Bones
 
 Reduces the current selection so that only vertices weights to the specified bones will be affected.
 
 The weight is the sum of all bones that match.
 
-You can match bones by transform, or by object name.
+You can match bones by transform, or by object name. Matching by object name can be useful if you want to affect bones across different hierarchies.
 
 - **Bones**: Select the bone transforms that you want to affect.
 - **Object Names**: Choose the name of the bone transforms that you want to affect.
 - **Include Child Bones**: Also includes all child bones.
+
+<video controls muted>
+    <source src={require('./img/SQzLrkRyb2.mp4').default}/>
+</video>
 
 ## Select Point Radius
 
@@ -34,6 +42,10 @@ Reduces the current selection so that only vertices within a radius around a poi
 - **Distance**: The radius to the center.
 - **Curve**: The normalized distance will be remapped to this curve.
 - **Root Transform**: *(Optional)* Choose a transform as the point to sample the position from.
+
+<video controls muted>
+    <source src={require('./img/oiUmCmWHPk.mp4').default}/>
+</video>
 
 ## Select Line Radius
 
@@ -51,6 +63,10 @@ Reduces the current selection so that only vertices in proximity to a line will 
 
 Vertices between A and B will use a proportion of Selection Curve A and Selection Curve B,
 based on the projection of that vertex on that line.
+
+<video controls muted>
+    <source src={require('./img/zHCaHEnKu3.mp4').default}/>
+</video>
 
 ## Select Blendshapes
 
