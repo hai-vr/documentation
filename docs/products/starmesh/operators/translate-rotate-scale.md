@@ -27,20 +27,22 @@ You can add selectors as children of this GameObject.
 ### Configure the operator
 
 #### Configure the blendshape
+
 - Choose a name for the generated blendshape in the *Shape Name*.
 - The *Shape Default Weight* setting is the default value of the blendshape on your SkinnedMeshRenderer component after it is created.
   - If you are going to use that blendshape for scripts or animations, leave the *Shape Default Weight* to 0.
   - If you are not going to use that blendshape in any scripts nor animations, set the *Shape Default Weight* to 100.
 
 #### Configure the transformation
+
 - Make sure you have gizmos enabled in your scene.
-- In your scene, move the origin gizmo to the starting position.
+- In your scene, move the **Origin** gizmo to the starting position.
   - If you use a *Starmesh Select Point Radius* without an offset, you can set the *Origin Transform* instead to be that *Select Point Radius component*,
     so that the starting point is the same.
 <video controls width="816" autostart="false">
     <source src={require('../img/D7ZTv8kgch.mp4').default}/>
 </video>
-- In your scene, move and rotate the destination gizmo to the ending position.
+- In your scene, move and rotate the **Destination** gizmo to the ending position.
 - Keep the *Destination Scale* as it is, or change it.
 
 ### Test the operator
