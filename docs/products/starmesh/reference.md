@@ -27,6 +27,7 @@ Operator components lets you modify vertices affected by the specified Selector 
 These components create a blendshape.
 - **[Translate Rotate Scale](./operators/translate-rotate-scale)** creates a blendshape that pulls the affected vertices from one point and orientation to another. (🌶️)
 - **[Compressive Deform](./operators/compressive-deform)** emulates the effect of a flat surface being compressed against that object. (🌶️🌶️)
+- **[Ripple Wave](./operators/ripple-wave)** emulates the effect of a wave ripple traversing the mesh. (🌶️🌶️)
 
 ### Bone operators
 
