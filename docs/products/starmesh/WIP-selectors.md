@@ -3,10 +3,6 @@ unlisted: true
 sidebar_position: 1
 ---
 
-## Select Blendshapes
-
-Reduces the current selection so that only vertices affected by a blendshape will be selected.
-
 ## Select Gradient
 
 Reduces the current selection so that vertices across a region will be subject to a gradient.

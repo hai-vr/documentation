@@ -3,10 +3,6 @@ sidebar_position: 4
 ---
 # Selectors
 
-:::danger
-This tool is currently not available, and this documentation is currently being written.
-:::
-
 ## Select Meshes
 
 Specify which meshes will be affected.

@@ -4,7 +4,7 @@ import {HaiTag} from "/src/components/HaiTag";
 # Examples
 
 :::danger
-This tool is currently not available, and this documentation is currently being written.
+This documentation is currently being written.
 :::
 
 Starmesh does only one thing: it creates blendshapes and bones on your avatar, reducing the cost of experimentation.

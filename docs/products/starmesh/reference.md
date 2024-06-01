@@ -4,7 +4,7 @@ sidebar_position: 2
 # Reference manual
 
 :::danger
-This tool is currently not available, and this documentation is currently being written.
+This documentation is currently being written.
 :::
 
 *Starmesh* is a set of non-destructive mesh deformation tools that lets you iterate quickly
@@ -49,11 +49,17 @@ These components create a blendshape.
 
 ### Bone operators
 
-These components create or edits bones.
+These components create or edit bones.
 - **[Paint New Bone](./operators/paint-new-bone)** creates a new bone, and repaints as many meshes of your choosing to that bone. (🌶️)
 
-[//]: # ()
 [//]: # (### Bake operators)
+
+[//]: # ()
+[//]: # (:::danger)
+
+[//]: # (These components are not currently available.)
+
+[//]: # (:::)
 
 [//]: # ()
 [//]: # (These components edit vertices, but aren't related to blendshapes or bones.)

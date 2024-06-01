@@ -14,5 +14,5 @@ import {HaiTag} from "/src/components/HaiTag";
 on avatar gimmicks.
 
 :::danger
-This tool is currently not available, and this documentation is currently being written.
+This documentation is currently being written.
 :::
