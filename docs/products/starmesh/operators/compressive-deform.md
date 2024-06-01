@@ -104,4 +104,4 @@ As easy tweak you can try is to edit the *Surface Curve Response*, and tilt the 
 
 Normals will be automatically recalculated for this blendshape.
 
-In general, you should recalculate normals. If you have any reason not to, check *Do Not Recalculate Normals* to disable it.
+[//]: # (In general, you should recalculate normals. If you have any reason not to, check *Do Not Recalculate Normals* to disable it.)
