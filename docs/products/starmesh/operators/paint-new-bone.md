@@ -4,6 +4,10 @@ The *Starmesh Op. Paint New Bone* component creates a new bone, and repaints as 
 
 By default, the component will unpaint the vertices from other bones based on the weight of each vertex in that selection.
 
+<video controls muted width="816">
+    <source src={require('../img/TGeXxK1Tnr.mp4').default}/>
+</video>
+
 ## How to use
 
 ### Create the operator and selectors
