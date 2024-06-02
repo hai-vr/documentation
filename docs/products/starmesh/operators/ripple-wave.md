@@ -38,8 +38,8 @@ The Lateral deformation section configures how the vertices moves laterally away
 
 - Make sure you have gizmos enabled in your scene.
 - To preview the effect, you should move the *Preview* slider to any value between 0 and 100, but neither 0 nor 100.
-- In your scene, move the **Origin** gizmo inside your mesh, where the ripple will start.
-  - Don't put it on the surface of your mesh, it has to be inside.
+- In your scene, move the **Origin** gizmo inside your mesh, or above the surface of the mesh, where the ripple will start.
+  - Don't put it exactly the surface of your mesh, it has to be a certain distance from the surface, so that the ripple has a direction.
 - Increase the **Size** gizmo so that it is right above the surface that will be compressed.
 - Increase or decrease the *Lateral Margin*. This value changes how far away from the compression surface vertices will be affected.
 - Increase or decrease the *Lateral Power*. This value changes how much the vertices will move laterally as the compression progresses.
