@@ -37,14 +37,21 @@ You can add selectors as children of this GameObject.
 The Lateral deformation section configures how the vertices moves laterally away from the origin.
 
 - Make sure you have gizmos enabled in your scene.
-- To preview the effect, you should move the *Preview* slider to any value between 0 and 100, but neither 0 nor 100.
+- To preview the effect, you should move the *Preview* slider to any value between 0 and 100. The value of 100 is meant to show nothing, since it's the end of the ripple.
 - In your scene, move the **Origin** gizmo inside your mesh, or above the surface of the mesh, where the ripple will start.
   - Don't put it exactly the surface of your mesh, it has to be a certain distance from the surface, so that the ripple has a direction.
 - Increase the **Size** gizmo so that it is right above the surface that will be compressed.
 - Increase or decrease the *Lateral Margin*. This value changes how far away from the compression surface vertices will be affected.
-- Increase or decrease the *Lateral Power*. This value changes how much the vertices will move laterally as the compression progresses.
+- Increase or decrease the *Lateral Power*. This value changes the amplitude of the vertices moving laterally.
 
 ### Test the operator
 
 - Move the *Preview* slider at the top to test the blendshape.
 - Press the *Recalculate Normals* button to test the blendshape with proper shading. This is slower, so turn it off if you are not testing your materials.
+
+### Advanced settings
+
+#### Advanced Lateral deformation
+
+- The *Lateral Curve* defines how the wave gains and loses amplitude for any given vertex.
+- The *Lateral Dissipation* defines how the wave loses amplitude as it progresses throughout the mesh until the maximum *Size* is reached.
