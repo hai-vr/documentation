@@ -52,7 +52,7 @@ Selectors like *Select Point Radius* and *Select Line Radius* have a curve setti
 The curve defines how much a vertex is going to be influenced by the operator over the specified distance.
 By changing the shape of the curve, you can make that influence stronger or weaker.
 
-The yellow line shows the threshold where vertices will be influenced by at least 50%].
+The yellow line shows the threshold where vertices will be influenced by at least 50%.
 
 <video controls muted width="816">
     <source src={require('./img/U7FXb8wgEL.mp4').default}/>
