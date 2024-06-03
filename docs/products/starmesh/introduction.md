@@ -3,6 +3,9 @@ sidebar_position: 1
 ---
 # Introduction
 
+:::danger
+This documentation is currently being written.
+:::
 
 These components only work on a properly set up avatar for the app of your choice.
 If you're creating an avatar for VRChat, you will need a VRCAvatarDescriptor.
@@ -24,3 +27,7 @@ Starmesh has components called **Operators**, which perform the mesh deformation
     - Select the object that contains the operator.
     - Change the origin.
     - Change the destination.
+
+:::danger
+This documentation page is incomplete.
+:::
