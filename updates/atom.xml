@@ -2,11 +2,21 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://docs.hai-vr.dev/updates</id>
     <title>Haï~ Blog</title>
-    <updated>2024-04-28T00:00:00.000Z</updated>
+    <updated>2024-06-03T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://docs.hai-vr.dev/updates"/>
     <subtitle>Haï~ Blog</subtitle>
     <icon>https://docs.hai-vr.dev/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[✨ Vixen V1.2.0]]></title>
+        <id>https://docs.hai-vr.dev/updates/2024/06/03/p0</id>
+        <link href="https://docs.hai-vr.dev/updates/2024/06/03/p0"/>
+        <updated>2024-06-03T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[You can now add arbitrary blendshape properties on a SkinnedMeshRenderer, even if they don't exist in Edit mode.]]></summary>
+        <content type="html"><![CDATA[<p>You can now add arbitrary blendshape properties on a SkinnedMeshRenderer, even if they don't exist in Edit mode.</p>
+<p>This feature was added to support the upcoming release of <a href="https://docs.hai-vr.dev/docs/products/starmesh">Starmesh</a>.</p>
+<video controls=""><source src="/assets/medias/2024-06-03-p0-Dh94zbhLJh-bcda0311ce760362e037ba0cfd78d4cf.mp4"></video>]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[⚙️ Prefabulous Avatar V1.11.2]]></title>
         <id>https://docs.hai-vr.dev/updates/2024/04/28/p0</id>
@@ -432,15 +442,5 @@ or <a href="https://github.com/anatawa12/AvatarOptimizer" target="_blank" rel="n
 <p>Recalculate Normals should now properly work on avatars that were not posed like the model, or had a different orientation than the model.</p>
 <p>🔍 <a href="https://docs.hai-vr.dev/docs/changelogs/prefabulous#180">View changelog</a></p>
 <p>🗒️ <a href="https://docs.hai-vr.dev/docs/products/prefabulous/universal/recalculate-normals">Open documentation</a></p>]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[✨ FaceTra Shape Creator V0.6.0]]></title>
-        <id>https://docs.hai-vr.dev/updates/2024/01/18/p0</id>
-        <link href="https://docs.hai-vr.dev/updates/2024/01/18/p0"/>
-        <updated>2024-01-18T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[The tool now supports the reuse of existing face tracking blendshapes to build new shapes.]]></summary>
-        <content type="html"><![CDATA[<p>The tool now supports the reuse of existing face tracking blendshapes to build new shapes.</p>
-<p>🔍 <a href="https://docs.hai-vr.dev/docs/changelogs/facetra-shape-creator#060-2024-01-18-0056">View changelog</a></p>
-<p>🗒️ <a href="https://docs.hai-vr.dev/docs/products/facetra-shape-creator">Open documentation</a></p>]]></content>
     </entry>
 </feed>
