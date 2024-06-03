@@ -1,0 +1,28 @@
+﻿---
+title: Starmesh
+---
+
+## 1.2.0
+
+- Added buttons to create a temporary animation clip. This animation clip is not stored anywhere.
+  - You should copy the properties from that temporary animation clip to your own (real) animation clips.
+
+## 1.1.0
+
+- Added [Starmesh Op. Ripple Wave](/docs/products/starmesh/operators/ripple-wave) component.
+
+## 1.0.2
+
+- Fix a possible compilation error caused by the use of `AnimationUtility` in a component.
+
+## 1.0.2
+
+- Fix an issue with meshes that were exported from Maya or with different coordinate spaces.
+
+## 1.0.1
+
+- Fix an error with the tool so that it no longer requires Prefabulous Universal in the project.
+
+## 1.0.0
+
+- Soft release.

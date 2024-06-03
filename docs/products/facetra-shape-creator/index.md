@@ -28,6 +28,10 @@ The tool is available to [Patreon supporters](https://www.patreon.com/vr_hai), *
 
 If you use this tool, it is highly recommended that you join the [Discord server](https://discord.com/invite/58fWAUTYF8) in order to stay up to date and get support as this tool will be rough to use at first.
 
+- For users using Japanese currency:
+    - Patreonをご利用になりたくないサポーターの方は、同じコンテンツにアクセスするために[pixivFANBOX (https://hai-vr.fanbox.cc/)](https://hai-vr.fanbox.cc/)でサポートを選択できます。
+        - ソフトウェアへのアクセスの最低ティアは1000JPY 🌙⭐ です。
+
 ## Examples
 
 The tool has been designed primarily for anime-like avatars.
