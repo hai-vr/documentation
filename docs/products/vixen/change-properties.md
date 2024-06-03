@@ -68,6 +68,17 @@ The Custom feature was added in V1.1.0.
   - When multiple objects are used (i.e. selecting multiple objects, or recursive selection), the value in the Scene may be different for each object (i.e. different outline width for each object).
     - They will effectively be overriden by the default value, which makes this different from **"S"** mode.
 
+## Arbitrary blendshapes
+
+Some plugins may generate blendshapes only when the avatar is being built.
+
+When you are editing the properties of a SkinnedMeshRenderer, the field at the bottom of that panel lets you add arbitrary blendshape names,
+even if they don't exist in Edit mode.
+
+:::warning
+The feature was added in V1.2.0.
+:::
+
 ## Property types
 
 ### Swap materials
