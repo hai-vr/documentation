@@ -2,6 +2,11 @@
 title: Vixen
 ---
 
+## 1.2.0
+
+- You can now add arbitrary blendshape properties on a SkinnedMeshRenderer, even if they don't exist in Edit mode.
+  - *This feature was added to support the upcoming release of [Starmesh](/docs/products/starmesh).*
+
 ## 1.1.0
 
 ### Custom opposite values in Properties
