@@ -21,6 +21,7 @@ interface Props {
     requiresResonite: boolean;
     requiresVRM: boolean;
     requiresSteamVR: boolean;
+    requiresChilloutVR: boolean;
     compatibleWithVSFAvatar: boolean;
     compatibleWithVSeeFace: boolean;
     compatibleWithVNyan: boolean;
@@ -37,6 +38,7 @@ export function HaiTag({
                            notVRChat,
                            requiresResonite,
                            requiresSteamVR,
+                           requiresChilloutVR,
                            requiresVRM,
                            compatibleWithVSFAvatar,
                            compatibleWithVSeeFace,
@@ -52,6 +54,7 @@ export function HaiTag({
                 {requiresResonite ? <div className={clsx(styles.hai_tag, styles.hai_tag_requires_resonite)}>⚡ Requires Resonite</div> : ''}
                 {requiresVRM ? <div className={clsx(styles.hai_tag, styles.hai_tag_requires_vrm)}>📹 Requires VRM</div> : ''}
                 {requiresSteamVR ? <div className={clsx(styles.hai_tag, styles.hai_tag_requires_steamvr)}>Requires SteamVR</div> : ''}
+                {requiresChilloutVR ? <div className={clsx(styles.hai_tag, styles.hai_tag_requires_chilloutvr)}>🌆 Requires ChilloutVR</div> : ''}
                 {compatibleWithVSFAvatar ? <div
                     className={clsx(styles.hai_tag, styles.hai_tag_compatible_with_vsfavatar)}>{div}VSFAvatar</div> : ''}
                 {compatibleWithVSeeFace ? <div className={clsx(styles.hai_tag, styles.hai_tag_compatible_with_vsfavatar)}>{div}VSeeFace</div> : ''}

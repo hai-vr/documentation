@@ -1,6 +1,9 @@
 ﻿---
 sidebar_position: 1
 ---
+import {HaiTags} from "/src/components/HaiTags";
+import {HaiTag} from "/src/components/HaiTag";
+
 # Introduction
 
 :::danger
@@ -8,7 +11,14 @@ This documentation is currently being written.
 :::
 
 These components only work on a properly set up avatar for the app of your choice.
-If you're creating an avatar for VRChat, you will need a VRCAvatarDescriptor.
+
+:::info[**Platform-specific considerations**]
+<HaiTag requiresVRChat={true} /> If you're creating an avatar for VRChat,
+make sure your avatar already has a properly configured [VRC Avatar Descriptor](https://creators.vrchat.com/avatars/creating-your-first-avatar#step-5---adding-an-avatar-descriptor).
+
+<HaiTag requiresChilloutVR={true} /> If you're creating an avatar for ChilloutVR,
+make sure your avatar already has a properly configured [CVR Avatar](https://developers.abinteractive.net/cck/components/avatar/).
+:::
 
 Starmesh has components called **Operators**, which perform the mesh deformations. For now, we will add the simplest operator:
 - Create a new GameObject on your avatar, and give it the name of your choice.

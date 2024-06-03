@@ -36,6 +36,12 @@ This requires the use of the VRChat Creator Companion in order to automatically 
 - In VCC, add the **"Non-Destructive Modular Framework"** package to your project.
 - Open the downloaded archive and install the .unitypackage in your project.
 
+## Install for ChilloutVR
+
+<HaiTags>
+<HaiTag requiresChilloutVR={true} />
+</HaiTags>
+
 ## Install for other apps
 
 <HaiTags>
