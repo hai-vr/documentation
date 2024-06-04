@@ -34,13 +34,83 @@ This requires the use of the VRChat Creator Companion in order to automatically 
 
 - Add **[Modular Avatar listing](https://modular-avatar.nadena.dev/)** by clicking on *Download (using VCC).*
 - In VCC, add the **"Non-Destructive Modular Framework"** package to your project.
-- Open the downloaded archive and install the .unitypackage in your project.
+- Open the downloaded archive and install the .unitypackage in your VRChat project.
 
 ## Install for ChilloutVR
 
 <HaiTags>
 <HaiTag requiresChilloutVR={true} />
 </HaiTags>
+
+:::danger
+Proper support for ChilloutVR is **not ready**, but it is an active work in progress. Stay tuned!
+:::
+
+To use this tool in ChilloutVR, you need to have [Chillaxins](/docs/products/chillaxins) in your project first.
+
+You have two ways to install Chillaxins and Starmesh in a ChilloutVR project:
+- Either install files by hand, or
+- Use VCC or ALCOM. ALCOM is an open-source alternate implementation of VCC capabilities.
+
+:::tip
+The ALCOM and VCC package managers can be used in non-VRChat projects, which could be useful if you want to use liltoon,
+or other packages in non-VRChat projects.
+
+*If you're interested in using VCC, but you don't play VRChat, strongly consider using the [open-source version of VCC called ALCOM](/docs/products/vcc#alcom), which does not require you to create a VRChat account
+as part of their Materials License Agreement (and therefore does not require you to accept the VRChat Terms of Use).*
+:::
+
+### Using files
+
+<HaiTags>
+<HaiTag requiresChilloutVR={true} />
+</HaiTags>
+
+:::danger
+This documentation is a work in progress.
+:::
+
+- Install **[Chillaxins](/docs/products/chillaxins)**.
+- Download the **[NDMF](https://github.com/bdunderscore/ndmf/releases/tag/1.4.1)** .zip file.
+  - Install the downloaded package by going to *Window > Package Manager* in your ChilloutVR project.
+  - In the Package Manager window, press the *+* button at the top left, select *Add package from disk...*, and locate that .zip file.
+- Open the downloaded archive from Patreon/pixivFANBOX and install the .unitypackage in your ChilloutVR project.
+
+### Using ALCOM/VCC
+
+<HaiTags>
+<HaiTag requiresChilloutVR={true} />
+</HaiTags>
+
+:::danger
+This documentation is a work in progress.
+:::
+
+You need to add **two** listings:
+
+- Add the Modular Avatar listing:
+  - If you use ALCOM, by adding `https://vpm.nadena.dev/vpm.json` in the VPM Repositories,
+  - If you use VCC, by going to **[Modular Avatar listing](https://modular-avatar.nadena.dev/)** and then clicking on *Download (using VCC).*
+- also **[install Haï~'s listing](/docs/products/vcc)**.
+
+Then:
+- In ALCOM/VCC, add the **"Haï ~ Chillaxins"** package to your project.
+- In ALCOM/VCC, add the **"Non-Destructive Modular Framework"** package to your project.
+- Open the downloaded archive from Patreon/pixivFANBOX and install the .unitypackage in your ChilloutVR project.
+
+## Install for VNyan/Warudo
+
+<HaiTags>
+<HaiTag compatibleWithVNyan={true} compatibleWithWarudo={true} />
+</HaiTags>
+
+:::danger
+This documentation is a work in progress.
+:::
+
+:::danger
+This tool is not compatible with VSeeFace, because VSeeFace requires Unity 2019, which adds complications.
+:::
 
 ## Install for other apps
 
