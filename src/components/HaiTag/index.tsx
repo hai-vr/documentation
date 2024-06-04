@@ -48,13 +48,14 @@ export function HaiTag({
                             short
 }: Props): JSX.Element {
     let div = short ? <></> : <>Compatible with </>;
+    let div2 = short ? <></> : <>Requires </>;
     return (
         <span>
-                {requiresVRChat ? <div className={clsx(styles.hai_tag, styles.hai_tag_requires_vrchat)}>💬 Requires VRChat</div> : ''}
-                {requiresResonite ? <div className={clsx(styles.hai_tag, styles.hai_tag_requires_resonite)}>⚡ Requires Resonite</div> : ''}
-                {requiresVRM ? <div className={clsx(styles.hai_tag, styles.hai_tag_requires_vrm)}>📹 Requires VRM</div> : ''}
-                {requiresSteamVR ? <div className={clsx(styles.hai_tag, styles.hai_tag_requires_steamvr)}>Requires SteamVR</div> : ''}
-                {requiresChilloutVR ? <div className={clsx(styles.hai_tag, styles.hai_tag_requires_chilloutvr)}>🌆 Requires ChilloutVR</div> : ''}
+                {requiresVRChat ? <div className={clsx(styles.hai_tag, styles.hai_tag_requires_vrchat)}>💬 {div2}VRChat</div> : ''}
+                {requiresResonite ? <div className={clsx(styles.hai_tag, styles.hai_tag_requires_resonite)}>⚡ {div2}Resonite</div> : ''}
+                {requiresVRM ? <div className={clsx(styles.hai_tag, styles.hai_tag_requires_vrm)}>📹 {div2}VRM</div> : ''}
+                {requiresSteamVR ? <div className={clsx(styles.hai_tag, styles.hai_tag_requires_steamvr)}>{div2}SteamVR</div> : ''}
+                {requiresChilloutVR ? <div className={clsx(styles.hai_tag, styles.hai_tag_requires_chilloutvr)}>🌆 {div2}ChilloutVR</div> : ''}
                 {compatibleWithVSFAvatar ? <div
                     className={clsx(styles.hai_tag, styles.hai_tag_compatible_with_vsfavatar)}>{div}VSFAvatar</div> : ''}
                 {compatibleWithVSeeFace ? <div className={clsx(styles.hai_tag, styles.hai_tag_compatible_with_vsfavatar)}>{div}VSeeFace</div> : ''}

@@ -13,10 +13,10 @@ This documentation is currently being written.
 These components only work on a properly set up avatar for the app of your choice.
 
 :::info[**Platform-specific considerations**]
-<HaiTag requiresVRChat={true} /> If you're creating an avatar for VRChat,
+<HaiTag requiresVRChat={true} short={true} /> If you're creating an avatar for VRChat,
 make sure your avatar already has a properly configured [VRC Avatar Descriptor](https://creators.vrchat.com/avatars/creating-your-first-avatar#step-5---adding-an-avatar-descriptor).
 
-<HaiTag requiresChilloutVR={true} /> If you're creating an avatar for ChilloutVR,
+<HaiTag requiresChilloutVR={true} short={true} /> If you're creating an avatar for ChilloutVR,
 make sure your avatar already has a properly configured [CVR Avatar](https://developers.abinteractive.net/cck/components/avatar/).
 :::
 
