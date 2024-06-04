@@ -15,7 +15,7 @@ By default, the component will unpaint the vertices from other bones based on th
 
 ### Create the operator and selectors
 
-- Add a *Starmesh Op. Translate Rotate Scale (TRS)* component on a new GameObject in your avatar.
+- Add a *Starmesh Op. Paint New Bone* component on a new GameObject in your avatar.
 - In the selectors of this component, add a *Starmesh Select Meshes*, or choose one that you already have.
     - Configure the *Select Meshes* selector so that it affects the relevant meshes.
 - In the selectors of this component, add other selectors, for instance, a *Starmesh Select Point Radius*.
