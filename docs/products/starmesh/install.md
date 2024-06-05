@@ -79,7 +79,7 @@ To use this tool in ChilloutVR, you need to have [Chillaxins](/docs/products/chi
 - Install **[Chillaxins](/docs/products/chillaxins)**.
 - Download the **[NDMF](https://github.com/bdunderscore/ndmf/releases/tag/1.4.1)** .zip file.
   - Unzip it somewhere outside your project.
-  - Install the downloaded package by going to *Window > Package Manager* in your ChilloutVR project.
+  - In your ChilloutVR Unity project, go to *Window > Package Manager*.
   - In the Package Manager window, press the *+* button at the top left, select *Add package from disk...*
   - Locate the `package.json` file and select it.
 - Open the downloaded archive from Patreon/pixivFANBOX and install the .unitypackage in your ChilloutVR project.
