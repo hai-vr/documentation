@@ -87,7 +87,7 @@ To use this tool in ChilloutVR, you need to have [Chillaxins](/docs/products/chi
 - Reopen your Unity project.
 
 :::tip
-If you use the [ALCOM](/docs/products/vcc) package manager, you can add the following packages:
+If you use the [ALCOM](/docs/products/vcc) package manager, you can instead add the following packages:
 - *"Haï ~ Chillaxins"* package from **[our listing](/docs/products/vcc)**, and
 - *"Non-Destructive Modular Framework"* package from the **[Modular Avatar listing](https://modular-avatar.nadena.dev/)**.
   - `https://vpm.nadena.dev/vpm.json`
@@ -157,7 +157,7 @@ To use this tool in Warudo, you need to have [Chillaxins](/docs/products/chillax
 - To build your character mod, you will need to use the Denormalized Avatar Exporter UI rather than Warudo's own UI.
 
 :::tip
-If you use the [ALCOM](/docs/products/vcc) package manager, you can add the following packages:
+If you use the [ALCOM](/docs/products/vcc) package manager, you can instead add the following packages:
 - *"Haï ~ Chillaxins"* package from **[our listing](/docs/products/vcc)**, and
 - *"Haï ~ Denormalized Avatar Exporter"* package from **[our listing](/docs/products/vcc)**, and
 - *"Non-Destructive Modular Framework"* package from the **[Modular Avatar listing](https://modular-avatar.nadena.dev/)**.
