@@ -47,7 +47,8 @@ Many of these products can be installed using our VCC listing.
 | [Modular Avatar As Code](./products/animator-as-code/functions/modular-avatar)      | 📐 Unity Editor API   | 🗨️ VRChat only          | 🏫 MIT         |                                                      | ✅    |
 | **Patchers**                                                                        |                       |                          |                |                                                      |      |
 | [Auto-reset OSC config](./products/auto-reset-osc-config)                           | 🛠️ Unity Editor tool | 🗨️ VRChat only          | 🏫 MIT         |                                                      | ✅    |
-| [Denormalized Avatar Exporter](./products/denormalized-avatar-exporter)             | 🛠️ Unity Editor tool | 📹 VNyan and Warudo only | 🏫 MIT         |                                                      |      |
+| [Chillaxins](./products/chillaxins)                                                 | 🛠️ Unity Editor tool | 🌆 ChilloutVR and Warudo | 🏫 MIT         |                                                      | ✅    |
+| [Denormalized Avatar Exporter](./products/denormalized-avatar-exporter)             | 🛠️ Unity Editor tool | 📹 VNyan and Warudo      | 🏫 MIT         |                                                      | ✅    |
 | [Unity 2018 to 2019 Cloth Transfer](./products/cloth-transfer)                      | 🛠️ Unity Editor tool | 🌊 Any                   | 🌲 Unlicense   | [Booth](https://hai-vr.booth.pm/items/3136328)       |      |
 
 \* These downloads on Booth are not currently compatible with VCC.
