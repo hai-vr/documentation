@@ -6,12 +6,10 @@ import {HaiTag} from "/src/components/HaiTag";
 
 # Install
 
-:::warning
-This tool has not yet been tested without the VRChat SDK, but it does not require VRChat.
+:::tip
+This does not require VRChat to run. It has been tested to work on Unity 2021 and 2022, and should work on newer versions.
 
-It has been tested to work on Unity 2022, and should work on newer versions.
-
-Currently, NDMF is required.
+NDMF is required.
 :::
 
 ## Download
@@ -42,8 +40,10 @@ This requires the use of the VRChat Creator Companion in order to automatically 
 <HaiTag requiresChilloutVR={true} />
 </HaiTags>
 
-:::danger
-Proper support for ChilloutVR is **not ready**, but it is an active work in progress. Stay tuned!
+:::warning
+Support for ChilloutVR is new. You may encounter some issues.
+
+If you need help, please check out the [Discord server](/docs/other/discord).
 :::
 
 To use this tool in ChilloutVR, you need to have [Chillaxins](/docs/products/chillaxins) in your project first.
@@ -140,13 +140,15 @@ This tool is not compatible with VSeeFace, because VSeeFace requires Unity 2019,
 ## Install for other apps
 
 <HaiTags>
-<HaiTag notVRChat={true} />
+<HaiTag isUniversal={true} />
 </HaiTags>
 
-:::warning
-This tool has not yet been tested without the VRChat SDK, but it does not require VRChat.
+:::tip
+This does not require VRChat to run. It has been tested to work on Unity 2021 and 2022, and should work on newer versions.
 
-It has been tested to work on Unity 2022, and should work on newer versions.
+NDMF is required.
+:::
 
-Currently, NDMF is required.
+:::danger
+This documentation is a work in progress.
 :::
