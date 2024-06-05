@@ -2,6 +2,11 @@
 title: Starmesh
 ---
 
+## 1.2.1
+
+- Fix compilation errors happening in ChilloutVR projects.
+  - *VRChat users do not need to update from 1.2.0 to 1.2.1*.
+
 ## 1.2.0
 
 - Added buttons to create a temporary animation clip. This animation clip is not stored anywhere.
