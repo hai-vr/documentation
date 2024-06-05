@@ -14,10 +14,8 @@ These components only work on a properly set up avatar for the app of your choic
 
 :::info[**Platform-specific considerations**]
 <HaiTag requiresVRChat={true} short={true} /> If you're creating an avatar for VRChat,
-make sure your avatar already has a properly configured [VRC Avatar Descriptor](https://creators.vrchat.com/avatars/creating-your-first-avatar#step-5---adding-an-avatar-descriptor).
-
-<HaiTag requiresChilloutVR={true} short={true} /> If you're creating an avatar for ChilloutVR,
-make sure your avatar already has a properly configured [CVR Avatar](https://developers.abinteractive.net/cck/components/avatar/).
+make sure your avatar already has a properly configured [VRC Avatar Descriptor](https://creators.vrchat.com/avatars/creating-your-first-avatar#step-5---adding-an-avatar-descriptor). If you don't do this, you may not be able to test
+the results of the Starmesh operators in Play mode.
 :::
 
 Starmesh has components called **Operators**, which perform the mesh deformations. For now, we will add the simplest operator:
@@ -37,6 +35,7 @@ Starmesh has components called **Operators**, which perform the mesh deformation
     - Select the object that contains the operator.
     - Change the origin.
     - Change the destination.
+    - Edit the blendshape name field.
 
 :::danger
 This documentation page is incomplete.

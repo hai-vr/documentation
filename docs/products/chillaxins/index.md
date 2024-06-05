@@ -37,11 +37,19 @@ If you need help, please check out the [Discord server](/docs/other/discord).
 If you use the [ALCOM](/docs/products/vcc) package manager, you can add the *Haï ~ Chillaxins* package from **[our listing](/docs/products/vcc)**.
 :::
 
+## What does this do?
+
+It prevents compilation errors due to missing programming libraries:
+- This includes the *System.Collections.Immutable* DLL, because *NDMF* uses it.
+- This creates a dependency on *Unity Burst* 1.6.6 for Unity 2021, because *Modular Avatar* uses it.
+
+On ChilloutVR projects, it hooks into the avatar build process:
+- If the project is a CCK project *and* NDMF is installed, when you try to upload an avatar using ChilloutVR CCK interface,
+  it will execute the non-destructive avatar processors.
+
 ## About the DLL file
 
-This tool contains a DLL file because NDMF depends on a [programming library](https://learn.microsoft.com/en-us/dotnet/api/system.collections.immutable?view=net-8.0),
-which is not available in Unity by default.
-
-For convenience of installation, this DLL is included in Chillaxins.
+This tool contains a DLL file because NDMF depends on a [programming library](https://learn.microsoft.com/en-us/dotnet/api/system.collections.immutable?view=net-8.0)
+which is not available in Unity by default. For convenience of installation, this DLL is included in Chillaxins.
 
 If you're concerned about safety, you can [download the required DLL on your own from Microsoft NuGet](https://www.nuget.org/packages/System.Collections.Immutable/).
