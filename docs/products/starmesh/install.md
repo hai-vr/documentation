@@ -83,6 +83,8 @@ To use this tool in ChilloutVR, you need to have [Chillaxins](/docs/products/chi
   - In the Package Manager window, press the *+* button at the top left, select *Add package from disk...*
   - Locate the folder you unzipped, and inside that folder, select the `package.json` file.
 - Open the downloaded archive from Patreon/pixivFANBOX and install the .unitypackage in your ChilloutVR project.
+- Close your Unity project.
+- Reopen your Unity project.
 
 [//]: # (### Using ALCOM/VCC)
 

@@ -1,7 +1,4 @@
-﻿---
-unlisted: true
----
-import {HaiTags} from "/src/components/HaiTags";
+﻿import {HaiTags} from "/src/components/HaiTags";
 import {HaiTag} from "/src/components/HaiTag";
 
 # Chillaxins
@@ -9,10 +6,6 @@ import {HaiTag} from "/src/components/HaiTag";
 <HaiTags>
 <HaiTag requiresChilloutVR={true} />
 </HaiTags>
-
-:::danger
-This tool is not currently available.
-:::
 
 *Chillaxins* is a Unity Editor tool for the [ChilloutVR CCK](https://developers.abinteractive.net/cck/) that lets you use other non-destructive tools based on the **[Non-Destructive Modular Framework](https://github.com/bdunderscore/ndmf)**.
 
@@ -26,13 +19,11 @@ such as *[Modular Avatar Merge Armature](https://modular-avatar.nadena.dev/docs/
 
 ## Install
 
-:::danger
-This tool is not currently available.
-:::
-
 - Download the **[.unitypackage file (Direct Download)](https://github.com/hai-vr/chillaxins/releases/download/1.0.0/dev.hai-vr.chillaxins-1.0.0.unitypackage)** from GitHub.
   - Current version is V1.0.0
 - Install it in your ChilloutVR project.
+- Close your Unity project.
+- Reopen your Unity project.
 
 :::info
 **This tool is bundled with DLLs!**
