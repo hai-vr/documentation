@@ -10,7 +10,7 @@ import {HaiTag} from "/src/components/HaiTag";
 This page only applies to platforms and apps which rely on Animator systems,
 such as <HaiTag requiresVRChat={true} short={true} /> and possibly <HaiTag requiresChilloutVR={true} short={true} />.
 
-If you are a platform that does not use animations (i.e. scripting or node systems), this page does not apply to you.
+If you are targeting a platform that does not use animations (i.e. scripting or node systems), this page does not apply to you.
 :::
 
 Blendshapes are only created when entering Play mode or when the avatar is being exported.
