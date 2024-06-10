@@ -1,6 +1,5 @@
 ﻿---
 title: Warudo
-unlisted: true
 ---
 # Warudo Character Mods
 import {HaiTags} from "/src/components/HaiTags";
