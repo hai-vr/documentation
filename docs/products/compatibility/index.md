@@ -1,6 +1,5 @@
 ﻿---
 sidebar_position: 3
-unlisted: true
 ---
 # 🌊 Non-VRChat uses
 import {HaiTags} from "/src/components/HaiTags";
@@ -23,6 +22,6 @@ In order to use these products on other apps or platforms, you may need addition
 Normally, using the *VRChat Creator Companion* (VCC) requires you to enter into the *VRChat Terms of Use* due to the *VRChat Materials License Agreement*
 being presented to you during the installation process of VCC.
 
-If you are trying to use products for use in non-VRChat applications, **consider using [ALCOM](/docs/products/vcc#alcom)**,
+If you are trying to use products in non-VRChat applications, **consider using [ALCOM](/docs/products/vcc#alcom)**,
 an open-source alternative to the *VRChat Creator Companion* which does not require you to accept the *VRChat Terms of Use*.
 :::

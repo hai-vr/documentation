@@ -1,10 +1,10 @@
 ﻿---
 title: ChilloutVR
-unlisted: true
 ---
-# ChilloutVR with Non-Destructive components
 import {HaiTags} from "/src/components/HaiTags";
 import {HaiTag} from "/src/components/HaiTag";
+
+# ChilloutVR with Non-Destructive components
 
 <HaiTags>
 <HaiTag requiresChilloutVR={true} />

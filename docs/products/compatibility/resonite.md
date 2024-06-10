@@ -1,10 +1,10 @@
 ﻿---
 title: Resonite
-unlisted: true
 ---
-# Resonite Meshes
 import {HaiTags} from "/src/components/HaiTags";
 import {HaiTag} from "/src/components/HaiTag";
+
+# Resonite Meshes
 
 <HaiTags>
 <HaiTag requiresResonite={true} />
