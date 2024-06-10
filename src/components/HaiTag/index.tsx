@@ -26,6 +26,7 @@ interface Props {
     compatibleWithVSeeFace: boolean;
     compatibleWithVNyan: boolean;
     compatibleWithWarudo: boolean;
+    compatibleWithBeatSaber: boolean;
     requiresWarudo: boolean;
     notVRChat: boolean;
     isUniversal: boolean;
@@ -43,6 +44,7 @@ export function HaiTag({
                            compatibleWithVSFAvatar,
                            compatibleWithVSeeFace,
                            compatibleWithWarudo,
+                           compatibleWithBeatSaber,
                            requiresWarudo,
                            compatibleWithVNyan,
                             short
@@ -61,6 +63,7 @@ export function HaiTag({
                 {compatibleWithVSeeFace ? <div className={clsx(styles.hai_tag, styles.hai_tag_compatible_with_vsfavatar)}>{div}VSeeFace</div> : ''}
                 {compatibleWithVNyan ? <div className={clsx(styles.hai_tag, styles.hai_tag_compatible_with_vnyan)}>{div}VNyan</div> : ''}
                 {compatibleWithWarudo ? <div className={clsx(styles.hai_tag, styles.hai_tag_compatible_with_warudo)}>{div}Warudo</div> : ''}
+                {compatibleWithBeatSaber ? <div className={clsx(styles.hai_tag, styles.hai_tag_compatible_with_beatsaber)}>{div}Beat Saber</div> : ''}
                 {requiresWarudo ? <div className={clsx(styles.hai_tag, styles.hai_tag_compatible_with_warudo)}>📹 Requires Warudo</div> : ''}
                 {isUniversal ? <div className={clsx(styles.hai_tag, styles.hai_tag_universal)}>🌊 Any Platform</div> : ''}
                 {notVRChat ? <div className={clsx(styles.hai_tag, styles.hai_tag_universal)}>🌊 Any Platform, except VRChat</div> : ''}

@@ -17,6 +17,7 @@ In order to use these products on other apps or platforms, you may need addition
 - Instructions for <HaiTag compatibleWithWarudo={true} short={true} />  Character mods [(pending)](./compatibility/warudo)
 - Instructions for <HaiTag compatibleWithVNyan={true} short={true} />  Avatars [(pending)](./compatibility/vnyan)
 - Instructions for <HaiTag compatibleWithVSeeFace={true} short={true} />  Avatars [(pending)](./compatibility/vseeface)
+- Instructions for <HaiTag compatibleWithBeatSaber={true} short={true} />  Avatars [(pending)](./compatibility/beatsaber)
 
 :::info
 Normally, using the *VRChat Creator Companion* (VCC) requires you to enter into the *VRChat Terms of Use* due to the *VRChat Materials License Agreement*

@@ -12,7 +12,7 @@
   background-color: var(--hai-vrchat-label);
 }
 .hai_tag_requires_resonite {
-  background: linear-gradient(170deg, var(--hai-resonite-label-a) 0%, var(--hai-resonite-label-b) 100%);
+  background: linear-gradient(170deg, var(--hai-resonite-label-a) 20%, var(--hai-resonite-label-b) 80%);
   color: var(--hai-resonite-label-text);
 }
 .hai_tag_requires_chilloutvr {
@@ -32,6 +32,10 @@
 }
 .hai_tag_compatible_with_warudo {
   background-color: var(--hai-warudo-label);
+  padding: 0.5em 1em 0.5em 1em;
+}
+.hai_tag_compatible_with_beatsaber {
+  background: linear-gradient(130deg, var(--hai-beatsaber-label-a) 40%, var(--hai-beatsaber-label-b) 70%, var(--hai-beatsaber-label-c) 100%);
   padding: 0.5em 1em 0.5em 1em;
 }
 .hai_tag_requires_steamvr {
