@@ -14,7 +14,7 @@ In order to use these products on other apps or platforms, you may need addition
 
 - [Instructions for <HaiTag requiresChilloutVR={true} short={true} />  Avatars](./compatibility/chilloutvr)
 - [Instructions for <HaiTag requiresResonite={true} short={true} />  Model files](./compatibility/resonite)
-- Instructions for <HaiTag compatibleWithWarudo={true} short={true} />  Character mods [(pending)](./compatibility/warudo)
+- [Instructions for <HaiTag compatibleWithWarudo={true} short={true} />  Character mods](./compatibility/warudo)
 - Instructions for <HaiTag compatibleWithVNyan={true} short={true} />  Avatars [(pending)](./compatibility/vnyan)
 - Instructions for <HaiTag compatibleWithVSeeFace={true} short={true} />  Avatars [(pending)](./compatibility/vseeface)
 - Instructions for <HaiTag compatibleWithBeatSaber={true} short={true} />  Avatars [(pending)](./compatibility/beatsaber)

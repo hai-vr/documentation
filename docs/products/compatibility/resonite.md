@@ -4,7 +4,7 @@ title: Resonite
 import {HaiTags} from "/src/components/HaiTags";
 import {HaiTag} from "/src/components/HaiTag";
 
-# Resonite Meshes
+# Resonite Model Files
 
 <HaiTags>
 <HaiTag requiresResonite={true} />
