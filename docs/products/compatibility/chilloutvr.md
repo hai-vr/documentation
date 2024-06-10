@@ -13,7 +13,10 @@ import {HaiTag} from "/src/components/HaiTag";
 Some of the products are qualified as *non-destructive*. This means that all changes are done when entering Play Mode, or when building the avatar.
 This workflow has been made popular by tools such as [Modular Avatar](https://modular-avatar.nadena.dev/) and [VRCFury](https://vrcfury.com/).
 
-To use non-destructive products in ChilloutVR, you can do the following:
+However, only non-destructive tools based on **NDMF** are compatible, as long as that tool does not require the VRChat SDK.
+To be clear, VRCFury is *not* compatible.
+
+To use non-destructive products that have been confirmed to work in ChilloutVR, you can do the following:
 
 - Install **[Chillaxins](/docs/products/chillaxins)**.
 - Download the **[NDMF](https://github.com/bdunderscore/ndmf/releases/tag/1.4.1)** .zip file.

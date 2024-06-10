@@ -10,6 +10,8 @@ import {HaiTag} from "/src/components/HaiTag";
 <HaiTag requiresResonite={true} />
 </HaiTags>
 
+Only mesh generation tools are compatible with Resonite, by exporting the meshes using the .GLB model file format.
+
 To export meshes into Resonite, you can either reuse an existing VRChat project in Unity 2022, or create a new Unity project.
 
 ### Using a new project
@@ -38,10 +40,9 @@ If you use the [ALCOM](/docs/products/vcc) package manager, you can instead add 
 
 You will need the Unity Editor. The minimum version of Unity depends on the product:
 
-- If you don't already have any Unity Editor installed anywhere, you can install Unity 2022.
-- Otherwise, check the Unity requirements of the product you are trying to use:
-  - If Unity 2019 is missing from those requirements, you will need to install Unity 2022.
-  - Otherwise, you can use an existing project in Unity 2019, Unity 2021, or Unity 2022.
+Check the Unity requirements of the product you are trying to use:
+- If Unity 2019 is missing from those requirements, you will need to install Unity 2022.
+- Otherwise, you can use an existing VRChat project in Unity 2019 or Unity 2022.
 
 Install UniVRM for your Unity version:
 
@@ -50,6 +51,7 @@ Install UniVRM for your Unity version:
 
 Then:
 
+- Make sure you have installed UniVRM from the previous step.
 - Download NDMF from VCC or ALCOM, or using the **[NDMF](https://github.com/bdunderscore/ndmf/releases/tag/1.4.1)** .zip file.
   - Unzip it somewhere outside your project.
   - In your Resonite Unity project, go to *Window > Package Manager*.

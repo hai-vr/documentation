@@ -53,3 +53,7 @@ This tool contains a DLL file because NDMF depends on a [programming library](ht
 which is not available in Unity by default. For convenience of installation, this DLL is included in Chillaxins.
 
 If you're concerned about safety, you can [download the required DLL on your own from Microsoft NuGet](https://www.nuget.org/packages/System.Collections.Immutable/).
+
+:::note
+In the future, *Chillaxins* may also include the [*Lib.Harmony* DLL](https://www.nuget.org/packages/Lib.Harmony), because *NDMF* 1.5 will use it.
+:::

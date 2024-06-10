@@ -9,3 +9,7 @@ import {HaiTag} from "/src/components/HaiTag";
 <HaiTags>
 <HaiTag requiresWarudo={true} />
 </HaiTags>
+
+:::danger
+This documentation page is pending.
+:::

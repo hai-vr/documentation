@@ -9,3 +9,7 @@ import {HaiTag} from "/src/components/HaiTag";
 <HaiTags>
 <HaiTag compatibleWithVNyan={true} />
 </HaiTags>
+
+:::danger
+This documentation page is pending.
+:::

@@ -15,6 +15,14 @@ In order to use these products on other apps or platforms, you may need addition
 
 - [Instructions for <HaiTag requiresChilloutVR={true} short={true} />  Avatars](./compatibility/chilloutvr)
 - [Instructions for <HaiTag requiresResonite={true} short={true} />  Model files](./compatibility/resonite)
-- [Instructions for <HaiTag compatibleWithWarudo={true} short={true} />  Character mods](./compatibility/warudo)
-- [Instructions for <HaiTag compatibleWithVNyan={true} short={true} />  Avatars](./compatibility/vnyan)
-- [Instructions for <HaiTag compatibleWithVSeeFace={true} short={true} />  Avatars](./compatibility/vseeface)
+- Instructions for <HaiTag compatibleWithWarudo={true} short={true} />  Character mods [(pending)](./compatibility/warudo)
+- Instructions for <HaiTag compatibleWithVNyan={true} short={true} />  Avatars [(pending)](./compatibility/vnyan)
+- Instructions for <HaiTag compatibleWithVSeeFace={true} short={true} />  Avatars [(pending)](./compatibility/vseeface)
+
+:::info
+Normally, using the *VRChat Creator Companion* (VCC) requires you to enter into the *VRChat Terms of Use* due to the *VRChat Materials License Agreement*
+being presented to you during the installation process of VCC.
+
+If you are trying to use products for use in non-VRChat applications, **consider using [ALCOM](/docs/products/vcc#alcom)**,
+an open-source alternative to the *VRChat Creator Companion* which does not require you to accept the *VRChat Terms of Use*.
+:::
