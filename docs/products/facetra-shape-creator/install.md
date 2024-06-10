@@ -36,6 +36,22 @@ This requires the use of the VRChat Creator Companion in order to automatically 
 
 ![Untitled.png](img/Untitled.png)
 
+## Install for ChilloutVR
+
+<HaiTags>
+<HaiTag requiresChilloutVR={true} />
+</HaiTags>
+
+:::warning
+Support for ChilloutVR is new. You may encounter some issues.
+
+If you need help, please check out the [Discord server](/docs/other/discord).
+:::
+
+Please follow the [**ChilloutVR Compatibility** documentation](/docs/products/compatibility/chilloutvr) to use FaceTra Shape Creator in ChilloutVR projects.
+
+Counter-intuitively, during installation, **keep** the folder called *dev.hai-vr.facetra-shape-creator.vrc* **checked**.
+
 ## Install for Resonite or other apps
 
 <HaiTags>
