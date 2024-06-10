@@ -12,7 +12,8 @@
   background-color: var(--hai-vrchat-label);
 }
 .hai_tag_requires_resonite {
-  background-color: var(--hai-resonite-label);
+  background: linear-gradient(170deg, var(--hai-resonite-label-a) 0%, var(--hai-resonite-label-b) 100%);
+  color: var(--hai-resonite-label-text);
 }
 .hai_tag_requires_chilloutvr {
   background-color: var(--hai-chilloutvr-label);
