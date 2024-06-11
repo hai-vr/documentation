@@ -1,4 +1,11 @@
-﻿# Compressive Deform
+﻿import {HaiTags} from "/src/components/HaiTags";
+import {HaiTag} from "/src/components/HaiTag";
+
+# Compressive Deform
+
+<HaiTags>
+<HaiTag notCompatibleWithGltf={true} />
+</HaiTags>
 
 The *Starmesh Op. Compressive Deform* component creates a blendshape that emulates the [effect of a flat surface being compressed](https://en.wikipedia.org/wiki/Poisson%27s_ratio)
 against that object.
@@ -13,6 +20,17 @@ This is different from rescaling. The surface of a non-flat object will be progr
 - It will not flatten vertices far from the compression surface, unless the compression surface becomes closer.
 - It will expand the object laterally to the force.
 - The lateral expansion is limited by the proximity to the compression surface.
+
+:::danger
+<HaiTags>
+<HaiTag notCompatibleWithGltf={true} />
+</HaiTags>
+
+Since this blendshape has multiple frames, this cannot be used in applications if the format is VRM or GLB (i.e. Resonite).
+
+This can still be used in <HaiTag compatibleWithVNyan={true} short={true} /> and <HaiTag compatibleWithWarudo={true} short={true} />
+as long as you use their proprietary avatar formats, instead of the VRM format.
+:::
 
 ## How to use
 

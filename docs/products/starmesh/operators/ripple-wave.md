@@ -1,4 +1,11 @@
-﻿# Ripple Wave
+﻿import {HaiTags} from "/src/components/HaiTags";
+import {HaiTag} from "/src/components/HaiTag";
+
+# Ripple Wave
+
+<HaiTags>
+<HaiTag notCompatibleWithGltf={true} />
+</HaiTags>
 
 The *Starmesh Op. Ripple Wave* component creates a blendshape which makes a wave ripple throughout the mesh, and dissipate.
 
@@ -8,6 +15,17 @@ The *Starmesh Op. Ripple Wave* component creates a blendshape which makes a wave
 <video controls muted width="816">
     <source src={require('../img/xFFl3uUwAj.mp4').default}/>
 </video>
+
+:::danger
+<HaiTags>
+<HaiTag notCompatibleWithGltf={true} />
+</HaiTags>
+
+Since this blendshape has multiple frames, this cannot be used in applications if the format is VRM/GLB/GLTF (i.e. Resonite).
+
+This can still be used in <HaiTag compatibleWithVNyan={true} short={true} /> and <HaiTag compatibleWithWarudo={true} short={true} />
+as long as you use their proprietary avatar formats, instead of the VRM format.
+:::
 
 ## How to use
 

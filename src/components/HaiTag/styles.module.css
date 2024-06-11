@@ -45,3 +45,7 @@
 .hai_tag_universal {
   background-color: var(--hai-universal-label);
 }
+.hai_tag_not_compatible_with_gltf {
+  background-color: var(--hai-not-compatible-label);
+  padding: 0.5em 1em 0.5em 1em;
+}

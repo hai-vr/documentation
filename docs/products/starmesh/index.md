@@ -22,3 +22,14 @@ This does not require VRChat to run. It has been tested to work on Unity 2021 an
 
 NDMF is required.
 :::
+
+:::danger
+<HaiTags>
+<HaiTag notCompatibleWithGltf={true} />
+</HaiTags>
+
+Some of the operators of this tool generate multiple frames, which is not supported in the VRM/GLB/GLTF formats (i.e. Resonite).
+
+This can still be used in <HaiTag compatibleWithVNyan={true} short={true} /> and <HaiTag compatibleWithWarudo={true} short={true} />
+as long as you use their proprietary avatar formats, instead of the VRM format.
+:::

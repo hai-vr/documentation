@@ -27,6 +27,7 @@ interface Props {
     compatibleWithVNyan: boolean;
     compatibleWithWarudo: boolean;
     compatibleWithBeatSaber: boolean;
+    notCompatibleWithGltf: boolean;
     requiresWarudo: boolean;
     notVRChat: boolean;
     isUniversal: boolean;
@@ -46,6 +47,7 @@ export function HaiTag({
                            compatibleWithWarudo,
                            compatibleWithBeatSaber,
                            requiresWarudo,
+                           notCompatibleWithGltf,
                            compatibleWithVNyan,
                             short
 }: Props): JSX.Element {
@@ -64,6 +66,7 @@ export function HaiTag({
                 {compatibleWithVNyan ? <div className={clsx(styles.hai_tag, styles.hai_tag_compatible_with_vnyan)}>{div}VNyan</div> : ''}
                 {compatibleWithWarudo ? <div className={clsx(styles.hai_tag, styles.hai_tag_compatible_with_warudo)}>{div}Warudo</div> : ''}
                 {compatibleWithBeatSaber ? <div className={clsx(styles.hai_tag, styles.hai_tag_compatible_with_beatsaber)}>{div}Beat Saber</div> : ''}
+                {notCompatibleWithGltf ? <div className={clsx(styles.hai_tag, styles.hai_tag_not_compatible_with_gltf)}>🚫 Not compatible with GLB/GLTF format</div> : ''}
                 {requiresWarudo ? <div className={clsx(styles.hai_tag, styles.hai_tag_compatible_with_warudo)}>📹 Requires Warudo</div> : ''}
                 {isUniversal ? <div className={clsx(styles.hai_tag, styles.hai_tag_universal)}>🌊 Any Platform</div> : ''}
                 {notVRChat ? <div className={clsx(styles.hai_tag, styles.hai_tag_universal)}>🌊 Any Platform, except VRChat</div> : ''}
