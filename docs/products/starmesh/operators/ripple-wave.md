@@ -3,10 +3,6 @@ import {HaiTag} from "/src/components/HaiTag";
 
 # Ripple Wave
 
-<HaiTags>
-<HaiTag notCompatibleWithGltf={true} />
-</HaiTags>
-
 The *Starmesh Op. Ripple Wave* component creates a blendshape which makes a wave ripple throughout the mesh, and dissipate.
 
 - This blendshape has multiple frames.

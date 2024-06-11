@@ -3,10 +3,6 @@ import {HaiTag} from "/src/components/HaiTag";
 
 # Compressive Deform
 
-<HaiTags>
-<HaiTag notCompatibleWithGltf={true} />
-</HaiTags>
-
 The *Starmesh Op. Compressive Deform* component creates a blendshape that emulates the [effect of a flat surface being compressed](https://en.wikipedia.org/wiki/Poisson%27s_ratio)
 against that object.
 
