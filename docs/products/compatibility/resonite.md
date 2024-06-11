@@ -25,7 +25,7 @@ If you want to use a new project rather than an existing VRChat project, you wil
     - In your Resonite Unity project, go to *Window > Package Manager*.
     - In the Package Manager window, press the *+* button at the top left, select *Add package from disk...*
     - Locate the folder you unzipped, and inside that folder, select the `package.json` file.
-- Open the downloaded archive and install the .unitypackage in your Resonite project.
+- Open the downloaded archive of the product, and install the .unitypackage in your Resonite project.
 - Close your Unity project.
 - Reopen your Unity project.
 

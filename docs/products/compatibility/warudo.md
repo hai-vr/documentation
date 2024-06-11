@@ -24,7 +24,7 @@ To use this tool in Warudo, you need to have [Chillaxins](/docs/products/chillax
     - In your Warudo Unity project, go to *Window > Package Manager*.
     - In the Package Manager window, press the *+* button at the top left, select *Add package from disk...*
     - Locate the folder you unzipped, and inside that folder, select the `package.json` file.
-- Open the downloaded archive install the .unitypackage in your Warudo project.
+- Open the downloaded archive of the product, and install the .unitypackage in your Warudo project.
 - Close your Unity project.
 - Reopen your Unity project.
 - To build your character mod, you will need to use the Denormalized Avatar Exporter UI rather than Warudo's own UI.

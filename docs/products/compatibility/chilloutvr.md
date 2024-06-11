@@ -16,6 +16,8 @@ This workflow has been made popular by tools such as [Modular Avatar](https://mo
 However, only non-destructive tools based on **NDMF** are compatible, as long as that tool does not require the VRChat SDK.
 To be clear, VRCFury is *not* compatible.
 
+## Install
+
 To use non-destructive products that have been confirmed to work in ChilloutVR, you can do the following:
 
 - Install **[Chillaxins](/docs/products/chillaxins)**.
@@ -24,7 +26,7 @@ To use non-destructive products that have been confirmed to work in ChilloutVR, 
     - In your ChilloutVR Unity project, go to *Window > Package Manager*.
     - In the Package Manager window, press the *+* button at the top left, select *Add package from disk...*
     - Locate the folder you unzipped, and inside that folder, select the `package.json` file.
-- Open the downloaded archive and install the .unitypackage in your ChilloutVR project.
+- Open the downloaded archive of the product, and install the .unitypackage in your ChilloutVR project.
 - Close your Unity project.
 - Reopen your Unity project.
 
