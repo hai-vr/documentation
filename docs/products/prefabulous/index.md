@@ -15,15 +15,17 @@ import {HaiTag} from "/src/components/HaiTag";
 [//]: # (Meant to be used primarily by users of **[Modular Avatar]&#40;https://modular-avatar.nadena.dev/&#41;** components,)
 [//]: # (our components can be reused across multiple avatars when you turn them into a prefab.)
 
-- **Improve the [shading of blendshape normals](./prefabulous/universal/recalculate-normals).**
-- **Generate [twist bones](./prefabulous/universal/generate-twist-bones).**
-- [Delete polygons](./prefabulous/universal/delete-polygons) hidden by conflict prevention blendshapes.
-- Edit all [mesh bounds](./prefabulous/universal/edit-all-mesh-bounds)
-and all [mesh anchor override](./prefabulous/universal/edit-all-mesh-anchor-override) for consistent visibility and lighting.
-- [Change the avatar scale](./prefabulous/universal/change-avatar-scale) and viewpoint without rescaling the avatar in the scene.
-- [Import an existing VRC Expression Parameters](./prefabulous/vrchat/import-expression-parameters) asset, such as face tracking parameters.
-- Reset parts of the VRC Avatar Descriptor component without modifying it.
-- Add a [menu item to lock locomotion](./prefabulous/vrchat/lock-locomotion-menu-item).
+- On <HaiTag isUniversal={true} short={true} />:
+  - **Improve the [shading of blendshape normals](./prefabulous/universal/recalculate-normals).**
+  - **Generate [twist bones](./prefabulous/universal/generate-twist-bones).**
+  - [Delete polygons](./prefabulous/universal/delete-polygons) hidden by conflict prevention blendshapes.
+  - Edit all [mesh bounds](./prefabulous/universal/edit-all-mesh-bounds)
+  and all [mesh anchor override](./prefabulous/universal/edit-all-mesh-anchor-override) for consistent visibility and lighting.
+- Also, on <HaiTag requiresVRChat={true} short={true} />: 
+  - [Change the avatar scale](./prefabulous/universal/change-avatar-scale) and viewpoint without rescaling the avatar in the scene.
+  - [Import an existing VRC Expression Parameters](./prefabulous/vrchat/import-expression-parameters) asset, such as face tracking parameters.
+  - Reset parts of the VRC Avatar Descriptor component without modifying it.
+  - Add a [menu item to lock locomotion](./prefabulous/vrchat/lock-locomotion-menu-item).
 
 Although *Prefabulous* is meant to be used alongside **[Modular Avatar](https://modular-avatar.nadena.dev/)**, our components are not
 really destined to be used inside distributed assets:
@@ -32,17 +34,6 @@ Unlike *Modular Avatar* components, most of our components are **invasive**. The
 or may not be able to coexist with other components.
 
 Therefore you are encouraged to use these components only within personal avatars, and not as part of assets distributed to other users.
-
-:::tip
-In Prefabulous V1, the components of this tool require VRChat.
-
-In an upcoming version (Prefabulous V2), components are split in two categories:
-- **Universal Components** will be usable on any social VR platform, app, or non-social VR app.
-- **VRChat Platform** components will only be usable on the VRChat Platform.
-
-A new category will be introduced:
-- **VRM and VTubing** components will be usable on apps such as VNyan, Warudo, and VSeeFace, by focusing on VRM components.
-:::
 
 ![](img/pvsUzAgoIb.png)
 
@@ -57,7 +48,9 @@ You need to add **two** listings:
 - Add **[Modular Avatar listing](https://modular-avatar.nadena.dev/)** by clicking on *Download (using VCC)*, and
 - also **[install Haï~'s listing to VCC](vcc://vpm/addRepo?url=https://hai-vr.github.io/vpm-listing/index.json)**.
 
-Then, add *Haï ~ Prefabulous* to your project using VCC.
+Then:
+- <HaiTag requiresVRChat={true} short={true} /> Add *Haï ~ Prefabulous for VRChat* to your project using VCC.
+- <HaiTag requiresChilloutVR={true} short={true} /> Add *Haï ~ Prefabulous Universal* to your project using VCC/ALCOM.
 
 ## How to use
 
@@ -73,6 +66,6 @@ Check out the **[Reference manual](./prefabulous/reference)** for more details.
 Add any of those components to any location inside your avatar. It is recommended that you put them in one or several child objects
 so that you can reuse them on other avatars as a prefab:
 
-- **[Universal Components](./prefabulous/universal)** lists components that can be used on any social VR platform, app, or non-social VR app.
-- **[VRChat Platform](./prefabulous/vrchat)** lists components that can only be used on the VRChat Platform.
-- **[VRM and VTubing](./prefabulous/vrm)** lists components that can only be used on the VRM-compatible apps and derived formats, such as VNyan, Warudo, and VSeeFace.
+- <HaiTag isUniversal={true} short={true} /> **[Universal Components](./prefabulous/universal)** lists components that can be used on any platform.
+- <HaiTag requiresVRChat={true} short={true} /> **[VRChat Platform](./prefabulous/vrchat)** lists components that can only be used on the VRChat Platform.
+- <HaiTag requiresVRM={true} short={true} /> **[VRM and VTubing](./prefabulous/vrm)** lists components that can only be used on the VRM-compatible apps and derived formats, such as VNyan, Warudo, and VSeeFace.
