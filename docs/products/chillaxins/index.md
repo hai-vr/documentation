@@ -41,6 +41,7 @@ If you use the [ALCOM](/docs/products/vcc) package manager, you can add the *Ha√
 
 It prevents compilation errors due to missing programming libraries:
 - This includes the *System.Collections.Immutable* DLL, because *NDMF* uses it.
+- This includes the *Lib.Harmony* DLL, because *NDMF 1.5* will use it.
 - This creates a dependency on *Unity Burst* 1.6.6 for Unity 2021, because *Modular Avatar* uses it.
 
 On ChilloutVR projects, it hooks into the avatar build process:
