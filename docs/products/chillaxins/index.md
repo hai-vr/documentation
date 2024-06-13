@@ -51,6 +51,6 @@ On ChilloutVR projects, it hooks into the avatar build process:
 ## About the DLL files
 
 This tool contains DLL files because NDMF depends on a [programming library](https://learn.microsoft.com/en-us/dotnet/api/system.collections.immutable?view=net-8.0)
-which is not available in Unity by default, and a [patching library](https://www.nuget.org/packages/Lib.Harmony). For convenience of installation, these DLLs is included in Chillaxins.
+which is not available in Unity by default, and a [patching library](https://www.nuget.org/packages/Lib.Harmony). For convenience of installation, these DLLs are included in Chillaxins.
 
 If you're concerned about safety, you can download the required DLLs on your own from Microsoft NuGet ([System.Collections.Immutable](https://www.nuget.org/packages/System.Collections.Immutable/), [Lib.Harmony](https://www.nuget.org/packages/Lib.Harmony/)).
