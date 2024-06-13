@@ -21,10 +21,10 @@ This component automatically creates ARKit-named BlendShapeClips into the BlendS
 - Any mesh that contains Unified Expressions or ARKit blendshapes will be linked to an ARKit-named BlendShapeClip.
 - If both blendshapes for Unified Expressions *and* ARKit exist on the same mesh, only one of them will be linked to the ARKit-named BlendShapeClip.
 
-If a VRMBlendShapeProxy component does not exist, the VRMBlendShapeProxy component and the VRM BlendShapeAvatar asset will be created for you.
+[//]: # (If a VRMBlendShapeProxy component does not exist, the VRMBlendShapeProxy component and the VRM BlendShapeAvatar asset will be created for you.)
 
 To use this component:
-- Add a "PA Add ARKit to BlendShapeAvatar" component anywhere in your avatar.
+- Add a "PA-VRM Add ARKit to BlendShapeAvatar" component anywhere in your avatar.
 
 NDMF is required in your VTubing project:
 - You need to export the avatar using the [Denormalized Avatar Exporter](/docs/products/denormalized-avatar-exporter) tool.
