@@ -22,7 +22,7 @@ For instance, you can convert [Unified Expressions](https://docs.vrcft.io/docs/t
 This process does not overwrite blendshapes that already exist.
 
 To use this component:
-- Add a "PA-H Convert Blendshape Conventions" component anywhere in your avatar.
+- Add a "PA Convert Blendshape Conventions" component anywhere in your avatar.
 - In the "Key Value Mapping" field, in each line, provide two blendshape names separated with the character of your choice.
 - In the "Key Value Separator", specify the character of your choice.
   - Press the "Use TAB as separator" if you are using TAB-separated values.

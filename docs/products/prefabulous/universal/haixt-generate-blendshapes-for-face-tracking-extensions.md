@@ -25,7 +25,7 @@ However, on the VRChat platform, you will still need the [HaiXT Face Tracking Ex
 
 To use this component:
 
-- Add a "PA-H HaiXT Generate Blendshapes for Face Tracking Extensions" component anywhere in your avatar.
+- Add a "PA HaiXT Generate Blendshapes for Face Tracking Extensions" component anywhere in your avatar.
 - Choose which blendshapes close the eyes with a smiling shape.
 
 On the VRChat platform, you will need to add a [HaiXT Face Tracking Extensions](../vrchat/haixt-face-tracking-extensions) component to create the animator layers.

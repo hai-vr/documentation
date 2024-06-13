@@ -19,7 +19,7 @@ and also to remove unused decorations hidden inside the mesh, such as eye decora
 This will lower your avatar polygon count.
 
 To use this component:
-- Add a "PA-H Delete Polygons" component anywhere in your avatar.
+- Add a "PA Delete Polygons" component anywhere in your avatar.
 - Add blendshapes which move the polygons that you want to delete. Any SkinnedMeshRenderer that has that blendshape will be affected.
 - *(added in 1.7.0)* If you want to keep the polygons that are still connected to the mesh, check "Keep Partial Polygons".
 

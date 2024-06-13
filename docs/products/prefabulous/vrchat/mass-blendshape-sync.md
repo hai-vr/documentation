@@ -22,7 +22,7 @@ The blendshapes don't necessarily need to exist in Edit mode, so they can be gen
 The blendshapes must be identically named.
 
 To use this component:
-- Add a "PA-H Mass Blendshape Sync" component anywhere in your avatar.
+- Add a "PA-VRC Mass Blendshape Sync" component anywhere in your avatar.
 - In the "source" field, choose the renderer to read animations from.
 - In the "targets" field, add renderers to write animations to.
 

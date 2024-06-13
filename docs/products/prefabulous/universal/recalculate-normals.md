@@ -21,7 +21,7 @@ This component will improve the shading of your avatar by recalculating blendsha
 Light, reflections, rims, matcaps, and many more shader features are affected by the altered mesh surfaces.
 
 To use this component:
-- Add a "PA-H Recalculate Normals" component anywhere in your avatar.
+- Add a "PA Recalculate Normals" component anywhere in your avatar.
 - Add blendshapes that you want to recalculate. Any SkinnedMeshRenderer that has that blendshape will be affected.
 
 Enter Play Mode or upload the avatar to test the results: as this is a non-destructive component, the original mesh remains intact.
@@ -80,7 +80,7 @@ In all other cases, **keep this option off!**
 
 If you suspect that custom split normals negatively affects your shading, you can try the following to see if it improves it:
 
-- Create **another** "PA-H Recalculate Normals" component on your avatar. 
+- Create **another** "PA Recalculate Normals" component on your avatar. 
   - You are allowed to add that component multiple times on the same object.
 - In that new component, enable Erase Custom Split Normals.
 - Add the blendshape that you want to recalculate while removing Custom Split Normals.
@@ -89,12 +89,12 @@ If you suspect that custom split normals negatively affects your shading, you ca
   - In the "Renderers" list, only add the SkinnedMeshRenderer that has custom split normals.
 
 :::tip
-You can have the same blendshape specified on multiple "PA-H Recalculate Normals" components.
+You can have the same blendshape specified on multiple "PA Recalculate Normals" components.
 
 If a blendshape of SkinnedMeshRenderer is affected by multiple components, the "Erase Custom Split Normals" option will take priority.
 :::
 
-If you see no improvement, cancel your changes and add your blendshape back to your original "PA-H Recalculate Normals" component.
+If you see no improvement, cancel your changes and add your blendshape back to your original "PA Recalculate Normals" component.
 
 ## Learn more
 

@@ -20,7 +20,7 @@ By default, this requires the use of face tracking blendshapes that follow the U
 ## How to use
 
 To use this component:
-- Add a "PA-H Generate Speech Visemes from Face Tracking Blendshapes" component anywhere in your avatar.
+- Add a "PA-VRC Generate Speech Visemes from Face Tracking Blendshapes" component anywhere in your avatar.
 
 ## Versions
 

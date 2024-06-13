@@ -18,7 +18,7 @@ This component will add a menu item, which when toggled, will prevent your avata
 This also prevents the avatar collider from moving when you physically move around in your playspace, so you won't go up and down on ledges and stairs.
 
 To use this component:
-- Add a "PA-H Lock Locomotion Menu Item" component in a new GameObject of your avatar.
+- Add a "PA-VRC Lock Locomotion Menu Item" component in a new GameObject of your avatar.
   - If you are a regular Modular Avatar user and you already have your own personal Menu Items, place this GameObject alongside your existing menus.
   - If you are not a Modular Avatar user, keep this GameObject anywhere inside your avatar.
 - Give your GameObject a name, such as "Lock locomotion", which will become the menu name.

@@ -25,7 +25,7 @@ The textures contained inside those animations will not be replaced.
 :::
 
 To use this component:
-- Add a "PA-H Replace Textures" component anywhere in your avatar.
+- Add a "PA Replace Textures" component anywhere in your avatar.
 - The component will list all textures found inside renderers your avatar, as long as the renderer or any of its parents is not inside an "Editor Only"-tagged object.
 - Press "+ Add" on any texture that you would like to replace.
 - Provide a new texture in the field located below "Replace with".

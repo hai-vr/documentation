@@ -32,7 +32,7 @@ except that this will **not** lower your avatar polygon count; instead it will e
 - *If you do not animate the shader feature, use [Delete Polygons](./delete-polygons) instead, which will lower your avatar polygon count.*
 
 To use this component:
-- Add one or several "PA-H Assign UV Tile" component anywhere in your avatar.
+- Add one or several "PA Assign UV Tile" component anywhere in your avatar.
 - Then:
     - If you want to affect some blendshapes:
       - Keep the Mode to **"Blend Shapes"**.
