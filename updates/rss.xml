@@ -17,13 +17,13 @@
             <content:encoded><![CDATA[<div><p><span></span></p><div class="hai_tag_ZcC4 hai_tag_universal_aJnK">🌊 Any Platform</div><p></p></div>
 <p>I am releasing <strong>Prefabulous V2</strong>. This update makes it so Prefabulous components can be used in other social VR platforms, apps, and VTubing apps.
 VRChat is no longer required.</p>
-<p>Users who use the VCC/ALCOM package manager will not be affected. Upgrading to V2 should be seamless for VRChat users.
+<p>Users who use the VCC/ALCOM package manager will not need to take special actions to update to V2.
 <em>If you don't use VCC/ALCOM, <a href="https://docs.hai-vr.dev/updates/2024/06/13/p0#updating-from-v1-to-v2-for-users-who-dont-use-vcc">see below</a>.</em></p>
-<p><em>Prefabulous Avatar</em> has been split into two packages, and I am introducing a new package:</p>
+<p><em>Prefabulous</em> has been split into two packages, and I am introducing a new package:</p>
 <ul>
 <li><strong><a href="https://docs.hai-vr.dev/docs/products/prefabulous/universal">Prefabulous Universal</a></strong> contains platform-agnostic components.</li>
 <li><strong><a href="https://docs.hai-vr.dev/docs/products/prefabulous/vrchat">Prefabulous for VRChat</a></strong> contains components that are specific to VRChat.</li>
-<li><strong><a href="https://docs.hai-vr.dev/docs/products/prefabulous/vrm">Prefabulous for VRM and VTubing</a></strong> contains VRM-specific components.</li>
+<li><strong><a href="https://docs.hai-vr.dev/docs/products/prefabulous/vrm">Prefabulous for VRM and VTubing</a></strong> is a <strong>new package</strong> that contains VRM-specific components.</li>
 </ul>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="updating-from-v1-to-v2-for-users-who-dont-use-vcc">Updating from V1 to V2 for users who don't use VCC<a href="https://docs.hai-vr.dev/updates/2024/06/13/p0#updating-from-v1-to-v2-for-users-who-dont-use-vcc" class="hash-link" aria-label="Direct link to Updating from V1 to V2 for users who don't use VCC" title="Direct link to Updating from V1 to V2 for users who don't use VCC">​</a></h3>
 <p>If you don't use VCC, you will need to follow special upgrade instructions from V1 to V2:</p>
