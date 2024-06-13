@@ -27,8 +27,8 @@ Support for ChilloutVR is new. You may encounter some issues.
 If you need help, please check out the [Discord server](/docs/other/discord).
 :::
 
-- Download the **[.unitypackage file (Direct Download)](https://github.com/hai-vr/chillaxins/releases/download/1.0.1/dev.hai-vr.chillaxins-1.0.1.unitypackage)** from GitHub.
-  - Current version is V1.0.1
+- Download the **[.unitypackage file (Direct Download)](https://github.com/hai-vr/chillaxins/releases/download/1.1.0/dev.hai-vr.chillaxins-1.1.0.unitypackage)** from GitHub.
+  - Current version is **V1.1.0**
 - Install it in your project.
 - Close your Unity project.
 - Reopen your Unity project.
