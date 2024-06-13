@@ -34,6 +34,10 @@ This requires the use of the VRChat Creator Companion in order to automatically 
 - In VCC, add the **"Non-Destructive Modular Framework"** package to your project.
 - Open the downloaded archive from Patreon/pixivFANBOX and install the .unitypackage in your VRChat project.
 
+:::danger
+If you use a third-party tool called *DexProtect*, **then you must update DexProtect to version 2.2.3 or higher**.
+:::
+
 ## Install for ChilloutVR
 
 <HaiTags>

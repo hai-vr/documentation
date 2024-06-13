@@ -13,6 +13,10 @@ The *Starmesh Op. Ripple Wave* component creates a blendshape which makes a wave
 </video>
 
 :::danger
+If you use a third-party tool called *DexProtect*, **then you must update DexProtect to version 2.2.3 or higher**.
+:::
+
+:::danger
 <HaiTags>
 <HaiTag notCompatibleWithGltf={true} />
 </HaiTags>

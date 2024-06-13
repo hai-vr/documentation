@@ -18,6 +18,10 @@ This is different from rescaling. The surface of a non-flat object will be progr
 - The lateral expansion is limited by the proximity to the compression surface.
 
 :::danger
+If you use a third-party tool called *DexProtect*, **then you must update DexProtect to version 2.2.3 or higher**.
+:::
+
+:::danger
 <HaiTags>
 <HaiTag notCompatibleWithGltf={true} />
 </HaiTags>
