@@ -2,6 +2,15 @@
 title: Prefabulous
 ---
 
+## 2.0.0 Prefabulous Universal
+
+Prefabulous has been split into:
+- *Prefabulous Universal* (this page)
+- *[Prefabulous for VRChat](./prefabulous-for-vrchat)*
+- *[Prefabulous for VRM](./prefabulous-for-vrm)*
+
+See [update](/updates/2024/06/13/p0) page.
+
 ## 1.11.2
 
 Fix Prefabulous was not able to compile because it was using a deprecated define `VRC_SDK_VRCSDK3` that was missing on some users' projects.

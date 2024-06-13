@@ -26,7 +26,9 @@ The changelogs of some products aren't available at this time.
 | **Editors**                                                         |                       |             |
 | [ComboGestureExpressions](./changelogs/combo-gesture-expressions)   | 3.1.5102              | 2023-12     |
 | [FaceTra Shape Creator](./changelogs/facetra-shape-creator)         | 0.8.0-2024-04-08-2020 | 2024-04     |
-| [Prefabulous](./changelogs/prefabulous)                             | 1.11.1                | 2024-04     |
+| [Prefabulous Universal](./changelogs/prefabulous)                   | 2.0.0                 | **2024-06** |
+| [Prefabulous for VRChat](./changelogs/prefabulous-for-vrchat)       | 2.0.0                 | **2024-06** |
+| [Prefabulous for VRM](./changelogs/prefabulous-for-vrm)             | 2.0.0                 | **2024-06** |
 | [Starmesh](./changelogs/starmesh)                                   | 1.3.0                 | **2024-06** |
 | [Visual Expressions Editor](./changelogs/visual-expressions-editor) | 2.0.3                 | 2023-11     |
 | [Vixen](./changelogs/vixen)                                         | 1.2.0                 | **2024-06** |
