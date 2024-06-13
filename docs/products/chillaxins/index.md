@@ -47,13 +47,9 @@ On ChilloutVR projects, it hooks into the avatar build process:
 - If the project is a CCK project *and* NDMF is installed, when you try to upload an avatar using ChilloutVR CCK interface,
   it will execute the non-destructive avatar processors.
 
-## About the DLL file
+## About the DLL files
 
-This tool contains a DLL file because NDMF depends on a [programming library](https://learn.microsoft.com/en-us/dotnet/api/system.collections.immutable?view=net-8.0)
-which is not available in Unity by default. For convenience of installation, this DLL is included in Chillaxins.
+This tool contains DLL files because NDMF depends on a [programming library](https://learn.microsoft.com/en-us/dotnet/api/system.collections.immutable?view=net-8.0)
+which is not available in Unity by default, and a [patching library](https://www.nuget.org/packages/Lib.Harmony). For convenience of installation, these DLLs is included in Chillaxins.
 
-If you're concerned about safety, you can [download the required DLL on your own from Microsoft NuGet](https://www.nuget.org/packages/System.Collections.Immutable/).
-
-:::note
-In the future, *Chillaxins* may also include the [*Lib.Harmony* DLL](https://www.nuget.org/packages/Lib.Harmony), because *NDMF* 1.5 will use it.
-:::
+If you're concerned about safety, you can download the required DLLs on your own from Microsoft NuGet ([System.Collections.Immutable](https://www.nuget.org/packages/System.Collections.Immutable/), [Lib.Harmony](https://www.nuget.org/packages/Lib.Harmony/)).
