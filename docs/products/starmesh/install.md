@@ -36,6 +36,8 @@ This requires the use of the VRChat Creator Companion in order to automatically 
 
 :::danger
 If you use a third-party tool called *DexProtect*, **then you must update DexProtect to version 2.2.3 or higher**.
+
+*Ripple Wave* and *Compressive Deform* will not work properly with a lower version of *DexProtect*.
 :::
 
 ## Install for ChilloutVR

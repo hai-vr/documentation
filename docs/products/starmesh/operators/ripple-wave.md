@@ -14,6 +14,8 @@ The *Starmesh Op. Ripple Wave* component creates a blendshape which makes a wave
 
 :::danger
 If you use a third-party tool called *DexProtect*, **then you must update DexProtect to version 2.2.3 or higher**.
+
+*Ripple Wave* will not work properly with a lower version of *DexProtect*.
 :::
 
 :::danger

@@ -19,6 +19,8 @@ This is different from rescaling. The surface of a non-flat object will be progr
 
 :::danger
 If you use a third-party tool called *DexProtect*, **then you must update DexProtect to version 2.2.3 or higher**.
+
+*Compressive Deform* will not work properly with a lower version of *DexProtect*.
 :::
 
 :::danger
