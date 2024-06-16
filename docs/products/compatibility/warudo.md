@@ -30,9 +30,9 @@ To use this tool in Warudo, you need to have [Chillaxins](/docs/products/chillax
 - To build your character mod, you will need to use the Denormalized Avatar Exporter UI rather than Warudo's own UI.
 
 :::tip
-If you use the [ALCOM](/docs/products/vcc) package manager, you can instead add the following packages:
-- *"Haï ~ Chillaxins"* package from **[our listing](/docs/products/vcc)**, and
-- *"Haï ~ Denormalized Avatar Exporter"* package from **[our listing](/docs/products/vcc)**, and
+If you use the [ALCOM](/docs/products/listing) package manager, you can instead add the following packages:
+- *"Haï ~ Chillaxins"* package from **[our listing](/docs/products/listing)**, and
+- *"Haï ~ Denormalized Avatar Exporter"* package from **[our listing](/docs/products/listing)**, and
 - *"Non-Destructive Modular Framework"* package from the **[Modular Avatar listing](https://modular-avatar.nadena.dev/)**.
     - `https://vpm.nadena.dev/vpm.json`
       :::

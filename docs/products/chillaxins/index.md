@@ -34,7 +34,7 @@ If you need help, please check out the [Discord server](/docs/other/discord).
 - Reopen your Unity project.
 
 :::tip
-If you use the [ALCOM](/docs/products/vcc) package manager, you can add the *Haï ~ Chillaxins* package from **[our listing](/docs/products/vcc)**.
+If you use the [ALCOM](/docs/products/listing) package manager, you can add the *Haï ~ Chillaxins* package from **[our listing](/docs/products/listing)**.
 :::
 
 ## What does this do?

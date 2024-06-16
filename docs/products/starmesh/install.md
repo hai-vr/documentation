@@ -67,7 +67,7 @@ To use this tool in ChilloutVR, you need to have [Chillaxins](/docs/products/chi
 [//]: # (or other packages in non-VRChat projects.)
 
 [//]: # ()
-[//]: # (*If you're interested in using VCC, but you don't play VRChat, strongly consider using the [open-source version of VCC called ALCOM]&#40;/docs/products/vcc#alcom&#41;, which does not require you to create a VRChat account)
+[//]: # (*If you're interested in using VCC, but you don't play VRChat, strongly consider using the [open-source version of VCC called ALCOM]&#40;/docs/products/listing#alcom&#41;, which does not require you to create a VRChat account)
 
 [//]: # (as part of their Materials License Agreement &#40;and therefore does not require you to accept the VRChat Terms of Use&#41;.*)
 
@@ -93,8 +93,8 @@ To use this tool in ChilloutVR, you need to have [Chillaxins](/docs/products/chi
 - Reopen your Unity project.
 
 :::tip
-If you use the [ALCOM](/docs/products/vcc) package manager, you can instead add the following packages:
-- *"Haï ~ Chillaxins"* package from **[our listing](/docs/products/vcc)**, and
+If you use the [ALCOM](/docs/products/listing) package manager, you can instead add the following packages:
+- *"Haï ~ Chillaxins"* package from **[our listing](/docs/products/listing)**, and
 - *"Non-Destructive Modular Framework"* package from the **[Modular Avatar listing](https://modular-avatar.nadena.dev/)**.
   - `https://vpm.nadena.dev/vpm.json`
 :::
@@ -125,7 +125,7 @@ If you use the [ALCOM](/docs/products/vcc) package manager, you can instead add 
 
 [//]: # (  - If you use VCC, by going to **[Modular Avatar listing]&#40;https://modular-avatar.nadena.dev/&#41;** and then clicking on *Download &#40;using VCC&#41;.*)
 
-[//]: # (- also **[install Haï~'s listing]&#40;/docs/products/vcc&#41;**.)
+[//]: # (- also **[install Haï~'s listing]&#40;/docs/products/listing&#41;**.)
 
 [//]: # ()
 [//]: # (Then:)
@@ -163,9 +163,9 @@ To use this tool in Warudo, you need to have [Chillaxins](/docs/products/chillax
 - To build your character mod, you will need to use the Denormalized Avatar Exporter UI rather than Warudo's own UI.
 
 :::tip
-If you use the [ALCOM](/docs/products/vcc) package manager, you can instead add the following packages:
-- *"Haï ~ Chillaxins"* package from **[our listing](/docs/products/vcc)**, and
-- *"Haï ~ Denormalized Avatar Exporter"* package from **[our listing](/docs/products/vcc)**, and
+If you use the [ALCOM](/docs/products/listing) package manager, you can instead add the following packages:
+- *"Haï ~ Chillaxins"* package from **[our listing](/docs/products/listing)**, and
+- *"Haï ~ Denormalized Avatar Exporter"* package from **[our listing](/docs/products/listing)**, and
 - *"Non-Destructive Modular Framework"* package from the **[Modular Avatar listing](https://modular-avatar.nadena.dev/)**.
   - `https://vpm.nadena.dev/vpm.json`
 :::

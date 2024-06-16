@@ -12,7 +12,7 @@ import Gallery from '@site/src/pages/gallery.mdx'
 
 ## VCC listing
 
-Many of these products can be installed using our [VCC listing](./products/vcc).
+Many of these products can be installed using our [VCC listing](./products/listing).
 
 ## Product listing
 

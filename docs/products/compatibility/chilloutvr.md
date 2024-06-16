@@ -31,8 +31,8 @@ To use non-destructive products that have been confirmed to work in ChilloutVR, 
 - Reopen your Unity project.
 
 :::tip
-If you use the [ALCOM](/docs/products/vcc) package manager, you can instead add the following packages:
-- *"Haï ~ Chillaxins"* package from **[our listing](/docs/products/vcc)**, and
+If you use the [ALCOM](/docs/products/listing) package manager, you can instead add the following packages:
+- *"Haï ~ Chillaxins"* package from **[our listing](/docs/products/listing)**, and
 - *"Non-Destructive Modular Framework"* package from the **[Modular Avatar listing](https://modular-avatar.nadena.dev/)**.
   - Add this listing in the *VPM Repositories* section of ALCOM: `https://vpm.nadena.dev/vpm.json`
 :::

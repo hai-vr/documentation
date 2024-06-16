@@ -250,6 +250,8 @@ export default {
           { from: '/docs/products/prefabulous/hai-components/mass-blendshape-sync', to: '/docs/products/prefabulous/vrchat/mass-blendshape-sync' },
           { from: '/docs/products/prefabulous/hai-components/recalculate-normals', to: '/docs/products/prefabulous/universal/recalculate-normals' },
           { from: '/docs/products/prefabulous/hai-components/replace-textures', to: '/docs/products/prefabulous/universal/replace-textures' },
+            
+          { from: '/docs/products/vcc', to: '/docs/products/listing' },
         ],
         // createRedirects(existingPath) {
         //   if (existingPath.includes('/prefabulous')) {

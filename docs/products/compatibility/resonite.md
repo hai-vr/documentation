@@ -30,8 +30,8 @@ If you want to use a new project rather than an existing VRChat project, you wil
 - Reopen your Unity project.
 
 :::tip
-If you use the [ALCOM](/docs/products/vcc) package manager, you can instead add the following packages:
-- *"Haï ~ Chillaxins"* package from **[our listing](/docs/products/vcc)**, and
+If you use the [ALCOM](/docs/products/listing) package manager, you can instead add the following packages:
+- *"Haï ~ Chillaxins"* package from **[our listing](/docs/products/listing)**, and
 - *"Non-Destructive Modular Framework"* package from the **[Modular Avatar listing](https://modular-avatar.nadena.dev/)**.
   - Add this listing in the *VPM Repositories* section of ALCOM: `https://vpm.nadena.dev/vpm.json`
 :::
@@ -60,7 +60,7 @@ Then:
 - Open the downloaded archive and install the .unitypackage in your Resonite project.
 
 :::tip
-If you use VCC or the [ALCOM](/docs/products/vcc) package manager, you can instead add the following packages:
+If you use VCC or the [ALCOM](/docs/products/listing) package manager, you can instead add the following packages:
 - *"Non-Destructive Modular Framework"* package from the **[Modular Avatar listing](https://modular-avatar.nadena.dev/)**.
   - Add this listing in the *VPM Repositories* section of ALCOM: `https://vpm.nadena.dev/vpm.json`
 :::
