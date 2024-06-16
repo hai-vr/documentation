@@ -73,6 +73,7 @@ VRChat is no longer required.</p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="️-new-component-add-arkit-to-blendshapeavatar">☀️ New component: <a href="https://docs.hai-vr.dev/docs/products/prefabulous/vrm/add-arkit-to-blendshapeavatar">Add ARKit to BlendShapeAvatar</a><a href="https://docs.hai-vr.dev/updates/2024/06/13/p0#%EF%B8%8F-new-component-add-arkit-to-blendshapeavatar" class="hash-link" aria-label="Direct link to ️-new-component-add-arkit-to-blendshapeavatar" title="Direct link to ️-new-component-add-arkit-to-blendshapeavatar">​</a></h3>
 <p>A new component, <a href="https://docs.hai-vr.dev/docs/products/prefabulous/vrm/add-arkit-to-blendshapeavatar">Add ARKit to BlendShapeAvatar</a>, has been added to Prefabulous for VRM.</p>
 <p>This component automatically links all blendshapes found in your meshes as ARKit-named BlendShapeClips for use by VRM apps.</p>
+<video controls="" muted="" width="816"><source src="/assets/medias/D5H4ofatKD-1250b35b85225a17f69746b93ed69c10.mp4"></video>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="api-changes">API Changes<a href="https://docs.hai-vr.dev/updates/2024/06/13/p0#api-changes" class="hash-link" aria-label="Direct link to API Changes" title="Direct link to API Changes">​</a></h3>
 <p><strong>Prefabulous is not meant to have any public API,</strong> but there has been changes that could affect other plugins.</p>
 <p>In essence:</p>
