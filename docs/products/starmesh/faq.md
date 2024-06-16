@@ -20,6 +20,10 @@ This is needed because those blendshapes do not follow a linear interpolation be
 
 You only need one animated or scripted property for the blendshape of a Starmesh component to have full effect.
 
+<video controls muted width="816">
+    <source src={require('./img/Y5ohAIogzL.mp4').default}/>
+</video>
+
 ### Compatibility with applications
 
 <HaiTag requiresVRChat={true} short={true} /> If you use a third-party tool called *DexProtect*, **then you must update DexProtect to version 2.2.3 or higher**.
