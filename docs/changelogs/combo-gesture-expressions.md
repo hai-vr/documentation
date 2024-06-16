@@ -2,6 +2,12 @@
 title: ComboGestureExpressions
 ---
 
+## 3.2.0
+
+- Remove the Beta label.
+- Attempt to fix "The script class couldn't be found" when adding curve keys.
+- Fix Eye Tracking toggle now uses Write Defaults setting.
+
 ## 3.1.5102 (Beta)
 
 ### Fixes
