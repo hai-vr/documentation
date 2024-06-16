@@ -11,6 +11,10 @@ Automatically links all blendshapes found in your meshes which follow the Unifie
 as ARKit-named BlendShapeClips into the [VRM BlendShapeAvatar asset](https://vrm.dev/en/univrm/blendshape/univrm_blendshape/#blendshapeavatar)
 used by your avatar [VRMBlendShapeProxy component](https://vrm.dev/en/univrm/blendshape/univrm_blendshape/#vrmblendshapeproxy).
 
+<video controls muted width="816">
+    <source src={require('../img/vrm/D5H4ofatKD.mp4').default}/>
+</video>
+
 ## How to use
 
 This component automatically creates ARKit-named BlendShapeClips into the BlendShapeAvatar asset used by your avatar VRMBlendShapeProxy component.
