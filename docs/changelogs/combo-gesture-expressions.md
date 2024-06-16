@@ -4,6 +4,7 @@ title: ComboGestureExpressions
 
 ## 3.2.0
 
+- Allow installation with VRChat Avatars SDK 3.6.x
 - Remove the Beta label.
 - Attempt to fix "The script class couldn't be found" when adding curve keys.
 - Fix Eye Tracking toggle now uses Write Defaults setting.
