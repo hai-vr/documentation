@@ -4,10 +4,33 @@
         <title>Haï~ Blog</title>
         <link>https://docs.hai-vr.dev/updates</link>
         <description>Haï~ Blog</description>
-        <lastBuildDate>Thu, 13 Jun 2024 18:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 16 Jun 2024 17:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[⚙️ Auto-reset OSC config 1.1.4]]></title>
+            <link>https://docs.hai-vr.dev/updates/2024/06/16/p1</link>
+            <guid>https://docs.hai-vr.dev/updates/2024/06/16/p1</guid>
+            <pubDate>Sun, 16 Jun 2024 17:00:00 GMT</pubDate>
+            <description><![CDATA[- Allow installation with VRChat Avatars SDK 3.6.x]]></description>
+            <content:encoded><![CDATA[<ul>
+<li>Allow installation with VRChat Avatars SDK 3.6.x</li>
+</ul>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[⚙️ ComboGestureExpressions 3.2.0]]></title>
+            <link>https://docs.hai-vr.dev/updates/2024/06/16/p0</link>
+            <guid>https://docs.hai-vr.dev/updates/2024/06/16/p0</guid>
+            <pubDate>Sun, 16 Jun 2024 00:00:00 GMT</pubDate>
+            <description><![CDATA[- Allow installation with VRChat Avatars SDK 3.6.x]]></description>
+            <content:encoded><![CDATA[<ul>
+<li>Allow installation with VRChat Avatars SDK 3.6.x</li>
+<li>Remove the Beta label.</li>
+<li>Attempt to fix "The script class couldn't be found" when adding curve keys.</li>
+<li>Fix Eye Tracking toggle now uses Write Defaults setting.</li>
+</ul>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[☀️ Chillaxins]]></title>
             <link>https://docs.hai-vr.dev/updates/2024/06/13/p1</link>
@@ -469,24 +492,6 @@ This means you only need to specify the new value of the property, and Vixen wou
 <li>Don't warn when using Modular Avatar 1.9.x</li>
 </ul>
 <p>🔍 <a href="https://docs.hai-vr.dev/docs/changelogs/prefabulous#1101">View changelog</a></p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[⚙️ Convert ComboGesture to FaceEmo V0.2.0]]></title>
-            <link>https://docs.hai-vr.dev/updates/2024/02/01/p0</link>
-            <guid>https://docs.hai-vr.dev/updates/2024/02/01/p0</guid>
-            <pubDate>Thu, 01 Feb 2024 00:00:00 GMT</pubDate>
-            <description><![CDATA[Update dependencies to allow installing Convert ComboGesture to FaceEmo with FaceEmo 1.5]]></description>
-            <content:encoded><![CDATA[<p>Update dependencies to allow installing Convert ComboGesture to FaceEmo with FaceEmo 1.5</p>
-<p>🔍 <a href="https://docs.hai-vr.dev/docs/changelogs/cge-to-faceemo#020">View changelog</a></p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[⚙️ Prefabulous Avatar V1.9.1]]></title>
-            <link>https://docs.hai-vr.dev/updates/2024/01/30/p0</link>
-            <guid>https://docs.hai-vr.dev/updates/2024/01/30/p0</guid>
-            <pubDate>Tue, 30 Jan 2024 00:00:00 GMT</pubDate>
-            <description><![CDATA[Update dependencies to allow installing Prefabulous Avatar with NDMF 1.3]]></description>
-            <content:encoded><![CDATA[<p>Update dependencies to allow installing Prefabulous Avatar with NDMF 1.3</p>
-<p>🔍 <a href="https://docs.hai-vr.dev/docs/changelogs/prefabulous#191">View changelog</a></p>]]></content:encoded>
         </item>
     </channel>
 </rss>
