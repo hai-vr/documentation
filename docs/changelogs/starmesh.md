@@ -2,7 +2,11 @@
 title: Starmesh
 ---
 
-## 1.4.0 (Planned)
+## 1.4.0
+
+This update attempts to make the deletion of Operators more robust, so that the reference to the "Original Mesh" is not lost while editing.
+
+A new component "StarmeshOriginalMeshData" will be automatically added inside SkinnedMeshRenderers used by a StarmeshSelectMeshes component, which will preserve the reference to the "Original Mesh" even after Operators are removed from the avatar.
 
 - Attempt to fix a major issue where users would delete the Starmesh Operator hierarchy in such a way that Starmesh won't be able to restore the original mesh asset into the SkinnedMeshRenderer.
   - This causes subsequent addition of new Starmesh Operators to fail initializing because the reference to the original mesh was lost.
