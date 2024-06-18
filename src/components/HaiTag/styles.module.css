@@ -49,3 +49,7 @@
   background-color: var(--hai-not-compatible-label);
   padding: 0.5em 1em 0.5em 1em;
 }
+.hai_tag_supporter {
+  color: var(--ifm-color-primary-lightest);
+  background-color: var(--hai-gold);
+}

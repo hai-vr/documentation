@@ -32,6 +32,7 @@ interface Props {
     notVRChat: boolean;
     isUniversal: boolean;
     short: boolean;
+    supporter: boolean;
 }
 
 export function HaiTag({
@@ -49,7 +50,8 @@ export function HaiTag({
                            requiresWarudo,
                            notCompatibleWithGltf,
                            compatibleWithVNyan,
-                            short
+                           short,
+                           supporter
 }: Props): JSX.Element {
     let div = short ? <></> : <>Compatible with </>;
     let div2 = short ? <></> : <>Requires </>;
@@ -70,6 +72,7 @@ export function HaiTag({
                 {requiresWarudo ? <div className={clsx(styles.hai_tag, styles.hai_tag_compatible_with_warudo)}>📹 Requires Warudo</div> : ''}
                 {isUniversal ? <div className={clsx(styles.hai_tag, styles.hai_tag_universal)}>🌊 Any Platform</div> : ''}
                 {notVRChat ? <div className={clsx(styles.hai_tag, styles.hai_tag_universal)}>🌊 Any Platform, except VRChat</div> : ''}
+                {supporter ? <div className={clsx(styles.hai_tag, styles.hai_tag_supporter)}>⭐ All Supporter tiers <a href="https://www.patreon.com/vr_hai">(5€+)</a></div> : ''}
         </span>
     );
 }
