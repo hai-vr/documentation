@@ -31,7 +31,7 @@ To use this component:
         - **AccurateRightEyeYaw**
           - **AccurateRightEyePitch**
 - You don't have to use those names. 
-- Make sure that the **AccurateEyeTrackingTransforms, AccurateLeftEyeYaw, AccurateLeftEyePitch, AccurateRightEyeYaw, AccurateRightEyePitch** transforms have a local rotation set to zero.
+- Make sure that the **AccurateLeftEyeYaw, AccurateLeftEyePitch, AccurateRightEyeYaw, AccurateRightEyePitch** transforms have a local rotation set to zero.
 - Make sure that the **AccurateLeftEyePitch, AccurateRightEyePitch** transforms have a position set to zero.
 - The **AccurateEyeTrackingTransforms** transform should be roughly located where your viewpoint is.
 - The **AccurateLeftEyeYaw, AccurateRightEyeYaw** transform positions should be shifted left and right.

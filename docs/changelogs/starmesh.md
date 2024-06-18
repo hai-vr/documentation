@@ -2,6 +2,16 @@
 title: Starmesh
 ---
 
+## 1.4.0 (Planned)
+
+- Attempt to fix a major issue where users would delete the Starmesh Operator hierarchy in such a way that Starmesh won't be able to restore the original mesh asset into the SkinnedMeshRenderer.
+  - This causes subsequent addition of new Starmesh Operators to fail initializing because the reference to the original mesh was lost.
+  - Every SkinnedMeshRenderer that has been associated into a StarmeshSelectMeshes component will now have a StarmeshOriginalMeshData component attached to it.
+  - The purpose of this component is to remember what was the original mesh, so that it has a chance of restoring the original mesh into the skinned mesh even if the user deletes all the Starmesh operators from the avatar.
+  - The user should be able to delete that new component safely from the avatar after all Operators have been removed and the orange button "Restore mesh into SkinnedMeshRenderer" has been pressed.
+- Attempt to fix an issue where coordinate system transformations would not be possible because the user would set the bones of secondary Armatures to EditorOnly.
+  - The StarmeshOriginalMeshData now stores the bone zero transformation matrix as a fallback solution in case this happens.
+
 ## 1.3.0
 
 - Estimated VRAM cost is now shown inside Operators.
