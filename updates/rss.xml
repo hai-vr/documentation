@@ -4,10 +4,21 @@
         <title>Haï~ Blog</title>
         <link>https://docs.hai-vr.dev/updates</link>
         <description>Haï~ Blog</description>
-        <lastBuildDate>Sun, 16 Jun 2024 17:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 20 Jun 2024 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[⚙️ Lightbox Viewer 2.2.0]]></title>
+            <link>https://docs.hai-vr.dev/updates/2024/06/20/p0</link>
+            <guid>https://docs.hai-vr.dev/updates/2024/06/20/p0</guid>
+            <pubDate>Thu, 20 Jun 2024 00:00:00 GMT</pubDate>
+            <description><![CDATA[This update tries to improve Lightbox Viewer speed in Edit mode, especially in avatar setups where there may be a lot of non-destructive components]]></description>
+            <content:encoded><![CDATA[<p>This update tries to improve Lightbox Viewer speed in Edit mode, especially in avatar setups where there may be a lot of non-destructive components
+which have code that runs when that component is destroyed.</p>
+<p>There are no speed improvements in Play mode.</p>
+<p>🔍 <a href="https://docs.hai-vr.dev/docs/changelogs/lightbox-viewer#220">View changelog</a></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[⚙️ Auto-reset OSC config 1.1.4]]></title>
             <link>https://docs.hai-vr.dev/updates/2024/06/16/p1</link>
@@ -465,34 +476,6 @@ This means you only need to specify the new value of the property, and Vixen wou
 </li>
 </ul>
 <p><img decoding="async" loading="lazy" alt="2024-03-27-p1-Unity_yH0bzcLRVK.png" src="https://docs.hai-vr.dev/assets/images/2024-03-27-p1-Unity_yH0bzcLRVK-6b20aa2e879a61bebf2a03f46959f39d.png" width="395" height="203" class="img_ev3q"></p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[☀️ Replace Textures, Convert Blendshape Conventions, Mass Blendshape Sync (Prefabulous V1.10)]]></title>
-            <link>https://docs.hai-vr.dev/updates/2024/03/27/p0</link>
-            <guid>https://docs.hai-vr.dev/updates/2024/03/27/p0</guid>
-            <pubDate>Wed, 27 Mar 2024 00:00:00 GMT</pubDate>
-            <description><![CDATA[Three new components have been added to Prefabulous Avatar.]]></description>
-            <content:encoded><![CDATA[<p>Three new components have been added to Prefabulous Avatar.</p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="new-component-replace-textures">New component: <a href="https://docs.hai-vr.dev/docs/products/prefabulous/universal/replace-textures">Replace Textures</a><a href="https://docs.hai-vr.dev/updates/2024/03/27/p0#new-component-replace-textures" class="hash-link" aria-label="Direct link to new-component-replace-textures" title="Direct link to new-component-replace-textures">​</a></h3>
-<p>This component lets you upload multiple versions of your avatar but with different textures, without needing to duplicate the materials.</p>
-<p>It also displays which materials use which textures, although you could also be using lilAvatarUtils for this.</p>
-<p><img decoding="async" loading="lazy" alt="Unity_lJ03XfMYPW.png" src="https://docs.hai-vr.dev/assets/images/Unity_lJ03XfMYPW-b73799405be8566b388657c346162d89.png" width="397" height="432" class="img_ev3q"></p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="new-component-convert-blendshape-conventions">New component: <a href="https://docs.hai-vr.dev/docs/products/prefabulous/universal/convert-blendshape-conventions">Convert Blendshape Conventions</a><a href="https://docs.hai-vr.dev/updates/2024/03/27/p0#new-component-convert-blendshape-conventions" class="hash-link" aria-label="Direct link to new-component-convert-blendshape-conventions" title="Direct link to new-component-convert-blendshape-conventions">​</a></h3>
-<p>This component lets you convert blendshapes from one naming convention to another naming convention, such as converting Unified Expressions blendshapes to ARKit blendshapes.</p>
-<p><img decoding="async" loading="lazy" alt="Unity_Kwht5QWD83.png" src="https://docs.hai-vr.dev/assets/images/Unity_Kwht5QWD83-c40d00ccaf123909a4d07f7bd59e5ad8.png" width="459" height="328" class="img_ev3q"></p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="new-component-mass-blendshape-sync">New component: <a href="https://docs.hai-vr.dev/docs/products/prefabulous/vrchat/mass-blendshape-sync">Mass Blendshape Sync</a><a href="https://docs.hai-vr.dev/updates/2024/03/27/p0#new-component-mass-blendshape-sync" class="hash-link" aria-label="Direct link to new-component-mass-blendshape-sync" title="Direct link to new-component-mass-blendshape-sync">​</a></h3>
-<p>This component will synchronize all blendshapes that two meshes share in common.</p>
-<p>This is ideally used with renderers that have a massive quantity of blendshapes that need to be synced, such as face tracking.</p>
-<p><img decoding="async" loading="lazy" alt="Unity_kmeSxcDqt8.png" src="https://docs.hai-vr.dev/assets/images/Unity_kmeSxcDqt8-88766b41d70491686f3af85ce84bc8ed.png" width="410" height="132" class="img_ev3q"></p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="other">Other<a href="https://docs.hai-vr.dev/updates/2024/03/27/p0#other" class="hash-link" aria-label="Direct link to Other" title="Direct link to Other">​</a></h3>
-<ul>
-<li>All Prefabulous components will now be removed after baking, so that uploading a baked avatar will not bake them twice.</li>
-<li>Blank Gesture Animator now generates one animator layer that VRChat requires, instead of zero layers.</li>
-<li>The dependency to "Animator As Code - NDMF Processor (Alpha)" has been removed.</li>
-<li>Don't warn when using NDMF 1.4.x</li>
-<li>Don't warn when using Modular Avatar 1.9.x</li>
-</ul>
-<p>🔍 <a href="https://docs.hai-vr.dev/docs/changelogs/prefabulous#1101">View changelog</a></p>]]></content:encoded>
         </item>
     </channel>
 </rss>
