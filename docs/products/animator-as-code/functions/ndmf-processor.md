@@ -1,10 +1,40 @@
 ﻿---
 sidebar_position: 8
-title: "NDMF Processor"
+title: "NDMF Processor (Deprecated)"
 unlisted: true
 ---
 
 # Functions: NDMF Processor
+
+## Depreciation
+
+*Animator As Code - NDMF Processor (Alpha)* is deprecated.
+
+The recommendation is now for you to instantiate Animator As Code in a NDMF Plugin class that you've created yourself.
+
+The rationale is that there's too many scenarios where NDMF Processor gets in the way of the implementation, for instance if the generation needs to execute only once even if the avatar has multiple components, or if the same generation needs to execute for multiple component types.
+
+Creating a NDMF Plugin on your own bypasses all of these implementation constraints.
+
+:::info
+Modules created by Haï no longer depend on *Animator As Code - NDMF Processor*, so this can be safely removed from projects.
+:::
+
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+
+---
 
 :::danger
 This is the work-in-progress documentation for Animator As Code **V1**, which has not yet been released. The last public version of Animator As Code is V0.
