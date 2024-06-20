@@ -2,6 +2,12 @@
 title: Lightbox Viewer
 ---
 
+## 2.2.0
+
+Try to improve speed in Edit mode by removing all MonoBehaviours from the copy:
+- Try to improve the runtime speed in Edit mode by removing all MonoBehaviours from the copy, so that the OnEnable/OnDestroy don't get invoked.
+- This is done by parenting the copy to a disabled parent before removing all MonoBehaviours from the copy.
+
 ## 2.1.0
 
 Re-bake lighting of Lightbox scene in Unity 2022:
