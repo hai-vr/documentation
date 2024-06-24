@@ -14,7 +14,8 @@ The following changelog is for a future release.
   - The animators and animations of those prefabs do not need to be edited by hand.
   - If Modular Avatar is not installed, Starmesh will continue to work, but prefabs will not work.
   - *Modular Avatar Merge Animator* components will affect the meshes selected by *Starmesh Select Meshes*.
-  - See [VRChat prefabs](/docs/products/starmesh/prefabs/vrc) documentation.
+
+[//]: # (  - See [VRChat prefabs]&#40;/docs/products/starmesh/prefabs/vrc&#41; documentation.)
 - When a Shape Name is empty, generate the name uniquely in order to favour the creation of independent prefabs.
 - 
 Fixes:
