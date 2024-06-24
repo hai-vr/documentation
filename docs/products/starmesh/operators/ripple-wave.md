@@ -31,6 +31,11 @@ as long as you use their proprietary avatar formats, instead of the VRM format.
 
 ## How to use
 
+### Consider checking out the prefab
+
+Are you new with *Ripple Wave*? Consider checking out the <HaiTag requiresVRChat={true} short={true} /> [prefab for a full example](../prefabs/vrc#ripple-wave-back-sample-prefabs)
+that can be installed in a few clicks using *Modular Avatar*.
+
 ### Create the operator and selectors
 
 - Add a *Starmesh Op. Ripple Wave* component on a new GameObject in your avatar.

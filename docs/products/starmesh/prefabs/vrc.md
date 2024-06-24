@@ -25,6 +25,10 @@ The components you see inside the prefab are just the tip of the iceberg.
 
 Current version of this prefab: V1.0
 
+<video controls muted width="816">
+    <source src={require('../img/qU1Rm3YaXR.mp4').default}/>
+</video>
+
 ### Basic setup
 
 - **[Download this prefab](https://github.com/hai-vr/p4s/raw/main/RippleWaveBackSample_VRC_StarmeshV1.5.0_V1.0.unitypackage)** and install it in your project.
@@ -63,3 +67,7 @@ Current version of this prefab: V1.0
 ## *Squishy Hair* prefabs
 
 The prefabs for this gimmick is located in `Assets/HaiPrefabsForStarmesh/PrefabsVRC/SquishyHair/`.
+
+:::warning
+This prefab is not currently available, please check again later.
+:::
