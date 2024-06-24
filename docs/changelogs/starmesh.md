@@ -2,22 +2,19 @@
 title: Starmesh
 ---
 
-## 1.5.0 (Planned)
+## 1.5.0
 
-:::warning
-The following changelog is for a future release.
-:::
-
+- *Ripple Wave* now has a *minimum amount*, so that the ripple already starts away from the center. 
 - **Add VRChat prefabs:**
   - Non-destructive prefabs designed for Starmesh can now be installed inside a VRChat avatar.
-  - **Modular Avatar is required for prefabs to work**, however Modular Avatar remains optional.
   - The animators and animations of those prefabs do not need to be edited by hand.
-  - If Modular Avatar is not installed, Starmesh will continue to work, but prefabs will not work.
+  - **Modular Avatar is required for prefabs to work**.
+  - If you don't need prefabs, then you don't need to have Modular Avatar installed.
   - *Modular Avatar Merge Animator* components will affect the meshes selected by *Starmesh Select Meshes*.
-
-[//]: # (  - See [VRChat prefabs]&#40;/docs/products/starmesh/prefabs/vrc&#41; documentation.)
+  - See [VRChat prefabs](/docs/products/starmesh/prefabs/vrc) documentation.
 - When a Shape Name is empty, generate the name uniquely in order to favour the creation of independent prefabs.
-- 
+- Warn the user where there are no meshes in the selector.
+
 Fixes:
 
 - Prevent non-blocking error message from appearing when painting vertices to 5 bones or more, by trimming on our side:

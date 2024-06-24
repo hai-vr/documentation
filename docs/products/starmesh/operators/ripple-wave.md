@@ -60,7 +60,8 @@ The Lateral deformation section configures how the vertices moves laterally away
 - To preview the effect, you should move the *Preview* slider to any value between 0 and 100. The value of 100 is meant to show nothing, since it's the end of the ripple.
 - In your scene, move the **Origin** gizmo inside your mesh, or above the surface of the mesh, where the ripple will start.
   - Don't put it exactly the surface of your mesh, it has to be a certain distance from the surface, so that the ripple has a direction.
-- Increase the **Size** gizmo so that it extended to the furthest point where the ripple will end.
+- Increase the **Size** gizmo so that it extendes to the furthest point where the ripple will end.
+- Increase or decrease the **Minimum** gizmo so that it stars at the closest point where the ripple will start. *(Added in V1.5)*
 - Increase or decrease the *Lateral Margin*. This value changes the length of the wave.
 - Increase or decrease the *Lateral Power*. This value changes the amplitude of the vertices moving laterally.
 

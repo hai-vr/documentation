@@ -32,6 +32,7 @@ This requires the use of the VRChat Creator Companion in order to automatically 
 
 - Add **[Modular Avatar listing](https://modular-avatar.nadena.dev/)** by clicking on *Download (using ALCOM or VCC).*
 - In VCC, add the **"Non-Destructive Modular Framework"** package to your project.
+- To use our VRChat prefabs, you will also need to add the **"Modular Avatar"** package to your project.
 - Open the downloaded archive from Patreon/pixivFANBOX and install the .unitypackage in your VRChat project.
 
 :::danger
