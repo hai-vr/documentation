@@ -12,7 +12,7 @@ In order to use these prefabs, you need to install [**Starmesh V1.5 or higher**]
 You will also need *Modular Avatar* installed in your project.
 
 :::warning
-**Starmesh generates a *Modular Avatar Blendshape Sync* component during the build** in order to bind the generated blendshapes
+**Starmesh generates *Modular Avatar Blendshape Sync* components during the build** in order to bind the generated blendshapes
 of the *Starmesh Select Meshes* components with existing animations inside the animators, while allowing multiple independent copies of that animator to coexist in the same avatar.
 
 The components you see inside the prefab are just the tip of the iceberg.
