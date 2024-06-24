@@ -2,6 +2,28 @@
 title: Starmesh
 ---
 
+## 1.5.0 (Planned)
+
+:::warning
+The following changelog is for a future release.
+:::
+
+- **Add VRChat prefabs:**
+  - Non-destructive prefabs designed for Starmesh can now be installed inside a VRChat avatar.
+  - **Modular Avatar is required for prefabs to work**, however Modular Avatar remains optional.
+  - The animators and animations of those prefabs do not need to be edited by hand.
+  - If Modular Avatar is not installed, Starmesh will continue to work, but prefabs will not work.
+  - *Modular Avatar Merge Animator* components will affect the meshes selected by *Starmesh Select Meshes*.
+  - See [VRChat prefabs](/docs/products/starmesh/prefabs/vrc) documentation.
+- When a Shape Name is empty, generate the name uniquely in order to favour the creation of independent prefabs.
+- 
+Fixes:
+
+- Prevent non-blocking error message from appearing when painting vertices to 5 bones or more, by trimming on our side:
+  - Previously, painting vertices to 5 bones or more causes Unity to show a non-blocking error message on platforms that have a 4-bone limit.
+  - This error message is now prevented from appearing by trimming the painted bones down to 4 on our side, and then rescaling the weights.
+- If *Prefabulous Universal* is installed in the project, building an avatar will delegate the recalculation of normals to *Prefabulous Universal* in order to avoid copying all blendshapes of the mesh twice.
+
 ## 1.4.0
 
 This update attempts to make the deletion of Operators more robust, so that the reference to the "Original Mesh" is not lost while editing.
