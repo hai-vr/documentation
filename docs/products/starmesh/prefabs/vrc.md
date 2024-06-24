@@ -23,6 +23,8 @@ The components you see inside the prefab are just the tip of the iceberg.
 
 ## *Ripple Wave Back Sample* prefabs
 
+Current version of this prefab: V1.0
+
 ### Basic setup
 
 - **[Download this prefab](https://github.com/hai-vr/p4s/raw/main/RippleWaveBackSample_VRC_StarmeshV1.5.0_V1.0.unitypackage)** and install it in your project.
