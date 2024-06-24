@@ -37,6 +37,7 @@ Current version of this prefab: V1.1
 - Add **RippleWaveBackSample.prefab** inside your avatar.
 - Change the position of the *Center* object to line up with your hip (X and Z).
 - Change the position of the *RippleWave* object to line up with your hip (X and Z).
+- In *SelectMeshes*, select the meshes that will be affected.
 
 ### Add or remove the menu
 
@@ -55,6 +56,7 @@ Current version of this prefab: V1.1
   - A speed value of 3 makes the animation play in 0.33 second.
   - A speed value of 4 makes the animation play in 0.25 second.
 - You can have multiple of those prefabs in the same avatar, and they will execute independently.
+- By default, the *BoneProxy* is configured to attach to your hip when the avatar is being built.
 
 ### Performance considerations
 
