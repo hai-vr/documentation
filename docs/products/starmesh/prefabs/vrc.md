@@ -33,7 +33,7 @@ Current version of this prefab: V1.1
 
 - **[Download this prefab](https://github.com/hai-vr/p4s/raw/main/RippleWaveBackSample_VRC_StarmeshV1.5.0_V1.1.unitypackage)** and install it in your project.
   - (You need to already have [*Starmesh* and *Modular Avatar* installed in your project](/docs/products/starmesh/install)).
-- The prefabs for this gimmick is located in `Assets/HaiPrefabsForStarmesh/PrefabsVRC/RippleWaveBackSample/`.
+- The prefabs for this gimmick are located in `Assets/HaiPrefabsForStarmesh/PrefabsVRC/RippleWaveBackSample/`.
 - Add **RippleWaveBackSample.prefab** inside your avatar.
 - Change the position of the *Center* object to line up with your hip (X and Z).
 - Change the position of the *RippleWave* object to line up with your hip (X and Z).
