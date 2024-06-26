@@ -275,16 +275,16 @@ consider using the [**Driving lambda expression**](#driver-state-behaviour-as-a-
 
 #### Set
 
-- `AacVRCFlEditDriver Drives(AacFlIntParameter parameter, int value)` 💡<br/>
+- `AacVRCFlEditDriver Sets(AacFlIntParameter parameter, int value)` 💡<br/>
   Drive the Int parameter to value.
 
-- `AacVRCFlEditDriver Drives(AacFlFloatParameter parameter, float value)` 💡<br/>
+- `AacVRCFlEditDriver Sets(AacFlFloatParameter parameter, float value)` 💡<br/>
   Drive the Float parameter to value.
 
-- `AacVRCFlEditDriver Drives(AacFlBoolParameter parameter, bool value)` 💡<br/>
+- `AacVRCFlEditDriver Sets(AacFlBoolParameter parameter, bool value)` 💡<br/>
   Drive the Bool parameter to value.
 
-- `AacVRCFlEditDriver Drives(AacFlBoolParameterGroup parameters, bool value)` 💡<br/>
+- `AacVRCFlEditDriver Sets(AacFlBoolParameterGroup parameters, bool value)` 💡<br/>
   Drive the Bool parameter to value.
 
 #### Add
