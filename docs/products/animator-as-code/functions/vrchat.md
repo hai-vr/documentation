@@ -262,7 +262,7 @@ consider using the [**Driving lambda expression**](#driver-state-behaviour-as-a-
 
 - `AacVRCFlEditPlayAudio Audio(string audioSourcePath, Action<AacVRCFlEditAudio> action)` 💡<br/>
   Creates a new VRCAnimatorPlayAudio behaviour, and edits it.
-  If you don't have the AudioSource, use the overload that accepts a string.
+  This overload accepts a path, but if you do have the AudioSource, use the overload that accepts an AudioSource.
   By default, this behaviour does nothing (everything is set to NeverApply, and does neither stop nor plays anything), unlike a VRCAnimatorPlayAudio that would be created by hand.
   This always creates a new behaviour even if there are already VRCAnimatorPlayAudio behaviours.
 
