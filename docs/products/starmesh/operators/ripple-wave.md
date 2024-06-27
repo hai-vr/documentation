@@ -75,9 +75,27 @@ The Lateral deformation section configures how the vertices moves laterally away
 - Move the *Preview* slider at the top to test the blendshape.
 - Press the *Recalculate Normals* button to test the blendshape with proper shading. This is slower, so turn it off if you are not testing your materials.
 
-### Advanced settings
+## Advanced settings
 
-#### Advanced Lateral deformation
+### Advanced Lateral deformation
 
 - The *Lateral Curve* defines how the wave gains and loses amplitude for any given vertex.
 - The *Lateral Dissipation* defines how the wave loses amplitude as it progresses throughout the mesh until the maximum *Size* is reached.
+
+### Recalculate Normals
+
+Normals will be automatically recalculated for this blendshape.
+
+### Creating prefabs
+
+<HaiTags>
+<HaiTag requiresVRChat={true} />
+</HaiTags>
+
+The field *Animation Repathing* is used for the creation of <HaiTag requiresVRChat={true} short={true} /> prefabs using *[Modular Avatar Merge Animator](https://modular-avatar.nadena.dev/docs/reference/merge-animator)*.
+
+When this field is not empty, *Starmesh* will generate *[Modular Avatar Blendshape Sync](https://modular-avatar.nadena.dev/docs/reference/blendshape-sync)* components inside the meshes
+used by *Starmesh Select Meshes* during the build, which will bind the animations targeting the operator's object name with the blendshape defined
+in *Animation Repathing* to the generated blendshapes. For concrete examples, see the [VRChat prefabs](../prefabs) section.
+
+In addition, if you leave *Shape Name* empty, *Starmesh* will generate a unique blendshape name.

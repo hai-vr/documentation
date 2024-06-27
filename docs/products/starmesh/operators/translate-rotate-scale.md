@@ -1,4 +1,7 @@
-﻿# Translate Rotate Scale (TRS)
+﻿import {HaiTags} from "/src/components/HaiTags";
+import {HaiTag} from "/src/components/HaiTag";
+
+# Translate Rotate Scale (TRS)
 
 The *Starmesh Op. Translate Rotate Scale (TRS)* component creates a blendshape that translates, rotates, and scales affected vertices
 from one point to another.
@@ -46,12 +49,26 @@ You can add selectors as children of this GameObject.
 - Move the *Preview* slider at the top to test the blendshape.
 - Press the *Recalculate Normals* button to test the blendshape with proper shading. This is slower, so turn it off if you are not testing your materials.
 
-### Advanced settings
+## Advanced settings
 
-#### Recalculate Normals
+### Recalculate Normals
 
 Normals will be automatically recalculated for this blendshape.
 
 In general, you should recalculate normals, but there are a few exceptions to consider:
 - If your blendshape is a conflict prevention blendshape, check *Do Not Recalculate Normals*.
 - If your blendshape is a face expression, decide if you want to check *Do Not Recalculate Normals* by previewing your avatar with the *Recalculate Normals* button at the top.
+
+## Creating prefabs
+
+<HaiTags>
+<HaiTag requiresVRChat={true} />
+</HaiTags>
+
+The field *Animation Repathing* is used for the creation of <HaiTag requiresVRChat={true} short={true} /> prefabs using *[Modular Avatar Merge Animator](https://modular-avatar.nadena.dev/docs/reference/merge-animator)*.
+
+When this field is not empty, *Starmesh* will generate *[Modular Avatar Blendshape Sync](https://modular-avatar.nadena.dev/docs/reference/blendshape-sync)* components inside the meshes
+used by *Starmesh Select Meshes* during the build, which will bind the animations targeting the operator's object name with the blendshape defined
+in *Animation Repathing* to the generated blendshapes. For concrete examples, see the [VRChat prefabs](../prefabs) section.
+
+In addition, if you leave *Shape Name* empty, *Starmesh* will generate a unique blendshape name.
