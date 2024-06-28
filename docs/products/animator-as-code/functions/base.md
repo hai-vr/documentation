@@ -248,13 +248,16 @@ Set the blending mode of the layer.
 
 ## Sub State Machine (AacFlStateMachine) 💡
 
+- `AnimatorStateMachine Machine` <br/>
+  Expose the underlying AnimatorStateMachine object.
+
 - `AacFlStateMachine NewSubStateMachine(string name)` 💡<br/>
 Create a new state machine, initially positioned below the last generated state of this layer.
 
-- `AacFlStateMachine Restarts()` 💡<br/>
+- `AacFlNewTransitionContinuation Restarts()` 💡<br/>
 Creates a new transition of the entire state machine node to itself, which is evaluated after the state machine commits to an exit transitions.
 
-- `AacFlStateMachine Exits()` 💡<br/>
+- `AacFlNewTransitionContinuation Exits()` 💡<br/>
 Create a transition from this state machine node to the exit. 🔺 If the name is already used, a number will be appended at the end.
   
 
@@ -278,8 +281,8 @@ Create a Bool parameter, for use without a backing animator.
 
 ## State (AacFlState)
 
-- `AnimatorState State;` <br/>
-Expose the underlying State object.
+- `AnimatorState State` <br/>
+Expose the underlying AnimatorState object.
 
 
 ### Graph Positioning
