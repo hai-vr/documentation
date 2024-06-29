@@ -6,7 +6,7 @@ These lines are visible within VR: This is the main value added by this componen
 
 The functionality of DataViz Lifecycle is not invoked directly.
 
-It is normally invoked by calling the [DataViz Utility](./data-viz) singleton, which will then delegate calls to this instance.
+It is normally invoked by calling the [DataViz Utility](./data-viz-utility) singleton, which will then delegate calls to this instance.
 
 Conventions:
 - This module uses **setup-teardown**.
