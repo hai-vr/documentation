@@ -1,5 +1,16 @@
 ﻿# Kinematics Solver
 
+Pose a humanoid based on IK targets (and also the previous internal state of this solver). The internal state of this IK solver
+is discarded whenever this component becomes disabled.
+
+There is no update loop. The consumer of this IK solver must request solve accordingly,
+based on the solving phase (i.e. solving for kinematics snapshots, or solving for live targets).
+
+Conventions:
+- This module uses **setup-teardown**.
+- This module uses **manual update invocation**.
+  - There are separate update functions depending on the phase.
+
 ## Inverse Kinematics solver
 
 ### General IK solver strategy
