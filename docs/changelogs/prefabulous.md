@@ -2,6 +2,10 @@
 title: Prefabulous
 ---
 
+## 2.0.1
+
+Hide all Prefabulous icons from the scene in Unity 2022 or above.
+
 ## 2.0.0 Prefabulous Universal
 
 Prefabulous has been split into:
