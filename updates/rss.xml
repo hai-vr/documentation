@@ -4,10 +4,18 @@
         <title>Haï~ Blog</title>
         <link>https://docs.hai-vr.dev/updates</link>
         <description>Haï~ Blog</description>
-        <lastBuildDate>Thu, 20 Jun 2024 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 29 Jun 2024 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[⚙️ Prefabulous Universal 2.0.1]]></title>
+            <link>https://docs.hai-vr.dev/updates/2024/06/29/p0</link>
+            <guid>https://docs.hai-vr.dev/updates/2024/06/29/p0</guid>
+            <pubDate>Sat, 29 Jun 2024 00:00:00 GMT</pubDate>
+            <description><![CDATA[Hide all Prefabulous icons from the scene in Unity 2022 or above.]]></description>
+            <content:encoded><![CDATA[<p>Hide all Prefabulous icons from the scene in Unity 2022 or above.</p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[⚙️ Lightbox Viewer 2.2.0]]></title>
             <link>https://docs.hai-vr.dev/updates/2024/06/20/p0</link>
@@ -458,24 +466,6 @@ This means you only need to specify the new value of the property, and Vixen wou
 <li>To alleviate this, remove the dependency to NDMF 1.4 from vpmDependencies.</li>
 <li>NDMF 1.4 is still implied by the use of Modular Avatar 1.9.9 minimum.</li>
 </ul>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[⚙️ Prefabulous Avatar V1.10.2-beta.1]]></title>
-            <link>https://docs.hai-vr.dev/updates/2024/03/27/p1</link>
-            <guid>https://docs.hai-vr.dev/updates/2024/03/27/p1</guid>
-            <pubDate>Wed, 27 Mar 2024 13:00:00 GMT</pubDate>
-            <description><![CDATA[This is a technical update for Prefabulous Avatar:]]></description>
-            <content:encoded><![CDATA[<p>This is a technical update for Prefabulous Avatar:</p>
-<ul>
-<li>This version now requires Modular Avatar V1.9.9 minimum.</li>
-<li>This version now requires NDMF V1.4.0 minimum.</li>
-<li>Integrate <a href="https://docs.hai-vr.dev/docs/products/prefabulous/vrchat/import-expression-parameters">Import Expression Parameters</a> with Modular Avatar Information.<!-- -->
-<ul>
-<li>The number of synced bits used by Import Parameters is now shown in the Modular Avatar Information panel.</li>
-</ul>
-</li>
-</ul>
-<p><img decoding="async" loading="lazy" alt="2024-03-27-p1-Unity_yH0bzcLRVK.png" src="https://docs.hai-vr.dev/assets/images/2024-03-27-p1-Unity_yH0bzcLRVK-6b20aa2e879a61bebf2a03f46959f39d.png" width="395" height="203" class="img_ev3q"></p>]]></content:encoded>
         </item>
     </channel>
 </rss>
