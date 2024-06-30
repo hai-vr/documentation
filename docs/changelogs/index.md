@@ -26,12 +26,15 @@ The changelogs of some products aren't available at this time.
 | **Editors**                                                         |                       |             |
 | [ComboGestureExpressions](./changelogs/combo-gesture-expressions)   | 3.2.0                 | **2024-06** |
 | [FaceTra Shape Creator](./changelogs/facetra-shape-creator)         | 0.8.0-2024-04-08-2020 | 2024-04     |
-| [Prefabulous Universal](./changelogs/prefabulous)                   | 2.0.0                 | **2024-06** |
+| [Prefabulous Universal](./changelogs/prefabulous)                   | 2.0.2                 | **2024-06** |
 | [Prefabulous for VRChat](./changelogs/prefabulous-for-vrchat)       | 2.0.0                 | **2024-06** |
 | [Prefabulous for VRM](./changelogs/prefabulous-for-vrm)             | 2.0.0                 | **2024-06** |
 | [Starmesh](./changelogs/starmesh)                                   | 1.3.0                 | **2024-06** |
 | [Visual Expressions Editor](./changelogs/visual-expressions-editor) | 2.0.3                 | 2023-11     |
 | [Vixen](./changelogs/vixen)                                         | 1.2.0                 | **2024-06** |
+| **APIs**                                                            |                       |             |
+| [Animator As Code](./changelogs/animator-as-code)                   | 1.1.0-beta.1          | **2024-06** |
+| [Animator As Code - VRChat](./changelogs/animator-as-code-vrchat)   | 1.1.0-beta.1          | **2024-06** |
 | **Patchers**                                                        |                       |             |           
 | [Auto-reset OSC config](./changelogs/auto-reset-osc-config)         | 1.1.4                 | **2024-06** |       
 | [Convert ComboGesture to FaceEmo](./changelogs/cge-to-faceemo)      | 0.2.0                 | 2024-02     |
