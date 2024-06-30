@@ -2,6 +2,10 @@
 title: Prefabulous
 ---
 
+## 2.0.2
+
+Fix Assign UV Tile "Entire Mesh" no longer fails to process meshes that were set to EditorOnly.
+
 ## 2.0.1
 
 Hide all Prefabulous icons from the scene in Unity 2022 or above.
