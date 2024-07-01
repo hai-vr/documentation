@@ -5,7 +5,7 @@
 <meta name="generator" content="Docusaurus v3.2.1">
 <title data-rh="true">Base functions | Haï~</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://docs.hai-vr.dev/img/hai-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://docs.hai-vr.dev/img/hai-social-card.jpg"><meta data-rh="true" property="og:url" content="https://docs.hai-vr.dev/docs/products/animator-as-code/functions/base"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Base functions | Haï~"><meta data-rh="true" name="description" content="This is the work-in-progress documentation for Animator As Code V1, which has not yet been released. The last public version of Animator As Code is V0."><meta data-rh="true" property="og:description" content="This is the work-in-progress documentation for Animator As Code V1, which has not yet been released. The last public version of Animator As Code is V0."><link data-rh="true" rel="icon" href="/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://docs.hai-vr.dev/docs/products/animator-as-code/functions/base"><link data-rh="true" rel="alternate" href="https://docs.hai-vr.dev/docs/products/animator-as-code/functions/base" hreflang="en"><link data-rh="true" rel="alternate" href="https://docs.hai-vr.dev/docs/products/animator-as-code/functions/base" hreflang="x-default"><link rel="alternate" type="application/rss+xml" href="/updates/rss.xml" title="Haï~ RSS Feed">
 <link rel="alternate" type="application/atom+xml" href="/updates/atom.xml" title="Haï~ Atom Feed"><link rel="stylesheet" href="/assets/css/styles.dbcbb60b.css">
-<script src="/assets/js/runtime~main.452a3e27.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.a27e3bef.js" defer="defer"></script>
 <script src="/assets/js/main.59cbb915.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -106,15 +106,23 @@ Create a new layer. You cannot invoke this method multiple times on the same con
 <ul>
 <li>
 <p><code>AacFlState NewState(string name)</code> 🔺<br>
-Create a new state, initially positioned below the last generated state of this layer. 🔺 If the name is already used, a number will be appended at the end.</p>
+Create a new state, initially positioned below the last generated state of this layer.<br>
+🔺 If the name is already used, a number will be appended at the end.</p>
 </li>
 <li>
 <p><code>AacFlState NewState(string name, int x, int y)</code> 🔺<br>
-Create a new state at a specific position <code>x</code> and <code>y</code>, in grid units. The grid size is defined in the DefaultsProvider of the AacConfiguration of AAC. <code>x</code> positive goes right, <code>y</code> positive goes down. 🔺 If the name is already used, a number will be appended at the end.</p>
+Create a new state at a specific position <code>x</code> and <code>y</code>, in grid units. The grid size is defined in the DefaultsProvider of the AacConfiguration of AAC. <code>x</code> positive goes right, <code>y</code> positive goes down.<br>
+🔺 If the name is already used, a number will be appended at the end.</p>
 </li>
 <li>
 <p><code>AacFlStateMachine NewSubStateMachine(string name)</code> 💡<br>
-Create a new state machine, initially positioned below the last generated state of this layer. 🔺 If the name is already used, a number will be appended at the end.</p>
+Create a new state machine, initially positioned below the last generated state of this layer.<br>
+🔺 If the name is already used, a number will be appended at the end.</p>
+</li>
+<li>
+<p><code>AacFlStateMachine NewSubStateMachine(string name, int x, int y)</code> 💡<br>
+Create a new state machine at a specific position <code>x</code> and <code>y</code>, in grid units. The grid size is defined in the DefaultsProvider of the AacConfiguration of AAC. <code>x</code> positive goes right, <code>y</code> positive goes down.<br>
+🔺 If the name is already used, a number will be appended at the end.</p>
 </li>
 </ul>
 <h4 class="anchor anchorWithStickyNavbar_LWe7" id="create-layer-transitions">Create layer transitions<a href="#create-layer-transitions" class="hash-link" aria-label="Direct link to Create layer transitions" title="Direct link to Create layer transitions">​</a></h4>
@@ -124,8 +132,16 @@ Create a new state machine, initially positioned below the last generated state 
 Create a transition from Any to the <code>destination</code> state.</p>
 </li>
 <li>
+<p><code>AacFlTransition AnyTransitionsTo(AacFlStateMachine destination)</code> <br>
+Create a transition from Any to the <code>destination</code> state machine.</p>
+</li>
+<li>
 <p><code>AacFlEntryTransition EntryTransitionsTo(AacFlState destination)</code> <br>
 Create a transition from the Entry to the <code>destination</code> state.</p>
+</li>
+<li>
+<p><code>AacFlEntryTransition EntryTransitionsTo(AacFlStateMachine destination)</code> <br>
+Create a transition from the Entry to the <code>destination</code> state machine.</p>
 </li>
 </ul>
 <h4 class="anchor anchorWithStickyNavbar_LWe7" id="create-parameters">Create parameters<a href="#create-parameters" class="hash-link" aria-label="Direct link to Create parameters" title="Direct link to Create parameters">​</a></h4>
@@ -251,7 +267,7 @@ Create a Float parameter, for use without a backing animator.</p>
 </li>
 <li>
 <p><code>AacFlIntParameter IntParameter(string parameterName)</code> 💡<br>
-Create a Int parameter, for use without a backing animator.</p>
+Create an Int parameter, for use without a backing animator.</p>
 </li>
 <li>
 <p><code>AacFlBoolParameter BoolParameter(string parameterName)</code> 💡<br>
@@ -267,44 +283,53 @@ Expose the underlying AnimatorState object.</li>
 <ul>
 <li>
 <p><code>AacFlState LeftOf(AacFlState otherState)</code> <br>
-Move the state to be left of the other state in the graph.</p>
+Move the node the left of the other node in the graph.</p>
 </li>
 <li>
 <p><code>AacFlState RightOf(AacFlState otherState)</code> <br>
-Move the state to be right of the other state in the graph.</p>
+Move the node the right of the other node in the graph.</p>
 </li>
 <li>
 <p><code>AacFlState Over(AacFlState otherState)</code> <br>
-Move the state to be over the other state in the graph.</p>
+Move the node to be over the other node in the graph.</p>
 </li>
 <li>
 <p><code>AacFlState Under(AacFlState otherState)</code> <br>
-Move the state to be under the other state in the graph.</p>
+Move the node to be under the other node in the graph.</p>
 </li>
 <li>
 <p><code>AacFlState LeftOf()</code> <br>
-Move the state to be left of the last created state of the state machine this belongs to in the graph.</p>
+Move the node to the left of the last created node of the state machine this belongs to in the graph.</p>
 </li>
 <li>
 <p><code>AacFlState RightOf()</code> <br>
-Move the state to be right of the last created state of the state machine this belongs to in the graph.</p>
+Move the node to the right of the last created node of the state machine this belongs to in the graph.</p>
 </li>
 <li>
 <p><code>AacFlState Over()</code> <br>
-Move the state to be over the last created state of the state machine this belongs to in the graph.</p>
+Move the node to be over the last created node of the state machine this belongs to in the graph.</p>
 </li>
 <li>
 <p><code>AacFlState Under()</code> <br>
-Move the state to be under the last created state of the state machine this belongs to in the graph.</p>
+Move the node to be under the last created node of the state machine this belongs to in the graph.</p>
+</li>
+<li>
+<p><code>At(int x, int y)</code> <br>
+Move the node to be at a specific position in grid units, where x positive goes right, and y positive goes down.</p>
 </li>
 <li>
 <p><code>AacFlState Shift(AacFlState otherState, int shiftX, int shiftY)</code> <br>
-Move the state to be shifted next to the other state in the graph, in grid units. <code>shiftX</code> positive goes right, <code>shiftY</code> positive goes down.</p>
+Move the state to be shifted next to the other state in the graph, in grid units. shiftX positive goes right, shiftY positive goes down.</p>
 </li>
 <li>
 <p><code>AacFlState Shift(Vector3 otherPosition, int shiftX, int shiftY)</code> <br>
-Move the state to be shifted next to another position in the graph, in grid units. <code>shiftX</code> positive goes right, <code>shiftY</code> positive goes down. // FIXME: Vector3 is really odd as a type.</p>
+Given another position in non-grid units, move the state to be shifted next to that position, in grid units. shiftX positive goes right, shiftY positive goes down.</p>
 </li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="paths">Paths<a href="#paths" class="hash-link" aria-label="Direct link to Paths" title="Direct link to Paths">​</a></h3>
+<ul>
+<li><code>string ResolveRelativePath(Transform item)</code> <br>
+Resolve the path of an item relative to the AnimatorRoot.</li>
 </ul>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="attributes">Attributes<a href="#attributes" class="hash-link" aria-label="Direct link to Attributes" title="Direct link to Attributes">​</a></h3>
 <ul>
@@ -917,7 +942,7 @@ Generates multiple transitions, verifying whether any Bool is true. This can onl
 <p><code>IsAnyFalse()</code> -&gt; returns <code>IAacFlOrCondition</code>, can only be used inside <code>.When(...)</code> <br>
 Generates multiple transitions, verifying whether any Bool is false. This can only be used inside <code>.When(...)</code></p>
 </li>
-</ul></div></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/docs/products/animator-as-code/reference"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Reference manual</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/docs/products/animator-as-code/functions/vrchat"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">VRChat</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#animator-as-code-aacv1" class="table-of-contents__link toc-highlight">Animator As Code (AacV1)</a></li><li><a href="#base-aacflbase" class="table-of-contents__link toc-highlight">Base (AacFlBase)</a></li><li><a href="#controller-aacflcontroller-" class="table-of-contents__link toc-highlight">Controller (AacFlController) 💡</a></li><li><a href="#layer-aacfllayer" class="table-of-contents__link toc-highlight">Layer (AacFlLayer)</a></li><li><a href="#sub-state-machine-aacflstatemachine-" class="table-of-contents__link toc-highlight">Sub State Machine (AacFlStateMachine) 💡</a></li><li><a href="#no-animator-aacflnoanimator-" class="table-of-contents__link toc-highlight">No Animator (AacFlNoAnimator) 💡</a></li><li><a href="#state-aacflstate" class="table-of-contents__link toc-highlight">State (AacFlState)</a><ul><li><a href="#graph-positioning" class="table-of-contents__link toc-highlight">Graph Positioning</a></li><li><a href="#attributes" class="table-of-contents__link toc-highlight">Attributes</a></li><li><a href="#transitions" class="table-of-contents__link toc-highlight">Transitions</a></li><li><a href="#state-behaviours" class="table-of-contents__link toc-highlight">State behaviours</a></li></ul></li><li><a href="#clip-aacflclip" class="table-of-contents__link toc-highlight">Clip (AacFlClip)</a><ul><li><a href="#attributes-1" class="table-of-contents__link toc-highlight">Attributes</a></li><li><a href="#single-frame-animations" class="table-of-contents__link toc-highlight">Single-frame Animations</a></li><li><a href="#multi-frame-animations-" class="table-of-contents__link toc-highlight">Multi-frame Animations 💡</a></li><li><a href="#clip-editing" class="table-of-contents__link toc-highlight">Clip Editing</a></li></ul></li><li><a href="#clip-editing-aacfleditclip" class="table-of-contents__link toc-highlight">Clip editing (AacFlEditClip)</a><ul><li><a href="#curve-of-type-float-aacflsettingcurve" class="table-of-contents__link toc-highlight">Curve of type Float (AacFlSettingCurve)</a></li><li><a href="#curve-of-type-color-aacflsettingcurvecolor" class="table-of-contents__link toc-highlight">Curve of type Color (AacFlSettingCurveColor)</a></li><li><a href="#curve-of-type-objectreference-aacflsettingcurveobjectreference-" class="table-of-contents__link toc-highlight">Curve of type ObjectReference (AacFlSettingCurveObjectReference) 💡</a></li><li><a href="#keyframes-of-type-float-aacflsettingkeyframes" class="table-of-contents__link toc-highlight">Keyframes of type Float (AacFlSettingKeyframes)</a></li><li><a href="#keyframes-of-type-color-aacflsettingkeyframescolor" class="table-of-contents__link toc-highlight">Keyframes of type Color (AacFlSettingKeyframesColor)</a></li></ul></li><li><a href="#blend-trees-aacflblendtree-" class="table-of-contents__link toc-highlight">Blend Trees (AacFlBlendTree) 💡</a><ul><li><a href="#initialization-aacflnoninitializedblendtree--aacflblendtree-" class="table-of-contents__link toc-highlight">Initialization (AacFlNonInitializedBlendTree : AacFlBlendTree) 💡</a></li><li><a href="#2d-blend-tree-aacflblendtree2d--aacflblendtree-" class="table-of-contents__link toc-highlight">2D Blend Tree (AacFlBlendTree2D : AacFlBlendTree) 💡</a></li><li><a href="#1d-blend-tree-aacflblendtree1d--aacflblendtree-" class="table-of-contents__link toc-highlight">1D Blend Tree (AacFlBlendTree1D : AacFlBlendTree) 💡</a></li><li><a href="#direct-blend-tree-aacflblendtreedirect--aacflblendtree-" class="table-of-contents__link toc-highlight">Direct Blend Tree (AacFlBlendTreeDirect : AacFlBlendTree) 💡</a></li><li><a href="#further-define-a-blend-tree-child-aacflblendtreechildmotion-" class="table-of-contents__link toc-highlight">Further define a blend tree child (AacFlBlendTreeChildMotion) 💡</a></li></ul></li><li><a href="#transitions-1" class="table-of-contents__link toc-highlight">Transitions</a><ul><li><a href="#attributes-aacfltransition--aacflnewtransitioncontinuation" class="table-of-contents__link toc-highlight">Attributes (AacFlTransition : AacFlNewTransitionContinuation)</a></li><li><a href="#chaining-conditions" class="table-of-contents__link toc-highlight">Chaining conditions</a></li></ul></li><li><a href="#conditions-iaacflcondition-iaacflorcondition" class="table-of-contents__link toc-highlight">Conditions (IAacFlCondition, IAacFlOrCondition)</a></li></ul></div></div></div></div></main></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="col footer__col"><div class="footer__title">Docs</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/docs/products">Products</a></li><li class="footer__item"><a class="footer__link-item" href="/docs/resilience">ResilienceVR</a></li><li class="footer__item"><a class="footer__link-item" href="/updates">What&#x27;s new?</a></li></ul></div><div class="col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://www.patreon.com/vr_hai" target="_blank" rel="noopener noreferrer" class="footer__link-item">Patreon<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://hai-vr.fanbox.cc/" target="_blank" rel="noopener noreferrer" class="footer__link-item">pixivFANBOX<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://twitter.com/vr_hai" target="_blank" rel="noopener noreferrer" class="footer__link-item">Twitter<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a class="footer__link-item" href="/docs/other/discord">Discord</a></li></ul></div><div class="col footer__col"><div class="footer__title">More</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://github.com/hai-vr/" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a class="footer__link-item" href="/links">Links</a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2024 Invitational Software. Built with Docusaurus.</div></div></div><br><div class="centerline_SA5j" data-theme="dark"><p>Thank you to all of my supporters on Patreon ⭐</p><div class="card element_KzhA sp_qcMM k10_P0Dq ias_qO18">☀️ <!-- -->Jordo</div>
+</ul></div></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/docs/products/animator-as-code/reference"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Reference manual</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/docs/products/animator-as-code/functions/vrchat"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">VRChat</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#animator-as-code-aacv1" class="table-of-contents__link toc-highlight">Animator As Code (AacV1)</a></li><li><a href="#base-aacflbase" class="table-of-contents__link toc-highlight">Base (AacFlBase)</a></li><li><a href="#controller-aacflcontroller-" class="table-of-contents__link toc-highlight">Controller (AacFlController) 💡</a></li><li><a href="#layer-aacfllayer" class="table-of-contents__link toc-highlight">Layer (AacFlLayer)</a></li><li><a href="#sub-state-machine-aacflstatemachine-" class="table-of-contents__link toc-highlight">Sub State Machine (AacFlStateMachine) 💡</a></li><li><a href="#no-animator-aacflnoanimator-" class="table-of-contents__link toc-highlight">No Animator (AacFlNoAnimator) 💡</a></li><li><a href="#state-aacflstate" class="table-of-contents__link toc-highlight">State (AacFlState)</a><ul><li><a href="#graph-positioning" class="table-of-contents__link toc-highlight">Graph Positioning</a></li><li><a href="#paths" class="table-of-contents__link toc-highlight">Paths</a></li><li><a href="#attributes" class="table-of-contents__link toc-highlight">Attributes</a></li><li><a href="#transitions" class="table-of-contents__link toc-highlight">Transitions</a></li><li><a href="#state-behaviours" class="table-of-contents__link toc-highlight">State behaviours</a></li></ul></li><li><a href="#clip-aacflclip" class="table-of-contents__link toc-highlight">Clip (AacFlClip)</a><ul><li><a href="#attributes-1" class="table-of-contents__link toc-highlight">Attributes</a></li><li><a href="#single-frame-animations" class="table-of-contents__link toc-highlight">Single-frame Animations</a></li><li><a href="#multi-frame-animations-" class="table-of-contents__link toc-highlight">Multi-frame Animations 💡</a></li><li><a href="#clip-editing" class="table-of-contents__link toc-highlight">Clip Editing</a></li></ul></li><li><a href="#clip-editing-aacfleditclip" class="table-of-contents__link toc-highlight">Clip editing (AacFlEditClip)</a><ul><li><a href="#curve-of-type-float-aacflsettingcurve" class="table-of-contents__link toc-highlight">Curve of type Float (AacFlSettingCurve)</a></li><li><a href="#curve-of-type-color-aacflsettingcurvecolor" class="table-of-contents__link toc-highlight">Curve of type Color (AacFlSettingCurveColor)</a></li><li><a href="#curve-of-type-objectreference-aacflsettingcurveobjectreference-" class="table-of-contents__link toc-highlight">Curve of type ObjectReference (AacFlSettingCurveObjectReference) 💡</a></li><li><a href="#keyframes-of-type-float-aacflsettingkeyframes" class="table-of-contents__link toc-highlight">Keyframes of type Float (AacFlSettingKeyframes)</a></li><li><a href="#keyframes-of-type-color-aacflsettingkeyframescolor" class="table-of-contents__link toc-highlight">Keyframes of type Color (AacFlSettingKeyframesColor)</a></li></ul></li><li><a href="#blend-trees-aacflblendtree-" class="table-of-contents__link toc-highlight">Blend Trees (AacFlBlendTree) 💡</a><ul><li><a href="#initialization-aacflnoninitializedblendtree--aacflblendtree-" class="table-of-contents__link toc-highlight">Initialization (AacFlNonInitializedBlendTree : AacFlBlendTree) 💡</a></li><li><a href="#2d-blend-tree-aacflblendtree2d--aacflblendtree-" class="table-of-contents__link toc-highlight">2D Blend Tree (AacFlBlendTree2D : AacFlBlendTree) 💡</a></li><li><a href="#1d-blend-tree-aacflblendtree1d--aacflblendtree-" class="table-of-contents__link toc-highlight">1D Blend Tree (AacFlBlendTree1D : AacFlBlendTree) 💡</a></li><li><a href="#direct-blend-tree-aacflblendtreedirect--aacflblendtree-" class="table-of-contents__link toc-highlight">Direct Blend Tree (AacFlBlendTreeDirect : AacFlBlendTree) 💡</a></li><li><a href="#further-define-a-blend-tree-child-aacflblendtreechildmotion-" class="table-of-contents__link toc-highlight">Further define a blend tree child (AacFlBlendTreeChildMotion) 💡</a></li></ul></li><li><a href="#transitions-1" class="table-of-contents__link toc-highlight">Transitions</a><ul><li><a href="#attributes-aacfltransition--aacflnewtransitioncontinuation" class="table-of-contents__link toc-highlight">Attributes (AacFlTransition : AacFlNewTransitionContinuation)</a></li><li><a href="#chaining-conditions" class="table-of-contents__link toc-highlight">Chaining conditions</a></li></ul></li><li><a href="#conditions-iaacflcondition-iaacflorcondition" class="table-of-contents__link toc-highlight">Conditions (IAacFlCondition, IAacFlOrCondition)</a></li></ul></div></div></div></div></main></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="col footer__col"><div class="footer__title">Docs</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/docs/products">Products</a></li><li class="footer__item"><a class="footer__link-item" href="/docs/resilience">ResilienceVR</a></li><li class="footer__item"><a class="footer__link-item" href="/updates">What&#x27;s new?</a></li></ul></div><div class="col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://www.patreon.com/vr_hai" target="_blank" rel="noopener noreferrer" class="footer__link-item">Patreon<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://hai-vr.fanbox.cc/" target="_blank" rel="noopener noreferrer" class="footer__link-item">pixivFANBOX<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://twitter.com/vr_hai" target="_blank" rel="noopener noreferrer" class="footer__link-item">Twitter<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a class="footer__link-item" href="/docs/other/discord">Discord</a></li></ul></div><div class="col footer__col"><div class="footer__title">More</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://github.com/hai-vr/" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a class="footer__link-item" href="/links">Links</a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2024 Invitational Software. Built with Docusaurus.</div></div></div><br><div class="centerline_SA5j" data-theme="dark"><p>Thank you to all of my supporters on Patreon ⭐</p><div class="card element_KzhA sp_qcMM k10_P0Dq ias_qO18">☀️ <!-- -->Jordo</div>
 <div class="card element_KzhA sp_qcMM k5_NYOb ias_qO18">🌟 <!-- -->bd_</div>
 <div class="card element_KzhA sp_qcMM k3_DDJv ias_qO18">⭐ <!-- -->Vianvolaeus</div>
 <div class="card element_KzhA sp_qcMM k3_DDJv ias_qO18">⭐ <!-- -->Nayir</div>
