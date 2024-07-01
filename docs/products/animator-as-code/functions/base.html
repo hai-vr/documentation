@@ -5,7 +5,7 @@
 <meta name="generator" content="Docusaurus v3.2.1">
 <title data-rh="true">Base functions | Haï~</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://docs.hai-vr.dev/img/hai-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://docs.hai-vr.dev/img/hai-social-card.jpg"><meta data-rh="true" property="og:url" content="https://docs.hai-vr.dev/docs/products/animator-as-code/functions/base"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Base functions | Haï~"><meta data-rh="true" name="description" content="This is the work-in-progress documentation for Animator As Code V1, which has not yet been released. The last public version of Animator As Code is V0."><meta data-rh="true" property="og:description" content="This is the work-in-progress documentation for Animator As Code V1, which has not yet been released. The last public version of Animator As Code is V0."><link data-rh="true" rel="icon" href="/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://docs.hai-vr.dev/docs/products/animator-as-code/functions/base"><link data-rh="true" rel="alternate" href="https://docs.hai-vr.dev/docs/products/animator-as-code/functions/base" hreflang="en"><link data-rh="true" rel="alternate" href="https://docs.hai-vr.dev/docs/products/animator-as-code/functions/base" hreflang="x-default"><link rel="alternate" type="application/rss+xml" href="/updates/rss.xml" title="Haï~ RSS Feed">
 <link rel="alternate" type="application/atom+xml" href="/updates/atom.xml" title="Haï~ Atom Feed"><link rel="stylesheet" href="/assets/css/styles.dbcbb60b.css">
-<script src="/assets/js/runtime~main.72ce19a8.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.6ee8184f.js" defer="defer"></script>
 <script src="/assets/js/main.59cbb915.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -379,19 +379,19 @@ Set a specific blend tree for the state. See <code>(AacFlBase).NewBlendTree()</c
 Set the Motion Time to a parameter. This was formerly known as Normalized Time.</p>
 </li>
 <li>
-<p><code>AacFlState WithCycleOffset(AacFlFloatParameter floatParam)</code><br>
+<p><code>AacFlState WithCycleOffset(AacFlFloatParameter floatParam)</code>💡<br>
 Set the Cycle Offset to a parameter.</p>
 </li>
 <li>
-<p><code>AacFlState WithCycleOffsetSetTo(float cycleOffset)</code><br>
+<p><code>AacFlState WithCycleOffsetSetTo(float cycleOffset)</code>💡<br>
 Set the Cycle Offset to a specific value.</p>
 </li>
 <li>
-<p><code>AacFlState WithSpeed(AacFlFloatParameter parameter)</code><br>
+<p><code>AacFlState WithSpeed(AacFlFloatParameter parameter)</code>💡<br>
 Set the Speed to a parameter.</p>
 </li>
 <li>
-<p><code>AacFlState WithSpeedSetTo(float speed)</code><br>
+<p><code>AacFlState WithSpeedSetTo(float speed)</code>💡<br>
 Set the Speed to a specific value.</p>
 </li>
 <li>
@@ -739,24 +739,12 @@ Expose the underlying Transition object (from AacFlNewTransitionContinuation)</p
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="attributes-aacfltransition--aacflnewtransitioncontinuation">Attributes (AacFlTransition : AacFlNewTransitionContinuation)<a href="#attributes-aacfltransition--aacflnewtransitioncontinuation" class="hash-link" aria-label="Direct link to Attributes (AacFlTransition : AacFlNewTransitionContinuation)" title="Direct link to Attributes (AacFlTransition : AacFlNewTransitionContinuation)">​</a></h3>
 <ul>
 <li>
-<p><code>AacFlTransition WithSourceInterruption()</code><br>
-Set interruption source to be Source. // FIXME: Clunky interface.</p>
-</li>
-<li>
 <p><code>AacFlTransition WithTransitionDurationSeconds(float transitionDuration)</code><br>
 Set a fixed transition duration in seconds.</p>
 </li>
 <li>
 <p><code>AacFlTransition WithTransitionDurationPercent(float transitionDurationNormalized)</code><br>
 Set a non-fixed transition duration in a normalized amount. // FIXME: Percent is a misnomer.</p>
-</li>
-<li>
-<p><code>AacFlTransition WithOrderedInterruption()</code><br>
-Enable ordered interruption.</p>
-</li>
-<li>
-<p><code>AacFlTransition WithNoOrderedInterruption()</code><br>
-Disable ordered interruption.</p>
 </li>
 <li>
 <p><code>AacFlTransition WithTransitionToSelf()</code><br>
@@ -771,8 +759,34 @@ Disable transition to self.</p>
 Set an exit time at 1, where the animation finishes.</p>
 </li>
 <li>
+<p><code>AacFlTransition Automatically()</code><br>
+Set an exit time at 0, so that it may transition almost immediately.</p>
+</li>
+<li>
 <p><code>AacFlTransition AfterAnimationIsAtLeastAtPercent(float exitTimeNormalized)</code><br>
 Set the exit time at a specific normalized amount. // FIXME: Percent is a misnomer.</p>
+</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="interruption-source">Interruption source<a href="#interruption-source" class="hash-link" aria-label="Direct link to Interruption source" title="Direct link to Interruption source">​</a></h4>
+<ul>
+<li>
+<p><code>AacFlTransition WithInterruption(TransitionInterruptionSource interruptionSource)</code>💡<br>
+Set interruption source set to that value.</p>
+</li>
+<li>
+<p><code>AacFlTransition WithSourceInterruption()</code><br>
+Set interruption source to be Source. // FIXME: Clunky interface.</p>
+</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="interruption-order">Interruption order<a href="#interruption-order" class="hash-link" aria-label="Direct link to Interruption order" title="Direct link to Interruption order">​</a></h4>
+<ul>
+<li>
+<p><code>AacFlTransition WithOrderedInterruption()</code><br>
+Enable ordered interruption.</p>
+</li>
+<li>
+<p><code>AacFlTransition WithNoOrderedInterruption()</code><br>
+Disable ordered interruption.</p>
 </li>
 </ul>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="chaining-conditions">Chaining conditions<a href="#chaining-conditions" class="hash-link" aria-label="Direct link to Chaining conditions" title="Direct link to Chaining conditions">​</a></h3>
@@ -784,19 +798,19 @@ Start defining conditions.</p>
 </li>
 <li>
 <p><code>AacFlMultiTransitionContinuation When(IAacFlOrCondition actionsWithOr)</code><br>
-Start defining conditions from a condition which may generate multiple transitions. Any And operator subsequently invoked as a result will apply to all transitions that would be generated by that condition, until the Or operator, if any.</p>
+Applies a series of conditions, and this series may contain Or operators. All And operators that follow will apply to all the conditions generated by this series, until the next Or operator.</p>
 </li>
 <li>
 <p><code>AacFlTransitionContinuation When(Action&lt;AacFlTransitionContinuationWithoutOr&gt; actionsWithoutOr)</code><br>
-Start defining conditions using a lambda expression that cannot contain Or operators.</p>
+Applies a series of conditions to this transition, but this series of conditions cannot include an Or operator.</p>
 </li>
 <li>
 <p><code>AacFlTransitionContinuationOnlyOr When(Action&lt;AacFlNewTransitionContinuation&gt; actionsWithOr)</code><br>
-Start defining conditions using a lambda expression that can contain Or operators, however the next operator, if any, must be Or.</p>
+Applies a series of conditions, and this series may contain Or operators. However, the result can not be followed by an And operator. It can only be an Or operator.</p>
 </li>
 <li>
 <p><code>AacFlTransitionContinuation WhenConditions()</code><br>
-Provides an handle to start defining conditions using the And operator, for use in loops. The Or operator may be invoked at any point.</p>
+Provides a handle to start defining conditions using the And operator, for use in loops. The Or operator may be invoked at any point.</p>
 </li>
 </ul>
 <h4 class="anchor anchorWithStickyNavbar_LWe7" id="single-transition-continuation-aacfltransitioncontinuation--aacfltransitioncontinuationabstractwithor">Single-transition continuation (AacFlTransitionContinuation : AacFlTransitionContinuationAbstractWithOr)<a href="#single-transition-continuation-aacfltransitioncontinuation--aacfltransitioncontinuationabstractwithor" class="hash-link" aria-label="Direct link to Single-transition continuation (AacFlTransitionContinuation : AacFlTransitionContinuationAbstractWithOr)" title="Direct link to Single-transition continuation (AacFlTransitionContinuation : AacFlTransitionContinuationAbstractWithOr)">​</a></h4>
@@ -1008,7 +1022,7 @@ Generates multiple transitions, verifying whether any Bool is false. This can on
 <div class="card element_KzhA sp_qcMM k2_SBmZ ias_qO18">⭐ <!-- -->Bizz</div>
 <div class="card element_KzhA sp_qcMM k2_SBmZ ias_qO18">⭐ <!-- -->kazu0617</div>
 <div class="card element_KzhA sp_qcMM k2_SBmZ ias_qO18">⭐ <!-- -->PastelPlushies</div>
-<div class="card element_KzhA sp_qcMM k2_SBmZ ias_qO18"> ⭐ <!-- -->kittyn vr</div>
+<div class="card element_KzhA sp_qcMM k2_SBmZ ias_qO18">⭐ <!-- -->kittyn vr</div>
 <div class="card element_KzhA sp_qcMM k2_SBmZ ias_qO18">⭐ <!-- -->Lavy</div>
 <div class="card element_KzhA sp_qcMM k2_SBmZ ias_qO18">⭐ <!-- -->Nyashks</div>
 <div class="card element_KzhA sp_qcMM k2_SBmZ ias_qO18">⭐ <!-- -->SuikaNishi</div>
