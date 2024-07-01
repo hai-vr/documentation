@@ -40,8 +40,8 @@ graph TD;
     
     State-->|Drives<br>/Driving*<br>/Tracking*<br>/Locomotion*<br>/PrintsToLogUsingTrackingBehaviour|State;
     
-    State-->|Audio λ|EditAudio;
-    State-->|Driving λ|EditDriver;
+    State-->|Audio λ|EditAnimatorPlayAudio;
+    State-->|Driving λ|EditAvatarParameterDriver;
     
     classDef disabled fill:#CCC
     classDef roots fill:#FCC
@@ -248,158 +248,158 @@ consider using the [**Driving lambda expression**](#driver-state-behaviour-as-a-
 
 ### Driver state behaviour as a lambda expression💡
 
-- `AacVRCFlEditDriver Driving(Action<AacVRCFlEditDriver> action)`💡<br/>
+- `AacVRCFlEditAvatarParameterDriver Driving(Action<AacVRCFlEditAvatarParameterDriver> action)`💡<br/>
   Creates a new VRCAvatarParameterDriver behaviour, and edits it. By default, it is non-local, so it drives even if it's not on the avatar wearer.
   This always creates a new behaviour even if there are already other VRCAvatarParameterDriver behaviours.
 
 ### Audio state behaviour as a lambda expression💡
 
-- `AacVRCFlEditPlayAudio Audio(AudioSource source, Action<AacVRCFlEditAudio> action)`💡<br/>
+- `AacVRCFlEditAnimatorPlayAudio Audio(AudioSource source, Action<AacVRCFlEditAnimatorPlayAudio> action)`💡<br/>
   Creates a new VRCAnimatorPlayAudio behaviour, and edits it.
   If you don't have the AudioSource, use the overload that accepts a string.
   By default, this behaviour does nothing (everything is set to NeverApply, and does neither stop nor plays anything), unlike a VRCAnimatorPlayAudio that would be created by hand.
   This always creates a new behaviour even if there are already VRCAnimatorPlayAudio behaviours.
 
-- `AacVRCFlEditPlayAudio Audio(string audioSourcePath, Action<AacVRCFlEditAudio> action)`💡<br/>
+- `AacVRCFlEditAnimatorPlayAudio Audio(string audioSourcePath, Action<AacVRCFlEditAnimatorPlayAudio> action)`💡<br/>
   Creates a new VRCAnimatorPlayAudio behaviour, and edits it.
   This overload accepts a path, but if you do have the AudioSource, use the overload that accepts an AudioSource.
   By default, this behaviour does nothing (everything is set to NeverApply, and does neither stop nor plays anything), unlike a VRCAnimatorPlayAudio that would be created by hand.
   This always creates a new behaviour even if there are already VRCAnimatorPlayAudio behaviours.
 
-## Driver editing (AacVRCFlEditDriver)💡
+## Driver editing (AacVRCFlEditAvatarParameterDriver)💡
 
 #### Local
 
-- `AacVRCFlEditDriver Locally()`💡<br/>
+- `AacVRCFlEditAvatarParameterDriver Locally()`💡<br/>
   Set the driver to be Local only.
 
 #### Set
 
-- `AacVRCFlEditDriver Sets(AacFlIntParameter parameter, int value)`💡<br/>
+- `AacVRCFlEditAvatarParameterDriver Sets(AacFlIntParameter parameter, int value)`💡<br/>
   Drive the Int parameter to value.
 
-- `AacVRCFlEditDriver Sets(AacFlFloatParameter parameter, float value)`💡<br/>
+- `AacVRCFlEditAvatarParameterDriver Sets(AacFlFloatParameter parameter, float value)`💡<br/>
   Drive the Float parameter to value.
 
-- `AacVRCFlEditDriver Sets(AacFlBoolParameter parameter, bool value)`💡<br/>
+- `AacVRCFlEditAvatarParameterDriver Sets(AacFlBoolParameter parameter, bool value)`💡<br/>
   Drive the Bool parameter to value.
 
-- `AacVRCFlEditDriver Sets(AacFlBoolParameterGroup parameters, bool value)`💡<br/>
+- `AacVRCFlEditAvatarParameterDriver Sets(AacFlBoolParameterGroup parameters, bool value)`💡<br/>
   Drive the Bool parameter to value.
 
 #### Add
 
-- `AacVRCFlEditDriver Increases(AacFlFloatParameter parameter, float additiveValue)`💡<br/>
+- `AacVRCFlEditAvatarParameterDriver Increases(AacFlFloatParameter parameter, float additiveValue)`💡<br/>
   Drive the Float parameter, incrementing it by `additiveValue`.
 
-- `AacVRCFlEditDriver Decreases(AacFlFloatParameter parameter, float positiveValueToDecreaseBy)`💡<br/>
+- `AacVRCFlEditAvatarParameterDriver Decreases(AacFlFloatParameter parameter, float positiveValueToDecreaseBy)`💡<br/>
   Drive the Float parameter, decreasing it by the amount of `positiveValueToDecreaseBy`.
 
-- `AacVRCFlEditDriver Increases(AacFlIntParameter parameter, int additiveValue)`💡<br/>
+- `AacVRCFlEditAvatarParameterDriver Increases(AacFlIntParameter parameter, int additiveValue)`💡<br/>
   Drive the Int parameter, incrementing it by `additiveValue`.
 
-- `AacVRCFlEditDriver Decreases(AacFlIntParameter parameter, int positiveValueToDecreaseBy)`💡<br/>
+- `AacVRCFlEditAvatarParameterDriver Decreases(AacFlIntParameter parameter, int positiveValueToDecreaseBy)`💡<br/>
   Drive the Int parameter, decreasing it by the amount of `positiveValueToDecreaseBy`.
 
 #### Random
 
-- `AacVRCFlEditDriver Randomizes(AacFlFloatParameter parameter, float min, float max)`💡<br/>
+- `AacVRCFlEditAvatarParameterDriver Randomizes(AacFlFloatParameter parameter, float min, float max)`💡<br/>
   Drive the Float parameter value to be random between min and max.
 
-## Audio editing (AacVRCFlEditPlayAudio)💡
+## Audio editing (AacVRCFlEditAnimatorPlayAudio)💡
 
 #### Play and Stop OnEnter
 
 All of these functions affect both the Stop and Play checkboxes when the state is entered. To do neither Stop nor Play, don't call any of those functions.
 
-- `AacVRCFlEditPlayAudio ReplaysOnEnter()`💡<br/>
+- `AacVRCFlEditAnimatorPlayAudio ReplaysOnEnter()`💡<br/>
   Stop, and Play when the state is entered.
 
-- `AacVRCFlEditPlayAudio StartsPlayingOnEnter()`💡<br/>
+- `AacVRCFlEditAnimatorPlayAudio StartsPlayingOnEnter()`💡<br/>
   Does not stop, and Play when the state is entered.
 
-- `AacVRCFlEditPlayAudio ReplaysOnEnterAfterSeconds(float delaySeconds)`💡<br/>
+- `AacVRCFlEditAnimatorPlayAudio ReplaysOnEnterAfterSeconds(float delaySeconds)`💡<br/>
   Stop, and Play when the state is entered after a delay in seconds.
 
-- `AacVRCFlEditPlayAudio StartsPlayingOnEnterAfterSeconds(float delaySeconds)`💡<br/>
+- `AacVRCFlEditAnimatorPlayAudio StartsPlayingOnEnterAfterSeconds(float delaySeconds)`💡<br/>
   Does not stop, and Play when the state is entered after a delay in seconds.
 
-- `AacVRCFlEditPlayAudio StopsPlayingOnEnter()`💡<br/>
+- `AacVRCFlEditAnimatorPlayAudio StopsPlayingOnEnter()`💡<br/>
   Stop, and do not Play when the state is entered.
 
 #### Play and Stop OnExit
 
 All of these functions affect both the Stop and Play checkboxes when leaving the state. To do neither Stop nor Play, don't call any of those functions.
 
-- `AacVRCFlEditPlayAudio ReplaysOnExit()`💡<br/>
+- `AacVRCFlEditAnimatorPlayAudio ReplaysOnExit()`💡<br/>
   Stop, and Play when leaving the state.
 
-- `AacVRCFlEditPlayAudio StartsPlayingOnExit()`💡<br/>
+- `AacVRCFlEditAnimatorPlayAudio StartsPlayingOnExit()`💡<br/>
   Does not stop, and Play when leaving the state.
 
-- `AacVRCFlEditPlayAudio StopsPlayingOnExit()`💡<br/>
+- `AacVRCFlEditAnimatorPlayAudio StopsPlayingOnExit()`💡<br/>
   Stop, and do not Play when leaving the state.
 
 #### Clips
 
-- `AacVRCFlEditPlayAudio SelectsClipIfStopped(VRC_AnimatorPlayAudio.Order order, AudioClip[] clipsWithNulls)`💡<br/>
+- `AacVRCFlEditAnimatorPlayAudio SelectsClipIfStopped(VRC_AnimatorPlayAudio.Order order, AudioClip[] clipsWithNulls)`💡<br/>
   Defines the list of clips and the order they are going to play in, if stopped.<br/>
   The list can safely contain null values.<br/>
   If you want to use the VRC_AnimatorPlayAudio.Order.Parameter enum value, use the overload that accepts an AacFlIntParameter instead.
 
-- `AacVRCFlEditPlayAudio SelectsClip(VRC_AnimatorPlayAudio.Order order, AudioClip[] clipsWithNulls)`💡<br/>
+- `AacVRCFlEditAnimatorPlayAudio SelectsClip(VRC_AnimatorPlayAudio.Order order, AudioClip[] clipsWithNulls)`💡<br/>
   Defines the list of clips and the order they are going to play in.<br/>
   The list can safely contain null values.<br/>
   If you want to use the VRC_AnimatorPlayAudio.Order.Parameter enum value, use the overload that accepts an AacFlIntParameter instead.
 
-- `AacVRCFlEditPlayAudio SelectsClipIfStopped(AacFlIntParameter indexParameter, AudioClip[] clipsWithNulls)`💡<br/>
+- `AacVRCFlEditAnimatorPlayAudio SelectsClipIfStopped(AacFlIntParameter indexParameter, AudioClip[] clipsWithNulls)`💡<br/>
   Defines the list of clips, which will play using the parameter as an index, if stopped.<br/>
   The list can safely contain null values, however, null values will be removed, causing the indices of elements of that list to change, which may or may not be an issue.
 
-- `AacVRCFlEditPlayAudio SelectsClip(AacFlIntParameter indexParameter, AudioClip[] clipsWithNulls)`💡<br/>
+- `AacVRCFlEditAnimatorPlayAudio SelectsClip(AacFlIntParameter indexParameter, AudioClip[] clipsWithNulls)`💡<br/>
   Defines the list of clips, which will play using the parameter as an index.<br/>
   The list can safely contain null values, however, null values will be removed, causing the indices of elements of that list to change, which may or may not be an issue.
 
 
 #### Loop
 
-- `AacVRCFlEditPlayAudio SetsLoopingIfStopped()`💡<br/>
+- `AacVRCFlEditAnimatorPlayAudio SetsLoopingIfStopped()`💡<br/>
   Set the audio source as looping if stopped.
 
-- `AacVRCFlEditPlayAudio SetsNonLoopingIfStopped()`💡<br/>
+- `AacVRCFlEditAnimatorPlayAudio SetsNonLoopingIfStopped()`💡<br/>
   Set the audio source as non-looping if stopped.
 
-- `AacVRCFlEditPlayAudio SetsLooping()`💡<br/>
+- `AacVRCFlEditAnimatorPlayAudio SetsLooping()`💡<br/>
   Set the audio source as looping.
 
-- `AacVRCFlEditPlayAudio SetsNonLooping()`💡<br/>
+- `AacVRCFlEditAnimatorPlayAudio SetsNonLooping()`💡<br/>
   Set the audio source as non-looping.
 
 #### Volume
 
-- `AacVRCFlEditPlayAudio RandomizesVolumeIfStopped(float min, float max)`💡<br/>
+- `AacVRCFlEditAnimatorPlayAudio RandomizesVolumeIfStopped(float min, float max)`💡<br/>
   Randomizes the volume if stopped.
 
-- `AacVRCFlEditPlayAudio RandomizesVolume(float min, float max)`💡<br/>
+- `AacVRCFlEditAnimatorPlayAudio RandomizesVolume(float min, float max)`💡<br/>
   Randomizes the volume.
 
-- `AacVRCFlEditPlayAudio SetsVolumeIfStopped(float value)`💡<br/>
+- `AacVRCFlEditAnimatorPlayAudio SetsVolumeIfStopped(float value)`💡<br/>
   Sets the volume if stopped.
 
-- `AacVRCFlEditPlayAudio SetsVolume(float value)`💡<br/>
+- `AacVRCFlEditAnimatorPlayAudio SetsVolume(float value)`💡<br/>
   Sets the volume.
 
 
 #### Pitch
 
-- `AacVRCFlEditPlayAudio RandomizesPitchIfStopped(float min, float max)`💡<br/>
+- `AacVRCFlEditAnimatorPlayAudio RandomizesPitchIfStopped(float min, float max)`💡<br/>
   Randomizes the pitch if stopped.
 
-- `AacVRCFlEditPlayAudio RandomizesPitch(float min, float max)`💡<br/>
+- `AacVRCFlEditAnimatorPlayAudio RandomizesPitch(float min, float max)`💡<br/>
   Randomizes the pitch.
 
-- `AacVRCFlEditPlayAudio SetsPitchIfStopped(float value)`💡<br/>
+- `AacVRCFlEditAnimatorPlayAudio SetsPitchIfStopped(float value)`💡<br/>
   Sets the pitch if stopped.
 
-- `AacVRCFlEditPlayAudio SetsPitch(float value)`💡<br/>
+- `AacVRCFlEditAnimatorPlayAudio SetsPitch(float value)`💡<br/>
   Sets the pitch.
