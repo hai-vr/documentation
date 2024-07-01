@@ -14,7 +14,7 @@ After [installing Animator As Code](install.md), there are different ways to sta
 
 - Follow the [**Non-destructive Avatars**](#non-destructive) section:
   - if you are building a personal VRChat avatar and you want to create animators and animations in a non-destructive workflow (ideal for Modular Avatar, NDMF, and VRCFury users), or
-  - if you are building an Unity Editor tool and you intend to redistribute the non-destructive generator code to other users.
+  - if you are building a Unity Editor tool and you intend to redistribute the non-destructive generator code to other users.
 
 - Follow the [**Barebones**](#barebones) section:
   - if you are building a VRChat avatar and you do not want to use a non-destructive workflow, or

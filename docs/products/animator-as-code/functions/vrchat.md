@@ -176,7 +176,7 @@ graph TD;
 ### Driver state behaviour
 
 :::tip
-Due to how the VRCAvatarParameterDriver have evolved over the years,
+Due to how VRCAvatarParameterDriver has evolved over the years,
 consider using the [**Driving lambda expression**](#driver-state-behaviour-as-a-lambda-expression) instead.
 :::
 
@@ -342,28 +342,64 @@ All of these functions affect both the Stop and Play checkboxes when leaving the
 
 #### Clips
 
-- `AacVRCFlEditPlayAudio SelectsClipIfStopped(VRC_AnimatorPlayAudio.Order order, AudioClip[] clipsWithNulls)` 💡
-- `AacVRCFlEditPlayAudio SelectsClip(VRC_AnimatorPlayAudio.Order order, AudioClip[] clipsWithNulls)` 💡
-- `AacVRCFlEditPlayAudio SelectsClipIfStopped(AacFlIntParameter indexParameter, AudioClip[] clipsWithNulls)` 💡
-- `AacVRCFlEditPlayAudio SelectsClip(AacFlIntParameter indexParameter, AudioClip[] clipsWithNulls)` 💡
+- `AacVRCFlEditPlayAudio SelectsClipIfStopped(VRC_AnimatorPlayAudio.Order order, AudioClip[] clipsWithNulls)` 💡<br/>
+  Defines the list of clips and the order they are going to play in, if stopped.<br/>
+  The list can safely contain null values.<br/>
+  If you want to use the VRC_AnimatorPlayAudio.Order.Parameter enum value, use the overload that accepts an AacFlIntParameter instead.
+
+- `AacVRCFlEditPlayAudio SelectsClip(VRC_AnimatorPlayAudio.Order order, AudioClip[] clipsWithNulls)` 💡<br/>
+  Defines the list of clips and the order they are going to play in.<br/>
+  The list can safely contain null values.<br/>
+  If you want to use the VRC_AnimatorPlayAudio.Order.Parameter enum value, use the overload that accepts an AacFlIntParameter instead.
+
+- `AacVRCFlEditPlayAudio SelectsClipIfStopped(AacFlIntParameter indexParameter, AudioClip[] clipsWithNulls)` 💡<br/>
+  Defines the list of clips, which will play using the parameter as an index, if stopped.<br/>
+  The list can safely contain null values, however, null values will be removed, causing the indices of elements of that list to change, which may or may not be an issue.
+
+- `AacVRCFlEditPlayAudio SelectsClip(AacFlIntParameter indexParameter, AudioClip[] clipsWithNulls)` 💡<br/>
+  Defines the list of clips, which will play using the parameter as an index.<br/>
+  The list can safely contain null values, however, null values will be removed, causing the indices of elements of that list to change, which may or may not be an issue.
+
 
 #### Loop
 
-- `AacVRCFlEditPlayAudio SetsLoopingIfStopped()` 💡
-- `AacVRCFlEditPlayAudio SetsNonLoopingIfStopped()` 💡
-- `AacVRCFlEditPlayAudio SetsLooping()` 💡
-- `AacVRCFlEditPlayAudio SetsNonLooping()` 💡
+- `AacVRCFlEditPlayAudio SetsLoopingIfStopped()` 💡<br/>
+  Set the audio source as looping if stopped.
+
+- `AacVRCFlEditPlayAudio SetsNonLoopingIfStopped()` 💡<br/>
+  Set the audio source as non-looping if stopped.
+
+- `AacVRCFlEditPlayAudio SetsLooping()` 💡<br/>
+  Set the audio source as looping.
+
+- `AacVRCFlEditPlayAudio SetsNonLooping()` 💡<br/>
+  Set the audio source as non-looping.
 
 #### Volume
 
-- `AacVRCFlEditPlayAudio RandomizesVolumeIfStopped(float min, float max)` 💡
-- `AacVRCFlEditPlayAudio RandomizesVolume(float min, float max)` 💡
-- `AacVRCFlEditPlayAudio SetsVolumeIfStopped(float value)` 💡
-- `AacVRCFlEditPlayAudio SetsVolume(float value)` 💡
+- `AacVRCFlEditPlayAudio RandomizesVolumeIfStopped(float min, float max)` 💡<br/>
+  Randomizes the volume if stopped.
+
+- `AacVRCFlEditPlayAudio RandomizesVolume(float min, float max)` 💡<br/>
+  Randomizes the volume.
+
+- `AacVRCFlEditPlayAudio SetsVolumeIfStopped(float value)` 💡<br/>
+  Sets the volume if stopped.
+
+- `AacVRCFlEditPlayAudio SetsVolume(float value)` 💡<br/>
+  Sets the volume.
+
 
 #### Pitch
 
-- `AacVRCFlEditPlayAudio RandomizesPitchIfStopped(float min, float max)` 💡
-- `AacVRCFlEditPlayAudio RandomizesPitch(float min, float max)` 💡
-- `AacVRCFlEditPlayAudio SetsPitchIfStopped(float value)` 💡
-- `AacVRCFlEditPlayAudio SetsPitch(float value)` 💡
+- `AacVRCFlEditPlayAudio RandomizesPitchIfStopped(float min, float max)` 💡<br/>
+  Randomizes the pitch if stopped.
+
+- `AacVRCFlEditPlayAudio RandomizesPitch(float min, float max)` 💡<br/>
+  Randomizes the pitch.
+
+- `AacVRCFlEditPlayAudio SetsPitchIfStopped(float value)` 💡<br/>
+  Sets the pitch if stopped.
+
+- `AacVRCFlEditPlayAudio SetsPitch(float value)` 💡<br/>
+  Sets the pitch.

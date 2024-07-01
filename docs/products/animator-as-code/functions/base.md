@@ -149,6 +149,9 @@ If you are not creating an animator, this returns an object from which you can o
 
 ## Controller (AacFlController) 💡
 
+- `AnimatorController AnimatorController`
+Exposes the underlying Unity AnimatorController.
+
 - `AacFlLayer NewLayer(string suffix)` 💡<br/>
 Create a new layer with a specific suffix. You cannot create multiple layers with the same suffix on the same controller.
 
@@ -157,6 +160,9 @@ Create a new layer. You cannot invoke this method multiple times on the same con
 
 
 ## Layer (AacFlLayer)
+
+- `AacFlStateMachine StateMachine =>` <br/>
+Exposes the underlying AnimatorAsCode StateMachine object of this layer.
 
 - `AacFlState NewState(string name)` 🔺<br/>
 Create a new state, initially positioned below the last generated state of this layer.<br/>
@@ -252,17 +258,17 @@ Set the Avatar Mask of the layer to be an Avatar Mask that allows the specified 
 
 #### Edit layer attributes
 
-- `AacFlLater WithWeight(float weight)` <br />
+- `AacFlLayer WithWeight(float weight)` <br />
 Set the weight of the layer.
 
-- `AacFlLater WithBlendingMode(AnimatorLayerBlendingMode blendingMode)` <br />
+- `AacFlLayer WithBlendingMode(AnimatorLayerBlendingMode blendingMode)` <br />
 Set the blending mode of the layer.
 
 
 ## Sub State Machine (AacFlStateMachine) 💡
 
-- `AnimatorStateMachine Machine` <br/>
-  Expose the underlying AnimatorStateMachine object.
+- `AnimatorStateMachine Machine;` <br/>
+Exposes the underlying Unity AnimatorStateMachine object of this state machine.
 
 - `AacFlStateMachine NewSubStateMachine(string name)` 💡<br/>
 Create a new state machine, initially positioned below the last generated state of this layer.
@@ -562,7 +568,7 @@ Create a constant keyframe. The unit is defined by the function that invokes thi
 ## Blend Trees (AacFlBlendTree) 💡
 
 - `BlendTree BlendTree;` 💡<br/>
-Expose the underlying BlendTree object.
+Exposes the underlying Unity BlendTree asset.
 
 ### Initialization (AacFlNonInitializedBlendTree : AacFlBlendTree) 💡
 
