@@ -165,13 +165,13 @@ Define `T` to be your MonoBehaviour component.
 
 ### Properties
 
-- `protected AacFlBase aac { get; private set; }` <br/>
+- `protected AacFlBase aac { get; private set; }`<br/>
 This field contains the Animator As Code instance. To customize the configuration, see [Overrides](#overrides) below.
 
-- `protected T my { get; private set; }` <br/>
+- `protected T my { get; private set; }`<br/>
 This field contains the instance of your targeted script being processed.
 
-- `protected BuildContext buildContext { get; private set; }` <br/>
+- `protected BuildContext buildContext { get; private set; }`<br/>
 This field contains the build context of NDMF.
 
 
@@ -179,16 +179,16 @@ This field contains the build context of NDMF.
 
 You may override those methods if necessary:
 
-- `protected virtual string SystemName(Component script, BuildContext context) => GetType().Name;` <br/>
+- `protected virtual string SystemName(Component script, BuildContext context) => GetType().Name;`<br/>
 Generated layers will be prefixed with the system name.
 
-- `protected virtual Transform AnimatorRoot(Component script, BuildContext context) => context.AvatarRootTransform;` <br/>
+- `protected virtual Transform AnimatorRoot(Component script, BuildContext context) => context.AvatarRootTransform;`<br/>
 The root transform is used to determine the relative paths to the object references that will be used within the animation. If you want to reuse a component on multiple avatars without reassigning the references, you can override this behaviour.
 
-- `protected virtual Transform DefaultValueRoot(Component script, BuildContext context) => context.AvatarRootTransform;` <br/>
+- `protected virtual Transform DefaultValueRoot(Component script, BuildContext context) => context.AvatarRootTransform;`<br/>
 (At the moment, the DefaultValueRoot is not used in Animator As Code. It is meant to be used for sampling the default values of animated properties, so it may be different from the AnimatorRoot above)
 
-- `protected virtual bool UseWriteDefaults(Component script, BuildContext context) => false;` <br/>
+- `protected virtual bool UseWriteDefaults(Component script, BuildContext context) => false;`<br/>
 Choose the WriteDefaults state that will be used by default when creating states.
 
 ## NDMF Sequence
