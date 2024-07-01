@@ -5,7 +5,7 @@
 <meta name="generator" content="Docusaurus v3.2.1">
 <title data-rh="true">Base functions | Haï~</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://docs.hai-vr.dev/img/hai-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://docs.hai-vr.dev/img/hai-social-card.jpg"><meta data-rh="true" property="og:url" content="https://docs.hai-vr.dev/docs/products/animator-as-code/functions/base"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Base functions | Haï~"><meta data-rh="true" name="description" content="This is the work-in-progress documentation for Animator As Code V1, which has not yet been released. The last public version of Animator As Code is V0."><meta data-rh="true" property="og:description" content="This is the work-in-progress documentation for Animator As Code V1, which has not yet been released. The last public version of Animator As Code is V0."><link data-rh="true" rel="icon" href="/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://docs.hai-vr.dev/docs/products/animator-as-code/functions/base"><link data-rh="true" rel="alternate" href="https://docs.hai-vr.dev/docs/products/animator-as-code/functions/base" hreflang="en"><link data-rh="true" rel="alternate" href="https://docs.hai-vr.dev/docs/products/animator-as-code/functions/base" hreflang="x-default"><link rel="alternate" type="application/rss+xml" href="/updates/rss.xml" title="Haï~ RSS Feed">
 <link rel="alternate" type="application/atom+xml" href="/updates/atom.xml" title="Haï~ Atom Feed"><link rel="stylesheet" href="/assets/css/styles.dbcbb60b.css">
-<script src="/assets/js/runtime~main.31c480c2.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.cd52a023.js" defer="defer"></script>
 <script src="/assets/js/main.59cbb915.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -220,6 +220,10 @@ Set the Float value of <code>toBeForced</code> parameter to <code>value</code> i
 <p><code>AacFlLayer OverrideValue(AacFlIntParameter toBeForced, int value)</code><br>
 Set the Int value of <code>toBeForced</code> parameter to <code>value</code> in the animator.</p>
 </li>
+<li>
+<p>`AacFlLayer CopyParametersAndOverridesTo(AacFlLayer otherLayer)💡<br>
+Copy all created parameters to the other layer, and overrides it with a value if a value was stored.</p>
+</li>
 </ul>
 <h4 class="anchor anchorWithStickyNavbar_LWe7" id="edit-avatar-mask">Edit avatar mask<a href="#edit-avatar-mask" class="hash-link" aria-label="Direct link to Edit avatar mask" title="Direct link to Edit avatar mask">​</a></h4>
 <ul>
@@ -280,6 +284,22 @@ Create an Int parameter, for use without a backing animator.</p>
 <li>
 <p><code>AacFlBoolParameter BoolParameter(string parameterName)</code>💡<br>
 Create a Bool parameter, for use without a backing animator.</p>
+</li>
+<li>
+<p><code>AacFlNoAnimator OverrideValue(AacFlFloatParameter toBeForced, float value)</code>💡<br>
+Stores the Float value of <code>toBeForced</code> parameter to <code>value</code>, which will be used in the CopyParametersAndOverridesTo() function.</p>
+</li>
+<li>
+<p><code>AacFlNoAnimator OverrideValue(AacFlIntParameter toBeForced, int value)</code>💡<br>
+Stores the Int value of <code>toBeForced</code> parameter to <code>value</code>, which will be used in the CopyParametersAndOverridesTo() function.</p>
+</li>
+<li>
+<p><code>AacFlNoAnimator OverrideValue(AacFlBoolParameter toBeForced, bool value)</code>💡<br>
+Stores the Bool value of <code>toBeForced</code> parameter to <code>value</code>, which will be used in the CopyParametersAndOverridesTo() function.</p>
+</li>
+<li>
+<p><code>AacFlNoAnimator CopyParametersAndOverridesTo(AacFlLayer otherLayer)</code>💡<br>
+Copy all created parameters to the other layer, and overrides it with a value if a value was stored.</p>
 </li>
 </ul>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="state-aacflstate">State (AacFlState)<a href="#state-aacflstate" class="hash-link" aria-label="Direct link to State (AacFlState)" title="Direct link to State (AacFlState)">​</a></h2>
