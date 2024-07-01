@@ -42,8 +42,11 @@ graph TD;
     ParameterGroup-->|AreGreaterThan<br>/AreLessThan<br>/AreEqualTo<br>/AreNotEqualTo<br>/AreTrue<br>/AreFalse<br>/AreTrueExcept<br>/AreFalseExcept|Condition;
     ParameterGroup-->|IsAnyTrue<br>/IsAnyFalse<br>|OrCondition;
     
+    NoAnimator-->|IntParameter<br>/FloatParameter<br>/BoolParameter|Parameter;
+    
     Base-->|NewClip|Clip:::disabled;
     Base-->|NewBlendTree|BlendTree:::disabled;
+    Base-->|NoAnimator|NoAnimator:::focus;
     
     classDef disabled fill:#CCC
     classDef roots fill:#FCC
@@ -66,6 +69,8 @@ graph TD;
     BlendTree-->|FreeformCartesian2D<br>/FreeformDirectional2D<br>/SimpleDirectional2D|BlendTree2D;
     BlendTree-->|Simple1D|BlendTree1D;
     BlendTree-->|Direct|BlendTreeDirect;
+    
+    Base-->|NoAnimator|NoAnimator:::disabled;
     
     classDef disabled fill:#CCC
     classDef roots fill:#FCC

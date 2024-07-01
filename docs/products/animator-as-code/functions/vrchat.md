@@ -40,8 +40,8 @@ graph TD;
     
     State-->|Drives<br>/Driving*<br>/Tracking*<br>/Locomotion*<br>/PrintsToLogUsingTrackingBehaviour|State;
     
-    State-->|Audio|EditAudio;
-    State-->|Driving|EditDriver;
+    State-->|Audio λ|EditAudio;
+    State-->|Driving λ|EditDriver;
     
     classDef disabled fill:#CCC
     classDef roots fill:#FCC
