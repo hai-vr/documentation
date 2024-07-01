@@ -5,7 +5,7 @@
 <meta name="generator" content="Docusaurus v3.2.1">
 <title data-rh="true">Base functions | Haï~</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://docs.hai-vr.dev/img/hai-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://docs.hai-vr.dev/img/hai-social-card.jpg"><meta data-rh="true" property="og:url" content="https://docs.hai-vr.dev/docs/products/animator-as-code/functions/base"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Base functions | Haï~"><meta data-rh="true" name="description" content="This is the work-in-progress documentation for Animator As Code V1, which has not yet been released. The last public version of Animator As Code is V0."><meta data-rh="true" property="og:description" content="This is the work-in-progress documentation for Animator As Code V1, which has not yet been released. The last public version of Animator As Code is V0."><link data-rh="true" rel="icon" href="/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://docs.hai-vr.dev/docs/products/animator-as-code/functions/base"><link data-rh="true" rel="alternate" href="https://docs.hai-vr.dev/docs/products/animator-as-code/functions/base" hreflang="en"><link data-rh="true" rel="alternate" href="https://docs.hai-vr.dev/docs/products/animator-as-code/functions/base" hreflang="x-default"><link rel="alternate" type="application/rss+xml" href="/updates/rss.xml" title="Haï~ RSS Feed">
 <link rel="alternate" type="application/atom+xml" href="/updates/atom.xml" title="Haï~ Atom Feed"><link rel="stylesheet" href="/assets/css/styles.dbcbb60b.css">
-<script src="/assets/js/runtime~main.a27e3bef.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.6bd8628a.js" defer="defer"></script>
 <script src="/assets/js/main.59cbb915.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -94,6 +94,10 @@ If you are not creating an animator, this returns an object from which you can o
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="controller-aacflcontroller-">Controller (AacFlController) 💡<a href="#controller-aacflcontroller-" class="hash-link" aria-label="Direct link to Controller (AacFlController) 💡" title="Direct link to Controller (AacFlController) 💡">​</a></h2>
 <ul>
 <li>
+<p><code>AnimatorController AnimatorController</code>
+Exposes the underlying Unity AnimatorController.</p>
+</li>
+<li>
 <p><code>AacFlLayer NewLayer(string suffix)</code> 💡<br>
 Create a new layer with a specific suffix. You cannot create multiple layers with the same suffix on the same controller.</p>
 </li>
@@ -104,6 +108,10 @@ Create a new layer. You cannot invoke this method multiple times on the same con
 </ul>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="layer-aacfllayer">Layer (AacFlLayer)<a href="#layer-aacfllayer" class="hash-link" aria-label="Direct link to Layer (AacFlLayer)" title="Direct link to Layer (AacFlLayer)">​</a></h2>
 <ul>
+<li>
+<p><code>AacFlStateMachine StateMachine =&gt;</code> <br>
+Exposes the underlying AnimatorAsCode StateMachine object of this layer.</p>
+</li>
 <li>
 <p><code>AacFlState NewState(string name)</code> 🔺<br>
 Create a new state, initially positioned below the last generated state of this layer.<br>
@@ -231,19 +239,19 @@ Set the Avatar Mask of the layer to be an Avatar Mask that allows the specified 
 <h4 class="anchor anchorWithStickyNavbar_LWe7" id="edit-layer-attributes">Edit layer attributes<a href="#edit-layer-attributes" class="hash-link" aria-label="Direct link to Edit layer attributes" title="Direct link to Edit layer attributes">​</a></h4>
 <ul>
 <li>
-<p><code>AacFlLater WithWeight(float weight)</code> <br>
+<p><code>AacFlLayer WithWeight(float weight)</code> <br>
 Set the weight of the layer.</p>
 </li>
 <li>
-<p><code>AacFlLater WithBlendingMode(AnimatorLayerBlendingMode blendingMode)</code> <br>
+<p><code>AacFlLayer WithBlendingMode(AnimatorLayerBlendingMode blendingMode)</code> <br>
 Set the blending mode of the layer.</p>
 </li>
 </ul>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="sub-state-machine-aacflstatemachine-">Sub State Machine (AacFlStateMachine) 💡<a href="#sub-state-machine-aacflstatemachine-" class="hash-link" aria-label="Direct link to Sub State Machine (AacFlStateMachine) 💡" title="Direct link to Sub State Machine (AacFlStateMachine) 💡">​</a></h2>
 <ul>
 <li>
-<p><code>AnimatorStateMachine Machine</code> <br>
-Expose the underlying AnimatorStateMachine object.</p>
+<p><code>AnimatorStateMachine Machine;</code> <br>
+Exposes the underlying Unity AnimatorStateMachine object of this state machine.</p>
 </li>
 <li>
 <p><code>AacFlStateMachine NewSubStateMachine(string name)</code> 💡<br>
@@ -414,7 +422,7 @@ Change a blendShape of a skinned mesh. This lasts one frame.</p>
 Change a blendShape of multiple skinned meshes. This lasts one frame. The array can safely contain null values.</p>
 </li>
 <li>
-<p><code>AacFlClip Positioning(GameObject[] gameObjectsWithNulls, Vector3 localPosition)</code> 💡<br>
+<p><code>AacFlClip Positioning(GameObject[] gameObjectsWithNulls, Vector3 localPosition)</code>   💡<br>
 Change the position of a GameObject in local space. This lasts one frame. This lasts one frame. The array can safely contain null values. // FIXME: This is weird, this should be a Transform array, and also this needs a single-object overload.</p>
 </li>
 <li>
@@ -584,7 +592,7 @@ Create a constant keyframe. The unit is defined by the function that invokes thi
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="blend-trees-aacflblendtree-">Blend Trees (AacFlBlendTree) 💡<a href="#blend-trees-aacflblendtree-" class="hash-link" aria-label="Direct link to Blend Trees (AacFlBlendTree) 💡" title="Direct link to Blend Trees (AacFlBlendTree) 💡">​</a></h2>
 <ul>
 <li><code>BlendTree BlendTree;</code> 💡<br>
-Expose the underlying BlendTree object.</li>
+Exposes the underlying Unity BlendTree asset.</li>
 </ul>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="initialization-aacflnoninitializedblendtree--aacflblendtree-">Initialization (AacFlNonInitializedBlendTree : AacFlBlendTree) 💡<a href="#initialization-aacflnoninitializedblendtree--aacflblendtree-" class="hash-link" aria-label="Direct link to Initialization (AacFlNonInitializedBlendTree : AacFlBlendTree) 💡" title="Direct link to Initialization (AacFlNonInitializedBlendTree : AacFlBlendTree) 💡">​</a></h3>
 <ul>
