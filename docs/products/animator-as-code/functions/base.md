@@ -245,6 +245,9 @@ Set the Float value of `toBeForced` parameter to `value` in the animator.
 - `AacFlLayer OverrideValue(AacFlIntParameter toBeForced, int value)`<br/>
 Set the Int value of `toBeForced` parameter to `value` in the animator.
 
+- `AacFlLayer CopyParametersAndOverridesTo(AacFlLayer otherLayer)💡<br/>
+Copy all created parameters to the other layer, and overrides it with a value if a value was stored.
+
 #### Edit avatar mask
 
 - `AacFlLayer WithAvatarMask(AvatarMask avatarMask)`<br/>
@@ -297,6 +300,17 @@ Create an Int parameter, for use without a backing animator.
 - `AacFlBoolParameter BoolParameter(string parameterName)`💡<br/>
 Create a Bool parameter, for use without a backing animator.
 
+- `AacFlNoAnimator OverrideValue(AacFlFloatParameter toBeForced, float value)`💡<br/>
+Stores the Float value of `toBeForced` parameter to `value`, which will be used in the CopyParametersAndOverridesTo() function.
+
+- `AacFlNoAnimator OverrideValue(AacFlIntParameter toBeForced, int value)`💡<br/>
+Stores the Int value of `toBeForced` parameter to `value`, which will be used in the CopyParametersAndOverridesTo() function.
+
+- `AacFlNoAnimator OverrideValue(AacFlBoolParameter toBeForced, bool value)`💡<br/>
+Stores the Bool value of `toBeForced` parameter to `value`, which will be used in the CopyParametersAndOverridesTo() function.
+
+- `AacFlNoAnimator CopyParametersAndOverridesTo(AacFlLayer otherLayer)`💡<br/>
+Copy all created parameters to the other layer, and overrides it with a value if a value was stored.
 
 ## State (AacFlState)
 
@@ -732,7 +746,6 @@ Add additional conditions using a lambda expression that cannot contain Or opera
 
 
 ## Conditions (IAacFlCondition, IAacFlOrCondition)
-
 
 #### AacFlFloatParameter
 

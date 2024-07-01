@@ -30,4 +30,4 @@ These packages are available, but not recommended:
 
 ## Migration from V0
 
-If you were an user of Animator As Code V0, please see the [migration guide](migrating-v0-to-v1).
+If you were a user of Animator As Code V0, please see the [migration guide](migrating-v0-to-v1).

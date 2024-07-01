@@ -35,10 +35,6 @@ If you use assembly definitions, change the assembly reference from `AnimatorAsC
         - The extension methods are contained within the class `AnimatorAsCode.V1.VRCDestructiveWorkflow.AacVRCDestructiveWorkflowExtensions`
 - Change `TrackingElement` to `AacAv3.Av3TrackingElement`
 
-### TODO
-
-- TODO: Check TrackingElement being renamed to AacAv3.Av3TrackingElement
-
 ### AacConfiguration
 
 Since `AacConfiguration` no longer contains the avatar descriptor, you will need to use the extension method `AacConfiguration.WithAvatarDescriptor(VRCAvatarDescriptor)` to define the avatar in the configuration.
