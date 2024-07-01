@@ -712,10 +712,12 @@ Add additional conditions using a lambda expression that cannot contain Or opera
 #### AacFlFloatParameter
 
 - `IsGreaterThan(float other)` <br/>
-Float is greater than `other`; be mindful of minifloat imprecision over the network.
+Float is greater than `other`.<br/>
+When used on some platforms, you need to be careful as the remote value may not be the same as the local value.
 
 - `IsLessThan(float other)` <br/>
-Float is less than `other`; be mindful of minifloat imprecision over the network.
+Float is less than `other`.<br/>
+When used on some platforms, you need to be careful as the remote value may not be the same as the local value.
 
 
 #### AacFlIntParameter
@@ -772,10 +774,12 @@ Bool is not equal to `other`
 #### AacFlFloatParameterGroup
 
 - `AreGreaterThan(float other)` <br/>
-All of the Floats are greater than `other`; be mindful of minifloat imprecision over the network.
+All of the Floats are greater than `other`.<br/>
+When used on some platforms, you need to be careful as the remote value may not be the same as the local value.
 
 - `AreLessThan(float other)` <br/>
-All of the Floats are less than `other`; be mindful of minifloat imprecision over the network.
+All of the Floats are less than `other`.<br/>
+When used on some platforms, you need to be careful as the remote value may not be the same as the local value.
 
 
 #### AacFlIntParameterGroup
@@ -805,25 +809,25 @@ All of the Bools are false
 All of the Bools are equal to `other`
 
 - `AreFalseExcept(AacFlBoolParameter exceptThisMustBeTrue)` <br/>
-All of the Bools except `exceptThisMustBeTrue` are false, and the Bool of `exceptThisMustBeTrue` must be true.
+All the Bools except `exceptThisMustBeTrue` are false, and the Bool of `exceptThisMustBeTrue` must be true.
 
 - `AreFalseExcept(params AacFlBoolParameter[] exceptTheseMustBeTrue)` <br/>
-All of the Bools except those in `exceptTheseMustBeTrue` are false, and all of the Bools in `exceptTheseMustBeTrue` must be true.
+All the Bools except those in `exceptTheseMustBeTrue` are false, and all of the Bools in `exceptTheseMustBeTrue` must be true.
 
 - `AreFalseExcept(AacFlBoolParameterGroup exceptTheseMustBeTrue)` <br/>
-All of the Bools except those in `exceptTheseMustBeTrue` are false, and all of the Bools in `exceptTheseMustBeTrue` must be true.
+All the Bools except those in `exceptTheseMustBeTrue` are false, and all of the Bools in `exceptTheseMustBeTrue` must be true.
 
 - `AreTrueExcept(AacFlBoolParameter exceptThisMustBeFalse)` <br/>
-All of the Bools except `exceptThisMustBeTrue` are true, and the Bool of `exceptThisMustBeTrue` must be false.
+All the Bools except `exceptThisMustBeTrue` are true, and the Bool of `exceptThisMustBeTrue` must be false.
 
 - `AreTrueExcept(params AacFlBoolParameter[] exceptTheseMustBeFalse)` <br/>
-All of the Bools except those in `exceptTheseMustBeTrue` are true, and all of the Bools in `exceptTheseMustBeTrue` must be false.
+All the Bools except those in `exceptTheseMustBeTrue` are true, and all of the Bools in `exceptTheseMustBeTrue` must be false.
 
 - `AreTrueExcept(AacFlBoolParameterGroup exceptTheseMustBeFalse)` <br/>
-All of the Bools except those in `exceptTheseMustBeTrue` are true, and all of the Bools in `exceptTheseMustBeTrue` must be false.
+All the Bools except those in `exceptTheseMustBeTrue` are true, and all of the Bools in `exceptTheseMustBeTrue` must be false.
 
 - `IsAnyTrue()` -> returns `IAacFlOrCondition`, can only be used inside `.When(...)` <br/>
-Generates multiple transitions, verifying whether any Bool is true
+Generates multiple transitions, verifying whether any Bool is true. This can only be used inside `.When(...)`
 
 - `IsAnyFalse()` -> returns `IAacFlOrCondition`, can only be used inside `.When(...)` <br/>
-Generates multiple transitions, verifying whether any Bool is false
+Generates multiple transitions, verifying whether any Bool is false. This can only be used inside `.When(...)`
