@@ -159,21 +159,34 @@ Create a new layer. You cannot invoke this method multiple times on the same con
 ## Layer (AacFlLayer)
 
 - `AacFlState NewState(string name)` 🔺<br/>
-Create a new state, initially positioned below the last generated state of this layer. 🔺 If the name is already used, a number will be appended at the end.
+Create a new state, initially positioned below the last generated state of this layer.<br/>
+🔺 If the name is already used, a number will be appended at the end.
 
 - `AacFlState NewState(string name, int x, int y)` 🔺<br/>
-Create a new state at a specific position `x` and `y`, in grid units. The grid size is defined in the DefaultsProvider of the AacConfiguration of AAC. `x` positive goes right, `y` positive goes down. 🔺 If the name is already used, a number will be appended at the end.
+Create a new state at a specific position `x` and `y`, in grid units. The grid size is defined in the DefaultsProvider of the AacConfiguration of AAC. `x` positive goes right, `y` positive goes down.<br/>
+🔺 If the name is already used, a number will be appended at the end.
 
 - `AacFlStateMachine NewSubStateMachine(string name)` 💡<br/>
-  Create a new state machine, initially positioned below the last generated state of this layer. 🔺 If the name is already used, a number will be appended at the end.
+  Create a new state machine, initially positioned below the last generated state of this layer.<br/>
+🔺 If the name is already used, a number will be appended at the end.
+
+- `AacFlStateMachine NewSubStateMachine(string name, int x, int y)` 💡<br/>
+  Create a new state machine at a specific position `x` and `y`, in grid units. The grid size is defined in the DefaultsProvider of the AacConfiguration of AAC. `x` positive goes right, `y` positive goes down.<br/>
+🔺 If the name is already used, a number will be appended at the end.
 
 #### Create layer transitions
 
 - `AacFlTransition AnyTransitionsTo(AacFlState destination)` <br/>
 Create a transition from Any to the `destination` state.
 
+- `AacFlTransition AnyTransitionsTo(AacFlStateMachine destination)` <br/>
+Create a transition from Any to the `destination` state machine.
+
 - `AacFlEntryTransition EntryTransitionsTo(AacFlState destination)` <br/>
 Create a transition from the Entry to the `destination` state.
+
+- `AacFlEntryTransition EntryTransitionsTo(AacFlStateMachine destination)` <br/>
+Create a transition from the Entry to the `destination` state machine.
 
 #### Create parameters
 
@@ -273,7 +286,7 @@ Otherwise, it is strongly recommended to obtain animator parameter objects direc
 Create a Float parameter, for use without a backing animator.
 
 - `AacFlIntParameter IntParameter(string parameterName)` 💡<br/>
-Create a Int parameter, for use without a backing animator.
+Create an Int parameter, for use without a backing animator.
 
 - `AacFlBoolParameter BoolParameter(string parameterName)` 💡<br/>
 Create a Bool parameter, for use without a backing animator.
@@ -287,37 +300,43 @@ Expose the underlying AnimatorState object.
 
 ### Graph Positioning
 
-
 - `AacFlState LeftOf(AacFlState otherState)` <br/>
-Move the state to be left of the other state in the graph.
+Move the node the left of the other node in the graph.
 
 - `AacFlState RightOf(AacFlState otherState)` <br/>
-Move the state to be right of the other state in the graph.
+Move the node the right of the other node in the graph.
 
 - `AacFlState Over(AacFlState otherState)` <br/>
-Move the state to be over the other state in the graph.
+Move the node to be over the other node in the graph.
 
 - `AacFlState Under(AacFlState otherState)` <br/>
-Move the state to be under the other state in the graph.
+Move the node to be under the other node in the graph.
 
 - `AacFlState LeftOf()` <br/>
-Move the state to be left of the last created state of the state machine this belongs to in the graph.
+Move the node to the left of the last created node of the state machine this belongs to in the graph.
 
 - `AacFlState RightOf()` <br/>
-Move the state to be right of the last created state of the state machine this belongs to in the graph.
+Move the node to the right of the last created node of the state machine this belongs to in the graph.
 
 - `AacFlState Over()` <br/>
-Move the state to be over the last created state of the state machine this belongs to in the graph.
+Move the node to be over the last created node of the state machine this belongs to in the graph.
 
 - `AacFlState Under()` <br/>
-Move the state to be under the last created state of the state machine this belongs to in the graph.
+Move the node to be under the last created node of the state machine this belongs to in the graph.
+
+- `At(int x, int y)` <br/>
+Move the node to be at a specific position in grid units, where x positive goes right, and y positive goes down.
 
 - `AacFlState Shift(AacFlState otherState, int shiftX, int shiftY)` <br/>
-Move the state to be shifted next to the other state in the graph, in grid units. `shiftX` positive goes right, `shiftY` positive goes down.
+Move the state to be shifted next to the other state in the graph, in grid units. shiftX positive goes right, shiftY positive goes down.
 
 - `AacFlState Shift(Vector3 otherPosition, int shiftX, int shiftY)` <br/>
-Move the state to be shifted next to another position in the graph, in grid units. `shiftX` positive goes right, `shiftY` positive goes down. // FIXME: Vector3 is really odd as a type.
+Given another position in non-grid units, move the state to be shifted next to that position, in grid units. shiftX positive goes right, shiftY positive goes down.
 
+### Paths
+
+- `string ResolveRelativePath(Transform item)` <br/>
+Resolve the path of an item relative to the AnimatorRoot.
 
 ### Attributes
 
