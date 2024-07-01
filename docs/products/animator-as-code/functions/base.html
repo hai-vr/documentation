@@ -5,7 +5,7 @@
 <meta name="generator" content="Docusaurus v3.2.1">
 <title data-rh="true">Base functions | Haï~</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://docs.hai-vr.dev/img/hai-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://docs.hai-vr.dev/img/hai-social-card.jpg"><meta data-rh="true" property="og:url" content="https://docs.hai-vr.dev/docs/products/animator-as-code/functions/base"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Base functions | Haï~"><meta data-rh="true" name="description" content="This is the work-in-progress documentation for Animator As Code V1, which has not yet been released. The last public version of Animator As Code is V0."><meta data-rh="true" property="og:description" content="This is the work-in-progress documentation for Animator As Code V1, which has not yet been released. The last public version of Animator As Code is V0."><link data-rh="true" rel="icon" href="/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://docs.hai-vr.dev/docs/products/animator-as-code/functions/base"><link data-rh="true" rel="alternate" href="https://docs.hai-vr.dev/docs/products/animator-as-code/functions/base" hreflang="en"><link data-rh="true" rel="alternate" href="https://docs.hai-vr.dev/docs/products/animator-as-code/functions/base" hreflang="x-default"><link rel="alternate" type="application/rss+xml" href="/updates/rss.xml" title="Haï~ RSS Feed">
 <link rel="alternate" type="application/atom+xml" href="/updates/atom.xml" title="Haï~ Atom Feed"><link rel="stylesheet" href="/assets/css/styles.dbcbb60b.css">
-<script src="/assets/js/runtime~main.cd52a023.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.72ce19a8.js" defer="defer"></script>
 <script src="/assets/js/main.59cbb915.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -259,7 +259,8 @@ Exposes the underlying Unity AnimatorStateMachine object of this state machine.<
 </li>
 <li>
 <p><code>AacFlStateMachine NewSubStateMachine(string name)</code>💡<br>
-Create a new state machine, initially positioned below the last generated state of this layer.</p>
+Create a new state machine, initially positioned below the last generated state of this layer.<br>
+🔺 If the name is already used, a number will be appended at the end.</p>
 </li>
 <li>
 <p><code>AacFlNewTransitionContinuation Restarts()</code>💡<br>
@@ -267,7 +268,7 @@ Creates a new transition of the entire state machine node to itself, which is ev
 </li>
 <li>
 <p><code>AacFlNewTransitionContinuation Exits()</code>💡<br>
-Create a transition from this state machine node to the exit. 🔺 If the name is already used, a number will be appended at the end.</p>
+Create a transition from this state machine node to the exit.</p>
 </li>
 </ul>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="no-animator-aacflnoanimator">No Animator (AacFlNoAnimator)💡<a href="#no-animator-aacflnoanimator" class="hash-link" aria-label="Direct link to No Animator (AacFlNoAnimator)💡" title="Direct link to No Animator (AacFlNoAnimator)💡">​</a></h2>
@@ -375,22 +376,38 @@ Set a specific blend tree for the state. See <code>(AacFlBase).NewBlendTree()</c
 </li>
 <li>
 <p><code>AacFlState MotionTime(AacFlFloatParameter floatParam)</code><br>
-Set the Motion Time, formerly known as Normalized Time.</p>
+Set the Motion Time to a parameter. This was formerly known as Normalized Time.</p>
+</li>
+<li>
+<p><code>AacFlState WithCycleOffset(AacFlFloatParameter floatParam)</code><br>
+Set the Cycle Offset to a parameter.</p>
+</li>
+<li>
+<p><code>AacFlState WithCycleOffsetSetTo(float cycleOffset)</code><br>
+Set the Cycle Offset to a specific value.</p>
 </li>
 <li>
 <p><code>AacFlState WithSpeed(AacFlFloatParameter parameter)</code><br>
-Set the Speed.</p>
+Set the Speed to a parameter.</p>
+</li>
+<li>
+<p><code>AacFlState WithSpeedSetTo(float speed)</code><br>
+Set the Speed to a specific value.</p>
 </li>
 <li>
 <p><code>AacFlState WithWriteDefaultsSetTo(bool shouldWriteDefaults)</code><br>
-Set Write Defaults. If you need to do this to many states, consider changing the AacConfiguration DefaultsProvider when creating Animator As Code.</p>
+Set Write Defaults. If you need to do this to many states, consider changing the AacConfiguration DefaultsProvider when creating the AnimatorAsCode instance.</p>
 </li>
 </ul>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="transitions">Transitions<a href="#transitions" class="hash-link" aria-label="Direct link to Transitions" title="Direct link to Transitions">​</a></h3>
 <ul>
 <li>
 <p><code>AacFlTransition TransitionsTo(AacFlState destination)</code><br>
-Create a new transition from this state to the destination state.</p>
+Create a new transition from this state to the <code>destination</code> state.</p>
+</li>
+<li>
+<p><code>AacFlTransition TransitionsTo(AacFlStateMachine destination)</code><br>
+Create a new transition from this state to the <code>destination</code> state machine.</p>
 </li>
 <li>
 <p><code>AacFlTransition TransitionsFromAny()</code><br>
@@ -398,11 +415,18 @@ Create a new transition from Any to this state.</p>
 </li>
 <li>
 <p><code>AacFlEntryTransition TransitionsFromEntry()</code><br>
-Create a new transition from Entry to this state. Note that the first created state is the default state, so generally this function does not need to be invoked onto the first created state. Calling this function will not define this state to be the default state.</p>
+Create a new transition from Entry to this state. Note that the first created state is the default state, so generally this function does not need to be invoked onto the first created state.<br>
+Calling this function will not define this state to be the default state.</p>
 </li>
 <li>
 <p><code>AacFlState AutomaticallyMovesTo(AacFlState destination)</code><br>
-Create a transition with no exit time to the destination state, and does not return the transition.</p>
+Create a transition with no exit time to the <code>destination</code> state.<br>
+Calling this function does not return the transition.</p>
+</li>
+<li>
+<p><code>AacFlState AutomaticallyMovesTo(AacFlStateMachine destination)</code><br>
+Create a transition with no exit time to the <code>destination</code> state machine.<br>
+Calling this function does not return the transition.</p>
 </li>
 <li>
 <p><code>AacFlTransition Exits()</code><br>
@@ -984,7 +1008,7 @@ Generates multiple transitions, verifying whether any Bool is false. This can on
 <div class="card element_KzhA sp_qcMM k2_SBmZ ias_qO18">⭐ <!-- -->Bizz</div>
 <div class="card element_KzhA sp_qcMM k2_SBmZ ias_qO18">⭐ <!-- -->kazu0617</div>
 <div class="card element_KzhA sp_qcMM k2_SBmZ ias_qO18">⭐ <!-- -->PastelPlushies</div>
-<div class="card element_KzhA sp_qcMM k2_SBmZ ias_qO18">⭐ <!-- -->kittyn vr</div>
+<div class="card element_KzhA sp_qcMM k2_SBmZ ias_qO18"> ⭐ <!-- -->kittyn vr</div>
 <div class="card element_KzhA sp_qcMM k2_SBmZ ias_qO18">⭐ <!-- -->Lavy</div>
 <div class="card element_KzhA sp_qcMM k2_SBmZ ias_qO18">⭐ <!-- -->Nyashks</div>
 <div class="card element_KzhA sp_qcMM k2_SBmZ ias_qO18">⭐ <!-- -->SuikaNishi</div>
