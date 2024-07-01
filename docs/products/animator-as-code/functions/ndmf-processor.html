@@ -5,7 +5,7 @@
 <meta name="generator" content="Docusaurus v3.2.1">
 <title data-rh="true">NDMF Processor (Deprecated) | Haï~</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://docs.hai-vr.dev/img/hai-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://docs.hai-vr.dev/img/hai-social-card.jpg"><meta data-rh="true" property="og:url" content="https://docs.hai-vr.dev/docs/products/animator-as-code/functions/ndmf-processor"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="NDMF Processor (Deprecated) | Haï~"><meta data-rh="true" name="description" content="Depreciation"><meta data-rh="true" property="og:description" content="Depreciation"><meta data-rh="true" name="robots" content="noindex, nofollow"><link data-rh="true" rel="icon" href="/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://docs.hai-vr.dev/docs/products/animator-as-code/functions/ndmf-processor"><link data-rh="true" rel="alternate" href="https://docs.hai-vr.dev/docs/products/animator-as-code/functions/ndmf-processor" hreflang="en"><link data-rh="true" rel="alternate" href="https://docs.hai-vr.dev/docs/products/animator-as-code/functions/ndmf-processor" hreflang="x-default"><link rel="alternate" type="application/rss+xml" href="/updates/rss.xml" title="Haï~ RSS Feed">
 <link rel="alternate" type="application/atom+xml" href="/updates/atom.xml" title="Haï~ Atom Feed"><link rel="stylesheet" href="/assets/css/styles.dbcbb60b.css">
-<script src="/assets/js/runtime~main.6bd8628a.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.31c480c2.js" defer="defer"></script>
 <script src="/assets/js/main.59cbb915.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -56,15 +56,15 @@
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="properties">Properties<a href="#properties" class="hash-link" aria-label="Direct link to Properties" title="Direct link to Properties">​</a></h3>
 <ul>
 <li>
-<p><code>protected AacFlBase aac { get; private set; }</code> <br>
+<p><code>protected AacFlBase aac { get; private set; }</code><br>
 This field contains the Animator As Code instance. To customize the configuration, see <a href="#overrides">Overrides</a> below.</p>
 </li>
 <li>
-<p><code>protected T my { get; private set; }</code> <br>
+<p><code>protected T my { get; private set; }</code><br>
 This field contains the instance of your targeted script being processed.</p>
 </li>
 <li>
-<p><code>protected BuildContext buildContext { get; private set; }</code> <br>
+<p><code>protected BuildContext buildContext { get; private set; }</code><br>
 This field contains the build context of NDMF.</p>
 </li>
 </ul>
@@ -72,19 +72,19 @@ This field contains the build context of NDMF.</p>
 <p>You may override those methods if necessary:</p>
 <ul>
 <li>
-<p><code>protected virtual string SystemName(Component script, BuildContext context) =&gt; GetType().Name;</code> <br>
+<p><code>protected virtual string SystemName(Component script, BuildContext context) =&gt; GetType().Name;</code><br>
 Generated layers will be prefixed with the system name.</p>
 </li>
 <li>
-<p><code>protected virtual Transform AnimatorRoot(Component script, BuildContext context) =&gt; context.AvatarRootTransform;</code> <br>
+<p><code>protected virtual Transform AnimatorRoot(Component script, BuildContext context) =&gt; context.AvatarRootTransform;</code><br>
 The root transform is used to determine the relative paths to the object references that will be used within the animation. If you want to reuse a component on multiple avatars without reassigning the references, you can override this behaviour.</p>
 </li>
 <li>
-<p><code>protected virtual Transform DefaultValueRoot(Component script, BuildContext context) =&gt; context.AvatarRootTransform;</code> <br>
+<p><code>protected virtual Transform DefaultValueRoot(Component script, BuildContext context) =&gt; context.AvatarRootTransform;</code><br>
 (At the moment, the DefaultValueRoot is not used in Animator As Code. It is meant to be used for sampling the default values of animated properties, so it may be different from the AnimatorRoot above)</p>
 </li>
 <li>
-<p><code>protected virtual bool UseWriteDefaults(Component script, BuildContext context) =&gt; false;</code> <br>
+<p><code>protected virtual bool UseWriteDefaults(Component script, BuildContext context) =&gt; false;</code><br>
 Choose the WriteDefaults state that will be used by default when creating states.</p>
 </li>
 </ul>

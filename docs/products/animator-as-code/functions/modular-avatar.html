@@ -5,7 +5,7 @@
 <meta name="generator" content="Docusaurus v3.2.1">
 <title data-rh="true">Modular Avatar | Haï~</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://docs.hai-vr.dev/img/hai-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://docs.hai-vr.dev/img/hai-social-card.jpg"><meta data-rh="true" property="og:url" content="https://docs.hai-vr.dev/docs/products/animator-as-code/functions/modular-avatar"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Modular Avatar | Haï~"><meta data-rh="true" name="description" content="This is the work-in-progress documentation for Animator As Code V1, which has not yet been released. The last public version of Animator As Code is V0."><meta data-rh="true" property="og:description" content="This is the work-in-progress documentation for Animator As Code V1, which has not yet been released. The last public version of Animator As Code is V0."><link data-rh="true" rel="icon" href="/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://docs.hai-vr.dev/docs/products/animator-as-code/functions/modular-avatar"><link data-rh="true" rel="alternate" href="https://docs.hai-vr.dev/docs/products/animator-as-code/functions/modular-avatar" hreflang="en"><link data-rh="true" rel="alternate" href="https://docs.hai-vr.dev/docs/products/animator-as-code/functions/modular-avatar" hreflang="x-default"><link rel="alternate" type="application/rss+xml" href="/updates/rss.xml" title="Haï~ RSS Feed">
 <link rel="alternate" type="application/atom+xml" href="/updates/atom.xml" title="Haï~ Atom Feed"><link rel="stylesheet" href="/assets/css/styles.dbcbb60b.css">
-<script src="/assets/js/runtime~main.6bd8628a.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.31c480c2.js" defer="defer"></script>
 <script src="/assets/js/main.59cbb915.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -25,178 +25,178 @@
 <!-- -->
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="modular-avatar-as-code-maac">Modular Avatar As Code (MaAc)<a href="#modular-avatar-as-code-maac" class="hash-link" aria-label="Direct link to Modular Avatar As Code (MaAc)" title="Direct link to Modular Avatar As Code (MaAc)">​</a></h2>
 <ul>
-<li><code>static MaAc Create(GameObject root, bool setDirty = true)</code> <br>
+<li><code>static MaAc Create(GameObject root, bool setDirty = true)</code><br>
 Create a Modular Avatar As Code base, targeting the root object. The root object is the object that you will attach the Merge Armature component to.</li>
 </ul>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="base-maac">Base (MaAc)<a href="#base-maac" class="hash-link" aria-label="Direct link to Base (MaAc)" title="Direct link to Base (MaAc)">​</a></h2>
 <ul>
-<li><code>MaAc On(GameObject otherRoot)</code> <br>
+<li><code>MaAc On(GameObject otherRoot)</code><br>
 Create a new instance of MaAc targeting another object. Beware that this new instance of MaAc forgets all previous method invocations, so invoking some stateful functions like &quot;NewMergeAnimator&quot; may cause different results.</li>
 </ul>
 <h4 class="anchor anchorWithStickyNavbar_LWe7" id="parameters">Parameters<a href="#parameters" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters">​</a></h4>
 <ul>
 <li>
-<p><code>MaAc ImportParameters(VRCExpressionParameters parameters)</code> <br>
+<p><code>MaAc ImportParameters(VRCExpressionParameters parameters)</code><br>
 Import parameters from an existing VRCExpressionParameters asset. This creates a ModularAvatarParameters on the targeted object if it doesn&#x27;t already exist.</p>
 </li>
 <li>
-<p><code>MaacParameter&lt;float&gt; NewParameter(MaacParameterType parameterType, string parameter)</code> <br>
+<p><code>MaacParameter&lt;float&gt; NewParameter(MaacParameterType parameterType, string parameter)</code><br>
 Declare a new parameter of the given type. If you use Animator As Code, you can reuse the parameters using the other <code>NewParameter</code> method overloads or the <code>NewBoolToFloatParameter</code> method. Function calls on the resulting objects will affect all parameters of that group. This creates a ModularAvatarParameters on the targeted object if it doesn&#x27;t already exist.</p>
 </li>
 <li>
-<p><code>MaacParameter&lt;float&gt; NewParameter(AacFlFloatParameter aacParameter)</code> <br>
+<p><code>MaacParameter&lt;float&gt; NewParameter(AacFlFloatParameter aacParameter)</code><br>
 Declare a new Float parameter, by default saved and synced. This creates a ModularAvatarParameters on the targeted object if it doesn&#x27;t already exist.</p>
 </li>
 <li>
-<p><code>MaacParameter&lt;int&gt; NewParameter(AacFlIntParameter aacParameter)</code> <br>
+<p><code>MaacParameter&lt;int&gt; NewParameter(AacFlIntParameter aacParameter)</code><br>
 Declare a new Int parameter, by default saved and synced. This creates a ModularAvatarParameters on the targeted object if it doesn&#x27;t already exist.</p>
 </li>
 <li>
-<p><code>MaacParameter&lt;bool&gt; NewParameter(AacFlBoolParameter aacParameter)</code> <br>
+<p><code>MaacParameter&lt;bool&gt; NewParameter(AacFlBoolParameter aacParameter)</code><br>
 Declare a new Bool parameter, by default saved and synced. This creates a ModularAvatarParameters on the targeted object if it doesn&#x27;t already exist.</p>
 </li>
 <li>
-<p><code>MaacParameter&lt;bool&gt; NewBoolToFloatParameter(AacFlFloatParameter aacParameter)</code> <br>
+<p><code>MaacParameter&lt;bool&gt; NewBoolToFloatParameter(AacFlFloatParameter aacParameter)</code><br>
 Declare a new Bool parameter, acknowledging that the animator has exposed it as a Float. By default it is saved and synced. This creates a ModularAvatarParameters on the targeted object if it doesn&#x27;t already exist.</p>
 </li>
 </ul>
 <h4 class="anchor anchorWithStickyNavbar_LWe7" id="parameter-groups">Parameter groups<a href="#parameter-groups" class="hash-link" aria-label="Direct link to Parameter groups" title="Direct link to Parameter groups">​</a></h4>
 <ul>
 <li>
-<p><code>MaacParameter&lt;float&gt; NewParameter(MaacParameterType parameterType, params string[] parametersWithNulls)</code> <br>
+<p><code>MaacParameter&lt;float&gt; NewParameter(MaacParameterType parameterType, params string[] parametersWithNulls)</code><br>
 Declare new parameters of the given type. If you use Animator As Code, you can reuse the parameters using the other <code>NewParameter</code> method overloads or the <code>NewBoolToFloatParameter</code> method. The array can safely contain null values. This creates a ModularAvatarParameters on the targeted object if it doesn&#x27;t already exist.</p>
 </li>
 <li>
-<p><code>MaacParameter&lt;float&gt; NewParameter(AacFlFloatParameterGroup aacParameterGroup)</code> <br>
+<p><code>MaacParameter&lt;float&gt; NewParameter(AacFlFloatParameterGroup aacParameterGroup)</code><br>
 Declare new Float parameters, by default saved and synced. This creates a ModularAvatarParameters on the targeted object if it doesn&#x27;t already exist. Function calls on the resulting objects will affect all parameters of that group. This creates a ModularAvatarParameters on the targeted object if it doesn&#x27;t already exist.</p>
 </li>
 <li>
-<p><code>MaacParameter&lt;int&gt; NewParameter(AacFlIntParameterGroup aacParameterGroup)</code> <br>
+<p><code>MaacParameter&lt;int&gt; NewParameter(AacFlIntParameterGroup aacParameterGroup)</code><br>
 Declare new Int parameters, by default saved and synced. This creates a ModularAvatarParameters on the targeted object if it doesn&#x27;t already exist. Function calls on the resulting objects will affect all parameters of that group. This creates a ModularAvatarParameters on the targeted object if it doesn&#x27;t already exist.</p>
 </li>
 <li>
-<p><code>MaacParameter&lt;bool&gt; NewParameter(AacFlBoolParameterGroup aacParameterGroup)</code> <br>
+<p><code>MaacParameter&lt;bool&gt; NewParameter(AacFlBoolParameterGroup aacParameterGroup)</code><br>
 Declare new Bool parameters, by default saved and synced. This creates a ModularAvatarParameters on the targeted object if it doesn&#x27;t already exist. Function calls on the resulting objects will affect all parameters of that group. This creates a ModularAvatarParameters on the targeted object if it doesn&#x27;t already exist.</p>
 </li>
 <li>
-<p><code>MaacParameter&lt;bool&gt; NewBoolToFloatParameter(AacFlFloatParameterGroup aacParameterGroup)</code> <br>
+<p><code>MaacParameter&lt;bool&gt; NewBoolToFloatParameter(AacFlFloatParameterGroup aacParameterGroup)</code><br>
 Declare new Bool parameters, acknowledging that the animator has exposed them as Floats. By default it is saved and synced. This creates a ModularAvatarParameters on the targeted object if it doesn&#x27;t already exist. Function calls on the resulting objects will affect all parameters of that group. This creates a ModularAvatarParameters on the targeted object if it doesn&#x27;t already exist.</p>
 </li>
 </ul>
 <h4 class="anchor anchorWithStickyNavbar_LWe7" id="merge-animator">Merge Animator<a href="#merge-animator" class="hash-link" aria-label="Direct link to Merge Animator" title="Direct link to Merge Animator">​</a></h4>
 <ul>
 <li>
-<p><code>MaacMergeAnimator NewMergeAnimator(AacFlController controller, VRCAvatarDescriptor.AnimLayerType layerType)</code> <br>
+<p><code>MaacMergeAnimator NewMergeAnimator(AacFlController controller, VRCAvatarDescriptor.AnimLayerType layerType)</code><br>
 Declare a new animator to be merged. Every call to NewMergeAnimator will create an additional ModularAvatarMergeAnimator component. The path mode is set to Absolute.</p>
 </li>
 <li>
-<p><code>MaacMergeAnimator NewMergeAnimator(AnimatorController animator, VRCAvatarDescriptor.AnimLayerType layerType)</code> <br>
+<p><code>MaacMergeAnimator NewMergeAnimator(AnimatorController animator, VRCAvatarDescriptor.AnimLayerType layerType)</code><br>
 Declare a new raw animator to be merged. Every call to NewMergeAnimator will create an additional ModularAvatarMergeAnimator component. The path mode is set to Absolute.</p>
 </li>
 <li>
-<p><code>MaacMergeAnimator UsingMergeAnimator(ModularAvatarMergeAnimator mergeAnimator, AacFlController controller, VRCAvatarDescriptor.AnimLayerType layerType)</code> <br>
+<p><code>MaacMergeAnimator UsingMergeAnimator(ModularAvatarMergeAnimator mergeAnimator, AacFlController controller, VRCAvatarDescriptor.AnimLayerType layerType)</code><br>
 Writes over an existing MergeAnimator component, setting the controller and layer type to be merged. The path mode is set to Absolute.</p>
 </li>
 <li>
-<p><code>MaacMergeAnimator UsingMergeAnimator(ModularAvatarMergeAnimator mergeAnimator, AnimatorController animator, VRCAvatarDescriptor.AnimLayerType layerType)</code> <br>
+<p><code>MaacMergeAnimator UsingMergeAnimator(ModularAvatarMergeAnimator mergeAnimator, AnimatorController animator, VRCAvatarDescriptor.AnimLayerType layerType)</code><br>
 Writes over an existing MergeAnimator component, setting the raw controller and layer type to be merged. The path mode is set to Absolute.</p>
 </li>
 </ul>
 <h4 class="anchor anchorWithStickyNavbar_LWe7" id="menu-items">Menu items<a href="#menu-items" class="hash-link" aria-label="Direct link to Menu items" title="Direct link to Menu items">​</a></h4>
 <ul>
 <li>
-<p><code>MaacMenuItem EditMenuItemOnSelf()</code> <br>
+<p><code>MaacMenuItem EditMenuItemOnSelf()</code><br>
 Edit one menu item on this object. It is not possible to declare multiple menu items on the same object.</p>
 </li>
 <li>
-<p><code>MaacMenuItem EditMenuItem(GameObject receiver)</code> <br>
+<p><code>MaacMenuItem EditMenuItem(GameObject receiver)</code><br>
 Edit one menu item on the receiver object. It is not possible to declare multiple menu items on that same object.</p>
 </li>
 <li>
-<p><code>MaacMenuItem EditMenuItem(params GameObject[] receiversWithNulls)</code> <br>
+<p><code>MaacMenuItem EditMenuItem(params GameObject[] receiversWithNulls)</code><br>
 Edit one menu item on all of the receiver objects. It is not possible to declare multiple menu items on those same objects. Function calls on the resulting object will affect all of those menu items. Use this in case you have multiple identical menu items scattered across different menus. The array can safely contain null values.</p>
 </li>
 </ul>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="merge-animator-maacmergeanimator">Merge Animator (MaacMergeAnimator)<a href="#merge-animator-maacmergeanimator" class="hash-link" aria-label="Direct link to Merge Animator (MaacMergeAnimator)" title="Direct link to Merge Animator (MaacMergeAnimator)">​</a></h2>
 <ul>
-<li><code>MaacMergeAnimator Relative()</code> <br>
+<li><code>MaacMergeAnimator Relative()</code><br>
 Mark the path mode as relative. By default, merge animators are made absolute.</li>
 </ul>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="parameter-maacparametert">Parameter (MaacParameter&lt;T&gt;)<a href="#parameter-maacparametert" class="hash-link" aria-label="Direct link to Parameter (MaacParameter&lt;T&gt;)" title="Direct link to Parameter (MaacParameter&lt;T&gt;)">​</a></h2>
 <ul>
 <li>
-<p><code>MaacParameter&lt;T&gt; NotSynced()</code> <br>
+<p><code>MaacParameter&lt;T&gt; NotSynced()</code><br>
 Mark this parameter as not synced. By default, newly created parameters are synced.</p>
 </li>
 <li>
-<p><code>MaacParameter&lt;T&gt; NotSaved()</code> <br>
+<p><code>MaacParameter&lt;T&gt; NotSaved()</code><br>
 Mark this parameter as not saved. By default, newly created parameters are saved.</p>
 </li>
 <li>
-<p><code>MaacParameter&lt;T&gt; WithDefaultValue(T value)</code> <br>
+<p><code>MaacParameter&lt;T&gt; WithDefaultValue(T value)</code><br>
 Set the default value of this parameter. No errors are raised if you try to set values outside legal range.</p>
 </li>
 </ul>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="menu-item-maacmenuitem">Menu item (MaacMenuItem)<a href="#menu-item-maacmenuitem" class="hash-link" aria-label="Direct link to Menu item (MaacMenuItem)" title="Direct link to Menu item (MaacMenuItem)">​</a></h2>
 <ul>
 <li>
-<p><code>MaacMenuItem Name(string menuItemName)</code> <br>
+<p><code>MaacMenuItem Name(string menuItemName)</code><br>
 Set the menu item name to be displayed on the menu.</p>
 </li>
 <li>
-<p><code>MaacMenuItem WithIcon(Texture2D icon)</code> <br>
+<p><code>MaacMenuItem WithIcon(Texture2D icon)</code><br>
 Set the menu item icon.</p>
 </li>
 </ul>
 <h4 class="anchor anchorWithStickyNavbar_LWe7" id="toggle">Toggle<a href="#toggle" class="hash-link" aria-label="Direct link to Toggle" title="Direct link to Toggle">​</a></h4>
 <ul>
 <li>
-<p><code>MaacMenuItem Toggle(AacFlBoolParameter parameter)</code> <br>
+<p><code>MaacMenuItem Toggle(AacFlBoolParameter parameter)</code><br>
 Set the menu item type as Toggle for a Bool parameter.</p>
 </li>
 <li>
-<p><code>MaacMenuItem ToggleBoolToFloat(AacFlFloatParameter parameter)</code> <br>
+<p><code>MaacMenuItem ToggleBoolToFloat(AacFlFloatParameter parameter)</code><br>
 Set the menu item type as Toggle for a Bool parameter, which is exposed as a Float in the animator.</p>
 </li>
 <li>
-<p><code>MaacMenuItem ToggleSets(AacFlIntParameter parameter, int value)</code> <br>
+<p><code>MaacMenuItem ToggleSets(AacFlIntParameter parameter, int value)</code><br>
 Set the menu item type as Toggle for a Int parameter, setting the value when toggled.</p>
 </li>
 <li>
-<p><code>MaacMenuItem ToggleSets(AacFlFloatParameter parameter, float value)</code> <br>
+<p><code>MaacMenuItem ToggleSets(AacFlFloatParameter parameter, float value)</code><br>
 Set the menu item type as Toggle for a Float parameter, setting the value when toggled.</p>
 </li>
 <li>
-<p><code>MaacMenuItem ToggleForcesBoolToFalse(AacFlBoolParameter parameter)</code> <br>
+<p><code>MaacMenuItem ToggleForcesBoolToFalse(AacFlBoolParameter parameter)</code><br>
 Set the menu item type as Toggle for a Bool parameter. However, when toggled, the value of the bool will be forced to false. Toggling will never set the value to true.</p>
 </li>
 </ul>
 <h4 class="anchor anchorWithStickyNavbar_LWe7" id="button">Button<a href="#button" class="hash-link" aria-label="Direct link to Button" title="Direct link to Button">​</a></h4>
 <ul>
 <li>
-<p><code>MaacMenuItem Button(AacFlBoolParameter parameter)</code> <br>
+<p><code>MaacMenuItem Button(AacFlBoolParameter parameter)</code><br>
 Set the menu item type as Button for a Bool parameter.</p>
 </li>
 <li>
-<p><code>MaacMenuItem ButtonBoolToFloat(AacFlFloatParameter parameter)</code> <br>
+<p><code>MaacMenuItem ButtonBoolToFloat(AacFlFloatParameter parameter)</code><br>
 Set the menu item type as Button for a Bool parameter, which is exposed as a Float in the animator.</p>
 </li>
 <li>
-<p><code>MaacMenuItem ButtonSets(AacFlIntParameter parameter, int value)</code> <br>
+<p><code>MaacMenuItem ButtonSets(AacFlIntParameter parameter, int value)</code><br>
 Set the menu item type as Button for a Int parameter, setting the value when pressed.</p>
 </li>
 <li>
-<p><code>MaacMenuItem ButtonSets(AacFlFloatParameter parameter, float value)</code> <br>
+<p><code>MaacMenuItem ButtonSets(AacFlFloatParameter parameter, float value)</code><br>
 Set the menu item type as Button for a Float parameter, setting the value when pressed.</p>
 </li>
 <li>
-<p><code>MaacMenuItem ButtonForcesBoolToFalse(AacFlBoolParameter parameter)</code> <br>
+<p><code>MaacMenuItem ButtonForcesBoolToFalse(AacFlBoolParameter parameter)</code><br>
 Set the menu item type as Button for a Bool parameter. However, when pressed, the value of the bool will be forced to false. Pressing will never set the value to true.</p>
 </li>
 </ul>
 <h4 class="anchor anchorWithStickyNavbar_LWe7" id="radial">Radial<a href="#radial" class="hash-link" aria-label="Direct link to Radial" title="Direct link to Radial">​</a></h4>
 <ul>
-<li><code>MaacMenuItem Radial(AacFlFloatParameter floatParam)</code> <br>
+<li><code>MaacMenuItem Radial(AacFlFloatParameter floatParam)</code><br>
 Set the menu item type as Radial for a Float parameter.</li>
 </ul></div></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/docs/products/animator-as-code/functions/vrchat-destructive-workflow"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">VRChat (Destructive workflow)</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/docs/products/animator-as-code/migrating-v0-to-v1"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Migrating from V0 to V1</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#modular-avatar-as-code-maac" class="table-of-contents__link toc-highlight">Modular Avatar As Code (MaAc)</a></li><li><a href="#base-maac" class="table-of-contents__link toc-highlight">Base (MaAc)</a></li><li><a href="#merge-animator-maacmergeanimator" class="table-of-contents__link toc-highlight">Merge Animator (MaacMergeAnimator)</a></li><li><a href="#parameter-maacparametert" class="table-of-contents__link toc-highlight">Parameter (MaacParameter&lt;T&gt;)</a></li><li><a href="#menu-item-maacmenuitem" class="table-of-contents__link toc-highlight">Menu item (MaacMenuItem)</a></li></ul></div></div></div></div></main></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="col footer__col"><div class="footer__title">Docs</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/docs/products">Products</a></li><li class="footer__item"><a class="footer__link-item" href="/docs/resilience">ResilienceVR</a></li><li class="footer__item"><a class="footer__link-item" href="/updates">What&#x27;s new?</a></li></ul></div><div class="col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://www.patreon.com/vr_hai" target="_blank" rel="noopener noreferrer" class="footer__link-item">Patreon<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://hai-vr.fanbox.cc/" target="_blank" rel="noopener noreferrer" class="footer__link-item">pixivFANBOX<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://twitter.com/vr_hai" target="_blank" rel="noopener noreferrer" class="footer__link-item">Twitter<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a class="footer__link-item" href="/docs/other/discord">Discord</a></li></ul></div><div class="col footer__col"><div class="footer__title">More</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://github.com/hai-vr/" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a class="footer__link-item" href="/links">Links</a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2024 Invitational Software. Built with Docusaurus.</div></div></div><br><div class="centerline_SA5j" data-theme="dark"><p>Thank you to all of my supporters on Patreon ⭐</p><div class="card element_KzhA sp_qcMM k10_P0Dq ias_qO18">☀️ <!-- -->Jordo</div>
 <div class="card element_KzhA sp_qcMM k5_NYOb ias_qO18">🌟 <!-- -->bd_</div>
