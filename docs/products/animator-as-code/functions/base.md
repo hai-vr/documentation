@@ -274,13 +274,14 @@ Set the blending mode of the layer.
 Exposes the underlying Unity AnimatorStateMachine object of this state machine.
 
 - `AacFlStateMachine NewSubStateMachine(string name)`💡<br/>
-Create a new state machine, initially positioned below the last generated state of this layer.
+Create a new state machine, initially positioned below the last generated state of this layer.<br/>
+🔺 If the name is already used, a number will be appended at the end.
 
 - `AacFlNewTransitionContinuation Restarts()`💡<br/>
 Creates a new transition of the entire state machine node to itself, which is evaluated after the state machine commits to an exit transitions.
 
 - `AacFlNewTransitionContinuation Exits()`💡<br/>
-Create a transition from this state machine node to the exit. 🔺 If the name is already used, a number will be appended at the end.
+Create a transition from this state machine node to the exit.
   
 
 ## No Animator (AacFlNoAnimator)💡
@@ -371,29 +372,47 @@ Set a specific clip for the state. See `(AacFlBase).NewClip()` and similar.
 Set a specific blend tree for the state. See `(AacFlBase).NewBlendTree()` and similar.
 
 - `AacFlState MotionTime(AacFlFloatParameter floatParam)`<br/>
-Set the Motion Time, formerly known as Normalized Time.
+Set the Motion Time to a parameter. This was formerly known as Normalized Time.
+
+- `AacFlState WithCycleOffset(AacFlFloatParameter floatParam)`<br/>
+Set the Cycle Offset to a parameter.
+
+- `AacFlState WithCycleOffsetSetTo(float cycleOffset)`<br/>
+Set the Cycle Offset to a specific value.
 
 - `AacFlState WithSpeed(AacFlFloatParameter parameter)`<br/>
-Set the Speed.
+Set the Speed to a parameter.
+
+- `AacFlState WithSpeedSetTo(float speed)`<br/>
+Set the Speed to a specific value.
 
 - `AacFlState WithWriteDefaultsSetTo(bool shouldWriteDefaults)`<br/>
-Set Write Defaults. If you need to do this to many states, consider changing the AacConfiguration DefaultsProvider when creating Animator As Code.
+Set Write Defaults. If you need to do this to many states, consider changing the AacConfiguration DefaultsProvider when creating the AnimatorAsCode instance.
 
 
 ### Transitions
 
 
 - `AacFlTransition TransitionsTo(AacFlState destination)`<br/>
-Create a new transition from this state to the destination state.
+Create a new transition from this state to the `destination` state.
+
+- `AacFlTransition TransitionsTo(AacFlStateMachine destination)`<br/>
+Create a new transition from this state to the `destination` state machine.
 
 - `AacFlTransition TransitionsFromAny()`<br/>
 Create a new transition from Any to this state.
 
 - `AacFlEntryTransition TransitionsFromEntry()`<br/>
-Create a new transition from Entry to this state. Note that the first created state is the default state, so generally this function does not need to be invoked onto the first created state. Calling this function will not define this state to be the default state.
+Create a new transition from Entry to this state. Note that the first created state is the default state, so generally this function does not need to be invoked onto the first created state.<br/>
+Calling this function will not define this state to be the default state.
 
 - `AacFlState AutomaticallyMovesTo(AacFlState destination)`<br/>
-Create a transition with no exit time to the destination state, and does not return the transition.
+Create a transition with no exit time to the `destination` state.<br/>
+Calling this function does not return the transition.
+
+- `AacFlState AutomaticallyMovesTo(AacFlStateMachine destination)`<br/>
+Create a transition with no exit time to the `destination` state machine.<br/>
+Calling this function does not return the transition.
 
 - `AacFlTransition Exits()`<br/>
 Create a transition from this state to the exit.
