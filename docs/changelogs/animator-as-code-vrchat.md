@@ -2,6 +2,11 @@
 title: Animator As Code - VRChat
 ---
 
+## 1.1.0-beta.2
+
+- Update inline docs.
+- Constraint to future 1.1 versions.
+
 ## 1.1.0-beta.1
 
 Support VRCAnimatorPlayAudio and VRCAvatarParameterDriver as lambda expressions:
