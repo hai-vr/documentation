@@ -2,11 +2,70 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://docs.hai-vr.dev/updates</id>
     <title>Haï~ Blog</title>
-    <updated>2024-06-30T00:00:00.000Z</updated>
+    <updated>2024-07-02T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://docs.hai-vr.dev/updates"/>
     <subtitle>Haï~ Blog</subtitle>
     <icon>https://docs.hai-vr.dev/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[⚠️ Advance notice for Animator As Code V1]]></title>
+        <id>https://docs.hai-vr.dev/updates/2024/07/02/p0</id>
+        <link href="https://docs.hai-vr.dev/updates/2024/07/02/p0"/>
+        <updated>2024-07-02T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Hello,]]></summary>
+        <content type="html"><![CDATA[<p>Hello,</p>
+<p>In February 2022, I had released <em>Animator As Code</em> version 0 (V0).</p>
+<p>During 2023, I had started to move towards <em>Animator As Code</em> to version 1 (V1), in order to do the following breaking changes:</p>
+<ul>
+<li>Pull major contributions from <a href="https://github.com/galister" target="_blank" rel="noopener noreferrer"><strong>@galister</strong></a> which:<!-- -->
+<ul>
+<li><strong>Adds support for sub-state machines</strong>, which is important because it enables the creation of states that evaluate multiple transitions within one frame,
+which is not possible to do without sub-state machines (with one exception).<!-- -->
+<ul>
+<li>This trait is already extensively used in <em>ComboGestureExpressions V2</em> and above.</li>
+</ul>
+</li>
+<li>Share functionality of state and sub-state machines.</li>
+<li>Share functionality of Int and Float parameters together.</li>
+</ul>
+</li>
+<li>Make it usable in <strong>non-VRChat</strong> avatar projects.<!-- -->
+<ul>
+<li>VRChat-related functionality is now exposed as extension functions in a separate package.</li>
+<li>Also, separate destructive functions and non-destructive functions.</li>
+<li>Since this no longer requires a VRChat project, this also means it may now be usable in VRChat world projects.</li>
+</ul>
+</li>
+<li>Make it more usable in non-destructive components.<!-- -->
+<ul>
+<li>It is already in use in <em>Prefabulous</em> and <em>Vixen</em>.</li>
+</ul>
+</li>
+<li>Move to packages, for distribution using VCC (and now, ALCOM).</li>
+</ul>
+<p>My own projects, such as <em>ComboGestureExpressions</em> V3, <em>Vixen</em>, and <em>Prefabulous for VRChat</em>, already use <em>Animator As Code</em> V1.</p>
+<p>The project has stalled for long enough, I think it's finally time to give it the last push for release.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="v0-and-v1-can-be-installed-in-the-same-project">V0 and V1 can be installed in the same project<a href="https://docs.hai-vr.dev/updates/2024/07/02/p0#v0-and-v1-can-be-installed-in-the-same-project" class="hash-link" aria-label="Direct link to V0 and V1 can be installed in the same project" title="Direct link to V0 and V1 can be installed in the same project">​</a></h2>
+<p>One of the goals of <em>Animator As Code</em> V1 is to <strong>preserve the ability for V0 and V1 to be installed in the same project</strong>,
+as <em>Animator As Code</em> V0 is currently being used in the wild.</p>
+<p>Therefore, installing <em>Animator As Code</em> V1 will not interfere with <em>Animator As Code</em> V0.</p>
+<p>Even then, <em>Animator As Code</em> V0 and V1 are almost identical in syntax, so <a href="https://docs.hai-vr.dev/docs/products/animator-as-code/migrating-v0-to-v1">migrating from V0 and V1 should not be a challenge</a>.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="there-may-be-some-breaking-changes-during-the-beta">There may be some breaking changes during the beta<a href="https://docs.hai-vr.dev/updates/2024/07/02/p0#there-may-be-some-breaking-changes-during-the-beta" class="hash-link" aria-label="Direct link to There may be some breaking changes during the beta" title="Direct link to There may be some breaking changes during the beta">​</a></h2>
+<p><em>Animator As Code V1</em> will be entering a beta phase before release, which should ideally last a month.</p>
+<p>Beta versions of <em>Animator As Code</em> V1 will only be available as <strong>pre-release packages</strong>, and they may contain breaking changes between two beta versions.</p>
+<p>The objective of the Beta is to capture the last inconsistencies in the API, including naming conventions, method signatures, exposed functions and classes,
+public fields vs public properties, etc. It will also be to complete the documentation, both on this site, and inline documentation.</p>
+<p>After <em>Animator As Code</em> V1 comes out of beta in 1.1.0, there should not be any more breaking changes.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="features">Features<a href="https://docs.hai-vr.dev/updates/2024/07/02/p0#features" class="hash-link" aria-label="Direct link to Features" title="Direct link to Features">​</a></h2>
+<ul>
+<li>As mentioned before, you can create <a href="https://docs.hai-vr.dev/docs/products/animator-as-code/functions/base#layer-aacfllayer"><strong>sub-state machines</strong></a>.</li>
+<li>It is now possible to build Unity <a href="https://docs.hai-vr.dev/docs/products/animator-as-code/functions/base#blend-trees-aacflblendtree"><strong>BlendTree</strong> assets using a fluent interface</a>.</li>
+<li><em>Animator As Code for VRChat</em> supports for <strong>VRCAnimatorPlayAudio</strong> through the <code>AacFlState.Audio(AudioSource or string, ...)</code> function,
+<a href="https://docs.hai-vr.dev/docs/products/animator-as-code/functions/vrchat#audio-editing-aacvrcfleditanimatorplayaudio">which takes a lambda expression as a parameter</a>.</li>
+<li>As <em>VRCAvatarParameterDriver</em> has evolved over the years, you can now build multiple <strong>VRCAvatarParameterDriver</strong> behaviours on the same state
+through the <code>AacFlState.Driving(...)</code> function, <a href="https://docs.hai-vr.dev/docs/products/animator-as-code/functions/vrchat#driver-editing-aacvrcfleditavatarparameterdriver">which takes a lambda expression as a parameter</a>.</li>
+</ul>]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[⚙️ Prefabulous Universal 2.0.2]]></title>
         <id>https://docs.hai-vr.dev/updates/2024/06/30/p0</id>
@@ -404,60 +463,5 @@ If you are a developer who internally references classes or entities within Pref
 </li>
 </ul>
 <div class="language-json codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-json codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">{</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  "useHip": true,</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  "useChest": false,</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  "chestSerialA": "",</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  "chestSerialB": "",</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  "chestPrioritize": false,</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  "noUi": false,</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  "vrcOscPort": -1</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">}</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[✨ Vixen V1.1.0]]></title>
-        <id>https://docs.hai-vr.dev/updates/2024/03/28/p1</id>
-        <link href="https://docs.hai-vr.dev/updates/2024/03/28/p1"/>
-        <updated>2024-03-28T09:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Custom opposite values in Properties]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="custom-opposite-values-in-properties">Custom opposite values in Properties<a href="https://docs.hai-vr.dev/updates/2024/03/28/p1#custom-opposite-values-in-properties" class="hash-link" aria-label="Direct link to Custom opposite values in Properties" title="Direct link to Custom opposite values in Properties">​</a></h2>
-<p>Until this update, properties were using the value in the Scene as the "opposite" value.
-This means you only need to specify the new value of the property, and Vixen would animate between your value and the scene value.</p>
-<p>Properties can now use a Custom value of your choice as the "opposite" value.</p>
-<ul>
-<li>In this new mode called <strong>"C" for "Custom"</strong>, the value in the scene objects are ignored.<!-- -->
-<ul>
-<li>The scene objects remain unchanged, the opposite value is not baked.</li>
-<li>This means that if the user has safety settings set to keep animations OFF, Vixen Control has no effect on the appearance of your avatar: the scene remains the source of truth.</li>
-<li>When multiple objects are used (i.e. selecting multiple objects, or recursive selection), the value in the Scene may be different for each object (i.e. different outline width for each object).<!-- -->
-<ul>
-<li>They will effectively be overriden by the opposite value.</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>The previous mode called <strong>"S" for "Scene"</strong> remains the default:<!-- -->
-<ul>
-<li>When multiple objects are used (i.e. selecting multiple objects, or recursive selection), the value in the Scene may be different for each object (i.e. different outline width for each object).<!-- -->
-<ul>
-<li>Contrary to <strong>"C"</strong> mode, Vixen will animate all of these values independently from the value of each respective object to the scene value.</li>
-<li>This is already the default behaviour in past versions.</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="other">Other<a href="https://docs.hai-vr.dev/updates/2024/03/28/p1#other" class="hash-link" aria-label="Direct link to Other" title="Direct link to Other">​</a></h2>
-<ul>
-<li>When baking, all Vixen Control components are now deleted so that further bakes will not repeat those operations.</li>
-<li>Vixen now provides the synced parameters to NDMF, which is shown in the Modular Avatar Information panel.</li>
-<li>Now requires Modular Avatar 1.9.9 minimum.</li>
-<li>Now requires NDMF 1.4.0 minimum.</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="fixes">Fixes<a href="https://docs.hai-vr.dev/updates/2024/03/28/p1#fixes" class="hash-link" aria-label="Direct link to Fixes" title="Direct link to Fixes">​</a></h2>
-<ul>
-<li>Attempt to fix incorrect behaviour of Item slot, Flags, and Ejects in some complex scenarios:<!-- -->
-<ul>
-<li>When an item slot exits, delay everything by 1 frame so that the animator has time to acknowledge a change in its parameters caused by switching OFF other controls.</li>
-<li>Remove the default state transition-to-entering shortcut because that transition incorrectly conflates Switch ON and Active.</li>
-<li>Remove the unconditional transition to the default state because that transition incorrectly conflates Switch ON and Active.</li>
-<li>All item slots now generate a None state, even slots with default, as slots with default may need to remain inactive.</li>
-<li>The None slot is now responsible for switching on the default slot, which may or may not result in the default slot becoming active.</li>
-</ul>
-</li>
-<li>Controls of type OSC should now be created properly. They were previously created with an generated parameter name instead of the specified one.</li>
-<li>The "Fix invalid references" buttons now use the correct path, instead of incorrectly interpreting the path as being a parameter name.</li>
-</ul>]]></content>
     </entry>
 </feed>
