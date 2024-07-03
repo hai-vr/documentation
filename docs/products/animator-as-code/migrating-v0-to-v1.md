@@ -34,6 +34,7 @@ If you use assembly definitions, change the assembly reference from `AnimatorAsC
     - Add `using AnimatorAsCode.V1.VRCDestructiveWorkflow;` in your class imports to use the VRChat destructive workflow extension methods.
         - The extension methods are contained within the class `AnimatorAsCode.V1.VRCDestructiveWorkflow.AacVRCDestructiveWorkflowExtensions`
 - Change `TrackingElement` to `AacAv3.Av3TrackingElement`
+- (Optional) Change `MotionTime(` to `WithMotionTime(`
 
 ### AacConfiguration
 
@@ -67,5 +68,7 @@ Animator As Code V1 encourages the use of a non-destructive workflow.
 ## Miscellaneous contract changes
 
 - `AacFlLayer`, `AacFlClip`, and `AacFlEditClip` are now classes instead of structs.
+- Some non-read-only public fields (not the configuration) have been made read-only.
+- Some read-only public fields have been changed into public properties with a getter.
 - `AacFlFloatParameterGroup.ToList()` now correctly returns the `List<AacFlFloatParameter>` instead of `List<AacFlBoolParameter>`.
-- `AacFlIntParameterGroup.ToList()` now correctly return the `List<AacFlIntParameter>` instead of `List<AacFlBoolParameter>`.
+- `AacFlIntParameterGroup.ToList()` now correctly returns the `List<AacFlIntParameter>` instead of `List<AacFlBoolParameter>`.

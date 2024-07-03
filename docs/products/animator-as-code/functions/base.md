@@ -376,7 +376,7 @@ Set a specific clip for the state. See `(AacFlBase).NewClip()` and similar.
 - `AacFlState WithAnimation(AacFlBlendTree clip)`💡<br/>
 Set a specific blend tree for the state. See `(AacFlBase).NewBlendTree()` and similar.
 
-- `AacFlState MotionTime(AacFlFloatParameter floatParam)`<br/>
+- `AacFlState WithMotionTime(AacFlFloatParameter floatParam)`<br/>
 Set the Motion Time to a parameter. This was formerly known as Normalized Time.
 
 - `AacFlState WithCycleOffset(AacFlFloatParameter floatParam)`💡<br/>
@@ -394,6 +394,10 @@ Set the Speed to a specific value.
 - `AacFlState WithWriteDefaultsSetTo(bool shouldWriteDefaults)`<br/>
 Set Write Defaults. If you need to do this to many states, consider changing the AacConfiguration DefaultsProvider when creating the AnimatorAsCode instance.
 
+- `AacFlState MotionTime(AacFlFloatParameter floatParam)`<br/>
+Obsolete.<br/>
+Set the Motion Time to a parameter. This was formerly known as Normalized Time.<br/>
+This is identical to `WithMotionTime()`. This function is preserved for compatibility.
 
 ### Transitions
 
