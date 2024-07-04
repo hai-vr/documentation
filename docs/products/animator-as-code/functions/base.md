@@ -394,7 +394,7 @@ Set the Speed to a specific value.
 - `AacFlState WithWriteDefaultsSetTo(bool shouldWriteDefaults)`<br/>
 Set Write Defaults. If you need to do this to many states, consider changing the AacConfiguration DefaultsProvider when creating the AnimatorAsCode instance.
 
-- `AacFlState MotionTime(AacFlFloatParameter floatParam)`<br/>
+- ~`AacFlState MotionTime(AacFlFloatParameter floatParam)`~<br/>
 Obsolete.<br/>
 Set the Motion Time to a parameter. This was formerly known as Normalized Time.<br/>
 This is identical to `WithMotionTime()`. This function is preserved for compatibility.
@@ -570,6 +570,8 @@ Start defining the keyframes with a lambda expression, expressing the unit in fr
 - `void WithUnit(AacFlUnit unit, Action<AacFlSettingKeyframes> action)`<br/>
 Start defining the keyframes with a lambda expression, expressing the unit.
 
+- `void WithAnimationCurve(AnimationCurve animationCurve)`<br/>
+Define the curve as the parameter. The duration is encoded inside the curve itself.
 
 ### Curve of type Color (AacFlSettingCurveColor)
 
@@ -580,7 +582,14 @@ Define the curve to be exactly one frame by defining two constant keyframes, usu
 ### Curve of type ObjectReference (AacFlSettingCurveObjectReference)💡
 
 - `void WithOneFrame(Object objectReference)`💡<br/>
-  Define the curve to be exactly one frame by defining two constant keyframes, usually lasting 1/60th of a second, with the desired object reference value.
+Define the curve to be exactly one frame by defining two constant keyframes, usually lasting 1/60th of a second, with the desired object reference value.
+
+- `void WithUnit(AacFlUnit unit, Action<AacFlSettingObjectReferenceKeyframes> action)`💡<br/>
+Start defining the keyframes with a lambda expression, expressing the unit.
+
+- ~`void WithKeyframes(AacFlUnit unit, Action<AacFlSettingObjectReferenceKeyframes> action)`~<br/>
+Obsolete. Use `WithUnit()` instead.<br/>
+Start defining the keyframes with a lambda expression, expressing the unit.
 
 
 ### Keyframes of type Float (AacFlSettingKeyframes)
@@ -605,6 +614,12 @@ Create a linear keyframe. The unit is defined by the function that invokes this 
 
 - `AacFlSettingKeyframesColor Constant(int frame, Color value)`<br/>
 Create a constant keyframe. The unit is defined by the function that invokes this lambda expression.
+
+
+### Keyframes of type ObjectReference (AacFlSettingObjectReferenceKeyframes)💡
+
+- `AacFlSettingObjectReferenceKeyframes Setting(int timeInUnit, Object value)`💡<br/>
+Create a keyframe for an object reference. The unit is defined by the function that invokes this lambda expression.
 
 
 ## Blend Trees (AacFlBlendTree)💡
@@ -693,8 +708,13 @@ Expose the underlying Transition object (from AacFlNewTransitionContinuation)
 - `AacFlTransition WithTransitionDurationSeconds(float transitionDuration)`<br/>
 Set a fixed transition duration in seconds.
 
-- `AacFlTransition WithTransitionDurationPercent(float transitionDurationNormalized)`<br/>
-Set a non-fixed transition duration in a normalized amount. // FIXME: Percent is a misnomer.
+- `AacFlTransition WithTransitionDurationNormalized(float transitionDurationNormalized)`💡<br/>
+Set a non-fixed transition duration in a normalized amount.
+
+- ~`AacFlTransition WithTransitionDurationPercent(float transitionDurationNormalized)`~<br/>
+  Set a non-fixed transition duration in a normalized amount.<br/>
+  Note: Percent is a misnomer. You are expected to provide a value expressed as a normalized value (where 1 represents the clip duration).<br/>
+  This function behaves identically to `WithTransitionDurationNormalized(float)`
 
 - `AacFlTransition WithTransitionToSelf()`<br/>
 Enable transition to self.
@@ -708,8 +728,13 @@ Set an exit time at 1, where the animation finishes.
 - `AacFlTransition Automatically()`<br/>
 Set an exit time at 0, so that it may transition almost immediately.
 
-- `AacFlTransition AfterAnimationIsAtLeastAtPercent(float exitTimeNormalized)`<br/>
-Set the exit time at a specific normalized amount. // FIXME: Percent is a misnomer.
+- `AacFlTransition AfterAnimationIsAtLeastAtNormalized(float exitTimeNormalized)`💡<br/>
+Set the exit time at a specific normalized amount.
+
+- ~`AacFlTransition AfterAnimationIsAtLeastAtPercent(float exitTimeNormalized)`~<br/>
+  Set the exit time at a specific normalized amount.<br/>
+  Note: Percent is a misnomer. You are expected to provide a value expressed as a normalized value (where 1 represents the clip duration).<br/>
+  This function behaves identically to `AfterAnimationIsAtLeastAtNormalized(float)`
 
 #### Interruption source
 
