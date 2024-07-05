@@ -453,9 +453,11 @@ Set the clip to be non-looping.
 
 ### Single-frame Animations
 
+:::info
+Single-valued overloads do not tolerate null values, and will intentionally fail when provided with a null value.
 
-- `AacFlClip Toggling(GameObject[] gameObjectsWithNulls, bool value)`<br/>
-Enable or disable GameObjects. This lasts one frame. The array can safely contain null values.
+Array overloads tolerate arrays that contain null values, but does not tolerate the array itself being null.
+:::
 
 - `AacFlClip BlendShape(SkinnedMeshRenderer renderer, string blendShapeName, float value)`<br/>
 Change a blendShape of a skinned mesh. This lasts one frame.
@@ -465,6 +467,9 @@ Change a blendShape of multiple skinned meshes. This lasts one frame. The array 
 
 - `AacFlClip Toggling(GameObject gameObject, bool value)`<br/>
  Enable or disable a GameObject. This lasts one frame.
+
+- `AacFlClip Toggling(GameObject[] gameObjectsWithNulls, bool value)`<br/>
+  Enable or disable GameObjects. This lasts one frame. The array can safely contain null values.
 
 - `AacFlClip TogglingComponent(Component[] componentsWithNulls, bool value)`<br/>
 Toggle several components. This lasts one frame. The runtime type of each individual component will be used. The array can safely contain null values.
@@ -481,6 +486,12 @@ In practice, this will animate the ParticleSystemRenderer of that particle syste
 
 
 ### Single-frame Transformation Animations💡
+
+:::info
+Single-valued overloads do not tolerate null values, and will intentionally fail when provided with a null value.
+
+Array overloads tolerate arrays that contain null values, but does not tolerate the array itself being null.
+:::
 
 - `AacFlClip Positioning(Transform transform, Vector3 localPosition)`💡<br/>
   Change the position of a Transform in local space. This lasts one frame.
@@ -510,6 +521,12 @@ In practice, this will animate the ParticleSystemRenderer of that particle syste
 
 :::info
 Please [consult this forum page](https://forum.unity.com/threads/new-animationclip-property-names.367288/#post-2384172).
+:::
+
+:::info
+Single-valued overloads do not tolerate null values, and will intentionally fail when provided with a null value.
+
+Array overloads tolerate arrays that contain null values, but does not tolerate the array itself being null.
 :::
 
 #### Euler interpolation
@@ -542,6 +559,12 @@ Please [consult this forum page](https://forum.unity.com/threads/new-animationcl
 
 
 ### Multi-frame Animations💡
+
+:::info
+Single-valued overloads do not tolerate null values, and will intentionally fail when provided with a null value.
+
+Array overloads tolerate arrays that contain null values, but does not tolerate the array itself being null.
+:::
 
 - `AacFlClip BlendShape(SkinnedMeshRenderer renderer, string blendShapeName, AnimationCurve animationCurve)`💡<br/>
 Change a blendShape of a skinned mesh, with an animation curve.
