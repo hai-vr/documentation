@@ -5,7 +5,7 @@
 <meta name="generator" content="Docusaurus v3.2.1">
 <title data-rh="true">Base functions | Haï~</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://docs.hai-vr.dev/img/hai-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://docs.hai-vr.dev/img/hai-social-card.jpg"><meta data-rh="true" property="og:url" content="https://docs.hai-vr.dev/docs/products/animator-as-code/functions/base"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Base functions | Haï~"><meta data-rh="true" name="description" content="This is the work-in-progress documentation for Animator As Code V1, which has not yet been released. The last public version of Animator As Code is V0."><meta data-rh="true" property="og:description" content="This is the work-in-progress documentation for Animator As Code V1, which has not yet been released. The last public version of Animator As Code is V0."><link data-rh="true" rel="icon" href="/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://docs.hai-vr.dev/docs/products/animator-as-code/functions/base"><link data-rh="true" rel="alternate" href="https://docs.hai-vr.dev/docs/products/animator-as-code/functions/base" hreflang="en"><link data-rh="true" rel="alternate" href="https://docs.hai-vr.dev/docs/products/animator-as-code/functions/base" hreflang="x-default"><link rel="alternate" type="application/rss+xml" href="/updates/rss.xml" title="Haï~ RSS Feed">
 <link rel="alternate" type="application/atom+xml" href="/updates/atom.xml" title="Haï~ Atom Feed"><link rel="stylesheet" href="/assets/css/styles.dbcbb60b.css">
-<script src="/assets/js/runtime~main.e67fd712.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.37b94558.js" defer="defer"></script>
 <script src="/assets/js/main.fccd49be.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -458,11 +458,8 @@ Set the clip to be non-looping.</p>
 </li>
 </ul>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="single-frame-animations">Single-frame Animations<a href="#single-frame-animations" class="hash-link" aria-label="Direct link to Single-frame Animations" title="Direct link to Single-frame Animations">​</a></h3>
+<div class="theme-admonition theme-admonition-info admonition_xJq3 alert alert--info"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>info</div><div class="admonitionContent_BuS1"><p>Single-valued overloads do not tolerate null values, and will intentionally fail when provided with a null value.</p><p>Array overloads tolerate arrays that contain null values, but does not tolerate the array itself being null.</p></div></div>
 <ul>
-<li>
-<p><code>AacFlClip Toggling(GameObject[] gameObjectsWithNulls, bool value)</code><br>
-Enable or disable GameObjects. This lasts one frame. The array can safely contain null values.</p>
-</li>
 <li>
 <p><code>AacFlClip BlendShape(SkinnedMeshRenderer renderer, string blendShapeName, float value)</code><br>
 Change a blendShape of a skinned mesh. This lasts one frame.</p>
@@ -474,6 +471,10 @@ Change a blendShape of multiple skinned meshes. This lasts one frame. The array 
 <li>
 <p><code>AacFlClip Toggling(GameObject gameObject, bool value)</code><br>
 Enable or disable a GameObject. This lasts one frame.</p>
+</li>
+<li>
+<p><code>AacFlClip Toggling(GameObject[] gameObjectsWithNulls, bool value)</code><br>
+Enable or disable GameObjects. This lasts one frame. The array can safely contain null values.</p>
 </li>
 <li>
 <p><code>AacFlClip TogglingComponent(Component[] componentsWithNulls, bool value)</code><br>
@@ -494,6 +495,7 @@ In practice, this will animate the ParticleSystemRenderer of that particle syste
 </li>
 </ul>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="single-frame-transformation-animations">Single-frame Transformation Animations💡<a href="#single-frame-transformation-animations" class="hash-link" aria-label="Direct link to Single-frame Transformation Animations💡" title="Direct link to Single-frame Transformation Animations💡">​</a></h3>
+<div class="theme-admonition theme-admonition-info admonition_xJq3 alert alert--info"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>info</div><div class="admonitionContent_BuS1"><p>Single-valued overloads do not tolerate null values, and will intentionally fail when provided with a null value.</p><p>Array overloads tolerate arrays that contain null values, but does not tolerate the array itself being null.</p></div></div>
 <ul>
 <li>
 <p><code>AacFlClip Positioning(Transform transform, Vector3 localPosition)</code>💡<br>
@@ -530,6 +532,7 @@ Change the local scale of GameObjects. This lasts one frame. The array can safel
 </ul>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="single-frame-rotation-animations">Single-frame Rotation Animations💡<a href="#single-frame-rotation-animations" class="hash-link" aria-label="Direct link to Single-frame Rotation Animations💡" title="Direct link to Single-frame Rotation Animations💡">​</a></h3>
 <div class="theme-admonition theme-admonition-info admonition_xJq3 alert alert--info"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>info</div><div class="admonitionContent_BuS1"><p>Please <a href="https://forum.unity.com/threads/new-animationclip-property-names.367288/#post-2384172" target="_blank" rel="noopener noreferrer">consult this forum page</a>.</p></div></div>
+<div class="theme-admonition theme-admonition-info admonition_xJq3 alert alert--info"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>info</div><div class="admonitionContent_BuS1"><p>Single-valued overloads do not tolerate null values, and will intentionally fail when provided with a null value.</p><p>Array overloads tolerate arrays that contain null values, but does not tolerate the array itself being null.</p></div></div>
 <h4 class="anchor anchorWithStickyNavbar_LWe7" id="euler-interpolation">Euler interpolation<a href="#euler-interpolation" class="hash-link" aria-label="Direct link to Euler interpolation" title="Direct link to Euler interpolation">​</a></h4>
 <ul>
 <li>
@@ -569,6 +572,7 @@ Change the rotation of GameObjects in local space, with Quaternion interpolation
 </li>
 </ul>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="multi-frame-animations">Multi-frame Animations💡<a href="#multi-frame-animations" class="hash-link" aria-label="Direct link to Multi-frame Animations💡" title="Direct link to Multi-frame Animations💡">​</a></h3>
+<div class="theme-admonition theme-admonition-info admonition_xJq3 alert alert--info"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>info</div><div class="admonitionContent_BuS1"><p>Single-valued overloads do not tolerate null values, and will intentionally fail when provided with a null value.</p><p>Array overloads tolerate arrays that contain null values, but does not tolerate the array itself being null.</p></div></div>
 <ul>
 <li>
 <p><code>AacFlClip BlendShape(SkinnedMeshRenderer renderer, string blendShapeName, AnimationCurve animationCurve)</code>💡<br>
