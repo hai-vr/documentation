@@ -520,16 +520,20 @@ Array overloads tolerate arrays that contain null values, but does not tolerate 
 ### Single-frame Rotation Animations💡
 
 :::info
-Please [consult this forum page](https://forum.unity.com/threads/new-animationclip-property-names.367288/#post-2384172).
-:::
-
-:::info
 Single-valued overloads do not tolerate null values, and will intentionally fail when provided with a null value.
 
 Array overloads tolerate arrays that contain null values, but does not tolerate the array itself being null.
 :::
 
 #### Euler interpolation
+
+:::info
+Euler interpolation and Quaternion interpolation are not equivalent.
+
+Calling either function will lead to different results in the behaviour of the animated object in various contexts.
+
+Please [consult this forum page](https://forum.unity.com/threads/new-animationclip-property-names.367288/#post-2384172).
+:::
 
 - `AacFlClip RotatingUsingEulerInterpolation(Transform transform, Vector3 localEulerAngles)`💡<br/>
   Change the rotation of a Transform in local space, with Euler interpolation. This lasts one frame.
@@ -544,6 +548,14 @@ Array overloads tolerate arrays that contain null values, but does not tolerate 
   Change the rotation of GameObjects in local space, with Euler interpolation. This lasts one frame. The array can safely contain null values.
 
 #### Quaternion interpolation
+
+:::info
+Euler interpolation and Quaternion interpolation are not equivalent.
+
+Calling either function will lead to different results in the behaviour of the animated object in various contexts.
+
+Please [consult this forum page](https://forum.unity.com/threads/new-animationclip-property-names.367288/#post-2384172).
+:::
 
 - `AacFlClip RotatingUsingQuaternionInterpolation(Transform transform, Quaternion localQuaternionAngles)`💡<br/>
   Change the rotation of a Transform in local space, with Quaternion interpolation. This lasts one frame.
