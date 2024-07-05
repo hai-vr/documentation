@@ -476,7 +476,8 @@ Toggle a component. This lasts one frame. The runtime type of the component will
 Swap a material of a Renderer on the specified slot (indexed at 0). This lasts one frame.
 
 - `AacFlClip SwappingMaterial(ParticleSystem particleSystem, int slot, Material material)`<br/>
-Swap a material of a Particle System on the specified slot (indexed at 0). This lasts one frame. This effectively takes the ParticleSystemRenderer of the component.
+Swap a material of a Particle System on the specified slot (indexed at 0). This lasts one frame.<br/>
+In practice, this will animate the ParticleSystemRenderer of that particle system.
 
 
 ### Single-frame Transformation Animations💡
