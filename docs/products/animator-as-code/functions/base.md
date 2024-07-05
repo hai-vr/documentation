@@ -463,18 +463,6 @@ Change a blendShape of a skinned mesh. This lasts one frame.
 - `AacFlClip BlendShape(SkinnedMeshRenderer[] rendererWithNulls, string blendShapeName, float value)`<br/>
 Change a blendShape of multiple skinned meshes. This lasts one frame. The array can safely contain null values.
 
-- `AacFlClip Positioning(GameObject[] gameObjectsWithNulls, Vector3 localPosition)`💡<br/>
-Change the position of a GameObject in local space. This lasts one frame. This lasts one frame. The array can safely contain null values. // FIXME: This is weird, this should be a Transform array, and also this needs a single-object overload.
-
-- `AacFlClip RotatingUsingEulerInterpolation(GameObject[] gameObjectsWithNulls, Vector3 localEulerAngles)`💡<br/>
-Change the rotation of GameObjects in local space, with Euler interpolation. This lasts one frame. The array can safely contain null values. // FIXME: This is weird, this should be a Transform array, and also this needs a single-object overload.
-
-- `AacFlClip RotatingUsingQuaternionInterpolation(GameObject[] gameObjectsWithNulls, Quaternion localQuaternionAngles)`💡<br/>
-  Change the rotation of GameObjects in local space, with Quaternion interpolation. This lasts one frame. The array can safely contain null values. // FIXME: This is weird, this should be a Transform array, and also this needs a single-object overload.
-
-- `AacFlClip Scaling(GameObject[] gameObjectsWithNulls, Vector3 scale)`<br/>
-Change the local scale of GameObjects. This lasts one frame. The array can safely contain null values. // FIXME: This is weird, this should be a Transform array, and also this needs a single-object overload.
-
 - `AacFlClip Toggling(GameObject gameObject, bool value)`<br/>
  Enable or disable a GameObject. This lasts one frame.
 
@@ -489,6 +477,67 @@ Swap a material of a Renderer on the specified slot (indexed at 0). This lasts o
 
 - `AacFlClip SwappingMaterial(ParticleSystem particleSystem, int slot, Material material)`<br/>
 Swap a material of a Particle System on the specified slot (indexed at 0). This lasts one frame. This effectively takes the ParticleSystemRenderer of the component.
+
+
+### Single-frame Transformation Animations💡
+
+- `AacFlClip Positioning(Transform transform, Vector3 localPosition)`💡<br/>
+  Change the position of a Transform in local space. This lasts one frame.
+
+- `AacFlClip Positioning(GameObject gameObject, Vector3 localPosition)`💡<br/>
+  Change the position of a GameObject in local space. This lasts one frame.
+
+- `AacFlClip Positioning(Transform[] transformsWithNulls, Vector3 localPosition)`💡<br/>
+  Change the position of Transforms in local space. This lasts one frame. The array can safely contain null values.
+
+- `AacFlClip Positioning(GameObject[] gameObjectsWithNulls, Vector3 localPosition)`💡<br/>
+  Change the position of GameObjects in local space. This lasts one frame. The array can safely contain null values.
+
+- `AacFlClip Scaling(Transform transform, Vector3 scale)`💡<br/>
+  Change the local scale of a Transform. This lasts one frame.
+
+- `AacFlClip Scaling(GameObject gameObject, Vector3 scale)`💡<br/>
+  Change the local scale of a GameObject. This lasts one frame.
+
+- `AacFlClip Scaling(Transform[] transformsWithNulls, Vector3 scale)`💡<br/>
+  Change the local scale of Transforms. This lasts one frame. The array can safely contain null values.
+
+- `AacFlClip Scaling(GameObject[] gameObjectsWithNulls, Vector3 scale)`💡<br/>
+  Change the local scale of GameObjects. This lasts one frame. The array can safely contain null values.
+
+### Single-frame Rotation Animations💡
+
+:::info
+Please [consult this forum page](https://forum.unity.com/threads/new-animationclip-property-names.367288/#post-2384172).
+:::
+
+#### Euler interpolation
+
+- `AacFlClip RotatingUsingEulerInterpolation(Transform transform, Vector3 localEulerAngles)`💡<br/>
+  Change the rotation of a Transform in local space, with Euler interpolation. This lasts one frame.
+
+- `AacFlClip RotatingUsingEulerInterpolation(GameObject gameObject, Vector3 localEulerAngles)`💡<br/>
+  Change the rotation of a GameObject in local space, with Euler interpolation. This lasts one frame.
+
+- `AacFlClip RotatingUsingEulerInterpolation(Transform[] transformsWithNulls, Vector3 localEulerAngles)`💡<br/>
+  Change the rotation of Transforms in local space, with Euler interpolation. This lasts one frame. The array can safely contain null values.
+
+- `AacFlClip RotatingUsingEulerInterpolation(GameObject[] gameObjectsWithNulls, Vector3 localEulerAngles)`💡<br/>
+  Change the rotation of GameObjects in local space, with Euler interpolation. This lasts one frame. The array can safely contain null values.
+
+#### Quaternion interpolation
+
+- `AacFlClip RotatingUsingQuaternionInterpolation(Transform transform, Quaternion localQuaternionAngles)`💡<br/>
+  Change the rotation of a Transform in local space, with Quaternion interpolation. This lasts one frame.
+
+- `AacFlClip RotatingUsingQuaternionInterpolation(GameObject gameObject, Quaternion localQuaternionAngles)`💡<br/>
+  Change the rotation of a GameObject in local space, with Quaternion interpolation. This lasts one frame.
+
+- `AacFlClip RotatingUsingQuaternionInterpolation(Transform[] transformsWithNulls, Quaternion localQuaternionAngles)`💡<br/>
+  Change the rotation of Transforms in local space, with Quaternion interpolation. This lasts one frame. The array can safely contain null values.
+
+- `AacFlClip RotatingUsingQuaternionInterpolation(GameObject[] gameObjectsWithNulls, Quaternion localQuaternionAngles)`💡<br/>
+  Change the rotation of GameObjects in local space, with Quaternion interpolation. This lasts one frame. The array can safely contain null values.
 
 
 ### Multi-frame Animations💡
