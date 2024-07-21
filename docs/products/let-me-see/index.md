@@ -19,6 +19,15 @@ The tool is free for download using VCC.
 
 ## How to use
 
+:::warning
+There is a higher risk than usual for issues being caused by the installation of this tool, as the installation of this tool will cause
+the XR Plugin Management and the OpenXR Plugin to be installed into the project, which may modify the behaviour of your project.
+
+Consider making a backup of your project before installing this tool, or try this on a small project first.
+
+Please seek for support on the [Discord server](/docs/other/discord) if you encounter any issues with the tool.
+:::
+
 <video controls width="816">
     <source src={require('./img/Unity_iniKDmMzca.mp4').default}/>
 </video>
@@ -64,5 +73,5 @@ The tool is free for download using VCC.
   - When set to **Scene View**, the camera will move to match the Scene tab.
   - When set to **Local Space**, the camera will move with the parent GameObject of the main camera in the scene.
   - When set to **Local Position**, the position of the camera will stay relative to the position of the main camera in the scene, ignoring the rotation.
-- **Move Up**: When using the *Local Space* or *Local Position* camera modes, this moves the camera upwards to match your height and scale, as a multiplier.
+- **Move camera up**: When using the *Local Space* or *Local Position* camera modes, this moves the camera upwards to match your height and scale, as a multiplier.
 - **Do not switch Scene tabs**: If you have multiple Scene tabs open, the camera will not switch between the Scene tabs if this button is pressed.
