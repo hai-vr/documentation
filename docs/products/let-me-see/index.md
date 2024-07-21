@@ -75,3 +75,5 @@ Please seek for support on the [Discord server](/docs/other/discord) if you enco
   - When set to **Local Position**, the position of the camera will stay relative to the position of the main camera in the scene, ignoring the rotation.
 - **Move camera up**: When using the *Local Space* or *Local Position* camera modes, this moves the camera upwards to match your height and scale, as a multiplier.
 - **Do not switch Scene tabs**: If you have multiple Scene tabs open, the camera will not switch between the Scene tabs if this button is pressed.
+- **Show cursor**: Show a cursor while in VR.
+- **Cursor color**: Change the transparency and color of the cursor.
