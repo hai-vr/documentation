@@ -2,6 +2,15 @@
 title: Animation Viewer
 ---
 
+## 2.0.4
+
+- Fix null dereference when multiple Project tabs are open:
+  - Check for a null value in listArea, which may happen when multiple Project tabs are open.
+- Fix inconsistent use of GUILayout ScrollView:
+  - Change EditorGUILayout to GUILayout for ScrollView.
+
+The above changes have been contributed by **[mekanyanko (めかにゃんこ)](https://github.com/mekanyanko)** (first contribution).
+
 ## 2.0.3
 
 - Fix an issue where avatars would fail to upload.

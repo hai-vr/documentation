@@ -19,7 +19,7 @@ The changelogs of some products aren't available at this time.
 | [Double Hip Tracker](./changelogs/double-hip-tracker)                                                       | 1.2.0                 | 2024-03     |
 | **Viewers**                                                                                                 |                       |             |
 | [Lightbox Viewer](./changelogs/lightbox-viewer)                                                             | 2.1.0                 | 2024-03     |
-| [Animation Viewer](./changelogs/animation-viewer)                                                           | 2.0.3                 | 2023-11     |
+| [Animation Viewer](./changelogs/animation-viewer)                                                           | 2.0.4                 | **2024-07** |
 | [Blendshape Viewer](./changelogs/blendshape-viewer)                                                         | 2.1.1                 | 2024-01     |
 | [Property Finder](./changelogs/property-finder)                                                             | 2.0.3                 | 2023-11     |
 | [BlendTree Viewer](./changelogs/blendtree-viewer)                                                           | 1.0.7                 | 2023-11     |
