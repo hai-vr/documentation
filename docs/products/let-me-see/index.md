@@ -8,6 +8,10 @@ You can see your content in Edit mode. There is no need to enter Play mode.
 This tool has been tested using **Unity 2022**. It does not work in Unity 2019.
 :::
 
+<video controls width="816">
+    <source src={require('./img/let-me-see-showcase2-f.mp4').default}/>
+</video>
+
 ## Download
 
 The tool is free for download using VCC.
@@ -35,6 +39,9 @@ Please seek for support on the [Discord server](/docs/other/discord) if you enco
 ### First time setup
 
 - Open *Tools > LetMeSee > Edit Settings*.
+
+![mspaint_LU6EmSiAEe.png](img%2Fmspaint_LU6EmSiAEe.png)
+
 - If the warning "OpenXR is missing from the project" shows up, press the "**Install OpenXR**" button.
   - Wait a few seconds for the OpenXR plugin to install.
 
@@ -53,7 +60,6 @@ Please seek for support on the [Discord server](/docs/other/discord) if you enco
 - Make sure your VR headset is turned on, and SteamVR (or your OpenXR runtime) is running.
 - Press the "**Run**" button.
 - Put your headset on, look forward, and press the "**Recenter view**" button.
-
 - Move the camera of the Scene view to move around.
 
 ## Options
