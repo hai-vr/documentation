@@ -4,15 +4,35 @@
         <title>Haï~ Blog</title>
         <link>https://docs.hai-vr.dev/updates</link>
         <description>Haï~ Blog</description>
-        <lastBuildDate>Mon, 22 Jul 2024 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 22 Jul 2024 11:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
         <item>
+            <title><![CDATA[⚙️ Animation Viewer 2.0.4]]></title>
+            <link>https://docs.hai-vr.dev/updates/2024/07/22/p1</link>
+            <guid>https://docs.hai-vr.dev/updates/2024/07/22/p1</guid>
+            <pubDate>Mon, 22 Jul 2024 11:00:00 GMT</pubDate>
+            <description><![CDATA[- Fix null dereference when multiple Project tabs are open:]]></description>
+            <content:encoded><![CDATA[<ul>
+<li>Fix null dereference when multiple Project tabs are open:<!-- -->
+<ul>
+<li>Check for a null value in listArea, which may happen when multiple Project tabs are open.</li>
+</ul>
+</li>
+<li>Fix inconsistent use of GUILayout ScrollView:<!-- -->
+<ul>
+<li>Change EditorGUILayout to GUILayout for ScrollView.</li>
+</ul>
+</li>
+</ul>
+<p>The above changes have been contributed by <strong><a href="https://github.com/mekanyanko" target="_blank" rel="noopener noreferrer">mekanyanko (めかにゃんこ)</a></strong> (first contribution).</p>]]></content:encoded>
+        </item>
+        <item>
             <title><![CDATA[☀️ LetMeSee (LMS)]]></title>
             <link>https://docs.hai-vr.dev/updates/2024/07/22/p0</link>
             <guid>https://docs.hai-vr.dev/updates/2024/07/22/p0</guid>
-            <pubDate>Mon, 22 Jul 2024 00:00:00 GMT</pubDate>
+            <pubDate>Mon, 22 Jul 2024 03:00:00 GMT</pubDate>
             <description><![CDATA[I am releasing LetMeSee (LMS), a tool that lets you see your content in VR, with the Unity Editor in Edit Mode.]]></description>
             <content:encoded><![CDATA[<div><p><span></span></p><div class="hai_tag_ZcC4 hai_tag_universal_aJnK">🌊 Any Platform</div><p></p></div>
 <p>I am releasing <strong>LetMeSee</strong> (LMS), a tool that lets you see your content in VR, with the Unity Editor in Edit Mode.</p>
@@ -444,19 +464,6 @@ If you are a developer who internally references classes or entities within Pref
 </li>
 </ul>
 <p><img decoding="async" loading="lazy" alt="2024-03-27-p1-Unity_yH0bzcLRVK.png" src="https://docs.hai-vr.dev/assets/images/2024-03-27-p1-Unity_yH0bzcLRVK-6b20aa2e879a61bebf2a03f46959f39d.png" width="395" height="203" class="img_ev3q"></p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[✨ Lightbox Viewer V2.1.0]]></title>
-            <link>https://docs.hai-vr.dev/updates/2024/03/28/p3</link>
-            <guid>https://docs.hai-vr.dev/updates/2024/03/28/p3</guid>
-            <pubDate>Thu, 28 Mar 2024 11:00:00 GMT</pubDate>
-            <description><![CDATA[Re-bake lighting of Lightbox scene in Unity 2022:]]></description>
-            <content:encoded><![CDATA[<p>Re-bake lighting of Lightbox scene in Unity 2022:</p>
-<ul>
-<li>The current lightmap seems to misbehave in Unity 2022, especially the White box.</li>
-<li>Lighting has been re-baked in Unity 2022.</li>
-<li>The package is now classified as being a Unity 2022.3 package.</li>
-</ul>]]></content:encoded>
         </item>
     </channel>
 </rss>
