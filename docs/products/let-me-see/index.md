@@ -24,8 +24,8 @@ The tool is free for download using VCC.
 ## How to use
 
 :::warning
-There is a higher risk than usual for issues being caused by the installation of this tool, as the installation of this tool will cause
-the XR Plugin Management and the OpenXR Plugin to be installed into the project, which may modify the behaviour of your project.
+There is a higher risk than usual for issues being caused by the installation of this tool: 
+The XR Plugin Management and the OpenXR Plugin will be installed into the project, which may modify the behaviour of your project.
 
 Consider making a backup of your project before installing this tool, or try this on a small project first.
 
