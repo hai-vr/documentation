@@ -8,7 +8,7 @@
     <subtitle>Haï~ Blog</subtitle>
     <icon>https://docs.hai-vr.dev/img/favicon.ico</icon>
     <entry>
-        <title type="html"><![CDATA[⚙️ LetMeSee 1.1.0]]></title>
+        <title type="html"><![CDATA[⚙️ LetMeSee 1.1.2]]></title>
         <id>https://docs.hai-vr.dev/updates/2024/07/23/p0</id>
         <link href="https://docs.hai-vr.dev/updates/2024/07/23/p0"/>
         <updated>2024-07-23T00:00:00.000Z</updated>
@@ -17,7 +17,8 @@
 <li>Add language selector.</li>
 <li>Add machine-translated Japanese localization file, translated using ChatGPT.</li>
 <li>Add machine-translated Korean localization file, translated using ChatGPT.</li>
-</ul>]]></content>
+</ul>
+<p><em>Versions 1.1.0 and 1.1.1 contain errors.</em></p>]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[⚙️ Animation Viewer 2.0.4]]></title>

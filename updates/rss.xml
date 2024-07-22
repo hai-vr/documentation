@@ -9,7 +9,7 @@
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
         <item>
-            <title><![CDATA[⚙️ LetMeSee 1.1.0]]></title>
+            <title><![CDATA[⚙️ LetMeSee 1.1.2]]></title>
             <link>https://docs.hai-vr.dev/updates/2024/07/23/p0</link>
             <guid>https://docs.hai-vr.dev/updates/2024/07/23/p0</guid>
             <pubDate>Tue, 23 Jul 2024 00:00:00 GMT</pubDate>
@@ -18,7 +18,8 @@
 <li>Add language selector.</li>
 <li>Add machine-translated Japanese localization file, translated using ChatGPT.</li>
 <li>Add machine-translated Korean localization file, translated using ChatGPT.</li>
-</ul>]]></content:encoded>
+</ul>
+<p><em>Versions 1.1.0 and 1.1.1 contain errors.</em></p>]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[⚙️ Animation Viewer 2.0.4]]></title>
