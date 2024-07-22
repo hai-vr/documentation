@@ -4,6 +4,8 @@
 
 You can see your content in Edit mode. There is no need to enter Play mode.
 
+The Scene tab is used as the camera viewpoint. You can use this to fly through avatars and worlds.
+
 :::danger
 This tool has been tested using **Unity 2022**. It does not work in Unity 2019.
 :::
