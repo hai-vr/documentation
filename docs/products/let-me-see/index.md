@@ -77,9 +77,22 @@ Please seek for support on the [Discord server](/docs/other/discord) if you enco
 
 - **Camera mode**:
   - When set to **Scene View**, the camera will move to match the Scene tab.
-  - When set to **Local Space**, the camera will move with the parent GameObject of the main camera in the scene.
-  - When set to **Local Position**, the position of the camera will stay relative to the position of the main camera in the scene, ignoring the rotation.
+  - When set to **Local Space**, the camera will match its position and rotation with the parent GameObject of the main camera in the scene.
+  - When set to **Local Position**, the camera will match its position with the parent GameObject of the main camera in the scene, but the rotation of the camera remains unaffected.
 - **Move camera up**: When using the *Local Space* or *Local Position* camera modes, this moves the camera upwards to match your height and scale, as a multiplier.
 - **Do not switch Scene tabs**: If you have multiple Scene tabs open, the camera will not switch between the Scene tabs if this button is pressed.
 - **Show cursor**: Show a cursor while in VR.
 - **Cursor color**: Change the transparency and color of the cursor.
+
+### Advanced
+
+- **Force use OpenXR**: Force the XR Management to always use OpenXR Loader when running.
+  - Some plugins and SDKs may try to override the XR Loader with another incompatible loader. Checking this option attempts to prevent this from happening.
+- **(DEBUG) Initialize XR at startup**: This mirrors a checkbox in the XR Project settings: Changes the XR Management setting of the same name.
+  - When checked, the XR Loader will automatically start when entering Play mode, regardless of whether *LetMeSee* is running.
+  - This can be a problem in most projects as it may be undesirable for the user to enter VR mode when entering Play mode.
+  - By default, XR Project settings sets this checkbox. *LetMeSee* unchecks this box the first time it is run in the project in order to accomodate the main use case of the users of this tool.
+
+About OpenXR: You are not obligated to use the OpenXR Loader, it just so happens to be the most sane option for most users.
+
+If you really want to, you could use the OpenVR Loader (i.e. if you need to also support testing overlays in your project). In this case, uncheck the *Force use OpenXR* setting.
