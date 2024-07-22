@@ -2,11 +2,24 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://docs.hai-vr.dev/updates</id>
     <title>Haï~ Blog</title>
-    <updated>2024-07-02T00:00:00.000Z</updated>
+    <updated>2024-07-22T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://docs.hai-vr.dev/updates"/>
     <subtitle>Haï~ Blog</subtitle>
     <icon>https://docs.hai-vr.dev/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[☀️ LetMeSee (LMS)]]></title>
+        <id>https://docs.hai-vr.dev/updates/2024/07/22/p0</id>
+        <link href="https://docs.hai-vr.dev/updates/2024/07/22/p0"/>
+        <updated>2024-07-22T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[I am releasing LetMeSee (LMS), a tool that lets you see your content in VR, with the Unity Editor in Edit Mode.]]></summary>
+        <content type="html"><![CDATA[<div><p><span></span></p><div class="hai_tag_ZcC4 hai_tag_universal_aJnK">🌊 Any Platform</div><p></p></div>
+<p>I am releasing <strong>LetMeSee</strong> (LMS), a tool that lets you see your content in VR, with the Unity Editor in Edit Mode.</p>
+<p>The Scene tab is used as the camera viewpoint. You can use this to fly through avatars and worlds.</p>
+<p>This product is released for free.</p>
+<p>🗒️ <a href="https://docs.hai-vr.dev/docs/products/let-me-see">Open documentation</a></p>
+<video controls="" muted="" width="816"><source src="/assets/medias/let-me-see-showcase2-f-6782ab05014e4e56e59c087498007415.mp4"></video>]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[⚠️ Advance notice for Animator As Code V1]]></title>
         <id>https://docs.hai-vr.dev/updates/2024/07/02/p0</id>
@@ -443,25 +456,5 @@ If you are a developer who internally references classes or entities within Pref
 <li>Lighting has been re-baked in Unity 2022.</li>
 <li>The package is now classified as being a Unity 2022.3 package.</li>
 </ul>]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[✨ Double Hip Tracker V1.2.0]]></title>
-        <id>https://docs.hai-vr.dev/updates/2024/03/28/p2</id>
-        <link href="https://docs.hai-vr.dev/updates/2024/03/28/p2"/>
-        <updated>2024-03-28T10:00:00.000Z</updated>
-        <summary type="html"><![CDATA[This update provides no changes on the trackers themselves, only compatibility improvements.]]></summary>
-        <content type="html"><![CDATA[<p>This update provides no changes on the trackers themselves, only compatibility improvements.</p>
-<ul>
-<li>Update OpenVR DLL to 2.5.1. This seems to improve a weird compatibility issue where trackers are not detected, which had affected a Pico 4 user.</li>
-<li>Update ImGui versions, in an attempt to troubleshoot an user whose window seemed to be crashing on AMD GPU.</li>
-<li>Add noUi and vrcOscPort config options:<!-- -->
-<ul>
-<li>A custom vrcOscPort can now be set in the JSON config.</li>
-<li>The program can now start without an UI in the JSON config.</li>
-<li>The JSON config can be created (user_config.json in the same folder as the .exe) by toggling the Double Chest Tracker checkbox ON and OFF.</li>
-</ul>
-</li>
-</ul>
-<div class="language-json codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-json codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">{</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  "useHip": true,</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  "useChest": false,</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  "chestSerialA": "",</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  "chestSerialB": "",</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  "chestPrioritize": false,</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  "noUi": false,</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  "vrcOscPort": -1</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">}</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>]]></content>
     </entry>
 </feed>
