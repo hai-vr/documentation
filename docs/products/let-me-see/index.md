@@ -1,6 +1,13 @@
-﻿# LetMeSee
+﻿import {HaiTags} from "/src/components/HaiTags";
+import {HaiTag} from "/src/components/HaiTag";
 
-*LetMeSee* is a Unity Editor tool that lets you see your content in VR within the Unity Editor, even if you're not a VR game dev.
+# LetMeSee
+
+<HaiTags>
+<HaiTag isUniversal={true} />
+</HaiTags>
+
+*LetMeSee* (LMS) is a Unity Editor tool that lets you see your content in VR within the Unity Editor, even if you're not a VR game dev.
 
 You can see your content in Edit mode. There is no need to enter Play mode.
 
