@@ -38,6 +38,8 @@ export default {
     mermaid: true,
   },
   themes: ['@docusaurus/theme-mermaid'],
+  
+  scripts: [{src: 'https://plausible.io/js/script.js', defer: true, 'data-domain': 'docs.hai-vr.dev'}],
 
   presets: [
     [
