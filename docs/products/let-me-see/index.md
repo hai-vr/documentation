@@ -78,9 +78,18 @@ Please seek for support on the [Discord server](/docs/other/discord) if you enco
 
 ### IPD and Scale
 
-- **Edit your height**: Define your real-world height.
+- **Edit your height**: Define your real-life height.
 - **Rescaled height and slider**: Scale yourself taller or smaller than your real-world height.
 - **Reset scale**: Reset your scale back to match your real-world height.
+
+You can use these settings to make yourself shorter or taller than your real-life height.
+- Change your scale smaller to see small objects as gigantic.
+- Change your scale taller to see worlds and avatars as miniatures.
+
+<video controls width="816">
+    <source src={require('./img/miniature-f.mp4').default}/>
+</video>
+*This is one of these things that a flat screen completely fails to describe. Give it a try.*
 
 ### Alignment
 
