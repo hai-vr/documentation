@@ -23,12 +23,16 @@ This tool has been tested using **Unity 2022**. It does not work in Unity 2019.
 
 ## Download
 
-The tool is free for download using VCC.
+The tool is free for download using ALCOM or VCC.
 
 ### VCC
 
 - Use this link to **[install our listing to VCC](vcc://vpm/addRepo?url=https://hai-vr.github.io/vpm-listing/index.json)**.
 - Add *Haï ~ LetMeSee* to your project using VCC.
+
+:::tip
+If you use the [ALCOM](/docs/products/listing) package manager, you can add the *Haï ~ LetMeSee* package from **[our listing](/docs/products/listing)**.
+:::
 
 ## How to use
 
