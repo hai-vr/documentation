@@ -97,6 +97,9 @@ All compilation errors must be fixed in the prefab. During this iteration, we fo
   - Delayed events are replaced with coroutines.
   - If invoking these methods fail, it doesn't interrupt the execution of the caller's code.
 
+UI buttons in VRChat prefabs rely on Unity Events to trigger the `SendCustomEvent` on the original UdonBehaviour, not the UdonSharpBehaviour.
+Due to this, I am forced to keep the original UdonBehaviour GUID around in the project, even if it's practically an empty class. I'm not sure of a good way to fix this at the moment.
+
 ### SaccFlight: Tracking data, controller axis
 
 <video controls width="816">
