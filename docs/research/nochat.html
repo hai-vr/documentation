@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-research/nochat/index" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.2.1">
+<title data-rh="true">Nochat | Haï~</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://docs.hai-vr.dev/img/hai-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://docs.hai-vr.dev/img/hai-social-card.jpg"><meta data-rh="true" property="og:url" content="https://docs.hai-vr.dev/docs/research/nochat"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Nochat | Haï~"><meta data-rh="true" name="description" content="This page records my attempts to run VRChat prefabs with the Unity Editor in VR, without the VRChat SDK installed."><meta data-rh="true" property="og:description" content="This page records my attempts to run VRChat prefabs with the Unity Editor in VR, without the VRChat SDK installed."><link data-rh="true" rel="icon" href="/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://docs.hai-vr.dev/docs/research/nochat"><link data-rh="true" rel="alternate" href="https://docs.hai-vr.dev/docs/research/nochat" hreflang="en"><link data-rh="true" rel="alternate" href="https://docs.hai-vr.dev/docs/research/nochat" hreflang="x-default"><link rel="alternate" type="application/rss+xml" href="/updates/rss.xml" title="Haï~ RSS Feed">
+<link rel="alternate" type="application/atom+xml" href="/updates/atom.xml" title="Haï~ Atom Feed">
+
+
+
+
+
+<script src="https://plausible.io/js/script.js" defer="defer" data-domain="docs.hai-vr.dev"></script><link rel="stylesheet" href="/assets/css/styles.dbcbb60b.css">
+<script src="/assets/js/runtime~main.cc146ee3.js" defer="defer"></script>
+<script src="/assets/js/main.d4523416.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="navbar navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/"><div class="navbar__logo"><img src="/img/hai-avi.png" alt="My Site Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/img/hai-avi.png" alt="My Site Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">Haï~</b></a><a class="navbar__item navbar__link" href="/docs/products">Products</a><a class="navbar__item navbar__link" href="/docs/resilience">ResilienceVR</a><a class="navbar__item navbar__link" href="/updates">Updates</a><a class="navbar__item navbar__link" href="/docs/changelogs">Changelogs</a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/docs/research/toe-tracking">Research</a><a class="navbar__item navbar__link" href="/docs/other/discord">Help &amp; Discord</a><a class="navbar__item navbar__link" href="/docs/other/patreon">Patreon rewards</a></div><div class="navbar__items navbar__items--right"><a href="https://www.patreon.com/vr_hai" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">Patreon<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a><a href="https://github.com/hai-vr/" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="Switch between dark and light mode (currently light mode)" aria-label="Switch between dark and light mode (currently light mode)" aria-live="polite"><svg viewBox="0 0 24 24" width="24" height="24" class="lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" class="darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/docs/research/toe-tracking">Multi-Toe Tracking</a><button aria-label="Expand sidebar category &#x27;Multi-Toe Tracking&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" href="/docs/research/nochat">Nochat</a></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs" itemscope="" itemtype="https://schema.org/BreadcrumbList"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link" itemprop="name">Nochat</span><meta itemprop="position" content="1"></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><h1>Nochat</h1>
+<p>This page records my attempts to run VRChat prefabs with the Unity Editor in VR, without the VRChat SDK installed.</p>
+<p>This project is specific to world content.</p>
+<video controls="" width="816"><source src="/assets/medias/nochat-f-932203c32f4a88c9634fdece78b3f7d0.mp4"></video>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="introduction">Introduction<a href="#introduction" class="hash-link" aria-label="Direct link to Introduction" title="Direct link to Introduction">​</a></h2>
+<p>Unity VR game developers usually create and test all of their content within the Unity Editor, in VR, including VR controls.</p>
+<p>However, <strong>VRChat world creators do not VR controls within the Unity Editor</strong>.
+They don&#x27;t even view their VR content within the Unity Editor (although <a href="/docs/products/let-me-see">I&#x27;m trying to make this more accessible using LetMeSee</a>).</p>
+<p>Testing native Unity VR games in-editor provides several benefits:</p>
+<ul>
+<li>Testing VR doesn&#x27;t require building the scene.</li>
+<li>Testing VR doesn&#x27;t require loading the content in an external app.</li>
+<li>You can use the scene view just as you would when testing content for a flatscreen desktop app.</li>
+<li>Entering Play Mode is fast.</li>
+<li>You can pause the scene.</li>
+<li>You can use regular code debugging tools.</li>
+<li>You can use tools to <a href="https://hotreload.net/" target="_blank" rel="noopener noreferrer">hot-reload modifications made to the code while the game is still running</a>.</li>
+</ul>
+<p>In the current VRChat SDK, none of this is doable if you want to test VR content.</p>
+<p><strong>VRChat world creators are just standalone Unity VR creators with restrictions.</strong> So how can we get there?</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="two-approaches">Two approaches<a href="#two-approaches" class="hash-link" aria-label="Direct link to Two approaches" title="Direct link to Two approaches">​</a></h2>
+<p>In the current meta, VRChat content creators rely on ClientSim (or CyanEmu) for testing worlds in editor, in desktop mode.</p>
+<p>We could try to modify ClientSim to support VR. However, I&#x27;ve decided to take another approach: <strong>Remove the VRChat SDK.</strong>
+Execute UdonSharp scripts as if they were just C# scripts.</p>
+<p>Removing the VRChat SDK provides the following immediate advantages compared to modifying ClientSim:</p>
+<ul>
+<li>Entering Play Mode is fast.</li>
+<li>You can use regular code debugging tools.</li>
+<li>You can use tools to <a href="https://hotreload.net/" target="_blank" rel="noopener noreferrer">hot-reload modifications made to the code while the game is still running</a>.</li>
+</ul>
+<p>However, it would have the following disadvantages compared to ClientSim:</p>
+<ul>
+<li><strong>Only UdonSharp content can be tested.</strong> CyanTrigger and UdonGraphs are not usable.</li>
+<li>If the scripts are modified in a non-VRChat project, it might be incompatible with UdonSharp (i.e. accessing unavailable APIs, or using C# syntax unsupported in UdonSharp).</li>
+<li>ClientSim (or CyanEmu) systems, such as locomotion, are not available.</li>
+<li>Although ClientSim has no parity guarantee with the VRChat client, it would be even less true with this approach.</li>
+</ul>
+<p>There are long-term or future advantages compared to modifying ClientSim:</p>
+<ul>
+<li>Prefabs can be more easily ported into standalone applications, completely separate from VRChat.</li>
+<li>Users may be able to add additional packages for multiplayer use.</li>
+<li>There is an opportunity for testing networking using multiple Unity Editor instances.</li>
+</ul>
+<p>I am also taking this approach because as I&#x27;m planning my long-term exit from VRChat content creation (at this time of writing, July 2024),
+turning VRChat prefabs into VR prefabs is more aligned with my objectives. If VRChat wants a ClientSim VR implementation, then they should be the ones doing it.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="rebuilding-external-calls-from-compilation-errors">Rebuilding external calls from compilation errors<a href="#rebuilding-external-calls-from-compilation-errors" class="hash-link" aria-label="Direct link to Rebuilding external calls from compilation errors" title="Direct link to Rebuilding external calls from compilation errors">​</a></h2>
+<p>Rather than take the entire VRChat API <a href="https://en.wikipedia.org/wiki/Google_LLC_v._Oracle_America%2C_Inc." target="_blank" rel="noopener noreferrer">just like Android took the entire Java API</a>,
+I&#x27;m going to take existing popular VRChat prefabs, and focus on make it work without the VRChat SDK installed, one prefab at a time.</p>
+<p>Ideally, this should only require minimal modifications to the original prefab so that it may still continue to be used in VRChat.</p>
+<p>I will not look at how the VRChat SDK works internally, none of its code. Instead, <strong>I will use the C# compilation errors produced by the prefabs to replace</strong> parts of the API
+that are actually used.</p>
+<p>This means there will be errors in the method signatures, possibly class members with the incorrect attributes (i.e. property instead of field), enumerations in the incorrect order,
+but as long as the prefab is made testable in VR within the Unity Editor, it&#x27;s good enough.</p>
+<p>This approach gives me immediate feedback on how the project is going, and provides quick and manageable milestones, to check if this proof-of-concept is worth continuing.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="billards-pickup-grip-and-trigger-buttons">Billards: Pickup, grip and trigger buttons<a href="#billards-pickup-grip-and-trigger-buttons" class="hash-link" aria-label="Direct link to Billards: Pickup, grip and trigger buttons" title="Direct link to Billards: Pickup, grip and trigger buttons">​</a></h3>
+<video controls="" width="816"><source src="/assets/medias/nochat-f-932203c32f4a88c9634fdece78b3f7d0.mp4"></video>
+<p>First, <a href="https://github.com/Sacchan-VRC/MS-VRCSA-Billiards" target="_blank" rel="noopener noreferrer">billiards</a>. This will let me add controllers, pickups, handle grip and trigger buttons,
+and nothing more. I won&#x27;t do UI raycasts for now, that will still be done using the game view.</p>
+<p>To do this, I&#x27;m using a straightforward approach to get it done:</p>
+<ul>
+<li>Use OpenXR.</li>
+<li>Use a <em>Tracked Pose Driver</em> component to handle the camera moving with the head.</li>
+<li>Use a <em>Tracked Pose Driver (Input System)</em> component to handle the left and right controller pose.</li>
+<li>Using a custom behaviour, use <a href="https://docs.unity3d.com/Manual/xr_input.html#:~:text=Example%20for%20primaryButton" target="_blank" rel="noopener noreferrer">XR Input</a> to get the trigger and grip button states.</li>
+<li>Using a custom behaviour, handle grabbing pickups whenever the grip state changes.</li>
+<li>Using a custom behaviour, handle triggering the pickup drag/drop/use events of <em>NoscriptBehaviour</em> (a replacement of <em>UdonSharpBehaviour</em>).</li>
+</ul>
+<p>All compilation errors must be fixed in the prefab. During this iteration, we focus on:</p>
+<ul>
+<li>Adding missing classes and methods.<!-- -->
+<ul>
+<li>All networking methods are not implemented, or return sensible values for a scenario in a 1-player instance (local player is master and owns everything).</li>
+</ul>
+</li>
+<li>Replacing the concept of program variables with getting and setting C# class fields through reflection.</li>
+<li>Replacing the concept of custom events with invoking C# methods through reflection.<!-- -->
+<ul>
+<li>Delayed events are replaced with coroutines.</li>
+<li>If invoking these methods fail, it doesn&#x27;t interrupt the execution of the caller&#x27;s code.</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="saccflight-tracking-data-controller-axis">SaccFlight: Tracking data, controller axis<a href="#saccflight-tracking-data-controller-axis" class="hash-link" aria-label="Direct link to SaccFlight: Tracking data, controller axis" title="Direct link to SaccFlight: Tracking data, controller axis">​</a></h3>
+<video controls="" width="816"><source src="/assets/medias/saccflight-novrc-f2-904f8253af889f6d746721aea3553aff.mp4"></video>
+<p>Secondly, I wanted to try a complex vehicle system, like Sacchan and Varneon prefabs. I&#x27;m starting with <a href="https://github.com/Sacchan-VRC/SaccFlightAndVehicles" target="_blank" rel="noopener noreferrer">SaccFlight</a>
+because it was unclear whether Varneon&#x27;s vehicle prefabs were downloadable from Patreon, and SaccFlight is readily available.</p>
+<p>To get this done:</p>
+<ul>
+<li>Don&#x27;t try to have a locomotion system, just add a button in the Unity Editor inspector to enter the station directly.<!-- -->
+<ul>
+<li>We are not trying to make CyanEmu 2 here, this is a blank Unity OpenXR project, so it&#x27;s like we&#x27;re building a standalone game.</li>
+</ul>
+</li>
+<li>Input systems in this prefab use <code>Input.GetAxisRaw(&quot;Oculus_CrossPlatform_PrimaryIndexTrigger&quot;)</code> and similar to get analog inputs.<!-- -->
+<ul>
+<li>To avoid log spam, add those inputs in the project. <a href="https://github.com/CyanLaser/CyanEmu/blob/master/CyanEmu/Scripts/CyanEmuInputAxesSettings.cs" target="_blank" rel="noopener noreferrer">CyanEmu has a script</a> to do this.</li>
+<li>I have no idea how to feed values into these inputs myself. I really don&#x27;t, and was not able to figure it out.</li>
+<li>For now, as a replacement, I&#x27;m modifying the original prefab script to redirect <code>Input.GetAxisRaw(...)</code> invocations to a custom static script.</li>
+<li>Using the previously created custom behaviour for XR Input, this static script is being fed with the axis values.</li>
+</ul>
+</li>
+</ul>
+<p>All compilation errors must be fixed in the prefab. During this iteration, we focus on:</p>
+<ul>
+<li>Adding missing classes and methods.</li>
+<li>Fixing coroutines for delayed events triggered on disabled objects:<!-- -->
+<ul>
+<li>Coroutines cannot be run on disabled objects, so instead, I&#x27;m bypassing this by creating a new object that will hold the coroutine for us.</li>
+</ul>
+</li>
+<li>Linking tracking data with the controllers position and rotation (which is just the <em>Tracked Pose Driver</em> from the previous prefab).</li>
+</ul>
+<p>There some are additional surprises in this iteration:</p>
+<ul>
+<li>Execution order is not the same. <code>OnEnable</code> seems to execute before <code>Awake</code>, or maybe it&#x27;s the other way around.<!-- -->
+<ul>
+<li>Either way, the original scripts expect some of their fields to be initialized before some of their methods are invoked.</li>
+<li>For now, I&#x27;m modifying the original script to force <code>OnEnable</code> to execute <code>Awake</code> if Nochat is running.</li>
+</ul>
+</li>
+<li>Shaders don&#x27;t use Single Pass Instanced, so they only render on one eye. I have to <a href="https://github.com/cnlohr/shadertrixx?tab=readme-ov-file#alert-for-early-2022" target="_blank" rel="noopener noreferrer">upgrade them myself</a>.</li>
+</ul></div></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/docs/research/toe-tracking/software"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Software</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#introduction" class="table-of-contents__link toc-highlight">Introduction</a></li><li><a href="#two-approaches" class="table-of-contents__link toc-highlight">Two approaches</a></li><li><a href="#rebuilding-external-calls-from-compilation-errors" class="table-of-contents__link toc-highlight">Rebuilding external calls from compilation errors</a><ul><li><a href="#billards-pickup-grip-and-trigger-buttons" class="table-of-contents__link toc-highlight">Billards: Pickup, grip and trigger buttons</a></li><li><a href="#saccflight-tracking-data-controller-axis" class="table-of-contents__link toc-highlight">SaccFlight: Tracking data, controller axis</a></li></ul></li></ul></div></div></div></div></main></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="col footer__col"><div class="footer__title">Docs</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/docs/products">Products</a></li><li class="footer__item"><a class="footer__link-item" href="/docs/resilience">ResilienceVR</a></li><li class="footer__item"><a class="footer__link-item" href="/updates">What&#x27;s new?</a></li></ul></div><div class="col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://www.patreon.com/vr_hai" target="_blank" rel="noopener noreferrer" class="footer__link-item">Patreon<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://hai-vr.fanbox.cc/" target="_blank" rel="noopener noreferrer" class="footer__link-item">pixivFANBOX<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://twitter.com/vr_hai" target="_blank" rel="noopener noreferrer" class="footer__link-item">Twitter<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a class="footer__link-item" href="/docs/other/discord">Discord</a></li></ul></div><div class="col footer__col"><div class="footer__title">More</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://github.com/hai-vr/" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a class="footer__link-item" href="/links">Links</a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2024 Invitational Software. Built with Docusaurus.</div></div></div><br><div class="centerline_SA5j" data-theme="dark"><p>Thank you to all of my supporters on Patreon ⭐</p><div class="card element_KzhA sp_qcMM k5_NYOb ias_qO18">🌟 <!-- -->bd_</div>
+<div class="card element_KzhA sp_qcMM k3_DDJv ias_qO18">⭐ <!-- -->Vianvolaeus</div>
+<div class="card element_KzhA sp_qcMM k3_DDJv ias_qO18">⭐ <!-- -->Nayir</div>
+<div class="card element_KzhA sp_qcMM k3_DDJv ias_qO18">⭐ <!-- -->Tupper</div>
+<div class="card element_KzhA sp_qcMM k3_DDJv ias_qO18">⭐ <!-- -->Cucumberworks</div>
+<div class="card element_KzhA sp_qcMM k2_SBmZ ias_qO18">⭐ <!-- -->Duinrahaic</div>
+<div class="card element_KzhA sp_qcMM k2_SBmZ ias_qO18">⭐ <!-- -->it&#x27;s moe</div>
+<div class="card element_KzhA sp_qcMM k2_SBmZ ias_qO18">⭐ <!-- -->Lyuma</div>
+<div class="card element_KzhA sp_qcMM k2_SBmZ ias_qO18">⭐ <!-- -->Rue</div>
+<div class="card element_KzhA sp_qcMM k2_SBmZ ias_qO18">⭐ <!-- -->kazu0617</div>
+<div class="card element_KzhA sp_qcMM k2_SBmZ ias_qO18">⭐ <!-- -->SuikaNishi</div>
+<div class="card element_KzhA sp_qcMM k2_SBmZ ias_qO18">⭐ <!-- -->PastelPlushies</div>
+<div class="card element_KzhA sp_qcMM k2_SBmZ ias_qO18">⭐ <!-- -->LaurelCG</div>
+<div class="card element_KzhA sp_qcMM k2_SBmZ ias_qO18">⭐ <!-- -->BlackyFox</div>
+<div class="card element_KzhA sp_qcMM k2_SBmZ ias_qO18">⭐ <!-- -->Bizz</div>
+<div class="card element_KzhA sp_qcMM k2_SBmZ ias_qO18">⭐ <!-- -->flexuh</div>
+<div class="card element_KzhA sp_qcMM k2_SBmZ ias_qO18">⭐ <!-- -->Jo Jo</div>
+<div class="card element_KzhA sp_qcMM k2_SBmZ ias_qO18">⭐ <!-- -->scorchedE.C.H.O</div>
+<div class="card element_KzhA sp_qcMM k2_SBmZ ias_qO18">⭐ <!-- -->Lavy</div>
+<div class="card element_KzhA sp_qcMM k2_SBmZ ias_qO18">⭐ <!-- -->poiyomi</div>
+<div class="card element_KzhA sp_qcMM k2_SBmZ ias_qO18">⭐ <!-- -->Emmα</div>
+<div class="card element_KzhA sp_qcMM k2_SBmZ ias_qO18">⭐ <!-- -->kittyn vr</div>
+<div class="card element_KzhA sp_qcMM k2_SBmZ ias_qO18">⭐ <!-- -->Nyashks</div>
+<div class="card element_KzhA sp_qcMM k2_SBmZ ias_qO18">⭐ <!-- -->MrSmith</div>
+<div class="card element_KzhA sp_qcMM k2_SBmZ ias_qO18">⭐ <!-- -->Virgil drake</div>
+<div class="card element_KzhA sp_qcMM k2_SBmZ ias_qO18">⭐ <!-- -->すいせい</div>
+<div class="card element_KzhA k2_SBmZ ias_qO18">⭐ <!-- -->Xano</div>
+<div class="card element_KzhA k2_SBmZ ias_qO18">⭐ <!-- -->pager</div>
+<div class="card element_KzhA k2_SBmZ ias_qO18">⭐ <!-- -->Tsu</div>
+<div class="card element_KzhA k2_SBmZ ias_qO18">⭐ <!-- -->DrJMAD</div>
+<div class="card element_KzhA k2_SBmZ ias_qO18">⭐ <!-- -->Cywren</div>
+<div class="card element_KzhA k2_SBmZ ias_qO18">⭐ <!-- -->Frank</div>
+<div class="card element_KzhA k2_SBmZ ias_qO18">⭐ <!-- -->Jared Doty</div>
+<div class="card element_KzhA k2_SBmZ ias_qO18">⭐ <!-- -->LeshiArt</div>
+<div class="card element_KzhA k2_SBmZ ias_qO18">⭐ <!-- -->StrayRen</div>
+<div class="card element_KzhA k2_SBmZ ias_qO18">⭐ <!-- -->Gatorchris1230</div>
+<div class="card element_KzhA k2_SBmZ ias_qO18">⭐ <!-- -->Niiniiwi</div>
+<div class="card element_KzhA k2_SBmZ ias_qO18">⭐ <!-- -->Yeshou</div>
+<div class="card element_KzhA k2_SBmZ ias_qO18">⭐ <!-- -->Laura Kaukas</div>
+<div class="card element_KzhA sp_qcMM k0_VTCt">Jordo</div>
+<div class="card element_KzhA sp_qcMM k0_VTCt ias_qO18">Turretoforth</div>
+<div class="card element_KzhA sp_qcMM k0_VTCt ias_qO18">Towneh</div>
+<div class="card element_KzhA sp_qcMM k0_VTCt">PuppyWolf</div>
+<div class="card element_KzhA sp_qcMM k0_VTCt">メインクーン</div>
+<div class="card element_KzhA sp_qcMM k0_VTCt ias_qO18">えすてん</div>
+<div class="card element_KzhA sp_qcMM k0_VTCt ias_qO18">Ceialyn</div>
+<div class="card element_KzhA sp_qcMM k0_VTCt ias_qO18">Armani</div>
+<div class="card element_KzhA sp_qcMM k0_VTCt">kokosa</div>
+<div class="card element_KzhA sp_qcMM k0_VTCt ias_qO18">Dr_Cain</div>
+<div class="card element_KzhA sp_qcMM k0_VTCt ias_qO18">Hackebein</div>
+<div class="card element_KzhA sp_qcMM k0_VTCt ias_qO18">Emma</div>
+<div class="card element_KzhA sp_qcMM k0_VTCt ias_qO18">CyberneticFool</div>
+<div class="card element_KzhA sp_qcMM k0_VTCt">ミツアミめがね</div>
+<div class="card element_KzhA sp_qcMM k0_VTCt ias_qO18">はこつき/hako_moon</div>
+<div class="card element_KzhA sp_qcMM k0_VTCt ias_qO18">ChuckMakesIt</div>
+<div class="card element_KzhA sp_qcMM k0_VTCt ias_qO18">ここからここまで</div>
+<div class="card element_KzhA sp_qcMM k0_VTCt ias_qO18">Sky Spence</div>
+<div class="card element_KzhA sp_qcMM k0_VTCt ias_qO18">υμβραν</div>
+<div class="card element_KzhA sp_qcMM k0_VTCt">milktame</div><div class="card element_KzhA andmore_P3Ch">⭐ <!-- -->53<!-- --> and <strong>526</strong> more <strong><a href="/docs/other/supporters" class="footerlink_XfCe">Patreon Supporters ...</a></strong></div></div></footer></div>
+</body>
+</html>
