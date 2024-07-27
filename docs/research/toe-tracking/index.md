@@ -1,4 +1,7 @@
-﻿# Multi-Toe Tracking
+﻿---
+sidebar_position: 1
+---
+# Multi-Toe Tracking
 
 This page records my attempts to build a toe tracking device that supports multiple toes.
 
