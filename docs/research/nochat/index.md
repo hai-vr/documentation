@@ -15,7 +15,7 @@ This project is specific to world content.
 
 Unity VR game developers usually create and test all of their content within the Unity Editor, in VR, including VR controls.
 
-However, **VRChat world creators do not VR controls within the Unity Editor**.
+However, **VRChat world creators do not test VR controls within the Unity Editor**.
 They don't even view their VR content within the Unity Editor (although [I'm trying to make this more accessible using LetMeSee](/docs/products/let-me-see)).
 
 Testing native Unity VR games in-editor provides several benefits:
@@ -126,3 +126,9 @@ There some are additional surprises in this iteration:
   - Either way, the original scripts expect some of their fields to be initialized before some of their methods are invoked.
   - For now, I'm modifying the original script to force `OnEnable` to execute `Awake` if Nochat is running.
 - Shaders don't use Single Pass Instanced, so they only render on one eye. I have to [upgrade them myself](https://github.com/cnlohr/shadertrixx?tab=readme-ov-file#alert-for-early-2022).
+
+## Source code
+
+If you want to take a look, this proof-of-concept is on [GitHub](https://github.com/hai-vr/nochat).
+
+Obviously, based on everything I've written above, don't install it in your project and expect it to just work, this is an experimental project.
