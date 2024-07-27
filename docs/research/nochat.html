@@ -11,7 +11,7 @@
 
 
 <script src="https://plausible.io/js/script.js" defer="defer" data-domain="docs.hai-vr.dev"></script><link rel="stylesheet" href="/assets/css/styles.dbcbb60b.css">
-<script src="/assets/js/runtime~main.1126bedc.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.3a6197e7.js" defer="defer"></script>
 <script src="/assets/js/main.d4523416.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -76,11 +76,15 @@ and nothing more. I won&#x27;t do UI raycasts for now, that will still be done u
 <p>To do this, I&#x27;m using a straightforward approach to get it done:</p>
 <ul>
 <li>Use OpenXR.</li>
-<li>Use a <em>Tracked Pose Driver</em> component to handle the camera moving with the head.</li>
-<li>Use a <em>Tracked Pose Driver (Input System)</em> component to handle the left and right controller pose.</li>
-<li>Using a custom behaviour, use <a href="https://docs.unity3d.com/Manual/xr_input.html#:~:text=Example%20for%20primaryButton" target="_blank" rel="noopener noreferrer">XR Input</a> to get the trigger and grip button states.</li>
-<li>Using a custom behaviour, handle grabbing pickups whenever the grip state changes.</li>
-<li>Using a custom behaviour, handle triggering the pickup drag/drop/use events of <em>NoscriptBehaviour</em> (a replacement of <em>UdonSharpBehaviour</em>).</li>
+<li>Use a <em><a href="https://docs.unity3d.com/Packages/com.unity.xr.legacyinputhelpers@2.1/api/UnityEngine.SpatialTracking.TrackedPoseDriver.html" target="_blank" rel="noopener noreferrer">Legacy Tracked Pose Driver</a></em> component to handle the camera moving with the head.<!-- -->
+<ul>
+<li><em>In retrospect, there might be no reason to use the Legacy version of it.</em></li>
+</ul>
+</li>
+<li>Use a <em><a href="https://docs.unity3d.com/Packages/com.unity.inputsystem@1.7/api/UnityEngine.InputSystem.XR.TrackedPoseDriver.html" target="_blank" rel="noopener noreferrer">Tracked Pose Driver (Input System)</a></em> component to handle the left and right controller pose.</li>
+<li>Using <a href="https://github.com/hai-vr/nochat/blob/main/Packages/dev.hai-vr.nochat-script/Scripts/Runtime/Core/NochatController.cs" target="_blank" rel="noopener noreferrer">a custom behaviour</a>, use <a href="https://docs.unity3d.com/Manual/xr_input.html#:~:text=Example%20for%20primaryButton" target="_blank" rel="noopener noreferrer">XR Input</a> to get the trigger and grip button states.</li>
+<li>Using <a href="https://github.com/hai-vr/nochat/blob/main/Packages/dev.hai-vr.nochat-script/Scripts/Runtime/Core/NochatUpdateCoordinator.cs#L95" target="_blank" rel="noopener noreferrer">a custom behaviour</a>, handle grabbing pickups whenever the grip state changes.</li>
+<li>Using <a href="https://github.com/hai-vr/nochat/blob/main/Packages/dev.hai-vr.nochat-script/Scripts/Runtime/Core/NochatUpdateCoordinator.cs#L41" target="_blank" rel="noopener noreferrer">a custom behaviour</a>, handle triggering the pickup drag/drop/use events of <em>NoscriptBehaviour</em> (a replacement of <em>UdonSharpBehaviour</em>).</li>
 </ul>
 <p>All compilation errors must be fixed in the prefab. During this iteration, we focus on:</p>
 <ul>
@@ -103,9 +107,10 @@ Due to this, I am forced to keep the original UdonBehaviour GUID around in the p
 <video controls="" width="816"><source src="/assets/medias/saccflight-novrc-f2-904f8253af889f6d746721aea3553aff.mp4"></video>
 <p>Secondly, I wanted to try a complex vehicle system, like Sacchan and Varneon prefabs. I&#x27;m starting with <a href="https://github.com/Sacchan-VRC/SaccFlightAndVehicles" target="_blank" rel="noopener noreferrer">SaccFlight</a>
 because it was unclear whether Varneon&#x27;s vehicle prefabs were downloadable from Patreon, and SaccFlight is readily available.</p>
+<p>This lets me test head and hand tracking data, and analog controller inputs such as trigger, grip, and thumbstick directions.</p>
 <p>To get this done:</p>
 <ul>
-<li>Don&#x27;t try to have a locomotion system, just add a button in the Unity Editor inspector to enter the station directly.<!-- -->
+<li>Don&#x27;t try to have a locomotion system, just <a href="https://github.com/hai-vr/nochat/blob/main/Packages/dev.hai-vr.nochat-script/Scripts/Runtime/StubBehaviour/NochatStation.cs" target="_blank" rel="noopener noreferrer">add a button in the Unity Editor inspector</a> to enter the station directly.<!-- -->
 <ul>
 <li>We are not trying to make CyanEmu 2 here, this is a blank Unity OpenXR project, so it&#x27;s like we&#x27;re building a standalone game.</li>
 </ul>
@@ -114,8 +119,8 @@ because it was unclear whether Varneon&#x27;s vehicle prefabs were downloadable 
 <ul>
 <li>To avoid log spam, add those inputs in the project. <a href="https://github.com/CyanLaser/CyanEmu/blob/master/CyanEmu/Scripts/CyanEmuInputAxesSettings.cs" target="_blank" rel="noopener noreferrer">CyanEmu has a script</a> to do this.</li>
 <li>I have no idea how to feed values into these inputs myself. I really don&#x27;t, and was not able to figure it out.</li>
-<li>For now, as a replacement, I&#x27;m modifying the original prefab script to redirect <code>Input.GetAxisRaw(...)</code> invocations to a custom static script.</li>
-<li>Using the previously created custom behaviour for XR Input, this static script is being fed with the axis values.</li>
+<li>For now, as a replacement, I&#x27;m modifying the original prefab script to redirect <code>Input.GetAxisRaw(...)</code> invocations to <a href="https://github.com/hai-vr/nochat/blob/main/Packages/dev.hai-vr.nochat-script/Scripts/Runtime/Core/NochatInput.cs" target="_blank" rel="noopener noreferrer">a custom static script</a>.</li>
+<li>Using the previously created custom behaviour for XR Input, <a href="https://github.com/hai-vr/nochat/blob/main/Packages/dev.hai-vr.nochat-script/Scripts/Runtime/Core/NochatUpdateCoordinator.cs#L20" target="_blank" rel="noopener noreferrer">this static script is being fed with the axis values</a>.</li>
 </ul>
 </li>
 </ul>
