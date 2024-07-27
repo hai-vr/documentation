@@ -133,6 +133,10 @@ There some are additional surprises in this iteration:
   - For now, I'm modifying the original script to force `OnEnable` to execute `Awake` if Nochat is running.
 - Shaders don't use Single Pass Instanced, so they only render on one eye. I have to [upgrade them myself](https://github.com/cnlohr/shadertrixx?tab=readme-ov-file#alert-for-early-2022).
 
+### Attach-To-Me: Complex pickups, avatar bones
+
+*To be continued...*
+
 ## Source code
 
 If you want to take a look, this proof-of-concept is on [GitHub](https://github.com/hai-vr/nochat).
