@@ -83,11 +83,12 @@ and nothing more. I won't do UI raycasts for now, that will still be done using 
 
 To do this, I'm using a straightforward approach to get it done:
 - Use OpenXR.
-- Use a *Tracked Pose Driver* component to handle the camera moving with the head.
-- Use a *Tracked Pose Driver (Input System)* component to handle the left and right controller pose.
-- Using a custom behaviour, use [XR Input](https://docs.unity3d.com/Manual/xr_input.html#:~:text=Example%20for%20primaryButton) to get the trigger and grip button states.
-- Using a custom behaviour, handle grabbing pickups whenever the grip state changes.
-- Using a custom behaviour, handle triggering the pickup drag/drop/use events of *NoscriptBehaviour* (a replacement of *UdonSharpBehaviour*).
+- Use a *[Legacy Tracked Pose Driver](https://docs.unity3d.com/Packages/com.unity.xr.legacyinputhelpers@2.1/api/UnityEngine.SpatialTracking.TrackedPoseDriver.html)* component to handle the camera moving with the head.
+  - *In retrospect, there might be no reason to use the Legacy version of it.*
+- Use a *[Tracked Pose Driver (Input System)](https://docs.unity3d.com/Packages/com.unity.inputsystem@1.7/api/UnityEngine.InputSystem.XR.TrackedPoseDriver.html)* component to handle the left and right controller pose.
+- Using [a custom behaviour](https://github.com/hai-vr/nochat/blob/main/Packages/dev.hai-vr.nochat-script/Scripts/Runtime/Core/NochatController.cs), use [XR Input](https://docs.unity3d.com/Manual/xr_input.html#:~:text=Example%20for%20primaryButton) to get the trigger and grip button states.
+- Using [a custom behaviour](https://github.com/hai-vr/nochat/blob/main/Packages/dev.hai-vr.nochat-script/Scripts/Runtime/Core/NochatUpdateCoordinator.cs#L95), handle grabbing pickups whenever the grip state changes.
+- Using [a custom behaviour](https://github.com/hai-vr/nochat/blob/main/Packages/dev.hai-vr.nochat-script/Scripts/Runtime/Core/NochatUpdateCoordinator.cs#L41), handle triggering the pickup drag/drop/use events of *NoscriptBehaviour* (a replacement of *UdonSharpBehaviour*).
 
 All compilation errors must be fixed in the prefab. During this iteration, we focus on:
 - Adding missing classes and methods.
@@ -109,14 +110,16 @@ Due to this, I am forced to keep the original UdonBehaviour GUID around in the p
 Secondly, I wanted to try a complex vehicle system, like Sacchan and Varneon prefabs. I'm starting with [SaccFlight](https://github.com/Sacchan-VRC/SaccFlightAndVehicles)
 because it was unclear whether Varneon's vehicle prefabs were downloadable from Patreon, and SaccFlight is readily available.
 
+This lets me test head and hand tracking data, and analog controller inputs such as trigger, grip, and thumbstick directions.
+
 To get this done:
-- Don't try to have a locomotion system, just add a button in the Unity Editor inspector to enter the station directly.
+- Don't try to have a locomotion system, just [add a button in the Unity Editor inspector](https://github.com/hai-vr/nochat/blob/main/Packages/dev.hai-vr.nochat-script/Scripts/Runtime/StubBehaviour/NochatStation.cs) to enter the station directly.
   - We are not trying to make CyanEmu 2 here, this is a blank Unity OpenXR project, so it's like we're building a standalone game.
 - Input systems in this prefab use `Input.GetAxisRaw("Oculus_CrossPlatform_PrimaryIndexTrigger")` and similar to get analog inputs.
   - To avoid log spam, add those inputs in the project. [CyanEmu has a script](https://github.com/CyanLaser/CyanEmu/blob/master/CyanEmu/Scripts/CyanEmuInputAxesSettings.cs) to do this.
   - I have no idea how to feed values into these inputs myself. I really don't, and was not able to figure it out.
-  - For now, as a replacement, I'm modifying the original prefab script to redirect `Input.GetAxisRaw(...)` invocations to a custom static script.
-  - Using the previously created custom behaviour for XR Input, this static script is being fed with the axis values.
+  - For now, as a replacement, I'm modifying the original prefab script to redirect `Input.GetAxisRaw(...)` invocations to [a custom static script](https://github.com/hai-vr/nochat/blob/main/Packages/dev.hai-vr.nochat-script/Scripts/Runtime/Core/NochatInput.cs).
+  - Using the previously created custom behaviour for XR Input, [this static script is being fed with the axis values](https://github.com/hai-vr/nochat/blob/main/Packages/dev.hai-vr.nochat-script/Scripts/Runtime/Core/NochatUpdateCoordinator.cs#L20).
 
 All compilation errors must be fixed in the prefab. During this iteration, we focus on:
 - Adding missing classes and methods.
