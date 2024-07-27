@@ -11,7 +11,7 @@
 
 
 <script src="https://plausible.io/js/script.js" defer="defer" data-domain="docs.hai-vr.dev"></script><link rel="stylesheet" href="/assets/css/styles.dbcbb60b.css">
-<script src="/assets/js/runtime~main.992f2a85.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.1126bedc.js" defer="defer"></script>
 <script src="/assets/js/main.d4523416.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -97,6 +97,8 @@ and nothing more. I won&#x27;t do UI raycasts for now, that will still be done u
 </ul>
 </li>
 </ul>
+<p>UI buttons in VRChat prefabs rely on Unity Events to trigger the <code>SendCustomEvent</code> on the original UdonBehaviour, not the UdonSharpBehaviour.
+Due to this, I am forced to keep the original UdonBehaviour GUID around in the project, even if it&#x27;s practically an empty class. I&#x27;m not sure of a good way to fix this at the moment.</p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="saccflight-tracking-data-controller-axis">SaccFlight: Tracking data, controller axis<a href="#saccflight-tracking-data-controller-axis" class="hash-link" aria-label="Direct link to SaccFlight: Tracking data, controller axis" title="Direct link to SaccFlight: Tracking data, controller axis">​</a></h3>
 <video controls="" width="816"><source src="/assets/medias/saccflight-novrc-f2-904f8253af889f6d746721aea3553aff.mp4"></video>
 <p>Secondly, I wanted to try a complex vehicle system, like Sacchan and Varneon prefabs. I&#x27;m starting with <a href="https://github.com/Sacchan-VRC/SaccFlightAndVehicles" target="_blank" rel="noopener noreferrer">SaccFlight</a>
