@@ -88,7 +88,7 @@ To do this, I'm using a straightforward approach to get it done:
 - Use a *[Tracked Pose Driver (Input System)](https://docs.unity3d.com/Packages/com.unity.inputsystem@1.7/api/UnityEngine.InputSystem.XR.TrackedPoseDriver.html)* component to handle the left and right controller pose.
 - Using [a custom behaviour](https://github.com/hai-vr/nochat/blob/main/Packages/dev.hai-vr.nochat-script/Scripts/Runtime/Core/NochatController.cs), use [XR Input](https://docs.unity3d.com/Manual/xr_input.html#:~:text=Example%20for%20primaryButton) to get the trigger and grip button states.
 - Using [a custom behaviour](https://github.com/hai-vr/nochat/blob/main/Packages/dev.hai-vr.nochat-script/Scripts/Runtime/Core/NochatUpdateCoordinator.cs#L95), handle grabbing pickups whenever the grip state changes.
-- Using [a custom behaviour](https://github.com/hai-vr/nochat/blob/main/Packages/dev.hai-vr.nochat-script/Scripts/Runtime/Core/NochatUpdateCoordinator.cs#L41), handle triggering the pickup drag/drop/use events of *NoscriptBehaviour* (a replacement of *UdonSharpBehaviour*).
+- Using [a custom behaviour](https://github.com/hai-vr/nochat/blob/main/Packages/dev.hai-vr.nochat-script/Scripts/Runtime/Core/NochatUpdateCoordinator.cs#L41), handle triggering the pickup drag/drop/use events of the *UdonSharpBehaviour* replacement.
 
 All compilation errors must be fixed in the prefab. During this iteration, we focus on:
 - Adding missing classes and methods.
