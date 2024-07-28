@@ -8,7 +8,7 @@ This page records my attempts to run VRChat prefabs with the Unity Editor in VR,
 This project is specific to world content.
 
 <video controls width="816">
-    <source src={require('./img/nochat-f.mp4').default}/>
+    <source src={require('./img/nochat-f2.mp4').default}/>
 </video>
 *Nochat turns VRChat prefabs into VR prefabs.*
 
@@ -76,7 +76,7 @@ This approach gives me immediate feedback on how the project is going, and provi
 ## Billards: Pickup, grip and trigger buttons
 
 <video controls width="816">
-    <source src={require('./img/nochat-f.mp4').default}/>
+    <source src={require('./img/nochat-f2.mp4').default}/>
 </video>
 
 First, [billiards](https://github.com/Sacchan-VRC/MS-VRCSA-Billiards). This will let me add controllers, pickups, handle grip and trigger buttons,
