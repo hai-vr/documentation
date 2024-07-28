@@ -1,0 +1,62 @@
+﻿---
+title: All products 🗒️
+sidebar_position: 1
+hide_table_of_contents: true
+hide_title: true
+description: Documentation and gallery of Haï's tools and apps
+---
+
+import clsx from 'clsx';
+
+import Gallery from '@site/src/pages/gallery.mdx'
+import styles from './index.module.css';
+import Link from "@docusaurus/Link";
+
+import patreonStyles from './patreon.module.css';
+import {Patronelt} from '@site/src/components/Patronelt';
+import PatreonPlus from '@site/src/pages/internal/patreonplus.mdx'
+import PatreonReg from '@site/src/pages/internal/patreonreg.mdx'
+import PatreonMore from '@site/src/pages/internal/patreonmore.json'
+
+<div class={clsx(styles.haiBanner2)}>
+    <header className={clsx('hero hero--primary', styles.heroBanner, styles.heroBannerMini)}>
+        <div className="container">
+            <h1 className="hero__title">Haï~</h1>
+            <p className="hero__subtitle">Tools and apps for VR</p>
+            <div className={styles.buttons}>
+                <Link
+                    className="button button--secondary button--lg"
+                    to="vcc://vpm/addRepo?url=https://hai-vr.github.io/vpm-listing/index.json">
+                    <span>Add listing to VCC</span>
+                </Link>
+                <Link
+                    className="button button--secondary button--lg"
+                    to="/updates">
+                    <span>What's new?</span>
+                </Link>
+            </div>
+        </div>
+    </header>
+</div>
+
+<div className={clsx(patreonStyles.centerline)}>
+<p>*Thank you to all of my supporters on [Patreon](/docs/other/patreon)* ⭐</p>
+<PatreonPlus />
+<Patronelt k="-1">⭐ {PatreonMore.plusactive} and **{PatreonMore.regactive}** more **[Patreon Supporters ...](/docs/other/supporters)**</Patronelt>
+</div>
+
+<br />
+
+<Gallery />
+
+<br />
+
+---
+
+<div className={clsx(patreonStyles.centerline)}>
+<p>*Thank you to all of my supporters on [Patreon](/docs/other/patreon)* ⭐</p>
+<PatreonPlus />
+<PatreonReg />
+</div>
+
+<br />
