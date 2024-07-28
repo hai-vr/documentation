@@ -3,6 +3,7 @@ title: Lightbox Viewer
 ---
 import {HaiTags} from "/src/components/HaiTags";
 import {HaiTag} from "/src/components/HaiTag";
+import HaiSupport from "/docs/_support.mdx";
 
 <HaiTags>
 <HaiTag isUniversal={true} />
@@ -50,6 +51,8 @@ While this mode is active, the editor may slow down. Press *Activate LightboxVie
 <video controls width="816" autostart="false">
     <source src={require('../../static/unsorted_ghc/githubio/sx_2022-05-16_07-24-50_VDkm4dNnOs.mp4').default}/>
 </video>
+
+<HaiSupport />
 
 ### Post Processing
 

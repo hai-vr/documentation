@@ -1,5 +1,6 @@
 ﻿import {HaiTags} from "/src/components/HaiTags";
 import {HaiTag} from "/src/components/HaiTag";
+import HaiSupport from "/docs/_support.mdx";
 
 # Recalculate Normals
 
@@ -29,6 +30,8 @@ Enter Play Mode or upload the avatar to test the results: as this is a non-destr
 <video controls autostart="false">
     <source src={require('../img/uI4KB1Gj4Y.mp4').default}/>
 </video>
+
+<HaiSupport/>
 
 ## Other notes
 

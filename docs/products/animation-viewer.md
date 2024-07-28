@@ -2,6 +2,7 @@ import uYmmptha2T from './animation-viewer-img/sx_2022-02-02_03-27-39_uYmmptha2T
 import QdOYmOWyly from './animation-viewer-img/sx_2022-02-02_03-05-20_QdOYmOWyly.mp4';
 import {HaiTags} from "/src/components/HaiTags";
 import {HaiTag} from "/src/components/HaiTag";
+import HaiSupport from "/docs/_support.mdx";
 
 # Animation Viewer
 
@@ -40,6 +41,8 @@ The tool is free for download. It can also be downloaded using VCC.
 
 - Move the camera in the scene, and hover your cursor over the Project view to refresh the pictures.
 - When the Animation Viewer is activated, the performance of the editor will be impacted. Click “Activate Viewer” to toggle it on/off. The button is red when it is active.
+
+<HaiSupport/>
 
 ## Options
 

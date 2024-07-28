@@ -1,5 +1,6 @@
 ﻿import {HaiTags} from "/src/components/HaiTags";
 import {HaiTag} from "/src/components/HaiTag";
+import HaiSupport from "/docs/_support.mdx";
 
 # Generate Twist Bones (Alpha)
 
@@ -36,6 +37,8 @@ Thank you for your understanding.
 
 ![twist-compare.png](..%2Fimg%2Ftwist-compare.png)
 *Left: Generate Twist Bones active / Right: Original avatar*
+
+<HaiSupport/>
 
 ## How to use
 

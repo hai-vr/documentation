@@ -1,5 +1,6 @@
 ﻿import {HaiTags} from "/src/components/HaiTags";
 import {HaiTag} from "/src/components/HaiTag";
+import HaiSupport from "/docs/_support.mdx";
 
 # LetMeSee
 
@@ -80,6 +81,8 @@ Please seek for support on the [Discord server](/docs/other/discord) if you enco
 - Press the "**Run**" button.
 - Put your headset on, look forward, and press the "**Recenter view**" button.
 - Move the camera of the Scene view to move around.
+
+<HaiSupport />
 
 ## Options
 
