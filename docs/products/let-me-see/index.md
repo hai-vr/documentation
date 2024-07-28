@@ -18,8 +18,14 @@ This tool has been tested using **Unity 2022**. It does not work in Unity 2019.
 :::
 
 <video controls width="816">
-    <source src={require('./img/let-me-see-showcase2-f.mp4').default}/>
+    <source src={require('./img/lms1-f.mp4').default}/>
 </video>
+*Using LMS for worlds and level design.*
+
+<video controls width="816">
+    <source src={require('./img/lms0-f.mp4').default}/>
+</video>
+*Using LMS for avatars.*
 
 ## Download
 
