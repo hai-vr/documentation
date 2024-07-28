@@ -55,7 +55,7 @@ There are long-term or future advantages compared to modifying ClientSim:
 - Users may be able to add additional packages for multiplayer use.
 - There is an opportunity for testing networking using multiple Unity Editor instances.
 
-I am also taking this approach because as I'm planning my long-term exit from VRChat content creation (at this time of writing, July 2024),
+I am also taking this approach because as I'm planning my long-term exit from VRChat content creation (this is written on July 2024),
 turning VRChat prefabs into VR prefabs is more aligned with my objectives. If VRChat wants a ClientSim VR implementation, then they should be the ones doing it.
 
 ## Rebuilding external calls from compilation errors
