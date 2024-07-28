@@ -10,6 +10,7 @@ This project is specific to world content.
 <video controls width="816">
     <source src={require('./img/nochat-f.mp4').default}/>
 </video>
+*Nochat turns VRChat prefabs into VR prefabs.*
 
 ## Introduction
 
@@ -72,7 +73,7 @@ but as long as the prefab is made testable in VR within the Unity Editor, it's g
 
 This approach gives me immediate feedback on how the project is going, and provides quick and manageable milestones, to check if this proof-of-concept is worth continuing.
 
-### Billards: Pickup, grip and trigger buttons
+## Billards: Pickup, grip and trigger buttons
 
 <video controls width="816">
     <source src={require('./img/nochat-f.mp4').default}/>
@@ -101,7 +102,7 @@ All compilation errors must be fixed in the prefab. During this iteration, we fo
 UI buttons in VRChat prefabs rely on Unity Events to trigger the `SendCustomEvent` on the original UdonBehaviour, not the UdonSharpBehaviour.
 Due to this, I am forced to keep the original UdonBehaviour GUID around in the project, even if it's practically an empty class. I'm not sure of a good way to fix this at the moment.
 
-### SaccFlight: Tracking data, controller axis
+## SaccFlight: Tracking data, controller axis
 
 <video controls width="816">
     <source src={require('./img/saccflight-novrc-f2.mp4').default}/>
@@ -133,7 +134,10 @@ There some are additional surprises in this iteration:
   - For now, I'm modifying the original script to force `OnEnable` to execute `Awake` if Nochat is running.
 - Shaders don't use Single Pass Instanced, so they only render on one eye. I have to [upgrade them myself](https://github.com/cnlohr/shadertrixx?tab=readme-ov-file#alert-for-early-2022).
 
-### Attach-To-Me: Complex pickups, avatar bones
+## Attach-To-Me: Complex pickups, avatar bones
+
+In the first prefab, I used the pool table pickups as an easily attainable first goal. The [Attach-To-Me](https://bdunderscore.github.io/attach-to-me/en/) prefab requires handling complex pickup interactions, including avatar bones,
+so this provides an opportunity to add an avatar.
 
 *To be continued...*
 
