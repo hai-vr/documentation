@@ -2,11 +2,22 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://docs.hai-vr.dev/updates</id>
     <title>Haï~ Blog</title>
-    <updated>2024-07-24T00:00:00.000Z</updated>
+    <updated>2024-07-28T07:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://docs.hai-vr.dev/updates"/>
     <subtitle>Haï~ Blog</subtitle>
     <icon>https://docs.hai-vr.dev/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[🧪 Knowledge sharing "Nochat" devlog]]></title>
+        <id>https://docs.hai-vr.dev/updates/2024/07/28/p0-ks</id>
+        <link href="https://docs.hai-vr.dev/updates/2024/07/28/p0-ks"/>
+        <updated>2024-07-28T07:00:00.000Z</updated>
+        <summary type="html"><![CDATA[A new knowledge sharing devlog has been published, "Nochat".]]></summary>
+        <content type="html"><![CDATA[<p>A new knowledge sharing devlog has been published, "Nochat".</p>
+<p>In <a href="https://docs.hai-vr.dev/docs/research/nochat">the <em>Nochat</em> research page</a>, you can read about my attempts to run VRChat prefabs with the Unity Editor in VR, without the VRChat SDK installed.</p>
+<video controls="" width="816"><source src="/assets/medias/nochat-f-932203c32f4a88c9634fdece78b3f7d0.mp4"></video>
+<video controls="" width="816"><source src="/assets/medias/saccflight-novrc-f2-904f8253af889f6d746721aea3553aff.mp4"></video>]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[⚙️ LetMeSee 1.1.3]]></title>
         <id>https://docs.hai-vr.dev/updates/2024/07/24/p0</id>
@@ -424,13 +435,5 @@ If you are a developer who internally references classes or entities within Pref
 <li>The technical package name of Prefabulous for VRChat will be the same as the one currently used for Prefabulous Avatar.</li>
 </ul>
 <p>If you're a developer who might be concerned by such changes, you're invited to let me know about it on the <a href="https://docs.hai-vr.dev/docs/other/discord">Discord server</a>.</p>]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[⚙️ Prefabulous Avatar V1.10.3]]></title>
-        <id>https://docs.hai-vr.dev/updates/2024/04/02/p0</id>
-        <link href="https://docs.hai-vr.dev/updates/2024/04/02/p0"/>
-        <updated>2024-04-02T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Fix Replace Textures should no longer ignore disabled objects.]]></summary>
-        <content type="html"><![CDATA[<p>Fix Replace Textures should no longer ignore disabled objects.</p>]]></content>
     </entry>
 </feed>
