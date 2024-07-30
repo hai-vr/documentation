@@ -209,6 +209,7 @@ export default {
       {
         redirects: [
           { from: '/docs/changelogs/prefabulous-avatar', to: '/docs/changelogs/prefabulous' },
+          // { from: '/docs/other/articles', to: '/docs/research/articles' },
           { from: '/docs/products/prefabulous-avatar', to: '/docs/products/prefabulous' },
           { from: '/docs/products/prefabulous-avatar/reference', to: '/docs/products/prefabulous/reference' },
           { from: '/docs/products/prefabulous-avatar/component-reference', to: '/docs/products/prefabulous/universal' },
