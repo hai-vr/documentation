@@ -61,7 +61,7 @@ turning VRChat prefabs into VR prefabs is more aligned with my objectives. If VR
 ## Rebuilding external calls from compilation errors
 
 Rather than take the entire VRChat API [just like Android took the entire Java API](https://en.wikipedia.org/wiki/Google_LLC_v._Oracle_America%2C_Inc.),
-I'm going to take existing popular VRChat prefabs, and focus on make it work without the VRChat SDK installed, one prefab at a time.
+I'm going to take existing popular VRChat prefabs, and focus on making it work without the VRChat SDK installed, one prefab at a time.
 
 Ideally, this should only require minimal modifications to the original prefab so that it may still continue to be used in VRChat.
 
