@@ -21,7 +21,10 @@ export function Patronelt({k, ias, sp, children}: Props): JSX.Element {
             (k == 3 ? styles.k3 : undefined),
             (k == 2 ? styles.k2 : undefined),
             (k == 0 ? styles.k0 : undefined),
-            (ias == 1 ? styles.ias : undefined))}>
+            (ias == 1 ? styles.ias : undefined),
+            (ias == 1 && sp == 1 ? styles.spias : undefined),
+            (ias != 1 && sp == 1 ? styles.spnoias : undefined),
+            )}>
             {k == 10 ? '☀️ ' : ''}{k == 5 ? '🌟 ' : ''}{k == 2 || k == 3 ? '⭐ ' : ''}{k == 0 && ias == 1 ? '' : ''}{children}
         </div>
     );

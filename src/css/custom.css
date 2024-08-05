@@ -18,6 +18,7 @@
   --hai-gold-highlight: #ffecb4;
   --hai-gold-grad: #ffd774;
   --hai-fade: #a1a1a1;
+  --hai-fade-frontlight: #707070;
   --hai-bg: white;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
   --hai-vrchat-label: #5f6670;
@@ -51,6 +52,7 @@
   --hai-gold: #8c650a;
   --hai-gold-highlight: #b28419;
   --hai-fade: #8a8a8a;
+  --hai-fade-frontlight: #c3c3c3;
   --hai-bg: #1b1b1d;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }

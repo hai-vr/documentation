@@ -17,6 +17,11 @@
 .sp {
   border: 2px solid var(--hai-gold);
 }
+.spias {
+}
+.spnoias {
+  color: var(--hai-fade-frontlight);
+}
 .andmore strong {
   color: var(--ifm-color-primary-lightest);
 }
