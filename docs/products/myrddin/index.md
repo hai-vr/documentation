@@ -1,7 +1,14 @@
 ﻿---
 unlisted: true
 ---
+import {HaiTags} from "/src/components/HaiTags";
+import {HaiTag} from "/src/components/HaiTag";
+
 # Myrddin
+
+<HaiTags>
+<HaiTag requiresVRChat={true} />
+</HaiTags>
 
 Welcome to the *Myrddin* page.
 
