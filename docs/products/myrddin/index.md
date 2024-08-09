@@ -19,7 +19,7 @@ By suspending Udon, your UdonSharp behaviours become regular Unity behaviours. Y
 behaviours such as breakpoints, stepping, [pausepoints](https://blog.jetbrains.com/dotnet/2020/06/11/introducing-unity-pausepoints-for-rider/),
 but also make edits to the code of your behaviours and [hot reload](https://hotreload.net/) them while Play Mode is still running.
 
-In addition, it also attempts to let you **test VR controls in-editor**.
+In addition, it also attempts to let you **test VR controls in-editor**, and functions alongside ClientSim.
 
 When you are done iterating, release the killswitch, and build or upload your VRChat world as usual; but now that Udon is not really necessary in-editor,
 consider giving VR standalone development a chance, so that you can create content without being limited by the VRChat platform.
@@ -45,15 +45,15 @@ The Killswitch button lets you suspend Udon systems, so that MonoBehaviour will 
 - When it is OFF, no alterations are made to the project.
 - When it is ON, hooks will be enabled that will change the behaviour of Udon-related systems.
   - The UdonManager will be turned off, so that Udon programs will not execute.
-  - We will plug our own component for handling *PostLateUpdate()*.
-  - Some methods from UdonBehaviour components will be rerouted to their UdonSharpBehaviour equivalents.
-  - Some methods from UdonSharpBehaviour will be rerouted to spawn coroutines.
-  - Some methods within ClientSim systems will be rerouted to invoke equivalent functions in UdonSharpBehaviours.
   - UdonSharp will be prevented from muting its own methods, so that MonoBehaviours will execute.
   - UdonSharp will no longer prevent from entering Play Mode if there are U# compilation errors.
-  - UdonSharp will no longer reflect program variables from the UdonBehaviour back to the UdonSharpBehaviour.
+  - Some methods from UdonBehaviour components will be rerouted to their UdonSharpBehaviour equivalents.
+  - Some methods from UdonSharpBehaviour will be rerouted to spawn coroutines.
+  - We will plug our own component for handling *PostLateUpdate()*.
+  - Some methods within ClientSim systems will be rerouted to invoke equivalent functions in UdonSharpBehaviours.
+  - Since the UdonBehaviour is dormant, UdonSharp will no longer reflect program variables from the dormant UdonBehaviour back to the UdonSharpBehaviour.
   - UdonSharp custom inspector will be suspended.
-  - Builds are disabled.
+  - Builds are prevented.
   - The `MYRDDIN_ACTIVE` scripting define will be made available.
 
 :::warning
@@ -115,7 +115,6 @@ For complicated reasons, `VRCPlayerApi.UseAttachedStation()` needs to be replace
 Replace:
 
 ```csharp
-#if COMPILER_UDONSHARP
     Networking.LocalPlayer.UseAttachedStation();
 ```
 
