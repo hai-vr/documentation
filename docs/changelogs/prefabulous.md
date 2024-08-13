@@ -2,6 +2,16 @@
 title: Prefabulous
 ---
 
+## 2.0.3 (Planned)
+
+:::danger
+This change has not been released yet.
+:::
+
+- Compilation should no longer fail in non-VRChat projects that still have the `VRC_SDK_VRCSDK3` scripting define around.
+  - Components now extend VRChat's `IEditorOnly` class only if the VRChat Avatars SDK is installed.
+- Delete Polygons should now run before AAO.
+
 ## 2.0.2
 
 Fix Assign UV Tile "Entire Mesh" no longer fails to process meshes that were set to EditorOnly.
