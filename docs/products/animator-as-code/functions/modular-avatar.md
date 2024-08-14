@@ -77,16 +77,16 @@ Declare a new Bool parameter, acknowledging that the animator has exposed it as 
   Declare new parameters of the given type. If you use Animator As Code, you can reuse the parameters using the other `NewParameter` method overloads or the `NewBoolToFloatParameter` method. The array can safely contain null values. This creates a ModularAvatarParameters on the targeted object if it doesn't already exist.
 
 - `MaacParameter<float> NewParameter(AacFlFloatParameterGroup aacParameterGroup)`<br/>
-Declare new Float parameters, by default saved and synced. This creates a ModularAvatarParameters on the targeted object if it doesn't already exist. Function calls on the resulting objects will affect all parameters of that group. This creates a ModularAvatarParameters on the targeted object if it doesn't already exist.
+Declare new Float parameters, by default saved and synced. This creates a ModularAvatarParameters on the targeted object if it doesn't already exist. Function calls on the resulting objects will affect all parameters of that group.
 
 - `MaacParameter<int> NewParameter(AacFlIntParameterGroup aacParameterGroup)`<br/>
-Declare new Int parameters, by default saved and synced. This creates a ModularAvatarParameters on the targeted object if it doesn't already exist. Function calls on the resulting objects will affect all parameters of that group. This creates a ModularAvatarParameters on the targeted object if it doesn't already exist.
+Declare new Int parameters, by default saved and synced. This creates a ModularAvatarParameters on the targeted object if it doesn't already exist. Function calls on the resulting objects will affect all parameters of that group.
 
 - `MaacParameter<bool> NewParameter(AacFlBoolParameterGroup aacParameterGroup)`<br/>
-Declare new Bool parameters, by default saved and synced. This creates a ModularAvatarParameters on the targeted object if it doesn't already exist. Function calls on the resulting objects will affect all parameters of that group. This creates a ModularAvatarParameters on the targeted object if it doesn't already exist.
+Declare new Bool parameters, by default saved and synced. This creates a ModularAvatarParameters on the targeted object if it doesn't already exist. Function calls on the resulting objects will affect all parameters of that group.
 
 - `MaacParameter<bool> NewBoolToFloatParameter(AacFlFloatParameterGroup aacParameterGroup)`<br/>
-Declare new Bool parameters, acknowledging that the animator has exposed them as Floats. By default it is saved and synced. This creates a ModularAvatarParameters on the targeted object if it doesn't already exist. Function calls on the resulting objects will affect all parameters of that group. This creates a ModularAvatarParameters on the targeted object if it doesn't already exist.
+Declare new Bool parameters, acknowledging that the animator has exposed them as Floats. By default it is saved and synced. This creates a ModularAvatarParameters on the targeted object if it doesn't already exist. Function calls on the resulting objects will affect all parameters of that group.
 
 #### Merge Animator
 
@@ -111,7 +111,14 @@ Edit one menu item on this object. It is not possible to declare multiple menu i
 Edit one menu item on the receiver object. It is not possible to declare multiple menu items on that same object.
 
 - `MaacMenuItem EditMenuItem(params GameObject[] receiversWithNulls)`<br/>
-Edit one menu item on all of the receiver objects. It is not possible to declare multiple menu items on those same objects. Function calls on the resulting object will affect all of those menu items. Use this in case you have multiple identical menu items scattered across different menus. The array can safely contain null values.
+Edit one menu item on all the receiver objects. It is not possible to declare multiple menu items on those same objects. Function calls on the resulting object will affect all of those menu items. Use this in case you have multiple identical menu items scattered across different menus. The array can safely contain null values.
+
+#### Special
+
+- `static MaAc Dummy()`
+Create a dummy Modular Avatar As Code base that doesn't create or modify anything when you call any of its methods.
+- If you need to disable the creation of Modular Avatar components without heavily modifying the code, use this.
+- Calling the methods will still return appropriate objects that do nothing.
 
 ## Merge Animator (MaacMergeAnimator)
 
@@ -152,15 +159,15 @@ Set the menu item type as Toggle for a Int parameter, setting the value when tog
 Set the menu item type as Toggle for a Float parameter, setting the value when toggled.
 
 - `MaacMenuItem ToggleForcesBoolToFalse(AacFlBoolParameter parameter)`<br/>
-  Set the menu item type as Toggle for a Bool parameter. However, when toggled, the value of the bool will be forced to false. Toggling will never set the value to true.
+Set the menu item type as Toggle for a Bool parameter. However, when toggled, the value of the bool will be forced to false. Toggling will never set the value to true.
 
 #### Button
 
 - `MaacMenuItem Button(AacFlBoolParameter parameter)`<br/>
-  Set the menu item type as Button for a Bool parameter.
+Set the menu item type as Button for a Bool parameter.
 
 - `MaacMenuItem ButtonBoolToFloat(AacFlFloatParameter parameter)`<br/>
-  Set the menu item type as Button for a Bool parameter, which is exposed as a Float in the animator.
+Set the menu item type as Button for a Bool parameter, which is exposed as a Float in the animator.
 
 - `MaacMenuItem ButtonSets(AacFlIntParameter parameter, int value)`<br/>
 Set the menu item type as Button for a Int parameter, setting the value when pressed.
