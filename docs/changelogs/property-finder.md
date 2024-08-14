@@ -2,6 +2,15 @@
 title: Property Finder
 ---
 
+## 2.0.4 (Planned)
+
+:::danger
+This change has not been released yet.
+:::
+
+- Prevents the editor from hanging up when the user mistakenly pastes a page long of unrelated content.
+  - The search query is now limited to 100 characters max.
+
 ## 2.0.3
 
 - Fix an issue where avatars would fail to upload.
