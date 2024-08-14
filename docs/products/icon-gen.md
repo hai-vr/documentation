@@ -228,6 +228,10 @@ For other sizes, use *[IconGen Capture](#capture-icons-for-the-expressions-menu)
 
 ## Changelog
 
+### IconGen Capture
+
+- [Changelog page](/docs/changelogs/icon-gen)
+
 ### IconGen Thumbnail
 
 - 1.0.1: Temporarily fix a memory leak by destroying the texture resource

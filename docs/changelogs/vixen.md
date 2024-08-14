@@ -2,6 +2,24 @@
 title: Vixen
 ---
 
+## 1.3.0 (Planned)
+
+### Custom bounds
+
+You can now customize the bounds in OSC Floats, Contacts, and PhysBones.
+- By default, it is always between 0.0 and 1.0
+- This can be used to make a control become active only after a PhysBone reaches a certain angle.
+- This can be used to make a control reach fully active when a PhysBone is squished past a certain amount.
+- This can be used to make several controls become active at different proximity values using a single Contact.
+- To use it, enable *Use Custom Bounds* in the control settings.
+
+### Fixes
+
+- Prevent freezing the editor by limiting the property search query length to 100 characters.
+- User-created *Modular Avatar Menu Installer* components can now be properly added directly to a Vixen Control.
+- Existing *Modular Avatar Menu Installer* components can now be properly detected even if it is inactive in the hierarchy.
+- *Vixen Control* should no longer cause *Modular Avatar Menu Item* to print harmless error messages when it is deleted during a build.
+
 ## 1.2.0
 
 - You can now add arbitrary blendshape properties on a SkinnedMeshRenderer, even if they don't exist in Edit mode.

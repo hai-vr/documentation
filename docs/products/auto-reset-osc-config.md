@@ -37,8 +37,16 @@ When the avatar is loaded for the first time, VRChat generates a JSON file locat
 
 This file contains information about the current expression parameters of the avatar.
 
-This file is not generated again when the avatar is updated. This can cause OSC applications to fail reacting to newly added expressions parameters, such as face tracking parameters for instance.
+This file is not generated again when the avatar is updated<span>**\***</span>. This can cause OSC applications to fail reacting to newly added expressions parameters, such as face tracking parameters for instance.
 
 Typically, the fix is to go in VRChat Expressions menu, and click "Reset OSC config" after every meaningful upload.
 
 This tool assumes that you did not manually update this JSON file (this almost never happens), and deletes it after every avatar upload, so that the avatar parameters should work consistently after every new upload.
+
+:::info
+**\*** Until the release of [VRChat 2024.3.1](https://docs.vrchat.com/docs/vrchat-202431#updates--fixes), which has not happened yet as of August 12th, 2024.
+
+> VRChat will now automatically add or remove parameters in OSC config files when an avatar is updated.
+:::
+
+[//]: # (Planned)
