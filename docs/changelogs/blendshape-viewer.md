@@ -2,6 +2,15 @@
 title: Blendshape Viewer
 ---
 
+## 2.1.2 (Planned)
+
+:::danger
+This change has not been released yet.
+:::
+
+- Prevents the editor from hanging up when the user mistakenly pastes a page long of unrelated content.
+  - The search query is now limited to 100 characters max.
+
 ## 2.1.1
 
 - Fix error when no mesh was selected.
