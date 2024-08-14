@@ -4,6 +4,10 @@ title: Vixen
 
 ## 1.3.0 (Planned)
 
+:::danger
+This change has not been released yet.
+:::
+
 ### Custom bounds
 
 You can now customize the bounds in OSC Floats, Contacts, and PhysBones.
