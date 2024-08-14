@@ -20,9 +20,13 @@ You can now customize the bounds in OSC Floats, Contacts, and PhysBones.
 ### Fixes
 
 - Prevent freezing the editor by limiting the property search query length to 100 characters.
+- The Vixen icon will no longer show up in the Scene view.
 - User-created *Modular Avatar Menu Installer* components can now be properly added directly to a Vixen Control.
 - Existing *Modular Avatar Menu Installer* components can now be properly detected even if it is inactive in the hierarchy.
 - *Vixen Control* should no longer cause *Modular Avatar Menu Item* to print harmless error messages when it is deleted during a build.
+- Vixen used to add a *Vixen BSG* phase to NDMF. This has been removed as it was never used.
+  - *Vixen BSG (BlendShapeGenerator) was what is now known as Starmesh.*
+- Changed the way Vixen detects how VRChat SDK is installed.
 
 ## 1.2.0
 
