@@ -15,6 +15,8 @@ This change describes a beta.
 - Animation clips will show up in double in that Search window, as this version does not modify the stock Project search provider.
 - The prefix `anim:<your search query>` may be used in your search query to only show *Animation Viewer* results.
 
+![Untitled](../products/animation-viewer-img/ctrl-k.png)
+
 ## 2.0.4
 
 - Fix null dereference when multiple Project tabs are open:
