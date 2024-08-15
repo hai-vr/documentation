@@ -18,7 +18,7 @@ These changes have not been released yet.
 - Fix remapping blendshape conventions should no longer generate incorrect names.
 - Support cases where the skinned mesh has no Head bone.
 - Support cases where the skinned mesh has no bone number 0 assigned to it.
-- Girmos are now forced to be shown when entering Vertex selection.
+- Gizmos are now forced to be shown when entering Vertex selection.
 
 ### Other
 

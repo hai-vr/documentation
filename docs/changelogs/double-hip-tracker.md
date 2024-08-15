@@ -8,7 +8,7 @@ title: Double Hip Tracker
 This change has not been released yet.
 :::
 
-This updates introduces a change in the behaviour of the double trackers: They *should* no longer fly away when both trackers are lost.
+This update introduces a change in the behaviour of the double trackers: They *should* no longer fly away when both trackers are lost.
 
 Changes:
 - Add **"Freeze when both trackers are lost"** checkbox: If both trackers of any given double tracker are lost, then the tracker will freeze in place.
