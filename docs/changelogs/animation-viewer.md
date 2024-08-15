@@ -4,9 +4,11 @@ title: Animation Viewer
 
 ## 2.1.0 (Planned)
 
-:::danger
-This change has not been released yet.
+:::info
+This change describes a beta.
 :::
+
+*Part of 2.1.0-beta.1*
 
 - Add support for CTRL-K Unity Search window.
 - The "Animation Viewer" search provider must be enabled in that CTRL-K search window (three dots at the top right).
