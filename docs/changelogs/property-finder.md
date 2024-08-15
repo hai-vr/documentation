@@ -4,7 +4,7 @@ title: Property Finder
 
 ## 2.0.4
 
-- Prevents the editor from hanging up when the user mistakenly pastes a page long of unrelated content.
+- Prevents the editor from hanging up when the user mistakenly pastes a page long of unrelated content in the search field.
   - The search query is now limited to 100 characters max.
 
 ## 2.0.3

@@ -19,7 +19,7 @@ You can now customize the bounds in OSC Floats, Contacts, and PhysBones.
 
 ### Fixes
 
-- Prevents the editor from hanging up when the user mistakenly pastes a page long of unrelated content.
+- Prevents the editor from hanging up when the user mistakenly pastes a page long of unrelated content in the search field.
   - The search query is now limited to 100 characters max.
 - The Vixen icon will no longer show up in the Scene view.
 - User-created *Modular Avatar Menu Installer* components can now be properly added directly to a Vixen Control.

@@ -5,7 +5,7 @@ title: Blendshape Viewer
 ## 2.1.2
 
 - Fix layout errors should no longer be produced when the search returns 0 results.
-- Prevents the editor from hanging up when the user mistakenly pastes a page long of unrelated content.
+- Prevents the editor from hanging up when the user mistakenly pastes a page long of unrelated content in the search field.
   - The search query is now limited to 100 characters max.
 
 ## 2.1.1
