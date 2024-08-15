@@ -31,7 +31,7 @@ The changelogs of some products aren't available at this time.
 | [Prefabulous Universal](./changelogs/prefabulous)                                                           | 2.0.2                 | 2024-06     | * |
 | [Prefabulous for VRChat](./changelogs/prefabulous-for-vrchat)                                               | 2.0.0                 | 2024-06     |   |
 | [Prefabulous for VRM](./changelogs/prefabulous-for-vrm)                                                     | 2.0.0                 | 2024-06     | * |
-| [Starmesh](./changelogs/starmesh)                                                                           | 1.3.0                 | 2024-06     |   |
+| [Starmesh](./changelogs/starmesh)                                                                           | 1.3.0                 | 2024-06     | * |
 | [Visual Expressions Editor](./changelogs/visual-expressions-editor)                                         | 2.0.3                 | 2023-11     |   |
 | [Vixen](./changelogs/vixen)                                                                                 | 1.2.0                 | 2024-06     | * |
 | **APIs**                                                                                                    |                       |             |   |
