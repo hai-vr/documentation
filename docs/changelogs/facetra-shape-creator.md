@@ -2,6 +2,29 @@
 title: FaceTra Shape Creator
 ---
 
+## 0.9.0 (Planned)
+
+:::danger
+These changes have not been released yet.
+:::
+
+- When applying the same FaceTra file on multiple avatars with distinct model files that share the same base (i.e. both avatars are Manuka),
+  but the head of the two models have an offset (i.e. because the character wears high heels), the FaceTra Shape Creator component can
+  now specify a corrective offset that will be applied to one of the avatars, in order to re-align the head.
+  - Since this is set at the component level, this does not modify the contents of the FaceTra file data.
+
+### Fixes
+
+- Fix remapping blendshape conventions should no longer generate incorrect names.
+- Support cases where the skinned mesh has no Head bone.
+- Support cases where the skinned mesh has no bone number 0 assigned to it.
+- Girmos are now forced to be shown when entering Vertex selection.
+
+### Other
+
+- Add a button to bake specifically to perform a VSFAvatar export.
+- Make it possible to install the NDMF classes of FaceTra even if NDMF is not installed (i.e. for Resonite export).
+
 ## 0.8.0-2024-04-08-2020
 
 ### New Construction Line: [Blush Modifier Selection](/docs/products/facetra-shape-creator/construction-lines#optional-blush-modifier-selection)
