@@ -2,20 +2,16 @@
 title: Animation Viewer
 ---
 
-## 2.1.0 (Planned)
-
-:::info
-This change describes a beta.
-:::
-
-*Part of 2.1.0-beta.1*
+## 2.1.0
 
 - Add support for CTRL-K Unity Search window.
 - The "Animation Viewer" search provider must be enabled in that CTRL-K search window (three dots at the top right).
 - Animation clips will show up in double in that Search window, as this version does not modify the stock Project search provider.
 - The prefix `anim:<your search query>` may be used in your search query to only show *Animation Viewer* results.
 
-![Untitled](../products/animation-viewer-img/ctrl-k.png)
+<video controls width="816">
+    <source src={require('../../updates/img/2024-08-15-p0-rvnD2iDbIn.mp4').default}/>
+</video>
 
 ## 2.0.4
 
