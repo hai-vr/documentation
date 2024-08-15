@@ -2,11 +2,25 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://docs.hai-vr.dev/updates</id>
     <title>Haï~ Blog</title>
-    <updated>2024-07-28T07:00:00.000Z</updated>
+    <updated>2024-08-15T03:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://docs.hai-vr.dev/updates"/>
     <subtitle>Haï~ Blog</subtitle>
     <icon>https://docs.hai-vr.dev/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[✨ Animation Viewer V2.1]]></title>
+        <id>https://docs.hai-vr.dev/updates/2024/08/15/p0</id>
+        <link href="https://docs.hai-vr.dev/updates/2024/08/15/p0"/>
+        <updated>2024-08-15T03:00:00.000Z</updated>
+        <summary type="html"><![CDATA[- Add support for CTRL-K Unity Search window.]]></summary>
+        <content type="html"><![CDATA[<ul>
+<li>Add support for CTRL-K Unity Search window.</li>
+<li>The "Animation Viewer" search provider must be enabled in that CTRL-K search window (three dots at the top right).</li>
+<li>Animation clips will show up in double in that Search window, as this version does not modify the stock Project search provider.</li>
+<li>The prefix <code>anim:&lt;your search query&gt;</code> may be used in your search query to only show <em>Animation Viewer</em> results.</li>
+</ul>
+<video controls="" width="816"><source src="/assets/medias/2024-08-15-p0-rvnD2iDbIn-3eac5840ade21d9e53e0605c90fc7362.mp4"></video>]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[🧪 Knowledge sharing "Nochat" devlog]]></title>
         <id>https://docs.hai-vr.dev/updates/2024/07/28/p0-ks</id>
@@ -19,7 +33,7 @@
 <video controls="" width="816"><source src="/assets/medias/saccflight-novrc-f2-904f8253af889f6d746721aea3553aff.mp4"></video>]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[⚙️ LetMeSee 1.1.3]]></title>
+        <title type="html"><![CDATA[⚙️ LetMeSee V1.1.3]]></title>
         <id>https://docs.hai-vr.dev/updates/2024/07/24/p0</id>
         <link href="https://docs.hai-vr.dev/updates/2024/07/24/p0"/>
         <updated>2024-07-24T00:00:00.000Z</updated>
@@ -34,7 +48,7 @@
 </ul>]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[⚙️ LetMeSee 1.1.2]]></title>
+        <title type="html"><![CDATA[⚙️ LetMeSee V1.1.2]]></title>
         <id>https://docs.hai-vr.dev/updates/2024/07/23/p0</id>
         <link href="https://docs.hai-vr.dev/updates/2024/07/23/p0"/>
         <updated>2024-07-23T00:00:00.000Z</updated>
@@ -47,7 +61,7 @@
 <p><em>Versions 1.1.0 and 1.1.1 contain errors.</em></p>]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[⚙️ Animation Viewer 2.0.4]]></title>
+        <title type="html"><![CDATA[⚙️ Animation Viewer V2.0.4]]></title>
         <id>https://docs.hai-vr.dev/updates/2024/07/22/p1</id>
         <link href="https://docs.hai-vr.dev/updates/2024/07/22/p1"/>
         <updated>2024-07-22T11:00:00.000Z</updated>
@@ -142,7 +156,7 @@ through the <code>AacFlState.Driving(...)</code> function, <a href="https://docs
 </ul>]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[⚙️ Prefabulous Universal 2.0.2]]></title>
+        <title type="html"><![CDATA[⚙️ Prefabulous Universal V2.0.2]]></title>
         <id>https://docs.hai-vr.dev/updates/2024/06/30/p0</id>
         <link href="https://docs.hai-vr.dev/updates/2024/06/30/p0"/>
         <updated>2024-06-30T00:00:00.000Z</updated>
@@ -150,7 +164,7 @@ through the <code>AacFlState.Driving(...)</code> function, <a href="https://docs
         <content type="html"><![CDATA[<p>Fix Assign UV Tile "Entire Mesh" no longer fails to process meshes that were set to EditorOnly.</p>]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[⚙️ Prefabulous Universal 2.0.1]]></title>
+        <title type="html"><![CDATA[⚙️ Prefabulous Universal V2.0.1]]></title>
         <id>https://docs.hai-vr.dev/updates/2024/06/29/p0</id>
         <link href="https://docs.hai-vr.dev/updates/2024/06/29/p0"/>
         <updated>2024-06-29T00:00:00.000Z</updated>
@@ -158,7 +172,7 @@ through the <code>AacFlState.Driving(...)</code> function, <a href="https://docs
         <content type="html"><![CDATA[<p>Hide all Prefabulous icons from the scene in Unity 2022 or above.</p>]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[⚙️ Lightbox Viewer 2.2.0]]></title>
+        <title type="html"><![CDATA[⚙️ Lightbox Viewer V2.2.0]]></title>
         <id>https://docs.hai-vr.dev/updates/2024/06/20/p0</id>
         <link href="https://docs.hai-vr.dev/updates/2024/06/20/p0"/>
         <updated>2024-06-20T00:00:00.000Z</updated>
@@ -169,7 +183,7 @@ which have code that runs when that component is destroyed.</p>
 <p>🔍 <a href="https://docs.hai-vr.dev/docs/changelogs/lightbox-viewer#220">View changelog</a></p>]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[⚙️ Auto-reset OSC config 1.1.4]]></title>
+        <title type="html"><![CDATA[⚙️ Auto-reset OSC config V1.1.4]]></title>
         <id>https://docs.hai-vr.dev/updates/2024/06/16/p1</id>
         <link href="https://docs.hai-vr.dev/updates/2024/06/16/p1"/>
         <updated>2024-06-16T17:00:00.000Z</updated>
@@ -179,7 +193,7 @@ which have code that runs when that component is destroyed.</p>
 </ul>]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[⚙️ ComboGestureExpressions 3.2.0]]></title>
+        <title type="html"><![CDATA[⚙️ ComboGestureExpressions V3.2.0]]></title>
         <id>https://docs.hai-vr.dev/updates/2024/06/16/p0</id>
         <link href="https://docs.hai-vr.dev/updates/2024/06/16/p0"/>
         <updated>2024-06-16T00:00:00.000Z</updated>
@@ -361,82 +375,5 @@ This only affects blendshapes that FaceTra creates, and will not affect any othe
 </ul>
 <p>🔍 <a href="https://docs.hai-vr.dev/docs/other/articles">View articles</a></p>
 <video controls="" width="816"><source src="/assets/medias/2024-04-07-p0-osc-locomotion-f-3a6648605af848dbc219f4d4b67fa9b7.mp4"></video>]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[⚠️ Advance notice for Prefabulous 2.0]]></title>
-        <id>https://docs.hai-vr.dev/updates/2024/04/05/p0</id>
-        <link href="https://docs.hai-vr.dev/updates/2024/04/05/p0"/>
-        <updated>2024-04-05T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Hello,]]></summary>
-        <content type="html"><![CDATA[<p>Hello,</p>
-<p>This is an advance notice regarding a future change for Prefabulous Avatar.</p>
-<p>In a future update, Prefabulous will be split into two packages:</p>
-<ul>
-<li><strong>Prefabulous Universal</strong> will be a package that does not require VRChat, and will contain the following components:<!-- -->
-<ul>
-<li>Change Avatar Scale</li>
-<li>Edit All Mesh Anchor Override</li>
-<li>Edit All Mesh Bounds</li>
-<li>Assign UV Tile</li>
-<li>Convert Blendshape Conventions</li>
-<li>Delete Polygons</li>
-<li>HaiXT Generate Blendshapes for Face Tracking Extensions</li>
-<li>Recalculate Normals</li>
-<li>Replace Textures</li>
-</ul>
-</li>
-<li><strong>Prefabulous for VRChat</strong> will be a package that requires VRChat, and will contain the following components:<!-- -->
-<ul>
-<li>HaiXT Face Tracking Extensions</li>
-<li>Lock Locomotion Menu Item</li>
-<li>Mass Blendshape Sync</li>
-<li>Import Expression Parameters</li>
-<li>Blank Expressions Menu and Parameters</li>
-<li>Blank FX Animator</li>
-<li>Blank Gesture Animator</li>
-<li>Replace Action Animator</li>
-<li>Replace Locomotion Animator</li>
-</ul>
-</li>
-</ul>
-<p>The aim of this split is to allow the development of <em>Prefabulous Universal</em> components in a way that benefits avatar frameworks
-of other social VR platforms, apps, and non-social VR apps (for instance, any VRM-compatible app).</p>
-<p>Most <em>Prefabulous for VRChat</em> components will depend on VRChat-specific animators and animation quirks,
-or component structures pertaining specifically to VRChat that would be uncommon in other social VR apps.</p>
-<p>For most VRChat users, this change should be invisible if you use VCC.
-If you are a developer who internally references classes or entities within Prefabulous, some changes are expected as described below.</p>
-<p>If you have any questions, please ask me about it on the <a href="https://docs.hai-vr.dev/docs/other/discord">Discord server</a>.</p>
-<p>Thank you for your understanding.</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="anticipated-changes">Anticipated changes<a href="https://docs.hai-vr.dev/updates/2024/04/05/p0#anticipated-changes" class="hash-link" aria-label="Direct link to Anticipated changes" title="Direct link to Anticipated changes">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="for-vrchat-users">For VRChat users<a href="https://docs.hai-vr.dev/updates/2024/04/05/p0#for-vrchat-users" class="hash-link" aria-label="Direct link to For VRChat users" title="Direct link to For VRChat users">​</a></h3>
-<div class="theme-admonition theme-admonition-warning admonition_xJq3 alert alert--warning"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>warning</div><div class="admonitionContent_BuS1"><p>This describes a future update, this has not yet been released at this time of writing.</p></div></div>
-<p>For most VRChat users, this change should be invisible.</p>
-<ul>
-<li>Installing Prefabulous for VRChat will automatically install Prefabulous Universal as a VCC dependency.</li>
-<li>The existing components in your scenes will continue working as if nothing has changed.</li>
-</ul>
-<p>However, if you're installing Prefabulous without VCC, you will need to:</p>
-<ul>
-<li>Open a blank scene in Unity Editor.</li>
-<li>Remove the Packages/dev.hai-vr.resilience.prefabulous folder</li>
-<li>Install the Prefabulous Universal package on GitHub.</li>
-<li>Install the Prefabulous for VRChat package on GitHub.</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="for-developers-who-might-be-referencing-prefabulous-entities">For developers who might be referencing Prefabulous entities<a href="https://docs.hai-vr.dev/updates/2024/04/05/p0#for-developers-who-might-be-referencing-prefabulous-entities" class="hash-link" aria-label="Direct link to For developers who might be referencing Prefabulous entities" title="Direct link to For developers who might be referencing Prefabulous entities">​</a></h3>
-<ul>
-<li>The GUIDs for these components will not change.</li>
-<li>The assemblies for most of these components <strong>will</strong> change.</li>
-<li>The namespace for most of these components <strong>will</strong> change.</li>
-<li>Some component names <strong>will</strong> change.<!-- -->
-<ul>
-<li>The prefix "PrefabulousHai" is likely to be changed to just "Prefabulous".</li>
-</ul>
-</li>
-<li>The NDMF plugin names <strong>will</strong> change.</li>
-<li>Classes will be moved across packages.</li>
-<li>Many classes used internally by Prefabulous will change name or will be moved around.</li>
-<li>The technical package name of Prefabulous for VRChat will be the same as the one currently used for Prefabulous Avatar.</li>
-</ul>
-<p>If you're a developer who might be concerned by such changes, you're invited to let me know about it on the <a href="https://docs.hai-vr.dev/docs/other/discord">Discord server</a>.</p>]]></content>
     </entry>
 </feed>
