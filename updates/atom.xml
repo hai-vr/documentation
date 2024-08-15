@@ -2,11 +2,40 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://docs.hai-vr.dev/updates</id>
     <title>Haï~ Blog</title>
-    <updated>2024-08-15T05:00:00.000Z</updated>
+    <updated>2024-08-15T22:01:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://docs.hai-vr.dev/updates"/>
     <subtitle>Haï~ Blog</subtitle>
     <icon>https://docs.hai-vr.dev/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[⚙️ Prefabulous for VRM V2.0.1]]></title>
+        <id>https://docs.hai-vr.dev/updates/2024/08/15/p4</id>
+        <link href="https://docs.hai-vr.dev/updates/2024/08/15/p4"/>
+        <updated>2024-08-15T22:01:00.000Z</updated>
+        <summary type="html"><![CDATA[- Compilation should no longer fail in non-VRChat projects that still have the VRCSDKVRCSDK3 scripting define around.]]></summary>
+        <content type="html"><![CDATA[<ul>
+<li>Compilation should no longer fail in non-VRChat projects that still have the <code>VRC_SDK_VRCSDK3</code> scripting define around.<!-- -->
+<ul>
+<li>Components now extend VRChat's <code>IEditorOnly</code> class only if the VRChat Avatars SDK is installed.</li>
+</ul>
+</li>
+</ul>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[⚙️ Prefabulous Universal V2.0.3]]></title>
+        <id>https://docs.hai-vr.dev/updates/2024/08/15/p3</id>
+        <link href="https://docs.hai-vr.dev/updates/2024/08/15/p3"/>
+        <updated>2024-08-15T22:00:00.000Z</updated>
+        <summary type="html"><![CDATA[- Compilation should no longer fail in non-VRChat projects that still have the VRCSDKVRCSDK3 scripting define around.]]></summary>
+        <content type="html"><![CDATA[<ul>
+<li>Compilation should no longer fail in non-VRChat projects that still have the <code>VRC_SDK_VRCSDK3</code> scripting define around.<!-- -->
+<ul>
+<li>Components now extend VRChat's <code>IEditorOnly</code> class only if the VRChat Avatars SDK is installed.</li>
+</ul>
+</li>
+<li>Delete Polygons should now run before AAO.</li>
+</ul>]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[⚙️ Blendshape Viewer V2.1.2]]></title>
         <id>https://docs.hai-vr.dev/updates/2024/08/15/p2</id>
@@ -322,44 +351,5 @@ VRChat is no longer required.</p>
         <updated>2024-04-28T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Fix Prefabulous was not able to compile because it was using a deprecated define VRCSDKVRCSDK3 that was missing on some users' projects.]]></summary>
         <content type="html"><![CDATA[<p>Fix Prefabulous was not able to compile because it was using a deprecated define <code>VRC_SDK_VRCSDK3</code> that was missing on some users' projects.</p>]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[☀️ Denormalized Avatar Exporter]]></title>
-        <id>https://docs.hai-vr.dev/updates/2024/04/24/p0</id>
-        <link href="https://docs.hai-vr.dev/updates/2024/04/24/p0"/>
-        <updated>2024-04-24T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[I am releasing "Denormalized Avatar Exporter", a Unity Editor tool that lets you export avatars normally designed for use in VRChat into VTubing apps, without the disruptive pre-processing steps that would normally be needed:]]></summary>
-        <content type="html"><![CDATA[<div><p><span></span></p><div class="hai_tag_ZcC4 hai_tag_compatible_with_vsfavatar_gZ5Q">Compatible with <!-- -->VSeeFace</div><div class="hai_tag_ZcC4 hai_tag_compatible_with_vnyan_N46H">Compatible with <!-- -->VNyan</div><div class="hai_tag_ZcC4 hai_tag_compatible_with_warudo_YAVq">Compatible with <!-- -->Warudo</div><p></p></div>
-<p>I am releasing "Denormalized Avatar Exporter", a Unity Editor tool that lets you export avatars normally designed for use in VRChat into VTubing apps, without the disruptive pre-processing steps that would normally be needed:</p>
-<ul>
-<li>using the <a href="https://www.vseeface.icu/#vsfavatar" target="_blank" rel="noopener noreferrer">VSFAvatar</a> format used in the <strong><a href="https://suvidriel.itch.io/vnyan" target="_blank" rel="noopener noreferrer">VNyan</a></strong> VTubing app and the <strong><a href="https://www.vseeface.icu/" target="_blank" rel="noopener noreferrer">VSeeFace</a></strong> VTubing app,</li>
-<li>and as a <a href="https://docs.warudo.app/docs/modding/character-mod" target="_blank" rel="noopener noreferrer">Character Mod</a> for use in the <strong><a href="https://warudo.app/" target="_blank" rel="noopener noreferrer">Warudo</a></strong> VTubing app.</li>
-</ul>
-<p>You don't have to normalize your avatar bones, and you don't have to export your avatar to VRM and import that VRM back into Unity.</p>
-<p>Normalization is done when the avatar is being exported, so that you can keep editing the original avatar model file or prefabs just like anyone
-would normally do for a VRChat avatar.</p>
-<p>It will also permit the use of some non-destructive avatar tools initially created for VRChat that are based on NDMF (Non-Destructive Modular Framework).</p>
-<p>🗒️ <a href="https://docs.hai-vr.dev/docs/products/denormalized-avatar-exporter">Open documentation</a></p>
-<video controls="" width="816"><source src="/assets/medias/denormalized-f-a0f2c0c5cd96c69743e87b5f48c0cd76.mp4"></video>]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[☀️ Generate Twist Bones (Prefabulous V1.11)]]></title>
-        <id>https://docs.hai-vr.dev/updates/2024/04/15/p0</id>
-        <link href="https://docs.hai-vr.dev/updates/2024/04/15/p0"/>
-        <updated>2024-04-15T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[A new component, Generate Twist Bones (Alpha), has been added to Prefabulous.]]></summary>
-        <content type="html"><![CDATA[<p>A new component, <a href="https://docs.hai-vr.dev/docs/products/prefabulous/universal/generate-twist-bones">Generate Twist Bones (Alpha)</a>, has been added to Prefabulous.</p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="new-component-generate-twist-bones-alpha">New component: <a href="https://docs.hai-vr.dev/docs/products/prefabulous/universal/generate-twist-bones">Generate Twist Bones (Alpha)</a><a href="https://docs.hai-vr.dev/updates/2024/04/15/p0#new-component-generate-twist-bones-alpha" class="hash-link" aria-label="Direct link to new-component-generate-twist-bones-alpha" title="Direct link to new-component-generate-twist-bones-alpha">​</a></h3>
-<p>This component will generate twist bones, which improves the look of the elbow joint by twisting the part of the lower arm that is closer to the elbow.</p>
-<p>It creates new twist bones with constraints, and automatically repaints the bones weights of all meshes of the avatar which use that bone.</p>
-<div class="theme-admonition theme-admonition-warning admonition_xJq3 alert alert--warning"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>warning</div><div class="admonitionContent_BuS1"><p><strong>🚧🚧🚧 This component is currently in an alpha phase. 🚧🚧🚧</strong></p><p>At the moment, it only fully supports meshes that are part of the base mesh armature.</p><p>The current version <strong>will not</strong> be able to generate twist bones for additional meshes used by <a href="https://vrcfury.com/components/armature-link/" target="_blank" rel="noopener noreferrer">VRCFury Armature Link</a>,
-and <strong>may not</strong> be able to generate twist bones for additional meshes used by <a href="https://modular-avatar.nadena.dev/docs/reference/merge-armature" target="_blank" rel="noopener noreferrer">Modular Avatar Merge Armature</a>.</p><p>Both are intended to be supported in the future, but it's significantly harder to do so.
-The component is still released in this state of development as it is beneficial for the bare skin of your avatar.</p><p>Thank you for your understanding.</p></div></div>
-<video controls="" muted="" width="816"><source src="/assets/medias/ByAzbmmx4w-64496cc728bc3c5d12f88fef83294261.mp4"></video>
-<video controls="" muted="" width="816"><source src="/assets/medias/auto-twist-f-a6842f22991156aa1957ff1331720a8c.mp4"></video>
-<p>🗒️ <a href="https://docs.hai-vr.dev/docs/products/prefabulous/universal/generate-twist-bones">Open documentation</a></p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="about-prefabulous-20">About Prefabulous 2.0<a href="https://docs.hai-vr.dev/updates/2024/04/15/p0#about-prefabulous-20" class="hash-link" aria-label="Direct link to About Prefabulous 2.0" title="Direct link to About Prefabulous 2.0">​</a></h3>
-<p>This update does not include the <a href="https://docs.hai-vr.dev/updates/2024/04/05/p0">Prefabulous Universal / Prefabulous for VRChat</a> package split yet,
-as that particular update needs more regression testing to ensure the stability of existing projects.</p>]]></content>
     </entry>
 </feed>
