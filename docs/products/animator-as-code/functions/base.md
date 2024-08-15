@@ -614,10 +614,10 @@ Animates an object in the hierarchy relative to the animator root, the tradition
 Animates the active property of a GameObject, toggling it.
 
 - `AacFlSettingCurve Animates(Component anyComponent, string property)`<br/>
-Animates the enabled property of a component, toggling it. The runtime type of the component will be used.
+Animates the property of a component. The runtime type of the component will be used.
 
-- `AacFlSettingCurve Animates(Component[] anyComponents, string property)`<br/>
-Animates the enabled property of several components, toggling them. The runtime type of the component will be used. // FIXME: Safety is not provived on nulls. It should probably be, for convenience.
+- `AacFlSettingCurve Animates(Component[] anyComponentsWithNulls, string property)`<br/>
+Animates the property of several components. The runtime type of the component will be used. The array can safely contain null values.
 
 - `AacFlSettingCurve AnimatesAnimator(AacFlParameter floatParameter)`<br/>
 Animates a Float parameter of the animator (may sometimes be referred to as an Animated Animator Parameter, or AAP).
@@ -625,14 +625,20 @@ Animates a Float parameter of the animator (may sometimes be referred to as an A
 - `AacFlSettingCurveColor AnimatesColor(Component anyComponent, string property)`<br/>
 Animates a color property of a component. The runtime type of the component will be used.
 
-- `AacFlSettingCurveColor AnimatesColor(Component[] anyComponents, string property)`<br/>
-Animates a color property of several components. The runtime type of the component will be used. // FIXME: Safety is not provived on nulls. It should probably be, for convenience.
+- `AacFlSettingCurveColor AnimatesColor(Component[] anyComponentsWithNulls, string property)`<br/>
+Animates a color property of several components. The runtime type of the component will be used. The array can safely contain null values.
 
 - `AacFlSettingCurveColor AnimatesHDRColor(Component anyComponent, string property)`💡<br/>
-  Animates a HDR color property of a component (uses XYZW instead of RGBA). The runtime type of the component will be used. // FIXME: this needs multi-component, with safety
+Animates an HDR color property of a component (uses XYZW instead of RGBA). The runtime type of the component will be used.
+
+- `AacFlSettingCurveColor AnimatesHDRColor(Component[] anyComponentsWithNulls, string property)`💡<br/>
+Animates an HDR color property of several components (uses XYZW instead of RGBA). The runtime type of the component will be used.
 
 - `AacFlSettingCurveObjectReference AnimatesObjectReference(Component anyComponent, string property)`💡<br/>
-  Animates an object reference of a component. The runtime type of the component will be used. // FIXME: this needs multi-component, with safety
+Animates an object reference of a component. The runtime type of the component will be used.
+
+- `AacFlSettingCurveObjectReference AnimatesObjectReference(Component[] anyComponentsWithNulls, string property)`💡<br/>
+Animates an object reference of several components. The runtime type of the component will be used.
 
 - `EditorCurveBinding BindingFromComponent(Component anyComponent, string propertyName)`<br/>
 Returns an EditorCurveBinding of a component, relative to the animator root. The runtime type of the component will be used. This is meant to be used in conjunction with traditional animation APIs.
