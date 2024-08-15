@@ -15,7 +15,7 @@
         <summary type="html"><![CDATA[- Fix layout errors should no longer be produced when the search returns 0 results.]]></summary>
         <content type="html"><![CDATA[<ul>
 <li>Fix layout errors should no longer be produced when the search returns 0 results.</li>
-<li>Prevents the editor from hanging up when the user mistakenly pastes a page long of unrelated content.<!-- -->
+<li>Prevents the editor from hanging up when the user mistakenly pastes a page long of unrelated content in the search field.<!-- -->
 <ul>
 <li>The search query is now limited to 100 characters max.</li>
 </ul>
@@ -27,9 +27,9 @@
         <id>https://docs.hai-vr.dev/updates/2024/08/15/p1</id>
         <link href="https://docs.hai-vr.dev/updates/2024/08/15/p1"/>
         <updated>2024-08-15T04:00:00.000Z</updated>
-        <summary type="html"><![CDATA[- Prevents the editor from hanging up when the user mistakenly pastes a page long of unrelated content.]]></summary>
+        <summary type="html"><![CDATA[- Prevents the editor from hanging up when the user mistakenly pastes a page long of unrelated content in the search field.]]></summary>
         <content type="html"><![CDATA[<ul>
-<li>Prevents the editor from hanging up when the user mistakenly pastes a page long of unrelated content.<!-- -->
+<li>Prevents the editor from hanging up when the user mistakenly pastes a page long of unrelated content in the search field.<!-- -->
 <ul>
 <li>The search query is now limited to 100 characters max.</li>
 </ul>
