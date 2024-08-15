@@ -2,12 +2,9 @@
 title: Blendshape Viewer
 ---
 
-## 2.1.2 (Planned)
+## 2.1.2
 
-:::danger
-This change has not been released yet.
-:::
-
+- Fix layout errors should no longer be produced when the search returns 0 results.
 - Prevents the editor from hanging up when the user mistakenly pastes a page long of unrelated content.
   - The search query is now limited to 100 characters max.
 
