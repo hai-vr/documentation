@@ -35,7 +35,7 @@ The changelogs of some products aren't available at this time.
 | [Visual Expressions Editor](./changelogs/visual-expressions-editor)                                         | 2.0.3                 | 2023-11     |   |
 | [Vixen](./changelogs/vixen)                                                                                 | 1.2.0                 | 2024-06     | * |
 | **APIs**                                                                                                    |                       |             |   |
-| [Animator As Code](./changelogs/animator-as-code)                                                           | 1.1.0-beta.2          | **2024-07** |   |
+| [Animator As Code](./changelogs/animator-as-code)                                                           | 1.1.0-beta.2          | **2024-07** | * |
 | [Animator As Code - VRChat](./changelogs/animator-as-code-vrchat)                                           | 1.1.0-beta.2          | **2024-07** |   |
 | [Animator As Code - VRChat Destructive Workflow](./changelogs/animator-as-code-vrchat-destructive-workflow) | 1.1.0-beta.1          | 2024-06     |   |
 | [Animator As Code - Modular Avatar functions](./changelogs/animator-as-code-modular-avatar)                 | 1.1.0-beta.3          | **2024-08** |   |
