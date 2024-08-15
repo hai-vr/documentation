@@ -2,11 +2,26 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://docs.hai-vr.dev/updates</id>
     <title>Haï~ Blog</title>
-    <updated>2024-08-15T04:00:00.000Z</updated>
+    <updated>2024-08-15T05:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://docs.hai-vr.dev/updates"/>
     <subtitle>Haï~ Blog</subtitle>
     <icon>https://docs.hai-vr.dev/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[⚙️ Blendshape Viewer V2.1.2]]></title>
+        <id>https://docs.hai-vr.dev/updates/2024/08/15/p2</id>
+        <link href="https://docs.hai-vr.dev/updates/2024/08/15/p2"/>
+        <updated>2024-08-15T05:00:00.000Z</updated>
+        <summary type="html"><![CDATA[- Fix layout errors should no longer be produced when the search returns 0 results.]]></summary>
+        <content type="html"><![CDATA[<ul>
+<li>Fix layout errors should no longer be produced when the search returns 0 results.</li>
+<li>Prevents the editor from hanging up when the user mistakenly pastes a page long of unrelated content.<!-- -->
+<ul>
+<li>The search query is now limited to 100 characters max.</li>
+</ul>
+</li>
+</ul>]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[⚙️ Property Finder V2.0.4]]></title>
         <id>https://docs.hai-vr.dev/updates/2024/08/15/p1</id>
@@ -346,35 +361,5 @@ The component is still released in this state of development as it is beneficial
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="about-prefabulous-20">About Prefabulous 2.0<a href="https://docs.hai-vr.dev/updates/2024/04/15/p0#about-prefabulous-20" class="hash-link" aria-label="Direct link to About Prefabulous 2.0" title="Direct link to About Prefabulous 2.0">​</a></h3>
 <p>This update does not include the <a href="https://docs.hai-vr.dev/updates/2024/04/05/p0">Prefabulous Universal / Prefabulous for VRChat</a> package split yet,
 as that particular update needs more regression testing to ensure the stability of existing projects.</p>]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[✨ FaceTra Shape Creator V0.8]]></title>
-        <id>https://docs.hai-vr.dev/updates/2024/04/08/p0</id>
-        <link href="https://docs.hai-vr.dev/updates/2024/04/08/p0"/>
-        <updated>2024-04-08T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[New Construction Line: Blush Modifier Selection]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="new-construction-line-blush-modifier-selection">New Construction Line: <a href="https://docs.hai-vr.dev/docs/products/facetra-shape-creator/construction-lines#optional-blush-modifier-selection">Blush Modifier Selection</a><a href="https://docs.hai-vr.dev/updates/2024/04/08/p0#new-construction-line-blush-modifier-selection" class="hash-link" aria-label="Direct link to new-construction-line-blush-modifier-selection" title="Direct link to new-construction-line-blush-modifier-selection">​</a></h2>
-<p>Many avatars have blendshapes hidden inside the head to make the character blush.</p>
-<p>However, when you squint, or when you puff your cheeks, these blush blendshapes will visibly clip through your face expressions.</p>
-<p>To address this, Blush Modifier Selection is a new construction line, which can only be selected using blendshapes (it is not a traditional vertex selection).
-It can be left empty.</p>
-<p>When blendshapes are added to the Blush Modifier Selection, the blendshape will be simulated to be active, so that they will be moved by the following shapes:</p>
-<ul>
-<li>Cheek Squint</li>
-<li>Cheek Puff</li>
-</ul>
-<p>Unfortunately, this will not work with all avatar bases. The density of the blush mesh needs to be similar (or half as similar) to the face mesh itself. If it's a gigantic polygon, it will not work so well.</p>
-<video controls="" muted="" width="816"><source src="/assets/medias/blush-facetra-f-4708d05b30588cd4debebd542083ccec.mp4"></video>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="convert-from-unified-expressions-to-arkit">Convert from Unified Expressions to ARKit<a href="https://docs.hai-vr.dev/updates/2024/04/08/p0#convert-from-unified-expressions-to-arkit" class="hash-link" aria-label="Direct link to Convert from Unified Expressions to ARKit" title="Direct link to Convert from Unified Expressions to ARKit">​</a></h2>
-<p>Functionality almost identical to <a href="https://docs.hai-vr.dev/docs/products/prefabulous/universal/convert-blendshape-conventions">Prefabulous Convert Blendshape Conventions</a> has been added natively to FaceTra Shape Creator, in the Output section.
-This only affects blendshapes that FaceTra creates, and will not affect any other non-face tracking related blendshapes.</p>
-<ul>
-<li>Contrary to Prefabulous, the VRChat SDK is not required.</li>
-<li>This allows you to export blendshapes using the ARKit naming convention. It will still be a bit messy as FaceTra creates many more blendshapes than ARKit needs, such as left/right variants for blendshapes that do not have left/right variants in ARKit.<!-- -->
-<ul>
-<li>The blendshapes will only be converted when entering Play mode, or baking the avatar using NDMF, or preparing a Resonite bake using FaceTra. Edit mode will still display the blendshapes using the Unified Expressions naming convention.</li>
-</ul>
-</li>
-</ul>]]></content>
     </entry>
 </feed>
