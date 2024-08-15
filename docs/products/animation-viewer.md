@@ -10,7 +10,7 @@ import HaiSupport from "/docs/_support.mdx";
 <HaiTag isUniversal={true} />
 </HaiTags>
 
-*Animation Viewer* lets you preview animations in the Project view browser.
+*Animation Viewer* lets you preview animations in the Project view browser, and [the CTRL-K Search window](#ctrl-k-search-window).
 
 :::tip
 This does not require VRChat to run. It has been tested to work on Unity 2019, and should work on newer versions.
@@ -77,7 +77,7 @@ This lets you preview the avatar in a different pose than the bicycle pose (see 
 
 ## Additional notes
 
-- Remember you can change the field of view of the scene camera.
+- You can change the field of view of the scene camera.
 
 ![Untitled](animation-viewer-img/Untitled%206.png)
 
@@ -88,3 +88,19 @@ This can also be used to hide hats and other objects, letting you generate more 
 <video controls width="816" autostart="false">
     <source src={QdOYmOWyly}/>
 </video>
+
+## CTRL-K Search window
+
+:::note
+This feature has been added in V2.1.0.
+
+It will only be available on projects that use Unity 2021 and newer.
+:::
+
+If you press CTRL-K, you will open the [Unity Search](https://docs.unity3d.com/Manual/search-overview.html) window.
+
+After opening this window, click on the three dots at the top right, and make sure *Animation Viewer (anim:)*
+
+You can use the prefix `anim:<your search query>` to only show *Animation Viewer* results.
+
+![Untitled](animation-viewer-img/ctrl-k.png)
