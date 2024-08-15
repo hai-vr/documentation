@@ -4,10 +4,24 @@
         <title>Haï~ Blog</title>
         <link>https://docs.hai-vr.dev/updates</link>
         <description>Haï~ Blog</description>
-        <lastBuildDate>Thu, 15 Aug 2024 03:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 15 Aug 2024 04:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[⚙️ Property Finder V2.0.4]]></title>
+            <link>https://docs.hai-vr.dev/updates/2024/08/15/p1</link>
+            <guid>https://docs.hai-vr.dev/updates/2024/08/15/p1</guid>
+            <pubDate>Thu, 15 Aug 2024 04:00:00 GMT</pubDate>
+            <description><![CDATA[- Prevents the editor from hanging up when the user mistakenly pastes a page long of unrelated content.]]></description>
+            <content:encoded><![CDATA[<ul>
+<li>Prevents the editor from hanging up when the user mistakenly pastes a page long of unrelated content.<!-- -->
+<ul>
+<li>The search query is now limited to 100 characters max.</li>
+</ul>
+</li>
+</ul>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[✨ Animation Viewer V2.1]]></title>
             <link>https://docs.hai-vr.dev/updates/2024/08/15/p0</link>
@@ -363,19 +377,6 @@ This only affects blendshapes that FaceTra creates, and will not affect any othe
 </ul>
 </li>
 </ul>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[🧪 Knowledge sharing "Animating locomotion using OSC Trackers"]]></title>
-            <link>https://docs.hai-vr.dev/updates/2024/04/07/p0-ks</link>
-            <guid>https://docs.hai-vr.dev/updates/2024/04/07/p0-ks</guid>
-            <pubDate>Sun, 07 Apr 2024 00:00:00 GMT</pubDate>
-            <description><![CDATA[A new knowledge sharing article has been published, "Animating locomotion using OSC Trackers".]]></description>
-            <content:encoded><![CDATA[<p>A new knowledge sharing article has been published, "Animating locomotion using OSC Trackers".</p>
-<ul>
-<li>2024-04-07 <a href="https://hai-vr.notion.site/Animating-locomotion-using-OSC-Trackers-Retrospective-449847c5407d4173b2c3562523c087ee" target="_blank" rel="noopener noreferrer">"Animating locomotion using OSC Trackers, Retrospective"</a></li>
-</ul>
-<p>🔍 <a href="https://docs.hai-vr.dev/docs/other/articles">View articles</a></p>
-<video controls="" width="816"><source src="/assets/medias/2024-04-07-p0-osc-locomotion-f-3a6648605af848dbc219f4d4b67fa9b7.mp4"></video>]]></content:encoded>
         </item>
     </channel>
 </rss>
