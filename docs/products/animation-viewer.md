@@ -99,7 +99,7 @@ It will only be available on projects that use Unity 2021 and newer.
 
 If you press CTRL-K, you will open the [Unity Search](https://docs.unity3d.com/Manual/search-overview.html) window.
 
-After opening this window, click on the three dots at the top right, and make sure *Animation Viewer (anim:)*
+After opening this window, click on the three dots at the top right, and make sure *Animation Viewer (anim:)* is checked.
 
 You can use the prefix `anim:<your search query>` to only show *Animation Viewer* results.
 
