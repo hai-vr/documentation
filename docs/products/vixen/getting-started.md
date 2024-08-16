@@ -121,7 +121,20 @@ In the Menu category, you can choose other modes:
 
 If you leave the parameter name blank on an Advanced Menu, Contact, or PhysBone, we will choose one for you.
 
+### Interpolation
+
 Most of the modes also have the following properties:
 
 - You can set the **Interpolation Duration** in seconds, which is the time it takes for the element to go from active to inactive, and inversely.
 - In most modes, if the Interpolation Duration is set, you can choose the **Interpolation Curve**. The interpolation controls the easing curve when the element goes from active to inactive.
+
+### Custom bounds
+
+:::note
+This feature was added in V1.3.0.
+:::
+
+In Contact, PhysBone, or OSC Float modes, the control is inactive when the value is 0.0, and active when the value is 1.0.
+
+You can choose custom bounds so that the element is inactive when the value is closest to the lower bound,
+and active when the value is closest to the upper bound.

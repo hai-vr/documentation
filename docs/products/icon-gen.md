@@ -178,6 +178,16 @@ Layers can be set into different modes which determines how that layer will affe
   - **Inverse Mask**: The picture is cut away from the shape of the element.
   - **Custom Material**: The layer uses a custom material of your choice.
 
+### Advanced: Export to PNG
+
+:::note
+This feature was added in V1.1.0.
+:::
+
+You are meant to use the generated icons directly as icons for your menus.
+
+If you wish to export all of them, you can go to *Advanced*, and click the *Export all to PNG...* button.
+
 ## Capture thumbnails for VRChat in Play Mode
 
 ### How to use

@@ -49,6 +49,19 @@ This tool requires VRChat, because it uses VRChat’s OSC trackers. It is not co
 - In VRChat, Settings > Tracking and IK, make sure you lower the calibration radius so that the double hip trackers don't try to bind themselves as being a chest tracker
 - If you need to readjust your tracking belt because some of your trackers have moved, you may need to click the "Realign trackers" button on the window, and maybe recalibrate in VRChat
 
+## Other options
+
+:::note
+The following options were added in V1.3.0.
+:::
+
+- **Freeze with both trackers are lost**: By default, this is ON. When both trackers are lost, the double tracker will freeze in place.
+  - If this is OFF, the tracker will continue to use the data of the last known working tracker, which may be flying off.
+  - The behaviour when it is ON is closer to VRChat's current behaviour when a single tracker is lost.
+- **Auto-detect hip trackers**: By default, this is ON. Hip trackers will be detected automatically when you shake your hips.
+  - If this is OFF, you will have to specify the serial numbers of the trackers.
+  - When this is OFF, it works identically to how the [Double Chest Tracker](./double-hip-tracker/double-chest-tracker) works.
+
 ## Optional: Double Chest Tracker
 
 See [Double Chest Tracker](./double-hip-tracker/double-chest-tracker).

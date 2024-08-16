@@ -70,14 +70,14 @@ The Custom feature was added in V1.1.0.
 
 ## Arbitrary blendshapes
 
+:::note
+This feature was added in V1.2.0.
+:::
+
 Some plugins may generate blendshapes only when the avatar is being built.
 
 When you are editing the properties of a SkinnedMeshRenderer, the field at the bottom of that panel lets you add arbitrary blendshape names,
 even if they don't exist in Edit mode.
-
-:::warning
-The feature was added in V1.2.0.
-:::
 
 ## Property types
 

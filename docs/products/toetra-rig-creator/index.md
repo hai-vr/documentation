@@ -1,5 +1,6 @@
 ﻿---
 title: 🔒 ToeTra Rig Creator
+unlisted: true
 ---
 
 # Haï's ToeTra Rig Creator

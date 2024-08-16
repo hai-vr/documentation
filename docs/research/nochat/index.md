@@ -139,6 +139,26 @@ There some are additional surprises in this iteration:
 In the first prefab, I used the pool table pickups as an easily attainable first goal. The [Attach-To-Me](https://bdunderscore.github.io/attach-to-me/en/) prefab requires handling complex pickup interactions, including avatar bones,
 so this provides an opportunity to add an avatar.
 
+Before importing this prefab, I need to get the following elements ready:
+- Import an avatar model,
+- Make a viewpoint on the head of that avatar move with the camera,
+- Make the hands of that avatar move with the controllers,
+- If possible, also move the fingers of the avatar with the controllers.
+
+This means we need some kind of IK solder. I'm already in the process of making one as part of another project,
+so I'm going to import parts of that project into this one.
+
+The bones of avatars have no guarantee of being oriented the same way across avatars, which is why Unity provides
+an Avatar asset located on the Animator component of humanoids (which is created during the import process).
+
+That Avatar asset contains information about corrective orientations, which animation systems can use to animate multiple
+humanoid models regardless of those differences (although, this is not the only way to get corrective orientations).
+
+VRChat exposes humanoid bone positions and rotations without any corrective information, meaning that if you attach something on your avatar,
+and then switch avatars, it may end up in a completely different location.
+
+We'll still need those corrective orientation in order to attach the hands to the avatar in the correct orientation.
+
 *To be continued...*
 
 ## Source code
