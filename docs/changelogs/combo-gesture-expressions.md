@@ -2,7 +2,7 @@
 title: ComboGestureExpressions
 ---
 
-## 3.2.0 (Planned)
+## 3.2.1 (Planned)
 
 :::danger
 This change has not been released yet.
