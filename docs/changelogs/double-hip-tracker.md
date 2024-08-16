@@ -11,17 +11,21 @@ This change has not been released yet.
 This update introduces a change in the behaviour of the double trackers: They *should* no longer fly away when both trackers are lost.
 
 Changes:
+- The UI is now organized across tabs.
+  - *Align trackers* tab: For normal use. It has the buttons to realign trackers.
+  - *Edit trackers* tab: Configure which Double Trackers are enabled, and their configuration.
+  - *Other* tab: Provides rarely used options.
 - Add **"Freeze when both trackers are lost"** checkbox: If both trackers of any given double tracker are lost, then the tracker will freeze in place.
   - This new behaviour may be more in line with VRChat's current handling of single trackers being lost. The previous behaviour used to be that the tracker
     would fall back to the degraded data of the last known working tracker.
   - On previous versions, this checkbox would be effectively OFF. The default behavior is now for this checkbox to be ON.
-- Add **Double Custom Tracker**: You can now create a third, custom double tracker of your choice.
-  - This works identically to the Double Chest Tracker.
+- Add **Auto-detect hip trackers** checkbox: You can now disable automatic detection of hip trackers.
+  - When you disable automatic detection, it works identically to the Double Chest Tracker.
   - You can use this if you want to always use the same two hip tracker serial numbers without needing to shake your hips, but beware,
     you may have to press the "Realign Trackers" button if you happen to wear your double hip tracker belt after starting the application.
 - Add vertical offset options: Some users have been having issues with the OSC tracker having some sort of vertical offset.
   - No solution had been found for this, so the option to offset the tracker vertically stays.
-
+  
 ## 1.2.0
 
 This update provides no changes on the trackers themselves, only compatibility improvements.
