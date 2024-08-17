@@ -3,6 +3,9 @@
   <component name="UserContentModel">
     <attachedFolders />
     <explicitIncludes />
-    <explicitExcludes />
+    <explicitExcludes>
+      <Path>.docusaurus</Path>
+      <Path>build</Path>
+    </explicitExcludes>
   </component>
 </project>
