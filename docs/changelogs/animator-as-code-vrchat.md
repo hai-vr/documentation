@@ -2,6 +2,10 @@
 title: Animator As Code - VRChat
 ---
 
+## 1.1.0-beta.3
+
+Allow installation with VRChat 3.7.x.
+
 ## 1.1.0-beta.2
 
 - Update inline docs.

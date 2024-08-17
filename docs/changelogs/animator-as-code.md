@@ -2,7 +2,7 @@
 title: Animator As Code
 ---
 
-## 1.1.0-beta.3 (Planned)
+## 1.1.0-beta.3
 
 :::danger
 This change has not been released yet.
