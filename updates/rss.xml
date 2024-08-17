@@ -4,10 +4,23 @@
         <title>Haï~ Blog</title>
         <link>https://docs.hai-vr.dev/updates</link>
         <description>Haï~ Blog</description>
-        <lastBuildDate>Thu, 15 Aug 2024 22:01:00 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 17 Aug 2024 09:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[⚙️ ComboGestureExpressions V3.2.1]]></title>
+            <link>https://docs.hai-vr.dev/updates/2024/08/17/p0</link>
+            <guid>https://docs.hai-vr.dev/updates/2024/08/17/p0</guid>
+            <pubDate>Sat, 17 Aug 2024 09:00:00 GMT</pubDate>
+            <description><![CDATA[- Allow installation with VRChat Avatars SDK 3.7.x]]></description>
+            <content:encoded><![CDATA[<ul>
+<li>Allow installation with VRChat Avatars SDK 3.7.x</li>
+<li>Allow installation with Animator As Code 1.1.x</li>
+<li>Allow installation with Visual Expressions Editor 2.x</li>
+<li>Allow installation with Animation Viewer 2.x</li>
+</ul>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[⚙️ Prefabulous for VRM V2.0.1]]></title>
             <link>https://docs.hai-vr.dev/updates/2024/08/15/p4</link>
@@ -344,14 +357,6 @@ VRChat is no longer required.</p>
             <content:encoded><![CDATA[<p>You can now add arbitrary blendshape properties on a SkinnedMeshRenderer, even if they don't exist in Edit mode.</p>
 <p>This feature was added to support the upcoming release of <a href="https://docs.hai-vr.dev/docs/products/starmesh">Starmesh</a>.</p>
 <video controls=""><source src="/assets/medias/2024-06-03-p0-Dh94zbhLJh-bcda0311ce760362e037ba0cfd78d4cf.mp4"></video>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[⚙️ Prefabulous Avatar V1.11.2]]></title>
-            <link>https://docs.hai-vr.dev/updates/2024/04/28/p0</link>
-            <guid>https://docs.hai-vr.dev/updates/2024/04/28/p0</guid>
-            <pubDate>Sun, 28 Apr 2024 00:00:00 GMT</pubDate>
-            <description><![CDATA[Fix Prefabulous was not able to compile because it was using a deprecated define VRCSDKVRCSDK3 that was missing on some users' projects.]]></description>
-            <content:encoded><![CDATA[<p>Fix Prefabulous was not able to compile because it was using a deprecated define <code>VRC_SDK_VRCSDK3</code> that was missing on some users' projects.</p>]]></content:encoded>
         </item>
     </channel>
 </rss>
