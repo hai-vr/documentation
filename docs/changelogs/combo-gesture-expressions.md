@@ -2,11 +2,7 @@
 title: ComboGestureExpressions
 ---
 
-## 3.2.1 (Planned)
-
-:::danger
-This change has not been released yet.
-:::
+## 3.2.1
 
 - Allow installation with VRChat Avatars SDK 3.7.x
 - Allow installation with Animator As Code 1.1.x
