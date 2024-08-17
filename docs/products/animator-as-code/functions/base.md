@@ -682,10 +682,10 @@ Define the curve to be exactly one frame by defining two constant keyframes, usu
 - `void WithOneFrame(Object objectReference)`💡<br/>
 Define the curve to be exactly one frame by defining two constant keyframes, usually lasting 1/60th of a second, with the desired object reference value.
 
-- `void WithUnit(AacFlUnit unit, Action<AacFlSettingObjectReferenceKeyframes> action)`💡<br/>
+- `void WithUnit(AacFlUnit unit, Action<AacFlSettingKeyframesObjectReference> action)`💡<br/>
 Start defining the keyframes with a lambda expression, expressing the unit.
 
-- ~`void WithKeyframes(AacFlUnit unit, Action<AacFlSettingObjectReferenceKeyframes> action)`~<br/>
+- ~`void WithKeyframes(AacFlUnit unit, Action<AacFlSettingKeyframesObjectReference> action)`~<br/>
 Obsolete. Use `WithUnit()` instead.<br/>
 Start defining the keyframes with a lambda expression, expressing the unit.
 
@@ -714,9 +714,9 @@ Create a linear keyframe. The unit is defined by the function that invokes this 
 Create a constant keyframe. The unit is defined by the function that invokes this lambda expression.
 
 
-### Keyframes of type ObjectReference (AacFlSettingObjectReferenceKeyframes)💡
+### Keyframes of type ObjectReference (AacFlSettingKeyframesObjectReference)💡
 
-- `AacFlSettingObjectReferenceKeyframes Setting(int timeInUnit, Object value)`💡<br/>
+- `AacFlSettingKeyframesObjectReference Setting(int timeInUnit, Object value)`💡<br/>
 Create a keyframe for an object reference. The unit is defined by the function that invokes this lambda expression.
 
 

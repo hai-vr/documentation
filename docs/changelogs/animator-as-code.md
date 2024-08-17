@@ -2,6 +2,16 @@
 title: Animator As Code
 ---
 
+## 1.1.0-beta.4 (Planned)
+
+:::danger
+This change has not been released yet.
+:::
+
+- (BREAKING) Rename AacFlSettingObjectReferenceKeyframes to AacFlSettingKeyframesObjectReference:
+  - This makes it more in line with AacFlSettingKeyframesColor.
+  - AacFlSettingObjectReferenceKeyframes was introduced specifically for Vixen, and it is meant to be used as a lambda expression, so the breaking damage should be limited.
+
 ## 1.1.0-beta.3
 
 - Add AacFlState.WithMotionTime to replace AacFlState.MotionTime:
