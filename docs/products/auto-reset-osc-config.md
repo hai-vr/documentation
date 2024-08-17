@@ -10,6 +10,10 @@ import {HaiTag} from "/src/components/HaiTag";
 
 This tool will automatically reset the OSC config after every successful VRChat avatar upload.
 
+:::warning
+The use of this tool is supposedly not needed starting from VRChat 2024.3.1 (August 2024) / VRChat SDK 3.7.0.
+:::
+
 <video controls width="816">
     <source src={require('./img/auto-reset-osc-config/auto-remove-osc-f.mp4').default}/>
 </video>
@@ -31,6 +35,10 @@ Note that if you load your avatar in-game too shortly after the upload, the game
 
 ## When to use this tool?
 
+:::warning
+The use of this tool is supposedly not needed starting from VRChat 2024.3.1 (August 2024) / VRChat SDK 3.7.0. 
+:::
+
 *Auto-reset OSC config* is meant to be used by OSC users (face tracking, connected objects, special overlays, and other tricks).
 
 When the avatar is loaded for the first time, VRChat generates a JSON file located in `/Users/{windowsUser}/AppData/LocalLow/VRChat/VRChat/OSC/{userId}/Avatars/{avatarId}.json`
@@ -44,9 +52,7 @@ Typically, the fix is to go in VRChat Expressions menu, and click "Reset OSC con
 This tool assumes that you did not manually update this JSON file (this almost never happens), and deletes it after every avatar upload, so that the avatar parameters should work consistently after every new upload.
 
 :::info
-**\*** Until the release of [VRChat 2024.3.1](https://docs.vrchat.com/docs/vrchat-202431#updates--fixes), which has not happened yet as of August 12th, 2024.
+**\*** Until the release of [VRChat 2024.3.1](https://docs.vrchat.com/docs/vrchat-202431#updates--fixes) (August 2024).
 
 > VRChat will now automatically add or remove parameters in OSC config files when an avatar is updated.
 :::
-
-[//]: # (Planned)
