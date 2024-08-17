@@ -669,6 +669,13 @@ Define the curve as the parameter. The duration is encoded inside the curve itse
 - `void WithOneFrame(Color desiredValue)`<br/>
 Define the curve to be exactly one frame by defining two constant keyframes, usually lasting 1/60th of a second, with the desired color value.
 
+- `void WithUnit(AacFlUnit unit, Action<AacFlSettingKeyframesColor> action)`💡<br/>
+  Start defining the keyframes with a lambda expression, expressing the unit.
+
+- ~`void WithKeyframes(AacFlUnit unit, Action<AacFlSettingKeyframesColor> action)`~<br/>
+  Obsolete. Use `WithUnit()` instead.<br/>
+  Start defining the keyframes with a lambda expression, expressing the unit.
+
 
 ### Curve of type ObjectReference (AacFlSettingCurveObjectReference)💡
 

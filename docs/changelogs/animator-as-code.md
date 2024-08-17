@@ -4,10 +4,6 @@ title: Animator As Code
 
 ## 1.1.0-beta.3
 
-:::danger
-This change has not been released yet.
-:::
-
 - Add AacFlState.WithMotionTime to replace AacFlState.MotionTime:
   - Add AacFlState.WithMotionTime(...) to replace AacFlState.MotionTime()
   - This is more in line with the function naming convention
