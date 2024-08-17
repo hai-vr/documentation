@@ -11,7 +11,7 @@
 
 
 <script src="https://plausible.io/js/script.js" defer="defer" data-domain="docs.hai-vr.dev"></script><link rel="stylesheet" href="/assets/css/styles.da630d67.css">
-<script src="/assets/js/runtime~main.6ab0b713.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.38aaf983.js" defer="defer"></script>
 <script src="/assets/js/main.19fed745.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -684,8 +684,19 @@ Define the curve as the parameter. The duration is encoded inside the curve itse
 </ul>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="curve-of-type-color-aacflsettingcurvecolor">Curve of type Color (AacFlSettingCurveColor)<a href="#curve-of-type-color-aacflsettingcurvecolor" class="hash-link" aria-label="Direct link to Curve of type Color (AacFlSettingCurveColor)" title="Direct link to Curve of type Color (AacFlSettingCurveColor)">​</a></h3>
 <ul>
-<li><code>void WithOneFrame(Color desiredValue)</code><br>
-Define the curve to be exactly one frame by defining two constant keyframes, usually lasting 1/60th of a second, with the desired color value.</li>
+<li>
+<p><code>void WithOneFrame(Color desiredValue)</code><br>
+Define the curve to be exactly one frame by defining two constant keyframes, usually lasting 1/60th of a second, with the desired color value.</p>
+</li>
+<li>
+<p><code>void WithUnit(AacFlUnit unit, Action&lt;AacFlSettingKeyframesColor&gt; action)</code>💡<br>
+Start defining the keyframes with a lambda expression, expressing the unit.</p>
+</li>
+<li>
+<p><del><code>void WithKeyframes(AacFlUnit unit, Action&lt;AacFlSettingKeyframesColor&gt; action)</code></del><br>
+Obsolete. Use <code>WithUnit()</code> instead.<br>
+Start defining the keyframes with a lambda expression, expressing the unit.</p>
+</li>
 </ul>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="curve-of-type-objectreference-aacflsettingcurveobjectreference">Curve of type ObjectReference (AacFlSettingCurveObjectReference)💡<a href="#curve-of-type-objectreference-aacflsettingcurveobjectreference" class="hash-link" aria-label="Direct link to Curve of type ObjectReference (AacFlSettingCurveObjectReference)💡" title="Direct link to Curve of type ObjectReference (AacFlSettingCurveObjectReference)💡">​</a></h3>
 <ul>
