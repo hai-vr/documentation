@@ -90,6 +90,7 @@ you need to specify blendshapes that either show or hide those bracelets. These 
 Each twist bone:
 - Adds one bone to the avatar's main Armature that is used by mesh skinning, and
 - Adds one constraint.
+  - Starting from V2.1.0: If VRChat 3.7.0 or above is installed in the project, we will generate a *VRC Aim Constraint* component instead of a Unity *Aim Constraint*.
 
 By default, the component adds one twist bone for each arm, making for a total of 2 bones used by mesh skinning, and 2 constraints.
 
@@ -126,6 +127,7 @@ particular point in the build process.
 
 ## Versions
 
+- **2.1.0**: If VRChat 3.7.0 or above is installed in the project, we will generate a *VRC Aim Constraint* component instead of a Unity *Aim Constraint*.
 - **1.11.1**: Fix Generate Twist Bones help URL no longer points to localhost.
 - **1.11.0**: Added.
 
