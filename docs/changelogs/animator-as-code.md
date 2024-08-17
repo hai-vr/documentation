@@ -17,6 +17,7 @@ This change has not been released yet.
   - Update inline documentation.
   - Add additional single-valued and array overloads.
   - Add AacFlSettingCurveObjectReference.WithUnit to be on-par with AacFlSettingCurve.
+  - Add AacFlSettingCurveColor.WithUnit to be on-par with AacFlSettingCurve.
   - *The previous naming is also preserved not to break existing uses.*
 - Make Component[] null-element safe and add missing multi-component:
   - Make Component[] null-element safe.
