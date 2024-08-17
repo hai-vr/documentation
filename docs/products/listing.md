@@ -23,13 +23,13 @@ Many of these products can be installed using our VCC listing.
 </HaiTags>
 
 If you use [ALCOM](https://vrc-get.anatawa12.com/alcom/) ([GitHub](https://github.com/vrc-get/vrc-get)) instead of VCC,
-add this in the *VPM Repositories* section of ALCOM:
+add this in the *Packages > Add Repository* section of ALCOM:
 
 ```text
 https://hai-vr.github.io/vpm-listing/index.json
 ```
 
-[ALCOM](https://vrc-get.anatawa12.com/alcom/)を使用する場合、ALCOMの*VPM Repositories*にこれを追加してください。
+[ALCOM](https://vrc-get.anatawa12.com/alcom/)を使用する場合、ALCOMの**パッケージ管理**にこれを追加してください。
 
 <br />
 <br />
