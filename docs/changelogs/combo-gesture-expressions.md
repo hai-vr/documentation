@@ -2,6 +2,10 @@
 title: ComboGestureExpressions
 ---
 
+## 3.2.2
+
+- Phase out using internal Animator As Code classes. 
+
 ## 3.2.1
 
 - Allow installation with VRChat Avatars SDK 3.7.x
