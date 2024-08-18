@@ -28,15 +28,20 @@ If you use assembly definitions, change the assembly reference from `AnimatorAsC
 
 - Change `AacV0` to `AacV1`
 - Change `using AnimatorAsCode.V0;` to `using AnimatorAsCode.V1;`
+- Change `AacFlSettingObjectReferenceKeyframes` to `AacFlSettingKeyframesObjectReference`
+- Change `TrackingElement` to `AacAv3.Av3TrackingElement`
 - If your project depends on VRChat, you will need to use extension methods.
     - Add `using AnimatorAsCode.V1.VRC;` in your class imports to use the VRChat extension methods.
         - The extension methods are contained within the class `AnimatorAsCode.V1.VRC.AacVRCExtensions`.
     - Add `using AnimatorAsCode.V1.VRCDestructiveWorkflow;` in your class imports to use the VRChat destructive workflow extension methods.
         - The extension methods are contained within the class `AnimatorAsCode.V1.VRCDestructiveWorkflow.AacVRCDestructiveWorkflowExtensions`
-- Change `TrackingElement` to `AacAv3.Av3TrackingElement`
 - (Optional) Change `MotionTime(` to `WithMotionTime(`
+- (Optional) Change `WithKeyframes(` to `WithUnit(`
+- There are other code changes, see AacConfiguration section right below.
 
 ### AacConfiguration
+
+#### VRCAvatarDescriptor is only needed for destructive workflows
 
 Since `AacConfiguration` no longer contains the avatar descriptor, you will need to use the extension method `AacConfiguration.WithAvatarDescriptor(VRCAvatarDescriptor)` to define the avatar in the configuration.
 
@@ -61,9 +66,18 @@ AacV1.Create(new AacConfiguration
 }.WithAvatarDescriptor(avatar)); // The avatar descriptor is now defined by invoking an extension method.
 ```
 
-## Non-destructive workflow
+#### New configuration field: ContainerMode
 
-Animator As Code V1 encourages the use of a non-destructive workflow.
+The configuration has a new field: ContainerMode.
+
+ContainerMode dictates how assets should be stored in the asset container.
+
+If you use a non-destructive workflow with NDMF, AAC usually does not need to store anything inside the asset container,
+because NDMF takes care of it; except for Animator Controllers. It is necessary to persist the Animator Controller as soon
+as it is created so that we may create states containing behaviours inside of them.
+
+- If you use a non-destructive workflow, use `ContainerMode = AacConfiguration.Container.OnlyWhenPersistenceRequired`
+- If you use a destructive workflow, use `ContainerMode = AacConfiguration.Container.Everything`
 
 ## Miscellaneous contract changes
 
@@ -72,3 +86,4 @@ Animator As Code V1 encourages the use of a non-destructive workflow.
 - Some read-only public fields have been changed into public properties with a getter.
 - `AacFlFloatParameterGroup.ToList()` now correctly returns the `List<AacFlFloatParameter>` instead of `List<AacFlBoolParameter>`.
 - `AacFlIntParameterGroup.ToList()` now correctly returns the `List<AacFlIntParameter>` instead of `List<AacFlBoolParameter>`.
+- Some functions that accept `Component[]` used to throw an error if an element in the array was null. They will no longer throw errors.

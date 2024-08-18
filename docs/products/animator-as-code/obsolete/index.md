@@ -1,5 +1,6 @@
 ﻿---
 title: "Obsolete documentation"
+unlisted: true
 ---
 
 This section contains obsolete documentation which need to be reworked.

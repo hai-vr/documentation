@@ -1,6 +1,7 @@
 ﻿---
 sidebar_position: 8
 title: (OBSOLETE)Barebones way
+unlisted: true
 ---
 
 # (OBSOLETE)Barebones way

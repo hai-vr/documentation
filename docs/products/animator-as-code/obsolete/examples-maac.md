@@ -1,6 +1,7 @@
 ﻿---
 title: (OBSOLETE)Non-destructive workflow examples
 sidebar_position: 10
+unlisted: true
 ---
 
 # (OBSOLETE)Non-destructive workflow examples
