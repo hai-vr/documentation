@@ -2,6 +2,15 @@
 title: Animator As Code - VRChat
 ---
 
+## 1.1.0-beta.4 (Planned)
+
+:::danger
+This change has not been released yet.
+:::
+
+- (BREAKING) Make constructors non-public:
+  - Fix inconsistency where constructors were public.
+
 ## 1.1.0-beta.3
 
 Allow installation with VRChat 3.7.x.
