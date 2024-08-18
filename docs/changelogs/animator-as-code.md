@@ -27,10 +27,21 @@ Compared to 1.0.99xx:
   - Add AacFlSettingCurveColor.WithUnit to be on-par with AacFlSettingCurve.
 - Inline documentation pass.
 - Update LICENSE: Add galister for major contributions.
-- Fix AacFlState.WithCycleOffset(AacFlFloatParameter floatParam) now correctly enables the parameter.
 - Accomodate new VRCAnimatorPlayAudio requirements:
   - Nodes need to know the Animator Root, so that relative paths can be resolved during the creation of State behaviours (i.e. Relative path of an AudioSource).
   - Nodes need to have the ability to create a New Behaviour, even if one already exists.
+- Functional fixes:
+  - Fix AacFlState.WithCycleOffset(AacFlFloatParameter floatParam) now correctly enables the parameter.
+  - Fix Any state transitions will be created from SSMs:
+    - Due to an implementation error, creating Any state transitions previously did not have any effect in the graph.
+    - This now creates Any state from the root machine.
+    - Sub-state machines "cannot" have Any state transitions created directly from them.
+    - Internally, Any always comes from the root state machine, but visually in the graph, it will come from the sub-state machine.
+  - Make sure State and SSM names don't contain a period '.':
+    - If the name of a state contains a period ".", it can cause the animator to misbehave, so sanitize it.
+    - Transitions would not work properly during the runtime execution of the animator.
+    - Apparently this is because sub state machines internally use the dot as a separator.
+    - Sanitize the name so that menu state names such as "J. Inner" don't mess things up.
 
 ## 1.1.0-beta.8 (Planned)
 
@@ -43,6 +54,11 @@ This change has not been released yet.
   - This now creates Any state from the root machine.
   - Sub-state machines "cannot" have Any state transitions created directly from them.
   - Internally, Any always comes from the root state machine, but visually in the graph, it will come from the sub-state machine.
+- Make sure State and SSM names don't contain a period '.':
+  - If the name of a state contains a period ".", it can cause the animator to misbehave, so sanitize it.
+  - Transitions would not work properly during the runtime execution of the animator.
+  - Apparently this is because sub state machines internally use the dot as a separator.
+  - Sanitize the name so that menu state names such as "J. Inner" don't mess things up.
 
 ## 1.1.0-beta.7
 
