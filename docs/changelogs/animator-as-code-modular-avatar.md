@@ -14,11 +14,7 @@ Compared to 1.0.99xx:
 - (BREAKING) Make constructors non-public:
   - Fix inconsistency where constructors were public.
 
-## 1.1.0-beta.4 (Planned)
-
-:::danger
-This change has not been released yet.
-:::
+## 1.1.0-beta.4
 
 - (BREAKING) Make constructors non-public:
   - Fix inconsistency where constructors were public.

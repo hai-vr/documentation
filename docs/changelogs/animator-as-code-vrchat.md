@@ -24,11 +24,7 @@ Compared to 1.0.99xx:
     - This allows the creation of separate VRCAvatarParameterDriver for local and non-local operations.
     - This is an evolution of the Driving*() functions, as VRCAvatarParameterDriver has become more complex over the years.
 
-## 1.1.0-beta.4 (Planned)
-
-:::danger
-This change has not been released yet.
-:::
+## 1.1.0-beta.4
 
 - (BREAKING) Make constructors non-public:
   - Fix inconsistency where constructors were public.

@@ -30,11 +30,7 @@ Compared to 1.0.99xx:
   - Nodes need to know the Animator Root, so that relative paths can be resolved during the creation of State behaviours (i.e. Relative path of an AudioSource).
   - Nodes need to have the ability to create a New Behaviour, even if one already exists.
 
-## 1.1.0-beta.5 (Planned)
-
-:::danger
-This change has not been released yet.
-:::
+## 1.1.0-beta.5
 
 - (BREAKING) Replace public readonly fields with properties:
   - Fix inconsistency by replacing public readonly fields with getter-only properties.
@@ -42,11 +38,7 @@ This change has not been released yet.
 - (BREAKING) Make constructors non-public:
   - Fix inconsistency where constructors were public.
 
-## 1.1.0-beta.4 (Planned - Built, not pushed to listing)
-
-:::danger
-This change has not been released yet.
-:::
+## 1.1.0-beta.4
 
 - (BREAKING) Rename AacFlSettingObjectReferenceKeyframes to AacFlSettingKeyframesObjectReference:
   - This makes it more in line with AacFlSettingKeyframesColor.
