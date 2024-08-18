@@ -2,6 +2,34 @@
 title: Animator As Code
 ---
 
+## 1.1.0 (Planned)
+
+:::danger
+This change has not been released yet.
+:::
+
+Leave Alpha version, by committing some of the last breaking API changes.
+
+Compared to 1.0.99xx:
+- Commit breaking changes to fix inconsistencies in the API:
+  - (BREAKING) AacFlController.AnimatorController is no longer settable.
+  - (BREAKING) Replace public readonly fields with get-only properties.
+  - (BREAKING) Rename AacFlSettingObjectReferenceKeyframes to AacFlSettingKeyframesObjectReference.
+  - (BREAKING) Make constructors non-public.
+- Fix inconsistencies in the API:
+  - Rename AacFlState.WithMotionTime to AacFlState.MotionTime.
+  - Rename *Percent to *Normalized.
+  - Add additional single-valued and array overloads.
+  - Make Component[] methods null-element safe.
+  - Add AacFlSettingCurveObjectReference.WithUnit to be on-par with AacFlSettingCurve.
+  - Add AacFlSettingCurveColor.WithUnit to be on-par with AacFlSettingCurve.
+- Inline documentation pass.
+- Update LICENSE: Add galister for major contributions.
+- Fix AacFlState.WithCycleOffset(AacFlFloatParameter floatParam) now correctly enables the parameter.
+- Accomodate new VRCAnimatorPlayAudio requirements:
+  - Nodes need to know the Animator Root, so that relative paths can be resolved during the creation of State behaviours (i.e. Relative path of an AudioSource).
+  - Nodes need to have the ability to create a New Behaviour, even if one already exists.
+
 ## 1.1.0-beta.5 (Planned)
 
 :::danger

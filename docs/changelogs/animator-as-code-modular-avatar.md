@@ -2,6 +2,18 @@
 title: Animator As Code - Modular Avatar functions
 ---
 
+## 1.1.0 (Planned)
+
+:::danger
+This change has not been released yet.
+:::
+
+Leave Alpha version, by committing some of the last breaking API changes.
+
+Compared to 1.0.99xx:
+- (BREAKING) Make constructors non-public:
+  - Fix inconsistency where constructors were public.
+
 ## 1.1.0-beta.4 (Planned)
 
 :::danger
