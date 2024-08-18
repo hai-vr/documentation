@@ -17,7 +17,7 @@ Compared to 1.0.99xx:
   - (BREAKING) Rename AacFlSettingObjectReferenceKeyframes to AacFlSettingKeyframesObjectReference.
   - (BREAKING) Make constructors non-public.
     - WARNING: The AacFlSettingKeyframes constructor will be made private/internal in V1.2.0.
-    - For compatibility reasons is remains public for the duration of V1.1.x.
+    - For compatibility reasons it remains public for the duration of V1.1.x.
 - Fix inconsistencies in the API:
   - Rename AacFlState.WithMotionTime to AacFlState.MotionTime.
   - Rename *Percent to *Normalized.
