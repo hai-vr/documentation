@@ -18,7 +18,7 @@ To use these functions, use the extensions functions in `AacVRCExtensions`:
 
 #### Minimum version
 
-- Starting from 1.1.0-beta.1, the minimum VRChat version supported is 3.5.2, as this adds support for `VRC_AnimatorPlayAudio`.
+- Starting from 1.1.0-beta.1, the minimum VRChat version is 3.5.2, as this adds support for `VRC_AnimatorPlayAudio`.
 
 #### Animator creation overview
 
