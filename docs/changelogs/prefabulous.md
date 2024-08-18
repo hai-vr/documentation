@@ -2,6 +2,21 @@
 title: Prefabulous
 ---
 
+## 2.1.0-beta.2 (Planned)
+
+:::danger
+This change has not been released yet.
+:::
+
+### ☀️ New component: Convert back to Unity Constraints
+
+A new component, [Convert back to Unity Constraints](/docs/products/prefabulous/universal/convert-back-to-unity-constraints), has been added to Prefabulous.
+
+Convert back to Unity Constraints converts VRC Constraint components to native Unity Constraints, to the extent applicable.
+
+- VRC-specific features (local axis, freeze to world) are not supported.
+- The VRChat SDK assemblies and DLLs do not need to be installed in the project, as long as the types exist, so they could be mere stubs.
+
 ## 2.1.0-beta.1
 
 - Modify the behaviour of *Generate Twist Bones* on VRChat projects: 
