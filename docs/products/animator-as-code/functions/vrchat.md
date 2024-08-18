@@ -16,6 +16,10 @@ To use these functions, use the extensions functions in `AacVRCExtensions`:
 - Add `using AnimatorAsCode.V1.VRC;` in your class imports.
 - If you use assembly definitions, add the `AnimatorAsCodeFramework.V1.VRC` assembly reference.
 
+#### Minimum version
+
+- Starting from 1.1.0-beta.1, the minimum VRChat version supported is 3.5.2, as this adds support for `VRC_AnimatorPlayAudio`.
+
 #### Animator creation overview
 
 ```mermaid
