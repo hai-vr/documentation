@@ -4,10 +4,20 @@
         <title>Haï~ Blog</title>
         <link>https://docs.hai-vr.dev/updates</link>
         <description>Haï~ Blog</description>
-        <lastBuildDate>Sat, 17 Aug 2024 05:10:00 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 18 Aug 2024 20:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[⚙️ ComboGestureExpressions V3.2.2]]></title>
+            <link>https://docs.hai-vr.dev/updates/2024/08/18/p0</link>
+            <guid>https://docs.hai-vr.dev/updates/2024/08/18/p0</guid>
+            <pubDate>Sun, 18 Aug 2024 20:00:00 GMT</pubDate>
+            <description><![CDATA[- Phase out using internal Animator As Code classes.]]></description>
+            <content:encoded><![CDATA[<ul>
+<li>Phase out using internal Animator As Code classes.</li>
+</ul>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[⚙️ Auto-reset OSC config V1.1.5]]></title>
             <link>https://docs.hai-vr.dev/updates/2024/08/17/p1</link>
@@ -301,64 +311,6 @@ which have code that runs when that component is destroyed.</p>
 <p>Using this, you can use some of my products in ChilloutVR, like <strong><a href="https://docs.hai-vr.dev/docs/products/starmesh">⭐ Starmesh</a></strong>, <strong><a href="https://docs.hai-vr.dev/docs/products/facetra-shape-creator">⭐ FaceTra Shape Creator</a></strong>,
 and <strong><a href="https://docs.hai-vr.dev/docs/products/prefabulous">Prefabulous Universal</a></strong>.</p>
 <p>🗒️ <a href="https://docs.hai-vr.dev/docs/products/chillaxins">Open documentation</a></p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[☀️ Prefabulous V2.0]]></title>
-            <link>https://docs.hai-vr.dev/updates/2024/06/13/p0</link>
-            <guid>https://docs.hai-vr.dev/updates/2024/06/13/p0</guid>
-            <pubDate>Thu, 13 Jun 2024 00:00:00 GMT</pubDate>
-            <description><![CDATA[I am releasing Prefabulous V2. This update makes it so Prefabulous components can be used in other social VR platforms, apps, and VTubing apps.]]></description>
-            <content:encoded><![CDATA[<div><p><span></span></p><div class="hai_tag_ZcC4 hai_tag_universal_aJnK">🌊 Any Platform</div><p></p></div>
-<p>I am releasing <strong>Prefabulous V2</strong>. This update makes it so Prefabulous components can be used in other social VR platforms, apps, and VTubing apps.
-VRChat is no longer required.</p>
-<p>Users who use the VCC/ALCOM package manager will not need to take special actions to update to V2.
-<em>If you don't use VCC/ALCOM, <a href="https://docs.hai-vr.dev/updates/2024/06/13/p0#updating-from-v1-to-v2-for-users-who-dont-use-vcc">see below</a>.</em></p>
-<p><em>Prefabulous</em> has been split into two packages, and I am introducing a new package:</p>
-<ul>
-<li><strong><a href="https://docs.hai-vr.dev/docs/products/prefabulous/universal">Prefabulous Universal</a></strong> contains platform-agnostic components.</li>
-<li><strong><a href="https://docs.hai-vr.dev/docs/products/prefabulous/vrchat">Prefabulous for VRChat</a></strong> contains components that are specific to VRChat.</li>
-<li><strong><a href="https://docs.hai-vr.dev/docs/products/prefabulous/vrm">Prefabulous for VRM and VTubing</a></strong> is a <strong>new package</strong> that contains VRM-specific components.</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="updating-from-v1-to-v2-for-users-who-dont-use-vcc">Updating from V1 to V2 for users who don't use VCC<a href="https://docs.hai-vr.dev/updates/2024/06/13/p0#updating-from-v1-to-v2-for-users-who-dont-use-vcc" class="hash-link" aria-label="Direct link to Updating from V1 to V2 for users who don't use VCC" title="Direct link to Updating from V1 to V2 for users who don't use VCC">​</a></h3>
-<p>If you don't use VCC, you will need to follow special upgrade instructions from V1 to V2:</p>
-<ul>
-<li><strong>If you use VCC/ALCOM, do not do this.</strong></li>
-<li>Open Unity.</li>
-<li>Create a new empty scene.</li>
-<li>Remove the Prefabulous package.</li>
-<li>Add the new Prefabulous Universal package.</li>
-<li>Add the new Prefabulous for VRChat package.</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="️-new-component-add-arkit-to-blendshapeavatar">☀️ New component: <a href="https://docs.hai-vr.dev/docs/products/prefabulous/vrm/add-arkit-to-blendshapeavatar">Add ARKit to BlendShapeAvatar</a><a href="https://docs.hai-vr.dev/updates/2024/06/13/p0#%EF%B8%8F-new-component-add-arkit-to-blendshapeavatar" class="hash-link" aria-label="Direct link to ️-new-component-add-arkit-to-blendshapeavatar" title="Direct link to ️-new-component-add-arkit-to-blendshapeavatar">​</a></h3>
-<p>A new component, <a href="https://docs.hai-vr.dev/docs/products/prefabulous/vrm/add-arkit-to-blendshapeavatar">Add ARKit to BlendShapeAvatar</a>, has been added to Prefabulous for VRM.</p>
-<p>This component automatically links all blendshapes found in your meshes as ARKit-named BlendShapeClips for use by VRM apps.</p>
-<video controls="" muted="" width="816"><source src="/assets/medias/D5H4ofatKD-1250b35b85225a17f69746b93ed69c10.mp4"></video>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="api-changes">API Changes<a href="https://docs.hai-vr.dev/updates/2024/06/13/p0#api-changes" class="hash-link" aria-label="Direct link to API Changes" title="Direct link to API Changes">​</a></h3>
-<p><strong>Prefabulous is not meant to have any public API,</strong> but there has been changes that could affect other plugins.</p>
-<p>In essence:</p>
-<ul>
-<li>NDMF plugin qualified names have been changed,</li>
-<li>class names have been changed,</li>
-<li>namespaces have been changed,</li>
-<li>assembly definitions have been changed,</li>
-<li>internal classes have been changed.</li>
-</ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="prefabulous-universal-name-changes">Prefabulous Universal name changes<a href="https://docs.hai-vr.dev/updates/2024/06/13/p0#prefabulous-universal-name-changes" class="hash-link" aria-label="Direct link to Prefabulous Universal name changes" title="Direct link to Prefabulous Universal name changes">​</a></h4>
-<ul>
-<li>Component namespace: <code>Prefabulous.Universal.Common.Runtime</code></li>
-</ul>
-<table><thead><tr><th>Component class</th><th>NDMF Plugin</th></tr></thead><tbody><tr><td>PrefabulousAssignUVTile</td><td>dev.hai-vr.prefabulous.universal.AssignUVTile</td></tr><tr><td>PrefabulousConvertBlendshapeConventions</td><td>dev.hai-vr.prefabulous.universal.ConvertBlendshapeConventions</td></tr><tr><td>PrefabulousDeletePolygons</td><td>dev.hai-vr.prefabulous.universal.DeletePolygons</td></tr><tr><td>PrefabulousEditAllMeshAnchorOverride</td><td>dev.hai-vr.prefabulous.universal.EditAllMeshAnchorOverride</td></tr><tr><td>PrefabulousEditAllMeshBounds</td><td>dev.hai-vr.prefabulous.universal.EditAllMeshBounds</td></tr><tr><td>PrefabulousGenerateBlendshapesFTE</td><td>dev.hai-vr.prefabulous.universal.GenerateBlendshapesFTE</td></tr><tr><td>PrefabulousGenerateTwistBones</td><td>dev.hai-vr.prefabulous.universal.GenerateTwistBones</td></tr><tr><td>PrefabulousRecalculateNormals</td><td>dev.hai-vr.prefabulous.universal.RecalculateNormals</td></tr><tr><td>PrefabulousReplaceTextures</td><td>dev.hai-vr.prefabulous.universal.ReplaceTextures</td></tr><tr><td>PrefabulousChangeAvatarScale</td><td>-</td></tr></tbody></table>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="prefabulous-for-vrchat-name-changes">Prefabulous for VRChat name changes<a href="https://docs.hai-vr.dev/updates/2024/06/13/p0#prefabulous-for-vrchat-name-changes" class="hash-link" aria-label="Direct link to Prefabulous for VRChat name changes" title="Direct link to Prefabulous for VRChat name changes">​</a></h4>
-<ul>
-<li>Component namespace: <code>Prefabulous.VRC.Runtime</code></li>
-</ul>
-<table><thead><tr><th>Component class</th><th>NDMF Plugin</th></tr></thead><tbody><tr><td>PrefabulousAccurateEyeTracking</td><td>dev.hai-vr.prefabulous.vrc.AccurateEyeTracking</td></tr><tr><td>PrefabulousBlankExpressions</td><td>dev.hai-vr.prefabulous.vrc.BlankExpressions</td></tr><tr><td>PrefabulousBlankFXAnimator</td><td><strong>dev.hai-vr.prefabulous.vrc.ReplaceAnimators</strong></td></tr><tr><td>PrefabulousBlankGestureAnimator</td><td><strong>dev.hai-vr.prefabulous.vrc.ReplaceAnimators</strong></td></tr><tr><td>PrefabulousReplaceActionAnimator</td><td><strong>dev.hai-vr.prefabulous.vrc.ReplaceAnimators</strong></td></tr><tr><td>PrefabulousReplaceLocomotionAnimator</td><td><strong>dev.hai-vr.prefabulous.vrc.ReplaceAnimators</strong></td></tr><tr><td>PrefabulousFaceTrackingExtensions</td><td>dev.hai-vr.prefabulous.vrc.FaceTrackingExtensions</td></tr><tr><td>PrefabulousImportExpressionParameters</td><td>dev.hai-vr.prefabulous.vrc.ImportExpressionParameters</td></tr><tr><td>PrefabulousLockLocomotionMenuItem</td><td>dev.hai-vr.prefabulous.vrc.LockLocomotionMenuItem</td></tr><tr><td>PrefabulousMassBlendshapeSync</td><td>dev.hai-vr.prefabulous.vrc.MassBlendshapeSync</td></tr><tr><td>(Universal)<br><strong>PrefabulousChangeAvatarScale</strong></td><td>dev.hai-vr.prefabulous.vrc.ChangeAvatarScaleForVRChat</td></tr></tbody></table>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="prefabulous-for-vrm-and-vtubing-name-changes">Prefabulous for VRM and VTubing name changes<a href="https://docs.hai-vr.dev/updates/2024/06/13/p0#prefabulous-for-vrm-and-vtubing-name-changes" class="hash-link" aria-label="Direct link to Prefabulous for VRM and VTubing name changes" title="Direct link to Prefabulous for VRM and VTubing name changes">​</a></h4>
-<ul>
-<li>Component namespace: <code>Prefabulous.VRM.Runtime</code></li>
-</ul>
-<table><thead><tr><th>Component class</th><th>NDMF Plugin</th></tr></thead><tbody><tr><td>PrefabulousAddARKitToBlendShapeAvatar</td><td>dev.hai-vr.prefabulous.vrm.AddARKitToBlendShapeAvatar</td></tr></tbody></table>
-<p>🗒️ <a href="https://docs.hai-vr.dev/docs/products/prefabulous">Open documentation</a></p>]]></content:encoded>
         </item>
     </channel>
 </rss>
