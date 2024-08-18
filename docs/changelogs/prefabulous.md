@@ -4,6 +4,10 @@ title: Prefabulous
 
 ## 2.1.0 (Planned)
 
+:::danger
+This change has not been released yet.
+:::
+
 ### Generate Twist Bones
 
 - Modify the behaviour of *Generate Twist Bones* on VRChat projects:
