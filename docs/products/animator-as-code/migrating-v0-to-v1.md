@@ -13,7 +13,8 @@ AnimatorAsCode V1 introduces the following main breaking changes:
     - All VRChat-related functions have been split between two classes of extension methods.
 - You are now encouraged to use a non-destructive workflow by generating an animator controller asset without relying on an existing animator controller asset.
     - VRChat methods that use a destructive workflow, such as `AacFlBase.CreateMainFxLayer()` are located on their own class of extension methods.
-
+- There are a few fixes in the inconsistency in the API, such as making fields and constructors private, and turning fields into properties with getters.
+    
 ## Assembly definition
 
 If you use assembly definitions, change the assembly reference from `AnimatorAsCodeFramework` to the following:
@@ -84,6 +85,7 @@ as it is created so that we may create states containing behaviours inside of th
 - `AacFlLayer`, `AacFlClip`, and `AacFlEditClip` are now classes instead of structs.
 - Some public fields that used to be settable by accident have been changed into non-settable public properties with a getter (this does not include AacConfiguration).
 - Some read-only public fields have been changed into public properties with a getter.
+- Many constructors of classes have been made private, as they are meant to be instantiated only through invocations of other functions.
 - `AacFlFloatParameterGroup.ToList()` now correctly returns the `List<AacFlFloatParameter>` instead of `List<AacFlBoolParameter>`.
 - `AacFlIntParameterGroup.ToList()` now correctly returns the `List<AacFlIntParameter>` instead of `List<AacFlBoolParameter>`.
 - Some functions that accept `Component[]` used to throw an error if an element in the array was null. They will no longer throw errors.

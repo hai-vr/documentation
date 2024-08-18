@@ -11,6 +11,8 @@ This change has not been released yet.
 - (BREAKING) Replace public readonly fields with properties:
   - Fix inconsistency by replacing public readonly fields with getter-only properties.
   - Add PublicAPI annotation where it was missing.
+- (BREAKING) Make constructors non-public:
+  - Fix inconsistency where constructors were public.
 
 ## 1.1.0-beta.4 (Planned - Built, not pushed to listing)
 
