@@ -11,8 +11,7 @@ This change has not been released yet.
 Leave Alpha version, by committing some of the last breaking API changes.
 
 Compared to 1.0.99xx:
-- (BREAKING) Make constructors non-public:
-  - Fix inconsistency where constructors were public.
+- (BREAKING) Make constructors non-public.
 
 ## 1.1.0-beta.4
 
