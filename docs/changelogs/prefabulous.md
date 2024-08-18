@@ -2,11 +2,7 @@
 title: Prefabulous
 ---
 
-## 2.1.0-beta.2 (Planned)
-
-:::danger
-This change has not been released yet.
-:::
+## 2.1.0-beta.2
 
 ### ☀️ New component: Convert back to Unity Constraints
 
