@@ -10,7 +10,7 @@ This change has not been released yet.
 
 ### ☀️ New component: Convert back to Unity Constraints
 
-A new component, [Convert back to Unity Constraints](/docs/products/prefabulous/universal/convert-back-to-unity-constraints), has been added to Prefabulous.
+A new component, [Convert back to Unity Constraints](/docs/products/prefabulous/universal/convert-back-to-unity-constraints), has been added to Prefabulous Universal.
 
 Convert back to Unity Constraints converts VRC Constraint components to native Unity Constraints, to the extent applicable.
 
