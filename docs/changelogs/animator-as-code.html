@@ -11,7 +11,7 @@
 
 
 <script src="https://plausible.io/js/script.js" defer="defer" data-domain="docs.hai-vr.dev"></script><link rel="stylesheet" href="/assets/css/styles.da630d67.css">
-<script src="/assets/js/runtime~main.282b39f7.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.ec494b59.js" defer="defer"></script>
 <script src="/assets/js/main.1a80c289.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -45,11 +45,31 @@
 </li>
 <li>Inline documentation pass.</li>
 <li>Update LICENSE: Add galister for major contributions.</li>
-<li>Fix AacFlState.WithCycleOffset(AacFlFloatParameter floatParam) now correctly enables the parameter.</li>
 <li>Accomodate new VRCAnimatorPlayAudio requirements:<!-- -->
 <ul>
 <li>Nodes need to know the Animator Root, so that relative paths can be resolved during the creation of State behaviours (i.e. Relative path of an AudioSource).</li>
 <li>Nodes need to have the ability to create a New Behaviour, even if one already exists.</li>
+</ul>
+</li>
+<li>Functional fixes:<!-- -->
+<ul>
+<li>Fix AacFlState.WithCycleOffset(AacFlFloatParameter floatParam) now correctly enables the parameter.</li>
+<li>Fix Any state transitions will be created from SSMs:<!-- -->
+<ul>
+<li>Due to an implementation error, creating Any state transitions previously did not have any effect in the graph.</li>
+<li>This now creates Any state from the root machine.</li>
+<li>Sub-state machines &quot;cannot&quot; have Any state transitions created directly from them.</li>
+<li>Internally, Any always comes from the root state machine, but visually in the graph, it will come from the sub-state machine.</li>
+</ul>
+</li>
+<li>Make sure State and SSM names don&#x27;t contain a period &#x27;.&#x27;:<!-- -->
+<ul>
+<li>If the name of a state contains a period &quot;.&quot;, it can cause the animator to misbehave, so sanitize it.</li>
+<li>Transitions would not work properly during the runtime execution of the animator.</li>
+<li>Apparently this is because sub state machines internally use the dot as a separator.</li>
+<li>Sanitize the name so that menu state names such as &quot;J. Inner&quot; don&#x27;t mess things up.</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -62,6 +82,14 @@
 <li>This now creates Any state from the root machine.</li>
 <li>Sub-state machines &quot;cannot&quot; have Any state transitions created directly from them.</li>
 <li>Internally, Any always comes from the root state machine, but visually in the graph, it will come from the sub-state machine.</li>
+</ul>
+</li>
+<li>Make sure State and SSM names don&#x27;t contain a period &#x27;.&#x27;:<!-- -->
+<ul>
+<li>If the name of a state contains a period &quot;.&quot;, it can cause the animator to misbehave, so sanitize it.</li>
+<li>Transitions would not work properly during the runtime execution of the animator.</li>
+<li>Apparently this is because sub state machines internally use the dot as a separator.</li>
+<li>Sanitize the name so that menu state names such as &quot;J. Inner&quot; don&#x27;t mess things up.</li>
 </ul>
 </li>
 </ul>
