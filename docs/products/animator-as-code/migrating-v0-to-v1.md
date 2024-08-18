@@ -82,7 +82,7 @@ as it is created so that we may create states containing behaviours inside of th
 ## Miscellaneous contract changes
 
 - `AacFlLayer`, `AacFlClip`, and `AacFlEditClip` are now classes instead of structs.
-- Some non-read-only public fields (not the configuration) have been made read-only.
+- Some public fields that used to be settable by accident have been changed into non-settable public properties with a getter (this does not include AacConfiguration).
 - Some read-only public fields have been changed into public properties with a getter.
 - `AacFlFloatParameterGroup.ToList()` now correctly returns the `List<AacFlFloatParameter>` instead of `List<AacFlBoolParameter>`.
 - `AacFlIntParameterGroup.ToList()` now correctly returns the `List<AacFlIntParameter>` instead of `List<AacFlBoolParameter>`.
