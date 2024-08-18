@@ -11,7 +11,7 @@
 
 
 <script src="https://plausible.io/js/script.js" defer="defer" data-domain="docs.hai-vr.dev"></script><link rel="stylesheet" href="/assets/css/styles.da630d67.css">
-<script src="/assets/js/runtime~main.cf03464a.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.a92b38ac.js" defer="defer"></script>
 <script src="/assets/js/main.e29ff354.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -29,6 +29,7 @@
 <li>VRChat methods that use a destructive workflow, such as <code>AacFlBase.CreateMainFxLayer()</code> are located on their own class of extension methods.</li>
 </ul>
 </li>
+<li>There are a few fixes in the inconsistency in the API, such as making fields and constructors private, and turning fields into properties with getters.</li>
 </ul>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="assembly-definition">Assembly definition<a href="#assembly-definition" class="hash-link" aria-label="Direct link to Assembly definition" title="Direct link to Assembly definition">​</a></h2>
 <p>If you use assembly definitions, change the assembly reference from <code>AnimatorAsCodeFramework</code> to the following:</p>
@@ -88,6 +89,7 @@ as it is created so that we may create states containing behaviours inside of th
 <li><code>AacFlLayer</code>, <code>AacFlClip</code>, and <code>AacFlEditClip</code> are now classes instead of structs.</li>
 <li>Some public fields that used to be settable by accident have been changed into non-settable public properties with a getter (this does not include AacConfiguration).</li>
 <li>Some read-only public fields have been changed into public properties with a getter.</li>
+<li>Many constructors of classes have been made private, as they are meant to be instantiated only through invocations of other functions.</li>
 <li><code>AacFlFloatParameterGroup.ToList()</code> now correctly returns the <code>List&lt;AacFlFloatParameter&gt;</code> instead of <code>List&lt;AacFlBoolParameter&gt;</code>.</li>
 <li><code>AacFlIntParameterGroup.ToList()</code> now correctly returns the <code>List&lt;AacFlIntParameter&gt;</code> instead of <code>List&lt;AacFlBoolParameter&gt;</code>.</li>
 <li>Some functions that accept <code>Component[]</code> used to throw an error if an element in the array was null. They will no longer throw errors.</li>
