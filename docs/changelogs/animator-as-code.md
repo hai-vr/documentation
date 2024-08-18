@@ -32,6 +32,18 @@ Compared to 1.0.99xx:
   - Nodes need to know the Animator Root, so that relative paths can be resolved during the creation of State behaviours (i.e. Relative path of an AudioSource).
   - Nodes need to have the ability to create a New Behaviour, even if one already exists.
 
+## 1.1.0-beta.8 (Planned)
+
+:::danger
+This change has not been released yet.
+:::
+
+- Fix Any state transitions will be created from SSMs:
+  - Due to an implementation error, creating Any state transitions previously did not have any effect in the graph.
+  - This now creates Any state from the root machine.
+  - Sub-state machines "cannot" have Any state transitions created directly from them.
+  - Internally, Any always comes from the root state machine, but visually in the graph, it will come from the sub-state machine.
+
 ## 1.1.0-beta.7
 
 - Keep AacFlSettingKeyframes public until V1.2.0:
