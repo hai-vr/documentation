@@ -16,6 +16,8 @@ Compared to 1.0.99xx:
   - (BREAKING) Replace public readonly fields with get-only properties.
   - (BREAKING) Rename AacFlSettingObjectReferenceKeyframes to AacFlSettingKeyframesObjectReference.
   - (BREAKING) Make constructors non-public.
+    - WARNING: The AacFlSettingKeyframes constructor will be made private/internal in V1.2.0.
+    - For compatibility reasons is remains public for the duration of V1.1.x.
 - Fix inconsistencies in the API:
   - Rename AacFlState.WithMotionTime to AacFlState.MotionTime.
   - Rename *Percent to *Normalized.
@@ -29,6 +31,12 @@ Compared to 1.0.99xx:
 - Accomodate new VRCAnimatorPlayAudio requirements:
   - Nodes need to know the Animator Root, so that relative paths can be resolved during the creation of State behaviours (i.e. Relative path of an AudioSource).
   - Nodes need to have the ability to create a New Behaviour, even if one already exists.
+
+## 1.1.0-beta.7
+
+- Keep AacFlSettingKeyframes public until V1.2.0:
+  - Keep AacFlSettingKeyframes public until V1.2.0, where it will be made internal.
+  - AacFlSettingKeyframes is still used in CGE, but CGE already accepts AAC V1.1.x.
 
 ## 1.1.0-beta.6
 
