@@ -14,11 +14,7 @@ Leave Alpha version.
   - Internal methods in fluent classes are being phased out so that it doesn't pollute methods.
   - Use AacAccessorForExtensions introduced in AAC 1.1.0-beta.9.
 
-## 1.1.0-beta.3 (Planned)
-
-:::danger
-This change has not been released yet.
-:::
+## 1.1.0-beta.3
 
 - Make use of accessor functions:
     - Internal methods in fluent classes are being phased out so that it doesn't pollute methods.

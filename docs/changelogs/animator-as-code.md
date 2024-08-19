@@ -98,11 +98,7 @@ These are likely going to be the last breaking change in V1's lifetime.
 
 ---
 
-## 1.1.0-beta.9 (Planned)
-
-:::danger
-This change has not been released yet.
-:::
+## 1.1.0-beta.9
 
 - Add AacAccessorForExtensions:
   - Add static class AacAccessorForExtensions:
