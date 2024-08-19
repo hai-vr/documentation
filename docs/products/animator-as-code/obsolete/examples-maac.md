@@ -159,7 +159,7 @@ private void Create()
                 keyframes.Constant(0, 1f).Constant(28, 0).Constant(60, 0)
             );
         }))
-        .MotionTime(fx.FloatParameter("WedgeAmount"));
+        .WithMotionTime(fx.FloatParameter("WedgeAmount"));
 }
 ```
 

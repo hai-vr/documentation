@@ -4,10 +4,6 @@ sidebar_position: 6
 
 # Reference manual
 
-:::danger
-This is the work-in-progress documentation for Animator As Code **V1**, which has not yet been released. The last public version of Animator As Code is V0.
-:::
-
 ## Create states
 
 Using your layer, you may now create states. Your state will be configured with defaults based on your AAC configuration, most notably, the Write Defaults setting.
@@ -35,7 +31,7 @@ If you need to reuse a parameter across multiple layers, you need to invoke it o
 
 fx.NewState("Motion")
     // This creates a Float parameter on the FX layer.
-    .MotionTime(fx.FloatParameter("WedgeAmount"))
+    .WithMotionTime(fx.FloatParameter("WedgeAmount"))
     // ...
 ```
 

@@ -7,10 +7,6 @@ import {HaiTag} from "/src/components/HaiTag";
 <HaiTag isUniversal={true} />
 </HaiTags>
 
-:::danger
-This is the work-in-progress documentation for Animator As Code **V1**, which has not yet been released. The last public version of Animator As Code is V0.
-:::
-
 **Animator As Code** is a small Unity Editor facility to generate animator controller layers and animations from a [fluent builder](https://en.wikipedia.org/wiki/Fluent_interface) syntax written in C#.
 
 Initially created for use with VRChat Avatars 3.0, it is now a generic package that does not require it.
@@ -30,10 +26,3 @@ hopefully requiring as little additional tweaking.
 <video controls width="816" autostart="false">
     <source src={require('../../../static/unsorted_ghc/157751278-475538c7-3310-4fa5-9a87-3651c85eaa1c.mp4').default}/>
 </video>
-
-# Install
-
-At this time of writing, Animator As Code V1, **and this documentation**, are a work in progress.
-
-You can install Animator As Code V1 using VCC/ALCOM, but the API is not deemed stable at the moment, and therefore is not currently suitable
-for use in public-facing projects by third parties.

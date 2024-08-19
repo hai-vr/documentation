@@ -4,10 +4,6 @@ sidebar_position: 2
 
 # Getting started
 
-:::danger
-This is the work-in-progress documentation for Animator As Code **V1**, which has not yet been released. The last public version of Animator As Code is V0.
-:::
-
 ## Initialize Animator As Code
 
 After [installing Animator As Code](install.md), there are different ways to start depending on your project.
@@ -284,11 +280,9 @@ layer.NewState("Motion")
             keyframes.Constant(0, 1f).Constant(28, 0).Constant(60, 0)
         );
     }))
-    .MotionTime(layer.FloatParameter("WedgeAmount"));
+    .WithMotionTime(layer.FloatParameter("WedgeAmount"));
 ```
 
-### Use Parameter Drivers
+### Read more
 
-:::danger
-This section is not complete yet.
-:::
+Continue to the [reference manual](./reference).

@@ -4,10 +4,6 @@ sidebar_position: 1
 
 # Install
 
-:::danger
-This is the work-in-progress documentation for Animator As Code **V1**, which has not yet been released. The last public version of Animator As Code is V0.
-:::
-
 Animator As Code V1 can be installed using VRChat Creator Companion or ALCOM through [our listing](/docs/products/listing).
 
 ## Packages
