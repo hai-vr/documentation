@@ -740,47 +740,57 @@ Define this BlendTree as being Direct.
 
 ### 2D Blend Tree (AacFlBlendTree2D : AacFlBlendTree)💡
 
-- `AacFlBlendTree2D WithAnimation(AacFlBlendTree blendTree, Vector2 pos, Action<AacFlBlendTreeChildMotion> furtherDefiningChild = null)`💡<br/>
-Add a BlendTree in the specified coordinates. The last parameter overload is optional: by default, the timeScale is 1, cycle offset is 0, mirror is false.
+- `AacFlBlendTree2D WithAnimation(AacFlBlendTree blendTree, Vector2 pos)`💡<br/>
+Add a BlendTree in the specified coordinates.
 
-- `AacFlBlendTree2D WithAnimation(AacFlBlendTree blendTree, float x, float y, Action<AacFlBlendTreeChildMotion> furtherDefiningChild = null)`💡<br/>
-Add a BlendTree in the specified `x` and `y` coordinates. The last parameter overload is optional: by default, the timeScale is 1, cycle offset is 0, mirror is false.
+- `AacFlBlendTree2D WithAnimation(AacFlBlendTree blendTree, float x, float y)`💡<br/>
+Add a BlendTree in the specified `x` and `y` coordinates.
 
-- `AacFlBlendTree2D WithAnimation(AacFlClip clip, Vector2 pos, Action<AacFlBlendTreeChildMotion> furtherDefiningChild = null)`💡<br/>
-Add a Clip in the specified coordinates. The last parameter overload is optional: by default, the timeScale is 1, cycle offset is 0, mirror is false.
+- `AacFlBlendTree2D WithAnimation(AacFlClip clip, Vector2 pos)`💡<br/>
+Add a Clip in the specified coordinates.
 
-- `AacFlBlendTree2D WithAnimation(AacFlClip clip, float x, float y, Action<AacFlBlendTreeChildMotion> furtherDefiningChild = null)`💡<br/>
-Add a Clip in the specified `x` and `y` coordinates. The last parameter overload is optional: by default, the timeScale is 1, cycle offset is 0, mirror is false.
+- `AacFlBlendTree2D WithAnimation(AacFlClip clip, float x, float y)`💡<br/>
+Add a Clip in the specified `x` and `y` coordinates.
 
-- `AacFlBlendTree2D WithAnimation(Motion motion, Vector2 pos, Action<AacFlBlendTreeChildMotion> furtherDefiningChild = null)`💡<br/>
-Add a raw motion in the specified coordinates. The last parameter overload is optional: by default, the timeScale is 1, cycle offset is 0, mirror is false.
+- `AacFlBlendTree2D WithAnimation(Motion motion, Vector2 pos)`💡<br/>
+Add a raw motion in the specified coordinates.
 
-- `AacFlBlendTree2D WithAnimation(Motion motion, float x, float y, Action<AacFlBlendTreeChildMotion> furtherDefiningChild = null)`💡<br/>
-Add a raw motion in the specified `x` and `y` coordinates. The last parameter overload is optional: by default, the timeScale is 1, cycle offset is 0, mirror is false.
+- `AacFlBlendTree2D WithAnimation(Motion motion, float x, float y)`💡<br/>
+Add a raw motion in the specified `x` and `y` coordinates.
 
 ### 1D Blend Tree (AacFlBlendTree1D : AacFlBlendTree)💡
 
-- `AacFlBlendTree1D WithAnimation(AacFlBlendTree blendTree, float threshold, Action<AacFlBlendTreeChildMotion> furtherDefiningChild = null)`💡<br/>
-Add a BlendTree in the specified threshold. The last parameter overload is optional: by default, the timeScale is 1, cycle offset is 0, mirror is false.
+:::info
+It is safe to declare points in a Simple1D blend tree in a different order (i.e. 0, 1, -1), because we will always sort the list after each newly added animation.
 
-- `AacFlBlendTree1D WithAnimation(AacFlClip clip, float threshold, Action<AacFlBlendTreeChildMotion> furtherDefiningChild = null)`💡<br/>
-Add a Clip in the specified threshold. The last parameter overload is optional: by default, the timeScale is 1, cycle offset is 0, mirror is false.
+In native blend trees, it would not have been safe to do so.
+:::
 
-- `AacFlBlendTree1D WithAnimation(Motion motion, float threshold, Action<AacFlBlendTreeChildMotion> furtherDefiningChild = null)`💡<br/>
-Add a raw motion in the specified threshold. The last parameter overload is optional: by default, the timeScale is 1, cycle offset is 0, mirror is false.
+- `AacFlBlendTree1D WithAnimation(AacFlBlendTree blendTree, float threshold)`💡<br/>
+Add a BlendTree in the specified threshold.
+
+- `AacFlBlendTree1D WithAnimation(AacFlClip clip, float threshold)`💡<br/>
+Add a Clip in the specified threshold.
+
+- `AacFlBlendTree1D WithAnimation(Motion motion, float threshold)`💡<br/>
+Add a raw motion in the specified threshold.
 
 ### Direct Blend Tree (AacFlBlendTreeDirect : AacFlBlendTree)💡
 
-- `AacFlBlendTreeDirect WithAnimation(AacFlBlendTree blendTree, AacFlFloatParameter parameter, Action<AacFlBlendTreeChildMotion> furtherDefiningChild = null)`💡<br/>
-Add a BlendTree driven by the specified parameter. The last parameter overload is optional: by default, the timeScale is 1, cycle offset is 0, mirror is false.
+- `AacFlBlendTreeDirect WithAnimation(AacFlBlendTree blendTree, AacFlFloatParameter parameter)`💡<br/>
+Add a BlendTree driven by the specified parameter.
 
-- `AacFlBlendTreeDirect WithAnimation(AacFlClip clip, AacFlFloatParameter parameter, Action<AacFlBlendTreeChildMotion> furtherDefiningChild = null)`💡<br/>
-Add a Clip driven by the specified parameter. The last parameter overload is optional: by default, the timeScale is 1, cycle offset is 0, mirror is false.
+- `AacFlBlendTreeDirect WithAnimation(AacFlClip clip, AacFlFloatParameter parameter)`💡<br/>
+Add a Clip driven by the specified parameter.
 
-- `AacFlBlendTreeDirect WithAnimation(Motion motion, AacFlFloatParameter parameter, Action<AacFlBlendTreeChildMotion> furtherDefiningChild = null)`💡<br/>
-Add a raw motion driven by the specified parameter. The last parameter overload is optional: by default, the timeScale is 1, cycle offset is 0, mirror is false.
+- `AacFlBlendTreeDirect WithAnimation(Motion motion, AacFlFloatParameter parameter)`💡<br/>
+Add a raw motion driven by the specified parameter.
 
 ### Further define a blend tree child (AacFlBlendTreeChildMotion)💡
+
+All the `WithAnimation` methods above have an overload with an additional parameter `Action<AacFlBlendTreeChildMotion> furtherDefiningChild = null`.
+
+When invoking the method without this parameter, by default, the timeScale is 1, cycle offset is 0, mirror is false.
 
 - `AacFlBlendTreeChildMotion WithTimeScaleSetTo(float timeScale)`💡<br/>
 Set the time scale. The time scale value is 1 by default.
