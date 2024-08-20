@@ -36,10 +36,6 @@ Modules created by Haï no longer depend on *Animator As Code - NDMF Processor*,
 
 ---
 
-:::danger
-This is the work-in-progress documentation for Animator As Code **V1**, which has not yet been released. The last public version of Animator As Code is V0.
-:::
-
 :::warning
 The API contract for Modular Avatar As Code V1 is highly unstable. Use at your own risk.
 :::

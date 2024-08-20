@@ -4,10 +4,6 @@ sidebar_position: 9
 
 # Migrating from V0 to V1
 
-:::danger
-This is the work-in-progress documentation for Animator As Code **V1**, which has not yet been released. The last public version of Animator As Code is V0.
-:::
-
 AnimatorAsCode V1 introduces the following main breaking changes:
 - VRChat Avatars is now an optional dependency. AnimatorAsCode can now be used in non-VRChat projects.
     - All VRChat-related functions have been split between two classes of extension methods.
@@ -39,6 +35,10 @@ If you use assembly definitions, change the assembly reference from `AnimatorAsC
 - (Optional) Change `MotionTime(` to `WithMotionTime(`
 - (Optional) Change `WithKeyframes(` to `WithUnit(`
 - There are other code changes, see AacConfiguration section right below.
+
+### Code with no equivalences
+
+It is no longer possible to instantiate some of the internal classes.
 
 ### AacConfiguration
 
@@ -74,11 +74,16 @@ The configuration has a new field: ContainerMode.
 ContainerMode dictates how assets should be stored in the asset container.
 
 If you use a non-destructive workflow with NDMF, AAC usually does not need to store anything inside the asset container,
-because NDMF takes care of it; except for Animator Controllers. It is necessary to persist the Animator Controller as soon
-as it is created so that we may create states containing behaviours inside of them.
+because NDMF takes care of it; **except for Animator Controllers**.
+
+It is necessary to persist the Animator Controller as soon as it is created so that we may create states containing behaviours inside of them.
 
 - If you use a non-destructive workflow, use `ContainerMode = AacConfiguration.Container.OnlyWhenPersistenceRequired`
 - If you use a destructive workflow, use `ContainerMode = AacConfiguration.Container.Everything`
+
+#### Using Animator As Code in non-destructive workflows
+
+Go to the [Getting started](./getting-started) page for an example on how to create a non-destructive plugin for NDMF.
 
 ## Miscellaneous contract changes
 
