@@ -142,21 +142,9 @@ which isn't the state of the art for VRChat avatar animators.
 Modern toggles generally use blend trees, this can be done in Animator As Code too.
 :::
 
-:::danger
-This section is not complete yet.
-:::
-
-- TODO: Explain assetContainer and assetKey
-
 ### Barebones
 
-:::danger
-This section is not complete yet.
-:::
-
 The following shows the minimal code to use Animator As Code, if your project doesn't fall into the non-destructive Avatars category.
-
-- TODO: Explain assetContainer and assetKey 
 
 ```csharp
 GameObject[] items;
@@ -200,10 +188,6 @@ shown.TransitionsTo(hidden).When(itemParam.IsFalse());
 
 ### Toggle a GameObject
 
-:::danger
-This section is not complete yet.
-:::
-
 ```csharp
 public class Example : MonoBehaviour, IEditorOnly
 {
@@ -229,10 +213,6 @@ shown.TransitionsTo(hidden).When(itemParam.IsFalse());
 ```
 
 ### Toggle a SkinnedMeshRenderer with two conditions
-
-:::danger
-This section is not complete yet.
-:::
 
 ```csharp
 public class Example : MonoBehaviour, IEditorOnly
@@ -263,26 +243,6 @@ hidden.TransitionsTo(shown).When(accessoriesParams.AreTrue());
 shown.TransitionsTo(hidden).When(accessoriesParams.IsAnyFalse());
 ```
 
-### Animate a SkinnedMesh with Motion time
+### Reference manual
 
-:::danger
-This section is not complete yet.
-:::
-
-```csharp
-layer.NewState("Motion")
-    .WithAnimation(aac.NewClip().Animating(clip =>
-    {
-        clip.Animates(my.wedgeMesh, "blendShape.Wedge").WithFrameCountUnit(keyframes =>
-            keyframes.Easing(0, 100f).Easing(28, 0).Easing(29, 0).Easing(30, 0).Easing(31, 0).Easing(32, 0).Easing(60, 100f)
-        );
-        clip.Animates(my.wedgeMesh, "material._Metallic").WithFrameCountUnit(keyframes =>
-            keyframes.Constant(0, 1f).Constant(28, 0).Constant(60, 0)
-        );
-    }))
-    .WithMotionTime(layer.FloatParameter("WedgeAmount"));
-```
-
-### Read more
-
-Continue to the [reference manual](./reference).
+For more examples, continue to the [reference manual](./reference).
