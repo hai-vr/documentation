@@ -23,7 +23,7 @@ If some products have no changelogs listed on this page, it means they haven't b
 | [BlendTree Viewer](./changelogs/blendtree-viewer)                                                           | 1.0.7                 | 2023-11     |   |
 | [LetMeSee](./changelogs/let-me-see)                                                                         | 1.1.3                 | **2024-07** |   |
 | **Editors**                                                                                                 |                       |             |   |
-| [ComboGestureExpressions](./changelogs/combo-gesture-expressions)                                           | 3.2.2                 | **2024-08** |   |
+| [ComboGestureExpressions](./changelogs/combo-gesture-expressions)                                           | 3.2.2                 | **2024-08** | * |
 | [FaceTra Shape Creator](./changelogs/facetra-shape-creator) ⭐                                               | 0.8.0-2024-04-08-2020 | 2024-04     | * |
 | [IconGen](./changelogs/icon-gen) ⭐                                                                          | 1.0.0                 | 2023-09     | * |
 | [Prefabulous Universal](./changelogs/prefabulous)                                                           | 2.1.0-beta.2          | **2024-08** | * |

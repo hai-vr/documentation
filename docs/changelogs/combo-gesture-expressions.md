@@ -2,6 +2,14 @@
 title: ComboGestureExpressions
 ---
 
+## 3.2.3 (Planned)
+
+:::danger
+These changes have not been released yet.
+:::
+
+- ComboGestureExpressions now requires Animator As Code V1.1.0 minimum.
+
 ## 3.2.2
 
 - Phase out using internal Animator As Code classes. 
