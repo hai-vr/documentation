@@ -4,6 +4,8 @@ title: Animator As Code - VRChat Destructive Workflow
 
 ## 1.1.0
 
+**For a full changelog, see the [announcement page](/updates/2024/08/21/p0).**
+
 Leave Alpha version.
 
 - Make use of accessor functions:

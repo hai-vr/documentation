@@ -4,6 +4,8 @@ title: Animator As Code
 
 ## 1.1.0
 
+**For a full changelog, see the [announcement page](/updates/2024/08/21/p0).**
+
 Leave Alpha version, by committing some of the last breaking API changes.
 
 ### Features in V1 compared to V0
