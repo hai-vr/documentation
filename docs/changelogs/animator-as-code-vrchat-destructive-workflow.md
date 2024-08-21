@@ -2,11 +2,7 @@
 title: Animator As Code - VRChat Destructive Workflow
 ---
 
-## 1.1.0 (Planned)
-
-:::danger
-This change has not been released yet.
-:::
+## 1.1.0
 
 Leave Alpha version.
 

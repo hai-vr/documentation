@@ -2,11 +2,7 @@
 title: Animator As Code - Modular Avatar functions
 ---
 
-## 1.1.0 (Planned)
-
-:::danger
-This change has not been released yet.
-:::
+## 1.1.0
 
 Leave Alpha version, by committing some of the last breaking API changes.
 
