@@ -12,9 +12,10 @@
         <id>https://docs.hai-vr.dev/updates/2024/08/21/p0</id>
         <link href="https://docs.hai-vr.dev/updates/2024/08/21/p0"/>
         <updated>2024-08-21T03:40:00.000Z</updated>
-        <summary type="html"><![CDATA[Animator As Code V1 has been released, starting from V1.1.0.]]></summary>
-        <content type="html"><![CDATA[<p>Animator As Code V1 has been released, starting from V1.1.0.</p>
-<p>All Animator As Code V1 packages are leaving Alpha/Beta.</p>
+        <summary type="html"><![CDATA[I am releasing Animator As Code V1.]]></summary>
+        <content type="html"><![CDATA[<div><p><span></span></p><div class="hai_tag_ZcC4 hai_tag_universal_aJnK">🌊 Any Platform</div><p></p></div>
+<p>I am releasing <strong>Animator As Code V1</strong>.</p>
+<p>Starting from V1.1.0, all Animator As Code V1 packages are leaving Alpha/Beta.</p>
 <p>Animator As Code V1 can now be safely used in public projects that wish to do so.</p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="compatibility-with-projects-that-contain-animator-as-code-v0">Compatibility with projects that contain Animator As Code V0<a href="https://docs.hai-vr.dev/updates/2024/08/21/p0#compatibility-with-projects-that-contain-animator-as-code-v0" class="hash-link" aria-label="Direct link to Compatibility with projects that contain Animator As Code V0" title="Direct link to Compatibility with projects that contain Animator As Code V0">​</a></h2>
 <p>Animator As Code V1 is designed to be installed even in projects that already have Animator As Code V0.</p>
