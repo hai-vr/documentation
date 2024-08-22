@@ -13,6 +13,12 @@ It converts VRC Constraint components back to native Unity Constraints, to the e
 - VRC-specific features (local axis, freeze to world) are not supported.
 - The VRChat SDK assemblies and DLLs do not need to be installed in the project, as long as the types exist, so they could be mere stubs.
 
+## 2.0.0-beta.4
+
+- Fix missing assembly definition reference:
+  - Fix missing Universal reference.
+  - Errors located within conditional compilation blocks are really annoying.
+
 ## 2.0.0-beta.3
 
 - Fix Universal is needed:
