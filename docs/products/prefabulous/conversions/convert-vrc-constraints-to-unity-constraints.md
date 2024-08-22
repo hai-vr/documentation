@@ -21,6 +21,6 @@ To use this component:
 
 ## Versions
 
-- **2.1.0**: Added.
+- **2.0.0**: Added.
 
 Classification: *This component is application-agnostic, but requires either component stubs or the VRC SDK to be installed. If neither is installed, it will not result in compilation errors, but the component will have no effect.*

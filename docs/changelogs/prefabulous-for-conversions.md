@@ -2,6 +2,10 @@
 title: Prefabulous for Platform Conversions
 ---
 
+## 2.0.0-beta.2
+
+- Fix NDMF naming of Convert VRC Constraints to Unity Constraints plugin (inter-release).
+
 ## 2.0.0-beta.1
 
 ### ☀️ New component: Convert VRC Constraints to Unity Constraints
