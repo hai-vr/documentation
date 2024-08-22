@@ -4,10 +4,25 @@
         <title>Haï~ Blog</title>
         <link>https://docs.hai-vr.dev/updates</link>
         <description>Haï~ Blog</description>
-        <lastBuildDate>Wed, 21 Aug 2024 03:40:00 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 22 Aug 2024 03:30:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[⚙️ Prefabulous for VRChat V2.1.0]]></title>
+            <link>https://docs.hai-vr.dev/updates/2024/08/22/p0</link>
+            <guid>https://docs.hai-vr.dev/updates/2024/08/22/p0</guid>
+            <pubDate>Thu, 22 Aug 2024 03:30:00 GMT</pubDate>
+            <description><![CDATA[- Allow installation with VRChat 3.7.x.]]></description>
+            <content:encoded><![CDATA[<ul>
+<li>Allow installation with VRChat 3.7.x.</li>
+<li>Allow installation with Animator As Code 1.1.x.</li>
+<li>Allow installation with Animator As Code - Modular Avatar functions 1.1.x.</li>
+<li>Allow installation with Animator As Code - VRChat 1.1.x.</li>
+<li>An additional component <a href="https://docs.hai-vr.dev/docs/products/prefabulous/vrchat/accurate-eye-tracking-transforms">Accurate Eye Tracking Transforms</a> is made available
+for users who wish to try, but it is not documented as it is not ready.</li>
+</ul>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[☀️ Animator As Code V1]]></title>
             <link>https://docs.hai-vr.dev/updates/2024/08/21/p0</link>
@@ -474,19 +489,6 @@ which have code that runs when that component is destroyed.</p>
             <description><![CDATA[- Allow installation with VRChat Avatars SDK 3.6.x]]></description>
             <content:encoded><![CDATA[<ul>
 <li>Allow installation with VRChat Avatars SDK 3.6.x</li>
-</ul>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[⚙️ ComboGestureExpressions V3.2.0]]></title>
-            <link>https://docs.hai-vr.dev/updates/2024/06/16/p0</link>
-            <guid>https://docs.hai-vr.dev/updates/2024/06/16/p0</guid>
-            <pubDate>Sun, 16 Jun 2024 00:00:00 GMT</pubDate>
-            <description><![CDATA[- Allow installation with VRChat Avatars SDK 3.6.x]]></description>
-            <content:encoded><![CDATA[<ul>
-<li>Allow installation with VRChat Avatars SDK 3.6.x</li>
-<li>Remove the Beta label.</li>
-<li>Attempt to fix "The script class couldn't be found" when adding curve keys.</li>
-<li>Fix Eye Tracking toggle now uses Write Defaults setting.</li>
 </ul>]]></content:encoded>
         </item>
     </channel>
