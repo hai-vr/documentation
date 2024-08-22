@@ -23,4 +23,4 @@ To use this component:
 
 - **2.1.0**: Added.
 
-Classification: *This component is application-agnostic, but requires either component stubs or the VRC SDK to be installed.*
+Classification: *This component is application-agnostic, but requires either component stubs or the VRC SDK to be installed. If neither is installed, it will not result in compilation errors, but the component will have no effect.*
