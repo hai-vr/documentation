@@ -49,6 +49,7 @@ This might help with some avatar models.
 
 ## Versions
 
+- **2.1.0**: NDMF Compatibility: This component now runs in the Transforming phase in order to run before VRCFury.
 - **1.9.0**: NDMF Compatibility: This component now runs before `com.anatawa12.avatar-optimizer` in order to make sure meshes are not merged and blendshapes are not lost before this runs.
 - **1.7.0**: Add "Keep Partial Polygons" option.
 - **1.6.0**: Added.

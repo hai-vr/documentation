@@ -44,6 +44,7 @@ Check the *"(DANGER) Execute in Play Mode"* checkbox to execute it anyways.
 
 ## Versions
 
+- **2.1.0**: NDMF Compatibility: This component now runs in the Transforming phase in order to run before VRCFury.
 - **1.10.3**: Fix Replace Textures should no longer ignore disabled objects.
 - **1.10.0**: Added.
 

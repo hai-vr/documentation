@@ -132,6 +132,7 @@ This might help with some avatar models, however, this will have no effect on bl
 
 ## Versions
 
+- **2.1.0**: NDMF Compatibility: This component now runs in the Transforming phase in order to run before VRCFury.
 - **1.9.0**:
     - Assign UV Tile can now assign the **entire mesh** to an UV Tile.
     - NDMF Compatibility: This component now runs before `com.anatawa12.avatar-optimizer` in order to make sure meshes are not merged and blendshapes are not lost before this runs.
