@@ -2,11 +2,40 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://docs.hai-vr.dev/updates</id>
     <title>Haï~ Blog</title>
-    <updated>2024-08-22T03:30:00.000Z</updated>
+    <updated>2024-08-22T13:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://docs.hai-vr.dev/updates"/>
     <subtitle>Haï~ Blog</subtitle>
     <icon>https://docs.hai-vr.dev/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[☀️ Convert VRC Constraints to Unity Constraints (Prefabulous for Platform Conversions V2.0)]]></title>
+        <id>https://docs.hai-vr.dev/updates/2024/08/22/p2</id>
+        <link href="https://docs.hai-vr.dev/updates/2024/08/22/p2"/>
+        <updated>2024-08-22T13:00:00.000Z</updated>
+        <summary type="html"><![CDATA[☀️ New component: Convert VRC Constraints to Unity Constraints]]></summary>
+        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="️-new-component-convert-vrc-constraints-to-unity-constraints">☀️ New component: Convert VRC Constraints to Unity Constraints<a href="https://docs.hai-vr.dev/updates/2024/08/22/p2#%EF%B8%8F-new-component-convert-vrc-constraints-to-unity-constraints" class="hash-link" aria-label="Direct link to ☀️ New component: Convert VRC Constraints to Unity Constraints" title="Direct link to ☀️ New component: Convert VRC Constraints to Unity Constraints">​</a></h3>
+<p>A new component, <a href="https://docs.hai-vr.dev/docs/products/prefabulous/conversions/convert-vrc-constraints-to-unity-constraints">Convert VRC Constraints to Unity Constraints</a>, has been added to Prefabulous for Platform Conversions.</p>
+<p>It converts VRC Constraint components back to native Unity Constraints, to the extent applicable.</p>
+<ul>
+<li>VRC-specific features (local axis, freeze to world) are not supported.</li>
+<li>The VRChat SDK assemblies and DLLs do not need to be installed in the project, as long as the types exist, so they could be mere stubs.</li>
+</ul>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[⚙️ Prefabulous Unversal V2.1]]></title>
+        <id>https://docs.hai-vr.dev/updates/2024/08/22/p1</id>
+        <link href="https://docs.hai-vr.dev/updates/2024/08/22/p1"/>
+        <updated>2024-08-22T11:00:00.000Z</updated>
+        <summary type="html"><![CDATA[- Modify the behaviour of Generate Twist Bones on VRChat projects:]]></summary>
+        <content type="html"><![CDATA[<ul>
+<li>Modify the behaviour of <em>Generate Twist Bones</em> on VRChat projects:<!-- -->
+<ul>
+<li>If VRChat 3.7.0 or above is installed in the project, we will generate a <em>VRC Aim Constraint</em> component instead of a Unity <em>Aim Constraint</em>.</li>
+</ul>
+</li>
+<li>To try resolving an execution ordering issue with VRCFury, Delete Polygons, Assign UV Tile, and Replace Textures no longer run in the Optimizing phase.</li>
+</ul>]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[⚙️ Prefabulous for VRChat V2.1.0]]></title>
         <id>https://docs.hai-vr.dev/updates/2024/08/22/p0</id>
@@ -468,26 +497,5 @@ through the <code>AacFlState.Driving(...)</code> function, <a href="https://docs
         <updated>2024-06-29T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Hide all Prefabulous icons from the scene in Unity 2022 or above.]]></summary>
         <content type="html"><![CDATA[<p>Hide all Prefabulous icons from the scene in Unity 2022 or above.</p>]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[⚙️ Lightbox Viewer V2.2.0]]></title>
-        <id>https://docs.hai-vr.dev/updates/2024/06/20/p0</id>
-        <link href="https://docs.hai-vr.dev/updates/2024/06/20/p0"/>
-        <updated>2024-06-20T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[This update tries to improve Lightbox Viewer speed in Edit mode, especially in avatar setups where there may be a lot of non-destructive components]]></summary>
-        <content type="html"><![CDATA[<p>This update tries to improve Lightbox Viewer speed in Edit mode, especially in avatar setups where there may be a lot of non-destructive components
-which have code that runs when that component is destroyed.</p>
-<p>There are no speed improvements in Play mode.</p>
-<p>🔍 <a href="https://docs.hai-vr.dev/docs/changelogs/lightbox-viewer#220">View changelog</a></p>]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[⚙️ Auto-reset OSC config V1.1.4]]></title>
-        <id>https://docs.hai-vr.dev/updates/2024/06/16/p1</id>
-        <link href="https://docs.hai-vr.dev/updates/2024/06/16/p1"/>
-        <updated>2024-06-16T17:00:00.000Z</updated>
-        <summary type="html"><![CDATA[- Allow installation with VRChat Avatars SDK 3.6.x]]></summary>
-        <content type="html"><![CDATA[<ul>
-<li>Allow installation with VRChat Avatars SDK 3.6.x</li>
-</ul>]]></content>
     </entry>
 </feed>
