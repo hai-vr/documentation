@@ -13,6 +13,12 @@ It converts VRC Constraint components back to native Unity Constraints, to the e
 - VRC-specific features (local axis, freeze to world) are not supported.
 - The VRChat SDK assemblies and DLLs do not need to be installed in the project, as long as the types exist, so they could be mere stubs.
 
+## 2.0.0-beta.3
+
+- Fix Universal is needed:
+  - Conversions depends on a class from Universal.
+- Edit NDMF naming.
+
 ## 2.0.0-beta.2
 
 - Fix NDMF naming of Convert VRC Constraints to Unity Constraints plugin (inter-release).
