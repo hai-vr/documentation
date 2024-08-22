@@ -27,7 +27,7 @@ If some products have no changelogs listed on this page, it means they haven't b
 | [FaceTra Shape Creator](./changelogs/facetra-shape-creator) ⭐                                               | 0.8.0-2024-04-08-2020 | 2024-04     | * |
 | [IconGen](./changelogs/icon-gen) ⭐                                                                          | 1.0.0                 | 2023-09     | * |
 | [Prefabulous Universal](./changelogs/prefabulous)                                                           | 2.1.0-beta.2          | **2024-08** | * |
-| [Prefabulous for VRChat](./changelogs/prefabulous-for-vrchat)                                               | 2.1.0-beta.1          | **2024-08** | * |
+| [Prefabulous for VRChat](./changelogs/prefabulous-for-vrchat)                                               | 2.1.0                 | **2024-08** |   |
 | [Prefabulous for VRM](./changelogs/prefabulous-for-vrm)                                                     | 2.0.1                 | **2024-08** |   |
 | [Starmesh](./changelogs/starmesh) ⭐                                                                         | 1.3.0                 | 2024-06     | * |
 | [Visual Expressions Editor](./changelogs/visual-expressions-editor)                                         | 2.0.3                 | 2023-11     |   |

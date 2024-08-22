@@ -2,11 +2,7 @@
 title: Prefabulous for VRChat
 ---
 
-## 2.1.0 (Planned)
-
-:::danger
-This change has not been released yet.
-:::
+## 2.1.0
 
 - Allow installation with VRChat 3.7.x.
 - Allow installation with Animator As Code 1.1.x.
