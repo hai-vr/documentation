@@ -2,11 +2,7 @@
 title: Prefabulous
 ---
 
-## 2.1.0 (Planned)
-
-:::danger
-This change has not been released yet.
-:::
+## 2.1.0
 
 - Modify the behaviour of *Generate Twist Bones* on VRChat projects:
   - If VRChat 3.7.0 or above is installed in the project, we will generate a *VRC Aim Constraint* component instead of a Unity *Aim Constraint*.
