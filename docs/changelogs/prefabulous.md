@@ -13,6 +13,18 @@ This change has not been released yet.
 - Modify the behaviour of *Generate Twist Bones* on VRChat projects:
   - If VRChat 3.7.0 or above is installed in the project, we will generate a *VRC Aim Constraint* component instead of a Unity *Aim Constraint*.
 
+### Delete Polygons
+
+- Ensure Delete Polygons runs before VRCFury:
+  - Switch to the Transforming phase.
+  - This probably resolves an execution ordering issue with VRCFury Blendshape Optimizer.
+
+## 2.1.0-beta.4
+
+- Ensure Delete Polygons runs before VRCFury:
+  - Switch to the Transforming phase.
+  - This probably resolves an execution ordering issue with VRCFury Blendshape Optimizer.
+
 ## 2.1.0-beta.3
 
 - Remove Convert back to Unity Constraints (inter-release):
