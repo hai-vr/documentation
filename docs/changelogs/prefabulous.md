@@ -13,20 +13,16 @@ This change has not been released yet.
 - Modify the behaviour of *Generate Twist Bones* on VRChat projects:
   - If VRChat 3.7.0 or above is installed in the project, we will generate a *VRC Aim Constraint* component instead of a Unity *Aim Constraint*.
 
-### ☀️ New component: Convert back to Unity Constraints
+## 2.1.0-beta.3
 
-A new component, [Convert back to Unity Constraints](/docs/products/prefabulous/universal/convert-back-to-unity-constraints), has been added to Prefabulous Universal.
-
-It converts VRC Constraint components back to native Unity Constraints, to the extent applicable.
-
-- VRC-specific features (local axis, freeze to world) are not supported.
-- The VRChat SDK assemblies and DLLs do not need to be installed in the project, as long as the types exist, so they could be mere stubs.
+- Remove Convert back to Unity Constraints (inter-release):
+  - Convert back to Unity Constraints is being moved to a specialized package, to separate Conversion tooling from Universal tooling.
 
 ## 2.1.0-beta.2
 
-### ☀️ New component: Convert back to Unity Constraints
+### ~~☀️ New component: Convert back to Unity Constraints~~
 
-A new component, [Convert back to Unity Constraints](/docs/products/prefabulous/universal/convert-back-to-unity-constraints), has been added to Prefabulous Universal.
+~~A new component, Convert back to Unity Constraints, has been added to Prefabulous Universal.~~
 
 It converts VRC Constraint components back to native Unity Constraints, to the extent applicable.
 
