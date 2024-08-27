@@ -27,7 +27,7 @@ This file contains the following:
 - All PhysBones that have parameters,
 - The entire Expressions Parameters list.
 
-This tool can be downloaded through VCC/ALCOM through in **[my listing](/docs/products/listing)**,
+This tool can be downloaded through VCC/ALCOM through in **[my listing](/docs/products/listing)** (you must enable prerelease packages to see it),
 and the source code is at `https://github.com/hai-vr/external-expressions-menu` if you want to include this package yourself for modification.
 
 :::warning
