@@ -1,0 +1,57 @@
+﻿---
+unlisted: true
+---
+# H-View
+
+:::danger
+At this time, the application is not currently available as a downloadable executable, and is more directed towards other developers
+who might want to give it a try.
+
+You will need to build the application yourself.
+:::
+
+This application has two parts:
+
+### External Expressions Menu
+
+*External Expressions Menu* is a Unity Editor tool that relies on the VRChat SDK.
+
+When the avatar is being built, it will write a large JSON file in the `AppData/LocalLow/VRChat/vrchat/OSC/<userid>/Hai/` folder.
+
+This file contains the following:
+- The entire Expressions Menu, including all of its icons,
+- All Contacts that have parameters,
+- All PhysBones that have parameters,
+- The entire Expressions Parameters list.
+
+This tool can be downloaded through VCC/ALCOM through in **[my listing](/docs/products/listing)**,
+and the source code is at `https://github.com/hai-vr/external-expressions-menu` if you want to include this package yourself for modification.
+
+:::warning
+**The JSON file contains the icons as PNGs**, encoded into base64 strings.
+
+For this reason you should not share the JSON file with other users as it contains graphical assets that might have been granted to you
+under a license that would not permit redistribution.
+
+Treat this JSON file no differently to an avatar file.
+:::
+
+### H-View
+
+*H-View* is one of my personal OSC Query applications that I use for debugging.
+
+The source code is available at **[https://github.com/hai-vr/h-view](https://github.com/hai-vr/h-view)**.
+
+You will need to build this application yourself.
+
+Once launched, it will:
+- Open an OSC Query service,
+- Open an OSC service,
+- Communicate with VRChat using OSC and OSC Query,
+- Read any file on-demand located in `AppData/LocalLow/VRChat/vrchat/OSC/` that start with `ExternalExpressionsMenu_`.
+
+:::warning
+The application currently detects avatar changes, but not the current avatar when the application starts.
+
+You will need to reload into your avatar after launching the application.
+:::
