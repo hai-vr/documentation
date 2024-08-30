@@ -2,11 +2,7 @@
 title: Double Hip Tracker
 ---
 
-## 1.3.0 (Planned)
-
-:::danger
-This change has not been released yet.
-:::
+## 1.3.0
 
 This update introduces two changes in the behaviour of the double trackers:
 - They *should* no longer fly away when both trackers are lost.

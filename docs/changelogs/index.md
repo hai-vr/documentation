@@ -14,7 +14,7 @@ If some products have no changelogs listed on this page, it means they haven't b
 |-------------------------------------------------------------------------------------------------------------|-----------------------|-------------|---|
 | **Applications**                                                                                            |                       |             |   |
 | [VRWare](./changelogs/vrware) (World)                                                                       | 2024-01-07            | 2024-01     |   |
-| [Double Hip Tracker](./changelogs/double-hip-tracker) ⭐                                                     | 1.2.0                 | 2024-03     | * |
+| [Double Hip Tracker](./changelogs/double-hip-tracker) ⭐                                                     | 1.3.0                 | **2024-08** |   |
 | **Viewers**                                                                                                 |                       |             |   |
 | [Lightbox Viewer](./changelogs/lightbox-viewer)                                                             | 2.1.0                 | 2024-03     |   |
 | [Animation Viewer](./changelogs/animation-viewer)                                                           | 2.1.0                 | **2024-08** |   |
