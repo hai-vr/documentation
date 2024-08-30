@@ -32,7 +32,7 @@ If some products have no changelogs listed on this page, it means they haven't b
 | [Prefabulous for Platform Conversions](./changelogs/prefabulous-for-conversions)                            | 2.0.0                 | **2024-08** |   |
 | [Starmesh](./changelogs/starmesh) ⭐                                                                         | 1.3.0                 | 2024-06     | * |
 | [Visual Expressions Editor](./changelogs/visual-expressions-editor)                                         | 2.0.3                 | 2023-11     |   |
-| [Vixen](./changelogs/vixen) ⭐                                                                               | 1.2.0                 | 2024-06     | * |
+| [Vixen](./changelogs/vixen) ⭐                                                                               | 1.3.0                 | **2024-08** |   |
 | **APIs**                                                                                                    |                       |             |   |
 | [Animator As Code](./changelogs/animator-as-code)                                                           | 1.1.0                 | **2024-08** |   |
 | [Animator As Code - VRChat](./changelogs/animator-as-code-vrchat)                                           | 1.1.0                 | **2024-08** |   |

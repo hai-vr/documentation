@@ -2,19 +2,14 @@
 title: Vixen
 ---
 
-## 1.3.0 (Planned)
-
-:::danger
-This change has not been released yet.
-:::
+## 1.3.0
 
 ### Custom bounds
 
 You can now customize the bounds in OSC Floats, Contacts, and PhysBones.
 - By default, it is always between 0.0 and 1.0
-- This can be used to make a control become active only after a PhysBone reaches a certain angle.
-- This can be used to make a control reach fully active when a PhysBone is squished past a certain amount.
-- This can be used to make several controls become active at different proximity values using a single Contact.
+- This can be used to change the range of activation for a PhysBone angle, the range of a PhysBone squish,
+  or permit using two different ranges using one proximity Contact.
 - To use it, enable *Use Custom Bounds* in the control settings.
 
 ### Fixes
