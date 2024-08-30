@@ -4,15 +4,29 @@
         <title>Haï~ Blog</title>
         <link>https://docs.hai-vr.dev/updates</link>
         <description>Haï~ Blog</description>
-        <lastBuildDate>Sat, 24 Aug 2024 07:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 30 Aug 2024 22:40:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
         <item>
+            <title><![CDATA[✨ IconGen V1.1.0]]></title>
+            <link>https://docs.hai-vr.dev/updates/2024/08/30/p1</link>
+            <guid>https://docs.hai-vr.dev/updates/2024/08/30/p1</guid>
+            <pubDate>Fri, 30 Aug 2024 22:40:00 GMT</pubDate>
+            <description><![CDATA[- Added a button to export all icons to PNG.]]></description>
+            <content:encoded><![CDATA[<ul>
+<li>Added a button to export all icons to PNG.<!-- -->
+<ul>
+<li>In the IconGen asset file, go to <em>Show Advanced &gt; Export all to PNG...</em></li>
+</ul>
+</li>
+</ul>]]></content:encoded>
+        </item>
+        <item>
             <title><![CDATA[✨ Double Hip Tracker V1.3.0]]></title>
             <link>https://docs.hai-vr.dev/updates/2024/08/30/p0</link>
             <guid>https://docs.hai-vr.dev/updates/2024/08/30/p0</guid>
-            <pubDate>Sat, 24 Aug 2024 07:00:00 GMT</pubDate>
+            <pubDate>Fri, 30 Aug 2024 22:00:00 GMT</pubDate>
             <description><![CDATA[This update introduces two changes in the behaviour of the double trackers:]]></description>
             <content:encoded><![CDATA[<p>This update introduces two changes in the behaviour of the double trackers:</p>
 <ul>
@@ -538,14 +552,6 @@ public fields vs public properties, etc. It will also be to complete the documen
 <li>As <em>VRCAvatarParameterDriver</em> has evolved over the years, you can now build multiple <strong>VRCAvatarParameterDriver</strong> behaviours on the same state
 through the <code>AacFlState.Driving(...)</code> function, <a href="https://docs.hai-vr.dev/docs/products/animator-as-code/functions/vrchat#driver-editing-aacvrcfleditavatarparameterdriver">which takes a lambda expression as a parameter</a>.</li>
 </ul>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[⚙️ Prefabulous Universal V2.0.2]]></title>
-            <link>https://docs.hai-vr.dev/updates/2024/06/30/p0</link>
-            <guid>https://docs.hai-vr.dev/updates/2024/06/30/p0</guid>
-            <pubDate>Sun, 30 Jun 2024 00:00:00 GMT</pubDate>
-            <description><![CDATA[Fix Assign UV Tile "Entire Mesh" no longer fails to process meshes that were set to EditorOnly.]]></description>
-            <content:encoded><![CDATA[<p>Fix Assign UV Tile "Entire Mesh" no longer fails to process meshes that were set to EditorOnly.</p>]]></content:encoded>
         </item>
     </channel>
 </rss>
