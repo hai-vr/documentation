@@ -4,10 +4,43 @@
         <title>Haï~ Blog</title>
         <link>https://docs.hai-vr.dev/updates</link>
         <description>Haï~ Blog</description>
-        <lastBuildDate>Fri, 30 Aug 2024 22:40:00 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 30 Aug 2024 23:30:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[✨ Vixen V1.3.0]]></title>
+            <link>https://docs.hai-vr.dev/updates/2024/08/30/p2</link>
+            <guid>https://docs.hai-vr.dev/updates/2024/08/30/p2</guid>
+            <pubDate>Fri, 30 Aug 2024 23:30:00 GMT</pubDate>
+            <description><![CDATA[Custom bounds]]></description>
+            <content:encoded><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="custom-bounds">Custom bounds<a href="https://docs.hai-vr.dev/updates/2024/08/30/p2#custom-bounds" class="hash-link" aria-label="Direct link to Custom bounds" title="Direct link to Custom bounds">​</a></h3>
+<p>You can now customize the bounds in OSC Floats, Contacts, and PhysBones.</p>
+<ul>
+<li>By default, it is always between 0.0 and 1.0</li>
+<li>This can be used to change the range of activation for a PhysBone angle, the range of a PhysBone squish,
+or permit using two different ranges using one proximity Contact.</li>
+<li>To use it, enable <em>Use Custom Bounds</em> in the control settings.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="fixes">Fixes<a href="https://docs.hai-vr.dev/updates/2024/08/30/p2#fixes" class="hash-link" aria-label="Direct link to Fixes" title="Direct link to Fixes">​</a></h3>
+<ul>
+<li>Prevents the editor from hanging up when the user mistakenly pastes a page long of unrelated content in the search field.<!-- -->
+<ul>
+<li>The search query is now limited to 100 characters max.</li>
+</ul>
+</li>
+<li>The Vixen icon will no longer show up in the Scene view.</li>
+<li>User-created <em>Modular Avatar Menu Installer</em> components can now be properly added directly to a Vixen Control.</li>
+<li>Existing <em>Modular Avatar Menu Installer</em> components can now be properly detected even if it is inactive in the hierarchy.</li>
+<li><em>Vixen Control</em> should no longer cause <em>Modular Avatar Menu Item</em> to print harmless error messages when it is deleted during a build.</li>
+<li>Vixen used to add a <em>Vixen BSG</em> phase to NDMF. This has been removed as it was never used.<!-- -->
+<ul>
+<li><em>Vixen BSG (BlendShapeGenerator) was what is now known as Starmesh.</em></li>
+</ul>
+</li>
+<li>Changed the way Vixen detects how VRChat SDK is installed.</li>
+</ul>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[✨ IconGen V1.1.0]]></title>
             <link>https://docs.hai-vr.dev/updates/2024/08/30/p1</link>
@@ -493,65 +526,6 @@ this package will be updated with no code and obsoleted.</li>
 <p><em>Using LMS for worlds and level design.</em></p>
 <video controls="" width="816"><source src="/assets/medias/lms0-f-42eadf88abce9ab9fb5750643d35e006.mp4"></video>
 <p><em>Using LMS for avatars.</em></p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[⚠️ Advance notice for Animator As Code V1]]></title>
-            <link>https://docs.hai-vr.dev/updates/2024/07/02/p0</link>
-            <guid>https://docs.hai-vr.dev/updates/2024/07/02/p0</guid>
-            <pubDate>Tue, 02 Jul 2024 00:00:00 GMT</pubDate>
-            <description><![CDATA[Hello,]]></description>
-            <content:encoded><![CDATA[<p>Hello,</p>
-<p>In February 2022, I had released <em>Animator As Code</em> version 0 (V0).</p>
-<p>During 2023, I had started to move towards <em>Animator As Code</em> to version 1 (V1), in order to do the following breaking changes:</p>
-<ul>
-<li>Pull major contributions from <a href="https://github.com/galister" target="_blank" rel="noopener noreferrer"><strong>@galister</strong></a> which:<!-- -->
-<ul>
-<li><strong>Adds support for sub-state machines</strong>, which is important because it enables the creation of states that evaluate multiple transitions within one frame,
-which is not possible to do without sub-state machines (with one exception).<!-- -->
-<ul>
-<li>This trait is already extensively used in <em>ComboGestureExpressions V2</em> and above.</li>
-</ul>
-</li>
-<li>Share functionality of state and sub-state machines.</li>
-<li>Share functionality of Int and Float parameters together.</li>
-</ul>
-</li>
-<li>Make it usable in <strong>non-VRChat</strong> avatar projects.<!-- -->
-<ul>
-<li>VRChat-related functionality is now exposed as extension functions in a separate package.</li>
-<li>Also, separate destructive functions and non-destructive functions.</li>
-<li>Since this no longer requires a VRChat project, this also means it may now be usable in VRChat world projects.</li>
-</ul>
-</li>
-<li>Make it more usable in non-destructive components.<!-- -->
-<ul>
-<li>It is already in use in <em>Prefabulous</em> and <em>Vixen</em>.</li>
-</ul>
-</li>
-<li>Move to packages, for distribution using VCC (and now, ALCOM).</li>
-</ul>
-<p>My own projects, such as <em>ComboGestureExpressions</em> V3, <em>Vixen</em>, and <em>Prefabulous for VRChat</em>, already use <em>Animator As Code</em> V1.</p>
-<p>The project has stalled for long enough, I think it's finally time to give it the last push for release.</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="v0-and-v1-can-be-installed-in-the-same-project">V0 and V1 can be installed in the same project<a href="https://docs.hai-vr.dev/updates/2024/07/02/p0#v0-and-v1-can-be-installed-in-the-same-project" class="hash-link" aria-label="Direct link to V0 and V1 can be installed in the same project" title="Direct link to V0 and V1 can be installed in the same project">​</a></h2>
-<p>One of the goals of <em>Animator As Code</em> V1 is to <strong>preserve the ability for V0 and V1 to be installed in the same project</strong>,
-as <em>Animator As Code</em> V0 is currently being used in the wild.</p>
-<p>Therefore, installing <em>Animator As Code</em> V1 will not interfere with <em>Animator As Code</em> V0.</p>
-<p>Even then, <em>Animator As Code</em> V0 and V1 are almost identical in syntax, so <a href="https://docs.hai-vr.dev/docs/products/animator-as-code/migrating-v0-to-v1">migrating from V0 and V1 should not be a challenge</a>.</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="there-may-be-some-breaking-changes-during-the-beta">There may be some breaking changes during the beta<a href="https://docs.hai-vr.dev/updates/2024/07/02/p0#there-may-be-some-breaking-changes-during-the-beta" class="hash-link" aria-label="Direct link to There may be some breaking changes during the beta" title="Direct link to There may be some breaking changes during the beta">​</a></h2>
-<p><em>Animator As Code V1</em> will be entering a beta phase before release, which should ideally last a month.</p>
-<p>Beta versions of <em>Animator As Code</em> V1 will only be available as <strong>pre-release packages</strong>, and they may contain breaking changes between two beta versions.</p>
-<p>The objective of the Beta is to capture the last inconsistencies in the API, including naming conventions, method signatures, exposed functions and classes,
-public fields vs public properties, etc. It will also be to complete the documentation, both on this site, and inline documentation.</p>
-<p>After <em>Animator As Code</em> V1 comes out of beta in 1.1.0, there should not be any more breaking changes.</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="features">Features<a href="https://docs.hai-vr.dev/updates/2024/07/02/p0#features" class="hash-link" aria-label="Direct link to Features" title="Direct link to Features">​</a></h2>
-<ul>
-<li>As mentioned before, you can create <a href="https://docs.hai-vr.dev/docs/products/animator-as-code/functions/base#layer-aacfllayer"><strong>sub-state machines</strong></a>.</li>
-<li>It is now possible to build Unity <a href="https://docs.hai-vr.dev/docs/products/animator-as-code/functions/base#blend-trees-aacflblendtree"><strong>BlendTree</strong> assets using a fluent interface</a>.</li>
-<li><em>Animator As Code for VRChat</em> supports for <strong>VRCAnimatorPlayAudio</strong> through the <code>AacFlState.Audio(AudioSource or string, ...)</code> function,
-<a href="https://docs.hai-vr.dev/docs/products/animator-as-code/functions/vrchat#audio-editing-aacvrcfleditanimatorplayaudio">which takes a lambda expression as a parameter</a>.</li>
-<li>As <em>VRCAvatarParameterDriver</em> has evolved over the years, you can now build multiple <strong>VRCAvatarParameterDriver</strong> behaviours on the same state
-through the <code>AacFlState.Driving(...)</code> function, <a href="https://docs.hai-vr.dev/docs/products/animator-as-code/functions/vrchat#driver-editing-aacvrcfleditavatarparameterdriver">which takes a lambda expression as a parameter</a>.</li>
-</ul>]]></content:encoded>
         </item>
     </channel>
 </rss>
