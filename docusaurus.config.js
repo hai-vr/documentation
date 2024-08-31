@@ -139,60 +139,29 @@ export default {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
-            items: [
-              {
-                label: 'Products',
-                to: '/docs/products',
-              },
-              {
-                label: 'ResilienceVR',
-                to: '/docs/resilience',
-              },
-              {
-                label: 'What\'s new?',
-                to: '/updates',
-              },
-            ],
+            label: 'Patreon',
+            href: 'https://www.patreon.com/vr_hai',
           },
           {
-            title: 'Community',
-            items: [
-              {
-                label: 'Patreon',
-                href: 'https://www.patreon.com/vr_hai',
-              },
-              {
-                label: 'pixivFANBOX',
-                href: 'https://hai-vr.fanbox.cc/',
-              },
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/vr_hai',
-              },
-              {
-                label: 'Discord',
-                to: '/docs/other/discord',
-              },
-            ],
+            label: 'pixivFANBOX',
+            href: 'https://hai-vr.fanbox.cc/',
           },
           {
-            title: 'More',
-            items: [
-              // {
-              //   label: 'Blog',
-              //   to: '/blog',
-              // },
-              {
-                label: 'GitHub',
-                href: 'https://github.com/hai-vr/',
-              },
-              {
-                label: 'Links',
-                to: '/links',
-              },
-            ],
+            label: 'Twitter',
+            href: 'https://twitter.com/vr_hai',
           },
+          {
+            label: 'Discord',
+            to: '/docs/other/discord',
+          },
+          {
+            label: 'GitHub',
+            href: 'https://github.com/hai-vr/',
+          },
+          {
+            label: 'Links',
+            to: '/links',
+          }
         ],
         copyright: `Copyright © ${new Date().getFullYear()} Invitational Software. Built with Docusaurus.`,
       },
