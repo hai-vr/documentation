@@ -26,7 +26,7 @@ This tool requires VRChat, because it uses VRChat’s OSC trackers. It is not co
 
 - Double Hip Tracker is currently available to Patreon supporters at any tier ([https://www.patreon.com/vr_hai](https://www.patreon.com/vr_hai)).
   - See [Patreon rewards](../other/patreon).
-  - Patreon ([Access to DoubleHipTracker](https://www.patreon.com/posts/doublehiptracker-85985442))
+  - Patreon ([Access to DoubleHipTracker](https://www.patreon.com/posts/access-to-double-85954616))
 - Patreonをご利用になりたくないサポーターの方は、同じコンテンツにアクセスするために[pixivFANBOX (https://hai-vr.fanbox.cc/)](https://hai-vr.fanbox.cc/)でサポートを選択できます。
   - ソフトウェアへのアクセスの最低ティアは1000JPY 🌙⭐ です。
 
