@@ -28,6 +28,10 @@ This tool has been tested using **Unity 2022**. It does not work in Unity 2019.
 </video>
 *Using LMS for avatars.*
 
+:::tip
+This tool can also be installed in Universal Render Pipeline projects. You could use this to test URP toon shaders in VR.
+:::
+
 ## Download
 
 The tool is free for download using ALCOM or VCC.
