@@ -13,6 +13,18 @@ These changes have not been released yet.
   now specify a corrective offset that will be applied to one of the avatars, in order to re-align the head.
   - Since this is set at the component level, this does not modify the contents of the FaceTra file data.
 
+### Jaw Calibration
+
+- In order to fix a design mistake in all versions of FaceTra prior to 0.9, this update introduces a new construction line called *Jaw Calibration*.
+- The *Jaw Calibration* construction line is the blendshape that is going to be used as a base to select features inside the mouth,
+  such as the Mouth Divider, Teeth, and Tongue.
+- In previous versions, we used to use the same blendshape as the one used for the *JawOpen* shape. This is a problem, because this leads to all
+  previous construction lines becoming incorrect as soon as you decide to customize the style of the JawOpen shape.
+- In terms of migration:
+  - This is not a breaking change. Old FaceTra files will continue to produce the same face as they used to.
+  - New FaceTra files will use the new Jaw Calibration by default.
+  - Old FaceTra files will not use the new Jaw Calibration. It must be manually enabled by the user.
+
 ### Fixes
 
 - Fix remapping blendshape conventions should no longer generate incorrect names.

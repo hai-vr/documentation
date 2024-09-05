@@ -21,7 +21,7 @@ If some products have no changelogs listed on this page, it means they haven't b
 | [Blendshape Viewer](./changelogs/blendshape-viewer)                                                         | 2.1.2                 | **2024-08** |   |
 | [Property Finder](./changelogs/property-finder)                                                             | 2.0.4                 | **2024-08** |   |
 | [BlendTree Viewer](./changelogs/blendtree-viewer)                                                           | 1.0.7                 | 2023-11     |   |
-| [LetMeSee](./changelogs/let-me-see)                                                                         | 1.1.3                 | **2024-07** |   |
+| [LetMeSee](./changelogs/let-me-see)                                                                         | 1.1.3                 | 2024-07     |   |
 | **Editors**                                                                                                 |                       |             |   |
 | [ComboGestureExpressions](./changelogs/combo-gesture-expressions)                                           | 3.2.2                 | **2024-08** | * |
 | [FaceTra Shape Creator](./changelogs/facetra-shape-creator) ⭐                                               | 0.8.0-2024-04-08-2020 | 2024-04     | * |
