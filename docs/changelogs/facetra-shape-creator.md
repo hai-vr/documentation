@@ -13,6 +13,10 @@ These changes have not been released yet.
   now specify a corrective offset that will be applied to one of the avatars, in order to re-align the head.
   - Since this is set at the component level, this does not modify the contents of the FaceTra file data.
 
+### Tailoring improvements
+
+- The result of Tailoring can now be exported to a new FaceTra File that does not require tailoring.
+
 ### Jaw Calibration
 
 - In order to fix a design mistake in all versions of FaceTra prior to 0.9, this update introduces a new construction line called *Jaw Calibration*.
@@ -36,6 +40,7 @@ These changes have not been released yet.
 
 - Add a button to bake specifically to perform a VSFAvatar export.
 - Make it possible to install the NDMF classes of FaceTra even if NDMF is not installed (i.e. for Resonite export).
+- FaceTra Shape Creator has internally migrated to part of the codebase used in Starmesh.
 
 ## 0.8.0-2024-04-08-2020
 
