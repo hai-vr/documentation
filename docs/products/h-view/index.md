@@ -3,11 +3,8 @@ unlisted: true
 ---
 # H-View
 
-:::danger
-At this time, the application is not currently available as a downloadable executable, and is more directed towards other developers
-who might want to give it a try.
-
-You will need to build the application yourself.
+:::warning
+The application more directed towards other developers who might want to modify it or learn how some parts work.
 :::
 
 This application has two parts:
@@ -47,7 +44,7 @@ Treat this JSON file no differently to an avatar file.
 
 The source code is available at **[https://github.com/hai-vr/h-view](https://github.com/hai-vr/h-view)**.
 
-You will need to build this application yourself.
+The application can be downloaded through the [Releases tab in GitHub](https://github.com/hai-vr/h-view/releases/latest).
 
 Once launched, it will:
 - Open an OSC Query service,
@@ -55,10 +52,9 @@ Once launched, it will:
 - Communicate with VRChat using OSC and OSC Query,
 - Read any file on-demand located in `AppData/LocalLow/VRChat/vrchat/OSC/` that start with `ExternalExpressionsMenu_`.
 
-:::warning
-The application currently detects avatar changes, but not the current avatar when the application starts.
-
-You will need to reload into your avatar after launching the application.
+:::danger
+The overlay version is not currently available for download (due to a lack of method to control how to open or close it).
+Developers can open the README.md for instructions on how to enable that functionality.
 :::
 
 ### OSC Address tabs
