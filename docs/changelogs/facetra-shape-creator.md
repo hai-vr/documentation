@@ -13,6 +13,23 @@ These changes have not been released yet.
   now specify a corrective offset that will be applied to one of the avatars, in order to re-align the head.
   - Since this is set at the component level, this does not modify the contents of the FaceTra file data.
 
+### Base blendshapes
+
+PLANNED
+
+- You can now explicitly define base blendshapes that will serve as the rest pose of the face.
+- Deformations will now be applied relative to that rest pose.
+
+### Blendshapes for all Shapes
+
+PLANNED
+
+- All shapes can now have blendshapes added to them.
+- Shapes that don't normally use the Mouth Divider can now have blendshapes that use the Mouth Divider.
+- Shapes that move a muscle in the middle of the face can now have blendshapes that the Mouth Divider.
+- Shapes that move the Tongue can now have blendshapes that only move the vertices that had been assigned to the Tongue.
+- You can now apply a deformation to the tongue, based on the blendshapes that moved the tongue out.
+
 ### Tailoring improvements
 
 - The result of Tailoring can now be exported to a new FaceTra File that does not require tailoring.
