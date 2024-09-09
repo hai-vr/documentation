@@ -57,6 +57,10 @@ The overlay version is not currently available for download (due to a lack of me
 Developers can open the README.md for instructions on how to enable that functionality.
 :::
 
+### Costumes
+
+The Costumes tab will search for `.png` files starting with `avtr_` in your VRChat Users folder. The filename is the avatar ID.
+
 ### OSC Address tabs
 
 The following tabs are directly sourced from the OSC addressed received from VRChat's OSC Query service:
