@@ -47,15 +47,13 @@ The source code is available at **[https://github.com/hai-vr/h-view](https://git
 The application can be downloaded through the [Releases tab in GitHub](https://github.com/hai-vr/h-view/releases/latest).
 
 Once launched, it will:
+- Open a window on your desktop.
 - Open an OSC Query service,
 - Open an OSC service,
 - Communicate with VRChat using OSC and OSC Query,
 - Read any file on-demand located in `AppData/LocalLow/VRChat/vrchat/OSC/` that start with `ExternalExpressionsMenu_`.
 
-:::danger
-The overlay version is not currently available for download (due to a lack of method to control how to open or close it).
-Developers can open the README.md for instructions on how to enable that functionality.
-:::
+If SteamVR is running, it will also create a dashboard overlay (accessible by pressing the system menu).
 
 ### Costumes
 
