@@ -51,13 +51,14 @@ Once launched, it will:
 - Open an OSC Query service,
 - Open an OSC service,
 - Communicate with VRChat using OSC and OSC Query,
-- Read any file on-demand located in `AppData/LocalLow/VRChat/vrchat/OSC/` that start with `ExternalExpressionsMenu_`.
+- Read any file on-demand located in `AppData/LocalLow/VRChat/vrchat/OSC/` that start with `ExternalExpressionsMenu_`,
+- Read the files in `AppData/Roaming/H-View/`, creating the directory if it doesn't exist.
 
 If SteamVR is running, it will also create a dashboard overlay (accessible by pressing the system menu).
 
 ### Costumes
 
-The Costumes tab will search for `.png` files starting with `avtr_` in your VRChat Users folder. The filename is the avatar ID.
+The Costumes tab will search for `.png` files starting with `avtr_` in the `%APPDATA%/H-View/Costumes/` folder. The filename is the avatar ID.
 
 ### OSC Address tabs
 
