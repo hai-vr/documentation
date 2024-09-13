@@ -5,7 +5,7 @@
 <meta name="generator" content="Docusaurus v3.2.1">
 <title data-rh="true">H-View | Haï~</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://docs.hai-vr.dev/img/hai-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://docs.hai-vr.dev/img/hai-social-card.jpg"><meta data-rh="true" property="og:url" content="https://docs.hai-vr.dev/docs/products/h-view"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="H-View | Haï~"><meta data-rh="true" name="description" content="The application more directed towards other developers who might want to modify it or learn how some parts work."><meta data-rh="true" property="og:description" content="The application more directed towards other developers who might want to modify it or learn how some parts work."><meta data-rh="true" name="robots" content="noindex, nofollow"><link data-rh="true" rel="icon" href="/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://docs.hai-vr.dev/docs/products/h-view"><link data-rh="true" rel="alternate" href="https://docs.hai-vr.dev/docs/products/h-view" hreflang="en"><link data-rh="true" rel="alternate" href="https://docs.hai-vr.dev/docs/products/h-view" hreflang="x-default"><link rel="alternate" type="application/rss+xml" href="/updates/rss.xml" title="Haï~ RSS Feed">
 <link rel="alternate" type="application/atom+xml" href="/updates/atom.xml" title="Haï~ Atom Feed"><link rel="stylesheet" href="/assets/css/styles.da630d67.css">
-<script src="/assets/js/runtime~main.4f86c2c4.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.155ba4a1.js" defer="defer"></script>
 <script src="/assets/js/main.45e112a1.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -46,11 +46,12 @@ under a license that would not permit redistribution.</p><p>Treat this JSON file
 <li>Open an OSC Query service,</li>
 <li>Open an OSC service,</li>
 <li>Communicate with VRChat using OSC and OSC Query,</li>
-<li>Read any file on-demand located in <code>AppData/LocalLow/VRChat/vrchat/OSC/</code> that start with <code>ExternalExpressionsMenu_</code>.</li>
+<li>Read any file on-demand located in <code>AppData/LocalLow/VRChat/vrchat/OSC/</code> that start with <code>ExternalExpressionsMenu_</code>,</li>
+<li>Read the files in <code>AppData/Roaming/H-View/</code>, creating the directory if it doesn&#x27;t exist.</li>
 </ul>
 <p>If SteamVR is running, it will also create a dashboard overlay (accessible by pressing the system menu).</p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="costumes">Costumes<a href="#costumes" class="hash-link" aria-label="Direct link to Costumes" title="Direct link to Costumes">​</a></h3>
-<p>The Costumes tab will search for <code>.png</code> files starting with <code>avtr_</code> in your VRChat Users folder. The filename is the avatar ID.</p>
+<p>The Costumes tab will search for <code>.png</code> files starting with <code>avtr_</code> in the <code>%APPDATA%/H-View/Costumes/</code> folder. The filename is the avatar ID.</p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="osc-address-tabs">OSC Address tabs<a href="#osc-address-tabs" class="hash-link" aria-label="Direct link to OSC Address tabs" title="Direct link to OSC Address tabs">​</a></h3>
 <p>The following tabs are directly sourced from the OSC addressed received from VRChat&#x27;s OSC Query service:</p>
 <ul>
