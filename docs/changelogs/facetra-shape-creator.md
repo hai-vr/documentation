@@ -19,32 +19,18 @@ The overall performance of the application in Edit mode has been improved.
 
 On my machine, some operations that used to take 110ms now take 15ms.
 
-- In Edit mode, we will only create one blendshape per iteration (instead of three per open panel).
-  - This is because creating blendshapes is an expensive operation, which entirely depends on the complexity of the existing blendshapes of the current avatar base model. 
-- In Edit Mode, will keep a history of the last 60 iterations until the component becomes unselected or a build is triggered.
-  - This avoids creating copies of the mesh, which is expensive.
-- Move the generation of the mesh in Edit mode to a dedicated update loop, as some of the previous update locations
-  had the possibility of being executed multiple times per frame (i.e. multiple keystrokes since the last frame).
-- In Edit mode, generating meshes will be faster when the construction line panels are closed.
-  - This is because there is no need to recalculate masks when construction lines are not changed.
-- Avoid repetitive mesh data access, like vertex count, bones, or bindposes.
-- Avoid repeating vector operations inside for loops.
-- In Edit mode and during builds, skip blendshape removal when not necessary.
-
 During uploads and builds, the performance improvements are negligible, as the majority of the time is spent invoking an internal
 Unity function to create blendshapes, and this cannot be improved as the execution duration entirely depends on the number of vertices
 moved by existing blendshapes on the base face mesh.
 
-### Base blendshapes
+### Construction Pose
 
-PLANNED
-
-- You can now explicitly define base blendshapes that will serve as the rest pose of the face.
-- Deformations will now be applied relative to that rest pose.
+- You can now explicitly define base blendshapes that will serve as the rest pose of the face in the Construction Pose panel in the construction lines.
+- Deformations will now be applied relative to that Construction Pose.
+- The Construction Pose does not necessarily have to be the blendshapes used for the stylization of the avatar, it only needs to be
+  the blendshapes used at the time the contents of the FaceTra File is created.
 
 ### Blendshapes for all Shapes
-
-PLANNED
 
 - All shapes can now have blendshapes added to them.
 - Shapes that don't normally use the Mouth Divider can now have blendshapes that use the Mouth Divider.
@@ -81,8 +67,22 @@ PLANNED
   and is only used as a hint to determine which vertices are part of the eyelashes, so that the Eye Divider can show a preview
   before you define the shape later on.
 - Add a button to bake specifically to perform a VSFAvatar export.
+- The gizmos are no longer shown when the component is not selected.
+- In the UI, "Pupil" has been renamed "Pupil and Iris". There is no change in specification, as it was always meant to be both.
 - Make it possible to install the NDMF classes of FaceTra even if NDMF is not installed (i.e. for Resonite export).
 - FaceTra Shape Creator has internally migrated to part of the codebase used in Starmesh.
+- Performance improvement details:
+  - In Edit mode, we will only create one blendshape per iteration (instead of three per open panel).
+    - This is because creating blendshapes is an expensive operation, which entirely depends on the complexity of the existing blendshapes of the current avatar base model.
+  - In Edit Mode, will keep a history of the last 60 iterations until the component becomes unselected or a build is triggered.
+    - This avoids creating copies of the mesh, which is expensive.
+  - Move the generation of the mesh in Edit mode to a dedicated update loop, as some of the previous update locations
+    had the possibility of being executed multiple times per frame (i.e. multiple keystrokes since the last frame).
+  - In Edit mode, generating meshes will be faster when the construction line panels are closed.
+    - This is because there is no need to recalculate masks when construction lines are not changed.
+  - Avoid repetitive mesh data access, like vertex count, bones, or bindposes.
+  - Avoid repeating vector operations inside for loops.
+  - In Edit mode and during builds, skip blendshape removal when not necessary.
 
 ## 0.8.0-2024-04-08-2020
 

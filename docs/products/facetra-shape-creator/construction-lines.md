@@ -204,6 +204,19 @@ The jaw puller is roughly located on your chin. It will be used to move the jaw 
 
 Dividers provide hints on how to divide existing shapes in half.
 
+### Eye Visualization
+
+:::note
+This construction line is being added in 0.9.
+:::
+
+In eye visualization, you will select a blendshape that moves the eyelashes. This blendshape is used for the next step
+so that we can actually visualize our edits.
+
+I recommend that you simply choose a blendshape that closes both of your eyes.
+
+This blendshape is not used during the build, it is purely for visualization purposes.
+
 ### Eye Divider
 
 The eye divider splits the eye in half, so that there is the top half and the bottom half of the eye.
