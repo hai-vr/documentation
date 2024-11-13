@@ -124,6 +124,11 @@ export default {
             to: '/docs/other/patreon',
           },
           {
+            type: 'html',
+            value: '<a href="https://bsky.app/profile/hai-xr.bsky.social" rel="noopener noreferrer"><img src="/img/media/bluesky.png" alt="hai-xr.bsky.social"/></a>',
+            position: 'right',
+          },
+          {
             href: 'https://www.patreon.com/vr_hai',
             label: 'Patreon',
             position: 'right',
@@ -149,6 +154,10 @@ export default {
           {
             label: 'Twitter',
             href: 'https://twitter.com/vr_hai',
+          },
+          {
+            label: 'Bluesky @hai-xr.bsky.social',
+            href: 'https://bsky.app/profile/hai-xr.bsky.social',
           },
           {
             label: 'Discord',
