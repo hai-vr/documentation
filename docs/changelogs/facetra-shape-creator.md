@@ -8,45 +8,47 @@ title: FaceTra Shape Creator
 These changes have not been released yet.
 :::
 
-- When applying the same FaceTra file on multiple avatars with distinct model files that share the same base (i.e. both avatars are Manuka),
-  but the head of the two models have an offset (i.e. because the character wears high heels), the FaceTra Shape Creator component can
-  now specify a corrective offset that will be applied to one of the avatars, in order to re-align the head.
-  - Since this is set at the component level, this does not modify the contents of the FaceTra file data.
-
-### Performance improvements
+### Faster Edit mode performance
 
 The overall performance of the application in Edit mode has been improved.
 
 On my machine, some operations that used to take 110ms now take 15ms.
 
-During uploads and builds, the performance improvements are negligible, as the majority of the time is spent invoking an internal
-Unity function to create blendshapes, and this cannot be improved as the execution duration entirely depends on the number of vertices
+During uploads and builds, the performance improvements are negligible. It turns out, the majority of the time is spent invoking an internal
+Unity function to create blendshapes.
+
+This seemingly cannot be improved in a non-destructive manner as the execution duration entirely depends on the number of vertices
 moved by existing blendshapes on the base face mesh.
 
-### Construction Pose
+### Additions in generation capabilities
 
-- You can now explicitly define base blendshapes that will serve as the rest pose of the face in the Construction Pose panel in the construction lines.
-- Deformations will now be applied relative to that Construction Pose.
-- The Construction Pose does not necessarily have to be the blendshapes used for the stylization of the avatar, it only needs to be
-  the blendshapes used at the time the contents of the FaceTra File is created.
-
-### Blendshapes for all Shapes
+#### Blendshapes for all Shapes
 
 - All shapes can now have blendshapes added to them.
 - Shapes that don't normally use the Mouth Divider can now have blendshapes that use the Mouth Divider.
 - Shapes that move a muscle in the middle of the face can now have blendshapes that the Mouth Divider.
 - Shapes that move the Tongue can now have blendshapes that only move the vertices that had been assigned to the Tongue.
 - You can now apply a deformation to the tongue, based on the blendshapes that moved the tongue out.
-- Deformers can be turned off per shape, in cases where you use blendshapes instead of deformers.
 
-### Tailoring improvements
+#### Deformers are now optional
+
+- Deformers can be turned off per shape, in cases where you only use blendshapes instead of deformers.
+
+#### Tailoring improvements
 
 - The result of Tailoring can now be exported to a new FaceTra File that does not require tailoring.
 - Blendshapes from the Adaptive File can now be optionally included.
 - Deformers can be overriden per shape.
   - When a deformer is overriden in tailoring mode, a new "Restore from adaptive" button copies the position, rotation, distance, and curve from the tailored version.
 
-### Jaw Calibration
+#### Construction Pose
+
+- You can now explicitly define base blendshapes that will serve as the rest pose of the face in the Construction Pose panel in the construction lines.
+- Deformations will now be applied relative to that Construction Pose.
+- The Construction Pose does not necessarily have to be the blendshapes used for the stylization of the avatar, it only needs to be
+  the blendshapes used at the time the contents of the FaceTra File is created.
+
+#### Jaw Calibration
 
 - In order to fix a design mistake in all versions of FaceTra prior to 0.9, this update introduces a new construction line called *Jaw Calibration*.
 - The *Jaw Calibration* construction line is the blendshape that is going to be used as a base to select features inside the mouth,
@@ -58,21 +60,29 @@ moved by existing blendshapes on the base face mesh.
   - New FaceTra files will use the new Jaw Calibration by default.
   - Old FaceTra files will not use the new Jaw Calibration. It must be manually enabled by the user.
 
+#### Other additions
+
+- Upper teeth can now be included in the deformation of Jaw Open, Jaw Left/Right, and Jaw Forward.
+- When applying the same FaceTra file on multiple avatars with distinct model files that share the same base (i.e. both avatars are Manuka),
+  but the head of the two models have an offset (i.e. because the character wears high heels), the FaceTra Shape Creator component can
+  now specify a corrective offset that will be applied to one of the avatars, in order to re-align the head.
+  - Since this is set at the component level, this does not modify the contents of the FaceTra file data.
+- Add new construction line "Eye Visualization". This construction line has no effect on the final result of the avatar,
+  and is only used as a hint to determine which vertices are part of the eyelashes, so that the Eye Divider can show a preview
+  before you define the shape later on.
+
 ### Fixes
 
 - Fix remapping blendshape conventions should no longer generate incorrect names.
 - Support cases where the skinned mesh has no Head bone.
 - Support cases where the skinned mesh has no bone number 0 assigned to it.
-- Gizmos are now forced to be shown when entering Vertex selection.
 
-### Other
+### UI and Miscellaneous
 
-- Add new construction line "Eye Visualization". This construction line has no effect on the final result of the avatar,
-  and is only used as a hint to determine which vertices are part of the eyelashes, so that the Eye Divider can show a preview
-  before you define the shape later on.
-- Upper teeth can now be included in the deformation of Jaw Open, Jaw Left/Right, and Jaw Forward.
+- You can now hold the ALT key to preview one side of the face or both sides. This can be turned off in the component settings.
 - Add a button to bake specifically to perform a VSFAvatar export.
-- The gizmos are no longer shown when the component is not selected.
+- Gizmos are no longer shown when the component is not selected.
+- Gizmos are now forced to be shown when entering Vertex selection.
 - In the UI, "Pupil" has been renamed "Pupil and Iris". There is no change in specification, as it was always meant to be both.
 - Make it possible to install the NDMF classes of FaceTra even if NDMF is not installed (i.e. for Resonite export).
 - FaceTra Shape Creator has internally migrated to part of the codebase used in Starmesh.
