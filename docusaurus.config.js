@@ -125,7 +125,7 @@ export default {
           },
           {
             type: 'html',
-            value: '<a href="https://bsky.app/profile/hai-xr.bsky.social" rel="noopener noreferrer"><img src="/img/media/bluesky.png" alt="hai-xr.bsky.social"/></a>',
+            value: '<a href="https://bsky.app/profile/just.hai-vr.dev" rel="noopener noreferrer"><img src="/img/media/bluesky.png" alt="just.hai-vr.dev"/></a>',
             position: 'right',
           },
           {
@@ -156,8 +156,8 @@ export default {
             href: 'https://twitter.com/vr_hai',
           },
           {
-            label: 'Bluesky @hai-xr.bsky.social',
-            href: 'https://bsky.app/profile/hai-xr.bsky.social',
+            label: 'Bluesky @just.hai-vr.dev',
+            href: 'https://bsky.app/profile/just.hai-vr.dev',
           },
           {
             label: 'Discord',
