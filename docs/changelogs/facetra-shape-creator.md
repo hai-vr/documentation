@@ -37,10 +37,14 @@ moved by existing blendshapes on the base face mesh.
 - Shapes that move a muscle in the middle of the face can now have blendshapes that the Mouth Divider.
 - Shapes that move the Tongue can now have blendshapes that only move the vertices that had been assigned to the Tongue.
 - You can now apply a deformation to the tongue, based on the blendshapes that moved the tongue out.
+- Deformers can be turned off per shape, in cases where you use blendshapes instead of deformers.
 
 ### Tailoring improvements
 
 - The result of Tailoring can now be exported to a new FaceTra File that does not require tailoring.
+- Blendshapes from the Adaptive File can now be optionally included.
+- Deformers can be overriden per shape.
+  - When a deformer is overriden in tailoring mode, a new "Restore from adaptive" button copies the position, rotation, distance, and curve from the tailored version.
 
 ### Jaw Calibration
 
@@ -66,6 +70,7 @@ moved by existing blendshapes on the base face mesh.
 - Add new construction line "Eye Visualization". This construction line has no effect on the final result of the avatar,
   and is only used as a hint to determine which vertices are part of the eyelashes, so that the Eye Divider can show a preview
   before you define the shape later on.
+- Upper teeth can now be included in the deformation of Jaw Open, Jaw Left/Right, and Jaw Forward.
 - Add a button to bake specifically to perform a VSFAvatar export.
 - The gizmos are no longer shown when the component is not selected.
 - In the UI, "Pupil" has been renamed "Pupil and Iris". There is no change in specification, as it was always meant to be both.
