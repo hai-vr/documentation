@@ -50,7 +50,7 @@ You should use Recalculate Normals on the following blendshapes:
 - Body adjustment blendshapes to fit clothing, such as heel adapters, or clothing that pinch the body.
 
 <video controls width="816" autostart="false">
-    <source src={require('../img/JiHvKYMj8A.mp4').default}/>
+    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/JiHvKYMj8A.mp4' ?? require('../img/JiHvKYMj8A.mp4').default}/>
 </video>
 
 *Left: Recalculate Normals active. Right: Original avatar.<br />Notice the shadows better match the chest shape when Recalculate Normals is active.*
