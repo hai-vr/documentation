@@ -9,4 +9,8 @@ although it's not on the most recent version of the tool.
 
 It's not a tutorial though, so continue reading this documentation.
 
-- Link to **[video](https://hai-vr.notion.site/Video-86ae4dbe45d3493fbc4a9ba60c152989)**.
+<video controls width="816">
+<source src={'https://downscale.srv.hai-vr.dev/assets/large/2023-11-07_02-13-21_ShareX.mp4'}/>
+</video>
+
+- Backup link: **[video](https://hai-vr.notion.site/Video-86ae4dbe45d3493fbc4a9ba60c152989)**.
