@@ -1,6 +1,4 @@
-﻿import pFdyyLdeVF from './img/double-hip-tracker_pFdyyLdeVF.mp4';
-
-# Double Chest Tracker
+﻿# Double Chest Tracker
 
 In addition to the Double Hip Tracker, you can also enable the Double Chest Tracker.
 
@@ -15,7 +13,7 @@ Once enabled, you need to select the serial numbers of your two chest trackers b
 You can find out which tracker is the correct one by spinning your tracker quickly, and an indicator `<<<` will show up in the list of available hardware.
 
 <video controls width="816" autostart="false">
-    <source src={pFdyyLdeVF}/>
+    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/double-hip-tracker_pFdyyLdeVF.mp4' ?? require('./img/double-hip-tracker_pFdyyLdeVF.mp4')}/>
 </video>
 
 Spin your tracker to find it using the `<<<` indicator, and then select them in the *Double Chest Tracker* tab panel.

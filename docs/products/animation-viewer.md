@@ -1,5 +1,3 @@
-import uYmmptha2T from './animation-viewer-img/sx_2022-02-02_03-27-39_uYmmptha2T.mp4';
-import QdOYmOWyly from './animation-viewer-img/sx_2022-02-02_03-05-20_QdOYmOWyly.mp4';
 import {HaiTags} from "/src/components/HaiTags";
 import {HaiTag} from "/src/components/HaiTag";
 import HaiSupport from "/docs/_support.mdx";
@@ -17,7 +15,7 @@ This does not require VRChat to run. It has been tested to work on Unity 2019, a
 :::
 
 <video controls width="816" autostart="false">
-    <source src={uYmmptha2T}/>
+    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/sx_2022-02-02_03-27-39_uYmmptha2T.mp4' ?? require('./animation-viewer-img/sx_2022-02-02_03-27-39_uYmmptha2T.mp4')}/>
 </video>
 
 ## Download
@@ -86,7 +84,7 @@ This can be used to choose a pose to preview clothing toggle animations.
 This can also be used to hide hats and other objects, letting you generate more relevant previews.
     
 <video controls width="816" autostart="false">
-    <source src={QdOYmOWyly}/>
+    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/sx_2022-02-02_03-05-20_QdOYmOWyly.mp4' ?? require('./animation-viewer-img/sx_2022-02-02_03-05-20_QdOYmOWyly.mp4')}/>
 </video>
 
 ## CTRL-K Search window

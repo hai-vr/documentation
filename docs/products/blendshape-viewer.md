@@ -1,8 +1,6 @@
 ﻿---
 title: Blendshape Viewer
 ---
-import Je9CWGeOH8 from './blendshape-viewer-img/sx_2022-01-15_00-25-45_Je9CWGeOH8.mp4';
-import xx4Kdbs1Hlck from './blendshape-viewer-img/sx_2022-01-15_00-18-15_4Kdbs1Hlck.mp4';
 import {HaiTags} from "/src/components/HaiTags";
 import {HaiTag} from "/src/components/HaiTag";
 
@@ -17,7 +15,7 @@ This does not require VRChat to run. It has been tested to work on Unity 2019, a
 :::
 
 <video controls width="816" autostart="false">
-    <source src={Je9CWGeOH8}/>
+    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/sx_2022-01-15_00-25-45_Je9CWGeOH8.mp4' ?? require('./blendshape-viewer-img/sx_2022-01-15_00-25-45_Je9CWGeOH8.mp4')}/>
 </video>
 
 ## Download
@@ -71,7 +69,7 @@ The tool is free for download. It can also be downloaded using VCC.
 - The tool can be used when recording animations.
 
 <video controls width="816" autostart="false">
-    <source src={xx4Kdbs1Hlck}/>
+    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/sx_2022-01-15_00-18-15_4Kdbs1Hlck.mp4' ?? require('./blendshape-viewer-img/sx_2022-01-15_00-18-15_4Kdbs1Hlck.mp4')}/>
 </video>
 
 - The text of the blendshape labels can be selected and copied.

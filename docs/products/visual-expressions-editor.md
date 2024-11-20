@@ -1,5 +1,3 @@
-import ochgB1a5VG from './visual-expressions-editor-img/sx_2022-03-08_16-17-04_ochgB1a5VG.mp4';
-import Kza0kEYwsf from './visual-expressions-editor-img/sx_2022-04-14_23-17-52_Kza0kEYwsf.mp4';
 import {HaiTags} from "/src/components/HaiTags";
 import {HaiTag} from "/src/components/HaiTag";
 
@@ -16,7 +14,7 @@ This does not require VRChat to run. It has been tested to work on Unity 2019, a
 :::
 
 <video controls width="816" autostart="false">
-    <source src={ochgB1a5VG}/>
+    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/sx_2022-03-08_16-17-04_ochgB1a5VG.mp4' ?? require('./visual-expressions-editor-img/sx_2022-03-08_16-17-04_ochgB1a5VG.mp4')}/>
 </video>
 
 ## Download
@@ -105,7 +103,7 @@ There is a button that lets you delete all 0-values.
 Version V1.1.0 introduces “Loop Edit” mode.
 
 <video controls width="816" autostart="false">
-    <source src={Kza0kEYwsf}/>
+    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/sx_2022-04-14_23-17-52_Kza0kEYwsf.mp4' ?? require('./visual-expressions-editor-img/sx_2022-04-14_23-17-52_Kza0kEYwsf.mp4')}/>
 </video>
 
 “Loop Edit” mode was specifically designed to facilitate the creation of looping face expression animations.

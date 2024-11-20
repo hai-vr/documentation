@@ -1,5 +1,3 @@
-import qwusFjCQsC from './expressions-menu-hierarchy-editor-img/sx_2022-03-03_03-36-12_qwusFjCQsC.mp4'
-import JfpvN3yRTz from './expressions-menu-hierarchy-editor-img/sx_2022-03-03_01-37-29_JfpvN3yRTz.mp4'
 import {HaiTags} from "/src/components/HaiTags";
 import {HaiTag} from "/src/components/HaiTag";
 
@@ -50,7 +48,7 @@ We will import your existing menu in order to create a new Expression Menu asset
 Your scene now contains the entire menu as a hierarchy of GameObjects!
 
 <video controls width="816" autostart="false">
-    <source src={qwusFjCQsC}/>
+    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/sx_2022-03-03_03-36-12_qwusFjCQsC.mp4' ?? require('./expressions-menu-hierarchy-editor-img/sx_2022-03-03_03-36-12_qwusFjCQsC.mp4')}/>
 </video>
 
 ## Editing menus
@@ -82,7 +80,7 @@ Menus generated from other Editor Tools such as Radial Inventory System can be h
 The hierarchy children of this SubMenu will be ignored.
 
 <video controls width="816" autostart="false">
-    <source src={JfpvN3yRTz}/>
+    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/sx_2022-03-03_01-37-29_JfpvN3yRTz.mp4' ?? require('./expressions-menu-hierarchy-editor-img/sx_2022-03-03_01-37-29_JfpvN3yRTz.mp4')}/>
 </video>
 
 ### Reusing a SubMenu multiple times / Circular references

@@ -1,13 +1,4 @@
-﻿import hfr7itqHuk from './reference-img/sx_2021-12-25_09-13-53_hfr7itqHuk.mp4';
-import minaCXRGZI from './reference-img/sx_2021-12-23_18-19-55_minaCXRGZI.mp4';
-import bbssahrZts from './reference-img/sx_2021-12-22_14-49-00_bbssahrZts.mp4';
-import MI4rQNf7hj from './reference-img/sx_2021-12-22_14-54-50_MI4rQNf7hj.mp4';
-import rhqoXFd3f5 from './reference-img/sx_2021-12-28_22-51-31_rhqoXFd3f5.mp4';
-import sbVJqWam30 from './reference-img/sx_2022-03-09_15-30-45_sbVJqWam30.mp4';
-import otzZOfTPca from './reference-img/sx_2021-12-26_08-00-46_otzZOfTPca.mp4';
-import cloakdr2expf2 from './reference-img/cloakdr2-exp-f2.mp4';
-
-# Reference manual
+﻿# Reference manual
 
 This is the **reference manual!** This reference will go through the essentials of the tool.
 
@@ -34,7 +25,7 @@ In the meantime, you can use these videos as reference, which shows most of the 
 The following video shows in under 2 minutes an avatar being imported from scratch and an animation being created out of it.
 
 <video controls width="816" autostart="false">
-    <source src={hfr7itqHuk} />
+    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/sx_2021-12-25_09-13-53_hfr7itqHuk.mp4' ?? require('./reference-img/sx_2021-12-25_09-13-53_hfr7itqHuk.mp4')} />
 </video>
 
 [//]: # (<aside>)
@@ -49,7 +40,7 @@ It needs to be installed separately, and the process is explained in this manual
 - Show video...
 
 <video controls width="816" autostart="false">
-    <source src={minaCXRGZI} />
+    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/sx_2021-12-23_18-19-55_minaCXRGZI.mp4' ?? require('./reference-img/sx_2021-12-23_18-19-55_minaCXRGZI.mp4')} />
 </video>
 
 [//]: # (</aside>)
@@ -123,13 +114,13 @@ Duplicate your bone, make the duplicate a child of the original, and rename the 
 </aside>
 
 <video controls width="816" autostart="false">
-    <source src={bbssahrZts}/>
+    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/sx_2021-12-22_14-49-00_bbssahrZts.mp4' ?? require('./reference-img/sx_2021-12-22_14-49-00_bbssahrZts.mp4')}/>
 </video>
 
 Duplicate, the duplicate becomes the child.
 
 <video controls width="816" autostart="false">
-    <source src={MI4rQNf7hj}/>
+    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/sx_2021-12-22_14-54-50_MI4rQNf7hj.mp4' ?? require('./reference-img/sx_2021-12-22_14-54-50_MI4rQNf7hj.mp4')}/>
 </video>
 
 Rename Vertex Groups of the clothing mesh.
@@ -159,7 +150,7 @@ For those, you need to split the Vertex Group of the mesh into multiple parts yo
   This new Neutral position better represents the rotation point of the frill, which will make it easier to slide through the leg.
 
 <video controls width="816" autostart="false">
-    <source src={rhqoXFd3f5}/>
+    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/sx_2021-12-28_22-51-31_rhqoXFd3f5.mp4' ?? require('./reference-img/sx_2021-12-28_22-51-31_rhqoXFd3f5.mp4')}/>
 </video>
 
 - Click “Confirm Setup”.
@@ -234,7 +225,7 @@ To control the animator:
     - For a PhysBone, it could be `YourPhysBoneParameter_Stretch`
 
 <video controls width="816" autostart="false">
-    <source src={sbVJqWam30}/>
+    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/sx_2022-03-09_15-30-45_sbVJqWam30.mp4' ?? require('./reference-img/sx_2022-03-09_15-30-45_sbVJqWam30.mp4')}/>
 </video>
 
       The sleeve is just a PhysBone made of empty objects that can stretch. The main advantage is that this does not consume any synced parameter bits!
@@ -448,7 +439,7 @@ This technique is further described in the following page:
 [Special technique: Keep a nice SkinnedMesh deformation when moving in visually parallel tracks using Aim Constraints](https://www.notion.so/Special-technique-Keep-a-nice-SkinnedMesh-deformation-when-moving-in-visually-parallel-tracks-using-4939ede76fc648bcbc6a4fddb56c32d5?pvs=21)
 
 <video controls width="816" autostart="false">
-    <source src={otzZOfTPca}/>
+    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/sx_2021-12-26_08-00-46_otzZOfTPca.mp4' ?? require('./reference-img/sx_2021-12-26_08-00-46_otzZOfTPca.mp4')}/>
 </video>
 
 ### Special technique: Drop in world space using World Constraints at the end of your track using custom animations
@@ -463,7 +454,7 @@ I suggest that you move the World Constraint to another System, and trigger it s
 </aside>
 
 <video controls width="816" autostart="false">
-    <source src={cloakdr2expf2}/>
+    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/cloakdr2-exp-f2.mp4' ?? require('./reference-img/cloakdr2-exp-f2.mp4')}/>
 </video>
 
 ### Special technique: Moving several tracks in a sequence using delays and scaling

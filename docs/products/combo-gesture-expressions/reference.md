@@ -2,19 +2,6 @@
 sidebar_position: 1
 ---
 
-import LrodZ6DkxP from './videos/sx_2022-05-04_15-59-03_LrodZ6DkxP.mp4';
-import FyjXwkdmJA from './videos/sx_2022-05-04_16-15-03_FyjXwkdmJA.mp4';
-import p2kFer4X67 from './videos/sx_2022-05-04_16-41-26_p2kFer4X67.mp4';
-import _07ZREXTDvt from './videos/sx_2022-05-04_16-51-53_07ZREXTDvt.mp4';
-import fe0loyjRqc from './videos/sx_2022-05-04_17-06-15_fe0loyjRqc.mp4';
-import JWZUi936jq from './videos/sx_2022-05-04_17-15-52_JWZUi936jq.mp4';
-import rmaiRqGhCH from './videos/sx_2022-05-04_17-59-15_rmaiRqGhCH.mp4';
-import yxRmSyqtWe from './videos/sx_2022-05-04_18-35-03_yxRmSyqtWe.mp4';
-import demo_analog from './videos/hp17ra-demo-analog.mp4';
-import YTbmBZpWFo from './videos/sx_2022-05-04_20-10-33_YTbmBZpWFo.mp4';
-import cge_dyn2_f from './videos/cge-dyn2-f.mp4';
-import f5ToWtGl2m from './videos/sx_2022-05-04_21-56-30_f5ToWtGl2m.mp4';
-
 import styles from './styles.module.css';
 
 # Reference manual
@@ -84,7 +71,7 @@ I will try to provide help on the #combogesture-vrc channel when I can.
 ## Set up the prefab and open the CGE Editor
 
 <video controls width="816" autostart="false">
-    <source src={LrodZ6DkxP} type="video/mp4" />
+    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/sx_2022-05-04_15-59-03_LrodZ6DkxP.mp4' ?? require('./videos/sx_2022-05-04_15-59-03_LrodZ6DkxP.mp4')} type="video/mp4" />
 </video>
 
 Add the prefab to the scene located in *Project View > `Packages/` folder  > "Haï ~ ComboGestureExpressions" package -> `ComboGestureExpressions.prefab`*. Right-click on the newly inserted prefab and click <span class={styles.hai_btn}>Unpack prefab completely</span>.
@@ -101,7 +88,7 @@ If you are using ComboGestureExpressions V3, the prefab is now part of the `Pack
 
 [//]: # (![NewInV2TagSmall]&#40;/unsorted_ghc/167145432-89428be9-9f16-4795-98ce-093a0c96837c.png&#41;)
 <video controls width="816" autostart="false">
-    <source src={FyjXwkdmJA} type="video/mp4" />
+    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/sx_2022-05-04_16-15-03_FyjXwkdmJA.mp4' ?? require('./videos/sx_2022-05-04_16-15-03_FyjXwkdmJA.mp4')} type="video/mp4" />
 </video>
 
 Select your avatar which contains your Animator.
@@ -116,7 +103,7 @@ For more information, see [AnimationViewer manual](https://hai-vr.notion.site/An
 
 [//]: # (![ChangedInV2TagSmall]&#40;/unsorted_ghc/167145687-6fb677af-43e0-473e-ab91-66d000619125.png&#41;)
 <video controls width="816" autostart="false">
-    <source src={p2kFer4X67} type="video/mp4" />
+    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/sx_2022-05-04_16-41-26_p2kFer4X67.mp4' ?? require('./videos/sx_2022-05-04_16-41-26_p2kFer4X67.mp4')} type="video/mp4" />
 </video>
 
 To assign animations with hand gestures, Drag and drop animation clips from your Project view to the slots in CGE Editor.
@@ -144,7 +131,7 @@ Gesture names for reference ([VRChat documentation](https://docs.vrchat.com/docs
 
 [//]: # (![ChangedInV2TagSmall]&#40;/unsorted_ghc/167145687-6fb677af-43e0-473e-ab91-66d000619125.png&#41;)
 <video controls width="816" autostart="false">
-    <source src={_07ZREXTDvt} type="video/mp4" />
+    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/sx_2022-05-04_16-51-53_07ZREXTDvt.mp4' ?? require('./videos/sx_2022-05-04_16-51-53_07ZREXTDvt.mp4')} type="video/mp4" />
 </video>
 
 If you need to create a new face expression animation, click the *Create* button, or click the *Visual Expressions Editor* button on the top right.
@@ -158,7 +145,7 @@ For more information, head over to the [Visual Expressions Editor documentation]
 ## Combining hands
 
 <video controls width="816" autostart="false">
-    <source src={fe0loyjRqc} type="video/mp4" />
+    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/sx_2022-05-04_17-06-15_fe0loyjRqc.mp4' ?? require('./videos/sx_2022-05-04_17-06-15_fe0loyjRqc.mp4')} type="video/mp4" />
 </video>
 
 When your left hand and right hand are not making the same gesture, the animation in the corresponding slot will play.
@@ -176,7 +163,7 @@ It is highly recommended to fill out all slots.
 ## Do not blink when eyes are closed
 
 <video controls width="816" autostart="false">
-    <source src={JWZUi936jq} type="video/mp4" />
+    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/sx_2022-05-04_17-15-52_JWZUi936jq.mp4' ?? require('./videos/sx_2022-05-04_17-15-52_JWZUi936jq.mp4')} type="video/mp4" />
 </video>
 
 Go to <span class={styles.hai_btn}>Prevent eyes blinking</span> tab. By selecting which animations have both eyes closed, the blinking animation will be disabled as long as that face expression is active.
@@ -192,7 +179,7 @@ On many avatar bases, the left eyelid and right eyelid can be animated independe
 ## Apply to the avatar
 
 <video controls width="816" autostart="false">
-    <source src={rmaiRqGhCH} type="video/mp4" />
+    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/sx_2022-05-04_17-59-15_rmaiRqGhCH.mp4' ?? require('./videos/sx_2022-05-04_17-59-15_rmaiRqGhCH.mp4')} type="video/mp4" />
 </video>
 
 ### Select the Avatar Descriptor
@@ -236,7 +223,7 @@ Whenever you modify any face expression animation or anything related to ComboGe
 ## Squeezing the trigger
 
 <video controls width="816" autostart="false">
-    <source src={yxRmSyqtWe} type="video/mp4" />
+    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/sx_2022-05-04_18-35-03_yxRmSyqtWe.mp4' ?? require('./videos/sx_2022-05-04_18-35-03_yxRmSyqtWe.mp4')} type="video/mp4" />
 </video>
 
 In VRChat, to play the hand animations, make a fist with your hand, and squeeze the trigger. The animation will be blended in the more your press the trigger.
@@ -253,7 +240,7 @@ When both hands of your hand are making a fist, you can select two additional an
 
 :::note
 <video controls width="408" autostart loop>
-    <source src={demo_analog} type="video/mp4" />
+    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/hp17ra-demo-analog.mp4' ?? require('./videos/hp17ra-demo-analog.mp4')} type="video/mp4" />
 </video>
 
 Illustration of animation blending in an Analog Fist gesture.
@@ -269,7 +256,7 @@ On many avatar bases, the left eyelid and right eyelid can be animated independe
 
 [//]: # (![NewInV2TagSmall]&#40;/unsorted_ghc/167145432-89428be9-9f16-4795-98ce-093a0c96837c.png&#41;)
 <video controls width="816" autostart="false">
-    <source src={YTbmBZpWFo} type="video/mp4" />
+    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/sx_2022-05-04_20-10-33_YTbmBZpWFo.mp4' ?? require('./videos/sx_2022-05-04_20-10-33_YTbmBZpWFo.mp4')} type="video/mp4" />
 </video>
 
 To make your face expression react to interactions and other Dynamics, add the prefab to the scene located in *Project View > `Packages/` folder  > "Haï ~ ComboGestureExpressions" package -> `CGEDynamics.prefab`*. Right-click on the newly inserted prefab and click <span class={styles.hai_btn}>Unpack prefab completely</span>.
@@ -289,7 +276,7 @@ You can individually define *Dynamics* objects in each Mood set, which will only
 
 :::note
 <video controls width="408" autostart loop>
-    <source src={cge_dyn2_f} type="video/mp4" />
+    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/cge-dyn2-f.mp4' ?? require('./videos/cge-dyn2-f.mp4')} type="video/mp4" />
 </video>
 
 Illustration of a Dynamics contact.
@@ -321,7 +308,7 @@ The animation will behave differently depending on the PhysBone source:
 ### Behavior with multiple Dynamic Expressions
 
 <video controls width="816" autostart="false">
-    <source src={f5ToWtGl2m} type="video/mp4" />
+    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/sx_2022-05-04_21-56-30_f5ToWtGl2m.mp4' ?? require('./videos/sx_2022-05-04_21-56-30_f5ToWtGl2m.mp4')} type="video/mp4" />
 </video>
 
 The order of Dynamics in this list matters: When two or more Dynamic Conditions are active, the one which is higher in the list has priority.
