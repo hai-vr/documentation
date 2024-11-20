@@ -7,7 +7,7 @@ The *Starmesh Op. Compressive Deform* component creates a blendshape that emulat
 against that object.
 
 <video controls muted width="816">
-    <source src={require('../img/SBieqfITm9.mp4').default}/>
+    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/SBieqfITm9.mp4' ?? require('../img/SBieqfITm9.mp4').default}/>
 </video>
 
 This is different from rescaling. The surface of a non-flat object will be progressively flattened as it's being compressed.
@@ -82,14 +82,14 @@ The Lateral deformation section configures how the vertices moves laterally away
 - If you haven't already done it, move the **Origin** gizmo laterally (on the red/green axes) to be roughly at the center of your object. If your object is round, put it at the center of that roundness.
   - You will notice as you move the **Origin** gizmo laterally that the vertices will expand in a different direction.
 <video controls muted width="816">
-    <source src={require('../img/fcnROnCHkD.mp4').default}/>
+    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/fcnROnCHkD.mp4' ?? require('../img/fcnROnCHkD.mp4').default}/>
 </video>
 
 #### Configure the Lateral deformation to decrease the influence near the center
 
 - Increase or decrease the *Lateral Center Displacement Distance*. This value creates an area near the center that will be immune to the effect of the lateral deformation.
 <video controls muted width="816">
-    <source src={require('../img/sB0r9fu05b.mp4').default}/>
+    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/sB0r9fu05b.mp4' ?? require('../img/sB0r9fu05b.mp4').default}/>
 </video>
 
 #### Configure the Lateral deformation for Cylindrical shapes
@@ -98,7 +98,7 @@ The Lateral deformation section configures how the vertices moves laterally away
   - Check the *Lateral Is Cylindrical* checkbox.
   - Rotate the **Origin** gizmo so that the vertical lines line up with the direction of your cylindrical shape.
 <video controls muted width="816">
-    <source src={require('../img/0WoLXFb7oJ.mp4').default}/>
+    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/0WoLXFb7oJ.mp4' ?? require('../img/0WoLXFb7oJ.mp4').default}/>
 </video>
 
 ### Test the operator
@@ -117,7 +117,7 @@ The *Displacement over %* section lets you configure how the vertices should mov
 As easy tweak you can try is to edit the *Surface Curve Response*, and tilt the angle of the point at (0, 0).
 
 <video controls muted width="816">
-    <source src={require('../img/XbNrbYjAKk.mp4').default}/>
+    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/XbNrbYjAKk.mp4' ?? require('../img/XbNrbYjAKk.mp4').default}/>
 </video>
 
 ### Recalculate Normals

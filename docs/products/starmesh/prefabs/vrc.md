@@ -26,7 +26,7 @@ The components you see inside the prefab are just the tip of the iceberg.
 Current version of this prefab: V1.1
 
 <video controls muted width="816">
-    <source src={require('../img/qU1Rm3YaXR.mp4').default}/>
+    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/qU1Rm3YaXR.mp4' ?? require('../img/qU1Rm3YaXR.mp4').default}/>
 </video>
 
 ### Basic setup

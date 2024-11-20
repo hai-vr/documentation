@@ -11,7 +11,7 @@ Specify which meshes will be affected.
 - **Active Blendshapes**: During the calculations, these blendshapes will be emulated to be active as part of the operations.
 
 <video controls muted>
-    <source src={require('./img/v66A6bxugo.mp4').default}/>
+    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/v66A6bxugo.mp4' ?? require('./img/v66A6bxugo.mp4').default}/>
 </video>
 
 ## Select Bones
@@ -27,7 +27,7 @@ You can match bones by transform, or by object name. Matching by object name can
 - **Include Child Bones**: Also includes all child bones.
 
 <video controls muted>
-    <source src={require('./img/SQzLrkRyb2.mp4').default}/>
+    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/SQzLrkRyb2.mp4' ?? require('./img/SQzLrkRyb2.mp4').default}/>
 </video>
 
 ## Select Point Radius
@@ -42,7 +42,7 @@ Reduces the current selection so that only vertices within a radius around a poi
 The magenta line shows the halfway point. The faint pink line shows the maximum distance.
 
 <video controls muted width="816">
-    <source src={require('./img/oiUmCmWHPk.mp4').default}/>
+    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/oiUmCmWHPk.mp4' ?? require('./img/oiUmCmWHPk.mp4').default}/>
 </video>
 
 ### Curve
@@ -55,7 +55,7 @@ By changing the shape of the curve, you can make that influence stronger or weak
 The yellow line shows the threshold where vertices will be influenced by at least 50%.
 
 <video controls muted width="816">
-    <source src={require('./img/U7FXb8wgEL.mp4').default}/>
+    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/U7FXb8wgEL.mp4' ?? require('./img/U7FXb8wgEL.mp4').default}/>
 </video>
 
 ## Select Line Radius
@@ -80,7 +80,7 @@ The magenta line shows the halfway point. The faint pink line shows the maximum 
 If [you redefine the curves](#curve), the yellow line shows the threshold where vertices will be influenced by at least 50%.
 
 <video controls muted width="816">
-    <source src={require('./img/zHCaHEnKu3.mp4').default}/>
+    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/zHCaHEnKu3.mp4' ?? require('./img/zHCaHEnKu3.mp4').default}/>
 </video>
 
 ## Select Blendshapes

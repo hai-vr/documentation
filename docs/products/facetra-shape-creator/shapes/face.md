@@ -20,7 +20,7 @@ Most other shapes will involve pulling and twisting parts of the mesh. If you’
 Systematically press the “Reset position and rotation” buttons to fix the shape before you start working on it the first time.
 
 <video controls muted>
-<source src={require('../img/shapes/Unity_S2iRD530sU.mp4').default}/>
+<source src={'https://downscale.srv.hai-vr.dev/assets/docs/Unity_S2iRD530sU.mp4' ?? require('../img/shapes/Unity_S2iRD530sU.mp4').default}/>
 </video>
 :::
 
@@ -32,5 +32,5 @@ Systematically press the “Reset position and rotation” buttons to fix the sh
 - Lip Pucker, Mouth Upper Up, Mouth Lower Down, and some others, you may want to look into changing that shape.
 
 <video controls muted>
-    <source src={require('../img/shapes/2023-11-06_20-04-18_ShareX.mp4').default}/>
+    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/2023-11-06_20-04-18_ShareX.mp4' ?? require('../img/shapes/2023-11-06_20-04-18_ShareX.mp4').default}/>
 </video>

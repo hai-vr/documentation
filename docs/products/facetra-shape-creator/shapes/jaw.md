@@ -15,5 +15,5 @@ These shapes allow you to move the jaw, but by default, this includes the upper 
 If your avatar has a very large jaw as it is the case with the face structure of some furry avatars, you can check the “Jaw … Puller Only Lower” checkbox so that the Jaw puller will only change the lower part of the mouth divider.
 
 <video controls muted width="816">
-    <source src={require('../img/shapes/Unity_sD62flWJ7S.mp4').default}/>
+    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/Unity_sD62flWJ7S.mp4' ?? require('../img/shapes/Unity_sD62flWJ7S.mp4').default}/>
 </video>

@@ -29,7 +29,7 @@ If you were to try, shaders would fail to render in your VTubing app (it would b
 :::
 
 <video controls width="816">
-    <source src={require('./img/denormalized-avatar-exporter/denormalized-f.mp4').default}/>
+    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/denormalized-f.mp4' ?? require('./img/denormalized-avatar-exporter/denormalized-f.mp4').default}/>
 </video>
 
 ## Install

@@ -25,5 +25,5 @@ If you are targeting a platform that uses a Unity animations, you can generate a
 - Create a new Animation clip, or choose one in your project. Then, in the Animation editor tab press CTRL-V to paste those properties. 
 
 <video controls muted width="816">
-    <source src={require('./img/B1If1P3Kv6.mp4').default}/>
+    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/B1If1P3Kv6.mp4' ?? require('./img/B1If1P3Kv6.mp4').default}/>
 </video>

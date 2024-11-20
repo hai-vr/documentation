@@ -5,7 +5,7 @@ sidebar_position: 0
 # Getting started
 
 <video controls width="816">
-    <source src={require('./img/2023-10-20_17-11-26_ShareX.mp4').default}/>
+    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/2023-10-20_17-11-26_ShareX.mp4' ?? require('./img/2023-10-20_17-11-26_ShareX.mp4').default}/>
 </video>
 
 ## Method of operation
@@ -36,7 +36,7 @@ Finally, open the downloaded Vixen archive and install the .unitypackage in your
 ## Menu items and toggles
 
 <video controls width="816">
-    <source src={require('./img/2023-10-20_17-23-33_ShareX.mp4').default}/>
+    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/2023-10-20_17-23-33_ShareX.mp4' ?? require('./img/2023-10-20_17-23-33_ShareX.mp4').default}/>
 </video>
 
 ### Create a menu item
@@ -57,7 +57,7 @@ If you want to toggle a component instead of the object itself, drag the object 
 ## Previewing changes
 
 <video controls width="816">
-    <source src={require('./img/2023-10-20_17-20-09_ShareX.mp4').default}/>
+    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/2023-10-20_17-20-09_ShareX.mp4' ?? require('./img/2023-10-20_17-20-09_ShareX.mp4').default}/>
 </video>
 
 At the top, you can press *Preview when active* to preview the avatar when the menu is active.
@@ -71,7 +71,7 @@ If you're testing for effects over time such as a dissolve, press one of the *Pr
 ## Change properties
 
 <video controls width="816">
-    <source src={require('./img/2023-10-20_17-18-39_ShareX.mp4').default}/>
+    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/2023-10-20_17-18-39_ShareX.mp4' ?? require('./img/2023-10-20_17-18-39_ShareX.mp4').default}/>
 </video>
 
 ### Create the first object group

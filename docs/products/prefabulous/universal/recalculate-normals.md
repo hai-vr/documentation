@@ -11,7 +11,7 @@ import HaiSupport from "/docs/_support.mdx";
 Improves the shading of SkinnedMeshRenderers by recalculating select blendshape normals (and tangents).
 
 <video controls width="816" autostart="false">
-    <source src={require('../img/mS1cQ7EheE.mp4').default}/>
+    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/mS1cQ7EheE.mp4' ?? require('../img/mS1cQ7EheE.mp4').default}/>
 </video>
 
 *Left: Recalculate Normals active. Right: Original avatar.<br />Notice how the original avatar rim light shading behaves as if the chest were not flattened.*
@@ -28,7 +28,7 @@ To use this component:
 Enter Play Mode or upload the avatar to test the results: as this is a non-destructive component, the original mesh remains intact.
 
 <video controls autostart="false">
-    <source src={require('../img/uI4KB1Gj4Y.mp4').default}/>
+    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/uI4KB1Gj4Y.mp4' ?? require('../img/uI4KB1Gj4Y.mp4').default}/>
 </video>
 
 <HaiSupport/>

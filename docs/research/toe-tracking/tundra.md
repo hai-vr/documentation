@@ -13,7 +13,7 @@ I've had two separate electronics implementations:
 - Tundra Tracker Developer board with SteamVR Input (this page) and a separate OSC application
 
 <video controls width="816">
-    <source src={require('./img/toetracking-tundra-f.mp4').default}/>
+    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/toetracking-tundra-f.mp4' ?? require('./img/toetracking-tundra-f.mp4').default}/>
 </video>
 
 ## IDE

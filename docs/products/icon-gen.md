@@ -17,7 +17,7 @@ This does not require VRChat to run. It has been tested to work on Unity 2019, a
 :::
 
 <video controls width="816">
-    <source src={require('./img/icon-gen/2023-09-22_07-31-44_ShareX.mp4').default}/>
+    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/2023-09-22_07-31-44_ShareX.mp4' ?? require('./img/icon-gen/2023-09-22_07-31-44_ShareX.mp4').default}/>
 </video>
 
 ## Download ⭐
@@ -48,7 +48,7 @@ You can change the editor language at the bottom of the panel.
 :::
 
 <video controls width="816">
-    <source src={require('./img/icon-gen/2023-09-21_08-34-13_ShareX.mp4').default}/>
+    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/2023-09-21_08-34-13_ShareX.mp4' ?? require('./img/icon-gen/2023-09-21_08-34-13_ShareX.mp4').default}/>
 </video>
 
 To capture new icons from the scene:
@@ -116,7 +116,7 @@ Create a new asset by right-clicking into the Project tab and selecting *Create 
 Drag and drop a group of icons by selecting the IconGen asset, then locking the Inspector tab, and then drag-and-drop the group of icons into the *Source icons* field.
 
 <video controls width="816">
-    <source src={require('./img/icon-gen/2023-09-21_07-32-58_ShareX.mp4').default}/>
+    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/2023-09-21_07-32-58_ShareX.mp4' ?? require('./img/icon-gen/2023-09-21_07-32-58_ShareX.mp4').default}/>
 </video>
 
 ### Add icons one by one
@@ -140,7 +140,7 @@ Browse the templates in *Assets/Hai/IconGen/Templates/*.
 You can reuse an existing template by selecting one in the *Template* field.
 
 <video controls width="816">
-    <source src={require('./img/icon-gen/2023-09-22_06-50-21_ShareX.mp4').default}/>
+    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/2023-09-22_06-50-21_ShareX.mp4' ?? require('./img/icon-gen/2023-09-22_06-50-21_ShareX.mp4').default}/>
 </video>
 
 ### Build layers yourself
@@ -193,7 +193,7 @@ If you wish to export all of them, you can go to *Advanced*, and click the *Expo
 ### How to use
 
 <video controls width="816">
-    <source src={require('./img/icon-gen/2023-09-13_17-27-18_ShareX.mp4').default}/>
+    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/2023-09-13_17-27-18_ShareX.mp4' ?? require('./img/icon-gen/2023-09-13_17-27-18_ShareX.mp4').default}/>
 </video>
 
 To capture thumbnails for VRChat in Play Mode, go to *Window > Haï > IconGen Thumbnail*.

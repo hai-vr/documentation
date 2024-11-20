@@ -627,5 +627,5 @@ The density of the blush mesh needs to be similar (or half as similar) to the fa
 :::
 
 <video controls muted width="816">
-    <source src={require('/docs/products/facetra-shape-creator/img/blush-facetra-f.mp4').default}/>
+    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/blush-facetra-f.mp4' ?? require('/docs/products/facetra-shape-creator/img/blush-facetra-f.mp4').default}/>
 </video>

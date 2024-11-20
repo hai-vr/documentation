@@ -10,7 +10,7 @@ you can use Tailoring to reuse that file with a completely different avatar base
 For example, you can transfer from Karin to Lime, or transfer from Kikyo to Moe.
 
 <video controls muted width="816">
-    <source src={require('/docs/products/facetra-shape-creator/img/tailoring/T5A5uJCB8L.mp4').default}/>
+    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/T5A5uJCB8L.mp4' ?? require('/docs/products/facetra-shape-creator/img/tailoring/T5A5uJCB8L.mp4').default}/>
 </video>
 
 :::note

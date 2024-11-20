@@ -10,13 +10,13 @@ This page is currently being written, and is a living document.
 :::
 
 <video controls width="816">
-    <source src={require('./img/toetracking-tundra-f.mp4').default}/>
+    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/toetracking-tundra-f.mp4' ?? require('./img/toetracking-tundra-f.mp4').default}/>
 </video>
 
 <video controls width="408">
-    <source src={require('./img/ashiyubitora-f.mp4').default}/>
+    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/ashiyubitora-f.mp4' ?? require('./img/ashiyubitora-f.mp4').default}/>
 </video><video controls width="408">
-    <source src={require('./img/lime-toetracking-f.mp4').default}/>
+    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/lime-toetracking-f.mp4' ?? require('./img/lime-toetracking-f.mp4').default}/>
 </video>
 
 ## Current state of this project (March 2024)
@@ -189,8 +189,8 @@ Some of those points are blend trees themselves, in order to use the 5th toe inp
 ![Unity_RctVfsgDbH.png](img%2FUnity_RctVfsgDbH.png)
 
 <video controls width="816">
-    <source src={require('./img/ashiyubitora-f.mp4').default}/>
+    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/ashiyubitora-f.mp4' ?? require('./img/ashiyubitora-f.mp4').default}/>
 </video>
 <video controls width="816">
-    <source src={require('./img/lime-toetracking-f.mp4').default}/>
+    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/lime-toetracking-f.mp4' ?? require('./img/lime-toetracking-f.mp4').default}/>
 </video>

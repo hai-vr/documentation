@@ -7,7 +7,7 @@ The *Starmesh Op. Translate Rotate Scale (TRS)* component creates a blendshape t
 from one point to another.
 
 <video controls muted width="816">
-    <source src={require('../img/xN5fmy0syx.mp4').default}/>
+    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/xN5fmy0syx.mp4' ?? require('../img/xN5fmy0syx.mp4').default}/>
 </video>
 
 ## How to use
@@ -39,7 +39,7 @@ You can add selectors as children of this GameObject.
   - If you use a *Starmesh Select Point Radius* without an offset, you can set the *Origin Transform* instead to be that *Select Point Radius component*,
     so that the starting point is the same.
 <video controls width="816" autostart="false">
-    <source src={require('../img/D7ZTv8kgch.mp4').default}/>
+    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/D7ZTv8kgch.mp4' ?? require('../img/D7ZTv8kgch.mp4').default}/>
 </video>
 - In your scene, move and rotate the **Destination** gizmo to the ending position.
 - Keep the *Destination Scale* as it is, or change it.

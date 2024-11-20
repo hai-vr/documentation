@@ -17,15 +17,15 @@ This tool requires VRChat, and is incompatible with other apps and platforms.
 It is bundled with *Visual Expressions Editor*, an animation editor that lets you create face expressions with the help of previews.
 
 <video controls width="816" autostart="false">
-    <source src={require('../../../static/unsorted_ghc/githubio/cge2-rc-github.mp4').default}/>
+    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/cge2-rc-github.mp4' ?? require('../../../static/unsorted_ghc/githubio/cge2-rc-github.mp4').default}/>
 </video>
 
 [//]: # (<iframe src="https://streamable.com/e/t19nkm?loop=0" width="408" height="256" frameborder="0" allowfullscreen></iframe> <iframe src="https://streamable.com/e/bg1uoj?loop=0" width="408" height="256" frameborder="0" allowfullscreen></iframe>)
 
 <video controls width="408" autostart="false">
-    <source src={require('/static/unsorted_ghc/streamable/t19nkm.mp4').default}/>
+    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/t19nkm.mp4' ?? require('/static/unsorted_ghc/streamable/t19nkm.mp4').default}/>
 </video><video controls width="408" autostart="false">
-    <source src={require('/static/unsorted_ghc/streamable/bg1uoj.mp4').default}/>
+    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/bg1uoj.mp4' ?? require('/static/unsorted_ghc/streamable/bg1uoj.mp4').default}/>
 </video>
 
 With *ComboGestureExpressions*:

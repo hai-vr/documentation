@@ -19,12 +19,12 @@ This tool has been tested using **Unity 2022**. It does not work in Unity 2019.
 :::
 
 <video controls width="816">
-    <source src={require('./img/lms1-f.mp4').default}/>
+    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/lms1-f.mp4' ?? require('./img/lms1-f.mp4').default}/>
 </video>
 *Using LMS for worlds and level design.*
 
 <video controls width="816">
-    <source src={require('./img/lms0-f.mp4').default}/>
+    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/lms0-f.mp4' ?? require('./img/lms0-f.mp4').default}/>
 </video>
 *Using LMS for avatars.*
 
@@ -57,7 +57,7 @@ Please seek for support on the [Discord server](/docs/other/discord) if you enco
 :::
 
 <video controls width="816">
-    <source src={require('./img/Unity_iniKDmMzca.mp4').default}/>
+    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/Unity_iniKDmMzca.mp4' ?? require('./img/Unity_iniKDmMzca.mp4').default}/>
 </video>
 
 ### First time setup
@@ -104,7 +104,7 @@ You can use these settings to make yourself shorter or taller than your real-lif
 - Change your scale taller to see worlds and avatars as miniatures.
 
 <video controls width="816">
-    <source src={require('./img/miniature-f.mp4').default}/>
+    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/miniature-f.mp4' ?? require('./img/miniature-f.mp4').default}/>
 </video>
 *This is one of these things that a flat screen completely fails to describe. Give it a try.*
 

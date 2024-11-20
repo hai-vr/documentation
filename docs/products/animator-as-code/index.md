@@ -24,5 +24,5 @@ It was initially written with VRChat Avatars 3.0 use cases in mind; the API is o
 hopefully requiring as little additional tweaking.
 
 <video controls width="816" autostart="false">
-    <source src={require('../../../static/unsorted_ghc/157751278-475538c7-3310-4fa5-9a87-3651c85eaa1c.mp4').default}/>
+    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/157751278-475538c7-3310-4fa5-9a87-3651c85eaa1c.mp4' ?? require('../../../static/unsorted_ghc/157751278-475538c7-3310-4fa5-9a87-3651c85eaa1c.mp4').default}/>
 </video>

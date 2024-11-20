@@ -19,7 +19,7 @@ When your eyes are closed, the shape of your eyes will change when you're smilin
 - If you use FaceTra Shape Creator, these blendshapes are already created for you, see below.
 
 <video controls muted width="816">
-<source src={require('../img/smile-f.mp4').default}/>
+<source src={'https://downscale.srv.hai-vr.dev/assets/docs/smile-f.mp4' ?? require('../img/smile-f.mp4').default}/>
 </video>
 
 ## Use with FaceTra Shape Creator

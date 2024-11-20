@@ -13,7 +13,7 @@ I've had two separate electronics implementations:
 - [Tundra Tracker Developer board with SteamVR Input](tundra.md) and a separate OSC kapplication
 
 <video controls width="816">
-    <source src={require('./img/vr-socks-f.mp4').default}/>
+    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/vr-socks-f.mp4' ?? require('./img/vr-socks-f.mp4').default}/>
 </video>
 
 ## Pins used

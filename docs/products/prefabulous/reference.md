@@ -27,7 +27,7 @@ or [Delete polygons](./universal/delete-polygons) will target all SkinnedMeshRen
 SkinnedMeshRenderer has one of the blendshapes in question, in order to keep manual labor to a minimum.
 
 <video controls autostart="false">
-    <source src={require('./img/uI4KB1Gj4Y.mp4').default}/>
+    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/uI4KB1Gj4Y.mp4' ?? require('./img/uI4KB1Gj4Y.mp4').default}/>
 </video>
 
 *Notice how this component finds all SkinnedMeshRenderer components that have the blendshapes that you select.<br />Prefabulous tries to keep manual labor to a minimum.*

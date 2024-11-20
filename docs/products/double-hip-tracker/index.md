@@ -19,7 +19,7 @@ This tool requires VRChat, because it uses VRChat’s OSC trackers. It is not co
 :::
 
 <video controls width="816">
-    <source src={require('./img/doublehip-demo-f.mp4').default}/>
+    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/doublehip-demo-f.mp4' ?? require('./img/doublehip-demo-f.mp4').default}/>
 </video>
 
 ## Download ⭐

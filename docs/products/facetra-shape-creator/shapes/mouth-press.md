@@ -18,5 +18,5 @@ The meshes will be squished onto the lip.
 - Use the blue handle to choose how much the lips will be pressed together.
 
 <video controls muted>
-    <source src={require('../img/shapes/Unity_UzoJzHx3LT.mp4').default}/>
+    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/Unity_UzoJzHx3LT.mp4' ?? require('../img/shapes/Unity_UzoJzHx3LT.mp4').default}/>
 </video>

@@ -15,7 +15,7 @@ The use of this tool is supposedly not needed starting from VRChat 2024.3.1 (Aug
 :::
 
 <video controls width="816">
-    <source src={require('./img/auto-reset-osc-config/auto-remove-osc-f.mp4').default}/>
+    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/auto-remove-osc-f.mp4' ?? require('./img/auto-reset-osc-config/auto-remove-osc-f.mp4').default}/>
 </video>
 
 ## Download

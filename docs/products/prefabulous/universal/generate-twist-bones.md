@@ -27,11 +27,11 @@ Thank you for your understanding.
 :::
 
 <video controls muted width="816">
-    <source src={require('../img/ByAzbmmx4w.mp4').default}/>
+    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/ByAzbmmx4w.mp4' ?? require('../img/ByAzbmmx4w.mp4').default}/>
 </video>
 
 <video controls muted width="816">
-    <source src={require('../img/auto-twist-f.mp4').default}/>
+    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/auto-twist-f.mp4' ?? require('../img/auto-twist-f.mp4').default}/>
 </video>
 *Video comparison of before, and then, after twist bones are added on the arm. Notice how the outlines bite on the elbow joint.*
 

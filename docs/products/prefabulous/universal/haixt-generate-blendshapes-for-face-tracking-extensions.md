@@ -12,7 +12,7 @@ If you have an avatar that already supports face tracking, this will generate ad
 When your eyes are closed, the shape of your eyes will change when you're smiling.
 
 <video controls muted width="816">
-<source src={require('../img/smile-f.mp4').default}/>
+<source src={'https://downscale.srv.hai-vr.dev/assets/docs/smile-f.mp4' ?? require('../img/smile-f.mp4').default}/>
 </video>
 
 :::warning
@@ -31,7 +31,7 @@ To use this component:
 On the VRChat platform, you will need to add a [HaiXT Face Tracking Extensions](../vrchat/haixt-face-tracking-extensions) component to create the animator layers.
 
 <video controls autostart="false">
-<source src={require('../img/yMoiPf8x3S.mp4').default}/>
+<source src={'https://downscale.srv.hai-vr.dev/assets/docs/yMoiPf8x3S.mp4' ?? require('../img/yMoiPf8x3S.mp4').default}/>
 </video>
 
 ## Versions

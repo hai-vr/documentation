@@ -15,7 +15,7 @@ This does not require VRChat to run. It has been tested to work on Unity 2019, a
 :::
 
 <video controls autostart="false">
-    <source src={require('./img/property-finder/sx_2022-05-19_23-47-37_jKkVpl9QvX.mp4').default}/>
+    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/sx_2022-05-19_23-47-37_jKkVpl9QvX.mp4' ?? require('./img/property-finder/sx_2022-05-19_23-47-37_jKkVpl9QvX.mp4').default}/>
 </video>
 
 ## Download

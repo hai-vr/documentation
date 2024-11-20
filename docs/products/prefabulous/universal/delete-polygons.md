@@ -26,7 +26,7 @@ To use this component:
 Enter Play Mode or upload the avatar to test the results: as this is a non-destructive component, the original mesh remains intact.
 
 <video controls autostart="false">
-    <source src={require('../img/Unity_bcEzE8pap9.mp4').default}/>
+    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/Unity_bcEzE8pap9.mp4' ?? require('../img/Unity_bcEzE8pap9.mp4').default}/>
 </video>
 
 ## Option: Keep Partial Polygons
@@ -40,7 +40,7 @@ On blendshapes that shrink the body, this preserves the end caps, so the blendsh
 This might help with some avatar models.
 
 <video controls muted width="816">
-    <source src={require('../img/YkcjjmKw2G.mp4').default}/>
+    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/YkcjjmKw2G.mp4' ?? require('../img/YkcjjmKw2G.mp4').default}/>
 </video>
 
 ## Special thanks

@@ -10,7 +10,7 @@ title: Animation Viewer
 - The prefix `anim:<your search query>` may be used in your search query to only show *Animation Viewer* results.
 
 <video controls width="816">
-    <source src={require('../../updates/img/2024-08-15-p0-rvnD2iDbIn.mp4').default}/>
+    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/2024-08-15-p0-rvnD2iDbIn.mp4' ?? require('../../updates/img/2024-08-15-p0-rvnD2iDbIn.mp4').default}/>
 </video>
 
 ## 2.0.4

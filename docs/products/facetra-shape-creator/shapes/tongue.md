@@ -25,7 +25,7 @@ You can click on the Jaw Open shape to test how the tongue will look when the mo
 ![Unity_H5m7ekSzfT.png](..%2Fimg%2Fshapes%2FUnity_H5m7ekSzfT.png)
 
 <video controls muted>
-<source src={require('../img/shapes/2023-11-06_20-20-05_ShareX.mp4').default}/>
+<source src={'https://downscale.srv.hai-vr.dev/assets/docs/2023-11-06_20-20-05_ShareX.mp4' ?? require('../img/shapes/2023-11-06_20-20-05_ShareX.mp4').default}/>
 </video>
 
 ### Up/Down/LeftRight

@@ -28,15 +28,15 @@ This tool requires VRChat, and is incompatible with other apps and platforms.
 It is bundled with *Visual Expressions Editor*, an animation editor that lets you create face expressions with the help of previews.
 
 <video controls width="816" autostart="false">
-    <source src={require('../../../static/unsorted_ghc/githubio/cge2-rc-github.mp4').default}/>
+    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/cge2-rc-github.mp4' ?? require('../../../static/unsorted_ghc/githubio/cge2-rc-github.mp4').default}/>
 </video>
 
 [//]: # (<iframe src="https://streamable.com/e/t19nkm?loop=0" width="408" height="256" frameborder="0" allowfullscreen></iframe> <iframe src="https://streamable.com/e/bg1uoj?loop=0" width="408" height="256" frameborder="0" allowfullscreen></iframe>)
 
 <video controls width="408" autostart="false">
-    <source src={require('/static/unsorted_ghc/streamable/t19nkm.mp4').default}/>
+    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/t19nkm.mp4' ?? require('/static/unsorted_ghc/streamable/t19nkm.mp4').default}/>
 </video><video controls width="408" autostart="false">
-    <source src={require('/static/unsorted_ghc/streamable/bg1uoj.mp4').default}/>
+    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/bg1uoj.mp4' ?? require('/static/unsorted_ghc/streamable/bg1uoj.mp4').default}/>
 </video>
 
 With *ComboGestureExpressions*:
@@ -376,7 +376,7 @@ For a boolean, *IsAboveThreshold* means the element is active when it's true.
 [//]: # (<iframe src="https://streamable.com/e/c5x44o?loop=0" width="816" height="512" frameborder="0" allowfullscreen></iframe>)
 
 <video controls width="816" autostart="false">
-    <source src={require('/static/unsorted_ghc/streamable/c5x44o.mp4').default}/>
+    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/c5x44o.mp4' ?? require('/static/unsorted_ghc/streamable/c5x44o.mp4').default}/>
 </video>
 
 *(A [longer tutorial with audio commentary](./additional-pages/tutorial#using-multiple-mood-sets-tutorial-with-audio-commentary) is available)*
@@ -400,7 +400,7 @@ Add additional mood sets by clicking <span class={styles.hai_btn}>+</span> on th
 [//]: # (<iframe src="https://streamable.com/e/ai0fzb?loop=0" width="816" height="512" frameborder="0" allowfullscreen></iframe>)
 
 <video controls width="816" autostart="false">
-    <source src={require('/static/unsorted_ghc/streamable/ai0fzb.mp4').default}/>
+    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/ai0fzb.mp4' ?? require('/static/unsorted_ghc/streamable/ai0fzb.mp4').default}/>
 </video>
 
 *(A [longer tutorial with audio commentary](./additional-pages/tutorial#standalone-puppets-and-blend-trees-tutorial-with-audio-commentary) is available)*
@@ -430,7 +430,7 @@ I recommend creating two controls in your Expression Menu to control the puppet:
 [//]: # (<iframe src="https://streamable.com/e/8u2sd5?loop=0" width="408" height="256" frameborder="0" allowfullscreen></iframe>)
 
 <video controls width="408" autostart="false">
-    <source src={require('/static/unsorted_ghc/streamable/8u2sd5.mp4').default}/>
+    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/8u2sd5.mp4' ?? require('/static/unsorted_ghc/streamable/8u2sd5.mp4').default}/>
 </video>
 
 Illustration of a puppet mood set.
@@ -451,7 +451,7 @@ If you still use ComboGestureExpressions V2, the section has moved to [its own d
 [//]: # (<iframe src="https://streamable.com/e/2onv8c?loop=0" width="816" height="512" frameborder="0" allowfullscreen></iframe>)
 
 <video controls width="816" autostart="false">
-    <source src={require('/static/unsorted_ghc/streamable/2onv8c.mp4').default}/>
+    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/2onv8c.mp4' ?? require('/static/unsorted_ghc/streamable/2onv8c.mp4').default}/>
 </video>
 
 *(A [longer tutorial with audio commentary](./additional-pages/tutorial#permutations-tutorial-with-audio-commentary) is available)*
@@ -467,7 +467,7 @@ If you would like to create permutations of gestures, which I do recommend for a
 [//]: # (<iframe src="https://streamable.com/e/nvm1n0?loop=0" width="816" height="512" frameborder="0" allowfullscreen></iframe>)
 
 <video controls width="816" autostart="false">
-    <source src={require('/static/unsorted_ghc/streamable/nvm1n0.mp4').default}/>
+    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/nvm1n0.mp4' ?? require('/static/unsorted_ghc/streamable/nvm1n0.mp4').default}/>
 </video>
 
 *(A [longer tutorial with audio commentary](./additional-pages/tutorial#mix-puppets-and-gestures-tutorial-with-audio-commentary) is available)*

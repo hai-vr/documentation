@@ -12,7 +12,7 @@ as ARKit-named BlendShapeClips into the [VRM BlendShapeAvatar asset](https://vrm
 used by your avatar [VRMBlendShapeProxy component](https://vrm.dev/en/univrm/blendshape/univrm_blendshape/#vrmblendshapeproxy).
 
 <video controls muted width="816">
-    <source src={require('../img/vrm/D5H4ofatKD.mp4').default}/>
+    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/D5H4ofatKD.mp4' ?? require('../img/vrm/D5H4ofatKD.mp4').default}/>
 </video>
 
 ## How to use
