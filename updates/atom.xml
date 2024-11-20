@@ -108,7 +108,7 @@ or permit using two different ranges using one proximity Contact.</li>
 <li>They <em>should</em> no longer fly away when both trackers are lost.</li>
 <li>We have <a href="https://docs.hai-vr.dev/docs/products/double-hip-tracker/v1.3-new-detection-method">an additional method to detect trackers flying off</a>.</li>
 </ul>
-<video controls="" width="816"><source src="/assets/medias/dhtv130-f-5252c4aff0d618366ec859b832fe0d1a.mp4"></video>
+<video controls="" width="816"><source src="https://downscale.srv.hai-vr.dev/assets/docs/dhtv130-f.mp4"></video>
 <p>Changes:</p>
 <ul>
 <li>Add <strong>"Freeze when both trackers are lost"</strong> checkbox: If both trackers of any given double tracker are lost, then the tracker will freeze in place.<!-- -->
@@ -492,7 +492,7 @@ this package will be updated with no code and obsoleted.</li>
 <li>Animation clips will show up in double in that Search window, as this version does not modify the stock Project search provider.</li>
 <li>The prefix <code>anim:&lt;your search query&gt;</code> may be used in your search query to only show <em>Animation Viewer</em> results.</li>
 </ul>
-<video controls="" width="816"><source src="/assets/medias/2024-08-15-p0-rvnD2iDbIn-3eac5840ade21d9e53e0605c90fc7362.mp4"></video>]]></content>
+<video controls="" width="816"><source src="https://downscale.srv.hai-vr.dev/assets/docs/2024-08-15-p0-rvnD2iDbIn.mp4"></video>]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[🧪 Knowledge sharing "Nochat" devlog]]></title>
@@ -502,8 +502,8 @@ this package will be updated with no code and obsoleted.</li>
         <summary type="html"><![CDATA[A new knowledge sharing devlog has been published, "Nochat".]]></summary>
         <content type="html"><![CDATA[<p>A new knowledge sharing devlog has been published, "Nochat".</p>
 <p>In <a href="https://docs.hai-vr.dev/docs/research/nochat">the <em>Nochat</em> research page</a>, you can read about my attempts to run VRChat prefabs with the Unity Editor in VR, without the VRChat SDK installed.</p>
-<video controls="" width="816"><source src="/assets/medias/nochat-f2-6213d7eb6a41dfa8e318f6a7298bc40b.mp4"></video>
-<video controls="" width="816"><source src="/assets/medias/saccflight-novrc-f2-904f8253af889f6d746721aea3553aff.mp4"></video>]]></content>
+<video controls="" width="816"><source src="https://downscale.srv.hai-vr.dev/assets/docs/nochat-f2.mp4"></video>
+<video controls="" width="816"><source src="https://downscale.srv.hai-vr.dev/assets/docs/saccflight-novrc-f2.mp4"></video>]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[⚙️ LetMeSee V1.1.3]]></title>
