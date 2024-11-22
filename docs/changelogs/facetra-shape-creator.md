@@ -2,7 +2,7 @@
 title: FaceTra Shape Creator
 ---
 
-## 0.9.0 (Planned)
+## 0.9.0-beta.2 (Planned)
 
 :::danger
 These changes have not been released yet.
@@ -27,8 +27,10 @@ moved by existing blendshapes on the base face mesh.
 - All shapes can now have blendshapes added to them.
 - Shapes that don't normally use the Mouth Divider can now have blendshapes that use the Mouth Divider.
 - Shapes that move a muscle in the middle of the face can now have blendshapes that the Mouth Divider.
-- Shapes that move the Tongue can now have blendshapes that only move the vertices that had been assigned to the Tongue.
-- You can now apply a deformation to the tongue, based on the blendshapes that moved the tongue out.
+
+[//]: # (- Shapes that move the Tongue can now have blendshapes that only move the vertices that had been assigned to the Tongue.)
+
+[//]: # (- You can now apply a deformation to the tongue, based on the blendshapes that moved the tongue out.)
 
 #### Deformers are now optional
 
@@ -60,6 +62,14 @@ moved by existing blendshapes on the base face mesh.
   - New FaceTra files will use the new Jaw Calibration by default.
   - Old FaceTra files will not use the new Jaw Calibration. It must be manually enabled by the user.
 
+#### New shape: NoseSneer Left/Right
+
+A new shape has been added: NoseSneer Left/Right.
+
+In VR, this is known to be supported by the Quest Pro headset.
+
+If you choose to define NoseSneer using blendshapes, the left and right blendshapes are separate, and do not use any divider.
+
 #### Other additions
 
 - Upper teeth can now be included in the deformation of Jaw Open, Jaw Left/Right, and Jaw Forward.
@@ -86,6 +96,7 @@ moved by existing blendshapes on the base face mesh.
 - In the UI, "Pupil" has been renamed "Pupil and Iris". There is no change in specification, as it was always meant to be both.
 - Make it possible to install the NDMF classes of FaceTra even if NDMF is not installed (i.e. for Resonite export).
 - FaceTra Shape Creator has internally migrated to part of the codebase used in Starmesh.
+- Uninitialized deformers are now ignored instead of causing a deformation.
 - Performance improvement details:
   - In Edit mode, we will only create one blendshape per iteration (instead of three per open panel).
     - This is because creating blendshapes is an expensive operation, which entirely depends on the complexity of the existing blendshapes of the current avatar base model.
@@ -98,6 +109,11 @@ moved by existing blendshapes on the base face mesh.
   - Avoid repetitive mesh data access, like vertex count, bones, or bindposes.
   - Avoid repeating vector operations inside for loops.
   - In Edit mode and during builds, skip blendshape removal when not necessary.
+
+## 0.9.0-beta.1
+
+*This version was cancelled and replaced with 0.9.0-beta.2, as it was not compatible with VNyan, Warudo, and ChilloutVR due to
+the use of newer Unity APIs.* 
 
 ## 0.8.0-2024-04-08-2020
 
