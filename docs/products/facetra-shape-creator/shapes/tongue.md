@@ -1,6 +1,7 @@
 ﻿---
 sidebar_position: 8
 ---
+import {HaiVideo} from "/src/components/HaiVideo";
 
 # Tongue
 

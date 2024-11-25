@@ -1,6 +1,7 @@
 ﻿import {HaiTags} from "/src/components/HaiTags";
 import {HaiTag} from "/src/components/HaiTag";
 import HaiSupport from "/docs/_support.mdx";
+import {HaiVideo} from "/src/components/HaiVideo";
 
 # Recalculate Normals
 
