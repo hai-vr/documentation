@@ -4,7 +4,7 @@ title: FaceTra Shape Creator
 
 import {HaiVideo} from "/src/components/HaiVideo";
 
-## 0.9.0-beta.2 (Planned)
+## 0.9.0-beta.3 (Planned)
 
 :::danger
 These changes have not been released yet.
@@ -21,6 +21,8 @@ Unity function to create blendshapes.
 
 This seemingly cannot be improved in a non-destructive manner as the execution duration entirely depends on the number of vertices
 moved by existing blendshapes on the base face mesh.
+
+<HaiVideo src="/updates/img/2024-11-25-p0-6JaYH1MJ0A.mp4"></HaiVideo>
 
 ### Additions in generation capabilities
 
@@ -112,9 +114,7 @@ If you choose to define NoseSneer using blendshapes, the left and right blendsha
   - Avoid repeating vector operations inside for loops.
   - In Edit mode and during builds, skip blendshape removal when not necessary.
 
-## 0.9.0-beta.1
-
-*This version was cancelled and replaced with 0.9.0-beta.2, as it was not compatible with VNyan, Warudo, and ChilloutVR due to
+*Other beta versions before beta.3 were cancelled and replaced with 0.9.0-beta.3, as it was not compatible with VNyan, Warudo, and ChilloutVR due to
 the use of newer Unity APIs.* 
 
 ## 0.8.0-2024-04-08-2020
