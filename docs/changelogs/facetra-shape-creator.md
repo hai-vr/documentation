@@ -2,6 +2,8 @@
 title: FaceTra Shape Creator
 ---
 
+import {HaiVideo} from "/src/components/HaiVideo";
+
 ## 0.9.0-beta.2 (Planned)
 
 :::danger
@@ -132,9 +134,7 @@ When blendshapes are added to the Blush Modifier Selection, the blendshape will 
 
 Unfortunately, this will not work with all avatar bases. The density of the blush mesh needs to be similar (or half as similar) to the face mesh itself. If it's a gigantic polygon, it will not work so well.
 
-<video controls muted width="816">
-    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/blush-facetra-f.mp4' ?? require('/docs/products/facetra-shape-creator/img/blush-facetra-f.mp4').default}/>
-</video>
+<HaiVideo src="/docs/products/facetra-shape-creator/img/blush-facetra-f.mp4"></HaiVideo>
 
 ### Convert from Unified Expressions to ARKit
 
