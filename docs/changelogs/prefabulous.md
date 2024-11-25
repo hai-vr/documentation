@@ -2,6 +2,8 @@
 title: Prefabulous
 ---
 
+import {HaiVideo} from "/src/components/HaiVideo";
+
 ## 2.1.0
 
 - Modify the behaviour of *Generate Twist Bones* on VRChat projects:
@@ -88,13 +90,9 @@ The component is still released in this state of development as it is beneficial
 Thank you for your understanding.
 :::
 
-<video controls muted width="816">
-    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/ByAzbmmx4w.mp4' ?? require('/docs/products/prefabulous/img/ByAzbmmx4w.mp4').default}/>
-</video>
+<HaiVideo src="/docs/products/prefabulous/img/ByAzbmmx4w.mp4"></HaiVideo>
 
-<video controls muted width="816">
-    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/auto-twist-f.mp4' ?? require('/docs/products/prefabulous/img/auto-twist-f.mp4').default}/>
-</video>
+<HaiVideo src="/docs/products/prefabulous/img/auto-twist-f.mp4"></HaiVideo>
 
 ## 1.10.3
 
@@ -193,9 +191,7 @@ Sets the UV Tile of vertices that are moved by a blendshape.
 This is meant to be used in tandem with shader features, especially [Poiyomi Toon UV Tile Discard](https://www.poiyomi.com/special-fx/uv-tile-discard),
 and may also be used with [SCSS's Inventory System](https://gitlab.com/s-ilent/SCSS/-/wikis/Manual/Inventory-System).
 
-<video controls muted width="816">
-    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/13rQ7HGwPr.mp4' ?? require('/docs/products/prefabulous/img/13rQ7HGwPr.mp4').default}/>
-</video>
+<HaiVideo src="/docs/products/prefabulous/img/13rQ7HGwPr.mp4"></HaiVideo>
 
 ### Technical notes
 
@@ -253,9 +249,7 @@ If you have an avatar that already supports face tracking, this will generate ad
 
 When your eyes are closed, the shape of your eyes will change when you're smiling.
 
-<video controls muted width="816">
-<source src={'https://downscale.srv.hai-vr.dev/assets/docs/smile-f.mp4' ?? require('/docs/products/prefabulous/img/smile-f.mp4').default}/>
-</video>
+<HaiVideo src="/docs/products/prefabulous/img/smile-f.mp4"></HaiVideo>
 
 ### Fixes
 
@@ -319,9 +313,7 @@ A new component, [Recalculate Normals](/docs/products/prefabulous/universal/reca
 
 This component improves the shading of SkinnedMeshRenderers by recalculating select blendshape normals (and tangents).
 
-<video controls width="816" autostart="false">
-    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/mS1cQ7EheE.mp4' ?? require('/docs/products/prefabulous/img/mS1cQ7EheE.mp4').default}/>
-</video>
+<HaiVideo src="/docs/products/prefabulous/img/mS1cQ7EheE.mp4"></HaiVideo>
 
 ### Technical notes
 

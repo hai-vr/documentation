@@ -1,5 +1,6 @@
 ﻿import {HaiTags} from "/src/components/HaiTags";
 import {HaiTag} from "/src/components/HaiTag";
+import {HaiVideo} from "/src/components/HaiVideo";
 
 # 💬 HaiXT Face Tracking Extensions
 
@@ -18,9 +19,7 @@ When your eyes are closed, the shape of your eyes will change when you're smilin
 - Add another component called [HaiXT Generate Blendshapes for Face Tracking Extensions](../universal/haixt-generate-blendshapes-for-face-tracking-extensions), which can create those blendshapes for you.
 - If you use FaceTra Shape Creator, these blendshapes are already created for you, see below.
 
-<video controls muted width="816">
-<source src={'https://downscale.srv.hai-vr.dev/assets/docs/smile-f.mp4' ?? require('../img/smile-f.mp4').default}/>
-</video>
+<HaiVideo src="../img/smile-f.mp4"></HaiVideo>
 
 ## Use with FaceTra Shape Creator
 

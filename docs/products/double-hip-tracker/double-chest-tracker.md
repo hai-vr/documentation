@@ -1,4 +1,6 @@
-﻿# Double Chest Tracker
+﻿import {HaiVideo} from "/src/components/HaiVideo";
+
+# Double Chest Tracker
 
 In addition to the Double Hip Tracker, you can also enable the Double Chest Tracker.
 
@@ -12,9 +14,7 @@ Once enabled, you need to select the serial numbers of your two chest trackers b
 
 You can find out which tracker is the correct one by spinning your tracker quickly, and an indicator `<<<` will show up in the list of available hardware.
 
-<video controls width="816" autostart="false">
-    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/double-hip-tracker_pFdyyLdeVF.mp4' ?? require('./img/double-hip-tracker_pFdyyLdeVF.mp4')}/>
-</video>
+<HaiVideo src="./img/double-hip-tracker_pFdyyLdeVF.mp4"></HaiVideo>
 
 Spin your tracker to find it using the `<<<` indicator, and then select them in the *Double Chest Tracker* tab panel.
 
@@ -44,9 +44,7 @@ If you are wearing your two chest trackers in locations where one of the tracker
 
 For example, if you’re wearing a tracker on the chest like you normally would, and a tracker somewhere below your armpit, it could be advantageous to prioritize the tracker located on the chest.
 
-<video controls width="816">
-    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/doublechesttrackerprio-f.mp4' ?? require('./img/doublechesttrackerprio-f.mp4').default}/>
-</video>
+<HaiVideo src="./img/doublechesttrackerprio-f.mp4"></HaiVideo>
 
 Select the serial number of the tracker that has a better position in the **Tracker A** slot.
 

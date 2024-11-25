@@ -2,6 +2,8 @@
 sidebar_position: 2
 ---
 
+import {HaiVideo} from "/src/components/HaiVideo";
+
 # Construction lines
 
 The shape creator works by defining construction lines that will let the tool know where are the major facial features of your mesh.
@@ -626,6 +628,4 @@ Unfortunately, this will not work with all avatar bases.
 The density of the blush mesh needs to be similar (or half as similar) to the face mesh itself. If it's a gigantic polygon, it will not work so well.
 :::
 
-<video controls muted width="816">
-    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/blush-facetra-f.mp4' ?? require('/docs/products/facetra-shape-creator/img/blush-facetra-f.mp4').default}/>
-</video>
+<HaiVideo src="/docs/products/facetra-shape-creator/img/blush-facetra-f.mp4"></HaiVideo>

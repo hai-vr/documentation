@@ -1,6 +1,7 @@
 ﻿import {HaiTags} from "/src/components/HaiTags";
 import {HaiTag} from "/src/components/HaiTag";
 import HaiSupport from "/docs/_support.mdx";
+import {HaiVideo} from "/src/components/HaiVideo";
 
 # LetMeSee
 
@@ -18,14 +19,10 @@ The Scene tab is used as the camera viewpoint. You can use this to fly through a
 This tool has been tested using **Unity 2022**. It does not work in Unity 2019.
 :::
 
-<video controls width="816">
-    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/lms1-f.mp4' ?? require('./img/lms1-f.mp4').default}/>
-</video>
+<HaiVideo src="./img/lms1-f.mp4"></HaiVideo>
 *Using LMS for worlds and level design.*
 
-<video controls width="816">
-    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/lms0-f.mp4' ?? require('./img/lms0-f.mp4').default}/>
-</video>
+<HaiVideo src="./img/lms0-f.mp4"></HaiVideo>
 *Using LMS for avatars.*
 
 :::tip
@@ -56,9 +53,7 @@ Consider making a backup of your project before installing this tool, or try thi
 Please seek for support on the [Discord server](/docs/other/discord) if you encounter any issues with the tool.
 :::
 
-<video controls width="816">
-    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/Unity_iniKDmMzca.mp4' ?? require('./img/Unity_iniKDmMzca.mp4').default}/>
-</video>
+<HaiVideo src="./img/Unity_iniKDmMzca.mp4"></HaiVideo>
 
 ### First time setup
 
@@ -103,9 +98,7 @@ You can use these settings to make yourself shorter or taller than your real-lif
 - Change your scale smaller to see small objects as gigantic.
 - Change your scale taller to see worlds and avatars as miniatures.
 
-<video controls width="816">
-    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/miniature-f.mp4' ?? require('./img/miniature-f.mp4').default}/>
-</video>
+<HaiVideo src="./img/miniature-f.mp4"></HaiVideo>
 *This is one of these things that a flat screen completely fails to describe. Give it a try.*
 
 ### Alignment

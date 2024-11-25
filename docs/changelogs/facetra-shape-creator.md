@@ -155,9 +155,7 @@ This only affects blendshapes that FaceTra creates, and will not affect any othe
 - When using Tailoring, you only need to specify the Construction Lines of your new avatar base, and the blendshapes of your new avatar base.
 - This feature is experimental.
 
-<video controls muted width="816">
-    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/T5A5uJCB8L.mp4' ?? require('/docs/products/facetra-shape-creator/img/tailoring/T5A5uJCB8L.mp4').default}/>
-</video>
+<HaiVideo src="/docs/products/facetra-shape-creator/img/tailoring/T5A5uJCB8L.mp4"></HaiVideo>
 
 ### Fix: Add workaround for small meshes
 - Some meshes exported from Blender have an incorrect scale of 0.01 or similar.

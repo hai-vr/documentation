@@ -2,6 +2,8 @@
 sidebar_position: 5
 ---
 
+import {HaiVideo} from "/src/components/HaiVideo";
+
 # Improve eye tracking
 
 Eye tracking on avatars can come with drawbacks, especially if eye tracking was not part of the design of the avatar.
@@ -18,9 +20,7 @@ This section is optional. There is no need to go through this process if your ir
 
 If your iris is clipping through your eye socket, you may be able to use this function to make your eye sockets deeper, so that your iris would no longer clip into it.
 
-<video controls muted width="816">
-    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/deepen-f.mp4' ?? require('./img/improvements/deepen-f.mp4').default}/>
-</video>
+<HaiVideo src="./img/improvements/deepen-f.mp4"></HaiVideo>
 
 - In “Eye Socket Selection”:
     - Press “Add +” to add a vertex selection.

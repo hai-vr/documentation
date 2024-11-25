@@ -3,6 +3,7 @@ title: ⭐ Double Hip Tracker
 ---
 import {HaiTags} from "/src/components/HaiTags";
 import {HaiTag} from "/src/components/HaiTag";
+import {HaiVideo} from "/src/components/HaiVideo";
 
 # Double Hip Tracker
 
@@ -18,9 +19,7 @@ When one of the trackers temporarily loses tracking, the other one is used inste
 This tool requires VRChat, because it uses VRChat’s OSC trackers. It is not compatible with other VR applications.
 :::
 
-<video controls width="816">
-    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/doublehip-demo-f.mp4' ?? require('./img/doublehip-demo-f.mp4').default}/>
-</video>
+<HaiVideo src="./img/doublehip-demo-f.mp4"></HaiVideo>
 
 ## Download ⭐
 

@@ -3,6 +3,7 @@ unlisted: true
 ---
 import {HaiTags} from "/src/components/HaiTags";
 import {HaiTag} from "/src/components/HaiTag";
+import {HaiVideo} from "/src/components/HaiVideo";
 
 # ⛔💬 Accurate Eye Tracking Transforms
 
@@ -14,9 +15,7 @@ Adds a new FX layer that animate 4 custom eye transforms, X and Y being separate
 
 This can be used for creating a visual accessory on your avatar to visualize where you're looking at.
 
-<video controls width="816">
-    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/lime-toetracking-f.mp4' ?? require('../../../research/toe-tracking/img/lime-toetracking-f.mp4').default}/>
-</video>
+<HaiVideo src="../../../research/toe-tracking/img/lime-toetracking-f.mp4"></HaiVideo>
 
 ## How to use
 

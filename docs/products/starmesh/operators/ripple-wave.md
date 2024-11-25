@@ -1,5 +1,6 @@
 ﻿import {HaiTags} from "/src/components/HaiTags";
 import {HaiTag} from "/src/components/HaiTag";
+import {HaiVideo} from "/src/components/HaiVideo";
 
 # Ripple Wave
 
@@ -8,9 +9,7 @@ The *Starmesh Op. Ripple Wave* component creates a blendshape which makes a wave
 - This blendshape has multiple frames.
 - The blendshape at 100% is identical to the blendshape at 0%. It is effectively animated from 1% through 99%.
 
-<video controls muted width="816">
-    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/xFFl3uUwAj.mp4' ?? require('../img/xFFl3uUwAj.mp4').default}/>
-</video>
+<HaiVideo src="../img/xFFl3uUwAj.mp4"></HaiVideo>
 
 :::danger
 If you use a third-party tool called *DexProtect*, **then you must update DexProtect to version 2.2.3 or higher**.

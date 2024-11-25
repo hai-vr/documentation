@@ -1,6 +1,9 @@
 ﻿---
 sidebar_position: 4
 ---
+
+import {HaiVideo} from "/src/components/HaiVideo";
+
 # Selectors
 
 ## Select Meshes
@@ -10,9 +13,7 @@ Specify which meshes will be affected.
 - **Skinned Mesh Renderers**: Select SkinnedMeshRenderer components.
 - **Active Blendshapes**: During the calculations, these blendshapes will be emulated to be active as part of the operations.
 
-<video controls muted>
-    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/v66A6bxugo.mp4' ?? require('./img/v66A6bxugo.mp4').default}/>
-</video>
+<HaiVideo src="./img/v66A6bxugo.mp4" autoWidth={true}></HaiVideo>
 
 ## Select Bones
 
@@ -26,9 +27,7 @@ You can match bones by transform, or by object name. Matching by object name can
 - **Object Names**: Choose the name of the bone transforms that you want to affect.
 - **Include Child Bones**: Also includes all child bones.
 
-<video controls muted>
-    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/SQzLrkRyb2.mp4' ?? require('./img/SQzLrkRyb2.mp4').default}/>
-</video>
+<HaiVideo src="./img/SQzLrkRyb2.mp4" autoWidth={true}></HaiVideo>
 
 ## Select Point Radius
 
@@ -41,9 +40,7 @@ Reduces the current selection so that only vertices within a radius around a poi
 
 The magenta line shows the halfway point. The faint pink line shows the maximum distance.
 
-<video controls muted width="816">
-    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/oiUmCmWHPk.mp4' ?? require('./img/oiUmCmWHPk.mp4').default}/>
-</video>
+<HaiVideo src="./img/oiUmCmWHPk.mp4"></HaiVideo>
 
 ### Curve
 
@@ -54,9 +51,7 @@ By changing the shape of the curve, you can make that influence stronger or weak
 
 The yellow line shows the threshold where vertices will be influenced by at least 50%.
 
-<video controls muted width="816">
-    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/U7FXb8wgEL.mp4' ?? require('./img/U7FXb8wgEL.mp4').default}/>
-</video>
+<HaiVideo src="./img/U7FXb8wgEL.mp4"></HaiVideo>
 
 ## Select Line Radius
 
@@ -79,9 +74,7 @@ The magenta line shows the halfway point. The faint pink line shows the maximum 
 
 If [you redefine the curves](#curve), the yellow line shows the threshold where vertices will be influenced by at least 50%.
 
-<video controls muted width="816">
-    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/zHCaHEnKu3.mp4' ?? require('./img/zHCaHEnKu3.mp4').default}/>
-</video>
+<HaiVideo src="./img/zHCaHEnKu3.mp4"></HaiVideo>
 
 ## Select Blendshapes
 

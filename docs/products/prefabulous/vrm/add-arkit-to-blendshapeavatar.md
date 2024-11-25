@@ -1,5 +1,6 @@
 ﻿import {HaiTags} from "/src/components/HaiTags";
 import {HaiTag} from "/src/components/HaiTag";
+import {HaiVideo} from "/src/components/HaiVideo";
 
 # 📹 Add ARKit to BlendShapeAvatar
 
@@ -11,9 +12,7 @@ Automatically links all blendshapes found in your meshes which follow the Unifie
 as ARKit-named BlendShapeClips into the [VRM BlendShapeAvatar asset](https://vrm.dev/en/univrm/blendshape/univrm_blendshape/#blendshapeavatar)
 used by your avatar [VRMBlendShapeProxy component](https://vrm.dev/en/univrm/blendshape/univrm_blendshape/#vrmblendshapeproxy).
 
-<video controls muted width="816">
-    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/D5H4ofatKD.mp4' ?? require('../img/vrm/D5H4ofatKD.mp4').default}/>
-</video>
+<HaiVideo src="../img/vrm/D5H4ofatKD.mp4"></HaiVideo>
 
 ## How to use
 

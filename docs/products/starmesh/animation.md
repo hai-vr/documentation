@@ -3,6 +3,7 @@ sidebar_position: 5
 ---
 import {HaiTags} from "/src/components/HaiTags";
 import {HaiTag} from "/src/components/HaiTag";
+import {HaiVideo} from "/src/components/HaiVideo";
 
 # Animation
 
@@ -24,6 +25,4 @@ If you are targeting a platform that uses a Unity animations, you can generate a
 - In the Animation editor tab, select the properties in that temporary animation clip, and press CTRL-C to copy them.
 - Create a new Animation clip, or choose one in your project. Then, in the Animation editor tab press CTRL-V to paste those properties. 
 
-<video controls muted width="816">
-    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/B1If1P3Kv6.mp4' ?? require('./img/B1If1P3Kv6.mp4').default}/>
-</video>
+<HaiVideo src="./img/B1If1P3Kv6.mp4"></HaiVideo>

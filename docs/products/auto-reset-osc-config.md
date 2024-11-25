@@ -3,6 +3,7 @@ title: Auto-reset OSC config
 ---
 import {HaiTags} from "/src/components/HaiTags";
 import {HaiTag} from "/src/components/HaiTag";
+import {HaiVideo} from "/src/components/HaiVideo";
 
 <HaiTags>
 <HaiTag requiresVRChat={true} />
@@ -14,9 +15,7 @@ This tool will automatically reset the OSC config after every successful VRChat 
 The use of this tool is supposedly not needed starting from VRChat 2024.3.1 (August 2024) / VRChat SDK 3.7.0.
 :::
 
-<video controls width="816">
-    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/auto-remove-osc-f.mp4' ?? require('./img/auto-reset-osc-config/auto-remove-osc-f.mp4').default}/>
-</video>
+<HaiVideo src="./img/auto-reset-osc-config/auto-remove-osc-f.mp4"></HaiVideo>
 
 ## Download
 

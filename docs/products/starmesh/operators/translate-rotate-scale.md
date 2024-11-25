@@ -1,14 +1,13 @@
 ﻿import {HaiTags} from "/src/components/HaiTags";
 import {HaiTag} from "/src/components/HaiTag";
+import {HaiVideo} from "/src/components/HaiVideo";
 
 # Translate Rotate Scale (TRS)
 
 The *Starmesh Op. Translate Rotate Scale (TRS)* component creates a blendshape that translates, rotates, and scales affected vertices
 from one point to another.
 
-<video controls muted width="816">
-    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/xN5fmy0syx.mp4' ?? require('../img/xN5fmy0syx.mp4').default}/>
-</video>
+<HaiVideo src="../img/xN5fmy0syx.mp4"></HaiVideo>
 
 ## How to use
 
@@ -38,9 +37,7 @@ You can add selectors as children of this GameObject.
 - In your scene, move the **Origin** gizmo to the starting position.
   - If you use a *Starmesh Select Point Radius* without an offset, you can set the *Origin Transform* instead to be that *Select Point Radius component*,
     so that the starting point is the same.
-<video controls width="816" autostart="false">
-    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/D7ZTv8kgch.mp4' ?? require('../img/D7ZTv8kgch.mp4').default}/>
-</video>
+<HaiVideo src="../img/D7ZTv8kgch.mp4"></HaiVideo>
 - In your scene, move and rotate the **Destination** gizmo to the ending position.
 - Keep the *Destination Scale* as it is, or change it.
 

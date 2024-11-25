@@ -1,6 +1,7 @@
 ﻿---
 sidebar_position: 0
 ---
+import {HaiVideo} from "/src/components/HaiVideo";
 
 # Video of the entire process
 
@@ -9,8 +10,6 @@ although it's not on the most recent version of the tool.
 
 It's not a tutorial though, so continue reading this documentation.
 
-<video controls width="816">
-<source src={'https://downscale.srv.hai-vr.dev/assets/large/2023-11-07_02-13-21_ShareX.mp4'}/>
-</video>
+<HaiVideo cdn="https://downscale.srv.hai-vr.dev/assets/large/2023-11-07_02-13-21_ShareX.mp4"></HaiVideo>
 
 - Backup link: **[video](https://hai-vr.notion.site/Video-86ae4dbe45d3493fbc4a9ba60c152989)**.

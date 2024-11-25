@@ -2,6 +2,8 @@
 sidebar_position: 4
 ---
 
+import {HaiVideo} from "/src/components/HaiVideo";
+
 # Option 2: ESP32
 
 :::danger
@@ -12,9 +14,7 @@ I've had two separate electronics implementations:
 - ESP32 with Wi-Fi and OSC (this page)
 - [Tundra Tracker Developer board with SteamVR Input](tundra.md) and a separate OSC kapplication
 
-<video controls width="816">
-    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/vr-socks-f.mp4' ?? require('./img/vr-socks-f.mp4').default}/>
-</video>
+<HaiVideo src="./img/vr-socks-f.mp4"></HaiVideo>
 
 ## Pins used
 

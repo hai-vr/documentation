@@ -1,5 +1,7 @@
 # Integrator
 
+import {HaiVideo} from "/src/components/HaiVideo";
+
 :::danger
 The Integrator is not available in V2 and V3.
 :::
@@ -16,9 +18,7 @@ In particular, when other players look at you, the animation looks laggy and jer
 
 [//]: # (<iframe src="https://streamable.com/e/42360m?loop=0" width="408" height="256" frameborder="0" allowfullscreen></iframe> )
 
-<video controls width="816" autostart="false">
-    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/42360m.mp4' ?? require('/static/unsorted_ghc/streamable/42360m.mp4').default}/>
-</video>
+<HaiVideo src="/static/unsorted_ghc/streamable/42360m.mp4"></HaiVideo>
 
 The Integrator will generate those layers without requiring you to manage any face expression.
 

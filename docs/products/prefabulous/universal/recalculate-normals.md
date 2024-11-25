@@ -10,9 +10,7 @@ import HaiSupport from "/docs/_support.mdx";
 
 Improves the shading of SkinnedMeshRenderers by recalculating select blendshape normals (and tangents).
 
-<video controls width="816" autostart="false">
-    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/mS1cQ7EheE.mp4' ?? require('../img/mS1cQ7EheE.mp4').default}/>
-</video>
+<HaiVideo src="../img/mS1cQ7EheE.mp4"></HaiVideo>
 
 *Left: Recalculate Normals active. Right: Original avatar.<br />Notice how the original avatar rim light shading behaves as if the chest were not flattened.*
 
@@ -27,9 +25,7 @@ To use this component:
 
 Enter Play Mode or upload the avatar to test the results: as this is a non-destructive component, the original mesh remains intact.
 
-<video controls autostart="false">
-    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/uI4KB1Gj4Y.mp4' ?? require('../img/uI4KB1Gj4Y.mp4').default}/>
-</video>
+<HaiVideo src="../img/uI4KB1Gj4Y.mp4" autoWidth={true}></HaiVideo>
 
 <HaiSupport/>
 
@@ -49,9 +45,7 @@ You should use Recalculate Normals on the following blendshapes:
 - Body shape customization blendshapes that flatten, emboss, or enlarge areas of the body, whether it is the body flesh or clothing.
 - Body adjustment blendshapes to fit clothing, such as heel adapters, or clothing that pinch the body.
 
-<video controls width="816" autostart="false">
-    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/JiHvKYMj8A.mp4' ?? require('../img/JiHvKYMj8A.mp4').default}/>
-</video>
+<HaiVideo src="../img/JiHvKYMj8A.mp4"></HaiVideo>
 
 *Left: Recalculate Normals active. Right: Original avatar.<br />Notice the shadows better match the chest shape when Recalculate Normals is active.*
 

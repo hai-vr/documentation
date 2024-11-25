@@ -2,6 +2,8 @@
 sidebar_position: 2
 ---
 
+import {HaiVideo} from "/src/components/HaiVideo";
+
 # Face Shapes: Pulling and twisting
 
 :::warning[**Are you familiar with making face tracking shapes?**]
@@ -19,9 +21,7 @@ Most other shapes will involve pulling and twisting parts of the mesh. If you’
 **When building shapes for the first time, the shapes will look mangled.**
 Systematically press the “Reset position and rotation” buttons to fix the shape before you start working on it the first time.
 
-<video controls muted>
-<source src={'https://downscale.srv.hai-vr.dev/assets/docs/Unity_S2iRD530sU.mp4' ?? require('../img/shapes/Unity_S2iRD530sU.mp4').default}/>
-</video>
+<HaiVideo src="../img/shapes/Unity_S2iRD530sU.mp4" autoWidth={true}></HaiVideo>
 :::
 
 - Move the gizmo to pull the vertices.
@@ -31,6 +31,4 @@ Systematically press the “Reset position and rotation” buttons to fix the sh
 - The curve in the inspector defines how the vertices are smoothed. The default value should be fine for most, but in some cases like Lip Funnel,
 - Lip Pucker, Mouth Upper Up, Mouth Lower Down, and some others, you may want to look into changing that shape.
 
-<video controls muted>
-    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/2023-11-06_20-04-18_ShareX.mp4' ?? require('../img/shapes/2023-11-06_20-04-18_ShareX.mp4').default}/>
-</video>
+<HaiVideo src="../img/shapes/2023-11-06_20-04-18_ShareX.mp4" autoWidth={true}></HaiVideo>

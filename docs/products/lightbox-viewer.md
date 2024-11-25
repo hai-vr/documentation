@@ -4,6 +4,7 @@ title: Lightbox Viewer
 import {HaiTags} from "/src/components/HaiTags";
 import {HaiTag} from "/src/components/HaiTag";
 import HaiSupport from "/docs/_support.mdx";
+import {HaiVideo} from "/src/components/HaiVideo";
 
 <HaiTags>
 <HaiTag isUniversal={true} />
@@ -40,17 +41,13 @@ Then, press *Activate LightboxViewer*. You can now move the scene camera to refr
 
 While this mode is active, the editor may slow down. Press *Activate LightboxViewer* again when not in use to improve the performance of the editor.
 
-<video controls width="816" autostart="false">
-    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/sx_2022-05-16_07-18-28_Sda2clkyuk.mp4' ?? require('../../static/unsorted_ghc/githubio/sx_2022-05-16_07-18-28_Sda2clkyuk.mp4').default}/>
-</video>
+<HaiVideo src="../../static/unsorted_ghc/githubio/sx_2022-05-16_07-18-28_Sda2clkyuk.mp4"></HaiVideo>
 
 ### Testing in Play mode
 
 *Lightbox Viewer* can be used in Play mode. Press *Activate LightboxViewer* before entering Play mode.
 
-<video controls width="816" autostart="false">
-    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/sx_2022-05-16_07-24-50_VDkm4dNnOs.mp4' ?? require('../../static/unsorted_ghc/githubio/sx_2022-05-16_07-24-50_VDkm4dNnOs.mp4').default}/>
-</video>
+<HaiVideo src="../../static/unsorted_ghc/githubio/sx_2022-05-16_07-24-50_VDkm4dNnOs.mp4"></HaiVideo>
 
 <HaiSupport />
 
@@ -74,9 +71,7 @@ After pressing *Activate LightboxViewer*, the lightbox scene will show up in at 
 
 Expand the `Lightboxes` object. If you tag one of them as `EditorOnly`, the lightbox will no longer show up.
 
-<video controls width="816" autostart="false">
-    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/sx_2022-05-16_17-32-21_n4FA3C76cb.mp4' ?? require('../../static/unsorted_ghc/githubio/sx_2022-05-16_17-32-21_n4FA3C76cb.mp4').default}/>
-</video>
+<HaiVideo src="../../static/unsorted_ghc/githubio/sx_2022-05-16_17-32-21_n4FA3C76cb.mp4"></HaiVideo>
 
 ### Enable a lightbox
 
@@ -94,9 +89,7 @@ By default, the *Counter-rotate* option is enabled, which keeps the preview upri
 
 Press *Reset* to restore the view upright.
 
-<video controls width="816" autostart="false">
-    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/sx_2022-05-16_07-52-09_k7AkO3iYda.mp4' ?? require('../../static/unsorted_ghc/githubio/sx_2022-05-16_07-52-09_k7AkO3iYda.mp4').default}/>
-</video>
+<HaiVideo src="../../static/unsorted_ghc/githubio/sx_2022-05-16_07-52-09_k7AkO3iYda.mp4"></HaiVideo>
 
 ### Custom camera settings
 

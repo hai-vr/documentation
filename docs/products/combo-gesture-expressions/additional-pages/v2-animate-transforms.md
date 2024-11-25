@@ -3,6 +3,7 @@ title: V2 - Animate Transforms
 ---
 
 import styles from '../styles.module.css';
+import {HaiVideo} from "/src/components/HaiVideo";
 
 #  V2 - Animate cat ears, wings and more
 
@@ -14,9 +15,7 @@ The steps described below are no longer needed in ComboGestureExpressions V3.
 
 [//]: # (<iframe src="https://streamable.com/e/uo3kut?loop=0" width="816" height="512" frameborder="0" allowfullscreen></iframe>)
 
-<video controls width="816" autostart="false">
-    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/uo3kut.mp4' ?? require('/static/unsorted_ghc/streamable/uo3kut.mp4').default}/>
-</video>
+<HaiVideo src="/static/unsorted_ghc/streamable/uo3kut.mp4"></HaiVideo>
 
 
 *(A [longer tutorial with audio commentary](./tutorial#animate-cat-ears-wings-and-more-tutorial-with-audio-commentary) is available)*

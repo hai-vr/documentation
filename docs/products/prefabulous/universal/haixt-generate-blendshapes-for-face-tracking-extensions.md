@@ -1,5 +1,6 @@
 ﻿import {HaiTags} from "/src/components/HaiTags";
 import {HaiTag} from "/src/components/HaiTag";
+import {HaiVideo} from "/src/components/HaiVideo";
 
 # HaiXT Generate Blendshapes for Face Tracking Extensions
 
@@ -11,9 +12,7 @@ If you have an avatar that already supports face tracking, this will generate ad
 
 When your eyes are closed, the shape of your eyes will change when you're smiling.
 
-<video controls muted width="816">
-<source src={'https://downscale.srv.hai-vr.dev/assets/docs/smile-f.mp4' ?? require('../img/smile-f.mp4').default}/>
-</video>
+<HaiVideo src="../img/smile-f.mp4"></HaiVideo>
 
 :::warning
 If you use FaceTra Shape Creator, you do not need this component as this feature already exists within FaceTra Shape Creator.
@@ -30,9 +29,7 @@ To use this component:
 
 On the VRChat platform, you will need to add a [HaiXT Face Tracking Extensions](../vrchat/haixt-face-tracking-extensions) component to create the animator layers.
 
-<video controls autostart="false">
-<source src={'https://downscale.srv.hai-vr.dev/assets/docs/yMoiPf8x3S.mp4' ?? require('../img/yMoiPf8x3S.mp4').default}/>
-</video>
+<HaiVideo src="../img/yMoiPf8x3S.mp4" autoWidth={true}></HaiVideo>
 
 ## Versions
 

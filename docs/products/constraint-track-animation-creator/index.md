@@ -1,5 +1,6 @@
 ﻿import {HaiTags} from "/src/components/HaiTags";
 import {HaiTag} from "/src/components/HaiTag";
+import {HaiVideo} from "/src/components/HaiVideo";
 
 # Constraint Track Animation Creator
 
@@ -23,9 +24,7 @@ Being comfortable with modeling tools such as Blender will let you achieve bette
 
 The experience will not be smooth and the mesh will sometimes clip through the model, so you need to accept those imperfections, or if you wish, further use your modeling skills to hide those imperfections by cleverly animating additional shape keys.
 
-<video controls width="816" autostart="false">
-    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/sx_2021-12-21_10-53-42_KryfYW7TqN.mp4' ?? require('./index-img/sx_2021-12-21_10-53-42_KryfYW7TqN.mp4')}/>
-</video>
+<HaiVideo src="./index-img/sx_2021-12-21_10-53-42_KryfYW7TqN.mp4"></HaiVideo>
 
 ## Principles
 

@@ -3,6 +3,7 @@ title: BlendTree Viewer
 ---
 import {HaiTags} from "/src/components/HaiTags";
 import {HaiTag} from "/src/components/HaiTag";
+import {HaiVideo} from "/src/components/HaiVideo";
 
 <HaiTags>
 <HaiTag isUniversal={true} />
@@ -14,9 +15,7 @@ import {HaiTag} from "/src/components/HaiTag";
 This does not require VRChat to run. It has been tested to work on Unity 2019, and should work on newer versions.
 :::
 
-<video controls width="816">
-    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/2023-11-17_00-10-56_ShareX.mp4' ?? require('./img/blendtree-viewer/2023-11-17_00-10-56_ShareX.mp4').default}/>
-</video>
+<HaiVideo src="./img/blendtree-viewer/2023-11-17_00-10-56_ShareX.mp4"></HaiVideo>
 
 ## Download
 

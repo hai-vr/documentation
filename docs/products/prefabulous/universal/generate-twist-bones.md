@@ -1,6 +1,7 @@
 ﻿import {HaiTags} from "/src/components/HaiTags";
 import {HaiTag} from "/src/components/HaiTag";
 import HaiSupport from "/docs/_support.mdx";
+import {HaiVideo} from "/src/components/HaiVideo";
 
 # Generate Twist Bones (Alpha)
 
@@ -26,13 +27,9 @@ The component is still released in this state of development as it is beneficial
 Thank you for your understanding.
 :::
 
-<video controls muted width="816">
-    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/ByAzbmmx4w.mp4' ?? require('../img/ByAzbmmx4w.mp4').default}/>
-</video>
+<HaiVideo src="../img/ByAzbmmx4w.mp4"></HaiVideo>
 
-<video controls muted width="816">
-    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/auto-twist-f.mp4' ?? require('../img/auto-twist-f.mp4').default}/>
-</video>
+<HaiVideo src="../img/auto-twist-f.mp4"></HaiVideo>
 *Video comparison of before, and then, after twist bones are added on the arm. Notice how the outlines bite on the elbow joint.*
 
 ![twist-compare.png](..%2Fimg%2Ftwist-compare.png)

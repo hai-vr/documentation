@@ -2,6 +2,8 @@
 sidebar_position: 7
 ---
 
+import {HaiVideo} from "/src/components/HaiVideo";
+
 # Tailoring
 
 If you have already completed at least one successful FaceTra File for one of your avatar bases,
@@ -9,9 +11,7 @@ you can use Tailoring to reuse that file with a completely different avatar base
 
 For example, you can transfer from Karin to Lime, or transfer from Kikyo to Moe.
 
-<video controls muted width="816">
-    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/T5A5uJCB8L.mp4' ?? require('/docs/products/facetra-shape-creator/img/tailoring/T5A5uJCB8L.mp4').default}/>
-</video>
+<HaiVideo src="/docs/products/facetra-shape-creator/img/tailoring/T5A5uJCB8L.mp4"></HaiVideo>
 
 :::note
 The Tailoring feature was added in V0.7.0.

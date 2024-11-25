@@ -3,6 +3,7 @@ title: ⭐ FaceTra Shape Creator
 ---
 import {HaiTags} from "/src/components/HaiTags";
 import {HaiTag} from "/src/components/HaiTag";
+import {HaiVideo} from "/src/components/HaiVideo";
 
 # Haï's FaceTra Shape Creator
 
@@ -12,9 +13,7 @@ import {HaiTag} from "/src/components/HaiTag";
 
 FaceTra Shape Creator is an Unity Editor tool that lets you create face tracking blendshapes on an avatar by morphing meshes. The original mesh asset is not modified, and the process is non-destructive, automating a large portion of this laborious process.
 
-<video controls width="816">
-    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/2023-10-26_17-41-25_ShareX.mp4' ?? require('./img/2023-10-26_17-41-25_ShareX.mp4').default}/>
-</video>
+<HaiVideo src="./img/2023-10-26_17-41-25_ShareX.mp4"></HaiVideo>
 
 :::tip
 This does not require VRChat to run.
@@ -42,21 +41,15 @@ It should also perform well with kemono avatars, and it has been used with furry
 
 ### Anime-like avatar
 
-<video controls width="816">
-    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/haolan-facetra-test-f.mp4' ?? require('./img/haolan-facetra-test-f.mp4').default}/>
-</video>
+<HaiVideo src="./img/haolan-facetra-test-f.mp4"></HaiVideo>
 *Haolan*
 
 ### Kemono avatar
 
-<video controls width="816">
-    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/foshunia-facetra-f-an.mp4' ?? require('./img/foshunia-facetra-f-an.mp4').default}/>
-</video>
+<HaiVideo src="./img/foshunia-facetra-f-an.mp4"></HaiVideo>
 *Foshunia*
 
 ### Furry avatar
 
-<video controls width="816">
-    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/actias-demo-f-an.mp4' ?? require('./img/actias-demo-f-an.mp4').default}/>
-</video>
+<HaiVideo src="./img/actias-demo-f-an.mp4"></HaiVideo>
 *Actias*

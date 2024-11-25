@@ -1,15 +1,16 @@
 ﻿---
 sidebar_position: 2
 ---
+
+import {HaiVideo} from "/src/components/HaiVideo";
+
 # Nochat
 
 This page records my attempts to run VRChat prefabs with the Unity Editor in VR, without the VRChat SDK installed.
 
 This project is specific to world content.
 
-<video controls width="816">
-    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/nochat-f2.mp4' ?? require('./img/nochat-f2.mp4').default}/>
-</video>
+<HaiVideo src="./img/nochat-f2.mp4"></HaiVideo>
 *Nochat turns VRChat prefabs into VR prefabs.*
 
 ## Introduction
@@ -75,9 +76,7 @@ This approach gives me immediate feedback on how the project is going, and provi
 
 ## Billards: Pickup, grip and trigger buttons
 
-<video controls width="816">
-    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/nochat-f2.mp4' ?? require('./img/nochat-f2.mp4').default}/>
-</video>
+<HaiVideo src="./img/nochat-f2.mp4"></HaiVideo>
 
 First, [billiards](https://github.com/Sacchan-VRC/MS-VRCSA-Billiards). This will let me add controllers, pickups, handle grip and trigger buttons,
 and nothing more. I won't do UI raycasts for now, that will still be done using the game view.
@@ -104,9 +103,7 @@ Due to this, I am forced to keep the original UdonBehaviour GUID around in the p
 
 ## SaccFlight: Tracking data, controller axis
 
-<video controls width="816">
-    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/saccflight-novrc-f2.mp4' ?? require('./img/saccflight-novrc-f2.mp4').default}/>
-</video>
+<HaiVideo src="./img/saccflight-novrc-f2.mp4"></HaiVideo>
 
 Secondly, I wanted to try a complex vehicle system, like Sacchan and Varneon prefabs. I'm starting with [SaccFlight](https://github.com/Sacchan-VRC/SaccFlightAndVehicles)
 because it was unclear whether Varneon's vehicle prefabs were downloadable from Patreon, and SaccFlight is readily available.

@@ -3,6 +3,7 @@ sidebar_position: 1
 ---
 
 import styles from './styles.module.css';
+import {HaiVideo} from "/src/components/HaiVideo";
 
 # Reference manual
 
@@ -14,17 +15,13 @@ This tool requires VRChat, and is incompatible with other apps and platforms.
 
 It is bundled with *Visual Expressions Editor*, an animation editor that lets you create face expressions with the help of previews.
 
-<video controls width="816" autostart="false">
-    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/cge2-rc-github.mp4' ?? require('../../../static/unsorted_ghc/githubio/cge2-rc-github.mp4').default}/>
-</video>
+<HaiVideo src="../../../static/unsorted_ghc/githubio/cge2-rc-github.mp4"></HaiVideo>
 
 [//]: # (<iframe src="https://streamable.com/e/t19nkm?loop=0" width="408" height="256" frameborder="0" allowfullscreen></iframe> <iframe src="https://streamable.com/e/bg1uoj?loop=0" width="408" height="256" frameborder="0" allowfullscreen></iframe>)
 
-<video controls width="408" autostart="false">
-    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/t19nkm.mp4' ?? require('/static/unsorted_ghc/streamable/t19nkm.mp4').default}/>
-</video><video controls width="408" autostart="false">
-    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/bg1uoj.mp4' ?? require('/static/unsorted_ghc/streamable/bg1uoj.mp4').default}/>
-</video>
+<HaiVideo src="/static/unsorted_ghc/streamable/t19nkm.mp4" halfWidth={true}></HaiVideo>
+
+<HaiVideo src="/static/unsorted_ghc/streamable/bg1uoj.mp4" halfWidth={true}></HaiVideo>
 
 With *ComboGestureExpressions*:
 
@@ -70,9 +67,7 @@ I will try to provide help on the #combogesture-vrc channel when I can.
 
 ## Set up the prefab and open the CGE Editor
 
-<video controls width="816" autostart="false">
-    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/sx_2022-05-04_15-59-03_LrodZ6DkxP.mp4' ?? require('./videos/sx_2022-05-04_15-59-03_LrodZ6DkxP.mp4')} type="video/mp4" />
-</video>
+<HaiVideo src="./videos/sx_2022-05-04_15-59-03_LrodZ6DkxP.mp4"></HaiVideo>
 
 Add the prefab to the scene located in *Project View > `Packages/` folder  > "Haï ~ ComboGestureExpressions" package -> `ComboGestureExpressions.prefab`*. Right-click on the newly inserted prefab and click <span class={styles.hai_btn}>Unpack prefab completely</span>.
 Select the `Default` object which contains a *Combo Gesture Activity* component, then click the <span class={styles.hai_btn}>Open editor</span> button in the Inspector to open the CGE Editor.
@@ -87,9 +82,7 @@ If you are using ComboGestureExpressions V3, the prefab is now part of the `Pack
 ## Visualize your animation files and preview using AnimationViewer
 
 [//]: # (![NewInV2TagSmall]&#40;/unsorted_ghc/167145432-89428be9-9f16-4795-98ce-093a0c96837c.png&#41;)
-<video controls width="816" autostart="false">
-    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/sx_2022-05-04_16-15-03_FyjXwkdmJA.mp4' ?? require('./videos/sx_2022-05-04_16-15-03_FyjXwkdmJA.mp4')} type="video/mp4" />
-</video>
+<HaiVideo src="./videos/sx_2022-05-04_16-15-03_FyjXwkdmJA.mp4"></HaiVideo>
 
 Select your avatar which contains your Animator.
 
@@ -102,9 +95,7 @@ For more information, see [AnimationViewer manual](https://hai-vr.notion.site/An
 ## Create a new set of face expressions
 
 [//]: # (![ChangedInV2TagSmall]&#40;/unsorted_ghc/167145687-6fb677af-43e0-473e-ab91-66d000619125.png&#41;)
-<video controls width="816" autostart="false">
-    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/sx_2022-05-04_16-41-26_p2kFer4X67.mp4' ?? require('./videos/sx_2022-05-04_16-41-26_p2kFer4X67.mp4')} type="video/mp4" />
-</video>
+<HaiVideo src="./videos/sx_2022-05-04_16-41-26_p2kFer4X67.mp4"></HaiVideo>
 
 To assign animations with hand gestures, Drag and drop animation clips from your Project view to the slots in CGE Editor.
 
@@ -130,9 +121,7 @@ Gesture names for reference ([VRChat documentation](https://docs.vrchat.com/docs
 ## Edit or create animations with Visual Expressions Editor
 
 [//]: # (![ChangedInV2TagSmall]&#40;/unsorted_ghc/167145687-6fb677af-43e0-473e-ab91-66d000619125.png&#41;)
-<video controls width="816" autostart="false">
-    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/sx_2022-05-04_16-51-53_07ZREXTDvt.mp4' ?? require('./videos/sx_2022-05-04_16-51-53_07ZREXTDvt.mp4')} type="video/mp4" />
-</video>
+<HaiVideo src="./videos/sx_2022-05-04_16-51-53_07ZREXTDvt.mp4"></HaiVideo>
 
 If you need to create a new face expression animation, click the *Create* button, or click the *Visual Expressions Editor* button on the top right.
 
@@ -144,9 +133,7 @@ For more information, head over to the [Visual Expressions Editor documentation]
 
 ## Combining hands
 
-<video controls width="816" autostart="false">
-    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/sx_2022-05-04_17-06-15_fe0loyjRqc.mp4' ?? require('./videos/sx_2022-05-04_17-06-15_fe0loyjRqc.mp4')} type="video/mp4" />
-</video>
+<HaiVideo src="./videos/sx_2022-05-04_17-06-15_fe0loyjRqc.mp4"></HaiVideo>
 
 When your left hand and right hand are not making the same gesture, the animation in the corresponding slot will play.
 
@@ -162,9 +149,7 @@ It is highly recommended to fill out all slots.
 
 ## Do not blink when eyes are closed
 
-<video controls width="816" autostart="false">
-    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/sx_2022-05-04_17-15-52_JWZUi936jq.mp4' ?? require('./videos/sx_2022-05-04_17-15-52_JWZUi936jq.mp4')} type="video/mp4" />
-</video>
+<HaiVideo src="./videos/sx_2022-05-04_17-15-52_JWZUi936jq.mp4"></HaiVideo>
 
 Go to <span class={styles.hai_btn}>Prevent eyes blinking</span> tab. By selecting which animations have both eyes closed, the blinking animation will be disabled as long as that face expression is active.
 
@@ -178,9 +163,7 @@ On many avatar bases, the left eyelid and right eyelid can be animated independe
 
 ## Apply to the avatar
 
-<video controls width="816" autostart="false">
-    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/sx_2022-05-04_17-59-15_rmaiRqGhCH.mp4' ?? require('./videos/sx_2022-05-04_17-59-15_rmaiRqGhCH.mp4')} type="video/mp4" />
-</video>
+<HaiVideo src="./videos/sx_2022-05-04_17-59-15_rmaiRqGhCH.mp4"></HaiVideo>
 
 ### Select the Avatar Descriptor
 
@@ -222,9 +205,7 @@ Whenever you modify any face expression animation or anything related to ComboGe
 
 ## Squeezing the trigger
 
-<video controls width="816" autostart="false">
-    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/sx_2022-05-04_18-35-03_yxRmSyqtWe.mp4' ?? require('./videos/sx_2022-05-04_18-35-03_yxRmSyqtWe.mp4')} type="video/mp4" />
-</video>
+<HaiVideo src="./videos/sx_2022-05-04_18-35-03_yxRmSyqtWe.mp4"></HaiVideo>
 
 In VRChat, to play the hand animations, make a fist with your hand, and squeeze the trigger. The animation will be blended in the more your press the trigger.
 
@@ -239,9 +220,7 @@ When both hands of your hand are making a fist, you can select two additional an
 - The `No gesture` animation will be used when none of the triggers are squeezed.
 
 :::note
-<video controls width="408" autostart loop>
-    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/hp17ra-demo-analog.mp4' ?? require('./videos/hp17ra-demo-analog.mp4')} type="video/mp4" />
-</video>
+<HaiVideo src="./videos/hp17ra-demo-analog.mp4" halfWidth={true}></HaiVideo>
 
 Illustration of animation blending in an Analog Fist gesture.
 :::
@@ -255,9 +234,7 @@ On many avatar bases, the left eyelid and right eyelid can be animated independe
 ## Add some Dynamics using PhysBones, Contacts, OSC, and other Avatars 3.0 parameters
 
 [//]: # (![NewInV2TagSmall]&#40;/unsorted_ghc/167145432-89428be9-9f16-4795-98ce-093a0c96837c.png&#41;)
-<video controls width="816" autostart="false">
-    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/sx_2022-05-04_20-10-33_YTbmBZpWFo.mp4' ?? require('./videos/sx_2022-05-04_20-10-33_YTbmBZpWFo.mp4')} type="video/mp4" />
-</video>
+<HaiVideo src="./videos/sx_2022-05-04_20-10-33_YTbmBZpWFo.mp4"></HaiVideo>
 
 To make your face expression react to interactions and other Dynamics, add the prefab to the scene located in *Project View > `Packages/` folder  > "Haï ~ ComboGestureExpressions" package -> `CGEDynamics.prefab`*. Right-click on the newly inserted prefab and click <span class={styles.hai_btn}>Unpack prefab completely</span>.
 
@@ -275,9 +252,7 @@ In the Compiler, define your *Main Dynamics* object above the Mood sets.
 You can individually define *Dynamics* objects in each Mood set, which will only apply it to that Mood set. Make sure you don't have duplicate inside your *Main Dynamics* object!
 
 :::note
-<video controls width="408" autostart loop>
-    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/cge-dyn2-f.mp4' ?? require('./videos/cge-dyn2-f.mp4')} type="video/mp4" />
-</video>
+<HaiVideo src="./videos/cge-dyn2-f.mp4" halfWidth={true}></HaiVideo>
 
 Illustration of a Dynamics contact.
 :::
@@ -307,9 +282,7 @@ The animation will behave differently depending on the PhysBone source:
 
 ### Behavior with multiple Dynamic Expressions
 
-<video controls width="816" autostart="false">
-    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/sx_2022-05-04_21-56-30_f5ToWtGl2m.mp4' ?? require('./videos/sx_2022-05-04_21-56-30_f5ToWtGl2m.mp4')} type="video/mp4" />
-</video>
+<HaiVideo src="./videos/sx_2022-05-04_21-56-30_f5ToWtGl2m.mp4"></HaiVideo>
 
 The order of Dynamics in this list matters: When two or more Dynamic Conditions are active, the one which is higher in the list has priority.
 
@@ -362,9 +335,7 @@ For a boolean, *IsAboveThreshold* means the element is active when it's true.
 
 [//]: # (<iframe src="https://streamable.com/e/c5x44o?loop=0" width="816" height="512" frameborder="0" allowfullscreen></iframe>)
 
-<video controls width="816" autostart="false">
-    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/c5x44o.mp4' ?? require('/static/unsorted_ghc/streamable/c5x44o.mp4').default}/>
-</video>
+<HaiVideo src="/static/unsorted_ghc/streamable/c5x44o.mp4"></HaiVideo>
 
 *(A [longer tutorial with audio commentary](./additional-pages/tutorial#using-multiple-mood-sets-tutorial-with-audio-commentary) is available)*
 
@@ -386,9 +357,7 @@ Add additional mood sets by clicking <span class={styles.hai_btn}>+</span> on th
 
 [//]: # (<iframe src="https://streamable.com/e/ai0fzb?loop=0" width="816" height="512" frameborder="0" allowfullscreen></iframe>)
 
-<video controls width="816" autostart="false">
-    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/ai0fzb.mp4' ?? require('/static/unsorted_ghc/streamable/ai0fzb.mp4').default}/>
-</video>
+<HaiVideo src="/static/unsorted_ghc/streamable/ai0fzb.mp4"></HaiVideo>
 
 *(A [longer tutorial with audio commentary](./additional-pages/tutorial#standalone-puppets-and-blend-trees-tutorial-with-audio-commentary) is available)*
 
@@ -416,9 +385,7 @@ I recommend creating two controls in your Expression Menu to control the puppet:
 
 [//]: # (<iframe src="https://streamable.com/e/8u2sd5?loop=0" width="408" height="256" frameborder="0" allowfullscreen></iframe>)
 
-<video controls width="408" autostart="false">
-    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/8u2sd5.mp4' ?? require('/static/unsorted_ghc/streamable/8u2sd5.mp4').default}/>
-</video>
+<HaiVideo src="/static/unsorted_ghc/streamable/8u2sd5.mp4" halfWidth={true}></HaiVideo>
 
 Illustration of a puppet mood set.
 :::
@@ -437,9 +404,7 @@ If you still use ComboGestureExpressions V2, the section has moved to [its own d
 
 [//]: # (<iframe src="https://streamable.com/e/2onv8c?loop=0" width="816" height="512" frameborder="0" allowfullscreen></iframe>)
 
-<video controls width="816" autostart="false">
-    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/2onv8c.mp4' ?? require('/static/unsorted_ghc/streamable/2onv8c.mp4').default}/>
-</video>
+<HaiVideo src="/static/unsorted_ghc/streamable/2onv8c.mp4"></HaiVideo>
 
 *(A [longer tutorial with audio commentary](./additional-pages/tutorial#permutations-tutorial-with-audio-commentary) is available)*
 
@@ -453,9 +418,7 @@ If you would like to create permutations of gestures, which I do recommend for a
 
 [//]: # (<iframe src="https://streamable.com/e/nvm1n0?loop=0" width="816" height="512" frameborder="0" allowfullscreen></iframe>)
 
-<video controls width="816" autostart="false">
-    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/nvm1n0.mp4' ?? require('/static/unsorted_ghc/streamable/nvm1n0.mp4').default}/>
-</video>
+<HaiVideo src="/static/unsorted_ghc/streamable/nvm1n0.mp4"></HaiVideo>
 
 *(A [longer tutorial with audio commentary](./additional-pages/tutorial#mix-puppets-and-gestures-tutorial-with-audio-commentary) is available)*
 

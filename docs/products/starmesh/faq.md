@@ -3,6 +3,7 @@ sidebar_position: 10
 ---
 import {HaiTags} from "/src/components/HaiTags";
 import {HaiTag} from "/src/components/HaiTag";
+import {HaiVideo} from "/src/components/HaiVideo";
 
 # FAQ
 
@@ -20,9 +21,7 @@ This is needed because those blendshapes do not follow a linear interpolation be
 
 You only need one animated or scripted property for the blendshape of a Starmesh component to have full effect.
 
-<video controls muted width="816">
-    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/Y5ohAIogzL.mp4' ?? require('./img/Y5ohAIogzL.mp4').default}/>
-</video>
+<HaiVideo src="./img/Y5ohAIogzL.mp4"></HaiVideo>
 
 ### Compatibility with applications
 
@@ -50,9 +49,7 @@ Starmesh gives you the option to change the number of frames on some operators, 
   because the vertices move in opposite directions throughout the animation so the propagation effect is lost with fewer frames.
 - there are diminishing returns as you add more frames because it takes a lot more frames to make the timestep smaller.
 
-<video controls muted width="816">
-    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/y38T2mb00P.mp4' ?? require('./img/y38T2mb00P.mp4').default}/>
-</video>
+<HaiVideo src="./img/y38T2mb00P.mp4"></HaiVideo>
 
 ### Runtime cost of multi-frame blendshapes
 

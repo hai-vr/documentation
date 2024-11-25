@@ -1,5 +1,6 @@
 ﻿import {HaiTags} from "/src/components/HaiTags";
 import {HaiTag} from "/src/components/HaiTag";
+import {HaiVideo} from "/src/components/HaiVideo";
 
 # Animator As Code V1
 
@@ -23,6 +24,4 @@ Describing your animators as code provides the following advantages:
 It was initially written with VRChat Avatars 3.0 use cases in mind; the API is opinionated to facilitate writing such animators in a concise way,
 hopefully requiring as little additional tweaking.
 
-<video controls width="816" autostart="false">
-    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/157751278-475538c7-3310-4fa5-9a87-3651c85eaa1c.mp4' ?? require('../../../static/unsorted_ghc/157751278-475538c7-3310-4fa5-9a87-3651c85eaa1c.mp4').default}/>
-</video>
+<HaiVideo src="../../../static/unsorted_ghc/157751278-475538c7-3310-4fa5-9a87-3651c85eaa1c.mp4"></HaiVideo>

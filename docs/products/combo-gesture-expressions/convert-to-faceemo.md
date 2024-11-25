@@ -1,11 +1,11 @@
+import {HaiVideo} from "/src/components/HaiVideo";
+
 # Convert to FaceEmo
 
 You can convert ComboGestureExpressions to **[FaceEmo](https://suzuryg.github.io/face-emo/)**
 if you still have the ComboGesture components in your scene.
 
-<video controls width="816">
-<source src={'https://downscale.srv.hai-vr.dev/assets/docs/NWB6b75D8N.mp4' ?? require('./videos/NWB6b75D8N.mp4').default}/>
-</video>
+<HaiVideo src="./videos/NWB6b75D8N.mp4"></HaiVideo>
 
 ## Limitations
 

@@ -3,6 +3,7 @@ title: ⭐ Vixen
 ---
 import {HaiTags} from "/src/components/HaiTags";
 import {HaiTag} from "/src/components/HaiTag";
+import {HaiVideo} from "/src/components/HaiVideo";
 
 # Vixen
 
@@ -16,9 +17,7 @@ import {HaiTag} from "/src/components/HaiTag";
 This tool requires VRChat, and is currently incompatible with other apps and platforms.
 :::
 
-<video controls width="816">
-    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/2023-10-20_17-11-26_ShareX.mp4' ?? require('./img/2023-10-20_17-11-26_ShareX.mp4').default}/>
-</video>
+<HaiVideo src="./img/2023-10-20_17-11-26_ShareX.mp4"></HaiVideo>
 
 ## Download ⭐
 

@@ -3,6 +3,7 @@ title: Denormalized Avatar Exporter
 ---
 import {HaiTags} from "/src/components/HaiTags";
 import {HaiTag} from "/src/components/HaiTag";
+import {HaiVideo} from "/src/components/HaiVideo";
 
 # Denormalized Avatar Exporter (Beta)
 
@@ -28,9 +29,7 @@ since Modular Avatar is not fully supported outside VRChat, using them requires 
 If you were to try, shaders would fail to render in your VTubing app (it would be pink).
 :::
 
-<video controls width="816">
-    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/denormalized-f.mp4' ?? require('./img/denormalized-avatar-exporter/denormalized-f.mp4').default}/>
-</video>
+<HaiVideo src="./img/denormalized-avatar-exporter/denormalized-f.mp4"></HaiVideo>
 
 ## Install
 

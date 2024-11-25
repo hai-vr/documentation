@@ -3,6 +3,7 @@ title: Assign UV Tile (UDIM)
 ---
 import {HaiTags} from "/src/components/HaiTags";
 import {HaiTag} from "/src/components/HaiTag";
+import {HaiVideo} from "/src/components/HaiVideo";
 
 # Assign UV Tile
 
@@ -16,9 +17,7 @@ This is meant to be used in tandem with shader features, especially:
 - [Poiyomi Toon UV Tile Discard](https://www.poiyomi.com/special-fx/uv-tile-discard),
 - [lilToon 1.7.1 and above using UV Tile Discard](https://twitter.com/lil_xyzw/status/1747601947069464752) since mid-January 2024.
 
-<video controls muted width="816">
-    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/13rQ7HGwPr.mp4' ?? require('../img/13rQ7HGwPr.mp4').default}/>
-</video>
+<HaiVideo src="../img/13rQ7HGwPr.mp4"></HaiVideo>
 
 ## How to use
 
@@ -44,9 +43,7 @@ To use this component:
 
 Enter Play Mode or upload the avatar to test the results: as this is a non-destructive component, the original mesh remains intact.
 
-<video controls muted width="816">
-    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/pOxhnkOYpj.mp4' ?? require('../img/pOxhnkOYpj.mp4').default}/>
-</video>
+<HaiVideo src="../img/pOxhnkOYpj.mp4"></HaiVideo>
 
 ## About "Entire Mesh" mode
 
@@ -122,9 +119,7 @@ On blendshapes that shrink the body, this preserves the end caps, so the blendsh
 
 This might help with some avatar models, however, this will have no effect on blendshapes that have no edge loops separating vertices apart.
 
-<video controls muted width="816">
-    <source src={'https://downscale.srv.hai-vr.dev/assets/docs/YkcjjmKw2G.mp4' ?? require('../img/YkcjjmKw2G.mp4').default}/>
-</video>
+<HaiVideo src="../img/YkcjjmKw2G.mp4"></HaiVideo>
 
 ## Special thanks
 
