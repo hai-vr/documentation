@@ -8,10 +8,11 @@ interface Props {
     sound: boolean;
 }
 
-const assetUrl = "https://downscale.srv.hai-vr.dev/assets/docs/";
+const prefix = "https://downscale.srv.hai-vr.dev";
+const docsUrl = prefix + "/assets/docs/";
 
 export function HaiVideo(props: Props): JSX.Element {
-    const realSrc = props.cdn ?? (assetUrl + props.src.substring(props.src.lastIndexOf("/") + 1))
+    const realSrc = props.cdn != null ? (prefix + props.cdn) : (docsUrl + props.src.substring(props.src.lastIndexOf("/") + 1));
     return (
         <video controls muted={!props.sound} width={props.autoWidth ? "auto" : (props.halfWidth ? "408" : "816")}>
             <source
