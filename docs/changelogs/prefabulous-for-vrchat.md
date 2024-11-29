@@ -2,6 +2,11 @@
 title: Prefabulous for VRChat
 ---
 
+## 2.2.0 (Planned)
+
+- Allow installation with Animator As Code 1.2.x-beta.1 and above.
+- If NDMF 1.6.0 is installed, Prefabulous for VRChat will use the new APIs in NDMF to save generated assets.
+
 ## 2.1.0
 
 - Allow installation with VRChat 3.7.x.
