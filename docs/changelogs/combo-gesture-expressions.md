@@ -9,7 +9,7 @@ These changes have not been released yet.
 :::
 
 - Add "Ignore Analog Fist" option in the compiler. When enabled, the Fist animations play without having the press the trigger.
-- ComboGestureExpressions now requires Animator As Code V1.1.0 minimum.
+- ComboGestureExpressions now requires Animator As Code V1.1.0 minimum, and accepts any version above that.
   - Internally, the configuration is now accessed using the new accessor class introduced in AAC V1.1.0.
 
 ## 3.3.0-beta.1
