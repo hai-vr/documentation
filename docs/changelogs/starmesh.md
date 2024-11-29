@@ -2,11 +2,9 @@
 title: Starmesh
 ---
 
-## 1.6.0 (Planned)
+## 1.6.0
 
-:::danger
-These changes have not been released yet.
-:::
+Starmesh now has code that is shared with FaceTra Shape Creator under the *MeshLib* package; this is the main reason this update has been published.
 
 - *Paint New Bone* is now processed differently to reduce painting and selection conflicts:
   - *Paint New Bone* is now processed after all shape deformation Operators are completed.
@@ -23,7 +21,6 @@ Other:
 
 - In *Add component*, Starmesh components are now grouped together.
 - Starmesh components now have icons.
-- *Begin work on integrating Paint Toes to Starmesh.*
 
 ## 1.5.0
 
