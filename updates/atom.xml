@@ -8,12 +8,12 @@
     <subtitle>Haï~ Blog</subtitle>
     <icon>https://docs.hai-vr.dev/img/favicon.ico</icon>
     <entry>
-        <title type="html"><![CDATA[✨ FaceTra Shape Creator V0.9.0-beta.3]]></title>
+        <title type="html"><![CDATA[✨ FaceTra Shape Creator V0.9.0]]></title>
         <id>https://docs.hai-vr.dev/updates/2024/11/29/p0</id>
         <link href="https://docs.hai-vr.dev/updates/2024/11/29/p0"/>
         <updated>2024-11-29T13:00:00.000Z</updated>
-        <summary type="html"><![CDATA[A beta of FaceTra Shape Creator has been released.]]></summary>
-        <content type="html"><![CDATA[<p>A beta of FaceTra Shape Creator has been released.</p>
+        <summary type="html"><![CDATA[A new version of FaceTra Shape Creator has been released.]]></summary>
+        <content type="html"><![CDATA[<p>A new version of FaceTra Shape Creator has been released.</p>
 <p>There are a lot of changes, described in full in the <a href="https://docs.hai-vr.dev/docs/changelogs/facetra-shape-creator#0.9.0">changelog</a>.</p>
 <p>In summary:</p>
 <ul>
