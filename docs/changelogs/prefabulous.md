@@ -4,10 +4,6 @@ title: Prefabulous
 
 import {HaiVideo} from "/src/components/HaiVideo";
 
-## 2.1.1 (Planned)
-
-- Integrate with IAssetSaver which was added in NDMF 1.6.0 and Animator As Code 1.2.0.
-
 ## 2.1.0
 
 - Modify the behaviour of *Generate Twist Bones* on VRChat projects:
