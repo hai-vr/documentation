@@ -2,11 +2,50 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://docs.hai-vr.dev/updates</id>
     <title>Haï~ Blog</title>
-    <updated>2024-08-31T00:00:00.000Z</updated>
+    <updated>2024-11-29T13:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://docs.hai-vr.dev/updates"/>
     <subtitle>Haï~ Blog</subtitle>
     <icon>https://docs.hai-vr.dev/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[✨ FaceTra Shape Creator V0.9.0-beta.3]]></title>
+        <id>https://docs.hai-vr.dev/updates/2024/11/29/p0</id>
+        <link href="https://docs.hai-vr.dev/updates/2024/11/29/p0"/>
+        <updated>2024-11-29T13:00:00.000Z</updated>
+        <summary type="html"><![CDATA[A beta of FaceTra Shape Creator has been released.]]></summary>
+        <content type="html"><![CDATA[<p>A beta of FaceTra Shape Creator has been released.</p>
+<p>There are a lot of changes, described in full in the <a href="https://docs.hai-vr.dev/docs/changelogs/facetra-shape-creator#0.9.0-beta.3">changelog</a>.</p>
+<p>In summary:</p>
+<ul>
+<li>The performance of the application in Edit mode has been significantly improved.</li>
+<li>Improvements in tailoring:<!-- -->
+<ul>
+<li>You can now enable Tailoring and override push and pulling vertices per-shape.</li>
+<li>The result of tailoring can now be exported into a new file.</li>
+<li>Tailoring can now optionally use the same blendshapes as those from Adaptive file.</li>
+</ul>
+</li>
+<li>Improvements in shapes:<!-- -->
+<ul>
+<li>Most mouth shapes can now have blendshapes added to them. They will use the Mouth Divider.</li>
+<li>The functionality to push and pull vertices is now optional per-shape, and can be turned off entirely.</li>
+<li>Upper teeth can now be included in the deformation of Jaw Open, Jaw Left/Right, and Jaw Forward.</li>
+</ul>
+</li>
+<li>Improvements in the calibration process:<!-- -->
+<ul>
+<li>You can now define a position offset (i.e. when a model has been re-saved with high heels).</li>
+<li>You can now explicitly define base blendshapes that will serve as the rest pose of the face.</li>
+<li>Vertex selection UI has been improved.</li>
+<li>The blendshape used in the calibration process to define Mouth, Teeth, and Tongue vertices is now separate from the blendshape used in Jaw Open.</li>
+<li>Add a new construction line "Eye Visualization", used to visualize the Eye divider.</li>
+</ul>
+</li>
+<li>Add new shape: Nose Sneer Left/Right.</li>
+</ul>
+<video controls="" muted="" width="816"><source src="https://downscale.srv.hai-vr.dev/assets/docs/2024-11-25-p0-6JaYH1MJ0A.mp4"></video>
+<p>🔍 <a href="https://docs.hai-vr.dev/docs/changelogs/facetra-shape-creator#0.9.0-beta.2">View changelog</a></p>]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[🌃 Summary]]></title>
         <id>https://docs.hai-vr.dev/updates/2024/08/31/x0</id>
@@ -532,25 +571,5 @@ this package will be updated with no code and obsoleted.</li>
 <li>Add machine-translated Korean localization file, translated using ChatGPT.</li>
 </ul>
 <p><em>Versions 1.1.0 and 1.1.1 contain errors.</em></p>]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[⚙️ Animation Viewer V2.0.4]]></title>
-        <id>https://docs.hai-vr.dev/updates/2024/07/22/p1</id>
-        <link href="https://docs.hai-vr.dev/updates/2024/07/22/p1"/>
-        <updated>2024-07-22T11:00:00.000Z</updated>
-        <summary type="html"><![CDATA[- Fix null dereference when multiple Project tabs are open:]]></summary>
-        <content type="html"><![CDATA[<ul>
-<li>Fix null dereference when multiple Project tabs are open:<!-- -->
-<ul>
-<li>Check for a null value in listArea, which may happen when multiple Project tabs are open.</li>
-</ul>
-</li>
-<li>Fix inconsistent use of GUILayout ScrollView:<!-- -->
-<ul>
-<li>Change EditorGUILayout to GUILayout for ScrollView.</li>
-</ul>
-</li>
-</ul>
-<p>The above changes have been contributed by <strong><a href="https://github.com/mekanyanko" target="_blank" rel="noopener noreferrer">mekanyanko (めかにゃんこ)</a></strong> (first contribution).</p>]]></content>
     </entry>
 </feed>
