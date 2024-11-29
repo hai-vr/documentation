@@ -4,7 +4,7 @@ title: FaceTra Shape Creator
 
 import {HaiVideo} from "/src/components/HaiVideo";
 
-## 0.9.0-beta.3
+## 0.9.0
 
 ### Faster Edit mode performance
 
