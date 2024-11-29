@@ -11,7 +11,7 @@ These changes have not been released yet.
 - Fix an issue where the framerate of the window was not limited.
   - It is now limited, depending on whether the window is focused or not.
 - Fix an issue where the window was consuming an extreme amount of resources when it is minimized than when it is visible.
-  - The window will no longer update when the window is limited.
+  - The window will no longer update when the window is minimized.
 
 The update rate of the tracker has always been independent of the window UI; this has not been changed.
 
