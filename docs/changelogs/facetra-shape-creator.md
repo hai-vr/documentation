@@ -106,9 +106,6 @@ If you choose to define NoseSneer using blendshapes, the left and right blendsha
   - Avoid repeating vector operations inside for loops.
   - In Edit mode and during builds, skip blendshape removal when not necessary.
 
-*Other beta versions before beta.3 were cancelled and replaced with 0.9.0-beta.3, as it was not compatible with VNyan, Warudo, and ChilloutVR due to
-the use of newer Unity APIs.* 
-
 ## 0.8.0-2024-04-08-2020
 
 ### New Construction Line: [Blush Modifier Selection](/docs/products/facetra-shape-creator/construction-lines#optional-blush-modifier-selection)
