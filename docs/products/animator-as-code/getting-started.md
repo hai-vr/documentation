@@ -89,7 +89,8 @@ namespace MyNamespace
                 AssetKey = GUID.Generate().ToString(),
                 AssetContainer = ctx.AssetContainer,
                 ContainerMode = AacConfiguration.Container.OnlyWhenPersistenceRequired,
-                // (For AAC 1.2.0 and above) The next line is recommended starting from NDMF 1.6.0. If you use a lower version of NDMF or if you don't use it, remove that line.
+                // (For AAC 1.2.0 and above) The next line is recommended starting from NDMF 1.6.0.
+                // If you use a lower version of NDMF or if you don't use it, remove that line.
                 AssetContainerProvider = new NDMFContainerProvider(ctx),
                 // States will be created with Write Defaults set to ON or OFF based on whether UseWriteDefaults is true or false.
                 DefaultsProvider = new AacDefaultsProvider(UseWriteDefaults)
@@ -138,7 +139,7 @@ namespace MyNamespace
     internal class NDMFContainerProvider : IAacAssetContainerProvider
     {
         private readonly BuildContext _ctx;
-        public PrefabulousAsCodeContainerProvider(BuildContext ctx) => _ctx = ctx;
+        public NDMFContainerProvider(BuildContext ctx) => _ctx = ctx;
         public void SaveAsPersistenceRequired(Object objectToAdd) => _ctx.AssetSaver.SaveAsset(objectToAdd);
         public void SaveAsRegular(Object objectToAdd) { } // Let NDMF crawl our assets when it finishes
         public void ClearPreviousAssets() { } // ClearPreviousAssets is never used in non-destructive contexts
