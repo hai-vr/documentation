@@ -14,7 +14,7 @@
         <updated>2024-11-29T13:00:00.000Z</updated>
         <summary type="html"><![CDATA[A beta of FaceTra Shape Creator has been released.]]></summary>
         <content type="html"><![CDATA[<p>A beta of FaceTra Shape Creator has been released.</p>
-<p>There are a lot of changes, described in full in the <a href="https://docs.hai-vr.dev/docs/changelogs/facetra-shape-creator#0.9.0-beta.3">changelog</a>.</p>
+<p>There are a lot of changes, described in full in the <a href="https://docs.hai-vr.dev/docs/changelogs/facetra-shape-creator#0.9.0">changelog</a>.</p>
 <p>In summary:</p>
 <ul>
 <li>The performance of the application in Edit mode has been significantly improved.</li>
