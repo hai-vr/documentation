@@ -24,9 +24,7 @@ moved by existing blendshapes on the base face mesh.
 
 #### Blendshapes for all Shapes
 
-- All shapes can now have blendshapes added to them.
-- Shapes that don't normally use the Mouth Divider can now have blendshapes that use the Mouth Divider.
-- Shapes that move a muscle in the middle of the face can now have blendshapes that the Mouth Divider.
+- All shapes can now have blendshapes added to them, including those that don't normally use the Mouth Divider.
 
 #### Deformers are now optional
 
