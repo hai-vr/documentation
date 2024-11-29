@@ -89,6 +89,8 @@ namespace MyNamespace
                 AssetKey = GUID.Generate().ToString(),
                 AssetContainer = ctx.AssetContainer,
                 ContainerMode = AacConfiguration.Container.OnlyWhenPersistenceRequired,
+                // (For AAC 1.2.0 and above) The next line is recommended starting from NDMF 1.6.0. If you use a lower version of NDMF or if you don't use it, remove that line.
+                AssetContainerProvider = new NDMFContainerProvider(ctx),
                 // States will be created with Write Defaults set to ON or OFF based on whether UseWriteDefaults is true or false.
                 DefaultsProvider = new AacDefaultsProvider(UseWriteDefaults)
             });
@@ -130,6 +132,16 @@ namespace MyNamespace
             // our animator controller will be added to the avatar's FX layer.
             modularAvatar.NewMergeAnimator(ctrl.AnimatorController, VRCAvatarDescriptor.AnimLayerType.FX);
         }
+    }
+    
+    // (For AAC 1.2.0 and above) This is recommended starting from NDMF 1.6.0. You only need to define this class once.
+    internal class NDMFContainerProvider : IAacAssetContainerProvider
+    {
+        private readonly BuildContext _ctx;
+        public PrefabulousAsCodeContainerProvider(BuildContext ctx) => _ctx = ctx;
+        public void SaveAsPersistenceRequired(Object objectToAdd) => _ctx.AssetSaver.SaveAsset(objectToAdd);
+        public void SaveAsRegular(Object objectToAdd) { } // Let NDMF crawl our assets when it finishes
+        public void ClearPreviousAssets() { } // ClearPreviousAssets is never used in non-destructive contexts
     }
 }
 #endif
