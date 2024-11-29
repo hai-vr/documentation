@@ -4,11 +4,7 @@ title: FaceTra Shape Creator
 
 import {HaiVideo} from "/src/components/HaiVideo";
 
-## 0.9.0-beta.3 (Planned)
-
-:::danger
-These changes have not been released yet.
-:::
+## 0.9.0-beta.3
 
 ### Faster Edit mode performance
 
@@ -31,10 +27,6 @@ moved by existing blendshapes on the base face mesh.
 - All shapes can now have blendshapes added to them.
 - Shapes that don't normally use the Mouth Divider can now have blendshapes that use the Mouth Divider.
 - Shapes that move a muscle in the middle of the face can now have blendshapes that the Mouth Divider.
-
-[//]: # (- Shapes that move the Tongue can now have blendshapes that only move the vertices that had been assigned to the Tongue.)
-
-[//]: # (- You can now apply a deformation to the tongue, based on the blendshapes that moved the tongue out.)
 
 #### Deformers are now optional
 

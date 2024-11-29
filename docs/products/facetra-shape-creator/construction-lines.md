@@ -209,7 +209,7 @@ Dividers provide hints on how to divide existing shapes in half.
 ### Eye Visualization
 
 :::note
-This construction line is being added in 0.9.
+This construction line has been added in 0.9.
 :::
 
 In eye visualization, you will select a blendshape that moves the eyelashes. This blendshape is used for the next step

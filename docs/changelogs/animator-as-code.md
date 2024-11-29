@@ -21,7 +21,7 @@ As specified in the changelog for the official release of Animator As Code V1, b
   - For compatibility reasons, it was public for the duration of V1.1.x, and was already marked as obsolete in V1.1.x.
   - The class AacAccessorForExtensions replaced them.
 
-These breaking changes are meant to be the last breaking changes for the duration of Animator As Code V1.
+These breaking changes are meant to be the last breaking changes for the lifetime of Animator As Code V1.
 
 ## 1.1.0
 
