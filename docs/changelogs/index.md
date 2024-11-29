@@ -38,6 +38,7 @@ If some products have no changelogs listed on this page, it means they haven't b
 | [Animator As Code - VRChat](./changelogs/animator-as-code-vrchat)                                           | 1.1.0      | 2024-08     |   |
 | [Animator As Code - VRChat Destructive Workflow](./changelogs/animator-as-code-vrchat-destructive-workflow) | 1.1.0      | 2024-08     |   |
 | [Animator As Code - Modular Avatar functions](./changelogs/animator-as-code-modular-avatar)                 | 1.1.0      | 2024-08     |   |
+| (MeshLib ⭐)                                                                                                 | 1.6.0      | **2024-11** |   |
 | **Patchers**                                                                                                |            |             |   |           
 | [Auto-reset OSC config](./changelogs/auto-reset-osc-config)                                                 | 1.1.5      | 2024-08     |   |       
 | [Convert ComboGesture to FaceEmo](./changelogs/cge-to-faceemo)                                              | 0.2.0      | 2024-02     |   |
