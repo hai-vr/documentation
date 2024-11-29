@@ -6,6 +6,12 @@ import {HaiVideo} from "/src/components/HaiVideo";
 
 ## 0.9.0
 
+:::warning
+FaceTra now shares code with Starmesh under the *MeshLib* package, which is included in both products.
+
+If you use Starmesh, please update Starmesh to V1.6.0.
+:::
+
 ### Faster Edit mode performance
 
 The overall performance of the application in Edit mode has been improved.
