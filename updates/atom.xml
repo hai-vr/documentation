@@ -2,11 +2,22 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://docs.hai-vr.dev/updates</id>
     <title>Haï~ Blog</title>
-    <updated>2024-11-29T13:00:00.000Z</updated>
+    <updated>2024-11-29T20:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://docs.hai-vr.dev/updates"/>
     <subtitle>Haï~ Blog</subtitle>
     <icon>https://docs.hai-vr.dev/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[⚙️ Starmesh V1.6.0]]></title>
+        <id>https://docs.hai-vr.dev/updates/2024/11/29/p1</id>
+        <link href="https://docs.hai-vr.dev/updates/2024/11/29/p1"/>
+        <updated>2024-11-29T20:00:00.000Z</updated>
+        <summary type="html"><![CDATA[A new version of Starmesh has been released.]]></summary>
+        <content type="html"><![CDATA[<p>A new version of Starmesh has been released.</p>
+<p>Starmesh now has code that is shared with FaceTra Shape Creator under the <em>MeshLib</em> package; this is the main reason this update has been published.</p>
+<p>This update contains fixes in the order Selectors and Operators are processed, so that <em>Op. Paint New Bone</em> does not interfere with operators that use <em>Select Bones</em>.</p>
+<p>🔍 <a href="https://docs.hai-vr.dev/docs/changelogs/starmesh#1.6.0">View changelog</a></p>]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[✨ FaceTra Shape Creator V0.9.0]]></title>
         <id>https://docs.hai-vr.dev/updates/2024/11/29/p0</id>
@@ -44,7 +55,7 @@
 <li>Add new shape: Nose Sneer Left/Right.</li>
 </ul>
 <video controls="" muted="" width="816"><source src="https://downscale.srv.hai-vr.dev/assets/docs/2024-11-25-p0-6JaYH1MJ0A.mp4"></video>
-<p>🔍 <a href="https://docs.hai-vr.dev/docs/changelogs/facetra-shape-creator#0.9.0-beta.2">View changelog</a></p>]]></content>
+<p>🔍 <a href="https://docs.hai-vr.dev/docs/changelogs/facetra-shape-creator#0.9.0">View changelog</a></p>]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[🌃 Summary]]></title>
@@ -558,18 +569,5 @@ this package will be updated with no code and obsoleted.</li>
 </ul>
 </li>
 </ul>]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[⚙️ LetMeSee V1.1.2]]></title>
-        <id>https://docs.hai-vr.dev/updates/2024/07/23/p0</id>
-        <link href="https://docs.hai-vr.dev/updates/2024/07/23/p0"/>
-        <updated>2024-07-23T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[- Add language selector.]]></summary>
-        <content type="html"><![CDATA[<ul>
-<li>Add language selector.</li>
-<li>Add machine-translated Japanese localization file, translated using ChatGPT.</li>
-<li>Add machine-translated Korean localization file, translated using ChatGPT.</li>
-</ul>
-<p><em>Versions 1.1.0 and 1.1.1 contain errors.</em></p>]]></content>
     </entry>
 </feed>
