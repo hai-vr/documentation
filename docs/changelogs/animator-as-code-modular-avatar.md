@@ -2,7 +2,7 @@
 title: Animator As Code - Modular Avatar functions
 ---
 
-## 1.1.1 (Planned)
+## 1.1.1
 
 - Upper bound of Animator As Code V1 dependency is now `<2.0.0-a` instead of `<1.2.0-a`
 - This allows installation with Animator As Code V1.2.0.

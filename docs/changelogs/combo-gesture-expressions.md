@@ -2,7 +2,7 @@
 title: ComboGestureExpressions
 ---
 
-## 3.3.0 (Planned)
+## 3.3.0
 
 - Add "Ignore Analog Fist" option in the compiler. When enabled, the Fist animations play without having to press the trigger.
 - ComboGestureExpressions now requires Animator As Code V1.1.0 minimum, and accepts any version above that.

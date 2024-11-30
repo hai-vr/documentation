@@ -2,7 +2,7 @@
 title: Animator As Code
 ---
 
-## 1.2.0-beta.1 (Planned)
+## 1.2.0-beta.1
 
 - Add support for third-party asset container management.
   - In preparation for the introduction of [IAssetSaver in NDMF 1.6.0](https://github.com/bdunderscore/ndmf/releases/tag/1.6.0),
@@ -13,6 +13,9 @@ title: Animator As Code
   - Add new interface `IAacAssetContainerProvider` to abstract asset container management.
 
 The above changes have been contributed by **[kb10uy (KOBAYASHI Yū)](https://github.com/kb10uy)** (first contribution).
+
+The NDMF example in the [Getting started](/docs/products/animator-as-code/getting-started) page has been updated to demonstrate
+integration with this new API.
 
 As specified in the changelog for the official release of Animator As Code V1, breaking changes had been planned, and will be applied starting this version:
 - AacFlSettingKeyframes constructor is now private.
