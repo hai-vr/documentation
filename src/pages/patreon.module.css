@@ -4,3 +4,6 @@
 .footerlink {
   color: var(--ifm-color-primary);
 }
+.homepage {
+  font-size: 0.8em;
+}
