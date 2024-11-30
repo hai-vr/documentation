@@ -2,11 +2,64 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://docs.hai-vr.dev/updates</id>
     <title>Haï~ Blog</title>
-    <updated>2024-11-29T20:00:00.000Z</updated>
+    <updated>2024-11-30T11:30:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://docs.hai-vr.dev/updates"/>
     <subtitle>Haï~ Blog</subtitle>
     <icon>https://docs.hai-vr.dev/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[⚙️ ComboGestureExpressions V3.3.0]]></title>
+        <id>https://docs.hai-vr.dev/updates/2024/11/30/p3</id>
+        <link href="https://docs.hai-vr.dev/updates/2024/11/30/p3"/>
+        <updated>2024-11-30T11:30:00.000Z</updated>
+        <summary type="html"><![CDATA[- Add "Ignore Analog Fist" option in the compiler. When enabled, the Fist animations play without having to press the trigger.]]></summary>
+        <content type="html"><![CDATA[<ul>
+<li>Add "Ignore Analog Fist" option in the compiler. When enabled, the Fist animations play without having to press the trigger.</li>
+<li>ComboGestureExpressions now requires Animator As Code V1.1.0 minimum, and accepts any version above that.</li>
+</ul>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[⚙️ Prefabulous for VRChat V2.2.0-beta.1]]></title>
+        <id>https://docs.hai-vr.dev/updates/2024/11/30/p2</id>
+        <link href="https://docs.hai-vr.dev/updates/2024/11/30/p2"/>
+        <updated>2024-11-30T11:20:00.000Z</updated>
+        <summary type="html"><![CDATA[- Allow installation with Animator As Code 1.2.x-beta.1 and above.]]></summary>
+        <content type="html"><![CDATA[<ul>
+<li>Allow installation with Animator As Code 1.2.x-beta.1 and above.</li>
+<li>If NDMF 1.6.0 is installed, Prefabulous for VRChat will use the new APIs in NDMF to save generated assets.</li>
+</ul>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[⚙️ Animator As Code V1.2.0-beta.1]]></title>
+        <id>https://docs.hai-vr.dev/updates/2024/11/30/p1</id>
+        <link href="https://docs.hai-vr.dev/updates/2024/11/30/p1"/>
+        <updated>2024-11-30T11:10:00.000Z</updated>
+        <summary type="html"><![CDATA[The Animator As Code V1 API has been updated to improve support for third-party asset container management.]]></summary>
+        <content type="html"><![CDATA[<p>The Animator As Code V1 API has been updated to improve support for third-party asset container management.</p>
+<ul>
+<li>There are no additional dependencies introduced.</li>
+<li>By default, the behaviour of Animator As Code is the same as V1.1.0.</li>
+<li>Add new optional field <code>AacConfiguration.AssetContainerProvider</code> to specify an asset container provider.</li>
+<li>Add new interface <code>IAacAssetContainerProvider</code> to abstract asset container management.</li>
+</ul>
+<p>This change has been contributed by <strong><a href="https://github.com/kb10uy" target="_blank" rel="noopener noreferrer">kb10uy (KOBAYASHI Yū)</a></strong> (first contribution).</p>
+<p>The NDMF example in the <a href="https://docs.hai-vr.dev/docs/products/animator-as-code/getting-started">Getting started</a> page has been updated to demonstrate
+integration with this new API.</p>
+<p>As specified in the changelog for the official release of Animator As Code V1, the breaking changes that were planned for V1.2.0 have been applied.</p>
+<p>These breaking changes are meant to be the last breaking changes for the lifetime of Animator As Code V1.</p>
+<p>For more details, see the full changelog.</p>
+<p>🔍 <a href="https://docs.hai-vr.dev/docs/changelogs/animator-as-code#120-beta1">View changelog</a></p>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[⚙️ Animator As Code - VRChat / VRChat Destructive Workflow / Modular Avatar functions V1.1.1]]></title>
+        <id>https://docs.hai-vr.dev/updates/2024/11/30/p0</id>
+        <link href="https://docs.hai-vr.dev/updates/2024/11/30/p0"/>
+        <updated>2024-11-30T11:00:00.000Z</updated>
+        <summary type="html"><![CDATA[The sub-packages of Animator As Code "VRChat", "VRChat Destructive Workflow", and "Modular Avatar functions" have been updated]]></summary>
+        <content type="html"><![CDATA[<p>The sub-packages of Animator As Code "VRChat", "VRChat Destructive Workflow", and "Modular Avatar functions" have been updated
+to allow installation with Animator As Code V1.2.0 and all future versions of Animator As Code V1.</p>
+<p>There are no other changes.</p>]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[⚙️ Starmesh V1.6.0]]></title>
         <id>https://docs.hai-vr.dev/updates/2024/11/29/p1</id>
@@ -16,7 +69,7 @@
         <content type="html"><![CDATA[<p>A new version of Starmesh has been released.</p>
 <p>Starmesh now has code that is shared with FaceTra Shape Creator under the <em>MeshLib</em> package; this is the main reason this update has been published.</p>
 <p>This update contains fixes in the order Selectors and Operators are processed, so that <em>Op. Paint New Bone</em> does not interfere with operators that use <em>Select Bones</em>.</p>
-<p>🔍 <a href="https://docs.hai-vr.dev/docs/changelogs/starmesh#1.6.0">View changelog</a></p>]]></content>
+<p>🔍 <a href="https://docs.hai-vr.dev/docs/changelogs/starmesh#160">View changelog</a></p>]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[✨ FaceTra Shape Creator V0.9.0]]></title>
@@ -56,7 +109,7 @@
 </ul>
 <video controls="" muted="" width="816"><source src="https://downscale.srv.hai-vr.dev/assets/docs/2024-11-25-p0-6JaYH1MJ0A.mp4"></video>
 <div class="theme-admonition theme-admonition-warning admonition_xJq3 alert alert--warning"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>warning</div><div class="admonitionContent_BuS1"><p>FaceTra now shares code with Starmesh under the <em>MeshLib</em> package, which is included in both products.</p><p>If you use Starmesh, please update Starmesh to V1.6.0.</p></div></div>
-<p>🔍 <a href="https://docs.hai-vr.dev/docs/changelogs/facetra-shape-creator#0.9.0">View changelog</a></p>]]></content>
+<p>🔍 <a href="https://docs.hai-vr.dev/docs/changelogs/facetra-shape-creator#090">View changelog</a></p>]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[🌃 Summary]]></title>
@@ -513,60 +566,6 @@ this package will be updated with no code and obsoleted.</li>
 <li>Prevents the editor from hanging up when the user mistakenly pastes a page long of unrelated content in the search field.<!-- -->
 <ul>
 <li>The search query is now limited to 100 characters max.</li>
-</ul>
-</li>
-</ul>]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[⚙️ Property Finder V2.0.4]]></title>
-        <id>https://docs.hai-vr.dev/updates/2024/08/15/p1</id>
-        <link href="https://docs.hai-vr.dev/updates/2024/08/15/p1"/>
-        <updated>2024-08-15T04:00:00.000Z</updated>
-        <summary type="html"><![CDATA[- Prevents the editor from hanging up when the user mistakenly pastes a page long of unrelated content in the search field.]]></summary>
-        <content type="html"><![CDATA[<ul>
-<li>Prevents the editor from hanging up when the user mistakenly pastes a page long of unrelated content in the search field.<!-- -->
-<ul>
-<li>The search query is now limited to 100 characters max.</li>
-</ul>
-</li>
-</ul>]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[✨ Animation Viewer V2.1]]></title>
-        <id>https://docs.hai-vr.dev/updates/2024/08/15/p0</id>
-        <link href="https://docs.hai-vr.dev/updates/2024/08/15/p0"/>
-        <updated>2024-08-15T03:00:00.000Z</updated>
-        <summary type="html"><![CDATA[- Add support for CTRL-K Unity Search window.]]></summary>
-        <content type="html"><![CDATA[<ul>
-<li>Add support for CTRL-K Unity Search window.</li>
-<li>The "Animation Viewer" search provider must be enabled in that CTRL-K search window (three dots at the top right).</li>
-<li>Animation clips will show up in double in that Search window, as this version does not modify the stock Project search provider.</li>
-<li>The prefix <code>anim:&lt;your search query&gt;</code> may be used in your search query to only show <em>Animation Viewer</em> results.</li>
-</ul>
-<video controls="" muted="" width="816"><source src="https://downscale.srv.hai-vr.dev/assets/docs/2024-08-15-p0-rvnD2iDbIn.mp4"></video>]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[🧪 Knowledge sharing "Nochat" devlog]]></title>
-        <id>https://docs.hai-vr.dev/updates/2024/07/28/p0-ks</id>
-        <link href="https://docs.hai-vr.dev/updates/2024/07/28/p0-ks"/>
-        <updated>2024-07-28T07:00:00.000Z</updated>
-        <summary type="html"><![CDATA[A new knowledge sharing devlog has been published, "Nochat".]]></summary>
-        <content type="html"><![CDATA[<p>A new knowledge sharing devlog has been published, "Nochat".</p>
-<p>In <a href="https://docs.hai-vr.dev/docs/research/nochat">the <em>Nochat</em> research page</a>, you can read about my attempts to run VRChat prefabs with the Unity Editor in VR, without the VRChat SDK installed.</p>
-<video controls="" muted="" width="816"><source src="https://downscale.srv.hai-vr.dev/assets/docs/nochat-f2.mp4"></video>
-<video controls="" muted="" width="816"><source src="https://downscale.srv.hai-vr.dev/assets/docs/saccflight-novrc-f2.mp4"></video>]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[⚙️ LetMeSee V1.1.3]]></title>
-        <id>https://docs.hai-vr.dev/updates/2024/07/24/p0</id>
-        <link href="https://docs.hai-vr.dev/updates/2024/07/24/p0"/>
-        <updated>2024-07-24T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[- Continue rendering when Play Mode is paused:]]></summary>
-        <content type="html"><![CDATA[<ul>
-<li>Continue rendering when Play Mode is paused:<!-- -->
-<ul>
-<li>When the Editor is paused, continue rendering in the HMD as if it was not paused.</li>
-<li>This allows the user to continue viewing the scene in VR while objects are frozen in place (i.e. physically simulated hair).</li>
 </ul>
 </li>
 </ul>]]></content>
