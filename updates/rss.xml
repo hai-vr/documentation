@@ -24,10 +24,14 @@
             <link>https://docs.hai-vr.dev/updates/2024/11/30/p2</link>
             <guid>https://docs.hai-vr.dev/updates/2024/11/30/p2</guid>
             <pubDate>Sat, 30 Nov 2024 11:20:00 GMT</pubDate>
-            <description><![CDATA[- Allow installation with Animator As Code 1.2.x-beta.1 and above.]]></description>
+            <description><![CDATA[- Now requires Animator As Code 1.2.0-beta.1 or above, in order to use the asset container provider API.]]></description>
             <content:encoded><![CDATA[<ul>
-<li>Allow installation with Animator As Code 1.2.x-beta.1 and above.</li>
-<li>If NDMF 1.6.0 is installed, Prefabulous for VRChat will use the new APIs in NDMF to save generated assets.</li>
+<li>Now requires Animator As Code 1.2.0-beta.1 or above, in order to use the asset container provider API.</li>
+<li>If NDMF 1.6.0 is installed, Prefabulous for VRChat will use the new APIs in NDMF to save generated assets.<!-- -->
+<ul>
+<li>NDMF 1.6.0 is not explicitly required, to avoid a possible <a href="https://github.com/vrchat-community/creator-companion/issues/29" target="_blank" rel="noopener noreferrer">unresolved issue with VCC</a>.</li>
+</ul>
+</li>
 </ul>]]></content:encoded>
         </item>
         <item>
