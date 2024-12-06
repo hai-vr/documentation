@@ -6,7 +6,7 @@ import {HaiTags} from "/src/components/HaiTags";
 import {HaiTag} from "/src/components/HaiTag";
 import {HaiVideo} from "/src/components/HaiVideo";
 
-# ⛔ Transfer Blendshape
+# Transfer Blendshape
 
 The *Starmesh Op. Transfer Blendshape* component **attempts** to create a blendshape on a costume that mimics the movement
 of a blendshape from another mesh.
@@ -23,10 +23,6 @@ it will probably not work as this operator expects the mesh data to overlap, reg
 :::
 
 <HaiVideo src="../img/rhpnXAwgyV.mp4"></HaiVideo>
-
-:::danger
-This tool is currently not available, and this documentation is currently being written.
-:::
 
 ## How to use
 

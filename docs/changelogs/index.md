@@ -30,7 +30,7 @@ If some products have no changelogs listed on this page, it means they haven't b
 | [Prefabulous for VRChat](./changelogs/prefabulous-for-vrchat)                                               | 2.2.0-beta.1 | **2024-11** |   |
 | [Prefabulous for VRM](./changelogs/prefabulous-for-vrm)                                                     | 2.0.1        | 2024-08     |   |
 | [Prefabulous for Platform Conversions](./changelogs/prefabulous-for-conversions)                            | 2.0.0        | 2024-08     |   |
-| [Starmesh](./changelogs/starmesh) ⭐                                                                         | 1.6.0        | **2024-11** |   |
+| [Starmesh](./changelogs/starmesh) ⭐                                                                         | 1.7.0        | **2024-12** |   |
 | [Visual Expressions Editor](./changelogs/visual-expressions-editor)                                         | 2.0.3        | 2023-11     |   |
 | [Vixen](./changelogs/vixen) ⭐                                                                               | 1.3.0        | 2024-08     |   |
 | **APIs**                                                                                                    |              |             |   |

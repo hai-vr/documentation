@@ -4,11 +4,7 @@ title: Starmesh
 
 import {HaiVideo} from "/src/components/HaiVideo";
 
-## 1.7.0 (Planned)
-
-:::danger
-This changelog describes a planned change. It has not been released yet.
-:::
+## 1.7.0 
 
 - Added [Starmesh Op. Transfer Blendshape](/docs/products/starmesh/operators/transfer-blendshape) component.
 
