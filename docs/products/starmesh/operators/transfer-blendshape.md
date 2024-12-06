@@ -56,6 +56,8 @@ It may not always produce good results, if at all.
 ![Unity_2zXUgUI90W.png](..%2Fimg%2FUnity_2zXUgUI90W.png)
 
 - If you use *Modular Avatar* and your blendshape is animated, consider adding a [Modular Avatar Blendshape Sync](https://modular-avatar.nadena.dev/docs/reference/blendshape-sync) if you deem it necessary.
+  - The target blendshape will displayed in red, but this is fine as long as you use the same blendshape name,
+    and that you make sure the value of *Shape Default Weight* is the same as the one on your base mesh.
 
 ![Unity_mUgytskC14.png](..%2Fimg%2FUnity_mUgytskC14.png)
 
