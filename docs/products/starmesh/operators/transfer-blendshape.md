@@ -18,8 +18,8 @@ Combine it with other Selectors to limit the areas affected by the transferred d
 :::warning
 **This component may not always produce good results.**
 
-In addition, if you use other tools that attempt to fit a costume on an avatar it was not designed for, it will probably not work as
-this operator expects the mesh data to overlap, regardless of how bones are arranged in the scene.
+In addition, if you use other tools that attempt to fit a costume on an avatar it was not designed for (i.e. fitting a costume made for Manuka on a Lime base body),
+it will probably not work as this operator expects the mesh data to overlap, regardless of how bones are arranged in the scene.
 :::
 
 <HaiVideo src="../img/rhpnXAwgyV.mp4"></HaiVideo>
