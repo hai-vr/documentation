@@ -16,6 +16,9 @@ Combine it with other Selectors to limit the areas affected by the transferred d
 
 In addition, if you use other tools that attempt to fit a costume on an avatar it was not designed for (i.e. fitting a costume made for Manuka on a Lime base body),
 it will probably not work as this operator expects the mesh data to overlap, regardless of how bones are arranged in the scene.
+
+Keep in mind that the way fabric deforms is not always analogous to how customization blendshapes deforms the skin. For example, the area between the two breasts
+is under tension, so you may not get good results if you try to transfer breast blendshapes to a costume.
 :::
 
 <HaiVideo src="../img/rhpnXAwgyV.mp4"></HaiVideo>
@@ -71,6 +74,9 @@ If *Inverse* is checked, the selected meshes will bind to the source mesh as if 
 will be the inverse.
 
 For example, this might be used to create a flat chest blendshape on a costume that was designed to only support larger chests; but the results may vary.
+
+Keep in mind that the way fabric deforms is not always analogous to how customization blendshapes deforms the skin. For example, the area between the two breasts
+is under tension, so you may not get good results if you try to transfer breast blendshapes to a costume.
 
 #### Multiplier
 
