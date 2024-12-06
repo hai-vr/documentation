@@ -22,6 +22,8 @@ In addition, if you use other tools that attempt to fit a costume on an avatar i
 this operator expects the mesh data to overlap, regardless of how bones are arranged in the scene.
 :::
 
+<HaiVideo src="../img/ckLMv1QKJN.mp4"></HaiVideo>
+
 :::danger
 This tool is currently not available, and this documentation is currently being written.
 :::
@@ -43,14 +45,19 @@ It may not always produce good results, if at all.
 
 ### Configure the operator
 
-- In the Operator, choose the source mesh to bind from.
+- In the Operator, choose the *Source Mesh* to bind from.
     - The mesh to bind from is typically the mesh that contains the skin of your torso.
-- Define the name of the blendshape that will be transferred.
+- Define the *Source Blendshape* name that will be transferred; it could be the same as the one in your source mesh.
 - Choose a name for the generated blendshape in the *Shape Name*.
 - The *Shape Default Weight* setting is the default value of the blendshape on your SkinnedMeshRenderer component after it is created.
     - By default, the default weight is set to 100. 
-    - You may want to set that weight to whatever value your blendshape currently is on the source mesh to bind from.
-- If you use *Modular Avatar*, consider adding a [Modular Avatar Blendshape Sync](https://modular-avatar.nadena.dev/docs/reference/blendshape-sync) if you deem it necessary.
+    - You may want to set that weight to the value your blendshape currently is on the Source Mesh.
+
+![JFKMwaUw4w.png](..%2Fimg%2FJFKMwaUw4w.png)
+
+- If you use *Modular Avatar* and your blendshape is animated, consider adding a [Modular Avatar Blendshape Sync](https://modular-avatar.nadena.dev/docs/reference/blendshape-sync) if you deem it necessary.
+
+![Unity_mUgytskC14.png](..%2Fimg%2FUnity_mUgytskC14.png)
 
 ### Advanced
 

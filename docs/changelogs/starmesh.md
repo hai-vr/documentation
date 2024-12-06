@@ -2,6 +2,14 @@
 title: Starmesh
 ---
 
+## 1.7.0 (Planned)
+
+:::danger
+This changelog describes a planned change. It has not been released yet.
+:::
+
+- Added [Starmesh Op. Transfer Blendshape](/docs/products/starmesh/operators/transfer-blendshape) component.
+
 ## 1.6.0
 
 Starmesh now has code that is shared with FaceTra Shape Creator under the *MeshLib* package; this is the main reason this update has been published.
