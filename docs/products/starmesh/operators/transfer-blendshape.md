@@ -22,7 +22,7 @@ In addition, if you use other tools that attempt to fit a costume on an avatar i
 this operator expects the mesh data to overlap, regardless of how bones are arranged in the scene.
 :::
 
-<HaiVideo src="../img/ckLMv1QKJN.mp4"></HaiVideo>
+<HaiVideo src="../img/rhpnXAwgyV.mp4"></HaiVideo>
 
 :::danger
 This tool is currently not available, and this documentation is currently being written.
@@ -67,8 +67,15 @@ By default, the algorithm works by finding the closest face to each vertex, but 
 
 You may choose to increase or decrease the search limit and see how it affects the quality of the transfer.
 
+#### Inverse
+
+If *Inverse* is checked, the selected meshes will bind to the source mesh as if the blendshape was applied in the source mesh, and the generated blendshape
+will be the inverse.
+
+For example, this might be used to create a flat chest blendshape on a costume that was designed to only support larger chests; but the results may vary.
+
 #### Multiplier
 
-You can multiply the effect of the transferred blendshape beyond its intended value.
+You can multiply the effect of the transferred blendshape beyond its intended value, by setting the *Multiply* value to any value greater than 1, such as `1.2`
 
 For values between 0.0 and 1.0, you should use *Shape Default Weight* instead.

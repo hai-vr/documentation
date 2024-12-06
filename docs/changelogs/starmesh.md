@@ -12,7 +12,7 @@ This changelog describes a planned change. It has not been released yet.
 
 - Added [Starmesh Op. Transfer Blendshape](/docs/products/starmesh/operators/transfer-blendshape) component.
 
-<HaiVideo src="../img/ckLMv1QKJN.mp4"></HaiVideo>
+<HaiVideo src="../img/rhpnXAwgyV.mp4"></HaiVideo>
 
 ## 1.6.0
 
