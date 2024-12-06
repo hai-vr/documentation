@@ -53,7 +53,7 @@ It may not always produce good results, if at all.
     - By default, the default weight is set to 100. 
     - You may want to set that weight to the value your blendshape currently is on the Source Mesh.
 
-![JFKMwaUw4w.png](..%2Fimg%2FJFKMwaUw4w.png)
+![Unity_2zXUgUI90W.png](..%2Fimg%2FUnity_2zXUgUI90W.png)
 
 - If you use *Modular Avatar* and your blendshape is animated, consider adding a [Modular Avatar Blendshape Sync](https://modular-avatar.nadena.dev/docs/reference/blendshape-sync) if you deem it necessary.
 
