@@ -61,6 +61,14 @@ It may not always produce good results, if at all.
 
 ### Advanced
 
+#### Vertex Search Limit
+
 By default, the algorithm works by finding the closest face to each vertex, but this search is limited to the triangles associated with the closest 12 vertices.
 
 You may choose to increase or decrease the search limit and see how it affects the quality of the transfer.
+
+#### Multiplier
+
+You can multiply the effect of the transferred blendshape beyond its intended value.
+
+For values between 0.0 and 1.0, you should use *Shape Default Weight* instead.
