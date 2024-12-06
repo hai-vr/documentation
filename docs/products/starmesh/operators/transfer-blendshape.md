@@ -61,6 +61,10 @@ It may not always produce good results, if at all.
 
 ![Unity_mUgytskC14.png](..%2Fimg%2FUnity_mUgytskC14.png)
 
+<HaiVideo src="../img/IzlkxFR2pi.mp4"></HaiVideo>
+
+<HaiVideo src="../img/mKKt5JlxK1.mp4"></HaiVideo>
+
 ### Advanced
 
 #### Vertex Search Limit
