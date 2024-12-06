@@ -33,3 +33,7 @@ Some of the operators of this tool generate multiple frames, which is not suppor
 This can still be used in <HaiTag compatibleWithVNyan={true} short={true} /> and <HaiTag compatibleWithWarudo={true} short={true} />
 as long as you use their proprietary avatar formats, instead of the VRM format.
 :::
+
+### Third-party acknowledgements
+
+*Starmesh* uses the [viliwonka/KDTree](https://github.com/viliwonka/KDTree) library to perform distance-based polygon search operations.
