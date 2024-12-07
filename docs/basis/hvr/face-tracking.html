@@ -11,7 +11,7 @@
 
 
 <script src="https://plausible.io/js/script.js" defer="defer" data-domain="docs.hai-vr.dev"></script><link rel="stylesheet" href="/assets/css/styles.af2a0f32.css">
-<script src="/assets/js/runtime~main.fc164218.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.5fa52154.js" defer="defer"></script>
 <script src="/assets/js/main.67793c17.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -24,7 +24,7 @@ already have set up on their machine.</p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="prepare-vrcfacetracking">Prepare VRCFaceTracking<a href="#prepare-vrcfacetracking" class="hash-link" aria-label="Direct link to Prepare VRCFaceTracking" title="Direct link to Prepare VRCFaceTracking">​</a></h2>
 <p>To set up face tracking, we need to put a fake OSC file that VRCFaceTracking will read when loading your Basis avatar.</p>
 <ul>
-<li>Download <a href="/assets/basis-hvr/avtr_00000000-d7dc-4a90-ab09-000000000000.json" target="_blank" rel="noopener noreferrer">this JSON file</a>.</li>
+<li>Download <a href="/assets/basis-hvr/avtr_00000000-d7dc-4a90-ab09-000000000000.json" target="_blank" rel="noopener noreferrer">this JSON file</a> (<em>Right-click &gt; Save link as...</em>)</li>
 <li>Put this file in the following folder:<!-- -->
 <ul>
 <li><code>C:\Users\&lt;your_user&gt;\AppData\LocalLow\VRChat\vrchat\OSC\usr_&lt;any_vrc_user&gt;\Avatars\</code></li>
@@ -39,9 +39,11 @@ already have set up on their machine.</p>
 <li>Add the <strong>Blendshape Actuation</strong> component. This will drive the blendshapes of your avatar.<!-- -->
 <ul>
 <li>Set <em>Renderers</em> to the mesh that contains the face tracking blendshapes.</li>
-<li>Set <em>Definition File</em> to either <code>FaceTracking-UnifiedExpressions-Simple</code> or <code>FaceTracking-ARKit-Simple</code>.<!-- -->
+<li>Set <em>Definition File</em> to either:<!-- -->
 <ul>
-<li>When trying to locate this file in the Project View, make sure you by filtering by Package, not Assets.</li>
+<li><code>FaceTracking-UnifiedExpressions-Simple</code> if your avatar uses the Unified Expressions blendshape naming convention, or</li>
+<li><code>FaceTracking-ARKit-Simple</code> if your avatar uses the ARKit blendshape naming convention.</li>
+<li>When trying to locate this file in the Project View, make sure you are filtering by Package, not Assets.</li>
 </ul>
 </li>
 </ul>
