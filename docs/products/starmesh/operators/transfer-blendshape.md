@@ -84,6 +84,12 @@ You can multiply the effect of the transferred blendshape beyond its intended va
 
 For values between 0.0 and 1.0, you should use *Shape Default Weight* instead.
 
+### Recalculate Normals
+
+By default, normals will be automatically recalculated for this blendshape.
+
+In general, you should recalculate normals. If you find a reason not to, then check *Do Not Recalculate Normals* to disable it.
+
 ## Versions
 
 - **1.7.0**: Added.
