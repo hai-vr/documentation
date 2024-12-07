@@ -1,0 +1,32 @@
+# Face Tracking in Basis
+
+There is a rudimentary implementation of face tracking avatars in Basis, which I have made to help dooly test out avatar networking packet
+communications using a real scenario.
+
+Face Tracking in this implementation is done through a package, rather than through Basis' core source.
+
+It requires the use of VRCFaceTracking, because it's the quickest way to get something working that existing face tracking users may
+already have set up on their machine.
+
+## Prepare VRCFaceTracking
+
+To set up face tracking, we need to put a fake OSC file that VRCFaceTracking will read when loading your Basis avatar.
+- Download [this JSON file](pathname:///assets/basishvr/avtr_00000000-d7dc-4a90-ab09-000000000000.json).
+- Put this file in the following folder:
+  - `C:\Users\<your_user>\AppData\LocalLow\VRChat\vrchat\OSC\usr_<any_vrc_user>\Avatars\`
+  - The name of the JSON file must be `avtr_00000000-d7dc-4a90-ab09-000000000000.json`
+
+## Set up your avatar
+
+The face tracking implementation does not use the Animator system.
+
+- Create a new GameObject inside your avatar. Give it the name of your choice, like *FaceTracking*.
+- Add the **Blendshape Actuation** component. This will drive the blendshapes of your avatar.
+  - Set *Renderers* to the mesh that contains the face tracking blendshapes.
+  - Set *Definition File* to either `FaceTracking-UnifiedExpressions-Simple` or `FaceTracking-ARKit-Simple`.
+    - When trying to locate this file in the Project View, make sure you by filtering by Package, not Assets.
+- If you use eye tracking, add the **Eye Tracking Bone Actuation** component.
+  - By default, the multiplier value of 1 will rotate the eye bone to match the direction your eyes are looking.
+  - You may choose to increase the multiplier if you want a more exaggerated eye look direction.
+- Add the **OSC Acquisition** component. This will enable some rudimentary form of OSC communication.
+- Finally, in the root of your avatar, add the *Feature Networking* component.
