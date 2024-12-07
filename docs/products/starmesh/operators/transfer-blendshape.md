@@ -83,3 +83,7 @@ is under tension, so you may not get good results if you try to transfer breast 
 You can multiply the effect of the transferred blendshape beyond its intended value, by setting the *Multiply* value to any value greater than 1, such as `1.2`
 
 For values between 0.0 and 1.0, you should use *Shape Default Weight* instead.
+
+## Versions
+
+- **1.7.0**: Added.

@@ -69,3 +69,10 @@ By default, the new bone will be painted by proportionally stealing the weight f
 This is so that the new bone has full control over the affected vertices.
 
 If you want to keep the influences of the existing bones, check *Do Not Unpaint Existing*.
+
+## Versions
+
+- **1.6.0**: *Paint New Bone* is now processed differently to reduce painting and selection conflicts:
+  - *Paint New Bone* is now processed after all shape deformation Operators are completed.
+  - *Select Bones* will now collect all information necessary, before any *Paint New Bones* operators are applied.
+- **1.0.0**: Added.

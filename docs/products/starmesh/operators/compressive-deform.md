@@ -128,3 +128,8 @@ used by *Starmesh Select Meshes* during the build, which will bind the animation
 in *Animation Repathing* to the generated blendshapes. For concrete examples, see the [VRChat prefabs](../prefabs) section.
 
 In addition, if you leave *Shape Name* empty, *Starmesh* will generate a unique blendshape name.
+
+## Versions
+
+- **1.3.0**: ⚡ Compressive Deform now generates 15 frames by default instead of 25.
+- **1.0.0**: Added.
