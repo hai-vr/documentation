@@ -45,7 +45,7 @@ moved by existing blendshapes on the base face mesh.
 
 #### Construction Pose
 
-- You can now explicitly define base blendshapes that will serve as the rest pose of the face in the Construction Pose panel in the construction lines.
+- You can now explicitly define base blendshapes that will serve as the rest pose of the face in the Construction Pose panel, located in the construction lines section.
 - Deformations will now be applied relative to that Construction Pose.
 - The Construction Pose does not necessarily have to be the blendshapes used for the stylization of the avatar, it only needs to be
   the blendshapes used at the time the contents of the FaceTra File is created.
