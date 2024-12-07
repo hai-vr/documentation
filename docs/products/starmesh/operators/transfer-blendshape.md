@@ -56,9 +56,13 @@ It may not always produce good results, if at all.
 
 ![Unity_mUgytskC14.png](..%2Fimg%2FUnity_mUgytskC14.png)
 
+### More examples
+
 <HaiVideo src="../img/IzlkxFR2pi.mp4"></HaiVideo>
 
 <HaiVideo src="../img/mKKt5JlxK1.mp4"></HaiVideo>
+
+You can refine the affected area by using additional Selectors.
 
 ### Advanced
 
