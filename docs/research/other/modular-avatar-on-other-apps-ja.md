@@ -1,7 +1,3 @@
----
-unlisted: true
----
-
 # 2024-12-08 他のアプリケーションでModular Avatarを動かす方法
 
 - **[Open article in English](./modular-avatar-on-other-apps)**

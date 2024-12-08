@@ -1,7 +1,3 @@
----
-unlisted: true
----
-
 # 2024-12-08 Running Modular Avatar on other apps
 
 - **[Open article in Japanese / 記事を日本語で開く](./modular-avatar-on-other-apps-ja)**
