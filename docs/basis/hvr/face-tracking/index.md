@@ -16,12 +16,27 @@ Face Tracking in this implementation is done through a package, rather than thro
 It requires the use of VRCFaceTracking, because it's the quickest way to get something working that existing face tracking users may
 already have set up on their machine.
 
+This guide assumes you're already familiar with VRCFaceTracking and your own hardware.
+
 ## Prepare VRCFaceTracking
+
+### If you already play VRC
 
 To set up face tracking, we need to put a fake OSC file that VRCFaceTracking will read when loading your Basis avatar.
 - Download [this JSON file](pathname:///assets/basis-hvr/avtr_00000000-d7dc-4a90-ab09-000000000000.json) (*Right-click > Save link as...*)
 - Put this file in the following folder:
   - `C:\Users\<your_user>\AppData\LocalLow\VRChat\vrchat\OSC\usr_<any_vrc_user>\Avatars\`
+  - The name of the JSON file must be `avtr_00000000-d7dc-4a90-ab09-000000000000.json`
+
+### If you don't play VRC
+
+If you don't play VRC:
+
+- Download [this JSON file](pathname:///assets/basis-hvr/avtr_00000000-d7dc-4a90-ab09-000000000000.json) (*Right-click > Save link as...*)
+- Create the following folder structure:
+  - `C:\Users\<your_user>\AppData\LocalLow\VRChat\vrchat\OSC\usr_4d5721e5-89b1-4313-aa2d-dfc0e9dbb555\Avatars\`
+  - *Note: `4d5721e5-89b1-4313-aa2d-dfc0e9dbb555` is a randomly generated GUID; it really doesn't matter what value is.*
+- Put the JSON in that folder you've just created.
   - The name of the JSON file must be `avtr_00000000-d7dc-4a90-ab09-000000000000.json`
   
 ## Set up your avatar
