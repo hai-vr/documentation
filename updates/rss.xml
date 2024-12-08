@@ -4,10 +4,27 @@
         <title>Haï~ Blog</title>
         <link>https://docs.hai-vr.dev/updates</link>
         <description>Haï~ Blog</description>
-        <lastBuildDate>Fri, 06 Dec 2024 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 08 Dec 2024 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[🧪 Knowledge sharing "Running Modular Avatar on other apps"]]></title>
+            <link>https://docs.hai-vr.dev/updates/2024/12/08/p0-ks</link>
+            <guid>https://docs.hai-vr.dev/updates/2024/12/08/p0-ks</guid>
+            <pubDate>Sun, 08 Dec 2024 00:00:00 GMT</pubDate>
+            <description><![CDATA[A new knowledge sharing article has been published, "Running Modular Avatar on other apps".]]></description>
+            <content:encoded><![CDATA[<p>A new knowledge sharing article has been published, "Running Modular Avatar on other apps".</p>
+<ul>
+<li>2024-12-08<!-- -->
+<ul>
+<li><a href="https://docs.hai-vr.dev/docs/research/other/modular-avatar-on-other-apps">"Running Modular Avatar on other apps"</a></li>
+<li><a href="https://docs.hai-vr.dev/docs/research/other/modular-avatar-on-other-apps-ja">"他のアプリケーションでModular Avatarを動かす方法"</a></li>
+</ul>
+</li>
+</ul>
+<p>🔍 <a href="https://docs.hai-vr.dev/docs/other/articles">View articles</a></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[✨ Transfer Blendshape (Starmesh V1.7.0)]]></title>
             <link>https://docs.hai-vr.dev/updates/2024/12/06/p0</link>
@@ -559,21 +576,6 @@ this package will be updated with no code and obsoleted.</li>
 <li>Components now extend VRChat's <code>IEditorOnly</code> class only if the VRChat Avatars SDK is installed.</li>
 </ul>
 </li>
-</ul>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[⚙️ Prefabulous Universal V2.0.3]]></title>
-            <link>https://docs.hai-vr.dev/updates/2024/08/15/p3</link>
-            <guid>https://docs.hai-vr.dev/updates/2024/08/15/p3</guid>
-            <pubDate>Thu, 15 Aug 2024 22:00:00 GMT</pubDate>
-            <description><![CDATA[- Compilation should no longer fail in non-VRChat projects that still have the VRCSDKVRCSDK3 scripting define around.]]></description>
-            <content:encoded><![CDATA[<ul>
-<li>Compilation should no longer fail in non-VRChat projects that still have the <code>VRC_SDK_VRCSDK3</code> scripting define around.<!-- -->
-<ul>
-<li>Components now extend VRChat's <code>IEditorOnly</code> class only if the VRChat Avatars SDK is installed.</li>
-</ul>
-</li>
-<li>Delete Polygons should now run before AAO.</li>
 </ul>]]></content:encoded>
         </item>
     </channel>
