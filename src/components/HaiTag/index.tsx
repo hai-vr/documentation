@@ -31,6 +31,7 @@ interface Props {
     requiresWarudo: boolean;
     notVRChat: boolean;
     isUniversal: boolean;
+    requiresBasis: boolean;
     short: boolean;
     supporter: boolean;
 }
@@ -38,6 +39,7 @@ interface Props {
 export function HaiTag({
                            requiresVRChat,
                            isUniversal,
+                           requiresBasis,
                            notVRChat,
                            requiresResonite,
                            requiresSteamVR,
@@ -59,6 +61,7 @@ export function HaiTag({
         <span>
                 {requiresVRChat ? <div className={clsx(styles.hai_tag, styles.hai_tag_requires_vrchat)}>💬 {div2}VRChat</div> : ''}
                 {requiresResonite ? <div className={clsx(styles.hai_tag, styles.hai_tag_requires_resonite)}>⚡ {div2}Resonite</div> : ''}
+                {requiresBasis ? <div className={clsx(styles.hai_tag, styles.hai_tag_requires_basis)}>🔺 {div2}Basis</div> : ''}
                 {requiresVRM ? <div className={clsx(styles.hai_tag, styles.hai_tag_requires_vrm)}>📹 {div2}VRM</div> : ''}
                 {requiresSteamVR ? <div className={clsx(styles.hai_tag, styles.hai_tag_requires_steamvr)}>{div2}SteamVR</div> : ''}
                 {requiresChilloutVR ? <div className={clsx(styles.hai_tag, styles.hai_tag_requires_chilloutvr)}>🌆 {div2}ChilloutVR</div> : ''}

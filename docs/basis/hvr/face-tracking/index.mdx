@@ -1,4 +1,12 @@
+import {HaiTags} from "/src/components/HaiTags";
+import {HaiTag} from "/src/components/HaiTag";
+import {HaiVideo} from "/src/components/HaiVideo";
+
 # Face Tracking in Basis
+
+<HaiTags>
+<HaiTag requiresBasis={true} />
+</HaiTags>
 
 There is a rudimentary implementation of face tracking avatars in Basis, which I have made to help dooly test out avatar networking packet
 communications using a real scenario.
@@ -18,17 +26,25 @@ To set up face tracking, we need to put a fake OSC file that VRCFaceTracking wil
 
 ## Set up your avatar
 
-The face tracking implementation does not use the Animator system.
+:::danger
+The face tracking implementation **does not use the Animator system**; do not use face tracking templates designed for VRC,
+they won't do anything and might even interfere with the operation.
+:::
 
-- Create a new GameObject inside your avatar. Give it the name of your choice, like *FaceTracking*.
+- Create a new GameObject inside your avatar. Give it a name of your choice, like *FaceTracking*.
 - Add the **Blendshape Actuation** component. This will drive the blendshapes of your avatar.
   - Set *Renderers* to the mesh that contains the face tracking blendshapes.
   - Set *Definition File* to either:
     - `FaceTracking-UnifiedExpressions-Simple` if your avatar uses the Unified Expressions blendshape naming convention, or
     - `FaceTracking-ARKit-Simple` if your avatar uses the ARKit blendshape naming convention.
-    - When trying to locate this file in the Project View, make sure you are filtering by Package, not Assets.
+
+:::warning
+If you can't find the file in the project, set the filter to **Packages**.
+<HaiVideo src="./img/Unity_VuR5mvNdoH.mp4" autoWidth="{false}"></HaiVideo>
+:::
+
 - If you use eye tracking, add the **Eye Tracking Bone Actuation** component.
   - By default, the multiplier value of 1 will rotate the eye bone to match the direction your eyes are looking.
-  - You may choose to increase the multiplier if you want a more exaggerated eye look direction.
+  - You may choose to increase the multiplier if you want a more exaggerated eye look direction. A value of `1.25` will cause a 10deg angle to become 12.5deg.
 - Add the **OSC Acquisition** component. This will enable some rudimentary form of OSC communication.
 - Finally, in the root of your avatar, add the **Feature Networking** component.
