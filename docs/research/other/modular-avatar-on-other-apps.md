@@ -14,7 +14,7 @@ Hello, if you're trying to run Modular Avatar on applications other than VRChat,
 
 ### Modular Avatar V1.x is almost already compatible
 
-Modular Avatar V1.xis almost already compatible with apps other than VRChat, but some VRChat-specific functionality will be removed.
+Modular Avatar V1.x is almost already compatible with apps other than VRChat, but some VRChat-specific functionality will be removed.
 
 This is because most of the code specific to VRChat is already disabled in Modular Avatar if the VRChat SDK is not detected in the project.
 
