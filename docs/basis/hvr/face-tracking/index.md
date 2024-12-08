@@ -44,8 +44,8 @@ If you don't play VRC:
 <HaiVideo src="./img/mpVLTgE5UD-trimmed.mp4"></HaiVideo>
 
 :::danger
-The face tracking implementation **does not use the Animator system**; do not use face tracking templates designed for VRC,
-they won't do anything and might even interfere with the operation.
+The face tracking implementation **does not use the Animator system**. Don't use face tracking animator templates designed for VRC,
+they won't do anything and might even interfere with the operation as execution order is not explicitly defined.
 :::
 
 - Create a new GameObject inside your avatar. Give it a name of your choice, like *FaceTracking*.
