@@ -54,8 +54,10 @@ If you can't find the file in the project, set the filter to **Packages**.
 ## Testing
 
 :::note
-Sorry, no guide to test the avatar in the scene yet on this page. There used to be a way to test, but I don't have up-to-date info right now
-on the most recent version of Basis as things have changed in the avatar build process.
+Sorry, there is no guide to test the avatar in the scene without uploading at the moment.
+
+There used to be a way to test, but I don't have up-to-date info right now
+as things have changed on the most recent version of Basis.
 
 You'll have to build your avatar for now to test it.
 :::
