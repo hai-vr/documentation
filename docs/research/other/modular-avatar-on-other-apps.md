@@ -8,7 +8,6 @@ unlisted: true
 
 :::warning
 This page was mainly written in 2024-12-08. The information below may quickly become obsolete.<br/>
-The page is translated using ChatGPT. Errors may occur in translation.
 :::
 
 Hello, if you're trying to run Modular Avatar on applications other than VRChat, here's what I learned when trying myself.
