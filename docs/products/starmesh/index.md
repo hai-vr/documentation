@@ -18,7 +18,17 @@ This documentation is currently being written.
 :::
 
 :::tip
-This does not require VRChat to run. It has been tested to work on Unity 2021 and 2022, and should work on newer versions.
+This does not require VRChat to run.
+
+It has been tested to work on:
+- Unity 2021 for <HaiTag requiresChilloutVR={true} short={true} />,
+- Unity 2022 for <HaiTag requiresVRChat={true} short={true} />, and
+- Unity 6 for <HaiTag requiresBasis={true} short={true} />.
+
+It may also work on applications other than those cited above.
+
+*To install without VRChat support, you must follow special installation instructions described in the [Install](./facetra-shape-creator/install) page.*
+:::
 
 NDMF is required.
 :::

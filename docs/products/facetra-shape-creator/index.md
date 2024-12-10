@@ -18,7 +18,13 @@ FaceTra Shape Creator is an Unity Editor tool that lets you create face tracking
 :::tip
 This does not require VRChat to run.
 
-It has been tested to work on Unity 2020 (for VNyan), Unity 2021 (for Warudo & ChilloutVR), Unity 2022 (for VRChat), and Unity 6 (for Basis).
+It has been tested to work on:
+- Unity 2020 for <HaiTag compatibleWithVNyan={true} short={true} />,
+- Unity 2021 for <HaiTag compatibleWithWarudo={true} short={true} /> & <HaiTag requiresChilloutVR={true} short={true} />,
+- Unity 2022 for <HaiTag requiresVRChat={true} short={true} />, and
+- Unity 6 for <HaiTag requiresBasis={true} short={true} />.
+
+It may also work on applications other than those cited above.
 
 *To install without VRChat support, you must follow special installation instructions described in the [Install](./facetra-shape-creator/install) page.*
 :::
