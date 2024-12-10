@@ -18,9 +18,7 @@ This documentation is currently being written.
 :::
 
 :::tip
-This does not require VRChat to run.
-
-It has been tested to work on:
+This tool has been tested to run on various applications, such as:
 - Unity 2021 for <HaiTag requiresChilloutVR={true} short={true} />,
 - Unity 2022 for <HaiTag requiresVRChat={true} short={true} />, and
 - Unity 6 for <HaiTag requiresBasis={true} short={true} />.
