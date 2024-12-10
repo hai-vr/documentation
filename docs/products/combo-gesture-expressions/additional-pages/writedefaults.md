@@ -5,9 +5,9 @@ While working on ComboGestureExpressions 1.4, I had a lot of struggles with Writ
 :::warning
 ⚠️ The article below was written in March 2021.
 
-Research on this subject has evolved since then, and as of September 2023, I recommend you [read this other article instead](https://notes.sleightly.dev/write-defaults/).
+Research on this subject has evolved since then, and as of September 2023, I recommend you [read this other article instead](https://vrc.school/docs/Unity-Animations/Write-Defaults).
 
-https://notes.sleightly.dev/write-defaults/
+https://vrc.school/docs/Unity-Animations/Write-Defaults
 :::
 
 ### Animating non-muscle transforms
@@ -52,7 +52,7 @@ There is an unknown:
 :::warning
 ⚠️ The article was written in March 2021.
 
-Research on this subject has evolved since then, and as of September 2023, I recommend you [read this other article instead](https://notes.sleightly.dev/write-defaults/).
+Research on this subject has evolved since then, and as of September 2023, I recommend you [read this other article instead](https://vrc.school/docs/Unity-Animations/Write-Defaults).
 
 https://notes.sleightly.dev/write-defaults/
 :::
