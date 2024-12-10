@@ -10,6 +10,8 @@ import {HaiVideo} from "/src/components/HaiVideo";
 
 <HaiVideo src="../img/rhpnXAwgyV.mp4"></HaiVideo>
 
+*Uses MeshLib 1.6.0.*
+
 ## 1.6.0
 
 Starmesh now has code that is shared with FaceTra Shape Creator under the *MeshLib* package; this is the main reason this update has been published.
@@ -29,6 +31,8 @@ Other:
 
 - In *Add component*, Starmesh components are now grouped together.
 - Starmesh components now have icons.
+
+*Uses MeshLib 1.6.0.*
 
 ## 1.5.0
 

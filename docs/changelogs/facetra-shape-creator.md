@@ -110,6 +110,8 @@ If you choose to define NoseSneer using blendshapes, the left and right blendsha
   - Avoid repeating vector operations inside for loops.
   - In Edit mode and during builds, skip blendshape removal when not necessary.
 
+*Uses MeshLib 1.6.0.*
+
 ## 0.8.0-2024-04-08-2020
 
 ### New Construction Line: [Blush Modifier Selection](/docs/products/facetra-shape-creator/construction-lines#optional-blush-modifier-selection)
