@@ -12,6 +12,7 @@ exporting an avatar out into another application.
 
 In order to use these products on other apps or platforms, you may need additional packages in your Unity projects:
 
+- [Instructions for <HaiTag requiresBasis={true} short={true} />  Avatars](./compatibility/basis)
 - [Instructions for <HaiTag requiresChilloutVR={true} short={true} />  Avatars](./compatibility/chilloutvr)
 - [Instructions for <HaiTag requiresResonite={true} short={true} />  Model files](./compatibility/resonite)
 - [Instructions for <HaiTag compatibleWithWarudo={true} short={true} />  Character mods](./compatibility/warudo)
