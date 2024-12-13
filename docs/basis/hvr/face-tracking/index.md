@@ -98,10 +98,9 @@ Then in the scene view, look at your own avatar's face, see how it moves.
 As an implementation detail, *Blendshape Actuation* is streamed.
 
 Snapshots are attempted to be taken every 0.1 second, and the real delay since the last snapshot
-is transmitted with the packet.
+is transmitted with the packet. Face tracking data is sent to other users 10 times per second.
 
 When face tracking data is received, the data is queued in order to be played back,
 paced using the delay information. When the queue gets large, it tries to catch up.
 
 In the current implementation, face tracking is not smoothed locally, but it is interpolated on remote users.
-Face tracking data is sent to other users 10 times per second.
