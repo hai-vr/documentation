@@ -33,6 +33,13 @@ and add an **Object State Actuation** component on it.
   - **ON** when the state of the toggle is **Inactive**,
   - OFF when the state of the toggle is Active.
 
+### Activation source
+
+Choose an *Address* that this component will listen to.
+
+When the value of that address is greater or equal to 1, the state of the toggle will be **ON**,
+otherwise it will be **OFF**.
+
 [//]: # (## Transition effects)
 
 [//]: # ()
