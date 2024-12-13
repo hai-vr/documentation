@@ -31,7 +31,7 @@ If you use the [ALCOM](/docs/products/listing) package manager, you can instead 
   - Add this listing in the *VPM Repositories* section of ALCOM: `https://vpm.nadena.dev/vpm.json`
 - Close your Unity project.
 - Reopen your Unity project.
-  - 
+
 ### If you don't use a package manager
 
 - Install **[Chillaxins](/docs/products/chillaxins)**.
