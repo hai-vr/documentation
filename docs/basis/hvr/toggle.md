@@ -45,9 +45,10 @@ and add an **Object State Actuation** component on it.
 
 ## Networking details
 
-As an implementation detail, *Object State Actuation* is event-driven.
+As an implementation detail, *Object State Actuation* is updated through events, incurring a networking cost
+only when the state changes.
 
 A network message will be sent every time the state changes from *Active* to *Inactive* and inversely.
 The current state is transmitted when the avatar loads on the wearer, and when a new joiner finishes loading the avatar.
 
-All state changes are guaranteed to be networked.
+Every single state change will result in a packet being sent, even if multiple state changes occur in the same frame.
