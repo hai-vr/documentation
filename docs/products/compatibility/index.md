@@ -4,6 +4,7 @@ sidebar_position: 3
 # 🌊 Non-VRChat uses
 import {HaiTags} from "/src/components/HaiTags";
 import {HaiTag} from "/src/components/HaiTag";
+import Alcom from "/docs/_alcom.mdx";
 
 Many of my Unity tools do not require VRChat. These products are labelled <HaiTag isUniversal={true} /> on their product page.
 
@@ -20,10 +21,4 @@ In order to use these products on other apps or platforms, you may need addition
 - Instructions for <HaiTag compatibleWithVSeeFace={true} short={true} />  Avatars [(pending)](./compatibility/vseeface)
 - Instructions for <HaiTag compatibleWithBeatSaber={true} short={true} />  Avatars [(pending)](./compatibility/beatsaber)
 
-:::info
-Normally, using the *VRChat Creator Companion* (VCC) requires you to enter into the *VRChat Terms of Use* due to the *VRChat Materials License Agreement*
-being presented to you during the installation process of VCC.
-
-If you are trying to use products in non-VRChat applications, **consider using [ALCOM](/docs/products/listing#alcom)**,
-an open-source alternative to the *VRChat Creator Companion* which does not require you to accept the *VRChat Terms of Use*.
-:::
+<Alcom />
