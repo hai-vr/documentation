@@ -1,6 +1,7 @@
 import React from 'react';
 import clsx from 'clsx';
 
+import PatreonPlusOnly from '@site/src/pages/internal/patreonplusonly.mdx'
 import PatreonPlus from '@site/src/pages/internal/patreonplus.mdx'
 import PatreonMore from '@site/src/pages/internal/patreonmore.json'
 import patreonStyles from '@site/src/pages/patreon.module.css';
@@ -16,18 +17,21 @@ export default function FooterLayout({style, links, logo, copyright}) {
     else {
         footer = <div className={clsx(patreonStyles.centerline)} data-theme="dark">
             <p>Thank you to all of my supporters on Patreon ⭐</p>
-            <PatreonPlus />
-            <Patronelt k="-1">⭐ {PatreonMore.plusactive} and <strong>{PatreonMore.regactive}</strong> more <strong><a href="/docs/other/supporters" className={clsx(patreonStyles.footerlink)}>Patreon Supporters ...</a></strong></Patronelt>
+            {/*<PatreonPlus />*/}
+            <PatreonPlusOnly />
+            {/*<Patronelt k="-1">⭐ {PatreonMore.plusactive} and <strong>{PatreonMore.regactive}</strong> more <strong><a href="/docs/other/supporters" className={clsx(patreonStyles.footerlink)}>Patreon Supporters ...</a></strong></Patronelt>*/}
+            <Patronelt k="-1">⭐ <strong>{PatreonMore.allactive}</strong> total <strong><a href="/docs/other/supporters" className={clsx(patreonStyles.footerlink)}>Patreon Supporters ...</a></strong></Patronelt>
+            <p><em>2024-12-16 Note: the extended list of longtime patrons in the footer is temporally disabled due to an issue on mobile browsers.</em></p>
         </div>
     }
-    
-  return (
-      <footer
-          className={clsx('footer', {
-              'footer--dark': style === 'dark',
-          })}>
-          {footer}
-          <br/>
+
+    return (
+        <footer
+            className={clsx('footer', {
+                'footer--dark': style === 'dark',
+            })}>
+        {footer}
+          {/*<br/>*/}
           <div className="container container-fluid">
               {links}
               {(logo || copyright) && (
