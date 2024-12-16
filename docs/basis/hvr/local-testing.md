@@ -1,3 +1,7 @@
+---
+sidebar_position: 10
+---
+
 import {HaiTags} from "/src/components/HaiTags";
 import {HaiTag} from "/src/components/HaiTag";
 import {HaiVideo} from "/src/components/HaiVideo";
@@ -33,5 +37,8 @@ or some form or auto-discovery process.
     - In *Basis Bundle Generated*:
       - Set Asset Mode to `1`
       - *Please make sure the field only contains `1` and no spaces around it.*
+
+TODO: Make it clearer in the picture below that the Meta URL and Remote URL don't have to be the path to the prefab,
+it just has to be the value of the Addressable field.
 
 ![Unity_I4CVf4b2SF.png](img%2FUnity_I4CVf4b2SF.png)

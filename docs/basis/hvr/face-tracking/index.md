@@ -1,3 +1,7 @@
+---
+sidebar_position: 20
+---
+
 import {HaiTags} from "/src/components/HaiTags";
 import {HaiTag} from "/src/components/HaiTag";
 import {HaiVideo} from "/src/components/HaiVideo";
