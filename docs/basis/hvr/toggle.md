@@ -10,6 +10,12 @@ import {HaiVideo} from "/src/components/HaiVideo";
 
 The HVR package provides a component to create rudimentary ways to toggle GameObjects and Components.
 
+:::danger
+This component is not ready for use, as it is currently only here to test networking capabilities.
+
+There is no user interface to control this (neither 2D nor VR).
+:::
+
 ## When to use toggles in Basis HVR?
 
 Using toggles is recommended for elements of clothing that are inseparable from your body, such as sweaters,
