@@ -6,7 +6,7 @@ import {HaiTags} from "/src/components/HaiTags";
 import {HaiTag} from "/src/components/HaiTag";
 import {HaiVideo} from "/src/components/HaiVideo";
 
-# Face Tracking in Basis
+# Face tracking
 
 <HaiTags>
 <HaiTag requiresBasis={true} />

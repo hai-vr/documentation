@@ -233,6 +233,10 @@ export default {
           { from: '/docs/products/prefabulous/hai-components/replace-textures', to: '/docs/products/prefabulous/universal/replace-textures' },
             
           { from: '/docs/products/vcc', to: '/docs/products/listing' },
+
+          { from: '/docs/basis/hvr/face-tracking', to: '/docs/basis/avatar-customization/face-tracking' },
+          { from: '/docs/basis/hvr/local-testing', to: '/docs/basis/avatar-customization/local-testing' },
+          { from: '/docs/basis/hvr/toggle', to: '/docs/basis/avatar-customization/toggle' },
         ],
         // createRedirects(existingPath) {
         //   if (existingPath.includes('/prefabulous')) {
