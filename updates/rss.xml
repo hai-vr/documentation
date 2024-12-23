@@ -4,10 +4,35 @@
         <title>Haï~ Blog</title>
         <link>https://docs.hai-vr.dev/updates</link>
         <description>Haï~ Blog</description>
-        <lastBuildDate>Sun, 08 Dec 2024 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 23 Dec 2024 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[⚠️ Advance notice for VRChat Creator Companion changes]]></title>
+            <link>https://docs.hai-vr.dev/updates/2024/12/23/p0</link>
+            <guid>https://docs.hai-vr.dev/updates/2024/12/23/p0</guid>
+            <pubDate>Mon, 23 Dec 2024 00:00:00 GMT</pubDate>
+            <description><![CDATA[Starting from the 1st of February 2025, my repository listing will no longer]]></description>
+            <content:encoded><![CDATA[<p>Starting from the 1st of February 2025, <a href="https://docs.hai-vr.dev/docs/products/listing">my repository listing</a> will no longer
+officially support the <em>VRChat Creator Companion</em> package manager. Instead, it will support the ALCOM package manager.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="what-happens-if-i-continue-using-the-vrchat-creator-companion-to-install-this-repository">What happens if I continue using the <em>VRChat Creator Companion</em> to install this repository?<a href="https://docs.hai-vr.dev/updates/2024/12/23/p0#what-happens-if-i-continue-using-the-vrchat-creator-companion-to-install-this-repository" class="hash-link" aria-label="Direct link to what-happens-if-i-continue-using-the-vrchat-creator-companion-to-install-this-repository" title="Direct link to what-happens-if-i-continue-using-the-vrchat-creator-companion-to-install-this-repository">​</a></h2>
+<p>In many cases you <em>might</em> still be able to install the packages from the <em>VRChat Creator Companion</em>.</p>
+<p>However, if there are any issues occuring within the <em>VRChat Creator Companion</em> during the installation process,
+<strong>then it will be considered to be an issue within the <em>VRChat Creator Companion</em> software itself</strong>,
+and workarounds will no longer be provided.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="what-should-i-do-if-i-still-use-the-vrchat-creator-companion-and-an-error-occurs-in-vcc">What should I do if I still use the <em>VRChat Creator Companion</em>, and an error occurs in VCC?<a href="https://docs.hai-vr.dev/updates/2024/12/23/p0#what-should-i-do-if-i-still-use-the-vrchat-creator-companion-and-an-error-occurs-in-vcc" class="hash-link" aria-label="Direct link to what-should-i-do-if-i-still-use-the-vrchat-creator-companion-and-an-error-occurs-in-vcc" title="Direct link to what-should-i-do-if-i-still-use-the-vrchat-creator-companion-and-an-error-occurs-in-vcc">​</a></h2>
+<p>If you still use the VRChat Creator Companion, and an error occurs in VCC during the installation of some packages from this repository,
+you have two options:</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="option-a-install-alcom">Option A: Install ALCOM<a href="https://docs.hai-vr.dev/updates/2024/12/23/p0#option-a-install-alcom" class="hash-link" aria-label="Direct link to Option A: Install ALCOM" title="Direct link to Option A: Install ALCOM">​</a></h3>
+<p>The first option, and the one I recommend, is to install the ALCOM package manager.</p>
+<p><a href="https://vrc-get.anatawa12.com/alcom/" target="_blank" rel="noopener noreferrer">ALCOM</a> (<a href="https://github.com/vrc-get/vrc-get" target="_blank" rel="noopener noreferrer">GitHub</a>) is a community-created package manager. It is functionally equivalent to the <em>VRChat Creator Companion</em>,
+but <strong>contains fixes</strong> to many bugs that had been reported in the <em>VRChat Creator Companion</em> for years.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="option-b-report-the-bugs-youre-encountering-to-vrchat">Option B: Report the bugs you're encountering to VRChat<a href="https://docs.hai-vr.dev/updates/2024/12/23/p0#option-b-report-the-bugs-youre-encountering-to-vrchat" class="hash-link" aria-label="Direct link to Option B: Report the bugs you're encountering to VRChat" title="Direct link to Option B: Report the bugs you're encountering to VRChat">​</a></h3>
+<p>Otherwise, report the bugs you've encountered in VCC directly to VRChat Inc. through either the feedback forum, or GitHub.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="what-if-i-already-use-alcom">What if I already use ALCOM?<a href="https://docs.hai-vr.dev/updates/2024/12/23/p0#what-if-i-already-use-alcom" class="hash-link" aria-label="Direct link to What if I already use ALCOM?" title="Direct link to What if I already use ALCOM?">​</a></h2>
+<p>There is no action to do if you already use ALCOM. Maybe check out <a href="https://github.com/anatawa12" target="_blank" rel="noopener noreferrer">anatawa12's GitHub page</a>.</p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[🧪 Knowledge sharing "Running Modular Avatar on other apps"]]></title>
             <link>https://docs.hai-vr.dev/updates/2024/12/08/p0-ks</link>
@@ -562,20 +587,6 @@ this package will be updated with no code and obsoleted.</li>
 <li>Allow installation with Animator As Code 1.1.x</li>
 <li>Allow installation with Visual Expressions Editor 2.x</li>
 <li>Allow installation with Animation Viewer 2.x</li>
-</ul>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[⚙️ Prefabulous for VRM V2.0.1]]></title>
-            <link>https://docs.hai-vr.dev/updates/2024/08/15/p4</link>
-            <guid>https://docs.hai-vr.dev/updates/2024/08/15/p4</guid>
-            <pubDate>Thu, 15 Aug 2024 22:01:00 GMT</pubDate>
-            <description><![CDATA[- Compilation should no longer fail in non-VRChat projects that still have the VRCSDKVRCSDK3 scripting define around.]]></description>
-            <content:encoded><![CDATA[<ul>
-<li>Compilation should no longer fail in non-VRChat projects that still have the <code>VRC_SDK_VRCSDK3</code> scripting define around.<!-- -->
-<ul>
-<li>Components now extend VRChat's <code>IEditorOnly</code> class only if the VRChat Avatars SDK is installed.</li>
-</ul>
-</li>
 </ul>]]></content:encoded>
         </item>
     </channel>
