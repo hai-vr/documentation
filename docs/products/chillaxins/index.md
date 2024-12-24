@@ -9,7 +9,7 @@ import {HaiTag} from "/src/components/HaiTag";
 <HaiTag requiresBasis={true} short={true} />
 </HaiTags>
 
-*Chillaxins* is a Unity Editor package that lets you use non-destructive tools on **[ChilloutVR](https://developers.abinteractive.net/cck/)** avatars, **[Basis](https://github.com/dooly123/Basis)** avatars, and **[Warudo](https://warudo.app/)** character mods.
+*Chillaxins* is a Unity Editor package that lets you use non-destructive tools on **[ChilloutVR](https://documentation.abinteractive.net/cck/)** avatars, **[Basis](https://github.com/dooly123/Basis)** avatars, and **[Warudo](https://warudo.app/)** character mods.
 
 Using this, you can use some of my products in ChilloutVR, like **[⭐ Starmesh](/docs/products/starmesh)**, **[⭐ FaceTra Shape Creator](/docs/products/facetra-shape-creator)**,
 and **[Prefabulous Universal](/docs/products/prefabulous)**.
