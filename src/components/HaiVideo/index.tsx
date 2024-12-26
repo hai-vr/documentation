@@ -8,7 +8,7 @@ interface Props {
     sound: boolean;
 }
 
-const prefix = "https://downscale.srv.hai-vr.dev";
+const prefix = "https://large.docs.cdn.hai-vr.dev";
 const docsUrl = prefix + "/assets/docs/";
 
 export function HaiVideo(props: Props): JSX.Element {
