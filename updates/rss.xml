@@ -64,7 +64,7 @@ of a blendshape from another mesh.</p>
 <p>Combine it with other Selectors to limit the areas affected by the transferred deformations.</p>
 <div class="theme-admonition theme-admonition-warning admonition_xJq3 alert alert--warning"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>warning</div><div class="admonitionContent_BuS1"><p><strong>This component may not always produce good results.</strong></p><p>In addition, if you use other tools that attempt to fit a costume on an avatar it was not designed for (i.e. fitting a costume made for Manuka on a Lime base body),
 it will probably not work as this operator expects the mesh data to overlap, regardless of how bones are arranged in the scene.</p></div></div>
-<video controls="" muted="" width="816"><source src="https://downscale.srv.hai-vr.dev/assets/docs/2024-12-06-transfer-blendshape-f.mp4"></video>
+<video controls="" muted="" width="816"><source src="https://large.docs.cdn.hai-vr.dev/assets/docs/2024-12-06-transfer-blendshape-f.mp4"></video>
 <p>🗒️ <a href="https://docs.hai-vr.dev/docs/products/starmesh/operators/transfer-blendshape">Open documentation</a></p>]]></content:encoded>
         </item>
         <item>
@@ -171,7 +171,7 @@ to allow installation with Animator As Code V1.2.0 and all future versions of An
 </li>
 <li>Add new shape: Nose Sneer Left/Right.</li>
 </ul>
-<video controls="" muted="" width="816"><source src="https://downscale.srv.hai-vr.dev/assets/docs/2024-11-25-p0-6JaYH1MJ0A.mp4"></video>
+<video controls="" muted="" width="816"><source src="https://large.docs.cdn.hai-vr.dev/assets/docs/2024-11-25-p0-6JaYH1MJ0A.mp4"></video>
 <div class="theme-admonition theme-admonition-warning admonition_xJq3 alert alert--warning"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>warning</div><div class="admonitionContent_BuS1"><p>FaceTra now shares code with Starmesh under the <em>MeshLib</em> package, which is included in both products.</p><p>If you use Starmesh, please update Starmesh to V1.6.0.</p></div></div>
 <p>🔍 <a href="https://docs.hai-vr.dev/docs/changelogs/facetra-shape-creator#090">View changelog</a></p>]]></content:encoded>
         </item>
@@ -276,7 +276,7 @@ or permit using two different ranges using one proximity Contact.</li>
 <li>They <em>should</em> no longer fly away when both trackers are lost.</li>
 <li>We have <a href="https://docs.hai-vr.dev/docs/products/double-hip-tracker/v1.3-new-detection-method">an additional method to detect trackers flying off</a>.</li>
 </ul>
-<video controls="" muted="" width="816"><source src="https://downscale.srv.hai-vr.dev/assets/docs/dhtv130-f.mp4"></video>
+<video controls="" muted="" width="816"><source src="https://large.docs.cdn.hai-vr.dev/assets/docs/dhtv130-f.mp4"></video>
 <p>Changes:</p>
 <ul>
 <li>Add <strong>"Freeze when both trackers are lost"</strong> checkbox: If both trackers of any given double tracker are lost, then the tracker will freeze in place.<!-- -->
