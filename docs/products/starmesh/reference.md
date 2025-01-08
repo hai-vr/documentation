@@ -28,6 +28,8 @@ These components create a blendshape.
 - **[Translate Rotate Scale](./operators/translate-rotate-scale)** creates a blendshape that pulls the affected vertices from one point and orientation to another. (🌶️)
 - **[Compressive Deform](./operators/compressive-deform)** emulates the effect of a flat surface being compressed against that object. (🌶️🌶️)
 - **[Ripple Wave](./operators/ripple-wave)** emulates the effect of a wave ripple traversing the mesh. (🌶️🌶️)
+- **[Transfer Blendshape](./operators/transfer-blendshape)** **attempts** to create a blendshape on a costume that mimics the movement
+  of a blendshape from another mesh, but has a chance of failing on some models. (🌶️⚠️)
 
 ### Bone operators
 

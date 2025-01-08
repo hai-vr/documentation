@@ -26,7 +26,6 @@ This tool has been tested to run on various applications, such as:
 It may also work on applications other than those cited above.
 
 *To install without VRChat support, you must follow special installation instructions described in the [Install](./facetra-shape-creator/install) page.*
-:::
 
 NDMF is required.
 :::
