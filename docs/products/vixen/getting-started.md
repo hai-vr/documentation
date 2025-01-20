@@ -43,6 +43,15 @@ To create a menu item, create a new GameObject inside your avatar, and attach a 
 
 If you want to put that menu item inside a sub-folder of your Expressions menu, create a new GameObject inside your avatar, and attach a **Vixen Folder** component to it. Move your menu items into that GameObject.
 
+:::note
+For existing Modular Avatar users:
+
+If you're already familiar with Modular Avatar's menu systems, and you already use Modular Avatar [Menu Item of type Submenu](https://modular-avatar.nadena.dev/docs/reference/menu-item#submenus),
+then you can choose to put Vixen Controls directly inside your existing Modular Avatar Menu Item of type Submenu (and Vixen Folders).
+
+If you're not already familiar, then just use Vixen Folders.
+:::
+
 ### Create toggles
 
 Drag objects into the Toggle category:
