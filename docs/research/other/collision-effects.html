@@ -11,7 +11,7 @@
 
 
 <script src="https://plausible.io/js/script.js" defer="defer" data-domain="docs.hai-vr.dev"></script><link rel="stylesheet" href="/assets/css/styles.5e90e6fe.css">
-<script src="/assets/js/runtime~main.22ab5e41.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.e4cec89c.js" defer="defer"></script>
 <script src="/assets/js/main.df132256.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -92,6 +92,13 @@ about the actual health of the objects so that other players may try to resync i
 <p>There is a special case when the default network owner declares that the health went from non-zero to zero,
 causing the object to break instantly if it was not already broken by a damage packet; this is a problem if the default network owner also happens to be the
 rigidbody owner, because the damage packets will often be received at the same time as the confirmations of changes in health. This has not been solved in a sane way.</p>
+<div class="theme-admonition theme-admonition-info admonition_xJq3 alert alert--info"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>info</div><div class="admonitionContent_BuS1"><p>I have not tried other approaches yet, such as using Udon Continuous sync, or abusing the state of another VRCObjectSync,
+or using some alternative to VRCObjectSync or a custom implementation.</p></div></div>
+<p>Also, when the object gets broken, the GameObject that contains the VRCObjectSync must not be disabled, otherwise the rigidbody
+state updates may not reach other clients. For this reason, I disable the renderer, and force the position, rotation, velocity, and
+angular velocity of the rigidbody to be constants.</p>
+<p>This object is also respawned invisibly with an advance delay on the rigidbody owner, before it is enabled back on all clients,
+so that the non-owners will not interpolate the position of the rigidbody and cause unintentional collisions with other objects.</p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="bullet-hits-do-not-transfer-ownership">Bullet hits do not transfer ownership<a href="#bullet-hits-do-not-transfer-ownership" class="hash-link" aria-label="Direct link to Bullet hits do not transfer ownership" title="Direct link to Bullet hits do not transfer ownership">​</a></h2>
 <div><p><span><div class="hai_tag_ZcC4 hai_tag_requires_vrchat_kYpu">💬 <!-- -->VRChat</div></span></p></div>
 <p>If a player shoots at a movable object, that object should be pushed away a little.</p>
