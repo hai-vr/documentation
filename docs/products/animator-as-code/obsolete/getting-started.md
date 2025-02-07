@@ -18,8 +18,8 @@ For the purposes of this page, we will use NDMF and Modular Avatar to create ani
 
 Animator As Code V1 can be installed using VRChat Creator Companion.
 
-- Use this link to **[install our listing to VCC](vcc://vpm/addRepo?url=https://hai-vr.github.io/vpm-listing/index.json)**.
-- Use this link to **[install NDMF and Modular Avatar listing to VCC](vcc://vpm/addRepo?url=https://vpm.nadena.dev/vpm.json)**.
+- Use this link to **[install our listing to ALCOM](vcc://vpm/addRepo?url=https://hai-vr.github.io/vpm-listing/index.json)**.
+- Use this link to **[install NDMF and Modular Avatar listing to ALCOM](vcc://vpm/addRepo?url=https://vpm.nadena.dev/vpm.json)**.
 
 Then, add the following packages to your avatar project:
 

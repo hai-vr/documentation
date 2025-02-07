@@ -22,7 +22,7 @@ Conversion to FaceEmo has the following limitations:
 
 ## How to use
 
-In VCC, install the additional package *Haï ~ Convert ComboGesture to FaceEmo*.
+In ALCOM, install the additional package *Haï ~ Convert ComboGesture to FaceEmo*.
 
 - In the scene that contains the ComboGesture components and your avatar, create a [New Expression Menu in FaceEmo](https://suzuryg.github.io/face-emo/docs/tutorials/simple-menu/)
 or reuse the one you have.

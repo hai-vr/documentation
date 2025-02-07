@@ -1,5 +1,5 @@
 ﻿---
-title: VCC / ALCOM Listing
+title: ALCOM Listing (formerly VCC)
 sidebar_position: 2
 hide_title: true
 ---
@@ -16,6 +16,15 @@ Many of these products can be installed using our package repository listing.
 <br />
 <br />
 <br />
+
+:::danger
+The **VRChat Creator Companion is no longer officially supported** in this repository listing.
+
+I will only provide a guarantee that this repository will work with the **[ALCOM](https://vrc-get.anatawa12.com/alcom/) package manager**,
+which contains fixes to many bugs affecting package creators that had been reported in the *VRChat Creator Companion* for years.
+
+For more information, read the [update post](/updates/2024/12/23/p0).
+:::
 
 -----
 

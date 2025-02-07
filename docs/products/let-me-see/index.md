@@ -31,12 +31,12 @@ This tool can also be installed in Universal Render Pipeline projects. You could
 
 ## Download
 
-The tool is free for download using ALCOM or VCC.
+The tool is free for download using ALCOM.
 
-### VCC
+### ALCOM
 
-- Use this link to **[install our listing to VCC](vcc://vpm/addRepo?url=https://hai-vr.github.io/vpm-listing/index.json)**.
-- Add *Haï ~ LetMeSee* to your project using VCC.
+- Use this link to **[install our listing to ALCOM](vcc://vpm/addRepo?url=https://hai-vr.github.io/vpm-listing/index.json)**.
+- Add *Haï ~ LetMeSee* to your project using ALCOM.
 
 :::tip
 If you use the [ALCOM](/docs/products/listing) package manager, you can add the *Haï ~ LetMeSee* package from **[our listing](/docs/products/listing)**.

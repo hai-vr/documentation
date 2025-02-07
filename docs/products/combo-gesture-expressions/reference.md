@@ -36,12 +36,12 @@ With *ComboGestureExpressions*:
 
 ## Download
 
-The tool is free for download on VCC.
+The tool is free for download using ALCOM.
 
-### VCC
+### ALCOM
 
-- Use this link to **[install our listing to VCC](vcc://vpm/addRepo?url=https://hai-vr.github.io/vpm-listing/index.json)**.
-- Add *Haï ~ ComboGestureExpressions* to your project using VCC.
+- Use this link to **[install our listing to ALCOM](vcc://vpm/addRepo?url=https://hai-vr.github.io/vpm-listing/index.json)**.
+- Add *Haï ~ ComboGestureExpressions* to your project using ALCOM.
 
 ## Installation for V1 users
 

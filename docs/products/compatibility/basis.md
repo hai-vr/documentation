@@ -23,7 +23,7 @@ which is included by default. However, missing DLLs still need to be installed m
 
 To use non-destructive products that have been confirmed to work in Basis, you can do the following.
 
-### If you use ALCOM / VCC package manager
+### If you use ALCOM package manager
 
 If you use the [ALCOM](/docs/products/listing) package manager, you can instead add the following packages:
 - *"Haï ~ Chillaxins"* package from **[our listing](/docs/products/listing)**, and

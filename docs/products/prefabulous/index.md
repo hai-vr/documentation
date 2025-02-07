@@ -39,18 +39,18 @@ Therefore you are encouraged to use these components only within personal avatar
 
 ## Download
 
-The tool is free for download using VCC.
+The tool is free for download using ALCOM.
 
-### VCC
+### ALCOM
 
 You need to add **two** listings:
 
-- Add **[Modular Avatar listing](https://modular-avatar.nadena.dev/)** by clicking on *Download (using VCC)*, and
-- also **[install Haï~'s listing to VCC](vcc://vpm/addRepo?url=https://hai-vr.github.io/vpm-listing/index.json)**.
+- Add **[Modular Avatar listing](https://modular-avatar.nadena.dev/)** to ALCOM by clicking on *Download (using V<!-- -->CC)*, and
+- also **[install Haï~'s listing to ALCOM](vcc://vpm/addRepo?url=https://hai-vr.github.io/vpm-listing/index.json)**.
 
 Then:
-- <HaiTag requiresVRChat={true} short={true} /> Add *Haï ~ Prefabulous for VRChat* to your project using VCC.
-- <HaiTag requiresChilloutVR={true} short={true} /> Add *Haï ~ Prefabulous Universal* to your project using VCC/ALCOM.
+- <HaiTag requiresVRChat={true} short={true} /> Add *Haï ~ Prefabulous for VRChat* to your project using ALCOM.
+- <HaiTag requiresChilloutVR={true} short={true} /> Add *Haï ~ Prefabulous Universal* to your project using ALCOM.
 
 ## How to use
 

@@ -46,7 +46,7 @@ Leave Alpha version, by committing some of the last breaking API changes.
   - Since this no longer requires a VRChat project, this also means it may now be usable in VRChat world projects.
 - Make it more usable in non-destructive components.
   - It is already in use in *Prefabulous* and *Vixen*.
-- Move to packages, for distribution using VCC (and now, ALCOM).
+- Move to packages, for distribution using V<!-- -->CC (and now, ALCOM).
 - It is now possible to build Unity [**BlendTree** assets using a fluent interface](/docs/products/animator-as-code/functions/base#blend-trees-aacflblendtree).
 
 ### VRChat-specific features

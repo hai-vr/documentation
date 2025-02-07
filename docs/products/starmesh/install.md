@@ -30,8 +30,8 @@ If you use this tool, it is highly recommended that you join the [Discord server
 
 This requires the use of the VRChat Creator Companion in order to automatically build the mesh before upload.
 
-- Add **[Modular Avatar listing](https://modular-avatar.nadena.dev/)** by clicking on *Download (using ALCOM or VCC).*
-- In VCC, add the **"Non-Destructive Modular Framework"** package to your project.
+- Add **[Modular Avatar listing](https://modular-avatar.nadena.dev/)** to ALCOM by clicking on *Download (using V<!-- -->CC).*
+- In ALCOM, add the **"Non-Destructive Modular Framework"** package to your project.
 - To use our VRChat prefabs, you will also need to add the **"Modular Avatar"** package to your project.
 - Open the downloaded archive from Patreon/pixivFANBOX and install the .unitypackage in your VRChat project.
 

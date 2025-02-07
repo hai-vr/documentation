@@ -19,16 +19,16 @@ This does not require VRChat to run. It has been tested to work on Unity 2019, a
 
 ## Download
 
-The tool is free for download. It can also be downloaded using VCC.
+The tool is free for download. It can also be downloaded using ALCOM.
 
 ### Direct download
 
 - GitHub ([hai-vr/blendtree-viewer](https://github.com/hai-vr/blendtree-viewer))
 
-### VCC
+### ALCOM
 
-- Use this link to **[install our listing to VCC](vcc://vpm/addRepo?url=https://hai-vr.github.io/vpm-listing/index.json)**.
-- Add *Haï ~ BlendTree Viewer* to your project using VCC.
+- Use this link to **[install our listing to ALCOM](vcc://vpm/addRepo?url=https://hai-vr.github.io/vpm-listing/index.json)**.
+- Add *Haï ~ BlendTree Viewer* to your project using ALCOM.
 
 ## How to use
 

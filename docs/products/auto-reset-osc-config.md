@@ -19,12 +19,12 @@ The use of this tool is supposedly not needed starting from VRChat 2024.3.1 (Aug
 
 ## Download
 
-The tool is free for download using VCC.
+The tool is free for download using ALCOM.
 
-### VCC
+### ALCOM
 
-- Use this link to **[install our listing to VCC](vcc://vpm/addRepo?url=https://hai-vr.github.io/vpm-listing/index.json)**.
-- Add *Haï ~ Auto-reset OSC config* to your project using VCC.
+- Use this link to **[install our listing to ALCOM](vcc://vpm/addRepo?url=https://hai-vr.github.io/vpm-listing/index.json)**.
+- Add *Haï ~ Auto-reset OSC config* to your project using ALCOM.
 
 ## How to use
 

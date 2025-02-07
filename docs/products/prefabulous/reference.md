@@ -8,16 +8,16 @@ import {HaiVideo} from "/src/components/HaiVideo";
 
 ## Download
 
-The tool is free for download using VCC.
+The tool is free for download using ALCOM.
 
-### VCC
+### ALCOM
 
 You need to add **two** listings:
 
-- Add **[Modular Avatar listing](https://modular-avatar.nadena.dev/)** by clicking on *Download (using VCC)*, and
-- also **[install Haï~'s listing to VCC](vcc://vpm/addRepo?url=https://hai-vr.github.io/vpm-listing/index.json)**.
+- Add **[Modular Avatar listing](https://modular-avatar.nadena.dev/)** to ALCOM by clicking on *Download (using V<!-- -->CC)*, and
+- also **[install Haï~'s listing to ALCOM](vcc://vpm/addRepo?url=https://hai-vr.github.io/vpm-listing/index.json)**.
 
-Then, add *Haï ~ Prefabulous* to your project using VCC.
+Then, add *Haï ~ Prefabulous* to your project using ALCOM.
 
 ## Where to put the Prefabulous components?
 

@@ -26,10 +26,10 @@ Vixen requires the use of the VRChat Creator Companion.
 
 You need to add **two** listings:
 
-- Add **[Modular Avatar listing](https://modular-avatar.nadena.dev/)** by clicking on *Download (using VCC)*, and
-- also **[install Haï~'s listing to VCC](vcc://vpm/addRepo?url=https://hai-vr.github.io/vpm-listing/index.json)**.
+- Add **[Modular Avatar listing](https://modular-avatar.nadena.dev/)** to ALCOM by clicking on *Download (using V<!-- -->CC)*, and
+- also **[install Haï~'s listing to ALCOM](vcc://vpm/addRepo?url=https://hai-vr.github.io/vpm-listing/index.json)**.
 
-In VCC, add the **"Haï~ - VCC Dependencies for Vixen"** package to your project.
+In ALCOM, add the **"Haï~ - VCC Dependencies for Vixen"** package to your project.
 
 Finally, open the downloaded Vixen archive and install the .unitypackage in your project.
 
