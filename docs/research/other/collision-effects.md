@@ -35,7 +35,7 @@ so you may need to force the collision type to be *Continuous Dynamic* through a
 If you throw a bowling ball against a fragile window, the bowling ball should go through the window because it conserves most of its energy.
 
 The issue is that collisions with all non-moving objects will cause the thrown object to bounce away from it.
-This also applies to some breakable objects that can be moved.
+This also applies to some heavy breakable objects that can be moved.
 
 The fix that I chose is to save the velocity and angular velocity of thrown objects every physics frame in `FixedUpdate`.
 When an object breaks apart, it needs to inform the other object that collided with it, so that it cancels the bounce and re-applies most of
@@ -103,7 +103,7 @@ This causes objects to break in midair, or worse, break before they are even thr
 The solution I chose to fix this is to create a 2nd specialized damage packet, dedicated to collisions with walls. The network owner of the rigidbody
 will sumbit those specialized damage packets, containing the position of the rigidbody when it collides with anything.
 
-### Intentionally delaying
+### Breaking objects from collisions are intentionally delayed
 
 On other clients, if receiving that specialized damage packet would have resulted in the health going from non-zero value to zero, then the breaking visual effect
 would be **intentionally delayed** until either of the following happens:
@@ -139,7 +139,7 @@ This allows the object to be pushed away a little by both players, without owner
 
 ## Lookup tables
 
-In order to do this project, ended up having a bunch of lookup tables which are baked in Edit mode:
+In order to do this project, I ended up having a bunch of lookup tables which are baked in Edit mode:
 - When a bullet hits a collider, the decals needs to stick to the visual representation of that collider, even if it's a moving object.
   - Moving objects are not necessarily object-synced. For instance, doors are networked, but the rigidbody of the door is not itself a networked object,
     so **even some non-networked objects need to have a way to identify them**.
