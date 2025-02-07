@@ -121,6 +121,18 @@ There is a special case when the default network owner declares that the health 
 causing the object to break instantly if it was not already broken by a damage packet; this is a problem if the default network owner also happens to be the
 rigidbody owner, because the damage packets will often be received at the same time as the confirmations of changes in health. This has not been solved in a sane way.
 
+:::info
+I have not tried other approaches yet, such as using Udon Continuous sync, or abusing the state of another VRCObjectSync,
+or using some alternative to VRCObjectSync or a custom implementation.
+:::
+
+Also, when the object gets broken, the GameObject that contains the VRCObjectSync must not be disabled, otherwise the rigidbody
+state updates may not reach other clients. For this reason, I disable the renderer, and force the position, rotation, velocity, and
+angular velocity of the rigidbody to be constants.
+
+This object is also respawned invisibly with an advance delay on the rigidbody owner, before it is enabled back on all clients,
+so that the non-owners will not interpolate the position of the rigidbody and cause unintentional collisions with other objects.
+
 ## Bullet hits do not transfer ownership
 
 <HaiTags>
