@@ -16,12 +16,12 @@ but the whole idea went out of control and I ended up building an analogue of th
 
 Below is a random assortment of things I have learned while building this system.
 
-## Continuous Speculative outputs 0 newton collisions
+## Continuous Speculative outputs often 0 newton collisions
 
 When a rigidbody is thrown and hits another collider, a `OnCollisionEnter` event will be raised, containing information about the collision.
 In order to apply an appropriate sound effect volume and damage amount, we need to read the collision force.
 
-The issue is that depending on the collision type of the rigidbody, the reported amount may equal to **0 newton**.
+The issue is that depending on the collision type of the rigidbody, the reported amount may equal to **0 newton** too often.
 This especially happens when the rigidbody is set to *Continuous Speculative*.
 
 The fix is to set the collision type to *Continuous Dynamic*, as long as we care about these objects reporting the correct forces to produce sounds or be damaged on impact.
@@ -29,6 +29,8 @@ For instance, this is not necessary on the individual debris emitted out of brea
 
 <HaiTag requiresVRChat={true} short={true} /> A [tweet also suggests that](https://x.com/MMMaellon/status/1732068213780103650) objects with VRCObjectSync *"forces your rigid bodies to continuous speculative"*,
 so you may need to force the collision type to be *Continuous Dynamic* through an Udon script.
+
+![](img/collision-effects.jpg)
 
 ## If a thrown object breaks another open, it should not bounce away
 
