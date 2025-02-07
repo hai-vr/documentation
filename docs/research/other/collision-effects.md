@@ -21,14 +21,14 @@ Below is a random assortment of things I have learned while building this system
 When a rigidbody is thrown and hits another collider, a `OnCollisionEnter` event will be raised, containing information about the collision.
 In order to apply an appropriate sound effect volume and damage amount, we need to read the collision force.
 
-The issue is that depending on the collision type of the rigidbody, the reported amount may equal to **0 newton** too often.
+The issue is that depending on the collision detection type of the rigidbody, the reported amount may equal to **0 newton** too often.
 This especially happens when the rigidbody is set to *Continuous Speculative*.
 
-The fix is to set the collision type to *Continuous Dynamic*, as long as we care about these objects reporting the correct forces to produce sounds or be damaged on impact.
+The fix is to set the collision detection type to *Continuous Dynamic*, as long as we care about these objects reporting the correct forces to produce sounds or be damaged on impact.
 For instance, this is not necessary on the individual debris emitted out of breakable objects.
 
 <HaiTag requiresVRChat={true} short={true} /> A [tweet also suggests that](https://x.com/MMMaellon/status/1732068213780103650) objects with VRCObjectSync *"forces your rigid bodies to continuous speculative"*,
-so you may need to force the collision type to be *Continuous Dynamic* through an Udon script.
+so you may need to force the collision detection type to be *Continuous Dynamic* through an Udon script.
 
 ![](img/collision-effects.jpg)
 
@@ -79,7 +79,7 @@ When an object breaks apart, this information arrives through Manual Sync inform
 
 The way I have designed the damage networking in my world is through the use of many player pools (now known as Player Objects, in this case non-persistent ones).
 
-- Each player gets their own set of Manual Sync for each specialized *"packet"* it needs to send.
+- Each player gets their own set of Manual Sync objects, one for each specialized *"packet"* it needs to send.
 - To damage an object, players would submit a packet containing all the individual pieces of damage instances this player has dealt since last serialization.
 - Everyone receives that packet and applies the damage.
 - The default network owner (also known as master) would track the actual health of these objects, and makes sure everyone else agrees on the actual health of the object.
