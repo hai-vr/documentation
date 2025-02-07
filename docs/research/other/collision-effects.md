@@ -1,0 +1,149 @@
+---
+sidebar_position: 101
+unlisted: true
+---
+import {HaiTags} from "/src/components/HaiTags";
+import {HaiTag} from "/src/components/HaiTag";
+import {HaiVideo} from "/src/components/HaiVideo";
+
+# 2025-02-07 Material collision effects and breakable objects
+
+I was building a new home world after being bored by the one that I had been using for over a year.
+
+Initially, I just wanted to make sure that shooting walls would produce decals and the correct sound effects depending on the material being hit
+because of a [Half-Life 1 documentary starring Gabe Newell on the topic of fun and world interactivity (2-minute watch, between 15:08-17:03)](https://www.youtube.com/watch?v=TbZ3HzvFEto&t=908s),
+but the whole idea went out of control and I ended up building an analogue of throwable and breakable objects.
+
+Below is a random assortment of things I have learned while building this system.
+
+## Continuous Speculative outputs 0 newton collisions
+
+When a rigidbody is thrown and hits another collider, a `OnCollisionEnter` event will be raised, containing information about the collision.
+In order to apply an appropriate sound effect volume and damage amount, we need to read the collision force.
+
+The issue is that depending on the collision type of the rigidbody, the reported amount may equal to **0 newton**.
+This especially happens when the rigidbody is set to *Continuous Speculative*.
+
+The fix is to set the collision type to *Continuous Dynamic*, as long as we care about these objects reporting the correct forces to produce sounds or be damaged on impact.
+For instance, this is not necessary on the individual debris emitted out of breakable objects.
+
+<HaiTag requiresVRChat={true} short={true} /> A [tweet also suggests that](https://x.com/MMMaellon/status/1732068213780103650) objects with VRCObjectSync *"forces your rigid bodies to continuous speculative"*,
+so you may need to force the collision type to be *Continuous Dynamic* through an Udon script.
+
+## If a thrown object breaks another open, it should not bounce away
+
+If you throw a bowling ball against a fragile window, the bowling ball should go through the window because it conserves most of its energy.
+
+The issue is that collisions with all non-moving objects will cause the thrown object to bounce away from it.
+This also applies to some breakable objects that can be moved.
+
+The fix that I chose is to save the velocity and angular velocity of thrown objects every physics frame in `FixedUpdate`.
+When an object breaks apart, it needs to inform the other object that collided with it, so that it cancels the bounce and re-applies most of
+its energy based on the velocity and angular velocity of the last saved physics frame.
+
+## Getting the material hit in a multi-material mesh
+
+If an environment mesh/world mesh is made out of multiple materials, hitting it with bullets or collisions should
+produce different sounds based on what that material represents, for example if it's glass.
+
+This information can be encoded in the Physics Material type of the collider, but there is another approach.
+
+When a mesh has multiple materials, **it is possible** to use Mesh Colliders with raycasts to get the material that is hit.
+(Whether you should use this approach is a different question)
+
+To do this, raycasts will report a triangle index if a Mesh Collider has been hit by the raycast.
+
+To convert the triangle index to a material, you need to get the mesh asset of that Mesh Collider, and for each sub-mesh of that mesh,
+use `triangleCount[subMeshIndex] = mesh.GetSubMesh(subMeshIndex).indexCount / 3;` to get the number of triangles for that sub-mesh (notice how we divide by three).
+
+If a mesh has 3 sub-meshes, and their triangle count are `70, 50, 40` in that order, then a triangle index of 74 will mean you hit the sub-mesh at index 1 (which is the second one),
+so you can get the material slot at index 1. A triangle index of 122 would be index 2, because it is greater or equal to `70 + 50`.
+
+<HaiTag requiresVRChat={true} short={true} /> Submesh data is not accessible with Udon, so you need to bake this data in Edit mode however you like.
+
+<HaiTag requiresVRChat={true} short={true} /> Batching will cause issues with this technique as you *might* not be able to bake the triangle data.
+
+Again, whether you should use this technique over splitting into different meshes, or using different colliders for each material, is a different question.
+
+## Manual Sync arrives way sooner than IK/VRCObjectSync
+
+<HaiTags>
+<HaiTag requiresVRChat={true} short={true} />
+</HaiTags>
+
+### Using Player pools to send and receive packets (Player Objects)
+
+When an object breaks apart, this information arrives through Manual Sync information which is located outside the VRCObjectSync hierarchy.
+
+The way I have designed the damage networking in my world is through the use of many player pools (now known as Player Objects, in this case non-persistent ones).
+
+- Each player gets their own set of Manual Sync for each specialized *"packet"* it needs to send.
+- To damage an object, players would submit a packet containing all the individual pieces of damage instances this player has dealt since last serialization.
+- Everyone receives that packet and applies the damage.
+- The default network owner (also known as master) would track the actual health of these objects, and makes sure everyone else agrees on the actual health of the object.
+
+**Each player individually tracks the health of those objects locally.** This has the advantage of:
+
+- avoiding ownership transfers altogether, letting multiple players damage the same object simultaneously,
+- it also avoids a round-trip between the person dealing the damage, and the default network owner confirming that the damage has been dealt,
+- if the local player performs an action that breaks the object, it breaks instantly **without waiting for any response from the network**.
+
+As a consequence, the objects break as soon as the message is received, and if the local player breaks the object, it also breaks locally with no delay, even if they do not own the object itself,
+making for a very responsive system that emphasizes visual effects over correctness and proper damage attribution.
+
+### Damage packets arrive too soon, before the visual cause of damage happens
+
+This works great with damage coming from bullets.
+
+However, this causes a major problem: Damage caused by collisions with walls are always transmitted by the network owner of the rigidbody itself,
+but the damage packets from this collision often arrive to other players before the object is even close to hitting the walls.
+
+This causes objects to break in midair, or worse, break before they are even thrown.
+
+The solution I chose to fix this is to create a 2nd specialized damage packet, dedicated to collisions with walls. The network owner of the rigidbody
+will sumbit those specialized damage packets, containing the position of the rigidbody when it collides with anything.
+
+### Intentionally delaying
+
+On other clients, if receiving that specialized damage packet would have resulted in the health going from non-zero value to zero, then the breaking visual effect
+would be **intentionally delayed** until either of the following happens:
+- The rigidbody position reaches the position indicated within that specialized packet, or
+- A maximum time limit of 1 second since receiving that packet is reached, or
+- The object ends up damaged by any other reason than a collision, such as a bullet hitting it.
+
+There are edges cases to this approach, for instance if the object breaks from a collision, but not as a result of itself being thrown,
+but as a result of another object being thrown into it. This is still something I may have to fix.
+
+In addition, **this approach is really sensitive to deserialization order**, which is a flaw. In particular, the default network owner will submit updates
+about the actual health of the objects so that other players may try to resync in case of a disagreement on the health of the object.
+
+There is a special case when the default network owner declares that the health went from non-zero to zero,
+causing the object to break instantly if it was not already broken by a damage packet; this is a problem if the default network owner also happens to be the
+rigidbody owner, because the damage packets will often be received at the same time as the confirmations of changes in health. This has not been solved in a sane way.
+
+## Bullet hits do not transfer ownership
+
+<HaiTags>
+<HaiTag requiresVRChat={true} short={true} />
+</HaiTags>
+
+If a player shoots at a movable object, that object should be pushed away a little.
+
+When two or more players shoot at the same object simultaneously, we want to avoid intensive ownership transfers.
+
+For this reason, when a player shoots an object, that player transmits a specialized packet in the same way as described in the previous section using Player Objects.
+This packet describes where the bullet was shot from, what was the direction of that bullet, and where the bullet hit in the local space of that object.
+
+When that packet is received by the owner of the rigidbody, it reapplies the force of that bullet onto the object.
+This allows the object to be pushed away a little by both players, without ownership transfers, although there is a visible delay from the shooter's perspective.
+
+## Lookup tables
+
+In order to do this project, ended up having a bunch of lookup tables which are baked in Edit mode:
+- When a bullet hits a collider, the decals needs to stick to the visual representation of that collider, even if it's a moving object.
+  - Moving objects are not necessarily object-synced. For instance, doors are networked, but the rigidbody of the door is not itself a networked object,
+    so **even some non-networked objects need to have a way to identify them**.
+  - Therefore, I associated a numerical identifier to every object that may need one, creating a parallel Network ID of some sorts.
+- If an object can be damaged, then we need to identify this object for transmission of damage packets, so that damage effects can be applied back on every client.
+- When a collider is hit for any reason, we need to produce a sound effect, so each collider is associated with a collision sound effect identifier
+  based on either its Physics Material or the materials of the renderer; or multiple ones if there are sub-meshes, so the triangle index lookup table is part of that too.
