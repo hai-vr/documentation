@@ -34,7 +34,7 @@ so you may need to force the collision detection type to be *Continuous Dynamic*
 
 ![](img/collision-effects.jpg)
 
-## If a thrown object breaks another open, it should not bounce away
+## Don't bounce away from broken objects
 
 If you throw a bowling ball against a fragile window, the bowling ball should go through the window because it conserves most of its energy.
 
