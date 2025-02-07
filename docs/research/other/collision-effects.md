@@ -64,8 +64,7 @@ If a mesh has 3 sub-meshes, and their triangle count are `70, 50, 40` in that or
 so you can get the material slot at index 1. A triangle index of 122 would be index 2, because it is greater or equal to `70 + 50`.
 
 <HaiTag requiresVRChat={true} short={true} /> Submesh data is not accessible with Udon, so you need to bake this data in Edit mode however you like.
-
-<HaiTag requiresVRChat={true} short={true} /> Batching will cause issues with this technique as you *might* not be able to bake the triangle data.
+In addition, batching will cause issues with this technique as you *might* not be able to bake the triangle data because the mesh will have changed.
 
 Again, it may be more reasonable to split into different meshes, or use different colliders for each material.
 
