@@ -115,7 +115,7 @@ would be **intentionally delayed** until any one of the following happens:
 - A maximum time limit of 1 second since receiving that packet is reached, or
 - The object ends up damaged by any other reason than a collision, such as a bullet hitting it.
 
-There are edges cases to this approach, for instance if the object breaks from a collision, but not as a result of itself being thrown,
+There are edge cases to this approach, for instance if the object breaks from a collision, but not as a result of itself being thrown,
 but as a result of another object being thrown into it. This is still something I may have to fix.
 
 In addition, **this approach is really sensitive to deserialization order**, which is a flaw. In particular, the default network owner will submit updates
@@ -161,7 +161,7 @@ When two or more players shoot at the same object simultaneously, we want to avo
 For this reason, when a player shoots an object, that player transmits a specialized packet in the same way as described in the previous section using Player Objects.
 This packet describes where the bullet was shot from, what was the direction of that bullet, and where the bullet hit in the local space of that object.
 
-When that packet is received by the owner of the rigidbody, it reapplies the force of that bullet onto the object.
+When that packet is received by the owner of the rigidbody, it reapplies the force of that bullet onto the object, along with sound effects and decals.
 This allows the object to be pushed away a little by both players, without ownership transfers, although there is a visible delay from the shooter's perspective.
 
 ## Lookup tables
