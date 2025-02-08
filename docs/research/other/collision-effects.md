@@ -12,7 +12,7 @@ I was building a new home world after being bored by the one that I had been usi
 
 Initially, I just wanted to make sure that shooting walls would produce decals and the correct sound effects depending on the material being hit,
 after being inspired by a **Half-Life 1 documentary** starring Gabe Newell on the topic of fun, reinforcement, and **world interactivity** ([2-minute watch, between 15:08-17:03](https://www.youtube.com/watch?v=TbZ3HzvFEto&t=908s)).
-I was thinking it was odd I never spent time to implement such a basic and game functionality within the Unity engine.
+I was thinking it was odd I never spent time to implement such a basic game functionality within the Unity engine.
 
 However, the whole idea went out of control and I ended up building an analogue of throwable and breakable objects.
 
