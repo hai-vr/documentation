@@ -77,7 +77,7 @@ Again, it may be more reasonable to split into different meshes, or use differen
 
 ### Using Player pools to send and receive packets (Player Objects)
 
-When an object breaks apart, this information arrives through Manual Sync information which is located outside the VRCObjectSync hierarchy.
+When an object is damaged, this information arrives through Manual Sync information which is located outside the VRCObjectSync hierarchy.
 
 The way I have designed the damage networking in my world is through the use of many player pools (now known as Player Objects, in this case non-persistent ones).
 
@@ -86,6 +86,49 @@ The way I have designed the damage networking in my world is through the use of 
   That packet contains information about which one of the many damageable objects has been hit in the scene.
 - Everyone receives that packet and applies the damage to the corresponding object.
 - The default network owner (also known as master) would track the actual health of these objects, and makes sure everyone else agrees on the actual health of the object.
+
+*Example of one of the several packets that can be sent.*
+
+```csharp
+[UdonBehaviourSyncMode(BehaviourSyncMode.Manual)]
+public class DamageableSyncMessage : UdonSharpBehaviour
+{
+    [HaiInjectable] [SerializeField] private DamageManager manager;
+
+    [UdonSynced] public int[] bundle_entityId;
+    [UdonSynced] public int[] bundle_healthReduction;
+
+    private readonly List<DamageableSyncMessageBundle> _queued = new List<DamageableSyncMessageBundle>();
+    
+    // [...]
+    
+    public override void OnPreSerialization()
+    {
+        var queuedMessageCount = _queued.Count;
+        bundle_entityId = new int[queuedMessageCount];
+        bundle_healthReduction = new int[queuedMessageCount];
+        
+        for (var index = 0; index < queuedMessageCount; index++)
+        {
+            var bundle = _queued[index];
+            bundle_entityId[index] = bundle.entityId;
+            bundle_healthReduction[index] = bundle.healthReduction;
+        }
+
+        _queued.Clear();
+    }
+    
+    public override void OnDeserialization()
+    {
+        // [...]
+            manager._InternalReceiveDamageableSyncMessage(entityId, healthReduction);
+        // [...]
+    }
+    
+    // [...]
+}
+internal class DamageableSyncMessageBundle { /* ... */ }
+```
 
 **Each player individually tracks the health of those objects locally.** This has the advantage of:
 
@@ -100,10 +143,11 @@ making for a very responsive system that emphasizes visual effects over correctn
 
 This works great with damage coming from bullets.
 
-However, this causes a major problem: Damage caused by collisions with walls are always transmitted by the network owner of the rigidbody itself,
+However, damage caused by collisions with walls are always transmitted by the network owner of the rigidbody itself,
 but the damage packets from this collision often arrive to other players before the object is even close to hitting the walls.
 
-This causes objects to break in midair, or worse, break before they are even thrown.
+This causes objects to break in midair, or worse, break before they are even thrown. This visual disconnect between the consequence
+and the cause of the object breaking is jarring.
 
 The solution I chose to fix this is to create a 2nd specialized damage packet, dedicated to collisions with walls. The network owner of the rigidbody
 will sumbit those specialized damage packets, containing the position of the rigidbody when it collides with anything.
