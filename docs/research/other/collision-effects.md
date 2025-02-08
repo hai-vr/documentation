@@ -227,7 +227,7 @@ In order to do this project, I ended up having a bunch of lookup tables which ar
 In order to detect a flicking of the hand to emulate a similar interaction style to Half-Life Alyx gloves, we need to get the velocity of the hands.
 However, I do not want locomotion using the analog stick to be interpreted as a flicking of the hands.
 
-Every frame, I create a tracking space origin TRS matrix using the position and rotation of `Networking.LocalPlayer.GetTrackingData(VRCPlayerApi.TrackingDataType.Origin)`,
+Every frame, I create a tracking space origin TRS matrix using the position and rotation of <HaiTag requiresVRChat={true} short={true} /> `Networking.LocalPlayer.GetTrackingData(VRCPlayerApi.TrackingDataType.Origin)`,
 and record the hand positions relative to that space.
 
 Then, on the current frame, I reapply the relative hand position of last frame onto the current frame's tracking space origin matrix.
