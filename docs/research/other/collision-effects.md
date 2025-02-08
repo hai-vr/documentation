@@ -221,3 +221,16 @@ In order to do this project, I ended up having a bunch of lookup tables which ar
 - Those identifiers are updated using a script in Edit mode, which also happens to be the same script that handles dependency injection in Edit mode.
 - When a collider is hit for any reason, we need to produce a sound effect, so each collider is associated with a collision sound effect identifier
   based on either its Physics Material or the materials of the renderer; or multiple ones if there are sub-meshes, so the triangle index lookup table is part of that too.
+
+## Getting the velocity of the hands
+
+In order to detect a flicking of the hand to emulate a similar interaction style to Half-Life Alyx gloves, we need to get the velocity of the hands.
+However, I do not want locomotion using the analog stick to be interpreted as a flicking of the hands.
+
+Every frame, I create a tracking space origin TRS matrix using the position and rotation of `Networking.LocalPlayer.GetTrackingData(VRCPlayerApi.TrackingDataType.Origin)`,
+and record the hand positions relative to that space.
+
+Then, on the current frame, I reapply the relative hand position of last frame onto the current frame's tracking space origin matrix.
+This gives us two world space positions, which can be used to get the hand velocity in world space.
+
+World space allows the use of the dot product to detect the hand flicking in a specific direction (i.e. opposite of head direction, or away from a specific object).
