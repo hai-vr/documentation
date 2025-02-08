@@ -170,7 +170,7 @@ There is a special case when the default network owner declares that the health 
 causing the object to break instantly if it was not already broken by a damage packet; this is a problem if the default network owner also happens to be the
 rigidbody owner, because the damage packets will often be received at the same time as the confirmations of changes in health.
 
-This specific issue has not currently been solved in a sane way; in this case, I chose move some of the deserialization handling code to the Update loop,
+This specific issue has not currently been solved in a sane way; in this case, I chose to move some of the deserialization handling code to the Update loop,
 so that damage packets are handled first, but this quick fix is not sustainable.
 
 :::info
