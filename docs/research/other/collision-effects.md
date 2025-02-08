@@ -150,7 +150,7 @@ This causes objects to break in midair, or worse, break before they are even thr
 and the cause of the object breaking is jarring.
 
 The solution I chose to fix this is to create a 2nd specialized damage packet, dedicated to collisions with walls. The network owner of the rigidbody
-will sumbit those specialized damage packets, containing the position of the rigidbody when it collides with anything.
+will submit those specialized damage packets, containing the position of the rigidbody when it collides with anything.
 
 ### Breaking objects from collisions are intentionally delayed
 
