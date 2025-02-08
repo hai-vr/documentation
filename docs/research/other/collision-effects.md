@@ -16,6 +16,8 @@ I was thinking it was odd I never spent time to implement such a basic game func
 However, the whole idea went out of control and I ended up building an analogue of throwable and breakable objects.
 
 Below is a random assortment of things I have learned while building this system.
+Some items may be specific to the <HaiTag requiresVRChat={true} short={true} /> platform and may not be relevant to other social VR apps
+and other games.
 
 ## Avoiding Continuous Speculative for important collisions
 
