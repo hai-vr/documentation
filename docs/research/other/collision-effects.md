@@ -187,7 +187,7 @@ or using some alternative to VRCObjectSync or a custom implementation.
 </HaiTags>
 
 When the object gets broken, the GameObject that contains the VRCObjectSync must not be disabled, otherwise the rigidbody
-state updates may not reach other clients and will freeze in midair. For this reason, I disable the renderer, and on the rigidbody owner,
+state updates may not reach other clients and will freeze in midair. For this reason, I disable the renderer and colliders, and on the rigidbody owner,
 I force the position, rotation, velocity, and angular velocity of the rigidbody to be constants while it's in a broken state.
 
 This object is also respawned invisibly with an advance delay on the rigidbody owner, before it is enabled back on all clients,
@@ -208,6 +208,20 @@ This packet describes where the bullet was shot from, what was the direction of 
 
 When that packet is received by the owner of the rigidbody, it reapplies the force of that bullet onto the object, along with sound effects and decals.
 This allows the object to be pushed away a little by both players, without ownership transfers, although there is a visible delay from the shooter's perspective.
+
+## Collision sounds while picked up
+
+<HaiTags>
+<HaiTag requiresVRChat={true} short={true} />
+</HaiTags>
+
+When an object is picked up, the object should still produce sounds whenever that object collides with walls.
+
+This works correctly on the user that picked up the object, but it appears that collision events do not happen on remote users
+while the object is picked up.
+
+To remediate this, only while an object is picked up, the owner will submit a limited number of networked sound effects to be played back
+on other clients.
 
 ## Lookup tables
 
