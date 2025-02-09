@@ -162,7 +162,9 @@ would be **intentionally delayed** until any one of the following happens:
 - The object ends up damaged by any other reason than a collision, such as a bullet hitting it.
 
 There are edge cases to this approach, for instance if the object breaks from a collision, but not as a result of itself being thrown,
-but as a result of another object being thrown into it. This is still something I may have to fix.
+instead as a result of another object being thrown into it. ~~This is still something I may have to fix.~~ *Edit 2025-02-09: This case has been handled by
+estimating the network delay of the damage dealer (i.e. if a volleyball is thrown onto glass, and the glass breaks, we want the network delay of the volleyball
+physics object owner who dealt the damage), and using that delay to break the object later.*
 
 In addition, **this approach is really sensitive to deserialization order**, which is a flaw. In particular, the default network owner will submit updates
 about the actual health of the objects so that other players may try to resync in case of a disagreement on the health of the object.
