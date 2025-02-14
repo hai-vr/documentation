@@ -21,7 +21,6 @@ export default function FooterLayout({style, links, logo, copyright}) {
             <PatreonPlusOnly />
             {/*<Patronelt k="-1">⭐ {PatreonMore.plusactive} and <strong>{PatreonMore.regactive}</strong> more <strong><a href="/docs/other/supporters" className={clsx(patreonStyles.footerlink)}>Patreon Supporters ...</a></strong></Patronelt>*/}
             <Patronelt k="-1">⭐ <strong>{PatreonMore.allactive}</strong> total <strong><a href="/docs/other/supporters" className={clsx(patreonStyles.footerlink)}>Patreon Supporters ...</a></strong></Patronelt>
-            <p><em>2024-12-16 Note: the extended list of longtime patrons in the footer is temporally disabled due to an issue on mobile browsers.</em></p>
         </div>
     }
 

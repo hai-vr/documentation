@@ -268,7 +268,7 @@ This will be used to morph only the upper lips or only the lower lips when neces
 In order to use this divider, we need to open the mouth first.
 
 - Press “Add +” to add an existing blendshape.
-- Set the blendshape to one that represents the jaw being open. You need to look at your avatar blendshapes to select one that fits. You can use [Blendshape Viewer](https://docs.hai-vr.dev/docs/products/blendshape-viewer) to help you with this.
+- Set the blendshape to one that represents the jaw being open. You need to look at your avatar blendshapes to select one that fits. You can use [Blendshape Viewer](/docs/products/blendshape-viewer) to help you with this.
 
 Then:
 - Press the “Select Vertex…” button and click the vertex used in the corner of your mouth.

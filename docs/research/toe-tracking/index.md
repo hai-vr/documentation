@@ -30,17 +30,17 @@ For each foot:
 
 The solder joints of the tracker break often due to inappropriate stress, so for now my usage is limited to one foot until I can refine the design so that the solder joints would no longer be subject to stress.
 
-The multi-toe tracker is cabable of sensing:
+The multi-toe tracker is capable of sensing:
 - The up-curl and down-curl of the big toe,
   - Flex sensors can only sense bend in one direction, but the sensor on the big toe is bent by default when the foot is flat on the floor, therefore it can detect both directions by sensing the relaxation of the flex.
 - The down-curl of the 2nd toe,
 - The splay of the 5th toe.
   - The splay is detected by installing the flex sensor "upside-down", on the side of the toe.
 
-Using a combination these sensors, and the fact that I don't have the dexterity to control of my 2nd to 5th toes:
+Using a combination these sensors, and the fact that I don't have the dexterity to control my 2nd to 5th toes individually:
 - The sensor as a whole can detect the toes being curled up (like tippy-toeing) or down (gripping),
 - It can move the big toe independently of the 2nd to 5th toes,
-- Using a combo of the big toe sensor and the 2nd toe sensor, it can detect the bend force of the big toe since it is correlated with the force of the 2nd toe.
+- Using a combo of the big toe sensor and the 2nd toe sensor, it can detect the bend force of the big toe since it is correlated with the force of the 2nd toe,
 - It can make all toes splay by looking at how much the 5th toe is splaying.
 
 It is communicating with VRChat using the following:
@@ -71,7 +71,9 @@ Hardware-driven toe tracking has already been done before to various degrees.
 Public displays of toe tracking include:
 
 - down-curls where the sensor is attached to a sock (such as [https://twitter.com/logi9_/status/1550774401926598656](https://twitter.com/logi9_/status/1550774401926598656)),
-- and up-curls where the sensor is attached to a shoe (such as [https://twitter.com/captaincatvr/status/1551303339601690626](https://twitter.com/captaincatvr/status/1551303339601690626)).
+- and up-curls where the sensor is attached to a shoe (such as [https://github.com/katruud/Arduino-AnalogToOSC-WiFi?tab=readme-ov-file#vrchat-setup](https://github.com/katruud/Arduino-AnalogToOSC-WiFi?tab=readme-ov-file#vrchat-setup)).
+
+[//]: # (- Removed due to link rot [https://twitter.com/captaincatvr/status/1551303339601690626]&#40;https://twitter.com/captaincatvr/status/1551303339601690626&#41;)
 
 I am not aware of public displays of multi-toe tracking, but I'm sure considering the vast landscape of DIY hardware creators that it must have been done before.
 
