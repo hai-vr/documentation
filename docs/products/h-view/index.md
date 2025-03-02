@@ -62,7 +62,7 @@ The Costumes tab will search for `.png` files starting with `avtr_` in the `%APP
 
 ### OSC Address tabs
 
-The following tabs are directly sourced from the OSC addressed received from VRChat's OSC Query service:
+The following tabs are directly sourced from the OSC addresses received from VRChat's OSC Query service:
 - The Avatar tab shows all OSC addresses starting with `/avatar/parameters/` and the `/avatar/change` address,
 except addresses starting with `/avatar/parameters/FT/`.
 - The Face Tracking tab shows all OSC addresses starting with `/avatar/parameters/FT/`.

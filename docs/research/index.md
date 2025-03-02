@@ -10,7 +10,7 @@ import {HaiVideo} from "/src/components/HaiVideo";
 
 ## Multi-Toe Tracking research
 
-The ["Multi-Toe Tracking" research page](./research/toe-tracking) records my attempts to build a toe tracking device that supports multiple toes.
+The ["Multi-Toe Tracking" research page](./research/toe-tracking) records my attempts to build a toe tracking device that supports multiple toes, including toe splay.
 
 <HaiVideo src="./toe-tracking/img/toetracking-tundra-f.mp4"></HaiVideo>
 
