@@ -44,7 +44,7 @@ Use this component when you notice that attaching an object to your body is not 
 
 To use this component:
 - Add a "Skinned Mesh Constraint Builder" component on the GameObject that you want to put a constraint on.
-- In the *Renderer* field, select the Skinned Mesh Renderer that contains the polygon you want to attach this object to.
+- In the *Source Mesh* field, select the Skinned Mesh Renderer that contains the polygon you want to attach this object to.
 - Ideally, the origin of that object should already be close to the polygon that you want to attach it to.
   - If you cannot change the origin of that object, add an offset in the *Sampler Offset* field to be closer to that face.
 - Click the *Create Parent Constraint* button.
