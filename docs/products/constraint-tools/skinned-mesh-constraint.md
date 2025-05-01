@@ -52,7 +52,7 @@ To use this component:
 **Do not press** the *Activate* button on the constraint!
 
 The *Skinned Mesh Constraint Builder* manually calculates constraint offsets in order to avoid an issue that occurs
-with the *Activate* button.
+with the *Activate* button (*[Learn more](/docs/research/other/constraint-activate.md)*).
 :::
 
 ## Optional: Bind Method
@@ -73,6 +73,10 @@ If you want to generate a plain Unity *Parent constraint*, change the *Vendor* f
 ![Unity_wwX1T9ck1l.png](img%2FUnity_wwX1T9ck1l.png)
 
 *We will generate a VRC Parent Constraint on VRChat projects.*
+
+## Learn more
+
+- About [the "Activate" button on Parent Constraint](/docs/research/other/constraint-activate.md).
 
 ## Versions
 
