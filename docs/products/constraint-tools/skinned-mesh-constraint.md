@@ -69,7 +69,7 @@ The selected triangle or vertex is shown for five seconds when you click *Create
 
 ## Optional: Vendor
 
-By default, we will create a *VRC Parent Constraint* if <HaiTag requiresVRChat={true} short={true} /> Avatars SDK is installed in the project.
+By default, we will create a *VRC Parent Constraint* if <HaiTag requiresVRChat={true} short={true} /> Avatars SDK is installed in the project (3.7.3 or above).
 
 If you want to generate a plain Unity *Parent constraint*, change the *Vendor* field to *Unity* before creating the constraint.
 
