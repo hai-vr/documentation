@@ -7,6 +7,8 @@ You can find development articles in [my sharing space](https://mysharingspace.h
 
 ### Retrospectives
 
+- 2025-05-02 ["The "Activate" button on Parent Constraint"](./other/constraint-activate)
+- 2025-02-07 ["Material collision effects and breakable objects"](./other/collision-effects)
 - 2024-12-08
   - ["Running Modular Avatar on other apps"](./other/modular-avatar-on-other-apps)
   - ["他のアプリケーションでModular Avatarを動かす方法"](./other/modular-avatar-on-other-apps-ja)
