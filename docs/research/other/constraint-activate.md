@@ -50,7 +50,9 @@ In this new approach, I tried to copy the previously created offset transform po
 As it turns out, **writing these offsets by hand has fixed the issue**. It does not require additional transforms to be referenced,
 and thus this is the method that I'm using in *Skinned Mesh Constraint*.
 
-The offsets are calculated using `(Quaternion.inverse(sourceTransform.rotation) * constraint.rotation).eulerAngles` and `sourceTransform.InverseTransformPoint(constraint.position)`.
+The offsets are calculated using `(Quaternion.inverse(sourceTransform.rotation) * constraint.rotation).eulerAngles`,
+for the rotation and ~~`sourceTransform.InverseTransformPoint(constraint.position)`~~ [this answer](https://discussions.unity.com/t/how-to-activate-parent-constraint-via-api-the-same-way-as-activate-button-does/218717/4)
+for a translation offset.
 
 ### So, what does the Activate button do on constraints?
 
