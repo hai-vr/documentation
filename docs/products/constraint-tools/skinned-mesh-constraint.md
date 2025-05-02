@@ -32,7 +32,8 @@ The tool is free for download using ALCOM.
 
 This component generates a parent constraint on the same object as you put the *Skinned Mesh Constraint Builder* component on.
 
-The parent constraint will be configured to be weight painted in the same way as the mesh itself.
+The parent constraint will be configured to be weight painted in a similar way to the mesh itself, by reusing the bone weights of
+the closest polygon.
 
 Use this component when you notice that attaching an object to your body is not as straightforward as parenting to a bone.
 
