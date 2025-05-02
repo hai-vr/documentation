@@ -56,7 +56,7 @@ with the *Activate* button (*[Learn more](/docs/research/other/constraint-activa
 
 ## Optional: Bind Method
 
-By default, the weights of the constraints will sample from the three vertices of the closest triangle of the mesh,
+By default, the weights of the constraints will sample the bones associated with the three vertices of the closest triangle of the mesh,
 weighted using barycentric coordinates.
 
 If you want to use the closest vertex instead of the closest face, change *Bind Method* to *Closest Vertex*.
