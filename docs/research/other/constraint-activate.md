@@ -46,6 +46,7 @@ In Approach #1, these offsets have *some value*.
 In Approach #2, all of these offsets are equal to zero.
 
 In this new approach, I tried to copy the previously created offset transform position and rotations located inside the bones, into these offsets.
+The constraints are targeting the bones directly instead of those offset transforms.
 
 As it turns out, **writing these offsets by hand has fixed the issue**. It does not require additional transforms to be referenced,
 and thus this is the method that I'm using in *Skinned Mesh Constraint*.
