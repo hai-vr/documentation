@@ -55,9 +55,17 @@ The *Skinned Mesh Constraint Builder* manually calculates constraint offsets in 
 with the *Activate* button (*[Learn more](/docs/research/other/constraint-activate.md)*).
 :::
 
+<HaiVideo src="../img/s21QFOIwqK.mp4" autoWidth={true}></HaiVideo>
+> *🟧 Before &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🟦 After*
+> 
+> Parenting a GameObject to the Hip bone on this avatar causes an incorrect position after the legs rotate (🟧),
+> because this region of the mesh is weighted to the legs in addition to the hip.
+> 
+> This Parent constraint uses the same bone weights as the closest face, so that it moves like a vertex (🟦).
+
 ## Optional: Bind Method
 
-By default, the weights of the constraints will sample the bones associated with the three vertices of the closest triangle of the mesh,
+By default, the weights of the constraint will sample the bones associated with the three vertices of the closest triangle of the mesh,
 weighted using barycentric coordinates.
 
 If you want to use the closest vertex instead of the closest face, change *Bind Method* to *Closest Vertex*.
