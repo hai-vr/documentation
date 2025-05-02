@@ -30,8 +30,7 @@ The tool is free for download using ALCOM.
 
 ## How to use
 
-This component generates a Parent constraint on the same object as you put the *Skinned Mesh Constraint Builder* component on,
-and does not move that object.
+This component generates a Parent constraint on the same object as you put the *Skinned Mesh Constraint Builder* component on.
 
 The Parent constraint will be configured to be weight painted in the same way as the mesh itself.
 
