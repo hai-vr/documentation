@@ -4,10 +4,22 @@
         <title>Haï~ Blog</title>
         <link>https://docs.hai-vr.dev/updates</link>
         <description>Haï~ Blog</description>
-        <lastBuildDate>Mon, 23 Dec 2024 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 01 May 2025 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[☀️ Skinned Mesh Constraint Builder (Constraint Tools V1)]]></title>
+            <link>https://docs.hai-vr.dev/updates/2025/05/01/p0</link>
+            <guid>https://docs.hai-vr.dev/updates/2025/05/01/p0</guid>
+            <pubDate>Thu, 01 May 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[A new component, Skinned Mesh Constraint Builder, has been introduced to a new package.]]></description>
+            <content:encoded><![CDATA[<p>A new component, <a href="https://docs.hai-vr.dev/docs/products/constraint-tools/skinned-mesh-constraint">Skinned Mesh Constraint Builder</a>, has been introduced to a new package.</p>
+<p>This component creates a parent constraint that moves with the closest polygon of a Skinned Mesh Renderer.</p>
+<p>Use this component when you notice that attaching an object to your body is not as straightforward as parenting to a bone.</p>
+<video controls="" muted="" width="816"><source src="https://large.docs.cdn.hai-vr.dev/assets/docs/oSEDSUFVRj.mp4"></video>
+<p>You may install the <a href="https://docs.hai-vr.dev/docs/products/constraint-tools/skinned-mesh-constraint#download">new package <em>Haï ~ Skinned Mesh Constraint</em></a> using ALCOM.</p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[⚠️ Advance notice for VRChat Creator Companion changes]]></title>
             <link>https://docs.hai-vr.dev/updates/2024/12/23/p0</link>
@@ -575,19 +587,6 @@ through Modular Avatar Parameters.</li>
 <li>Allow installation with VRChat 3.7.x</li>
 <li>If there are no bugs reported with VRChat OSC config capabilities for a few months following the August 2024 update,
 this package will be updated with no code and obsoleted.</li>
-</ul>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[⚙️ ComboGestureExpressions V3.2.1]]></title>
-            <link>https://docs.hai-vr.dev/updates/2024/08/17/p0</link>
-            <guid>https://docs.hai-vr.dev/updates/2024/08/17/p0</guid>
-            <pubDate>Sat, 17 Aug 2024 05:00:00 GMT</pubDate>
-            <description><![CDATA[- Allow installation with VRChat Avatars SDK 3.7.x]]></description>
-            <content:encoded><![CDATA[<ul>
-<li>Allow installation with VRChat Avatars SDK 3.7.x</li>
-<li>Allow installation with Animator As Code 1.1.x</li>
-<li>Allow installation with Visual Expressions Editor 2.x</li>
-<li>Allow installation with Animation Viewer 2.x</li>
 </ul>]]></content:encoded>
         </item>
     </channel>
