@@ -69,3 +69,5 @@ The red lines should not show up at all, because the rest position *is* the offs
 
 I don't know anything more about this, but this means that pressing the *Activate* button on a constraint results in a different behaviour than
 calculating the offsets by hand.
+
+<HaiVideo src="./img/constraint-activate-LNggVB3aUE.mp4"></HaiVideo>
