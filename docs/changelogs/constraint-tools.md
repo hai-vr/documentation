@@ -4,7 +4,7 @@ title: Constraint Tools
 
 import {HaiVideo} from "/src/components/HaiVideo";
 
-## 1.0.0
+## 1.0.1
 
 ### ☀️ New component: [Skinned Mesh Constraint Builder](/docs/products/constraint-tools/skinned-mesh-constraint)
 

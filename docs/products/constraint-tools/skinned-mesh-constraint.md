@@ -83,6 +83,6 @@ If you want to generate a plain Unity *Parent constraint*, change the *Vendor* f
 
 ## Versions
 
-- **1.0.0**: Added.
+- **1.0.1**: Added.
 
 Classification: *This component is application-agnostic.*
