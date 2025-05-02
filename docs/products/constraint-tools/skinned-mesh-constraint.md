@@ -9,11 +9,11 @@ import HaiSupport from "/docs/_support.mdx";
 <HaiTag isUniversal={true} />
 </HaiTags>
 
-Creates a parent constraint that moves with the closest polygon of a Skinned Mesh Renderer.
+Creates a parent constraint that is weighted to move similarly to the closest polygon of a Skinned Mesh Renderer.
 
 Use this component when you notice that attaching an object to your body is not as straightforward as parenting to a bone.
 
-This does not follow the movement of blendshapes.
+This does **not** follow the movement of blendshapes, and does **not** follow the movement of cloth meshes.
 
 <HaiVideo src="../img/oSEDSUFVRj.mp4"></HaiVideo>
 
@@ -30,9 +30,9 @@ The tool is free for download using ALCOM.
 
 ## How to use
 
-This component generates a Parent constraint on the same object as you put the *Skinned Mesh Constraint Builder* component on.
+This component generates a parent constraint on the same object as you put the *Skinned Mesh Constraint Builder* component on.
 
-The Parent constraint will be configured to be weight painted in the same way as the mesh itself.
+The parent constraint will be configured to be weight painted in the same way as the mesh itself.
 
 Use this component when you notice that attaching an object to your body is not as straightforward as parenting to a bone.
 
