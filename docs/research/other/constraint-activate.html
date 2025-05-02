@@ -11,7 +11,7 @@
 
 
 <script src="https://plausible.io/js/script.js" defer="defer" data-domain="docs.hai-vr.dev"></script><link rel="stylesheet" href="/assets/css/styles.5e90e6fe.css">
-<script src="/assets/js/runtime~main.1d1b9e77.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.91f023ab.js" defer="defer"></script>
 <script src="/assets/js/main.6a7884f3.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -41,7 +41,9 @@ parent constraint per bone).</p>
 <p>In this new approach, I tried to copy the previously created offset transform position and rotations located inside the bones, into these offsets.</p>
 <p>As it turns out, <strong>writing these offsets by hand has fixed the issue</strong>. It does not require additional transforms to be referenced,
 and thus this is the method that I&#x27;m using in <em>Skinned Mesh Constraint</em>.</p>
-<p>The offsets are calculated using <code>(Quaternion.inverse(sourceTransform.rotation) * constraint.rotation).eulerAngles</code> and <code>sourceTransform.InverseTransformPoint(constraint.position)</code>.</p>
+<p>The offsets are calculated using <code>(Quaternion.inverse(sourceTransform.rotation) * constraint.rotation).eulerAngles</code>,
+for the rotation and <del><code>sourceTransform.InverseTransformPoint(constraint.position)</code></del> <a href="https://discussions.unity.com/t/how-to-activate-parent-constraint-via-api-the-same-way-as-activate-button-does/218717/4" target="_blank" rel="noopener noreferrer">this answer</a>
+for a translation offset.</p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="so-what-does-the-activate-button-do-on-constraints">So, what does the Activate button do on constraints?<a href="#so-what-does-the-activate-button-do-on-constraints" class="hash-link" aria-label="Direct link to So, what does the Activate button do on constraints?" title="Direct link to So, what does the Activate button do on constraints?">​</a></h3>
 <p>I don&#x27;t know how the Activate button works on constraints.</p>
 <p>I&#x27;ve tried to visualize what the button does, but this is strange. When clicking <em>Activate</em>, the offset on the leg bones are pointing to unexpected positions.</p>
