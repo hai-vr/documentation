@@ -11,7 +11,7 @@
 
 
 <script src="https://plausible.io/js/script.js" defer="defer" data-domain="docs.hai-vr.dev"></script><link rel="stylesheet" href="/assets/css/styles.5e90e6fe.css">
-<script src="/assets/js/runtime~main.47f4681c.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.b8b7ce5b.js" defer="defer"></script>
 <script src="/assets/js/main.ae03a5d1.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -67,10 +67,9 @@ weighted using barycentric coordinates.</p>
 <p>If you want to use the closest vertex instead of the closest face, change <em>Bind Method</em> to <em>Closest Vertex</em>.</p>
 <p>The selected triangle or vertex is shown for five seconds when you click <em>Create</em> or <em>Update</em>.</p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="optional-vendor">Optional: Vendor<a href="#optional-vendor" class="hash-link" aria-label="Direct link to Optional: Vendor" title="Direct link to Optional: Vendor">​</a></h2>
-<p>By default, we will create a <em>VRC Parent Constraint</em> if <span><div class="hai_tag_ZcC4 hai_tag_requires_vrchat_kYpu">💬 <!-- -->VRChat</div></span> Avatars SDK is installed in the project (3.7.3 or above).</p>
-<p>If you want to generate a plain Unity <em>Parent constraint</em>, change the <em>Vendor</em> field to <em>Unity</em> before creating the constraint.</p>
-<p><img decoding="async" loading="lazy" alt="Unity_wwX1T9ck1l.png" src="/assets/images/Unity_wwX1T9ck1l-2d3b54c0b5b5eced2a242fdb906232fd.png" width="1141" height="846" class="img_ev3q"></p>
-<p><em>We will generate a VRC Parent Constraint on VRChat projects.</em></p>
+<p>If the <span><div class="hai_tag_ZcC4 hai_tag_requires_vrchat_kYpu">💬 <!-- -->VRChat</div></span> Avatars SDK 3.7.3 or above is installed in the project, we will create a <em>VRC Parent Constraint</em>
+instead of a Unity <em>Parent Constraint</em>.</p>
+<p>You can override this behaviour by changing the <em>Vendor</em> field to <em>Unity</em> before creating the constraint, so that it creates a Unity <em>Parent Constraint</em>.</p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="learn-more">Learn more<a href="#learn-more" class="hash-link" aria-label="Direct link to Learn more" title="Direct link to Learn more">​</a></h2>
 <ul>
 <li>About <a href="/docs/research/other/constraint-activate">the &quot;Activate&quot; button on Parent Constraint</a>.</li>
