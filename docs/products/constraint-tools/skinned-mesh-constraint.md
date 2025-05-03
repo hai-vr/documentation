@@ -1,3 +1,6 @@
+---
+sidebar_position: 1
+---
 import {HaiTags} from "/src/components/HaiTags";
 import {HaiTag} from "/src/components/HaiTag";
 import {HaiVideo} from "/src/components/HaiVideo";
@@ -56,7 +59,7 @@ with the *Activate* button (*[Learn more](/docs/research/other/constraint-activa
 :::
 
 <HaiVideo src="../img/s21QFOIwqK.mp4" autoWidth={true}></HaiVideo>
-> *🟧 Before &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🟦 After*
+> 🟧 *Before* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🟦 *After*
 > 
 > Parenting a GameObject to the Hip bone on this avatar causes an incorrect position after the legs rotate (🟧),
 > because this region of the mesh is weighted to the legs in addition to the hip.
