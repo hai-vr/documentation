@@ -57,7 +57,7 @@ for a translation offset.
 
 ### So, what does the Activate button do on constraints?
 
-I don't know how the Activate button works on constraints.
+~~I don't know how the Activate button works on constraints.~~
 
 I've tried to visualize what the button does, but this is strange. When clicking *Activate*, the offset on the leg bones are pointing to unexpected positions.
 
@@ -65,9 +65,12 @@ I've tried to visualize what the button does, but this is strange. When clicking
 
 On this picture above, the tip of the red lines are pointing to the world space position of the offsets, but the object being constrained is at rest.
 
-The red lines should not show up at all, because the rest position *is* the offset, when configuring the Parent Constraint in a way that follows mesh skinning.
+~~The red lines should not show up at all, because the rest position *is* the offset, when configuring the Parent Constraint in a way that follows mesh skinning.~~
 
-I don't know anything more about this, but this means that pressing the *Activate* button on a constraint results in a different behaviour than
+~~I don't know anything more about this,~~ but this means that pressing the *Activate* button on a constraint results in a different behaviour than
 calculating the offsets by hand.
 
 <HaiVideo src="./img/constraint-activate-LNggVB3aUE.mp4"></HaiVideo>
+
+**Update 2025-05-03:** I have learned new information about how the Activate button works, so this article will later be updated
+accordingly along with a product update.
