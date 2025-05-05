@@ -17,7 +17,7 @@
 the inspector of the Parent Constraint and VRC Parent Constraint components.</p>
 <p>Pressing this menu option will behave similarly to the <em>Activate</em> button on the Parent constraint, but <strong>calculates different offsets</strong>:
 These offsets will make the Parent constraint behave more like weight painting/mesh skinning.</p>
-<p>This is the same algorithm that is used by the [Skinned Mesh Constraint Builder]((/docs/products/constraint-tools/skinned-mesh-constraint) component.
+<p>This is the same algorithm that is used by the <a href="https://docs.hai-vr.dev/docs/products/constraint-tools/skinned-mesh-constraint">Skinned Mesh Constraint Builder</a> component.
 If you are already using this component, you do not need to use this.</p>
 <p><img decoding="async" loading="lazy" alt="mspaint_US2AvDUNAt.png" src="https://docs.hai-vr.dev/assets/images/mspaint_US2AvDUNAt-98a16aa572a04a7534199b61b70deefb.png" width="376" height="304" class="img_ev3q"></p>
 <p>🗒️ <a href="https://docs.hai-vr.dev/docs/products/constraint-tools/activate-with-skinned-offsets">Open documentation</a></p>]]></content>
