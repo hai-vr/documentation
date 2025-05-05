@@ -2,11 +2,26 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://docs.hai-vr.dev/updates</id>
     <title>Haï~ Blog</title>
-    <updated>2025-05-01T00:00:00.000Z</updated>
+    <updated>2025-05-05T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://docs.hai-vr.dev/updates"/>
     <subtitle>Haï~ Blog</subtitle>
     <icon>https://docs.hai-vr.dev/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[✨ Activate with Skinned Offsets (Constraint Tools V1)]]></title>
+        <id>https://docs.hai-vr.dev/updates/2025/05/05/p0</id>
+        <link href="https://docs.hai-vr.dev/updates/2025/05/05/p0"/>
+        <updated>2025-05-05T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[A new menu option named Activate with Skinned Offsets is added in]]></summary>
+        <content type="html"><![CDATA[<p>A new menu option named <a href="https://docs.hai-vr.dev/docs/products/constraint-tools/activate-with-skinned-offsets">Activate with Skinned Offsets</a> is added in
+the inspector of the Parent Constraint and VRC Parent Constraint components.</p>
+<p>Pressing this menu option will behave similarly to the <em>Activate</em> button on the Parent constraint, but <strong>calculates different offsets</strong>:
+These offsets will make the Parent constraint behave more like weight painting/mesh skinning.</p>
+<p>This is the same algorithm that is used by the [Skinned Mesh Constraint Builder]((/docs/products/constraint-tools/skinned-mesh-constraint) component.
+If you are already using this component, you do not need to use this.</p>
+<p><img decoding="async" loading="lazy" alt="mspaint_US2AvDUNAt.png" src="https://docs.hai-vr.dev/assets/images/mspaint_US2AvDUNAt-23ec556be4f3f32613b64d37655f7a14.png" width="376" height="304" class="img_ev3q"></p>
+<p>🗒️ <a href="https://docs.hai-vr.dev/docs/products/constraint-tools/activate-with-skinned-offsets">Open documentation</a></p>]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[☀️ Skinned Mesh Constraint Builder (Constraint Tools V1)]]></title>
         <id>https://docs.hai-vr.dev/updates/2025/05/01/p0</id>
@@ -574,18 +589,6 @@ through Modular Avatar Parameters.</li>
         <summary type="html"><![CDATA[- Phase out using internal Animator As Code classes.]]></summary>
         <content type="html"><![CDATA[<ul>
 <li>Phase out using internal Animator As Code classes.</li>
-</ul>]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[⚙️ Auto-reset OSC config V1.1.5]]></title>
-        <id>https://docs.hai-vr.dev/updates/2024/08/17/p1</id>
-        <link href="https://docs.hai-vr.dev/updates/2024/08/17/p1"/>
-        <updated>2024-08-17T05:10:00.000Z</updated>
-        <summary type="html"><![CDATA[- Allow installation with VRChat 3.7.x]]></summary>
-        <content type="html"><![CDATA[<ul>
-<li>Allow installation with VRChat 3.7.x</li>
-<li>If there are no bugs reported with VRChat OSC config capabilities for a few months following the August 2024 update,
-this package will be updated with no code and obsoleted.</li>
 </ul>]]></content>
     </entry>
 </feed>
