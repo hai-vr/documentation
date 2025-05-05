@@ -29,7 +29,7 @@ This tool runs on <HaiTag isUniversal={true} />.
 
 Vendor-specific information:
 - No vendor-specific SDK is required.
-- If <HaiTag requiresVRChat={true} short={true} /> Avatars SDK 3.7.3 is installed in the project, functionality is extended to include the *VRC Parent Constraint* component.
+- If <HaiTag requiresVRChat={true} short={true} /> Avatars SDK 3.7.3 or above is installed in the project, functionality is extended to include the *VRC Parent Constraint* component.
 :::
 
 ## Download
