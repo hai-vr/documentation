@@ -7,7 +7,7 @@ import {HaiTag} from "/src/components/HaiTag";
 import {HaiVideo} from "/src/components/HaiVideo";
 import HaiSupport from "/docs/_support.mdx";
 
-# ⛔ Activate Constraint with Skinned Offsets (Menu option)
+# Activate Constraint with Skinned Offsets (Menu option)
 
 <HaiTags>
 <HaiTag isUniversal={true} />
