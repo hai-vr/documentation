@@ -2,6 +2,21 @@ import {HaiVideo} from "/src/components/HaiVideo";
 
 # Constraint Tools
 
+## 1.1.0
+
+### ☀️ New menu option: [Activate with Skinned Offsets](/docs/products/constraint-tools/activate-with-skinned-offsets)
+
+A new menu option named [Activate with Skinned Offsets](/docs/products/constraint-tools/activate-with-skinned-offsets) is added in
+the inspector of the Parent Constraint and VRC Parent Constraint components.
+
+Pressing this menu option will behave similarly to the *Activate* button on the Parent constraint, but **calculates different offsets**:
+These offsets will make the Parent constraint behave more like weight painting/mesh skinning.
+
+This is the same algorithm that is used by the [Skinned Mesh Constraint Builder](./skinned-mesh-constraint) component.
+If you are already using this component, you do not need to use this.
+
+![mspaint_US2AvDUNAt.png](..%2Fproducts%2Fconstraint-tools%2Fimg%2Fmspaint_US2AvDUNAt.png)
+
 ## 1.0.1
 
 ### ☀️ New component: [Skinned Mesh Constraint Builder](/docs/products/constraint-tools/skinned-mesh-constraint)

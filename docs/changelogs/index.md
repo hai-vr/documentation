@@ -24,7 +24,7 @@ If some products have no changelogs listed on this page, it means they haven't b
 | [LetMeSee](./changelogs/let-me-see)                                                                         | 1.1.3        | 2024-07     |   |
 | **Editors**                                                                                                 |              |             |   |
 | [ComboGestureExpressions](./changelogs/combo-gesture-expressions)                                           | 3.3.0        | 2024-11     |   |
-| [Constraint Tools](./changelogs/constraint-tools)                                                           | 1.0.1        | **2025-05** |   |
+| [Constraint Tools](./changelogs/constraint-tools)                                                           | 1.0.1        | **2025-05** | * |
 | [FaceTra Shape Creator](./changelogs/facetra-shape-creator) ⭐                                               | 0.9.0        | 2024-11     |   |
 | [IconGen](./changelogs/icon-gen) ⭐                                                                          | 1.1.0        | 2024-08     |   |
 | [Prefabulous Universal](./changelogs/prefabulous)                                                           | 2.1.0        | 2024-08     |   |
