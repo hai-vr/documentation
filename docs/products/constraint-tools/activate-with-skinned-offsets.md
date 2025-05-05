@@ -1,6 +1,5 @@
 ---
 title: Activate with Skinned Offsets
-unlisted: true
 sidebar_position: 2
 ---
 import {HaiTags} from "/src/components/HaiTags";
