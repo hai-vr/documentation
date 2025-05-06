@@ -11,7 +11,7 @@ import {HaiVideo} from "/src/components/HaiVideo";
 <HaiTag isUniversal={true} />
 </HaiTags>
 
-*IconGen* is an Unity Editor tool that lets you capture icons from objects in your scene, and then decorate and crop them.
+*IconGen* is a Unity Editor tool that lets you capture icons from objects in your scene, and then decorate and crop them.
 
 :::tip[Compatibility notes]
 - It has been tested to work on Unity 2019, and Unity 2022, and should work on newer versions.

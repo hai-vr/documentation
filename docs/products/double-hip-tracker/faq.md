@@ -18,7 +18,7 @@ Also, this application has only been tested with lighthouse-based trackers. I do
 
 ### Does it run on Unity?
 
-Double Hip Tracker is not an Unity application.
+Double Hip Tracker is not a Unity application.
 
 It is written in C#, and uses the OpenVR API directly, with a standalone math library.
 

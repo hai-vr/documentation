@@ -11,7 +11,7 @@ import {HaiVideo} from "/src/components/HaiVideo";
 <HaiTag requiresVRChat={true} />
 </HaiTags>
 
-*Vixen* is an Unity Editor tool that provides another approach to create interactive elements and toggles on your avatar.
+*Vixen* is a Unity Editor tool that provides another approach to create interactive elements and toggles on your avatar.
 
 :::warning[Compatibility notes]
 This tool requires <HaiTag requiresVRChat={true} short={true} />, and is currently incompatible with other apps and platforms.

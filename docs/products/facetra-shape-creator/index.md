@@ -11,7 +11,7 @@ import {HaiVideo} from "/src/components/HaiVideo";
 <HaiTag isUniversal={true} />
 </HaiTags>
 
-FaceTra Shape Creator is an Unity Editor tool that lets you create face tracking blendshapes on an avatar by morphing meshes. The original mesh asset is not modified, and the process is non-destructive, automating a large portion of this laborious process.
+FaceTra Shape Creator is a Unity Editor tool that lets you create face tracking blendshapes on an avatar by morphing meshes. The original mesh asset is not modified, and the process is non-destructive, automating a large portion of this laborious process.
 
 <HaiVideo src="./img/2023-10-26_17-41-25_ShareX.mp4"></HaiVideo>
 
