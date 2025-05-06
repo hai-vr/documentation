@@ -26,10 +26,6 @@ This does **not** follow the movement of blendshapes, and does **not** follow th
 This tool runs on <HaiTag isUniversal={true} />.
 - It has been tested to work on Unity 2020, Unity 2022, and Unity 6, and should work on newer versions.
 - It is confirmed to work in <HaiTag compatibleWithVNyan={true} short={true} />, <HaiTag requiresVRChat={true} short={true} />, and <HaiTag requiresBasis={true} short={true} />. Other applications may be compatible.
-
-Vendor-specific information:
-- No vendor-specific SDK is required.
-- If <HaiTag requiresVRChat={true} short={true} /> Avatars SDK 3.7.3 or above is installed in the project, functionality is extended to include the *VRC Parent Constraint* component.
 :::
 
 ## Download
