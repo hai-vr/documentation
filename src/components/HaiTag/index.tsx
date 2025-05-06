@@ -59,23 +59,23 @@ export function HaiTag({
     let div2 = short ? <></> : <>Requires </>;
     return (
         <span>
-                {requiresVRChat ? <div className={clsx(styles.hai_tag, styles.hai_tag_requires_vrchat)}>💬 {div2}VRChat</div> : ''}
-                {requiresResonite ? <div className={clsx(styles.hai_tag, styles.hai_tag_requires_resonite)}>⚡ {div2}Resonite</div> : ''}
-                {requiresBasis ? <div className={clsx(styles.hai_tag, styles.hai_tag_requires_basis)}>🔺 {div2}Basis</div> : ''}
-                {requiresVRM ? <div className={clsx(styles.hai_tag, styles.hai_tag_requires_vrm)}>📹 {div2}VRM</div> : ''}
-                {requiresSteamVR ? <div className={clsx(styles.hai_tag, styles.hai_tag_requires_steamvr)}>{div2}SteamVR</div> : ''}
-                {requiresChilloutVR ? <div className={clsx(styles.hai_tag, styles.hai_tag_requires_chilloutvr)}>🌆 {div2}ChilloutVR</div> : ''}
+                {requiresVRChat ? <div className={clsx(styles.hai_tag, styles.hai_tag_requires_vrchat)}>💬 {div2}<span className="notranslate">VRChat</span></div> : ''}
+                {requiresResonite ? <div className={clsx(styles.hai_tag, styles.hai_tag_requires_resonite)}>⚡ {div2}<span className="notranslate">Resonite</span></div> : ''}
+                {requiresBasis ? <div className={clsx(styles.hai_tag, styles.hai_tag_requires_basis)}>🔺 {div2}<span className="notranslate">Basis</span></div> : ''}
+                {requiresVRM ? <div className={clsx(styles.hai_tag, styles.hai_tag_requires_vrm)}>📹 {div2}<span className="notranslate">VRM</span></div> : ''}
+                {requiresSteamVR ? <div className={clsx(styles.hai_tag, styles.hai_tag_requires_steamvr)}>{div2}<span className="notranslate">SteamVR</span></div> : ''}
+                {requiresChilloutVR ? <div className={clsx(styles.hai_tag, styles.hai_tag_requires_chilloutvr)}>🌆 {div2}<span className="notranslate">ChilloutVR</span></div> : ''}
                 {compatibleWithVSFAvatar ? <div
-                    className={clsx(styles.hai_tag, styles.hai_tag_compatible_with_vsfavatar)}>{div}VSFAvatar</div> : ''}
-                {compatibleWithVSeeFace ? <div className={clsx(styles.hai_tag, styles.hai_tag_compatible_with_vsfavatar)}>{div}VSeeFace</div> : ''}
-                {compatibleWithVNyan ? <div className={clsx(styles.hai_tag, styles.hai_tag_compatible_with_vnyan)}>{div}VNyan</div> : ''}
-                {compatibleWithWarudo ? <div className={clsx(styles.hai_tag, styles.hai_tag_compatible_with_warudo)}>{div}Warudo</div> : ''}
-                {compatibleWithBeatSaber ? <div className={clsx(styles.hai_tag, styles.hai_tag_compatible_with_beatsaber)}>{div}Beat Saber</div> : ''}
+                    className={clsx(styles.hai_tag, styles.hai_tag_compatible_with_vsfavatar)}>{div}<span className="notranslate">VSFAvatar</span></div> : ''}
+                {compatibleWithVSeeFace ? <div className={clsx(styles.hai_tag, styles.hai_tag_compatible_with_vsfavatar)}>{div}<span className="notranslate">VSeeFace</span></div> : ''}
+                {compatibleWithVNyan ? <div className={clsx(styles.hai_tag, styles.hai_tag_compatible_with_vnyan)}>{div}<span className="notranslate">VNyan</span></div> : ''}
+                {compatibleWithWarudo ? <div className={clsx(styles.hai_tag, styles.hai_tag_compatible_with_warudo)}>{div}<span className="notranslate">Warudo</span></div> : ''}
+                {compatibleWithBeatSaber ? <div className={clsx(styles.hai_tag, styles.hai_tag_compatible_with_beatsaber)}>{div}<span className="notranslate">Beat Saber</span></div> : ''}
                 {notCompatibleWithGltf ? <div className={clsx(styles.hai_tag, styles.hai_tag_not_compatible_with_gltf)}>🚫 Not compatible with GLB/GLTF format</div> : ''}
-                {requiresWarudo ? <div className={clsx(styles.hai_tag, styles.hai_tag_compatible_with_warudo)}>📹 {div2}Warudo</div> : ''}
+                {requiresWarudo ? <div className={clsx(styles.hai_tag, styles.hai_tag_compatible_with_warudo)}>📹 {div2}<span className="notranslate">Warudo</span></div> : ''}
                 {isUniversal ? <div className={clsx(styles.hai_tag, styles.hai_tag_universal)}>🌊 Any Platform</div> : ''}
-                {notVRChat ? <div className={clsx(styles.hai_tag, styles.hai_tag_universal)}>🌊 Any Platform, except VRChat</div> : ''}
-                {supporter ? <div className={clsx(styles.hai_tag, styles.hai_tag_supporter)}>⭐ All Supporter tiers <a href="https://www.patreon.com/vr_hai">(5€+)</a></div> : ''}
+                {notVRChat ? <div className={clsx(styles.hai_tag, styles.hai_tag_universal)}>🌊 Any Platform, except <span className="notranslate">VRChat</span></div> : ''}
+            {supporter ? <div className={clsx(styles.hai_tag, styles.hai_tag_supporter)}>⭐ All Supporter tiers <a href="https://www.patreon.com/vr_hai">(5€+)</a></div> : ''}
         </span>
     );
 }
