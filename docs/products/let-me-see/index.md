@@ -15,8 +15,10 @@ You can see your content in Edit mode. There is no need to enter Play mode.
 
 The Scene tab is used as the camera viewpoint. You can use this to fly through avatars and worlds.
 
-:::danger
-This tool has been tested using **Unity 2022**. It does not work in Unity 2019.
+:::tip[Compatibility notes]
+- This tool has been tested using **Unity 2022**.
+  - ❌ It does not work in Unity 2019.
+- This tool can also be installed in Universal Render Pipeline projects. You could use this to test URP toon shaders in VR.
 :::
 
 <HaiVideo src="./img/lms1-f.mp4"></HaiVideo>
@@ -24,10 +26,6 @@ This tool has been tested using **Unity 2022**. It does not work in Unity 2019.
 
 <HaiVideo src="./img/lms0-f.mp4"></HaiVideo>
 *Using LMS for avatars.*
-
-:::tip
-This tool can also be installed in Universal Render Pipeline projects. You could use this to test URP toon shaders in VR.
-:::
 
 ## Download
 
