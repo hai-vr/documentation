@@ -11,11 +11,13 @@ import {HaiVideo} from "/src/components/HaiVideo";
 
 *Blendshape Viewer* lets you visually browse blendshapes.
 
-:::tip
-This does not require VRChat to run. It has been tested to work on Unity 2019, and should work on newer versions.
-:::
-
 <HaiVideo src="./blendshape-viewer-img/sx_2022-01-15_00-25-45_Je9CWGeOH8.mp4"></HaiVideo>
+
+:::tip[Compatibility notes]
+This tool runs on <HaiTag isUniversal={true} />.
+- It has been tested to work on Unity 2019, Unity 2022, and Unity 6, and should work on newer versions.
+- It is confirmed to work in <HaiTag requiresVRChat={true} short={true} /> and <HaiTag requiresBasis={true} short={true} /> projects. Other applications may be compatible.
+:::
 
 ## Download
 
