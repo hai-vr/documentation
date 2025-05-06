@@ -15,8 +15,10 @@ Double Hip Tracker lets you use two hip trackers on VRChat.
 
 When one of the trackers temporarily loses tracking, the other one is used instead.
 
-:::danger
-This tool requires VRChat, because it uses VRChat’s OSC trackers. It is not compatible with other VR applications.
+:::danger[Compatibility notes]
+This tool requires <HaiTag requiresVRChat={true} short={true} />, because it uses VRChat’s OSC trackers. It is not compatible with other VR applications.
+
+This tool requires the <HaiTag requiresSteamVR={true} short={true} /> runtime to read your other trackers.
 :::
 
 <HaiVideo src="./img/doublehip-demo-f.mp4"></HaiVideo>

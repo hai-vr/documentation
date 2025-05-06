@@ -10,8 +10,8 @@ import {HaiVideo} from "/src/components/HaiVideo";
 
 *Expressions Menu Hierarchy Editor* lets you edit Avatars 3.0 menus as if they were objects in your scene hierarchy, making it easier to edit the menu by duplicating and moving items around.
 
-:::warning
-This tool requires VRChat, and is incompatible with other apps and platforms.
+:::warning[Compatibility notes]
+This tool requires <HaiTag requiresVRChat={true} short={true} />, and is incompatible with other apps and platforms.
 :::
 
 :::tip

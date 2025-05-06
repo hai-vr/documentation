@@ -11,11 +11,11 @@ import {HaiTag} from "/src/components/HaiTag";
 
 It was created mainly to assist migration from Unity 2018 to Unity 2019 in the VRChat social platform.
 
-![](/unsorted_ghc/illustration.gif)
-
-:::tip
+:::tip[Compatibility notes]
 This does not require VRChat to run. It has been tested to work on Unity 2018, Unity 2019, Unity 2022.
 :::
+
+![](/unsorted_ghc/illustration.gif)
 
 ## Download
 

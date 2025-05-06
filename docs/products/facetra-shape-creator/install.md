@@ -6,7 +6,7 @@ import {HaiTag} from "/src/components/HaiTag";
 
 # Install
 
-:::tip
+:::tip[Compatibility notes]
 This does not require VRChat to run. It has been tested to work on Unity 2019 and Unity 2022, and should work on newer versions.
 
 *To install without VRChat support, you must follow special installation instructions described below.*

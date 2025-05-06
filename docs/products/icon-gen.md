@@ -13,8 +13,9 @@ import {HaiVideo} from "/src/components/HaiVideo";
 
 *IconGen* is an Unity Editor tool that lets you capture icons from objects in your scene, and then decorate and crop them.
 
-:::tip
-This does not require VRChat to run. It has been tested to work on Unity 2019, and should work on newer versions.
+:::tip[Compatibility notes]
+- It has been tested to work on Unity 2019, and Unity 2022, and should work on newer versions.
+- It is confirmed to work in <HaiTag requiresVRChat={true} short={true} /> projects. Other applications may be compatible.
 :::
 
 <HaiVideo src="./img/icon-gen/2023-09-22_07-31-44_ShareX.mp4"></HaiVideo>

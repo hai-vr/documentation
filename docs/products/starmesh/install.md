@@ -6,7 +6,7 @@ import {HaiTag} from "/src/components/HaiTag";
 
 # Install
 
-:::tip
+:::tip[Compatibility notes]
 This does not require VRChat to run. It has been tested to work on Unity 2021 and 2022, and should work on newer versions.
 
 NDMF is required.
@@ -191,7 +191,7 @@ This tool is not compatible with VSeeFace, because VSeeFace requires Unity 2019,
 <HaiTag isUniversal={true} />
 </HaiTags>
 
-:::tip
+:::tip[Compatibility notes]
 This does not require VRChat to run. It has been tested to work on Unity 2021 and 2022, and should work on newer versions.
 
 NDMF is required.

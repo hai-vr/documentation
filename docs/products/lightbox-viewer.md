@@ -13,7 +13,6 @@ import {HaiVideo} from "/src/components/HaiVideo";
 *Lightbox Viewer* lets you simultaneously visualize changes in shader material settings under different lighting conditions.
 
 :::tip[Compatibility notes]
-This tool runs on <HaiTag isUniversal={true} />.
 - It has been tested to work on Unity 2019, Unity 2022, and Unity 6, and should work on newer versions.
 - It is confirmed to work in <HaiTag requiresVRChat={true} short={true} /> and <HaiTag requiresBasis={true} short={true} /> projects. Other applications may be compatible.
 :::

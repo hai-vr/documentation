@@ -18,15 +18,14 @@ Use this component when you notice that attaching an object to your body is not 
 
 This does **not** follow the movement of blendshapes, and does **not** follow the movement of cloth meshes.
 
+:::tip[Compatibility notes]
+- It has been tested to work on Unity 2020, Unity 2022, and Unity 6, and should work on newer versions.
+- It is confirmed to work in <HaiTag compatibleWithVNyan={true} short={true} />, <HaiTag requiresVRChat={true} short={true} />, and <HaiTag requiresBasis={true} short={true} /> projects. Other applications may be compatible.
+:::
+
 <HaiVideo src="../img/oSEDSUFVRj.mp4"></HaiVideo>
 
 ![Unity_4rDudyR3MY.png](img%2FUnity_4rDudyR3MY.png)
-
-:::tip[Compatibility notes]
-This tool runs on <HaiTag isUniversal={true} />.
-- It has been tested to work on Unity 2020, Unity 2022, and Unity 6, and should work on newer versions.
-- It is confirmed to work in <HaiTag compatibleWithVNyan={true} short={true} />, <HaiTag requiresVRChat={true} short={true} />, and <HaiTag requiresBasis={true} short={true} />. Other applications may be compatible.
-:::
 
 ## Download
 

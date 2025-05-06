@@ -10,8 +10,8 @@ import {HaiVideo} from "/src/components/HaiVideo";
 
 *Constraint Track Animation Creator* is a Unity Editor tool which automates the creation of a gimmick that lets you animate an object to slide along a track using constraints.
 
-:::warning
-This tool requires VRChat, and is incompatible with other apps and platforms.
+:::warning[Compatibility notes]
+This tool requires <HaiTag requiresVRChat={true} short={true} />, and is incompatible with other apps and platforms.
 :::
 
 This differs from blend shapes / shape keys, because bones moving along the track will lose their influence from the original bone they belonged from.
