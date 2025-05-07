@@ -12,7 +12,8 @@ import {HaiVideo} from "/src/components/HaiVideo";
 *Animation Viewer* lets you preview animations in the Project view browser, and [the CTRL-K Search window](#ctrl-k-search-window).
 
 :::tip[Compatibility notes]
-This does not require VRChat to run. It has been tested to work on Unity 2019, and should work on newer versions.
+- It has been tested to work on Unity 2019, Unity 2021, and Unity 2022, and should work on newer versions.
+- This does not require VRChat to run.
 :::
 
 <HaiVideo src="./animation-viewer-img/sx_2022-02-02_03-27-39_uYmmptha2T.mp4"></HaiVideo>
