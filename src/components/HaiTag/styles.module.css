@@ -56,3 +56,7 @@
   color: var(--ifm-color-primary-lightest);
   background-color: var(--hai-gold);
 }
+.hai_tag_misc {
+  background-color: var(--hai-misc-label);
+  padding: 0.5em 1em 0.5em 1em;
+}

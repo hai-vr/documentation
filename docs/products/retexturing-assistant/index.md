@@ -8,10 +8,12 @@ import {HaiTag} from "/src/components/HaiTag";
 
 <HaiTags>
 <HaiTag isUniversal={true} />
+<HaiTag compatibleWithPhotoshop={true} short={true} />
+<HaiTag compatibleWithGIMP={true} short={true} />
 </HaiTags>
 
 When you are **editing your textures using a traditional image editing tool** such as Photoshop or GIMP,
-*Retexturing Assistant* will help you:
+using *Retexturing Assistant* in Unity will help you:
 - visually identify UV islands and their meshes,
 - select UV islands from Unity to your image editor through the Windows clipboard,
 - create texture masks that may have been tedious to make by hand.
@@ -25,6 +27,9 @@ in any way.
 :::tip[Compatibility notes]
 - It has been tested to work on Unity 2022, and should work on newer versions.
 - This does not require VRChat to run.
+- When using Photoshop, support for external transparent pictures stored inside the clipboard is confirmed in Photoshop 2024.
+    - It may work on other versions, but this remains unconfirmed in older versions.
+- When using GIMP, support for external transparent pictures stored inside the clipboard is confirmed.
 :::
 
 ## Download
@@ -44,11 +49,41 @@ To use this component:
 - If you have no intention to continue editing, you can remove the *Retexturing Assistant* component, or you can keep it.
     - This component has no effect during builds.
 
-### Scrub between 3D and UV
+### Identifying texture regions
 
+TODO scrubber
 
-### Select UV islands in your image editor
+### Isolating texture regions
 
+TODO UV Island category
 
-### Create masks
+### Painting gradients
 
+TODO
+
+#### Flood fill gradient
+
+Great for models with curves and spirals, the flood fill is a gradient that travels along the geometry of the 3D mesh.
+
+This is the recommended option for most models.
+
+These gradients can be used as a [path map in Poiyomi Shader](https://www.poiyomi.com/special-fx/pathing).
+
+#### Radial gradient
+
+Radial gradient paints the 3D mesh based on the distance to that point.
+
+### Image editing programs
+
+By default, the tool is configured to export only to Photoshop (to optimize for speed). If you need to support another editor,
+change the *Clipboard Format* field to one of the options below.
+
+- **Generic**: Writes DIBV5, DIB, and PNG formats to the clipboard. **This is the slowest**, but works on many programs, including Discord.
+- **Photoshop**: Writes DIBV5 format to the clipboard, which is preferred by Photoshop.
+- **GIMP**: Writes PNG format to the clipboard, which is preferred by GIMP.
+- **DIB**: Writes DIB format, which sometimes used.
+
+:::tip[Compatibility notes]
+- When using Photoshop, support for external transparent pictures stored inside the clipboard is confirmed in Photoshop 2024,
+  and may work on other versions, but remains unconfirmed in older versions.
+:::

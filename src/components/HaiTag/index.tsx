@@ -34,6 +34,8 @@ interface Props {
     requiresBasis: boolean;
     short: boolean;
     supporter: boolean;
+    compatibleWithPhotoshop: boolean;
+    compatibleWithGIMP: boolean;
 }
 
 export function HaiTag({
@@ -49,6 +51,8 @@ export function HaiTag({
                            compatibleWithVSeeFace,
                            compatibleWithWarudo,
                            compatibleWithBeatSaber,
+                           compatibleWithPhotoshop,
+                           compatibleWithGIMP,
                            requiresWarudo,
                            notCompatibleWithGltf,
                            compatibleWithVNyan,
@@ -76,6 +80,8 @@ export function HaiTag({
                 {isUniversal ? <div className={clsx(styles.hai_tag, styles.hai_tag_universal)}>🌊 Any Platform</div> : ''}
                 {notVRChat ? <div className={clsx(styles.hai_tag, styles.hai_tag_universal)}>🌊 Any Platform, except <span className="notranslate">VRChat</span></div> : ''}
             {supporter ? <div className={clsx(styles.hai_tag, styles.hai_tag_supporter)}>⭐ All Supporter tiers <a href="https://www.patreon.com/vr_hai">(5€+)</a></div> : ''}
+            {compatibleWithPhotoshop ? <div className={clsx(styles.hai_tag, styles.hai_tag_misc)}>{div}<span className="notranslate">Photoshop 2024</span></div> : ''}
+            {compatibleWithGIMP ? <div className={clsx(styles.hai_tag, styles.hai_tag_misc)}>{div}<span className="notranslate">GIMP</span></div> : ''}
         </span>
     );
 }
