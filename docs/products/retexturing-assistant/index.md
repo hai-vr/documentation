@@ -45,9 +45,14 @@ To use this component:
 - Add a "Retexturing Assistant" component to that new GameObject.
 - ...
 - ...
-- ...
-- If you have no intention to continue editing, you can remove the *Retexturing Assistant* component, or you can keep it.
-    - This component has no effect during builds.
+- Depending on your image editor:
+  - If you use Photoshop, set *Clipboard Format* to *Photoshop*. 
+  - If you use GIMP, set *Clipboard Format* to *GIMP*.
+  - Otherwise, set *Clipboard Format* to *Generic*, or try each option to see if your editor accepts the clipboard as a transparent image.
+
+Whenever you have no intention to continue editing, you can remove the *Retexturing Assistant* component, or you can keep it.
+
+This component has no effect during builds.
 
 ### Identifying texture regions
 
@@ -67,11 +72,15 @@ Great for models with curves and spirals, the flood fill is a gradient that trav
 
 This is the recommended option for most models.
 
-These gradients can be used as a [path map in Poiyomi Shader](https://www.poiyomi.com/special-fx/pathing).
-
 #### Radial gradient
 
 Radial gradient paints the 3D mesh based on the distance to that point.
+
+#### Poiyomi "Merged Channels" path map
+
+The gradients can be used as a [path map in Poiyomi Shader](https://www.poiyomi.com/special-fx/pathing).
+
+If you enable the *Poiyomi Merged Path Map* checkbox, you can copy linear RGB and linear Alpha channels separately.
 
 ### Image editing programs
 
