@@ -66,13 +66,13 @@ TODO UV Island category
 
 TODO
 
-#### Flood fill gradient
+#### Flood Fill gradient
 
-Great for models with curves and spirals, the flood fill is a gradient that travels along the geometry of the 3D mesh.
+Great for models with curves, spirals, and U-turns, the flood fill is a gradient that travels along the geometry of the 3D mesh.
 
 This is the recommended option for most models.
 
-#### Radial gradient
+#### Point Radius gradient
 
 Radial gradient paints the 3D mesh based on the distance to that point.
 
@@ -90,7 +90,7 @@ change the *Clipboard Format* field to one of the options below.
 - **Generic**: Writes DIBV5, DIB, and PNG formats to the clipboard. **This is the slowest**, but works on many programs, including Discord.
 - **Photoshop**: Writes DIBV5 format to the clipboard, which is preferred by Photoshop.
 - **GIMP**: Writes PNG format to the clipboard, which is preferred by GIMP.
-- **DIB**: Writes DIB format, which sometimes used.
+- **DIB**: Writes DIB format, which is often abused by programs to support transparency despite being a format that isn't supposed to support it (32-bit RGB with 8 bits unused).
 
 :::tip[Compatibility notes]
 - When using Photoshop, support for external transparent pictures stored inside the clipboard is confirmed in Photoshop 2024,
