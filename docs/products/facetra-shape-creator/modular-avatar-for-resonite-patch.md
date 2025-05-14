@@ -16,6 +16,13 @@ but the **FaceTra Shape Creator software must be patched** in order to enable th
 
 The patch is provided for download below to all users who already have a copy of *FaceTra Shape Creator*.
 
+:::danger
+Please be advised that the Resonite **[AvatarExpressionDriver](https://wiki.resonite.com/Component:AvatarExpressionDriver)** component (located in *Inspector | Attach Component | Users > Common Avatar System > Face > AvatarExpressionDriver*)
+is not created automatically by *Modular Avatar for Resonite* at this time of writing.
+
+Your Resonite avatar will not have face tracking until you configure it yourself by adding the component through the [Scene inspector](https://wiki.resonite.com/Scene_Inspector_Dialog).
+:::
+
 ## Install the patch
 
 You will need to install the correct package below on top of your existing *FaceTra Shape Creator* software installation.
