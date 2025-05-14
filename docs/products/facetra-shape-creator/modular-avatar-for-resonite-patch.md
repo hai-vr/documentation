@@ -1,6 +1,5 @@
 ---
 title: FaceTra compatibility patch (Modular Avatar for Resonite)
-unlisted: true
 ---
 import {HaiTags} from "/src/components/HaiTags";
 import {HaiTag} from "/src/components/HaiTag";
