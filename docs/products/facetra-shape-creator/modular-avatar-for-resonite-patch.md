@@ -14,7 +14,7 @@ The blendshapes created by FaceTra Shape Creator can be exported to <HaiTag requ
 [Modular Avatar for Resonite](https://github.com/bdunderscore/modular-avatar-resonite) introduced in May 2025,
 but the **FaceTra Shape Creator software must be patched** in order to enable this compatibility.
 
-The patch is provided for download below to all users who already have a copy of *FaceTra Shape Creator*.
+The patch is provided for download below to all users who already have a copy of *FaceTra Shape Creator*, no log-in required.
 
 :::danger
 Please be advised that the Resonite **[AvatarExpressionDriver](https://wiki.resonite.com/Component:AvatarExpressionDriver)** component (located in *Inspector | Attach Component | Users > Common Avatar System > Face > AvatarExpressionDriver*)
