@@ -25,6 +25,7 @@ You must already be familiar with image editing tools (such as Photoshop). This 
 in any way.
 
 :::tip[Compatibility notes]
+- **Due to the transparent clipboard, this tool requires Windows.**
 - It has been tested to work on Unity 2022, and should work on newer versions.
 - This does not require VRChat to run.
 - When using Photoshop, support for external transparent pictures stored inside the clipboard is confirmed in Photoshop 2024.

@@ -4,6 +4,13 @@ title: Prefabulous
 
 import {HaiVideo} from "/src/components/HaiVideo";
 
+## 2.2.0-alpha.0
+
+Support [Modular Avatar for Resonite](https://github.com/bdunderscore/modular-avatar-resonite):
+- Add support for cross-application build compatibility being introduced in NDMF 1.8.
+- Conditionally compiled when NDMF 1.8.0-alpha.0 is installed:
+  - Prefabulous Universal still needs to be compatible with VNyan (Unity 2020) and Warudo (Unity 2021), meaning we still need to support NDMF 1.4 (last known working version in Unity 2020).
+
 ## 2.1.0
 
 - Modify the behaviour of *Generate Twist Bones* on VRChat projects:
