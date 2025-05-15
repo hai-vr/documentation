@@ -37,6 +37,10 @@ Therefore you are encouraged to use these components only within personal avatar
 
 ![](img/pvsUzAgoIb.png)
 
+:::tip[Compatibility notes]
+Compatible with Modular Avatar for <HaiTag requiresResonite={true} short={true} /> starting from version 2.2.0-alpha.0.
+:::
+
 ## Download
 
 The tool is free for download using ALCOM.
