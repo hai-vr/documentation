@@ -14,7 +14,7 @@
         <updated>2025-05-15T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[This update is targeted specifically at Modular Avatar for Resonite users.]]></summary>
         <content type="html"><![CDATA[<p><strong>This update is targeted specifically at <a href="https://github.com/bdunderscore/modular-avatar-resonite" target="_blank" rel="noopener noreferrer">Modular Avatar for Resonite</a> users.</strong></p>
-<p>This updates enables all Prefabulous Universal components to execute during builds targeting the Resonite app.</p>
+<p>This update enables all Prefabulous Universal components to execute during builds targeting the Resonite app.</p>
 <p>If you use <em>Modular Avatar for Resonite</em>, it is very likely you already have prerelease packages enabled in ALCOM,
 meaning you may update Prefabulous Universal to <strong>V2.2.0-alpha.0</strong> using ALCOM.</p>
 <p>If you use <em>FaceTra Shape Creator</em>, you need to download <a href="https://docs.hai-vr.dev/docs/products/facetra-shape-creator/modular-avatar-for-resonite-patch">a patch linked here</a>, <strong>no log-in required</strong>.</p>
