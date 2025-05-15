@@ -2,11 +2,54 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://docs.hai-vr.dev/updates</id>
     <title>Haï~ Blog</title>
-    <updated>2025-05-05T00:00:00.000Z</updated>
+    <updated>2025-05-15T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://docs.hai-vr.dev/updates"/>
     <subtitle>Haï~ Blog</subtitle>
     <icon>https://docs.hai-vr.dev/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[⚙️ Prefabulous Universal V2.2.0-alpha.0 / PPC V2.1.0-alpha.0 / FaceTra compatibility patch]]></title>
+        <id>https://docs.hai-vr.dev/updates/2025/05/15/p0</id>
+        <link href="https://docs.hai-vr.dev/updates/2025/05/15/p0"/>
+        <updated>2025-05-15T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[This update is targeted specifically at Modular Avatar for Resonite users.]]></summary>
+        <content type="html"><![CDATA[<p><strong>This update is targeted specifically at <a href="https://github.com/bdunderscore/modular-avatar-resonite" target="_blank" rel="noopener noreferrer">Modular Avatar for Resonite</a> users.</strong></p>
+<p>This updates enables all Prefabulous Universal components to execute during builds targeting the Resonite app.</p>
+<p>If you use <em>Modular Avatar for Resonite</em>, it is very likely you already have prerelease packages enabled in ALCOM,
+meaning you may update Prefabulous Universal to <strong>V2.2.0-alpha.0</strong> using ALCOM.</p>
+<p>If you use <em>FaceTra Shape Creator</em>, you need to download <a href="https://docs.hai-vr.dev/docs/products/facetra-shape-creator/modular-avatar-for-resonite-patch">a patch linked here</a>, <strong>no log-in required</strong>.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="prefabulous-universal-220-alpha0">Prefabulous Universal 2.2.0-alpha.0<a href="https://docs.hai-vr.dev/updates/2025/05/15/p0#prefabulous-universal-220-alpha0" class="hash-link" aria-label="Direct link to Prefabulous Universal 2.2.0-alpha.0" title="Direct link to Prefabulous Universal 2.2.0-alpha.0">​</a></h2>
+<p>Support <a href="https://github.com/bdunderscore/modular-avatar-resonite" target="_blank" rel="noopener noreferrer">Modular Avatar for Resonite</a>:</p>
+<ul>
+<li>Add support for cross-application build compatibility being introduced in NDMF 1.8.</li>
+<li>Conditionally compiled when NDMF 1.8.0-alpha.0 is installed:<!-- -->
+<ul>
+<li>Prefabulous Universal still needs to be compatible with VNyan (Unity 2020) and Warudo (Unity 2021), meaning we still need to support NDMF 1.4 (last known working version in Unity 2020).</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="prefabulous-for-platform-conversions-210-alpha0">Prefabulous for Platform Conversions 2.1.0-alpha.0<a href="https://docs.hai-vr.dev/updates/2025/05/15/p0#prefabulous-for-platform-conversions-210-alpha0" class="hash-link" aria-label="Direct link to Prefabulous for Platform Conversions 2.1.0-alpha.0" title="Direct link to Prefabulous for Platform Conversions 2.1.0-alpha.0">​</a></h2>
+<ul>
+<li>Fix ConvertVRCConstraintsToUnityConstraints should run after Modular Avatar creates constraints:<!-- -->
+<ul>
+<li>Run after Modular Avatar, because MA Convert Constraints and MA World Fixed Object create VRCConstraint.</li>
+<li>Also, remove this component during the build to help missing script issues (e.g. better handles CVR).</li>
+<li>The above changes have been contributed by <strong><a href="https://github.com/Narazaka" target="_blank" rel="noopener noreferrer">Narazaka</a></strong> (first contribution).</li>
+</ul>
+</li>
+<li>Integrate with NDMF 1.8 cross-application builds:<!-- -->
+<ul>
+<li>Add support for cross-application build compatibility being introduced in NDMF 1.8.</li>
+<li>MA/NDMF for Resonite does not support Unity constraints at this time of writing, but as far as I am aware there is no harm done enabling this conversion plugin pass for all platforms.</li>
+<li>Conditionally compiled when NDMF 1.8.0-alpha.0 is installed:<!-- -->
+<ul>
+<li>Prefabulous for Platform Conversions still needs to be compatible with VNyan (Unity 2020) and Warudo (Unity 2021), meaning we still need to support NDMF 1.4 (last known working version in Unity 2020).</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[✨ Activate with Skinned Offsets (Constraint Tools V1)]]></title>
         <id>https://docs.hai-vr.dev/updates/2025/05/05/p0</id>
@@ -580,15 +623,5 @@ through Modular Avatar Parameters.</li>
 </li>
 </ul>
 <p>These are likely going to be the last breaking change in V1's lifetime.</p>]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[⚙️ ComboGestureExpressions V3.2.2]]></title>
-        <id>https://docs.hai-vr.dev/updates/2024/08/18/p0</id>
-        <link href="https://docs.hai-vr.dev/updates/2024/08/18/p0"/>
-        <updated>2024-08-18T20:00:00.000Z</updated>
-        <summary type="html"><![CDATA[- Phase out using internal Animator As Code classes.]]></summary>
-        <content type="html"><![CDATA[<ul>
-<li>Phase out using internal Animator As Code classes.</li>
-</ul>]]></content>
     </entry>
 </feed>
