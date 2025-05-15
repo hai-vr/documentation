@@ -40,13 +40,13 @@ If you use version 0.9.0 (November 2024):
 
 ### 0.0.5 to 0.8.0 (2024)
 
-If you use version 0.0.5 to 0.8.0 (2024):
+If you use version 0.0.5, 0.1.0, 0.2.0, 0.3.0 (2023), 0.4.0, 0.5.1, 0.6.0, 0.7.0, 0.8.0 (2024):
 
 - Download [.unitypackage](pathname:///assets/facetra-patch/patch-FaceTra-MA-for-Resonite-0.0.5-to-0.8.0.unitypackage) (*Right-click > Save link as...*)
 
 ### 0.0.1 to 0.0.4 (2023)
 
-If you use version 0.0.1 to 0.0.4 (2023):
+If you use version 0.0.1, 0.0.2, 0.0.3, 0.0.4 (2023):
 
 - Download [.unitypackage](pathname:///assets/facetra-patch/patch-FaceTra-MA-for-Resonite-0.0.1-to-0.0.4.unitypackage) (*Right-click > Save link as...*)
 
