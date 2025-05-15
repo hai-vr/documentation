@@ -49,6 +49,7 @@ To use this component:
 - Depending on your image editor:
   - If you use Photoshop, set *Clipboard Format* to *Photoshop*. 
   - If you use GIMP, set *Clipboard Format* to *GIMP*.
+  - If you use <HaiTag requiresResonite={true} short={true} />, set *Clipboard Format* to *Resonite*.
   - Otherwise, set *Clipboard Format* to *Generic*, or try each option to see if your editor accepts the clipboard as a transparent image.
 
 Whenever you have no intention to continue editing, you can remove the *Retexturing Assistant* component, or you can keep it.
@@ -92,6 +93,7 @@ change the *Clipboard Format* field to one of the options below.
 - **Photoshop**: Writes DIBV5 format to the clipboard, which is preferred by Photoshop.
 - **GIMP**: Writes PNG format to the clipboard, which is preferred by GIMP.
 - **DIB**: Writes DIB format, which is often abused by programs to support transparency despite being a format that isn't supposed to support it (32-bit RGB with 8 bits unused).
+- **Resonite**: Create a PNG file in a temporary folder, and copies the path to that file to the clipboard. Pasting this in the <HaiTag requiresResonite={true} short={true} /> window will import that file.
 
 :::tip[Compatibility notes]
 - When using Photoshop, support for external transparent pictures stored inside the clipboard is confirmed in Photoshop 2024,

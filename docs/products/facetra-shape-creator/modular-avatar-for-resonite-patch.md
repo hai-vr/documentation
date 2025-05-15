@@ -1,5 +1,5 @@
 ---
-title: FaceTra compatibility patch (Modular Avatar for Resonite)
+title: Compatibility patch (Modular Avatar for Resonite)
 ---
 import {HaiTags} from "/src/components/HaiTags";
 import {HaiTag} from "/src/components/HaiTag";
