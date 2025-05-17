@@ -33,13 +33,13 @@ really destined to be used inside distributed assets:
 Unlike *Modular Avatar* components, most of our components are **invasive**. They will affect many components across the entire avatar,
 or may not be able to coexist with other components.
 
-Therefore you are encouraged to use these components only within personal avatars, and not as part of assets distributed to other users.
-
-![](img/pvsUzAgoIb.png)
+Therefore, you are encouraged to use these components only within personal avatars, and not as part of assets distributed to other users.
 
 :::tip[Compatibility notes]
 Compatible with Modular Avatar for <HaiTag requiresResonite={true} short={true} /> starting from version 2.2.0-alpha.0.
 :::
+
+![](img/pvsUzAgoIb.png)
 
 ## Download
 

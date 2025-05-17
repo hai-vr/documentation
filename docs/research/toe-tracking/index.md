@@ -47,6 +47,8 @@ It is communicating with VRChat using the following:
 - The Tundra Developer Board exposes (processed) sensor values to SteamVR as part of the controller,
 - A Python script acting as a background SteamVR app reads those sensor values that have been bound in SteamVR bindings,
 - That Python script sends those values to VRChat through OSC.
+  - [This is the Python script](https://github.com/Greendayle/SteamVR_To_OSC) I had been using. It shows itself as an app, and you use
+    the SteamVR controller binding interface to connect the hardware to the generic inputs of this software.
 
 It is synced and animated in VRChat using a blend tree that takes these sensor values as blend tree inputs.
 
