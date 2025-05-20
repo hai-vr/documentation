@@ -2,11 +2,18 @@
 title: Lightbox Viewer
 ---
 
+## 2.3.0-beta.2
+
+Fix "Unknown error occurred while loading LightingData.asset":
+- Re-bake scene with a separate .lighting file.
+- This should address the "Unknown error occurred while loading LightingData.asset" error.
+
 ## 2.3.0-beta.1
 
-Add support for Light Volumes. The lightboxes themselves do not change, so the differences are subtle.
+Add support for Light Volumes if it is installed in the project.
 
-The Pink scene being the most notable because the left hand will be lit pink and the right hand will be lit blue.
+The lightboxes themselves do not change, so the differences are subtle.
+The Pink scene is the most notable because the left hand will be lit pink and the right hand will be lit purple.
 
 *With light volumes:*
 ![Unity_UWaWszgU9p.png](..%2Fproducts%2Fimg%2Flightbox-viewer%2FUnity_UWaWszgU9p.png)
