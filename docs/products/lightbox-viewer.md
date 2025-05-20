@@ -108,9 +108,15 @@ During operation, you can click *Advanced > Realign* to center the lightboxes ba
 This feature has been added in V2.3.0.
 :::
 
-If the [Light Volumes](https://github.com/REDSIM/VRCLightVolumes) package is installed in the project, the lightboxes will support light volumes.
+If the [Light Volumes](https://github.com/REDSIM/VRCLightVolumes) package (0.7.2 or above) is installed in the project, the lightboxes will support light volumes.
 
 <HaiVideo src="./img/lightbox-viewer/gvIpDdvoyu.mp4" loop={true}></HaiVideo>
+
+If you want to test without light volumes, you have two options:
+- in the *Lightbox Scene* field, select the scene called `Lightbox` instead of the scene called `LightboxLightVolumes`, **or**
+- after activating Lightbox Viewer, look inside the Lightbox scene. There are dormant lightboxes with `NoLV` in their name,
+  but they are tagged EditorOnly so they will not be rendered. Remove the EditorOnly tag from these lightboxes, and you will be
+  able to preview side by side with and without light volumes.
 
 ## Create your own lightbox scene
 
