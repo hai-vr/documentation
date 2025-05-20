@@ -2,6 +2,23 @@
 title: Lightbox Viewer
 ---
 
+## 2.3.0-beta.1
+
+Add support for Light Volumes. The lightboxes themselves do not change, so the differences are subtle.
+
+The Pink scene being the most notable because the left hand will be lit pink and the right hand will be lit blue.
+
+*With light volumes:*
+![Unity_UWaWszgU9p.png](..%2Fproducts%2Fimg%2Flightbox-viewer%2FUnity_UWaWszgU9p.png)
+
+*Without light volumes:*
+![Unity_BuaFhsYHjq.png](..%2Fproducts%2Fimg%2Flightbox-viewer%2FUnity_BuaFhsYHjq.png)
+
+- Add scene to support Light Volumes: https://github.com/REDSIM/VRCLightVolumes
+  - Scene is baked differently from main scene, as it uses Progressive GPU instead of CPU.
+  - Scene has inactive lightboxes with Light Volumes disabled.
+- This scene is selected by default if the Light Volumes package version 0.7.2 or higher is installed.
+
 ## 2.2.0
 
 Try to improve speed in Edit mode by removing all MonoBehaviours from the copy:
