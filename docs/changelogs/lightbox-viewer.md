@@ -2,6 +2,23 @@
 title: Lightbox Viewer
 ---
 
+import {HaiVideo} from "/src/components/HaiVideo";
+
+## 2.3.0
+
+Add support for [Light Volumes](https://github.com/REDSIM/VRCLightVolumes) if it is installed in the project.
+
+The lightboxes themselves do not change, so the differences are subtle.
+The Pink scene is the most notable because the left hand will be lit pink and the right hand will be lit purple.
+
+<HaiVideo src="./img/lightbox-viewer/gvIpDdvoyu.mp4" loop={true}></HaiVideo>
+
+*With light volumes:*
+![Unity_UWaWszgU9p.png](..%2Fproducts%2Fimg%2Flightbox-viewer%2FUnity_UWaWszgU9p.png)
+
+*Without light volumes:*
+![Unity_BuaFhsYHjq.png](..%2Fproducts%2Fimg%2Flightbox-viewer%2FUnity_BuaFhsYHjq.png)
+
 ## 2.3.0-beta.2
 
 Fix "Unknown error occurred while loading LightingData.asset":

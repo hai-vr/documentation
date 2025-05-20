@@ -102,6 +102,16 @@ This will use most camera settings including the near and far clip plane. The sc
 
 During operation, you can click *Advanced > Realign* to center the lightboxes back to your object after it has moved around.
 
+## Light Volumes
+
+:::note
+This feature has been added in V2.3.0.
+:::
+
+If the [Light Volumes](https://github.com/REDSIM/VRCLightVolumes) package is installed in the project, the lightboxes will support light volumes.
+
+<HaiVideo src="./img/lightbox-viewer/gvIpDdvoyu.mp4" loop={true}></HaiVideo>
+
 ## Create your own lightbox scene
 
 Lightbox Viewer is shipped with some default lightboxes that you can test your content with.
