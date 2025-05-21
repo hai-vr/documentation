@@ -40,7 +40,7 @@ Then, download the [Denormalized Avatar Exporter from GitHub](https://github.com
 and install it in your VTubing project.
 
 :::tip
-**Do you use V<!-- -->CC/ALCOM?** The V<!-- -->CC and ALCOM package managers can be used in non-VRChat projects, which could be useful if you want to use liltoon,
+**Do you use V<!-- -->CC/ALCOM?** The V<!-- -->CC and ALCOM package managers can be used in non-VRChat projects, which could be useful if you want to use lilToon,
 Modular Avatar, or other packages in non-VRChat projects.
 
 If you use V<!-- -->CC or ALCOM, you can instead use the *Haï ~ Denormalized Avatar Exporter (Beta)* package in my [ALCOM listing](/docs/products/listing).

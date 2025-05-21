@@ -12,7 +12,7 @@ The lightboxes themselves do not change, so the differences are subtle.
 The Pink scene is the most notable because the left hand will be lit pink and the right hand will be lit purple.
 
 :::warning
-If you want the **previews** to use light volumes, please understand that *unlike avatar uploads*, is it not sufficient to have a compatible shader like liltoon 1.10;
+If you want the **previews** to use light volumes, please understand that *unlike avatar uploads*, is it not sufficient to have a compatible shader like lilToon 1.10;
 you need the actual [Light Volumes package](https://github.com/REDSIM/VRCLightVolumes?tab=readme-ov-file#installation-through-vrchat-creator-companion) installed in your avatar project.
 :::
 

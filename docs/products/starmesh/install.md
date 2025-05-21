@@ -63,7 +63,7 @@ To use this tool in ChilloutVR, you need to have [Chillaxins](/docs/products/chi
 
 [//]: # (:::tip)
 
-[//]: # (The ALCOM and VCC package managers can be used in non-VRChat projects, which could be useful if you want to use liltoon,)
+[//]: # (The ALCOM and VCC package managers can be used in non-VRChat projects, which could be useful if you want to use lilToon,)
 
 [//]: # (or other packages in non-VRChat projects.)
 
