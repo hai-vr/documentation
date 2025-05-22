@@ -2,7 +2,20 @@
 title: Lightbox Viewer
 ---
 
-import {HaiVideo} from "/src/components/HaiVideo";;
+import {HaiVideo} from "/src/components/HaiVideo";
+
+## 2.4.0
+
+- Add Collections of lightboxes. Users may now switch from the default six lightboxes to other more specialized ones.
+  - Add special lightboxes specifically for Light Volumes. This requires the Light Volumes package to be installed.
+  - Expose the Spotlight Cookie lightbox that was previously hidden.
+- Previously, lights inside the object being viewed were disabled. This is no longer the case by default.
+- Add option to disable lights inside the object being viewed.
+- Add option to support shaders that require a Depth Texture.
+  - This uses [Poiyomi's DepthGet](https://github.com/poiyomi/PoiyomiToonShader/blob/master/_PoiyomiShaders/Prefabs/DepthGet.prefab) light settings, but repackaged with a different GUID to avoid installation conflicts.
+- The Advanced menu is now a sidebar.
+- Some settings are now saved editor-wide, instead of being reset when the Lightbox Viewer window is closed.
+  - This includes *Counter Rotate, Post Processing, Vertical Displacement, Mute Lights Inside Object, Support Depth Texture*.
 
 ## 2.4.0-beta.2
 
