@@ -2,7 +2,11 @@
 title: Lightbox Viewer
 ---
 
-import {HaiVideo} from "/src/components/HaiVideo";
+import {HaiVideo} from "/src/components/HaiVideo";;
+
+## 2.4.0-beta.2
+
+- Fix Play Mode did not show collections when Reload Domain remains default.
 
 ## 2.4.0-beta.1
 
