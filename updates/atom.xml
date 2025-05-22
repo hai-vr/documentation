@@ -2,11 +2,41 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://docs.hai-vr.dev/updates</id>
     <title>Haï~ Blog</title>
-    <updated>2025-05-20T00:00:00.000Z</updated>
+    <updated>2025-05-22T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://docs.hai-vr.dev/updates"/>
     <subtitle>Haï~ Blog</subtitle>
     <icon>https://docs.hai-vr.dev/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[✨ Lightbox Viewer V2.4.0]]></title>
+        <id>https://docs.hai-vr.dev/updates/2025/05/22/p0</id>
+        <link href="https://docs.hai-vr.dev/updates/2025/05/22/p0"/>
+        <updated>2025-05-22T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[- Add Collections of lightboxes. Users may now switch from the default six lightboxes to other more specialized ones.]]></summary>
+        <content type="html"><![CDATA[<ul>
+<li>Add Collections of lightboxes. Users may now switch from the default six lightboxes to other more specialized ones.<!-- -->
+<ul>
+<li>Add special lightboxes specifically for Light Volumes. This requires the Light Volumes package to be installed.</li>
+<li>Expose the Spotlight Cookie lightbox that was previously hidden.</li>
+</ul>
+</li>
+<li>Previously, lights inside the object being viewed were disabled. This is no longer the case by default.</li>
+<li>Add option to disable lights inside the object being viewed.</li>
+<li>Add option to support shaders that require a Depth Texture.<!-- -->
+<ul>
+<li>This uses <a href="https://github.com/poiyomi/PoiyomiToonShader/blob/master/_PoiyomiShaders/Prefabs/DepthGet.prefab" target="_blank" rel="noopener noreferrer">Poiyomi's DepthGet</a> light settings, but repackaged with a different GUID to avoid installation conflicts.</li>
+</ul>
+</li>
+<li>The Advanced menu is now a sidebar.</li>
+<li>Some settings are now saved editor-wide, instead of being reset when the Lightbox Viewer window is closed.<!-- -->
+<ul>
+<li>This includes <em>Counter Rotate, Post Processing, Vertical Displacement, Mute Lights Inside Object, Support Depth Texture</em>.</li>
+</ul>
+</li>
+</ul>
+<p><img decoding="async" loading="lazy" alt="Unity_a6UfNnk6f1.png" src="https://docs.hai-vr.dev/assets/images/Unity_a6UfNnk6f1-8aae1a6f3c14ecbea9591430c242a296.png" width="1203" height="690" class="img_ev3q"></p>
+<video controls="" muted="" width="816"><source src="https://large.docs.cdn.hai-vr.dev/assets/docs/6bNmaNelyD.mp4"></video>]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[✨ Lightbox Viewer V2.3.0]]></title>
         <id>https://docs.hai-vr.dev/updates/2025/05/20/p0</id>
@@ -431,21 +461,6 @@ you may have to press the "Realign Trackers" button if you happen to wear your d
 </ul>
 </li>
 <li>To try resolving an execution ordering issue with VRCFury, Delete Polygons, Assign UV Tile, and Replace Textures no longer run in the Optimizing phase.</li>
-</ul>]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[⚙️ Prefabulous for VRChat V2.1.0]]></title>
-        <id>https://docs.hai-vr.dev/updates/2024/08/22/p0</id>
-        <link href="https://docs.hai-vr.dev/updates/2024/08/22/p0"/>
-        <updated>2024-08-22T03:30:00.000Z</updated>
-        <summary type="html"><![CDATA[- Allow installation with VRChat 3.7.x.]]></summary>
-        <content type="html"><![CDATA[<ul>
-<li>Allow installation with VRChat 3.7.x.</li>
-<li>Allow installation with Animator As Code 1.1.x.</li>
-<li>Allow installation with Animator As Code - Modular Avatar functions 1.1.x.</li>
-<li>Allow installation with Animator As Code - VRChat 1.1.x.</li>
-<li>An additional component <a href="https://docs.hai-vr.dev/docs/products/prefabulous/vrchat/accurate-eye-tracking-transforms">Accurate Eye Tracking Transforms</a> is made available
-for users who wish to try, but it is not documented as it is not ready.</li>
 </ul>]]></content>
     </entry>
 </feed>
