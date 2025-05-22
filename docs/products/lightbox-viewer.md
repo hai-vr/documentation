@@ -66,19 +66,15 @@ When testing small objects, they may appear inside the ground. Press *Advanced*,
 
 ![image](/unsorted_ghc/168845888-17b8cf4b-de34-4614-b54b-b18a8dd551a9.png)
 
-### Disable a lightbox
+### Switch between collections of lightboxes
 
-After pressing *Activate LightboxViewer*, the lightbox scene will show up in at the bottom of the hierarchy.
+:::note
+This feature has been added in V2.4.0.
+:::
 
-Expand the `Lightboxes` object. If you tag one of them as `EditorOnly`, the lightbox will no longer show up.
+On the left, there is a section named *Collections*. You may use this to select between different sets of lightboxes to test with.
 
-<HaiVideo src="../../static/unsorted_ghc/githubio/sx_2022-05-16_17-32-21_n4FA3C76cb.mp4"></HaiVideo>
-
-### Enable a lightbox
-
-Likewise, a lightbox can be enabled by marking it as `Untagged`. The default lightbox scene contains a hidden lightbox called *Spotlight Cookie* that you can enable this way.
-
-![image](/unsorted_ghc/168635901-c1f1581f-e20e-496b-bca7-274f5b88db0e.png)
+<HaiVideo src="./img/lightbox-viewer/6bNmaNelyD.mp4"></HaiVideo>
 
 ## Advanced usage
 
@@ -101,6 +97,26 @@ This will use most camera settings including the near and far clip plane. The sc
 ### Realign after object movement
 
 During operation, you can click *Advanced > Realign* to center the lightboxes back to your object after it has moved around.
+
+### Support Depth Texture
+
+:::note
+This feature has been added in V2.4.0.
+:::
+
+Some shaders like [Poiyomi SSAO](https://www.poiyomi.com/shading/ssao) need a special prefab to operate.
+
+You can enable *Advanced > Support Depth Texture* to ensure these shader features can operate.
+
+### Mute Lights Inside Object
+
+:::note
+This feature has been added in V2.4.0.
+:::
+
+Lights inside your object can interfere with the look of the lightboxes.
+
+If you enable *Advanced > Mute Lights Inside Object*, the previews will temporarily turn the lights inside your object off for rendering the lightboxes.
 
 ## Light Volumes
 
@@ -173,3 +189,19 @@ When capturing lightboxes, the following happens:
 - That child is disabled again.
 
 If the child is tagged as `EditorOnly`, it will not be used.
+
+## Other
+
+### Disable a lightbox
+
+After pressing *Activate LightboxViewer*, the lightbox scene will show up in at the bottom of the hierarchy.
+
+Expand the `Lightboxes` object. If you tag one of them as `EditorOnly`, the lightbox will no longer show up.
+
+<HaiVideo src="../../static/unsorted_ghc/githubio/sx_2022-05-16_17-32-21_n4FA3C76cb.mp4"></HaiVideo>
+
+### Enable a lightbox
+
+Likewise, a lightbox can be enabled by marking it as `Untagged`. The default lightbox scene contains a hidden lightbox called *Spotlight Cookie* that you can enable this way.
+
+![image](/unsorted_ghc/168635901-c1f1581f-e20e-496b-bca7-274f5b88db0e.png)

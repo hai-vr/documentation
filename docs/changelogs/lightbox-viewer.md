@@ -17,6 +17,10 @@ import {HaiVideo} from "/src/components/HaiVideo";
 - Some settings are now saved editor-wide, instead of being reset when the Lightbox Viewer window is closed.
   - This includes *Counter Rotate, Post Processing, Vertical Displacement, Mute Lights Inside Object, Support Depth Texture*.
 
+![Unity_a6UfNnk6f1.png](..%2Fproducts%2Fimg%2Flightbox-viewer%2FUnity_a6UfNnk6f1.png)
+
+<HaiVideo src="./img/lightbox-viewer/6bNmaNelyD.mp4"></HaiVideo>
+
 ## 2.4.0-beta.2
 
 - Fix Play Mode did not show collections when Reload Domain remains default.
