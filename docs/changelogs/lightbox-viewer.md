@@ -4,6 +4,18 @@ title: Lightbox Viewer
 
 import {HaiVideo} from "/src/components/HaiVideo";
 
+## 2.4.1-alpha.1
+
+- Change Edit mode strategy for performance:
+  - Previously, Edit Mode was copying the avatar every frame, so that we don't accidentally cause the avatar to be modified.
+  - This change now copies the avatar to a hidden GameObject in the hierarchy and marked non-saved, if the reference to the Object To View does not change.
+  - Use object change events to detect when anything changes in the scene. If there is any change that pertains to a non-transform, we destroy the copied object and create a new one.
+  - This copied object is moved 10_000 units downwards between render cycles.
+  - Don't disable the original avatar between render cycles, because enabling the avatar is slow.
+  - In the copy, remove the Animators, because they take time to bind and we don't need them.
+
+- Fix Vertical Displacement could not be reset.
+
 ## 2.4.0
 
 - Add Collections of lightboxes. Users may now switch from the default six lightboxes to other more specialized ones.
