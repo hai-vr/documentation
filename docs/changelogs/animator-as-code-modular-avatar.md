@@ -2,6 +2,12 @@
 title: Animator As Code - Modular Avatar functions
 ---
 
+## 1.1.2
+
+- As I am no longer focusing on VRChat content creation, the package will now install without warnings,
+  even if VRChat introduces breaking changes.
+  - VRChat upper bound raised to VRChat SDK999.
+
 ## 1.1.1
 
 - Upper bound of Animator As Code V1 dependency is now `<2.0.0-a` instead of `<1.2.0-a`

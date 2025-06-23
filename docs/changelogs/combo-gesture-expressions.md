@@ -2,6 +2,12 @@
 title: ComboGestureExpressions
 ---
 
+## 3.3.1
+
+- As I am no longer focusing on VRChat content creation, the package will now install without warnings,
+  even if VRChat introduces breaking changes.
+  - VRChat upper bound raised to VRChat SDK999.
+
 ## 3.3.0
 
 - Add "Ignore Analog Fist" option in the compiler. When enabled, the Fist animations play without having to press the trigger.

@@ -2,6 +2,37 @@
 title: Animator As Code
 ---
 
+## 1.2.0
+
+- Add support for third-party asset container management.
+  - In preparation for the introduction of [IAssetSaver in NDMF 1.6.0](https://github.com/bdunderscore/ndmf/releases/tag/1.6.0),
+    add the ability to delegate the management of the asset container to a third party.
+    - No new dependencies are added.
+    - By default, the behaviour of Animator As Code is the same as V1.1.0.
+  - Add new optional field `AacConfiguration.AssetContainerProvider` to specify an asset container provider.
+  - Add new interface `IAacAssetContainerProvider` to abstract asset container management.
+
+The above changes have been contributed by **[kb10uy (KOBAYASHI Yū)](https://github.com/kb10uy)** (first contribution).
+
+The NDMF example in the [Getting started](/docs/products/animator-as-code/getting-started) page has been updated to demonstrate
+integration with this new API.
+
+As specified in the changelog for the official release of Animator As Code V1, breaking changes had been planned, and will be applied starting this version:
+- AacFlSettingKeyframes constructor is now private.
+  - For compatibility reasons, it was public for the duration of V1.1.x, and was already marked as obsolete in V1.1.x.
+- The methods AacFlBase.InternalConfiguration and AacFlBase.InternalDoCreateLayer are now private.
+  - For compatibility reasons, it was public for the duration of V1.1.x, and was already marked as obsolete in V1.1.x.
+  - The class AacAccessorForExtensions replaced them.
+
+These breaking changes are meant to be the last breaking changes for the lifetime of Animator As Code V1.
+
+- Include contributions from @TayouVR and @yewnyx that make this package better installable via git url.
+
+## 1.2.0-beta.2
+
+- (intra-version) Asset container provider no longer causes an issue with Vixen, where clips could not be generated in Edit mode for previews.
+- Include contributions from @TayouVR and @yewnyx that make this package better installable via git url.
+
 ## 1.2.0-beta.1
 
 - Add support for third-party asset container management.
