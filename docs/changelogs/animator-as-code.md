@@ -26,10 +26,12 @@ As specified in the changelog for the official release of Animator As Code V1, b
 
 These breaking changes are meant to be the last breaking changes for the lifetime of Animator As Code V1.
 
+- Make AAC 1.2.0 a requirement, as AAC 1.2.0 adds additional argument checks for compatibility with Vixen.
 - Include contributions from @TayouVR and @yewnyx that make this package better installable via git url.
 
 ## 1.2.0-beta.2
 
+- Requires AAC 1.2.0.
 - (intra-version) Asset container provider no longer causes an issue with Vixen, where clips could not be generated in Edit mode for previews.
 - Include contributions from @TayouVR and @yewnyx that make this package better installable via git url.
 
