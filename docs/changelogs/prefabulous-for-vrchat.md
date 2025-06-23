@@ -11,7 +11,7 @@ title: Prefabulous for VRChat
 - Add support for cross-application build compatibility being introduced in NDMF 1.8.
   - This explicitly prevents the VRC-specific plugins from being executed in Resonite.
 
-## 2.2.0
+## 2.2.0-beta.2
 
 - Now requires Animator As Code 1.2.0 or above, in order to use the asset container provider API.
 - As I am no longer focusing on VRChat content creation, the package will now install without warnings,
