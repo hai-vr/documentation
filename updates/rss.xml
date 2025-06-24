@@ -4,10 +4,75 @@
         <title>Haï~ Blog</title>
         <link>https://docs.hai-vr.dev/updates</link>
         <description>Haï~ Blog</description>
-        <lastBuildDate>Thu, 22 May 2025 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 24 Jun 2025 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[⚙️ Animator As Code V1.2.0 / Prefabulous for VRChat V2.2.0 / Auto-reset OSC config V1.1.6 / ComboGestureExpressions V3.3.1]]></title>
+            <link>https://docs.hai-vr.dev/updates/2025/06/24/p0</link>
+            <guid>https://docs.hai-vr.dev/updates/2025/06/24/p0</guid>
+            <pubDate>Tue, 24 Jun 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[As I am no longer focusing on VRChat content creation, the following packages will now install in ALCOM without warnings,]]></description>
+            <content:encoded><![CDATA[<p>As I am no longer focusing on VRChat content creation, the following packages will now install in ALCOM without warnings,
+even if VRChat introduces breaking changes:</p>
+<ul>
+<li>Animator As Code - VRChat V1.1.2</li>
+<li>Animator As Code - VRChat Destructive Workflow V1.1.2</li>
+<li>Animator As Code - Modular Avatar V1.1.2</li>
+<li>Prefabulous for VRChat V2.2.0</li>
+<li>Auto-reset OSC config V1.1.6</li>
+<li>ComboGestureExpressions V3.3.1</li>
+</ul>
+<p>VRChat Avatars package upper bound dependency raised to VRChat SDK999.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="prefabulous-for-vrchat-v220">Prefabulous for VRChat V2.2.0<a href="https://docs.hai-vr.dev/updates/2025/06/24/p0#prefabulous-for-vrchat-v220" class="hash-link" aria-label="Direct link to Prefabulous for VRChat V2.2.0" title="Direct link to Prefabulous for VRChat V2.2.0">​</a></h2>
+<ul>
+<li>Now requires Animator As Code 1.2.0 or above, in order to use the asset container provider API.</li>
+<li>Add support for cross-application build compatibility being introduced in NDMF 1.8.<!-- -->
+<ul>
+<li>This explicitly prevents the VRC-specific plugins from being executed in Resonite builds.</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="animator-as-code-v120">Animator As Code V1.2.0<a href="https://docs.hai-vr.dev/updates/2025/06/24/p0#animator-as-code-v120" class="hash-link" aria-label="Direct link to Animator As Code V1.2.0" title="Direct link to Animator As Code V1.2.0">​</a></h2>
+<ul>
+<li>Add support for third-party asset container management.<!-- -->
+<ul>
+<li>In preparation for the introduction of <a href="https://github.com/bdunderscore/ndmf/releases/tag/1.6.0" target="_blank" rel="noopener noreferrer">IAssetSaver in NDMF 1.6.0</a>,
+add the ability to delegate the management of the asset container to a third party.<!-- -->
+<ul>
+<li>No new dependencies are added.</li>
+<li>By default, the behaviour of Animator As Code is the same as V1.1.0.</li>
+</ul>
+</li>
+<li>Add new optional field <code>AacConfiguration.AssetContainerProvider</code> to specify an asset container provider.</li>
+<li>Add new interface <code>IAacAssetContainerProvider</code> to abstract asset container management.</li>
+</ul>
+</li>
+</ul>
+<p>The above changes have been contributed by <strong><a href="https://github.com/kb10uy" target="_blank" rel="noopener noreferrer">kb10uy (KOBAYASHI Yū)</a></strong> (first contribution).</p>
+<p>The NDMF example in the <a href="https://docs.hai-vr.dev/docs/products/animator-as-code/getting-started">Getting started</a> page has been updated to demonstrate
+integration with this new API.</p>
+<p>As specified in the changelog for the official release of Animator As Code V1, breaking changes had been planned, and will be applied starting this version:</p>
+<ul>
+<li>AacFlSettingKeyframes constructor is now private.<!-- -->
+<ul>
+<li>For compatibility reasons, it was public for the duration of V1.1.x, and was already marked as obsolete in V1.1.x.</li>
+</ul>
+</li>
+<li>The methods AacFlBase.InternalConfiguration and AacFlBase.InternalDoCreateLayer are now private.<!-- -->
+<ul>
+<li>For compatibility reasons, it was public for the duration of V1.1.x, and was already marked as obsolete in V1.1.x.</li>
+<li>The class AacAccessorForExtensions replaced them.</li>
+</ul>
+</li>
+</ul>
+<p>These breaking changes are meant to be the last breaking changes for the lifetime of Animator As Code V1.</p>
+<ul>
+<li>Make AAC 1.2.0 a requirement, as AAC 1.2.0 adds additional argument checks for compatibility with Vixen.</li>
+<li>Include contributions from @TayouVR and @yewnyx that make this package better installable via git url.</li>
+</ul>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[✨ Lightbox Viewer V2.4.0]]></title>
             <link>https://docs.hai-vr.dev/updates/2025/05/22/p0</link>
@@ -447,21 +512,6 @@ you may have to press the "Realign Trackers" button if you happen to wear your d
 <ul>
 <li>VRC-specific features (local axis, freeze to world) are not supported.</li>
 <li>The VRChat SDK assemblies and DLLs do not need to be installed in the project, as long as the types exist, so they could be mere stubs.</li>
-</ul>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[⚙️ Prefabulous Universal V2.1]]></title>
-            <link>https://docs.hai-vr.dev/updates/2024/08/22/p1</link>
-            <guid>https://docs.hai-vr.dev/updates/2024/08/22/p1</guid>
-            <pubDate>Thu, 22 Aug 2024 11:00:00 GMT</pubDate>
-            <description><![CDATA[- Modify the behaviour of Generate Twist Bones on VRChat projects:]]></description>
-            <content:encoded><![CDATA[<ul>
-<li>Modify the behaviour of <em>Generate Twist Bones</em> on VRChat projects:<!-- -->
-<ul>
-<li>If VRChat 3.7.0 or above is installed in the project, we will generate a <em>VRC Aim Constraint</em> component instead of a Unity <em>Aim Constraint</em>.</li>
-</ul>
-</li>
-<li>To try resolving an execution ordering issue with VRCFury, Delete Polygons, Assign UV Tile, and Replace Textures no longer run in the Optimizing phase.</li>
 </ul>]]></content:encoded>
         </item>
     </channel>
