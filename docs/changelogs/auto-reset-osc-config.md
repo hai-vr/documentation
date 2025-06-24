@@ -6,7 +6,7 @@ title: Auto-reset OSC config
 
 - As I am no longer focusing on VRChat content creation, the package will now install without warnings,
   even if VRChat introduces breaking changes.
-  - VRChat upper bound raised to VRChat SDK999.
+  - VRChat Avatars package upper bound dependency raised to VRChat SDK999.
 
 ## 1.1.5
 
