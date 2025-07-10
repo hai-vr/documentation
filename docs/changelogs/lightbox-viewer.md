@@ -4,6 +4,13 @@ title: Lightbox Viewer
 
 import {HaiVideo} from "/src/components/HaiVideo";
 
+## 2.4.1-alpha.2
+
+Add support for URP projects:
+- Detect when the project is BIRP.
+- If it is not BIRP, don't suggest installing the Post-Processing V2 package.
+- If it is not BIRP, load the URP scene, even if the Light Volumes package is installed.
+
 ## 2.4.1-alpha.1
 
 - Change Edit mode strategy for performance:
