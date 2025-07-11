@@ -2,11 +2,23 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://docs.hai-vr.dev/updates</id>
     <title>Haï~ Blog</title>
-    <updated>2025-06-24T00:00:00.000Z</updated>
+    <updated>2025-07-11T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://docs.hai-vr.dev/updates"/>
     <subtitle>Haï~ Blog</subtitle>
     <icon>https://docs.hai-vr.dev/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[✨ Lightbox Viewer URP V1.0.0-alpha.5]]></title>
+        <id>https://docs.hai-vr.dev/updates/2025/07/11/p0</id>
+        <link href="https://docs.hai-vr.dev/updates/2025/07/11/p0"/>
+        <updated>2025-07-11T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Lightbox Viewer URP for the Basis Framework has been added as a new package.]]></summary>
+        <content type="html"><![CDATA[<p><em>Lightbox Viewer URP for the Basis Framework</em> has been added as a new package.</p>
+<p>This package is meant to be used on URP <span></span></p><div class="hai_tag_ZcC4 hai_tag_requires_basis_QHoe">🔺 <span class="notranslate">Basis</span></div> projects in Unity 6,
+with Adaptive Probe Volumes enabled.<p></p>
+<p>This early version does not support post-processing, and it does not support traditional Light Probes.</p>
+<p>🗒️ <a href="https://docs.hai-vr.dev/docs/products/lightbox-viewer/urp">Open documentation</a>.</p>]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[⚙️ Animator As Code V1.2.0 / Animator As Code VRChat V1.1.2 / Prefabulous for VRChat V2.2.0 / Auto-reset OSC config V1.1.6 / ComboGestureExpressions V3.3.1]]></title>
         <id>https://docs.hai-vr.dev/updates/2025/06/24/p0</id>
@@ -497,20 +509,6 @@ you may have to press the "Realign Trackers" button if you happen to wear your d
 <li>This option will be used during support requests to troubleshoot mismatching tracking space issues.</li>
 </ul>
 </li>
-</ul>]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[☀️ Convert VRC Constraints to Unity Constraints (Prefabulous for Platform Conversions V2.0)]]></title>
-        <id>https://docs.hai-vr.dev/updates/2024/08/22/p2</id>
-        <link href="https://docs.hai-vr.dev/updates/2024/08/22/p2"/>
-        <updated>2024-08-22T13:00:00.000Z</updated>
-        <summary type="html"><![CDATA[☀️ New component: Convert VRC Constraints to Unity Constraints]]></summary>
-        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="️-new-component-convert-vrc-constraints-to-unity-constraints">☀️ New component: Convert VRC Constraints to Unity Constraints<a href="https://docs.hai-vr.dev/updates/2024/08/22/p2#%EF%B8%8F-new-component-convert-vrc-constraints-to-unity-constraints" class="hash-link" aria-label="Direct link to ☀️ New component: Convert VRC Constraints to Unity Constraints" title="Direct link to ☀️ New component: Convert VRC Constraints to Unity Constraints">​</a></h3>
-<p>A new component, <a href="https://docs.hai-vr.dev/docs/products/prefabulous/conversions/convert-vrc-constraints-to-unity-constraints">Convert VRC Constraints to Unity Constraints</a>, has been added to Prefabulous for Platform Conversions.</p>
-<p>It converts VRC Constraint components back to native Unity Constraints, to the extent applicable.</p>
-<ul>
-<li>VRC-specific features (local axis, freeze to world) are not supported.</li>
-<li>The VRChat SDK assemblies and DLLs do not need to be installed in the project, as long as the types exist, so they could be mere stubs.</li>
 </ul>]]></content>
     </entry>
 </feed>
