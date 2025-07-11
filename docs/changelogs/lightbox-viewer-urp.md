@@ -4,6 +4,10 @@ title: Lightbox Viewer URP
 
 import {HaiVideo} from "/src/components/HaiVideo";
 
+## 1.0.0-alpha.5
+
+- Fix package.json now specifies Unity 6.
+
 ## 1.0.0-alpha.4
 
 - Require Lightbox Viewer 2.4.1-alpha.2 minimum.
