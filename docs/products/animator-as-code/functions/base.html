@@ -5,7 +5,7 @@
 <meta name="generator" content="Docusaurus v3.2.1">
 <title data-rh="true">Base functions | Haï~</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://docs.hai-vr.dev/img/hai-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://docs.hai-vr.dev/img/hai-social-card.jpg"><meta data-rh="true" property="og:url" content="https://docs.hai-vr.dev/docs/products/animator-as-code/functions/base"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Base functions | Haï~"><meta data-rh="true" name="description" content="New additions in V1 are indicated with a light bulb 💡 icon."><meta data-rh="true" property="og:description" content="New additions in V1 are indicated with a light bulb 💡 icon."><link data-rh="true" rel="icon" href="/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://docs.hai-vr.dev/docs/products/animator-as-code/functions/base"><link data-rh="true" rel="alternate" href="https://docs.hai-vr.dev/docs/products/animator-as-code/functions/base" hreflang="en"><link data-rh="true" rel="alternate" href="https://docs.hai-vr.dev/docs/products/animator-as-code/functions/base" hreflang="x-default"><link rel="alternate" type="application/rss+xml" href="/updates/rss.xml" title="Haï~ RSS Feed">
 <link rel="alternate" type="application/atom+xml" href="/updates/atom.xml" title="Haï~ Atom Feed"><link rel="stylesheet" href="/assets/css/styles.00643088.css">
-<script src="/assets/js/runtime~main.b1b1e02e.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.35a9233e.js" defer="defer"></script>
 <script src="/assets/js/main.3a5acccd.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -41,7 +41,15 @@ Create a new BlendTree asset and returns a native BlendTree object. The asset is
 </li>
 <li>
 <p><code>AacFlClip NewClip(string name)</code><br>
-Create a new clip with a name. However, the name is only used as a suffix for the asset. The asset is generated into the container. FIXME: This is quite pointless because the name is mangled anyways.</p>
+Create a new clip with a name. However, the name is only used as a suffix for the asset. The asset is generated into the container.</p>
+</li>
+<li>
+<p><code>AacFlNonInitializedBlendTree NewBlendTree(string name)</code> (🛠️ Will be added in 1.3.0)<br>
+Create a new BlendTree asset with a name. However, the name is only used as a suffix for the asset. The asset is generated into the container.</p>
+</li>
+<li>
+<p><code>BlendTree NewBlendTreeAsRaw(string name)</code> (🛠️ Will be added in 1.3.0)<br>
+Create a new BlendTree asset with a name and returns a native BlendTree object. However, the name is only used as a suffix for the asset. The asset is generated into the container.💡 You may use NewBlendTree() instead to obtain a fluent interface.</p>
 </li>
 <li>
 <p><code>AacFlClip DummyClipLasting(float numberOf, AacFlUnit unit)</code><br>
@@ -493,7 +501,7 @@ Swap a material of a Particle System on the specified slot (indexed at 0). This 
 In practice, this will animate the ParticleSystemRenderer of that particle system.</p>
 </li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="single-frame-transformation-animations">Single-frame Transformation Animations💡<a href="#single-frame-transformation-animations" class="hash-link" aria-label="Direct link to Single-frame Transformation Animations💡" title="Direct link to Single-frame Transformation Animations💡">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="single-frame-transformation-animations">Single-frame Transformation Animations💡<a href="#single-frame-transformation-animations" class="hash-link" aria-label="Direct link to Single-frame Transformation Animations 💡" title="Direct link to Single-frame Transformation Animations💡">​</a></h3>
 <div class="theme-admonition theme-admonition-info admonition_xJq3 alert alert--info"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>info</div><div class="admonitionContent_BuS1"><p>Single-valued overloads do not tolerate null values, and will intentionally fail when provided with a null value.</p><p>Array overloads tolerate arrays that contain null values, but does not tolerate the array itself being null.</p></div></div>
 <ul>
 <li>
