@@ -69,7 +69,7 @@ Meaning that (with some rounding):
 Put in another way:
 
 - The value of 1,200 VRChat Credits *paid* is $10 USD for the user.
-- The value of 1,200 VRChat Credits *paid out* is $5 USD for the seller.
+- The value of 1,200 VRChat Credits *payout* is $5 USD for the seller.
 - The value of 1,200 VRChat Credits *entering circulation* is $2 USD for VRChat.
 - This seems consistent with the claimed revenue share.
 
