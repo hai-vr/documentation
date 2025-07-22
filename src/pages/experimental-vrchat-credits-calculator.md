@@ -13,6 +13,11 @@ I tried my best, but there may be inaccuracies. Use your due diligence.
 
 ----
 
+*\*VRChat keeps earning transaction fees when a seller reuses credits earned from sales to purchase from someone else's store, see [VRChat Credits](#vrchat-credits) section below.* <br/>
+*\*\*The VRC+ estimates assume that VRChat earns 70% of the subscription price, see [VRChat Plus](#vrchat-plus) section below.*
+
+----
+
 ## Sources
 
 Based on the official documentation:
@@ -40,7 +45,7 @@ this page may use one of those estimated fees.
 
 - That user gets 1,200 VRChat Credits.
 - 60% may be reserved for eventual payout (original value $6).
-- Steam/Meta/Google get at most 30% (original value $3).
+- Steam/Meta/Google/Apple get at most 30% (original value $3).
 - A minimum of 10% goes to VRChat (original value $1).
 
 **When a user spends 1,200 VRChat Credits**:

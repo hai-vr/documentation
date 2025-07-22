@@ -22,13 +22,13 @@ const fieldLabels = {
     vrchatCreditsGranted: 'VRChat Credits granted to user',
     usdEarnedBySteam: 'USD earned by Steam',
     usdCreatorEconomy: 'USD reserved for the Creator Economy',
-    usdEarnedByVRChat: 'USD earned by VRChat after one sale',
+    usdEarnedByVRChat: 'USD earned by VRChat after one sale*',
     vrchatCreditsPayout: 'VRChat Credits earned by seller',
     usdPaymentProcessor: 'USD earned by payment processor',
     usdPaidOutToCreator: 'USD paid out to the creator',
     avatarsSoldAtMinPrice: 'Number of avatars sold at minimum price',
-    vrcPlusMonthlySubs: 'Equivalent # of monthly VRC+ subscriptions sold (VRChat earnings after Steam\'s cut)',
-    vrcPlusYearlySubs: 'Equivalent # of yearly VRC+ subscriptions sold (VRChat earnings after Steam\'s cut)',
+    vrcPlusMonthlySubs: 'Equivalent # of monthly VRC+ subscriptions sold (VRChat earnings after Steam\'s cut**)',
+    vrcPlusYearlySubs: 'Equivalent # of yearly VRC+ subscriptions sold (VRChat earnings after Steam\'s cut**)',
     employeesAt100kPerYear: 'Number of employees that can be paid at 100K USD per year',
 };
 
