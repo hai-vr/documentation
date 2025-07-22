@@ -36,7 +36,7 @@ this page may use one of those estimated fees.
 
 ## VRChat Credits
 
-**When a user purchases $10 USD** (without VAT):
+**When a user purchases $10 USD** worth of credits (without VAT):
 
 - That user gets 1,200 VRChat Credits.
 - 60% may be reserved for eventual payout (original value $6).
@@ -68,9 +68,9 @@ Meaning that (with some rounding):
 
 Put in another way:
 
-- The value of 1,200 VRChat Credits is $10 USD for the user.
-- The value of 1,200 VRChat Credits is $5 USD for the seller.
-- The value of 1,200 VRChat Credits is $2 USD for the VRChat.
+- The value of 1,200 VRChat Credits *paid* is $10 USD for the user.
+- The value of 1,200 VRChat Credits *paid out* is $5 USD for the seller.
+- The value of 1,200 VRChat Credits *entering circulation* is $2 USD for VRChat.
 - This seems consistent with the claimed revenue share.
 
 Put in dollars first:
