@@ -141,3 +141,12 @@ Assuming a company of 100 people with an average 50K USD per year salary:
 
 - Such a company requires 71,428 total years of yearly VRChat Plus subscriptions sold for VRChat to earn the same amount that year.
 - Such a company requires $26,041,667 paid by users to purchase 3,125,000,000 VRChat Credits that year for VRChat to earn the same amount that year.
+
+## Additional notes
+
+This document does not account for the possibility of low-performing sellers who cannot request a payout because
+[they are below the payout threshold](https://creators.vrchat.com/economy/payout#payout-requirements) and don't spend it elsewhere,
+and users who leave the platform without spending their remaining credits.
+
+In these cases, there may be credits that will in practice never be used, where VRChat could claim the amount that is normally
+reserved for payouts in the Creator Economy.
