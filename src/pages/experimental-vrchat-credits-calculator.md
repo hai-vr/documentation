@@ -113,7 +113,7 @@ A yearly subscription costs the user $100 that year:
 
 ## Comparing with the Avatar Marketplace
 
-The minimum price of an avatar is 1,200 VRChat Credits.
+The minimum price of an avatar\* is 1,200 VRChat Credits.
 
 - One month of a monthly VRChat Plus subscription is the equivalent of 3.65 avatars sold at minimum price for VRChat to earn the same amount.
 - One year of a yearly VRChat Plus subscription is the equivalent of 36.46 avatars sold at minimum price for VRChat to earn the same amount.
@@ -122,6 +122,8 @@ Also:
 
 - 1,000 avatars sold at minimum price is the equivalent of 274.29 total months of VRChat Plus monthly subscriptions sold for VRChat to earn the same amount.
 - 1,000 avatars sold at minimum price is the equivalent of 27.43 total years of VRChat Plus yearly subscriptions sold for VRChat to earn the same amount.
+
+*\*Source: [Avatar Marketplace, FAQ, "Is there a minimum price that avatar creators have to abide by?"](https://hello.vrchat.com/avatar-marketplace)* 
 
 ## Comparing with an hypothetical US salary
 
