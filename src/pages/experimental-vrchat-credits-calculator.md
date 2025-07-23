@@ -109,7 +109,7 @@ A yearly subscription costs the user $100 that year:
 
 - VRChat earns $70 from a year of a yearly subscription.
 - It takes around 43,750 VRChat Credits for VRChat to earn that same amount.
-- 4,375 VRChat Credits costs the user around $364.58.
+- 43,750 VRChat Credits costs the user around $364.58.
 
 ## Comparing with the Avatar Marketplace
 
