@@ -3,18 +3,25 @@ import React from 'react';
 import { useState } from 'react';
 
 const ratios = {
-    usdPaidByUser: 10,
-    vrchatCreditsGranted: 1200,
-    usdEarnedBySteam: 3,
-    usdCreatorEconomy: 6,
-    usdEarnedByVRChat: 1.918,
-    vrchatCreditsPayout: 1016.4,
-    usdPaymentProcessor: 0.07623,
-    usdPaidOutToCreator: 5.00577,
-    avatarsSoldAtMinPrice: 1,
-    vrcPlusMonthlySubs: 0.2742857142857143,
-    vrcPlusYearlySubs: 0.0274285714285714,
-    employeesAt100kPerYear: 0.00001918,
+    // STEAM_OR_APPSTORE_REVENUE_SHARE = 0.3
+    // PURCHASE_FEE = 0.4
+    // TRANSACTION_FEE = 0.153
+    // PAYOUT_FEE = 0.015
+    // VRCHAT_PLUS_MONTHLY_SUBSCRIPTION_PRICE_USD = 10
+    // VRCHAT_PLUS_YEARLY_SUBSCRIPTION_PRICE_USD = 100
+    // VRCHAT_AVATAR_MARKETPLACE_MINIMUM_PRICE_CREDITS = 1200
+    usdPaidByUser: 10, // = 10
+    vrchatCreditsGranted: 1200, // = 1200
+    usdEarnedBySteam: 3, // = (1 - STEAM_OR_APPSTORE_REVENUE_SHARE) * usdPaidByUser
+    usdCreatorEconomy: 6, // = (1 - PURCHASE_FEE) * usdPaidByUser        --- OR --- this value is implied by the credit payout rate: This amount must be payable to the seller after the transaction fee is taken.
+    usdEarnedByVRChat: 1.918, // = (usdPaidByUser - usdEarnedBySteam - usdCreatorEconomy) + TRANSACTION_FEE * usdCreatorEconomy
+    vrchatCreditsPayout: 1016.4, // = (1 - TRANSACTION_FEE) * vrchatCreditsGranted
+    usdPaymentProcessor: 0.07623, // = (usdCreatorEconomy - TRANSACTION_FEE * usdCreatorEconomy) * PAYOUT_FEE
+    usdPaidOutToCreator: 5.00577, // = usdCreatorEconomy - TRANSACTION_FEE * usdCreatorEconomy - usdPaymentProcessor
+    avatarsSoldAtMinPrice: 1, // = vrchatCreditsGranted / VRCHAT_AVATAR_MARKETPLACE_MINIMUM_PRICE_CREDITS
+    vrcPlusMonthlySubs: 0.2742857142857143, // = usdEarnedByVRChat / ((1 - STEAM_OR_APPSTORE_REVENUE_SHARE) * VRCHAT_PLUS_MONTHLY_SUBSCRIPTION_PRICE_USD)
+    vrcPlusYearlySubs: 0.0274285714285714, // = usdEarnedByVRChat / ((1 - STEAM_OR_APPSTORE_REVENUE_SHARE) * VRCHAT_PLUS_YEARLY_SUBSCRIPTION_PRICE_USD)
+    employeesAt100kPerYear: 0.00001918, // = usdEarnedByVRChat / 100_000
 };
 
 const fieldLabels = {
