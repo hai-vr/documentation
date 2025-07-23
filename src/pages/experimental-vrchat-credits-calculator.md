@@ -66,7 +66,7 @@ this page may use one of those estimated fees.
 Meaning that (with some rounding):
 
 - When a user pays $10 USD
-- Steam/Meta/Google/Apple get $5
+- Steam/Meta/Google/Apple get $3
 - VRChat gets $1.925 ([not accounting for sellers who cannot request a payout](https://creators.vrchat.com/economy/payout#payout-requirements))
 - The payment processor gets $0.075
 - Seller gets $5
