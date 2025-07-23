@@ -5,7 +5,7 @@ import {VBucksCalc} from "/src/components/VBucksCalc";
 
 # VRChat Credits calculator (Experimental)
 
-**VRChat Credits do not have one conversion rate:** The value of VRChat Credits depends on whether you are a user spending money,
+**VRChat Credits do not have one conversion rate:** The value of VRChat Credits depend on whether you are a user spending money,
 a seller looking to earn money, or the company VRChat itself looking to take a commission from sales.
 
 This page lets you compare the *perceived value* of VRChat Credits between the various parties involved.
