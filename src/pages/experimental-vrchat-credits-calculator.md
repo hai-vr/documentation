@@ -5,6 +5,13 @@ import {VBucksCalc} from "/src/components/VBucksCalc";
 
 # Experimental VRChat Credits calculator
 
+**VRChat Credits do not have a conversion rate:** The value of a VRChat Credit depends on whether you are a user spending money,
+a seller looking to earn money, or the company VRChat itself looking to take a commission from sales.
+
+This page lets you compare the *perceived value* of VRChat Credits between the various parties involved.
+
+---
+
 This is an interactive spreadsheet/conversion table. You can edit any field below.
 
 I tried my best, but there may be inaccuracies. Use your due diligence.
@@ -77,6 +84,13 @@ Put in another way:
 - The value of 1,200 VRChat Credits originally paid by the user leads to a $5 USD *payout* for the seller (*the seller receives 1,015 VRChat Credits*).
 - The value of 1,200 VRChat Credits *entering circulation* is $2 USD for VRChat.
 - This seems consistent with the claimed revenue share.
+
+:::warning
+The credit payout rate is *[200 Credits = 1 USD](https://creators.vrchat.com/economy/welcome-to-the-ce/#-revenue-split)*:
+- This payout rate is based on **the amount of VRChat Credits that the seller receives after the sale**, which is 1,015 VRChat Credits out of a 1,200 VRChat Credits sale.
+- If you consider the VRChat Credits originally paid by the user **before the transaction fee**, a user spending 1,200 VRChat Credits will lead to
+the seller earning $5, which would be closer to *240 VRChat Credits before sale = 1 USD for the seller*.
+:::
 
 Put in dollars first:
 
