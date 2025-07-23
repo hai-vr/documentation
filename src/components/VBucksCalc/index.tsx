@@ -2,27 +2,56 @@
 import React from 'react';
 import { useState } from 'react';
 
-const ratios = {
-    // STEAM_OR_APPSTORE_REVENUE_SHARE = 0.3
-    // PURCHASE_FEE = 0.4
-    // TRANSACTION_FEE = 0.153
-    // PAYOUT_FEE = 0.015
-    // VRCHAT_PLUS_MONTHLY_SUBSCRIPTION_PRICE_USD = 10
-    // VRCHAT_PLUS_YEARLY_SUBSCRIPTION_PRICE_USD = 100
-    // VRCHAT_AVATAR_MARKETPLACE_MINIMUM_PRICE_CREDITS = 1200
-    usdPaidByUser: 10, // = 10
-    vrchatCreditsGranted: 1200, // = 1200
-    usdEarnedBySteam: 3, // = (1 - STEAM_OR_APPSTORE_REVENUE_SHARE) * usdPaidByUser
-    usdCreatorEconomy: 6, // = (1 - PURCHASE_FEE) * usdPaidByUser        --- OR --- this value is implied by the credit payout rate: This amount must be payable to the seller after the transaction fee is taken.
-    usdEarnedByVRChat: 1.918, // = (usdPaidByUser - usdEarnedBySteam - usdCreatorEconomy) + TRANSACTION_FEE * usdCreatorEconomy
-    vrchatCreditsPayout: 1016.4, // = (1 - TRANSACTION_FEE) * vrchatCreditsGranted
-    usdPaymentProcessor: 0.07623, // = (usdCreatorEconomy - TRANSACTION_FEE * usdCreatorEconomy) * PAYOUT_FEE
-    usdPaidOutToCreator: 5.00577, // = usdCreatorEconomy - TRANSACTION_FEE * usdCreatorEconomy - usdPaymentProcessor
-    avatarsSoldAtMinPrice: 1, // = vrchatCreditsGranted / VRCHAT_AVATAR_MARKETPLACE_MINIMUM_PRICE_CREDITS
-    vrcPlusMonthlySubs: 0.2742857142857143, // = usdEarnedByVRChat / ((1 - STEAM_OR_APPSTORE_REVENUE_SHARE) * VRCHAT_PLUS_MONTHLY_SUBSCRIPTION_PRICE_USD)
-    vrcPlusYearlySubs: 0.0274285714285714, // = usdEarnedByVRChat / ((1 - STEAM_OR_APPSTORE_REVENUE_SHARE) * VRCHAT_PLUS_YEARLY_SUBSCRIPTION_PRICE_USD)
-    employeesAt100kPerYear: 0.00001918, // = usdEarnedByVRChat / 100_000
+const constants = {
+    STEAM_OR_APPSTORE_REVENUE_SHARE: 0.3,
+    PURCHASE_FEE: 0.4,
+    TRANSACTION_FEE: 0.153,
+    PAYOUT_FEE: 0.015,
+    VRCHAT_PLUS_MONTHLY_SUBSCRIPTION_PRICE_USD: 10,
+    VRCHAT_PLUS_YEARLY_SUBSCRIPTION_PRICE_USD: 100,
+    VRCHAT_AVATAR_MARKETPLACE_MINIMUM_PRICE_CREDITS: 1200,
+    usdPaidByUser: 10,
+    vrchatCreditsGranted: 1200,
 };
+
+const ratios = (() => {
+    const c = constants;
+
+    const usdEarnedBySteam = c.STEAM_OR_APPSTORE_REVENUE_SHARE * c.usdPaidByUser;
+    const usdCreatorEconomy = (1 - c.PURCHASE_FEE) * c.usdPaidByUser;
+    const usdEarnedByVRChat =
+        (c.usdPaidByUser - usdEarnedBySteam - usdCreatorEconomy) +
+        c.TRANSACTION_FEE * usdCreatorEconomy;
+    const vrchatCreditsPayout = (1 - c.TRANSACTION_FEE) * c.vrchatCreditsGranted;
+    const usdPaymentProcessor =
+        (usdCreatorEconomy - c.TRANSACTION_FEE * usdCreatorEconomy) * c.PAYOUT_FEE;
+    const usdPaidOutToCreator =
+        usdCreatorEconomy - c.TRANSACTION_FEE * usdCreatorEconomy - usdPaymentProcessor;
+    const avatarsSoldAtMinPrice =
+        c.vrchatCreditsGranted / c.VRCHAT_AVATAR_MARKETPLACE_MINIMUM_PRICE_CREDITS;
+    const vrcPlusMonthlySubs =
+        usdEarnedByVRChat /
+        ((1 - c.STEAM_OR_APPSTORE_REVENUE_SHARE) * c.VRCHAT_PLUS_MONTHLY_SUBSCRIPTION_PRICE_USD);
+    const vrcPlusYearlySubs =
+        usdEarnedByVRChat /
+        ((1 - c.STEAM_OR_APPSTORE_REVENUE_SHARE) * c.VRCHAT_PLUS_YEARLY_SUBSCRIPTION_PRICE_USD);
+    const employeesAt100kPerYear = usdEarnedByVRChat / 100_000;
+
+    return {
+        usdPaidByUser: c.usdPaidByUser, // = 10
+        vrchatCreditsGranted: c.vrchatCreditsGranted, // = 1200
+        usdEarnedBySteam, // = 3.0
+        usdCreatorEconomy, // = 6.0
+        usdEarnedByVRChat, // = 1.918
+        vrchatCreditsPayout, // = 1016.4
+        usdPaymentProcessor, // = 0.07623
+        usdPaidOutToCreator, // = 5.00577
+        avatarsSoldAtMinPrice, // = 1.0
+        vrcPlusMonthlySubs, // = 0.2742857142857143
+        vrcPlusYearlySubs, // = 0.0274285714285714
+        employeesAt100kPerYear // = 0.00001918
+    };
+})();
 
 const fieldLabels = {
     usdPaidByUser: 'USD paid by user (without VAT)',
