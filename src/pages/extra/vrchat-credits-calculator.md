@@ -34,7 +34,7 @@ The calculations on this page is based on the official documentation regarding f
 - [Creator Economy/Welcome to the Creator Economy](https://creators.vrchat.com/economy/welcome-to-the-ce#-revenue-split).
   - [Screenshot 2](chrome_lPDdXpzfSG.png)
   
-The following sankey diagram attempts to illustrate the information above:
+The following Sankey diagram attempts to illustrate the information above:
 
 ![sankey.jpg](sankey.jpg)
 
