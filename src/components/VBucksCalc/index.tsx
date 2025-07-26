@@ -54,18 +54,44 @@ const ratios = (() => {
 })();
 
 const fieldLabels = {
-    usdPaidByUser: 'USD paid by user (without VAT)',
-    vrchatCreditsGranted: 'VRChat Credits granted to user',
-    usdEarnedBySteam: 'USD earned by Steam',
-    usdCreatorEconomy: 'USD reserved for the Creator Economy',
-    usdEarnedByVRChat: 'USD earned by VRChat after one sale*',
-    vrchatCreditsPayout: 'VRChat Credits earned by seller',
-    usdPaymentProcessor: 'USD earned by payment processor',
-    usdPaidOutToCreator: 'USD paid out to the creator',
-    avatarsSoldAtMinPrice: 'Number of avatars sold at minimum price',
-    vrcPlusMonthlySubs: 'Equivalent # of monthly VRC+ subscriptions sold (VRChat earnings after Steam\'s cut**)',
-    vrcPlusYearlySubs: 'Equivalent # of yearly VRC+ subscriptions sold (VRChat earnings after Steam\'s cut**)',
-    employeesAt100kPerYear: 'Number of employees that can be paid at 100K USD per year',
+    en: {
+        usdPaidByUser: 'USD paid by user (without VAT)',
+        vrchatCreditsGranted: 'VRChat Credits granted to user',
+        usdEarnedBySteam: 'USD earned by Steam',
+        usdCreatorEconomy: 'USD reserved for the Creator Economy',
+        usdEarnedByVRChat: 'USD earned by VRChat after one sale*',
+        vrchatCreditsPayout: 'VRChat Credits earned by seller',
+        usdPaymentProcessor: 'USD earned by payment processor',
+        usdPaidOutToCreator: 'USD paid out to the creator',
+        avatarsSoldAtMinPrice: 'Number of avatars sold at minimum price',
+        vrcPlusMonthlySubs: 'Equivalent # of monthly VRC+ subscriptions sold (VRChat earnings after Steam\'s cut**)',
+        vrcPlusYearlySubs: 'Equivalent # of yearly VRC+ subscriptions sold (VRChat earnings after Steam\'s cut**)',
+        employeesAt100kPerYear: 'Number of employees that can be paid at 100K USD per year',
+        sectionTitles: {
+            purchasing: 'Purchasing credits',
+            sales: 'Sales and payout',
+            estimations: 'Estimations'
+        }
+    },
+    ja: {
+        usdPaidByUser: 'ユーザーが支払うUSD（VAT除く）',
+        vrchatCreditsGranted: 'ユーザーに付与されるVRChatクレジット',
+        usdEarnedBySteam: 'Steamの収益（USD）',
+        usdCreatorEconomy: 'クリエイターエコノミー用に確保されたUSD',
+        usdEarnedByVRChat: '1回の販売でVRChatが得る収益（USD）*',
+        vrchatCreditsPayout: '販売者が得るVRChatクレジット',
+        usdPaymentProcessor: '決済処理業者の収益（USD）',
+        usdPaidOutToCreator: 'クリエイターへの支払額（USD）',
+        avatarsSoldAtMinPrice: '最低価格で販売されたアバターの数',
+        vrcPlusMonthlySubs: '月額VRC+サブスクリプションの相当数（Steamカット後のVRChat収益**）',
+        vrcPlusYearlySubs: '年額VRC+サブスクリプションの相当数（Steamカット後のVRChat収益**）',
+        employeesAt100kPerYear: '年間10万USDで雇用可能な従業員数',
+        sectionTitles: {
+            purchasing: 'クレジットの購入',
+            sales: '販売と支払い',
+            estimations: '推定値'
+        }
+    }
 };
 
 const currency = {
@@ -85,7 +111,7 @@ const currency = {
 
 const fields = Object.keys(ratios).filter(field => field !== 'vrcPlusMonthsInYearlySub');
 
-export function VBucksCalc() {
+export function VBucksCalc({ language = 'en' }) {
     const [values, setValues] = useState(() => {
         const initial = {};
         fields.forEach((field) => {
@@ -102,6 +128,8 @@ export function VBucksCalc() {
         });
         return initial;
     });
+
+    const labels = fieldLabels[language] || fieldLabels.en;
 
     const handleChange = (changedField, newValue) => {
         setEditingField(changedField);
@@ -131,15 +159,15 @@ export function VBucksCalc() {
 
     return (
         <div className="container margin-vert--lg">
-            <h2 className="text--xl font--bold margin-bottom--md">Purchasing credits</h2>
+            <h2 className="text--xl font--bold margin-bottom--md">{labels.sectionTitles.purchasing}</h2>
 
             {fields.map((field, index) => (
                 <React.Fragment key={field}>
                     {field === 'usdEarnedByVRChat' && (
-                        <h2 className="text--xl font--bold margin-bottom--md">Sales and payout</h2>
+                        <h2 className="text--xl font--bold margin-bottom--md">{labels.sectionTitles.sales}</h2>
                     )}
                     {field === 'avatarsSoldAtMinPrice' && (
-                        <h2 className="text--xl font--bold margin-bottom--md">Estimations</h2>
+                        <h2 className="text--xl font--bold margin-bottom--md">{labels.sectionTitles.estimations}</h2>
                     )}
                     <div className="row align-center margin-vert--sm">
                         <div className="col col--3">
@@ -155,7 +183,7 @@ export function VBucksCalc() {
                             &nbsp;&nbsp;{currency[field]}
                         </div>
                         <div className="col col--7">
-                            <label className="text--normal">{fieldLabels[field]}</label>
+                            <label className="text--normal">{labels[field]}</label>
                         </div>
                     </div>
                 </React.Fragment>
