@@ -2,6 +2,37 @@
 title: Animator As Code
 ---
 
+## 1.3.0-alpha.1
+
+This is an alpha, the API may change:
+
+### Add [Modification API](https://docs.hai-vr.dev/docs/products/animator-as-code/functions/modification)
+
+The [Modification API](https://docs.hai-vr.dev/docs/products/animator-as-code/functions/modification) is an upcoming API that is being introduced to 1.3.0.
+
+It is designed specifically for the **creation and distribution of modular prefabs**, where you generate assets on your developer machine
+and distribute those generated assets to your users. Your users will not need to install Animator As Code.
+
+When using the Modification API, you will provide references to existing AnimatorController, AnimationClip, and BlendTree assets.
+These assets will be emptied and their contents replaced with the newly generated content. This is a **destructive process**, conversely intended
+for the creation of **non-destructive prefabs**.
+
+The Modification API can be accessed by calling `(AacFlBase).Modification()`
+
+**This is an alpha, the API may change.**
+
+Documentation: https://docs.hai-vr.dev/docs/products/animator-as-code/functions/modification
+
+### Other
+
+Add the following overloads with a name parameter:
+
+- `AacFlNonInitializedBlendTree NewBlendTree(string name)` (🛠️ Will be added in 1.3.0)<br/>
+  Create a new BlendTree asset with a name. However, the name is only used as a suffix for the asset. The asset is generated into the container.
+
+- `BlendTree NewBlendTreeAsRaw(string name)` (🛠️ Will be added in 1.3.0)<br/>
+  Create a new BlendTree asset with a name and returns a native BlendTree object. However, the name is only used as a suffix for the asset. The asset is generated into the container.💡 You may use NewBlendTree() instead to obtain a fluent interface.
+
 ## 1.2.0
 
 - Add support for third-party asset container management.
