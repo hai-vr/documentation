@@ -5,7 +5,7 @@ title: "Modification API"
 
 # Functions: Modification API
 
-The Modification API is an upcoming API that is being introduced to 1.3.0. It is not currently available for use.
+The Modification API is an upcoming API that is being introduced to 1.3.0. It is currently part of 1.3.0-alpha.1.
 
 It is designed specifically for the **creation and distribution of modular prefabs**, where you generate assets on your developer machine
 and distribute those generated assets to your users. Your users will not need to install Animator As Code.
