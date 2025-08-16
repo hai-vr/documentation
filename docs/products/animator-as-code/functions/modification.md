@@ -46,6 +46,11 @@ graph TD;
 
 ## Modification (AacFlModification)
 
+### Set Dirty
+
+- `void SetDirtyAll()`<br/>
+  Calls `EditorUtility.SetDirty(...)` on every single AnimatorController, AnimationClip, and BlendTree asset instances previously memorized by this AacFlModification instance.
+
 ### Reset
 
 All functions beginning with *Reset* clear the asset.
@@ -66,21 +71,16 @@ All functions beginning with *Reset* clear the asset.
   This BlendTree instance is memorized in the current AacFlModification instance memory.<br/>
   Note: The BlendTree class is editor-only, so they can't be referenced inside scene components or asset objects. If you have a Motion instance that is a BlendTree instance, you should cast it to BlendTree.
 
-## Clear
+### Clear
 
 - `AacFlModification ClearAnimatorController(AnimatorController controllerToReset)`<br/>
   Immediately removes all layers and all parameters from the given AnimatorController.<br/>
   This AnimatorController instance is memorized in the current AacFlModification instance memory.<br/>
   Note: The AnimatorController class is editor-only, so they can't be referenced inside scene components or asset objects. If you have a RuntimeAnimatorController instance, you should cast it to AnimatorController.
 
-## Edit
+### Edit
 
 - `AacFlController EditAnimatorController(AnimatorController controllerToReset)`<br/>
   Returns a AacFlController that will edit the given AnimatorController. This does not reset the AnimatorController.<br/>
   This AnimatorController instance is memorized in the current AacFlModification instance memory.<br/>
   Note: The AnimatorController class is editor-only, so they can't be referenced inside scene components or asset objects. If you have a RuntimeAnimatorController instance, you should cast it to AnimatorController.
-
-### Set Dirty
-
-- `void SetDirtyAll()`<br/>
-  Calls `EditorUtility.SetDirty(...)` on every single AnimatorController, AnimationClip, and BlendTree asset instances previously memorized by this AacFlModification instance.
