@@ -43,6 +43,7 @@ graph TD;
     Base-->|NewClip|Clip:::disabled;
     Base-->|NewBlendTree|BlendTree:::disabled;
     Base-->|NoAnimator|NoAnimator:::focus;
+    Base-->|Modification|modification:::disabled;
     
     classDef disabled fill:#CCC
     classDef roots fill:#FCC
@@ -67,6 +68,7 @@ graph TD;
     BlendTree-->|Direct|BlendTreeDirect;
     
     Base-->|NoAnimator|NoAnimator:::disabled;
+    Base-->|Modification|modification:::disabled;
     
     classDef disabled fill:#CCC
     classDef roots fill:#FCC
@@ -117,7 +119,7 @@ Create a new animator controller with a name. However, the name is only used as 
 Duplicate a new asset into the container and return it. For example, use this to create modified material variants. This asset will be removed the same way as other generated assets.
 
 - `AacFlModification Modification()` (🛠️ Will be added in 1.3.0)<br/>
-  Returns an AacFlModification, [granting you access to the destructive modification API](./modification). You will need to reuse this object throughout.<br/>
+  Returns a new AacFlModification instance, [granting you access to the destructive modification API](./modification). You will need to reuse this instance throughout.<br/>
   
 
 #### Reference VRChat assets
