@@ -31,7 +31,7 @@ graph TD;
     Modification-->|ResetAnimatorController|Controller:::focus;
     Modification-->|ResetClip|Clip:::focus;
     Modification-->|ResetBlendTree|BlendTree:::focus;
-    Modification-->|ClearAnimatorController|Controller:::focus;
+    Modification-->|ClearAnimatorController|Modification:::focus;
     Modification-->|EditAnimatorController|Controller:::focus;
     
     classDef disabled fill:#CCC
