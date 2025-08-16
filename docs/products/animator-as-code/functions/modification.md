@@ -159,6 +159,9 @@ public class Internal_MyBehaviourEditor : Editor
             .WithAnimation(modification.ResetClip(my.animationClipOne).Toggling(my.toggle, true), 1f);
 
         layer.NewState("Blend").WithAnimation(blendTree);
+        
+        modification.SetDirtyAll(); // This calls EditorUtility.SetDirty(...) on every single asset that was passed to the Modification API.
+        AssetDatabase.SaveAssets(); // This actually saves the assets to disk immediately.
     }
 }
 #endif
