@@ -43,7 +43,7 @@ graph TD;
     Base-->|NewClip|Clip:::disabled;
     Base-->|NewBlendTree|BlendTree:::disabled;
     Base-->|NoAnimator|NoAnimator:::focus;
-    Base-->|Modification|modification:::disabled;
+    Base-->|Modification|Modification:::disabled;
     
     classDef disabled fill:#CCC
     classDef roots fill:#FCC
@@ -68,7 +68,7 @@ graph TD;
     BlendTree-->|Direct|BlendTreeDirect;
     
     Base-->|NoAnimator|NoAnimator:::disabled;
-    Base-->|Modification|modification:::disabled;
+    Base-->|Modification|Modification:::disabled;
     
     classDef disabled fill:#CCC
     classDef roots fill:#FCC
