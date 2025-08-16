@@ -104,7 +104,7 @@ Create a new clip with a name. However, the name is only used as a suffix for th
 Create a new BlendTree asset with a name. However, the name is only used as a suffix for the asset. The asset is generated into the container.
 
 - `BlendTree NewBlendTreeAsRaw(string name)` (🛠️ Will be added in 1.3.0)<br/>
-Create a new BlendTree asset with a name and returns a native BlendTree object. However, the name is only used as a suffix for the asset. The asset is generated into the container.💡 You may use NewBlendTree() instead to obtain a fluent interface.
+Create a new BlendTree asset with a name and returns a native BlendTree object. However, the name is only used as a suffix for the asset. The asset is generated into the container. You may use NewBlendTree() instead to obtain a fluent interface.
 
 - `AacFlClip DummyClipLasting(float numberOf, AacFlUnit unit)`<br/>
 Create a new clip which animates a dummy transform for a specific duration specified in an unit (Frames or Seconds).
