@@ -83,3 +83,83 @@ All functions beginning with *Reset* clear the asset.
   Returns a AacFlController that will edit the given AnimatorController. This does not reset the AnimatorController.<br/>
   This AnimatorController instance is memorized in the current AacFlModification instance memory.<br/>
   Note: The AnimatorController class is editor-only, so they can't be referenced inside scene components or asset objects. If you have a RuntimeAnimatorController instance, you should cast it to AnimatorController.
+
+## Example
+
+Here's an example of how to use the Modification API:
+
+```csharp
+using System;
+using UnityEngine;
+
+#if UNITY_EDITOR
+using AnimatorAsCode.V1;
+using UnityEditor;
+using UnityEditor.Animations;
+#endif
+
+public class Internal_MyExampleBehaviour : MonoBehaviour
+{
+    public Transform avatarRootTransform;
+    
+    public RuntimeAnimatorController animatorController;
+    public AnimationClip animationClipZero;
+    public AnimationClip animationClipOne;
+    public Motion blendTree;
+
+    public GameObject toggle;
+}
+
+#if UNITY_EDITOR
+[CustomEditor(typeof(Internal_MyExampleBehaviour))]
+public class Internal_MyBehaviourEditor : Editor
+{
+    public override void OnInspectorGUI()
+    {
+        var my = (Internal_MyExampleBehaviour)target;
+
+        DrawDefaultInspector();
+
+        if (GUILayout.Button("(DEVELOPER ONLY) Generate")) Generate(my);
+        if (GUILayout.Button("(DEVELOPER ONLY) Create a new blend tree asset"))
+        {
+            var bt = new BlendTree();
+            AssetDatabase.CreateAsset(bt, $"Assets/example_{Guid.NewGuid().ToString().Substring(0, 9)}.asset");
+            EditorGUIUtility.PingObject(bt);
+        }
+    }
+
+    private void Generate(Internal_MyExampleBehaviour my)
+    {
+        if (my.blendTree is not BlendTree) throw new ArgumentException("The blendTree inside the component must be a BlendTree instance.");
+        
+        var useWriteDefaults = true;
+        
+        var aac = AacV1.Create(new AacConfiguration
+        {
+            SystemName = "MySystemName",
+            AnimatorRoot = my.avatarRootTransform,
+            DefaultValueRoot = my.avatarRootTransform,
+            DefaultsProvider = new AacDefaultsProvider(useWriteDefaults),
+            
+            // As long as you only use the Modification API, the following are irrelevant:
+            AssetKey = GUID.Generate().ToString(),
+            ContainerMode = AacConfiguration.Container.Never,
+            AssetContainer = null,
+            AssetContainerProvider = null,
+        });
+        var modification = aac.Modification();
+
+        var ctrl = modification.ResetAnimatorController(my.animatorController as AnimatorController);
+        var layer = ctrl.NewLayer("ExampleLayer");
+
+        var blendTree = modification.ResetBlendTree(my.blendTree as BlendTree)
+            .Simple1D(layer.FloatParameter("MyValue"))
+            .WithAnimation(modification.ResetClip(my.animationClipZero).Toggling(my.toggle, false), 0f)
+            .WithAnimation(modification.ResetClip(my.animationClipOne).Toggling(my.toggle, true), 1f);
+
+        layer.NewState("Blend").WithAnimation(blendTree);
+    }
+}
+#endif
+```

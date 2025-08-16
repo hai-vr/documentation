@@ -8,6 +8,9 @@ sidebar_position: 2
 
 After [installing Animator As Code](install.md), there are different ways to start depending on your project.
 
+- Go to the [**Modification API** page](./functions/modification):
+  - if you are building a modular prefab and you want to pre-create animators and animations that will be distributed to other users.
+
 - Follow the [**Non-destructive Avatars**](#non-destructive) section:
   - if you are building a personal VRChat avatar and you want to create animators and animations in a non-destructive workflow (ideal for Modular Avatar, NDMF, and VRCFury users), or
   - if you are building a Unity Editor tool and you intend to redistribute the non-destructive generator code to other users.
@@ -19,6 +22,10 @@ After [installing Animator As Code](install.md), there are different ways to sta
   - if you are building non-VRChat content.
 
 ### Non-destructive
+
+:::warning
+If you are building a modular prefab, and you want to pre-create animators and animations that will be distributed to other users, go to the [**Modification API** page](./functions/modification).
+:::
 
 When creating personal avatars, you are encouraged to use a non-destructive workflow.
 
