@@ -241,6 +241,18 @@ export default {
           { from: '/docs/basis/hvr/toggle', to: '/docs/basis/avatar-customization/toggle' },
             
           { from: '/experimental-vrchat-credits-calculator', to: '/extra/vrchat-credits-calculator' },
+
+          { from: '/redirect/components/PrefabulousAssignUVTile', to: '/docs/products/prefabulous/universal/assign-uv-tile'},
+          { from: '/redirect/components/PrefabulousChangeAvatarScale', to: '/docs/products/prefabulous/universal/change-avatar-scale'},
+          { from: '/redirect/components/PrefabulousConvertBlendshapeConventions', to: '/docs/products/prefabulous/universal/convert-blendshape-conventions'},
+          { from: '/redirect/components/PrefabulousDeleteObjectsAtLateStage', to: '/extra/component-unavailable'},
+          { from: '/redirect/components/PrefabulousDeletePolygons', to: '/docs/products/prefabulous/universal/delete-polygons'},
+          { from: '/redirect/components/PrefabulousEditAllMeshAnchorOverride', to: '/docs/products/prefabulous/universal/edit-all-mesh-anchor-override'},
+          { from: '/redirect/components/PrefabulousEditAllMeshBounds', to: '/docs/products/prefabulous/universal/edit-all-mesh-bounds'},
+          { from: '/redirect/components/PrefabulousGenerateBlendshapesFTE', to: '/docs/products/prefabulous/universal/haixt-generate-blendshapes-for-face-tracking-extensions'},
+          { from: '/redirect/components/PrefabulousGenerateTwistBones', to: '/docs/products/prefabulous/universal/generate-twist-bones'},
+          { from: '/redirect/components/PrefabulousRecalculateNormals', to: '/docs/products/prefabulous/universal/recalculate-normals'},
+          { from: '/redirect/components/PrefabulousReplaceTextures', to: '/docs/products/prefabulous/universal/replace-textures'},
         ],
         // createRedirects(existingPath) {
         //   if (existingPath.includes('/prefabulous')) {
