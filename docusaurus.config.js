@@ -242,6 +242,7 @@ export default {
             
           { from: '/experimental-vrchat-credits-calculator', to: '/extra/vrchat-credits-calculator' },
 
+          // PREFABULOUS NATIVE
           { from: '/redirect/components/PrefabulousAssignUVTile', to: '/docs/products/prefabulous/universal/assign-uv-tile'},
           { from: '/redirect/components/PrefabulousChangeAvatarScale', to: '/docs/products/prefabulous/universal/change-avatar-scale'},
           { from: '/redirect/components/PrefabulousConvertBlendshapeConventions', to: '/docs/products/prefabulous/universal/convert-blendshape-conventions'},
@@ -253,6 +254,22 @@ export default {
           { from: '/redirect/components/PrefabulousGenerateTwistBones', to: '/docs/products/prefabulous/universal/generate-twist-bones'},
           { from: '/redirect/components/PrefabulousRecalculateNormals', to: '/docs/products/prefabulous/universal/recalculate-normals'},
           { from: '/redirect/components/PrefabulousReplaceTextures', to: '/docs/products/prefabulous/universal/replace-textures'},
+
+          // PREFABULOUS for VRCHAT
+          { from: '/redirect/components/PrefabulousAccurateEyeTracking', to: "/docs/products/prefabulous/vrchat/accurate-eye-tracking-transforms" },
+          { from: '/redirect/components/PrefabulousBlankExpressions', to: "/docs/products/prefabulous/vrchat/blank-expressions-menu-and-parameters" },
+          { from: '/redirect/components/PrefabulousBlankFXAnimator', to: "/docs/products/prefabulous/vrchat/blank-fx-animator" },
+          { from: '/redirect/components/PrefabulousBlankGestureAnimator', to: "/docs/products/prefabulous/vrchat/blank-gesture-animator" },
+          { from: '/redirect/components/PrefabulousFaceTrackingExtensions', to: "/docs/products/prefabulous/vrchat/haixt-face-tracking-extensions" },
+          { from: '/redirect/components/PrefabulousImportExpressionParameters', to: "/docs/products/prefabulous/vrchat/import-expression-parameters" },
+          { from: '/redirect/components/PrefabulousLockLocomotionMenuItem', to: "/docs/products/prefabulous/vrchat/lock-locomotion-menu-item" },
+          { from: '/redirect/components/PrefabulousMassBlendshapeSync', to: "/docs/products/prefabulous/vrchat/mass-blendshape-sync" },
+          { from: '/redirect/components/PrefabulousReplaceActionAnimator', to: "/docs/products/prefabulous/vrchat/replace-action-animator" },
+          { from: '/redirect/components/PrefabulousReplaceLocomotionAnimator', to: "/docs/products/prefabulous/vrchat/replace-locomotion-animator" },
+          { from: '/redirect/components/PrefabulousToeTracking', to: "/extra/component-unavailable" },
+            
+          // MISC
+          { from: '/redirect/components/SkinnedMeshConstraintBuilder', to: "/docs/products/constraint-tools/skinned-mesh-constraint" },
         ],
         // createRedirects(existingPath) {
         //   if (existingPath.includes('/prefabulous')) {
