@@ -4,6 +4,12 @@ title: Lightbox Viewer
 
 import {HaiVideo} from "/src/components/HaiVideo";
 
+## 2.5.0-alpha.2
+
+Attempt an optimization that removes the need for copying the texture from the GPU to the CPU.
+
+This could also improve support for Metal on macOS, as the change introduced in 2.5.0-alpha.1 may have been ineffective.
+
 ## 2.5.0-alpha.1
 
 Try to support systems without Async GPU readback:
