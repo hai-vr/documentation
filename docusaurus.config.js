@@ -241,19 +241,23 @@ export default {
           { from: '/docs/basis/hvr/toggle', to: '/docs/basis/avatar-customization/toggle' },
             
           { from: '/experimental-vrchat-credits-calculator', to: '/extra/vrchat-credits-calculator' },
+            
+          // The following /redirect/components/ URLs are referenced inside the Unity inspector HelpURL.
+          // They all go to a URL containing their MonoBehaviour class name (without the namespace).
+          // The redirects below make it possible to change the destination page without having to update the package itself.
 
           // PREFABULOUS NATIVE
-          { from: '/redirect/components/PrefabulousAssignUVTile', to: '/docs/products/prefabulous/universal/assign-uv-tile'},
-          { from: '/redirect/components/PrefabulousChangeAvatarScale', to: '/docs/products/prefabulous/universal/change-avatar-scale'},
-          { from: '/redirect/components/PrefabulousConvertBlendshapeConventions', to: '/docs/products/prefabulous/universal/convert-blendshape-conventions'},
-          { from: '/redirect/components/PrefabulousDeleteObjectsAtLateStage', to: '/extra/component-unavailable'},
-          { from: '/redirect/components/PrefabulousDeletePolygons', to: '/docs/products/prefabulous/universal/delete-polygons'},
-          { from: '/redirect/components/PrefabulousEditAllMeshAnchorOverride', to: '/docs/products/prefabulous/universal/edit-all-mesh-anchor-override'},
-          { from: '/redirect/components/PrefabulousEditAllMeshBounds', to: '/docs/products/prefabulous/universal/edit-all-mesh-bounds'},
-          { from: '/redirect/components/PrefabulousGenerateBlendshapesFTE', to: '/docs/products/prefabulous/universal/haixt-generate-blendshapes-for-face-tracking-extensions'},
-          { from: '/redirect/components/PrefabulousGenerateTwistBones', to: '/docs/products/prefabulous/universal/generate-twist-bones'},
-          { from: '/redirect/components/PrefabulousRecalculateNormals', to: '/docs/products/prefabulous/universal/recalculate-normals'},
-          { from: '/redirect/components/PrefabulousReplaceTextures', to: '/docs/products/prefabulous/universal/replace-textures'},
+          { from: '/redirect/components/PrefabulousAssignUVTile', to: '/docs/products/prefabulous/universal/assign-uv-tile' },
+          { from: '/redirect/components/PrefabulousChangeAvatarScale', to: '/docs/products/prefabulous/universal/change-avatar-scale' },
+          { from: '/redirect/components/PrefabulousConvertBlendshapeConventions', to: '/docs/products/prefabulous/universal/convert-blendshape-conventions' },
+          { from: '/redirect/components/PrefabulousDeleteObjectsAtLateStage', to: '/extra/component-unavailable' },
+          { from: '/redirect/components/PrefabulousDeletePolygons', to: '/docs/products/prefabulous/universal/delete-polygons' },
+          { from: '/redirect/components/PrefabulousEditAllMeshAnchorOverride', to: '/docs/products/prefabulous/universal/edit-all-mesh-anchor-override' },
+          { from: '/redirect/components/PrefabulousEditAllMeshBounds', to: '/docs/products/prefabulous/universal/edit-all-mesh-bounds' },
+          { from: '/redirect/components/PrefabulousGenerateBlendshapesFTE', to: '/docs/products/prefabulous/universal/haixt-generate-blendshapes-for-face-tracking-extensions' },
+          { from: '/redirect/components/PrefabulousGenerateTwistBones', to: '/docs/products/prefabulous/universal/generate-twist-bones' },
+          { from: '/redirect/components/PrefabulousRecalculateNormals', to: '/docs/products/prefabulous/universal/recalculate-normals' },
+          { from: '/redirect/components/PrefabulousReplaceTextures', to: '/docs/products/prefabulous/universal/replace-textures' },
 
           // PREFABULOUS for VRCHAT
           { from: '/redirect/components/PrefabulousAccurateEyeTracking', to: "/docs/products/prefabulous/vrchat/accurate-eye-tracking-transforms" },
@@ -268,8 +272,31 @@ export default {
           { from: '/redirect/components/PrefabulousReplaceLocomotionAnimator', to: "/docs/products/prefabulous/vrchat/replace-locomotion-animator" },
           { from: '/redirect/components/PrefabulousToeTracking', to: "/extra/component-unavailable" },
             
+          // PREFABULOUS for APPS
+          { from: '/redirect/components/PrefabulousConvertVRCConstraintsToUnityConstraints', to: '/docs/products/prefabulous/conversions/convert-vrc-constraints-to-unity-constraints' },
+          { from: '/redirect/components/PrefabulousAddARKitToBlendShapeAvatar', to: '/docs/products/prefabulous/vrm/add-arkit-to-blendshapeavatar' },
+            
+          // STARMESH
+          { from: '/redirect/components/StarmeshOperatorCompressiveDeform', to: '/docs/products/starmesh/operators/compressive-deform' },
+          { from: '/redirect/components/StarmeshOperatorEditBoneTransform', to: '/extra/component-unavailable' },
+          { from: '/redirect/components/StarmeshOperatorPaintNewBone', to: '/docs/products/starmesh/operators/paint-new-bone' },
+          { from: '/redirect/components/StarmeshOperatorPaintToes', to: '/extra/component-unavailable' },
+          { from: '/redirect/components/StarmeshOperatorRippleWave', to: '/docs/products/starmesh/operators/ripple-wave' },
+          { from: '/redirect/components/StarmeshOperatorTRS', to: '/docs/products/starmesh/operators/translate-rotate-scale' },
+          { from: '/redirect/components/StarmeshOperatorTransferBlendshape', to: '/docs/products/starmesh/operators/transfer-blendshape' },
+          { from: '/redirect/components/StarmeshSelectBlendshapes', to: '/docs/products/starmesh/selectors#select-blendshapes' },
+          { from: '/redirect/components/StarmeshSelectBones', to: '/docs/products/starmesh/selectors#select-bones' },
+          { from: '/redirect/components/StarmeshSelectConnectedPolygons', to: '/docs/products/starmesh/selectors#select-connected-polygons' },
+          { from: '/redirect/components/StarmeshSelectLineRadius', to: '/docs/products/starmesh/selectors#select-line-radius' },
+          { from: '/redirect/components/StarmeshSelectMeshes', to: '/docs/products/starmesh/selectors#select-meshes' },
+          { from: '/redirect/components/StarmeshSelectPointRadius', to: '/docs/products/starmesh/selectors#select-point-radius' },
+          { from: '/redirect/components/StarmeshAvatar', to: '/docs/products/starmesh/reference' },
+          { from: '/redirect/components/StarmeshInternalRecalculateNormals', to: '/extra/component-unavailable' },
+          { from: '/redirect/components/StarmeshOriginalMeshData', to: '/docs/products/starmesh/reference' },
+            
           // MISC
           { from: '/redirect/components/SkinnedMeshConstraintBuilder', to: "/docs/products/constraint-tools/skinned-mesh-constraint" },
+          { from: '/redirect/components/HaiFaceTraShapeCreator', to: '/docs/products/facetra-shape-creator/new-avatar' },
         ],
         // createRedirects(existingPath) {
         //   if (existingPath.includes('/prefabulous')) {
