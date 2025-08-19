@@ -2,6 +2,10 @@ import {HaiVideo} from "/src/components/HaiVideo";
 
 # Constraint Tools
 
+## 1.1.1
+
+The Skinned Mesh Constraint Builder component now has a clickable help URL in the inspector.
+
 ## 1.1.0
 
 ### ☀️ New menu option: [Activate with Skinned Offsets](/docs/products/constraint-tools/activate-with-skinned-offsets)

@@ -4,6 +4,14 @@ title: Prefabulous
 
 import {HaiVideo} from "/src/components/HaiVideo";
 
+## 2.2.0-beta.1
+
+- All Prefabulous Universal components now have a clickable help URL in the inspector.
+- If NDMF 1.8 is installed:
+  - Add support for Modular Avatar for Resonite.
+  - Generate Twist Bones will now generate Unity Constraints instead of VRC Constraints when targeting a non-VRChat platform.
+  - Add support for building for other platforms than VRChat and Resonite.
+
 ## 2.2.0-alpha.0
 
 Support [Modular Avatar for Resonite](https://github.com/bdunderscore/modular-avatar-resonite):

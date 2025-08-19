@@ -2,6 +2,10 @@
 title: Prefabulous for VRChat
 ---
 
+## 2.2.1
+
+- All Prefabulous for VRChat components now have a clickable help URL in the inspector.
+
 ## 2.2.0
 
 - Now requires Animator As Code 1.2.0 or above, in order to use the asset container provider API.
