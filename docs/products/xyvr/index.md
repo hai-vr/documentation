@@ -5,6 +5,24 @@ unlisted: true
 
 *This page is a placeholder for a future free product called XYVR. Please check back another time.*
 
+## Search and show old names
+
+When a user changes their username, it can be confusing to find them.
+
+You can search for previously known usernames using `alias:` (example: `alias:aoi` can find users who used to have `aoi` in their name).
+
+Having `alias:` in the search field will show all past known usernames in the search results.
+
+## Show bios
+
+By default, bios are not shown. Type `bio:` in the search field to show bios.
+
+You can also search in bios using `bio:` (example: `bio:creator` finds bios that contain the word `creator`).
+
+## Search in links
+
+You can also search in links using `links:` (example: `link:bsky` finds bios that contain the word `bsky`).
+
 ## Grouping accounts of other users
 
 **XYVR** fully embraces the use of multiple accounts, especially across different social VR platforms.
@@ -13,7 +31,7 @@ You should group the accounts belonging to the same user.
 
 ### Multiple accounts
 
-If one of your contacts has multiple accounts across different social VR app, you can group them.
+If one of your contacts has multiple accounts across different social VR apps, you can group them.
 
 Users with multiple accounts can be searched using `accounts:>1`
 
