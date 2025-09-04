@@ -9,7 +9,7 @@ In a nutshell:
 - If you check the "Stay logged in" checkbox, we store your session cookies and tokens in an encrypted file in `%APPDATA%/XYVR/.DO_NOT_SHARE__session-cookies.encrypted`
 - We store your user ID and real username in `%APPDATA%/XYVR/connectors.json`
 - We store your address book in `%APPDATA%/XYVR/individuals.json`
-- We store API requests and responses in `%APPDATA%/XYVR/response-collection.jsonl`
+- We store non-login API requests and responses in `%APPDATA%/XYVR/response-collection.jsonl`
 
 HTTP requests:
 - Requests to the VRChat API are done using the url `https://api.vrchat.cloud/api/1` at the rate of one request per second on average.
@@ -34,7 +34,7 @@ When you exit the XYVR application, it will do the following:
 
 Requests to the VRChat API are done using the url `https://api.vrchat.cloud/api/1`
 
-When you use connect to your VRChat account using the XYVR application, it will do the following:
+When you connect to your VRChat account using the XYVR application, it will do the following:
 - Send an HTTPS request to log in to your VRChat account (https://vrchat.community/openapi/get-current-user) using your email/username and password.
   - We will not save your email/username and password into any persistent storage.
 - Send your 2FA code to your VRChat account (https://vrchat.community/openapi/verify2fa and https://vrchat.community/openapi/verify2faemail-code).
@@ -56,7 +56,7 @@ the registry key containing the encryption key will not be included.
 
 Requests to the Resonite API are done using the url `https://api.resonite.com/`
 
-When you use connect to your Resonite account using the XYVR application, it will do the following:
+When you connect to your Resonite account using the XYVR application, it will do the following:
 - Create a [Resonite UID](https://wiki.resonite.com/API#GET_/users/{userId}:~:text=based%20on%20information%20about%20the%20hardware%20this%20request%20was%20sent%20from) and store it in `%APPDATA%/XYVR/resonite.uid` if it does not exist already.
 - Send an HTTPS request to log in to your Resonite account (https://wiki.resonite.com/API#Creating_a_token) using your username and password with this UID.
 - Upon successful login:

@@ -34,3 +34,6 @@ The number of contacts can be different for any of the following reasons:
 - You had connected multiple accounts that share some contacts with each other.
 - One or more of your connected accounts is set to offline mode in the **Connections** view and is not getting updates.
 - When the address book is in *Contacts & Notes* mode, non-contacts who have notes are also shown.
+- There is a possible flaw when using the VRChat API in that offline friends and online friends are obtained separately.
+  If a friend not in the address book goes online or offline exactly during the first data collection, it may be missed the first time
+  that data collection is performed.
