@@ -26,4 +26,4 @@ view your contacts as one single address book.
 - There are no requests to any other server.
 - There is no telemetry, no analytics, and no cloud storage.
 
-For more details, please refer to the following page: [Privacy and data considerations](./privacy)
+For more details, please refer to the following page: [Privacy and data considerations](./xyvr/privacy)
