@@ -1,6 +1,8 @@
-# Search
+---
+sidebar_position: 90
+---
 
-*This page is a placeholder for a future free product called XYVR. Please check back another time.*
+# Search
 
 ## Search and show old names
 
@@ -22,22 +24,13 @@ You can also search in links using `links:` (example: `link:misskey` finds links
 
 ## All commands
 
-`bio:` Display and search in bio (example: `bio:creator` finds bios that contain the word `creator`).
-
-`links:` Search in links (example: `link:misskey` finds links that contain the word `misskey`).
-
-`alias:` Display and search in previously known usernames (example: `alias:aoi` can find users who used to have `aoi` in their name)
-
-`accounts:>1 ` Finds users who have more than one account
-
-`has:alt ` Finds users who have more than one non-bot account on the same app
-
-`app:resonite` Finds users who have a Resonite account.
-
-`app:vrchat` Finds users who have a VRChat account.
-
-`app:cluster` Finds users who have a Cluster account.
-
-`app:chilloutvr` Finds users who have a ChilloutVR account.
-
-`app:resonite app:vrchat` Finds Resonite account owners who also have a VRChat account.
+- `bio:` Display and search in bio (example: `bio:creator` finds bios that contain the word `creator`).
+- `links:` Search in links (example: `link:misskey` finds links that contain the word `misskey`).
+- `alias:` Display and search in previously known usernames (example: `alias:aoi` can find users who used to have `aoi` in their name)
+- `accounts:>1` Finds users who have more than one account
+- `has:alt` Finds users who have more than one non-bot account on the same app
+- `app:resonite` Finds users who have a Resonite account.
+- `app:vrchat` Finds users who have a VRChat account.
+- `app:cluster` Finds users who have a Cluster account.
+- `app:chilloutvr` Finds users who have a ChilloutVR account.
+- `app:resonite app:vrchat` Finds Resonite account owners who also have a VRChat account.

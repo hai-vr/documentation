@@ -1,3 +1,7 @@
+---
+sidebar_position: 30
+---
+
 # Multi-accounts
 
 *XYVR* fully embraces the use of multiple accounts, especially across different social VR platforms.

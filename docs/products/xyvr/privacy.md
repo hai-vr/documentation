@@ -1,5 +1,6 @@
 ---
 title: Privacy
+sidebar_position: 100
 ---
 
 # Privacy and Data considerations
