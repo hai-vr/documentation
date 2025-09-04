@@ -1,6 +1,3 @@
----
-unlisted: true
----
 # XYVR
 
 *This page is a placeholder for a future free product called XYVR. Please check back another time.*
@@ -14,6 +11,19 @@ You will see a lot of entries like this, as getting the links and bio of an acco
 than just getting your list of friends.
 
 ![ui-webview_vIxsUGfGbg.png](img/ui-webview_vIxsUGfGbg.png)
+
+## Connecting from multiple accounts
+
+Connect to multiple of your accounts at the same time in the **Connections** view.
+
+![ui-webview_WNIsM0gXhO.png](img/ui-webview_WNIsM0gXhO.png)
+
+You can add your accounts from different social VR apps, but you can also add multiple of your accounts from the same
+social VR app if you have alt accounts or bot accounts.
+
+If your accounts have different notes attached to someone else's account, we will show all of them.
+
+![ui-webview_rbJ79Dtlnl.png](img/ui-webview_rbJ79Dtlnl.png)
 
 ## Why is the number of contacts different from what I was expecting?
 

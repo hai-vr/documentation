@@ -1,8 +1,6 @@
----
-unlisted: true
----
-
 # Search
+
+*This page is a placeholder for a future free product called XYVR. Please check back another time.*
 
 ## Search and show old names
 
