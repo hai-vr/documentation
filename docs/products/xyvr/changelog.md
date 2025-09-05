@@ -2,6 +2,8 @@
 sidebar_position: 200
 ---
 
+# Changelog
+
 ## 0.0.1-alpha.2
 
 - Fix VRChat login is now possible with two-factor TOTP (authenticator instead of email).
