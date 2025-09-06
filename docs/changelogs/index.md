@@ -17,7 +17,7 @@ If some products have no changelogs listed on this page, it means they haven't b
 | [Double Hip Tracker](./changelogs/double-hip-tracker) ⭐                                                     | 1.3.0         | 2024-08     | * |
 | **Viewers**                                                                                                 |               |             |   |
 | [Lightbox Viewer](./changelogs/lightbox-viewer)                                                             | 2.5.0-alpha.2 | **2025-08** |   |
-| [Lightbox Viewer URP](./changelogs/lightbox-viewer-urp)                                                     | 1.0.0-alpha.5 | **2025-07** |   |
+| [Lightbox Viewer URP](./changelogs/lightbox-viewer-urp)                                                     | 1.0.0-alpha.5 | 2025-07     |   |
 | [Animation Viewer](./changelogs/animation-viewer)                                                           | 2.1.0         | 2024-08     |   |
 | [Blendshape Viewer](./changelogs/blendshape-viewer)                                                         | 2.1.2         | 2024-08     |   |
 | [Property Finder](./changelogs/property-finder)                                                             | 2.0.4         | 2024-08     |   |
@@ -36,12 +36,12 @@ If some products have no changelogs listed on this page, it means they haven't b
 | [Visual Expressions Editor](./changelogs/visual-expressions-editor)                                         | 2.0.3         | 2023-11     |   |
 | [Vixen](./changelogs/vixen) ⭐                                                                               | 1.3.0         | 2024-08     |   |
 | **APIs**                                                                                                    |               |             |   |
-| [Animator As Code](./changelogs/animator-as-code)                                                           | 1.2.0         | **2025-06** |   |
-| [Animator As Code - VRChat](./changelogs/animator-as-code-vrchat)                                           | 1.1.2         | **2025-06** |   |
-| [Animator As Code - VRChat Destructive Workflow](./changelogs/animator-as-code-vrchat-destructive-workflow) | 1.1.2         | **2025-06** |   |
-| [Animator As Code - Modular Avatar functions](./changelogs/animator-as-code-modular-avatar)                 | 1.1.2         | **2025-06** |   |
+| [Animator As Code](./changelogs/animator-as-code)                                                           | 1.2.0         | 2025-06     |   |
+| [Animator As Code - VRChat](./changelogs/animator-as-code-vrchat)                                           | 1.1.2         | 2025-06     |   |
+| [Animator As Code - VRChat Destructive Workflow](./changelogs/animator-as-code-vrchat-destructive-workflow) | 1.1.2         | 2025-06     |   |
+| [Animator As Code - Modular Avatar functions](./changelogs/animator-as-code-modular-avatar)                 | 1.1.2         | 2025-06     |   |
 | (MeshLib ⭐)                                                                                                 | 1.6.0         | 2024-11     |   |
 | **Patchers**                                                                                                |               |             |   |           
 | [Auto-reset OSC config](./changelogs/auto-reset-osc-config)                                                 | 1.1.5         | 2024-08     |   |       
-| [Convert ComboGesture to FaceEmo](./changelogs/cge-to-faceemo)                                              | 0.2.0         | 2024-02     |   |
+| [Convert ComboGesture to FaceEmo](./changelogs/cge-to-faceemo)                                              | 0.3.0-beta.1  | **2024-09** |   |
 
