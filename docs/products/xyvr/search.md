@@ -36,6 +36,6 @@ You can also search in links using `links:` (example: `link:misskey` finds links
 - `app:resonite app:vrchat` Finds Resonite account owners who also have a VRChat account.
 - `on:` Finds users who are currently online on any app.
 - `on:resonite` Finds users who are currently online on Resonite.
-- `on:vrchat` Finds users who are currently online on VRChat.
+- `on:vrchat` Finds users who are currently online on VRChat. "Online on website" is considered to be offline.
 - `on:cluster` Finds users who are currently online on Cluster.
 - `on:chilloutvr` Finds users who are currently online on ChilloutVR.
