@@ -28,12 +28,13 @@ You can also search in links using `links:` (example: `link:misskey` finds links
 - `links:` Search in links (example: `link:misskey` finds links that contain the word `misskey`).
 - `alias:` Display and search in previously known usernames (example: `alias:aoi` can find users who used to have `aoi` in their name)
 - `accounts:>1` Finds users who have more than one account
-- `has:alt` Finds users who have more than one non-bot account on the same app
+- `has:alt` Finds users who have more than one non-bot account on the same app.
 - `app:resonite` Finds users who have a Resonite account.
 - `app:vrchat` Finds users who have a VRChat account.
 - `app:cluster` Finds users who have a Cluster account.
 - `app:chilloutvr` Finds users who have a ChilloutVR account.
 - `app:resonite app:vrchat` Finds Resonite account owners who also have a VRChat account.
+- `on:` Finds users who are currently online on any app.
 - `on:resonite` Finds users who are currently online on Resonite.
 - `on:vrchat` Finds users who are currently online on VRChat.
 - `on:cluster` Finds users who are currently online on Cluster.
