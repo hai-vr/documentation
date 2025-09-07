@@ -14,6 +14,7 @@ In a nutshell:
 
 HTTP requests and live updates:
 - Requests to the VRChat API are done using the url `https://api.vrchat.cloud/api/1` at the rate of one request per second on average.
+  - We also use the websocket URL: `wss://pipeline.vrchat.cloud/`
 - Requests to the Resonite API are done using the url `https://api.resonite.com/` at the rate of two requests per second on average,
   and communication with the SignalR protocol for live updates (https://wiki.resonite.com/API#SignalR).
 - **There are no requests to any other external services.**
@@ -97,6 +98,11 @@ When you request a data collection, it will do the following:
 Live updates with the Resonite API are done using the url `https://api.resonite.com/hub` using the SignalR protocol (https://wiki.resonite.com/API#SignalR).
 - Live updates may result in additional Get userId calls (https://wiki.resonite.com/API#GET_/users/{userId}).
 - Live updates may result in additional Get sessionId calls (https://wiki.resonite.com/API#GET_/sessions/{sessionId}).
+
+Live updates with the VRChat API are done using the url `wss://pipeline.vrchat.cloud/` using the WebSocket protocol (https://vrchat.community/websocket).
+- Live updates will result in additional Get online friends (https://vrchat.community/openapi/get-friends) to find contacts.
+- Live updates may result in additional Get your user calls (https://vrchat.community/openapi/get-current-user).
+- Live updates may result in additional Get user calls (https://vrchat.community/openapi/get-user).
 
 ## UI interaction
 

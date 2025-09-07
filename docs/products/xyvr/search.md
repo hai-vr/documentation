@@ -34,3 +34,7 @@ You can also search in links using `links:` (example: `link:misskey` finds links
 - `app:cluster` Finds users who have a Cluster account.
 - `app:chilloutvr` Finds users who have a ChilloutVR account.
 - `app:resonite app:vrchat` Finds Resonite account owners who also have a VRChat account.
+- `on:resonite` Finds users who are currently online on Resonite.
+- `on:vrchat` Finds users who are currently online on VRChat.
+- `on:cluster` Finds users who are currently online on Cluster.
+- `on:chilloutvr` Finds users who are currently online on ChilloutVR.
