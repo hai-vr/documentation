@@ -39,3 +39,15 @@ You can also search in links using `links:` (example: `link:misskey` finds links
 - `on:vrchat` Finds users who are currently online on VRChat. "Online on website" is considered to be offline.
 - `on:cluster` Finds users who are currently online on Cluster.
 - `on:chilloutvr` Finds users who are currently online on ChilloutVR.
+- `:confusables` Converts some cyrillic and special characters visually similar to latin when searching for names.
+
+## `:confusables`
+
+Some users may have names that contain characters that are used in a misleading manner to look like Latin characters.
+
+For example, in the following example name `Kаmeliаnа`, the `а` are actually the [Cyrillic letter A](https://en.wikipedia.org/wiki/A_(Cyrillic)),
+not the Latin letter A.
+
+You can try the special command `:confusables` to attempt a search that replaces those characters with their equivalent Latin characters.
+
+Searching for `:confusables kameliana` will find that user.
