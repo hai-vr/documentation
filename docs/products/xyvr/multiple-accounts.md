@@ -12,7 +12,9 @@ You should group accounts belonging to the same user.
 
 If one of your contacts has multiple accounts across different social VR apps, you should group them.
 
-In the other account, click the ⋯ button and select **Merge with...**, then select the first account.
+In the other account, click the ⋯ button and select **Merge account...**.
+
+Then, in the main account, click the ⋯ button and select **Merge ... into this**.
 
 Users with multiple accounts can be searched using `accounts:>1`
 
@@ -20,7 +22,7 @@ Users with multiple accounts can be searched using `accounts:>1`
 
 ### Alt accounts
 
-If a user has an alt account on the same social VR app, you can also associate it with that user.
+If a user has an alt account on the same social VR app, you can also associate it with that user, using the same procedure as above.
 
 Users with alt accounts can be searched using `has:alt`
 

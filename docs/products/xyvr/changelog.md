@@ -4,6 +4,33 @@ sidebar_position: 200
 
 # Changelog
 
+## 0.0.1-alpha.4
+
+Features:
+- Add a button in the dropdown to unmerge all accounts from a user.
+- Add `:confusables` search term, which will consider some Cyrillic characters equivalent to visually similar Latin characters.
+- In compact mode, show all the user's accounts when the search term refers to matches pertaining to different accounts.
+- When recent notes are retrieved, the note is now immediately written to the storage rather than requiring a data collection pass.
+
+Fixes:
+- In compact mode, keep showing the user's accounts even when `has:alt` or `accounts:>1` is used.
+- Auto-reconnect to the VRChat WebSocket when the server resets the connection.
+- Auto-reconnect to the Resonite SignalR when the server resets the connection.
+- If "429 Too Many Requests" is received from the VRChat API, wait for 70 seconds before retrying.
+- Resonite user identifiers can now be searched.
+
+Changes:
+- Pressing CTRL-SHIFT-D will switch into debug mode. Debug mode redacts all personal information and links from the UI.
+- Add Resonite icon.
+- GitHub workflow now creates the ZIP file as XYVR, not xyvr.
+- In the logs, print the version number.
+- In the logs, tag the reason why a live update is triggered.
+
+Internal changes:
+- The code now uses TypeScript in place of JavaScript.
+- `package.json` now uses exact version numbers.
+- Split data retrieval structures from data storage structures.
+
 ## 0.0.1-alpha.3
 
 Features:
