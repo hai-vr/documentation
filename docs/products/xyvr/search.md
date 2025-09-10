@@ -27,6 +27,7 @@ You can also search in links using `links:` (example: `link:misskey` finds links
 - `bio:` Display and search in bio (example: `bio:creator` finds bios that contain the word `creator`).
 - `links:` Search in links (example: `link:misskey` finds links that contain the word `misskey`).
 - `alias:` Display and search in previously known usernames (example: `alias:aoi` can find users who used to have `aoi` in their name)
+- `session:` Search for the name of an active session (example: `session:mmc` can find sessions of a world called `mmc`)
 - `accounts:>1` Finds users who have more than one account
 - `has:alt` Finds users who have more than one non-bot account on the same app.
 - `app:resonite` Finds users who have a Resonite account.
