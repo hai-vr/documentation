@@ -86,13 +86,13 @@ When you request a data collection, it will do the following:
   - Get offline friends (https://vrchat.community/openapi/get-friends) to find contacts.
   - Get recently updated notes (https://vrchat.community/openapi/get-user-notes) to find possible non-contacts who have notes on them.
   - Get user by id (https://vrchat.community/openapi/get-user).
-  - Get world (https://vrchat.community/openapi/get-world) to find the world name.
 - Perform various requests to the Resonite API at the rate of two requests per second on average:
   - Requests to the Resonite API are done using the url `https://api.resonite.com/`
   - Get contacts (https://wiki.resonite.com/API#GET_/users/{userId}/contacts) to find contacts.
   - Get user by userId (https://wiki.resonite.com/API#GET_/users/{userId}).
 - Write the address book data into `%APPDATA%/XYVR/individuals.json`.
 - Write request and response data into `%APPDATA%/XYVR/response-collection.jsonl`.
+- Write a world cache in `%APPDATA%/XYVR/.cache_world-names.json` so that we don't make repetitive requests to the VRChat API when the app restarts.
 
 ## Live updates
 
@@ -104,6 +104,7 @@ Live updates with the VRChat API are done using the url `wss://pipeline.vrchat.c
 - Live updates will result in additional Get online friends (https://vrchat.community/openapi/get-friends) to find contacts.
 - Live updates may result in additional Get your user calls (https://vrchat.community/openapi/get-current-user).
 - Live updates may result in additional Get user calls (https://vrchat.community/openapi/get-user).
+- Live updates may result in Get world (https://vrchat.community/openapi/get-world) to find the world name.
 
 ## UI interaction
 
