@@ -17,7 +17,7 @@ view your contacts as one single address book.
 
 ### Privacy and data considerations
 
-- **We do not store your email and password.**
+- **This application does not store your email and password.**
 - We locally store a cookie file and session tokens upon login, if requested.
 - We locally store your address book in the `%APPDATA%/XYVR/` folder.
 - We only perform requests to the following URLs:

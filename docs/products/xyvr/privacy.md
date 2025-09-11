@@ -6,7 +6,7 @@ sidebar_position: 100
 # Privacy and Data considerations
 
 In a nutshell:
-- **We do not store your email and password.**
+- **This application does not store your email and password.**
 - If you check the "Stay logged in" checkbox, we store your session cookies and tokens in an encrypted file in `%APPDATA%/XYVR/.DO_NOT_SHARE__session-cookies.encrypted`
 - We store your user ID and real username in `%APPDATA%/XYVR/connectors.json`
 - We store your address book in `%APPDATA%/XYVR/individuals.json`
