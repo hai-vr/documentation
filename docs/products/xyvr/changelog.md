@@ -4,6 +4,17 @@ sidebar_position: 200
 
 # Changelog
 
+## 0.0.1-alpha.5
+
+Features:
+- Show the name of the current Resonite session and VRChat world that an account is in.
+- Add `session:` to search by session name.
+    - The search field now supports quotes to group worlds, such as `session:"h p"` to search for session names that contain `h p` anywhere in it.
+- Show online status icons differently when an account is not in a visible world, and sort them below.
+
+Internal changes:
+- Pressing CTRL-SHIFT-E will now redact everything except world and session names.
+
 ## 0.0.1-alpha.4
 
 Features:
