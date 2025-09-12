@@ -4,6 +4,21 @@ sidebar_position: 200
 
 # Changelog
 
+## 0.0.1-alpha.6
+
+Fixes:
+- Data collection no longer causes notes to be wiped and then rewritten.
+
+Changes:
+- The cached data for world names are invalidated after an hour, applicable once XYVR restarts. World data will be requested again only if needed.
+- Change how we decide that someone is in a private world, rather than an unknown state.
+- Change the terminology from "We" to "This application" in the privacy message.
+
+Internal changes:
+- Live monitoring updates and account updates are only sent to the UI when the data has actually changed, which avoids unnecessary data model updates on the React side.
+- Most of the main data structures are now immutable.
+- Prepare initialization code and project architecture to be more flexible if we want to support other social VR apps.
+
 ## 0.0.1-alpha.5
 
 Features:
