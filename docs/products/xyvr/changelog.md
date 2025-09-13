@@ -4,6 +4,15 @@ sidebar_position: 200
 
 # Changelog
 
+## 0.0.1-alpha.7
+
+Features:
+- Sessions now show up above contacts, where online contacts participating in the session are grouped together.
+
+Changes:
+- XYVR is no longer allowed to be run twice to prevent the application overwriting each other's data.
+- During data collection, the application will now detect if [listing online and offline VRChat friends](https://vrchat.community/openapi/get-friends) has failed to return all friends and will now try to recover from this inconsistency.
+
 ## 0.0.1-alpha.6
 
 Fixes:
