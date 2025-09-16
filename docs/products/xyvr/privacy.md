@@ -13,10 +13,12 @@ In a nutshell:
 - We store non-login API requests and responses in `%APPDATA%/XYVR/response-collection.jsonl`
 
 HTTP requests and live updates:
-- Requests to the VRChat API are done using the url `https://api.vrchat.cloud/api/1` at the rate of one request per second on average.
+- Requests to the VRChat API are done using the url `https://api.vrchat.cloud/api/1` at the rate of one request per second on average,
+  except for live sessions (to fetch the player count of an instance) which are at four requests per second.
   - We also use the websocket URL: `wss://pipeline.vrchat.cloud/`
 - Requests to the Resonite API are done using the url `https://api.resonite.com/` at the rate of two requests per second on average,
   and communication with the SignalR protocol for live updates (https://wiki.resonite.com/API#SignalR).
+- Requests to the ChilloutVR API are done using the url `https://api.abinteractive.net/1`
 - **There are no requests to any other external services.**
   - There is no telemetry, analytics, or tracking of any kind.
 
@@ -75,6 +77,19 @@ The encryption key is stored in the Windows Registry separately from the session
 the registry key containing the encryption key will not be included.
 :::
 
+## ChilloutVR login
+
+Requests to the ChilloutVR API are done using the url `https://api.abinteractive.net/1`
+
+When you connect to your ChilloutVR account using the XYVR application, it will do the following:
+- Send an HTTPS request to log in to your ChilloutVR account using your email and password.
+    - We will not save your email/username and password into any persistent storage.
+- Upon successful login:
+    - The application forgets your typed email and password.
+    - If the "Stay logged in" checkbox is checked:
+        - Store the access token into an encrypted file in `%APPDATA%/XYVR/.DO_NOT_SHARE__session-cookies.encrypted`
+    - Store the user ID and username of your account information in `%APPDATA%/XYVR/connectors.json`
+
 ## Data collection
 
 When you request a data collection, it will do the following:
@@ -90,6 +105,7 @@ When you request a data collection, it will do the following:
   - Requests to the Resonite API are done using the url `https://api.resonite.com/`
   - Get contacts (https://wiki.resonite.com/API#GET_/users/{userId}/contacts) to find contacts.
   - Get user by userId (https://wiki.resonite.com/API#GET_/users/{userId}).
+- Data collection with the ChilloutVR API is not implemented yet. 
 - Write the address book data into `%APPDATA%/XYVR/individuals.json`.
 - Write request and response data into `%APPDATA%/XYVR/response-collection.jsonl`.
 - Write a world cache in `%APPDATA%/XYVR/.cache_world-names.json` so that we don't make repetitive requests to the VRChat API when the app restarts.
@@ -105,6 +121,8 @@ Live updates with the VRChat API are done using the url `wss://pipeline.vrchat.c
 - Live updates may result in additional Get your user calls (https://vrchat.community/openapi/get-current-user).
 - Live updates may result in additional Get user calls (https://vrchat.community/openapi/get-user).
 - Live updates may result in Get world (https://vrchat.community/openapi/get-world) to find the world name.
+
+Live updates with the ChilloutVR API are not implemented yet.
 
 ## UI interaction
 
