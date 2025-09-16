@@ -4,6 +4,43 @@ sidebar_position: 200
 
 # Changelog
 
+## 0.0.1-alpha.8
+
+Features:
+- Now builds on Linux.
+  - Added variant of the program based on Photino instead of Microsoft.Web.WebView2.
+  - On Linux, session key is written to the filesystem instead of the Windows registry.
+  - Opening URLs now uses `xdg-open` on Linux.
+- Connecting to ChilloutVR accounts is now possible using Email.
+  - Note: Connecting using access key is not yet supported.
+  - Note: If you have not accepted the new ChilloutVR terms of service, the login will fail without an error message.
+    Connect to the ChilloutVR website first to accept the terms of service.
+- Improve session card:
+  - Session now shows thumbnail images.
+  - Session now shows the user count and session capacity.
+  - If the session capacity is larger than the world capacity, the session capacity will be displayed differently.
+- If the user is connected to multiple worlds at the same time on Resonite, this will now be shown in the session card and the account card.
+
+Fixes:
+- When executing the application for the first time, the directories for saving the files are now created in advance.
+
+Changes:
+- Rename app to XYVR on Windows, and xyvr on Linux.
+- Add app icon on Windows.
+- Active sessions are now refreshed every minute.
+- World data now expires after 6 hours.
+
+Internal changes:
+- Linux-related changes that do not affect the user:
+  - Javascript .NET <-> React communication has been modified to support both Microsoft.Web.WebView2 and Photino. The
+    latter does not support awaiting on .NET calls, so some basic async RPC has been implemented using deferred Promises.
+  - `npm run build-and-copy` no longer depends on Windows-specific `xcopy`.
+  - Clicking and middle-clicking on links to external websites is now handled in the Backend for UI instead of the browser capabilities,
+    because I could not figure out how to make Photino intercept and cancel navigation and window opening events caused by clicking on `<a href=` links.
+  - Backend for UI has been split to its own project *ui-backend*.
+  - React UI has been split to its own project *ui-frontend*.
+- The internal architecture for handling session data has been drastically changed: live session data is no longer contained within the live user data.
+
 ## 0.0.1-alpha.7
 
 Features:
