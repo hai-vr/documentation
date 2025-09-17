@@ -32,7 +32,7 @@ Changes:
 
 Internal changes:
 - Linux-related changes that do not affect the user:
-  - Javascript .NET <-> React communication has been modified to support both Microsoft.Web.WebView2 and Photino. The
+  - Javascript .NET from/to React communication has been modified to support both Microsoft.Web.WebView2 and Photino. The
     latter does not support awaiting on .NET calls, so some basic async RPC has been implemented using deferred Promises.
   - `npm run build-and-copy` no longer depends on Windows-specific `xcopy`.
   - Clicking and middle-clicking on links to external websites is now handled in the Backend for UI instead of the browser capabilities,
