@@ -14,11 +14,27 @@ sidebar_position: 5
 All 0.0.1 alpha versions are considered to be under heavy development and may contain **breaking changes** between versions.
 :::
 
-The software under development can be downloaded at this location:
+### Windows
 
-- Download **[0.0.1-alpha.7 software (GitHub)](https://github.com/hai-vr/XYVR/releases/download/0.0.1-alpha.7/XYVR-0.0.1-alpha.7-executable.zip)**
+The software under development can be downloaded at this location:
+- Windows-x64: Download **[0.0.1-alpha.8 software (GitHub)](https://github.com/hai-vr/XYVR/releases/download/0.0.1-alpha.8/XYVR-0.0.1-alpha.8-windows-x64-executable.zip)**
 
 Installing this requires the .NET 9.0 Desktop Runtime. When you start the application, if you don't have it, it will prompt you to install the runtime
 from the official Microsoft website.
 
 *You can [audit the software source code on GitHub](https://github.com/hai-vr/XYVR/) if you are a developer.*
+
+### Linux
+
+The software under development can be downloaded at this location:
+- Linux-x64: Download [0.0.1-alpha.8 software (GitHub)](https://github.com/hai-vr/XYVR/releases/download/0.0.1-alpha.8/xyvr-0.0.1-alpha.8-linux-x64-executable.tar.gz)
+
+Installing this requires libwebkit2gtk-4.0 (see below) and the .NET 9.0 Desktop Runtime.
+
+*You can [audit the software source code on GitHub](https://github.com/hai-vr/XYVR/) if you are a developer.*
+
+#### Installing libwebkit2gtk-4.0 (Linux only)
+
+If you're on Ubuntu 24, you need to install `libwebkit2gtk-4.0`, which is not available on the official Ubuntu 24 repository.
+
+A workaround is described here in the Tauri issue tracker: *[libwebkit2gtk-4.0 not available in Ubuntu 24 & Debian 13 repositories](https://github.com/tauri-apps/tauri/issues/9662#:~:text=I%20worked%20around%20this%20by%20adding%20the%20following%20line)*
