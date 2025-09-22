@@ -4,6 +4,37 @@ sidebar_position: 200
 
 # Changelog
 
+## 0.0.1-alpha.9
+
+Fixes:
+- Try to fix various cases where VRChat contacts were still considered to be in a session even after leaving.
+- Frontend will no longer request for /null as a thumbnail image when a session does not have a thumbnail.
+- Fix crash should no longer occur when caching worlds that don't have an asset creation date. We no longer try to interpret some
+  of the world data cache that we were not interested in.
+- If a message in SignalR fails to be interpreted, log it and skip processing that event.
+- Fix when all participants leave a session, that session is now properly ignored when new information about it arrives from SignalR.
+- Try to fix an issue in Resonite where the sessions that a contact was located in were not tracked properly when the focused session changes
+  at the same time as the list of sessions that this contact is in. 
+
+Changes:
+- When performing a ChilloutVR data collection, your own account will now be included in the data being collected as a contact.
+- The main page now shows online individuals unless there is an active search.
+- If a session has an equal number of users in the session (not necessarily contacts), prioritize low-capacity sessions.
+- Compact mode and language are now saved as part of the preferences.
+- VRChat sessions are now fetched at a rate of four requests per second when the application starts, and at one request per second
+  every five minutes afterward.
+- Try to improve RAM usage when Resonite sessions are being cached by discarding old session data.
+
+Internal changes:
+- Photino logs have been removed, as they are too verbose and may leak undesirable data into the logs.
+- vite has been updated to 7.1.5 as suggested by Dependabot for a minor security update.
+- Work towards adding localization keys.
+- Reduce the number of existing logs.
+- Add more logging when errors occur.
+- Timestamps and source are now recorded in the console logs.
+- Remove leftover Resonite debugging code. We used to get all Resonite sessions to see if it was needed to build the initial session state,
+  but it was only used for debug logging.
+
 ## 0.0.1-alpha.8
 
 Features:
