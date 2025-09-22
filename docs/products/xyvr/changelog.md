@@ -11,7 +11,7 @@ Fixes:
 - Frontend will no longer request for /null as a thumbnail image when a session does not have a thumbnail.
 - Fix crash should no longer occur when caching worlds that don't have an asset creation date. We no longer try to interpret some
   of the world data cache that we were not interested in.
-- If a message in SignalR fails to be interpreted, log it and skip processing that event.
+- If a message in SignalR fails to be interpreted, log it and skip processing that event instead of crashing.
 - Fix when all participants leave a session, that session is now properly ignored when new information about it arrives from SignalR.
 - Try to fix an issue in Resonite where the sessions that a contact was located in were not tracked properly when the focused session changes
   at the same time as the list of sessions that this contact is in. 
