@@ -20,6 +20,7 @@ Changes:
 - When performing a ChilloutVR data collection, your own account will now be included in the data being collected as a contact.
 - The main page now shows online individuals unless there is an active search.
 - If a session has an equal number of users in the session (not necessarily contacts), prioritize low-capacity sessions.
+  - For example, a 1/2 session in the "For Two" world will be prioritized over a 1/32 in the "SuRroom" world, because it has less remaining slots available.
 - Compact mode and language are now saved as part of the preferences.
 - VRChat sessions are now fetched at a rate of four requests per second when the application starts, and at one request per second
   every five minutes afterward.
