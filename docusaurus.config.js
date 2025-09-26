@@ -237,8 +237,8 @@ export default {
           { from: '/docs/products/vcc', to: '/docs/products/listing' },
 
           { from: '/docs/basis/hvr/face-tracking', to: '/docs/basis/avatar-customization/face-tracking' },
-          { from: '/docs/basis/hvr/local-testing', to: '/docs/basis/avatar-customization/local-testing' },
-          { from: '/docs/basis/hvr/toggle', to: '/docs/basis/avatar-customization/toggle' },
+          // { from: '/docs/basis/hvr/local-testing', to: '/docs/basis/avatar-customization/local-testing' },
+          // { from: '/docs/basis/hvr/toggle', to: '/docs/basis/avatar-customization/toggle' },
             
           { from: '/experimental-vrchat-credits-calculator', to: '/extra/vrchat-credits-calculator' },
             
