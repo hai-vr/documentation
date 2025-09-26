@@ -15,78 +15,44 @@ import {HaiVideo} from "/src/components/HaiVideo";
 There is a rudimentary implementation of face tracking avatars in Basis, which I have made to help dooly test out avatar networking packet
 communications using a real scenario.
 
-Face Tracking in this implementation is done through a package, rather than through Basis' core source.
-
-It requires the use of VRCFaceTracking, because it's the quickest way to get something working that existing face tracking users may
-already have set up on their machine.
+This requires the VRCFaceTracking software.
 
 This guide assumes you're already familiar with VRCFaceTracking and your own hardware.
 
-## Prepare VRCFaceTracking
-
-### If you already play VRC
-
-To set up face tracking, we need to put a fake OSC file that VRCFaceTracking will read when loading your Basis avatar.
-- Download [this JSON file](pathname:///assets/basis-hvr/avtr_00000000-d7dc-4a90-ab09-000000000000.json) (*Right-click > Save link as...*)
-- Put this file in the following folder:
-  - `C:\Users\<your_user>\AppData\LocalLow\VRChat\vrchat\OSC\usr_<any_vrc_user>\Avatars\`
-  - The name of the JSON file must be `avtr_00000000-d7dc-4a90-ab09-000000000000.json`
-
-### If you don't play VRC
-
-If you don't play VRC:
-
-- Download [this JSON file](pathname:///assets/basis-hvr/avtr_00000000-d7dc-4a90-ab09-000000000000.json) (*Right-click > Save link as...*)
-- Create the following folder structure:
-  - `C:\Users\<your_user>\AppData\LocalLow\VRChat\vrchat\OSC\usr_4d5721e5-89b1-4313-aa2d-dfc0e9dbb555\Avatars\`
-  - *Note: `4d5721e5-89b1-4313-aa2d-dfc0e9dbb555` is a randomly generated GUID; it really doesn't matter what value is.*
-- Put the JSON in that folder you've just created.
-  - The name of the JSON file must be `avtr_00000000-d7dc-4a90-ab09-000000000000.json`
-  
 ## Set up your avatar
 
-<HaiVideo src="./img/mpVLTgE5UD-trimmed.mp4"></HaiVideo>
+<HaiVideo src="./img/ShWakJTG9n.mp4" halfWidth={true}></HaiVideo>
+
+To set up your avatar:
+
+- Create a new GameObject inside your avatar. Give it a name of your choice, like *FaceTracking*.
+- Add the **Automatic Face Tracking** component.
+- In the inspector of the *Automatic Face Tracking* component, press the *"Create VRCFaceTracking JSON file"* button.
+
+When you added the Automatic Face Tracking component, it should have added a prefab in your avatar called *HVR.Networking*.
+This component is responsible for the network communication of your avatar. Keep this prefab at the root.
+
+:::warning
+If you have used previous versions of Face Tracking on Basis, you **need** to press this button anyway.
+:::
 
 :::danger
 The face tracking implementation does not use the Animator system.
 
-**Don't use face tracking animator templates designed for VRC**, they won't do anything and might even interfere with
-the operation as execution order is not explicitly defined.
+**Do not use face tracking animator templates designed for VRC**, they won't do anything and might even interfere with
+the operation as the execution order is not explicitly defined.
+
+Face tracking is interpolated by default for remote users (≈ smoothed).
 :::
-
-- Create a new GameObject inside your avatar. Give it a name of your choice, like *FaceTracking*.
-- Add the **Blendshape Actuation** component. This will drive the blendshapes of your avatar.
-  - Set *Renderers* to the mesh that contains the face tracking blendshapes.
-  - Set *Definition File* to either:
-    - `FaceTracking-UnifiedExpressions-Simple` if your avatar uses the Unified Expressions blendshape naming convention, or
-    - `FaceTracking-ARKit-Simple` if your avatar uses the ARKit blendshape naming convention.
-
-:::warning
-If you can't find the file in the project, set the filter to **Packages**.
-<HaiVideo src="./img/Unity_VuR5mvNdoH.mp4" autoWidth="{false}"></HaiVideo>
-:::
-
-- If you use eye tracking, add the **Eye Tracking Bone Actuation** component.
-  - By default, the multiplier value of 1 will rotate the eye bone to match the direction your eyes are looking.
-  - You may choose to increase the multiplier if you want a more exaggerated eye look direction. A value of `1.25` will cause a 10deg angle to become 12.5deg.
-- Add the **OSC Acquisition** component. This will enable some rudimentary form of OSC communication.
-- Finally, in the root of your avatar, add the **Feature Networking** component.
 
 ## Testing
 
-:::note
-Sorry, there is no guide to test the avatar in the scene without uploading at the moment.
+To test your avatar before building it:
 
-There used to be a way to test, but I don't have up-to-date info right now
-as things have changed on the most recent version of Basis.
-
-You'll have to build your avatar for now to test it.
-:::
-
-After building and uploading your avatar somewhere:
-- Start the VRCFaceTracking app on your machine,
-- then start Basis in-editor (using the initialization scene, you may have to refer to the Basis Discord on how to test Basis in general),
-- then connect to the server.
+- Start VRCFaceTracking.
+- Enter Play Mode, and in the *Basis Avatar* component at the root of your avatar, press the **Test in Editor** button.
+- If everything worked, the VRCFaceTracking software should now say that it detected an avatar called *HVR.Basis Fake Client*.
+- Wear your headset and look at your own avatar's face, see how it moves.
 
 When you load into your avatar, the following thing will happen:
 - Basis will create an OSC server on port 9000 and then send a message to port 9001 (where VRCFaceTracking is running),
@@ -96,15 +62,3 @@ When you load into your avatar, the following thing will happen:
 ![mpc-hc64_bco7oRlmDK.png](img%2Fmpc-hc64_bco7oRlmDK.png)
 
 Then in the scene view, look at your own avatar's face, see how it moves.
-
-## Networking details
-
-As an implementation detail, *Blendshape Actuation* is streamed.
-
-Snapshots are attempted to be taken every 0.1 second, and the real delay since the last snapshot
-is transmitted with the packet. Face tracking data is sent to other users 10 times per second.
-
-When face tracking data is received, the data is queued in order to be played back,
-paced using the delay information. When the queue gets large, it tries to catch up.
-
-In the current implementation, face tracking is not smoothed locally, but it is interpolated on remote users.

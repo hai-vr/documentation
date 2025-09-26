@@ -1,18 +1,19 @@
 ---
 sidebar_position: 30
+unlisted: true
 ---
 
 import {HaiTags} from "/src/components/HaiTags";
 import {HaiTag} from "/src/components/HaiTag";
 import {HaiVideo} from "/src/components/HaiVideo";
 
-# Toggling objects
+# Toggling objects (UNAVAILABLE)
 
 <HaiTags>
 <HaiTag requiresBasis={true} />
 </HaiTags>
 
-The HVR package provides a component to create rudimentary ways to toggle GameObjects and Components.
+~~The HVR package provides a component to create rudimentary ways to toggle GameObjects and Components.~~
 
 :::danger
 This component is not ready for use, as it is currently only here to test networking capabilities.
@@ -22,19 +23,19 @@ There is no user interface to control this (neither 2D nor VR).
 
 ## When to use toggles in Basis HVR?
 
-Using toggles is recommended for elements of clothing that are inseparable from your body, such as sweaters,
-shoes, or animal ears; and elements of clothing that are strongly associated with your current avatar appearance, such as a hat.
+~~Using toggles is recommended for elements of clothing that are inseparable from your body, such as sweaters,
+shoes, or animal ears; and elements of clothing that are strongly associated with your current avatar appearance, such as a hat.~~
 
-It may not be recommended for items that are separable from your body, such a smartphone, a photo camera, or a sword;
-In the meantime feel free to create toggles for those as well as long as Basis or Basis HVR does not provide a system for items. 
+~~It may not be recommended for items that are separable from your body, such a smartphone, a photo camera, or a sword;
+In the meantime feel free to create toggles for those as well as long as Basis or Basis HVR does not provide a system for items.~~ 
 
 ## Create a toggle
 
-We need to create a component on a GameObject that will always be ON. This means you cannot put that component inside
-any object that will be toggled.
+~~We need to create a component on a GameObject that will always be ON. This means you cannot put that component inside
+any object that will be toggled.~~
 
-Create a new GameObject at any location of your avatar hierarchy that will always be ON,
-and add an **Object State Actuation** component on it.
+~~Create a new GameObject at any location of your avatar hierarchy that will always be ON,
+and add an **Object State Actuation** component on it.~~
 
 - Objects in **When Active** will be:
   - **ON** when the state of the toggle is **Active**,
