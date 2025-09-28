@@ -13,3 +13,5 @@ import {HaiVideo} from "/src/components/HaiVideo";
 <HaiTags>
 <HaiTag requiresBasis={true} />
 </HaiTags>
+
+- **[Automatic Face Tracking](./basis/avatar-customization/face-tracking)** component.

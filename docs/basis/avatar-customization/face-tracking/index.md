@@ -29,12 +29,12 @@ To set up your avatar:
 - Add the **Automatic Face Tracking** component.
 - In the inspector of the *Automatic Face Tracking* component, press the *"Create VRCFaceTracking JSON file"* button.
 
-When you added the Automatic Face Tracking component, it should have added a prefab in your avatar called *HVR.Networking*.
+When you added the *Automatic Face Tracking* component, it should have added a prefab in your avatar called *HVR.Networking*.
 This component is responsible for the network communication of your avatar. Keep this prefab at the root.
 
-:::warning
-If you have used previous versions of Face Tracking on Basis, you **need** to press this button anyway.
-:::
+The setup is complete. *Automatic Face Tracking* will detect all meshes on the avatar that have face tracking blendshapes
+which follow either the *ARKit* or the [*Unified Expressions*](https://docs.vrcft.io/docs/tutorial-avatars/tutorial-avatars-extras/unified-blendshapes)
+naming conventions.
 
 :::danger
 The face tracking implementation does not use the Animator system.
@@ -56,7 +56,8 @@ To test your avatar before building it:
 
 When you load into your avatar, the following thing will happen:
 - Basis will create an OSC server on port 9000 and then send a message to port 9001 (where VRCFaceTracking is running),
-  telling it that the avatar has changed.
+  telling it that the avatar has changed. Old versions of VRCFaceTracking will react to that message.
+- We will also start a fake OSCQuery server on a random port. The Steam version of VRCFaceTracking will detect this OSCQuery server.
 - VRCFaceTracking will start to communicate with Basis by sending face tracking parameters.
 - You should see the following in the VRCFaceTracking window if this is successful:
 ![mpc-hc64_bco7oRlmDK.png](img%2Fmpc-hc64_bco7oRlmDK.png)
