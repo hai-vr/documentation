@@ -93,11 +93,15 @@ export default {
             position: 'left',
             label: 'Products',
           },
+          // {
+          //   type: 'docSidebar',
+          //   sidebarId: 'resilienceSidebar',
+          //   position: 'left',
+          //   label: 'ResilienceVR',
+          // },
           {
-            type: 'docSidebar',
-            sidebarId: 'resilienceSidebar',
-            position: 'left',
-            label: 'ResilienceVR',
+            label: 'Devkits',
+            to: '/special',
           },
           {
             label: 'Updates',
