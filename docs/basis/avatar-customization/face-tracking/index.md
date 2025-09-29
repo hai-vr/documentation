@@ -49,6 +49,7 @@ Face tracking is interpolated by default for remote users (≈ smoothed).
 
 To test your avatar before building it:
 
+- *Make sure you don't have any other social VR application currently running, as other apps may capture the face tracking data.*
 - Start VRCFaceTracking.
 - Enter Play Mode, and in the *Basis Avatar* component at the root of your avatar, press the **Test in Editor** button.
 - If everything worked, the VRCFaceTracking software should now say that it detected an avatar called *HVR.Basis Fake Client*.
@@ -60,6 +61,6 @@ When you load into your avatar, the following thing will happen:
 - We will also start a fake OSCQuery server on a random port. The Steam version of VRCFaceTracking will detect this OSCQuery server.
 - VRCFaceTracking will start to communicate with Basis by sending face tracking parameters.
 - You should see the following in the VRCFaceTracking window if this is successful:
-![mpc-hc64_bco7oRlmDK.png](img%2Fmpc-hc64_bco7oRlmDK.png)
+![basisfakeclient.png](img/basisfakeclient.png)
 
 Then in the scene view, look at your own avatar's face, see how it moves.
