@@ -4,6 +4,23 @@ sidebar_position: 200
 
 # Changelog
 
+## 0.0.1-alpha.10
+
+Fixes:
+- Delete cached VRChat worlds not seen for more than 45 days to avoid indefinitely increasing RAM usage.
+- Try to fix an issue with how multisessions were not being updated during live updates.
+- Try to fix a multithreading issue affecting Resonite session IDs.
+- Try to fix a multithreading issue affecting how VRChat worlds are cached.
+
+Changes:
+- VRChat's policy on thumbnails is about to change. From now on, XYVR will start caching world thumbnail URLs on disk.
+  - In the future, we will use those world thumbnail URLs. This is not implemented yet as it requires a dynamic API URL to serve the images,
+    which is something we have never used so far in neither Microsoft WebView 2 nor Photino.
+
+Internal changes:
+- Add more logging when sessions are being logged.
+- Log errors happening in Resonite more aggressively.
+
 ## 0.0.1-alpha.9
 
 Fixes:
