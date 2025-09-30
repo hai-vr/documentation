@@ -8,8 +8,8 @@ sidebar_position: 200
 
 Fixes:
 - Try to fix an issue where resolving multisessions would crash because the user does not have a hashSalt defined.
-- Delete cached VRChat worlds not seen for more than 45 days to avoid indefinitely increasing RAM usage.
 - Try to fix an issue with how multisessions were not being updated during live updates.
+- Delete cached VRChat worlds not seen for more than 45 days to avoid indefinitely increasing RAM usage.
 - Try to fix a multithreading issue affecting Resonite session IDs.
 - Try to fix a multithreading issue affecting how VRChat worlds are cached.
 
