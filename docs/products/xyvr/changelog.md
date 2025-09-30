@@ -15,7 +15,7 @@ Fixes:
 
 Changes:
 - VRChat's policy on thumbnails is about to change. From now on, XYVR will start caching world thumbnail URLs on disk.
-  - In the future, we will use those world thumbnail URLs. This is not implemented yet as it requires a dynamic API URL to serve the images,
+  - In the future, we will use those cached world thumbnails. This is not implemented yet as it requires a dynamic API URL to serve the images,
     which is something we have never used so far in neither Microsoft WebView 2 nor Photino.
 
 Internal changes:
