@@ -4,6 +4,20 @@ sidebar_position: 200
 
 # Changelog
 
+## 0.0.1-alpha.11
+
+Features:
+- Add Japanese locale, contributed by kazu0617.
+- Tentatively add Arch Linux package builds, based on previous work by kazu0617.
+- Instance names are now shown below the world name, if available.
+
+Fixes:
+- Fix Windows frontend was missing.
+- Fix a possible crash that would have been caused by some Resonite status updates for which we could not find the session for.
+
+Changes:
+- All world thumbnails are now cached on disk to comply with VRChat's recent policy change regarding thumbnails.
+
 ## 0.0.1-alpha.10
 
 Fixes:
