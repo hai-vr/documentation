@@ -4,6 +4,10 @@ title: Lightbox Viewer URP
 
 import {HaiVideo} from "/src/components/HaiVideo";
 
+## 1.0.0-alpha.6
+
+- Re-bake scene in Unity 6.2.
+
 ## 1.0.0-alpha.5
 
 - Fix package.json now specifies Unity 6.

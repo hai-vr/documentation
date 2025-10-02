@@ -4,6 +4,10 @@ title: Lightbox Viewer
 
 import {HaiVideo} from "/src/components/HaiVideo";
 
+## 2.5.0-alpha.3
+
+- Try to fix an issue where the depth was affecting how the view was rendered in a Unity 6.2 Basis project.
+
 ## 2.5.0-alpha.2
 
 Attempt an optimization that removes the need for copying the texture from the GPU to the CPU.
