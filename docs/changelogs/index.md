@@ -16,8 +16,8 @@ If some products have no changelogs listed on this page, it means they haven't b
 | [VRWare](./changelogs/vrware) (World)                                                                       | 2024-01-07    | 2024-01     |   |
 | [Double Hip Tracker](./changelogs/double-hip-tracker) ⭐                                                     | 1.3.0         | 2024-08     | * |
 | **Viewers**                                                                                                 |               |             |   |
-| [Lightbox Viewer](./changelogs/lightbox-viewer)                                                             | 2.5.0-alpha.2 | **2025-08** |   |
-| [Lightbox Viewer URP](./changelogs/lightbox-viewer-urp)                                                     | 1.0.0-alpha.5 | 2025-07     |   |
+| [Lightbox Viewer](./changelogs/lightbox-viewer)                                                             | 2.5.0-alpha.3 | **2025-10** |   |
+| [Lightbox Viewer URP](./changelogs/lightbox-viewer-urp)                                                     | 1.0.0-alpha.6 | **2025-10** |   |
 | [Animation Viewer](./changelogs/animation-viewer)                                                           | 2.1.0         | 2024-08     |   |
 | [Blendshape Viewer](./changelogs/blendshape-viewer)                                                         | 2.1.2         | 2024-08     |   |
 | [Property Finder](./changelogs/property-finder)                                                             | 2.0.4         | 2024-08     |   |
@@ -25,11 +25,11 @@ If some products have no changelogs listed on this page, it means they haven't b
 | [LetMeSee](./changelogs/let-me-see)                                                                         | 1.1.3         | 2024-07     |   |
 | **Editors**                                                                                                 |               |             |   |
 | [ComboGestureExpressions](./changelogs/combo-gesture-expressions)                                           | 3.3.0         | 2024-11     |   |
-| [Constraint Tools](./changelogs/constraint-tools)                                                           | 1.1.1         | **2025-08** |   |
+| [Constraint Tools](./changelogs/constraint-tools)                                                           | 1.1.1         | 2025-08     |   |
 | [FaceTra Shape Creator](./changelogs/facetra-shape-creator) ⭐                                               | 0.9.0         | 2024-11     |   |
 | [IconGen](./changelogs/icon-gen) ⭐                                                                          | 1.1.0         | 2024-08     |   |
-| [Prefabulous Universal](./changelogs/prefabulous)                                                           | 2.2.0-beta.1  | **2025-08** |   |
-| [Prefabulous for VRChat](./changelogs/prefabulous-for-vrchat)                                               | 2.2.1         | **2025-08** |   |
+| [Prefabulous Universal](./changelogs/prefabulous)                                                           | 2.2.0-beta.1  | 2025-08     |   |
+| [Prefabulous for VRChat](./changelogs/prefabulous-for-vrchat)                                               | 2.2.1         | 2025-08     |   |
 | [Prefabulous for VRM](./changelogs/prefabulous-for-vrm)                                                     | 2.0.1         | 2024-08     |   |
 | [Prefabulous for Platform Conversions](./changelogs/prefabulous-for-conversions)                            | 2.1.0-alpha.0 | 2025-05     |   |
 | [Starmesh](./changelogs/starmesh) ⭐                                                                         | 1.7.0         | 2024-12     |   |
