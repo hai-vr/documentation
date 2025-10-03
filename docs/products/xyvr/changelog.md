@@ -4,6 +4,12 @@ sidebar_position: 200
 
 # Changelog
 
+## 0.0.1-alpha.12
+
+Fixes:
+- Fix live monitoring for Resonite and VRChat should now recover after Internet connection is lost.
+- Fix Resonite schema was causing failure to retrieve contacts due to badge format.
+
 ## 0.0.1-alpha.11
 
 Features:
