@@ -50,6 +50,84 @@
 <p>Fixes:</p>
 <ul>
 <li>Try to fix an issue where the depth was affecting how the view was rendered in a Unity 6.2 Basis project.</li>
+</ul>
+<p>🗒️ <a href="https://docs.hai-vr.dev/docs/products/lightbox-viewer/urp">Open documentation</a>.</p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[🔺 HVR Basis Face Tracking (Update)]]></title>
+            <link>https://docs.hai-vr.dev/updates/2025/09/28/p0</link>
+            <guid>https://docs.hai-vr.dev/updates/2025/09/28/p0</guid>
+            <pubDate>Sun, 28 Sep 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[Migrate face tracking to newest Basis networking]]></description>
+            <content:encoded><![CDATA[<div><p><span></span></p><div class="hai_tag_ZcC4 hai_tag_requires_basis_QHoe">🔺 <span class="notranslate">Basis</span></div><p></p></div>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="migrate-face-tracking-to-newest-basis-networking">Migrate face tracking to newest Basis networking<a href="https://docs.hai-vr.dev/updates/2025/09/28/p0#migrate-face-tracking-to-newest-basis-networking" class="hash-link" aria-label="Direct link to Migrate face tracking to newest Basis networking" title="Direct link to Migrate face tracking to newest Basis networking">​</a></h3>
+<ul>
+<li>Migrate to newer Basis avatar networking systems:<!-- -->
+<ul>
+<li>Remove GUID-based networking identifiers, which was a remnant of the previous networking system where BasisAvatarMonoBehaviour did not exist and all packets had to be routed manually to their destination components.</li>
+<li>Migrate networking to the new BasisAvatarMonoBehaviour networking system, which handles packet routing on its own by transmitting packets based on the component rather than based on the avatar.</li>
+</ul>
+</li>
+<li>Add Automatic Face Tracking component:<!-- -->
+<ul>
+<li>The Automatic Face Tracking component is now the entry point to adding HVR face tracking capabilities to the avatar.</li>
+<li>This component automatically detects all SkinnedMeshRenderer components on the avatar that have ARKit or Unified Expressions blendshapes on it.</li>
+<li>By default, this component uses the basic face tracking definition files that are bundled with the application, but this can be either overridden by the user or supplemented.<!-- -->
+<ul>
+<li>Due to this, the face tracking assets are now addressables.</li>
+</ul>
+</li>
+<li>This components automatically starts an OSC service on the wearer.</li>
+</ul>
+</li>
+<li>Improve the handling of face tracking data:<!-- -->
+<ul>
+<li>Add Address Overrides to the actuation definition file, so that we can define default values for the eyelids.</li>
+<li>Work towards the mutualization of the interpolation of addresses between Eye Tracking and Face Tracking.</li>
+<li>Actuators now introspect which blendshapes actually exist on the target renderers, and will no longer try to network any actuator that has no blendshape associated with it.</li>
+<li>Add more debugging in the blendshape actuation definition file editor.</li>
+<li>Fix TongueRoll actuator was targeting the wrong blendshape.</li>
+</ul>
+</li>
+<li>Move the package to dev.hai-vr.basis.comms/</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="change-vrcfacetracking-setup-process">Change VRCFaceTracking setup process<a href="https://docs.hai-vr.dev/updates/2025/09/28/p0#change-vrcfacetracking-setup-process" class="hash-link" aria-label="Direct link to Change VRCFaceTracking setup process" title="Direct link to Change VRCFaceTracking setup process">​</a></h3>
+<ul>
+<li>In the Automatic Face Tracking component, the user now presses a button to create the face tracking JSON file used by VRCFaceTracking.</li>
+<li>We want to ensure we overwrite any previous version of face tracking that may have already been installed by previous users of the previous system, so we're changing the dummy avatar ID to a different one. That way, we're sure this is really the file that will be loaded by VRCFaceTracking.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="fix-always-update-local-eye-angles">Fix always update local eye angles<a href="https://docs.hai-vr.dev/updates/2025/09/28/p0#fix-always-update-local-eye-angles" class="hash-link" aria-label="Direct link to Fix always update local eye angles" title="Direct link to Fix always update local eye angles">​</a></h3>
+<ul>
+<li>Update local eye angles, even if no address has changed.</li>
+<li>This should fix an issue where the eyes were always looking forward.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="add-a-fake-oscquery-service-to-cope-with-the-steam-version-of-vrcfacetracking">Add a fake OSCQuery service to cope with the Steam version of VRCFaceTracking<a href="https://docs.hai-vr.dev/updates/2025/09/28/p0#add-a-fake-oscquery-service-to-cope-with-the-steam-version-of-vrcfacetracking" class="hash-link" aria-label="Direct link to Add a fake OSCQuery service to cope with the Steam version of VRCFaceTracking" title="Direct link to Add a fake OSCQuery service to cope with the Steam version of VRCFaceTracking">​</a></h3>
+<ul>
+<li>The Steam Version of VRCFaceTracking 5.3.2.0 does not accept /avatar/change events, it relies only on OSCQuery for initialization.</li>
+<li>We now impersonate the OSCQuery service by doing the following:<!-- -->
+<ul>
+<li>A) Opens an HTTP service on a random port:<!-- -->
+<ul>
+<li>When queried for any URL that ends with <code>/avatar</code>, it replies with a pre-determined message (check out <code>response-avtr.json</code>).</li>
+<li>When queried for any other URL, it replies with another pre-determined message (check out <code>response.json</code>).</li>
+</ul>
+</li>
+<li>B) Advertises that port as a service on mDNS as <code>_oscjson._tcp</code> with the instance name <code>VRChat-Client-XXXXXX</code> where XXXXXX is a random number between 100000 and 999999.</li>
+<li>C) Queries for <code>_oscjson._tcp</code> once when the service starts.</li>
+<li>A and B are sufficient for VRCFaceTracking to detect our program if the OsushiQuery service is already running when VRCFaceTracking starts.</li>
+<li>C is needed to handle the case where VRCFaceTracking is already running before our program starts the OsushiQuery service.</li>
+<li>The HTTP service completely violates the OSCQuery protocol and is not intended to be read by any other program other than VRCFaceTracking.</li>
+</ul>
+</li>
+<li>The JSON file in the users' directory is still needed to function properly.</li>
+<li>This also means that the application requests a pre-determined list of parameters from VRCFaceTracking, as opposed to the JSON file which could previously be updated separately.</li>
+<li>Add a MeaMod.DNS package as instructed by dooly.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="update-acquisition-server-to-accept-vrcfacetracking-being-initialized-from-oscquery">Update acquisition server to accept VRCFaceTracking being initialized from OSCQuery<a href="https://docs.hai-vr.dev/updates/2025/09/28/p0#update-acquisition-server-to-accept-vrcfacetracking-being-initialized-from-oscquery" class="hash-link" aria-label="Direct link to Update acquisition server to accept VRCFaceTracking being initialized from OSCQuery" title="Direct link to Update acquisition server to accept VRCFaceTracking being initialized from OSCQuery">​</a></h3>
+<ul>
+<li>Since VRCFaceTracking is now being initialized from OSCQuery, we can't use the address that don't start with "/avatar/parameters" like we used to.</li>
+<li>Rectify the paths in the JSON file to match the OSCQuery paths.</li>
+<li>Strip that from the messages we receive to restore previous behaviour.</li>
 </ul>]]></content:encoded>
         </item>
         <item>
@@ -484,20 +562,6 @@ or permit using two different ranges using one proximity Contact.</li>
 </ul>
 </li>
 <li>Changed the way Vixen detects how VRChat SDK is installed.</li>
-</ul>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[✨ IconGen V1.1.0]]></title>
-            <link>https://docs.hai-vr.dev/updates/2024/08/30/p1</link>
-            <guid>https://docs.hai-vr.dev/updates/2024/08/30/p1</guid>
-            <pubDate>Fri, 30 Aug 2024 22:40:00 GMT</pubDate>
-            <description><![CDATA[- Added a button to export all icons to PNG.]]></description>
-            <content:encoded><![CDATA[<ul>
-<li>Added a button to export all icons to PNG.<!-- -->
-<ul>
-<li>In the IconGen asset file, go to <em>Show Advanced &gt; Export all to PNG...</em></li>
-</ul>
-</li>
 </ul>]]></content:encoded>
         </item>
     </channel>
