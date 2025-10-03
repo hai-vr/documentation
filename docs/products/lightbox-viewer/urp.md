@@ -12,12 +12,10 @@ import {HaiVideo} from "/src/components/HaiVideo";
 
 *Lightbox Viewer* can work on URP <HaiTag requiresBasis={true} short={true} /> projects in Unity 6.
 
+Both *Adaptive Probe Volumes* and *Light Probes* are supported, based on the Quality settings.
+
 :::warning[Compatibility notes]
 It has been tested to work on Unity 6 only. It may not work on older versions.
-:::
-
-:::warning
-The current version of the Lightbox URP scene requires projects that has **Adaptive Probe Volumes** enabled.
 :::
 
 ## Download
@@ -31,8 +29,7 @@ The tool is free for download using ALCOM.
 
 ## Adaptive Probe Volumes
 
-The current version of the Lightbox URP scene requires projects that has **Adaptive Probe Volumes** enabled.
+If your quality settings use **Adaptive Probe Volumes**, you must use shaders that support Adaptive Probe Volumes.
 
-It will only work with shaders that supports Adaptive Probe Volumes.
-- **Poiyomi URP**: ✅ As of 2025-07-10, it will only work with Poiyomi URP *070825* or above.
-- **lilToon URP**: ❌ As of 2025-07-10, it does not yet work with lilToon URP, as lilToon seems to support URP with traditional Light Probes only.
+- **Poiyomi URP**: ✅ As of 2025-07-10, APVs will only work with Poiyomi URP *070825* or above.
+- **lilToon URP**: ❌ As of 2025-07-10, APVs do not yet work with lilToon URP, as lilToon seems to support URP with legacy *Light Probes* only.
