@@ -4,6 +4,10 @@ title: Lightbox Viewer URP
 
 import {HaiVideo} from "/src/components/HaiVideo";
 
+## 1.0.0-beta.2
+
+- Lightbox Viewer 2.5 is now required.
+
 ## 1.0.0-beta.1
 
 - Lightbox Viewer URP now supports both Light Probes and Adaptive Probe Volumes through two different scenes loaded dynamically

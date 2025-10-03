@@ -17,7 +17,7 @@ If some products have no changelogs listed on this page, it means they haven't b
 | [Double Hip Tracker](./changelogs/double-hip-tracker) ⭐                                                     | 1.3.0         | 2024-08     | * |
 | **Viewers**                                                                                                 |               |             |   |
 | [Lightbox Viewer](./changelogs/lightbox-viewer)                                                             | 2.5.0-beta.1  | **2025-10** |   |
-| [Lightbox Viewer URP](./changelogs/lightbox-viewer-urp)                                                     | 1.0.0-beta.1  | **2025-10** |   |
+| [Lightbox Viewer URP](./changelogs/lightbox-viewer-urp)                                                     | 1.0.0-beta.2  | **2025-10** |   |
 | [Animation Viewer](./changelogs/animation-viewer)                                                           | 2.1.0         | 2024-08     |   |
 | [Blendshape Viewer](./changelogs/blendshape-viewer)                                                         | 2.1.2         | 2024-08     |   |
 | [Property Finder](./changelogs/property-finder)                                                             | 2.0.4         | 2024-08     |   |
