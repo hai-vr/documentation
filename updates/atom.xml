@@ -12,8 +12,14 @@
         <id>https://docs.hai-vr.dev/updates/2025/10/03/p1</id>
         <link href="https://docs.hai-vr.dev/updates/2025/10/03/p1"/>
         <updated>2025-10-03T18:04:00.000Z</updated>
-        <summary type="html"><![CDATA[Avoid string comparisons in HVR addresses]]></summary>
+        <summary type="html"><![CDATA[HVR Basis Face Tracking has been updated.]]></summary>
         <content type="html"><![CDATA[<div><p><span></span></p><div class="hai_tag_ZcC4 hai_tag_requires_basis_QHoe">🔺 <span class="notranslate">Basis</span></div><p></p></div>
+<p><strong>HVR Basis Face Tracking</strong> has been updated.</p>
+<p>It should work better with ARKit avatars, as we were not requesting some face tracking traits correctly, so VRCFaceTracking would not
+send them to us. No avatar reupload is needed.</p>
+<p>This update includes some performance improvements and some code preparation for future use by <em>HVR Basis AvatarOptimizer</em>, so that
+avatar optimization tools may detect which blendshapes should not be removed from the mesh.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="backend-changes">Backend changes<a href="https://docs.hai-vr.dev/updates/2025/10/03/p1#backend-changes" class="hash-link" aria-label="Direct link to Backend changes" title="Direct link to Backend changes">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="avoid-string-comparisons-in-hvr-addresses">Avoid string comparisons in HVR addresses<a href="https://docs.hai-vr.dev/updates/2025/10/03/p1#avoid-string-comparisons-in-hvr-addresses" class="hash-link" aria-label="Direct link to Avoid string comparisons in HVR addresses" title="Direct link to Avoid string comparisons in HVR addresses">​</a></h3>
 <ul>
 <li>Reduce the number of string comparisons by using int addresses instead of string addresses.</li>
@@ -82,8 +88,38 @@
         <id>https://docs.hai-vr.dev/updates/2025/09/28/p0</id>
         <link href="https://docs.hai-vr.dev/updates/2025/09/28/p0"/>
         <updated>2025-09-28T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Migrate face tracking to newest Basis networking]]></summary>
+        <summary type="html"><![CDATA[HVR Basis Face Tracking has been migrated to the new Basis networking system.]]></summary>
         <content type="html"><![CDATA[<div><p><span></span></p><div class="hai_tag_ZcC4 hai_tag_requires_basis_QHoe">🔺 <span class="notranslate">Basis</span></div><p></p></div>
+<p><strong>HVR Basis Face Tracking</strong> has been migrated to the new Basis networking system.</p>
+<p>Instructions for previous Face Tracking avatar users:</p>
+<ul>
+<li>
+<p>If you have previously used Face Tracking in Basis, do the following:</p>
+</li>
+<li>
+<p>Remove all components that were part of the previous Face Tracking instructions. That includes:</p>
+<ul>
+<li>Remove the Feature Networking component</li>
+<li>Remove the HVR Avatar Comms component</li>
+<li>Remove the Eye Tracking Bone Actuation component</li>
+<li>Remove the Blendshape Actuation component</li>
+<li>Remove the OSC Acquisition component</li>
+<li>Remove the Acquisition Service component</li>
+</ul>
+</li>
+<li>
+<p>To install the new Face Tracking, <a href="https://docs.hai-vr.dev/docs/basis/avatar-customization/face-tracking" target="_blank" rel="noopener noreferrer">do the following</a>:</p>
+<ul>
+<li>Create a new GameObject inside your avatar. Give it a name of your choice, like FaceTracking.</li>
+<li>Add the Automatic Face Tracking component.</li>
+<li>In the inspector of the Automatic Face Tracking component, press the "Create VRCFaceTracking JSON file" button.</li>
+<li>You will need to do this even if you have used previous versions of Face Tracking in Basis</li>
+</ul>
+</li>
+</ul>
+<p>The new face tracking has been modified to work with the Steam version of VRCFaceTracking (it now has OSCQuery),
+but it should also work with old versions of VRCFaceTracking that were not installed from Steam.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="backend-changes">Backend changes<a href="https://docs.hai-vr.dev/updates/2025/09/28/p0#backend-changes" class="hash-link" aria-label="Direct link to Backend changes" title="Direct link to Backend changes">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="migrate-face-tracking-to-newest-basis-networking">Migrate face tracking to newest Basis networking<a href="https://docs.hai-vr.dev/updates/2025/09/28/p0#migrate-face-tracking-to-newest-basis-networking" class="hash-link" aria-label="Direct link to Migrate face tracking to newest Basis networking" title="Direct link to Migrate face tracking to newest Basis networking">​</a></h3>
 <ul>
 <li>Migrate to newer Basis avatar networking systems:<!-- -->
