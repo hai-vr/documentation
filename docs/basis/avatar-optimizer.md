@@ -1,4 +1,16 @@
+---
+sidebar_position: 40
+---
+
+import {HaiTags} from "/src/components/HaiTags";
+import {HaiTag} from "/src/components/HaiTag";
+import {HaiVideo} from "/src/components/HaiVideo";
+
 # Avatar Optimizer
+
+<HaiTags>
+<HaiTag requiresBasis={true} />
+</HaiTags>
 
 **Basis Avatar Optimizer** is a work in progress avatar optimization processor that only works on Basis Framework avatars (for the time being).
 
