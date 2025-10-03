@@ -4,10 +4,54 @@
         <title>Haï~ Blog</title>
         <link>https://docs.hai-vr.dev/updates</link>
         <description>Haï~ Blog</description>
-        <lastBuildDate>Fri, 11 Jul 2025 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 03 Oct 2025 17:51:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[✨ Lightbox Viewer 2.5.0-beta.1]]></title>
+            <link>https://docs.hai-vr.dev/updates/2025/10/03/p0</link>
+            <guid>https://docs.hai-vr.dev/updates/2025/10/03/p0</guid>
+            <pubDate>Fri, 03 Oct 2025 17:51:00 GMT</pubDate>
+            <description><![CDATA[Lightbox Viewer has been updated to support URP projects.]]></description>
+            <content:encoded><![CDATA[<p>Lightbox Viewer has been updated to support URP projects.</p>
+<p>Lightbox Viewer is now compatible with the following render pipeline configurations:</p>
+<ul>
+<li>BIRP Light Probes.</li>
+<li>BIRP VRCLightVolumes by RED_SIM.</li>
+<li>URP Adaptive Probe Volumes.</li>
+<li>URP Light Probes.</li>
+</ul>
+<p>Features:</p>
+<ul>
+<li>Detect and support URP projects. When the current project uses URP:<!-- -->
+<ul>
+<li>Don't suggest installing the Post-Processing V2 package.</li>
+<li>Never switch to VRCLightVolumes, even if that package is installed in the project.</li>
+<li>Switch to a different scene based on whether the Quality settings use Light Probes instead of Adaptive Probe Volumes.</li>
+<li>Detect when Quality settings change, and switch between the Light Probes scene and the Adaptive Probe Volumes scene accordingly.</li>
+</ul>
+</li>
+</ul>
+<p>Changes:</p>
+<ul>
+<li>Attempt an optimization that removes the need for copying the texture from the GPU to the CPU.</li>
+<li>Change Edit mode strategy for performance:<!-- -->
+<ul>
+<li>Previously, Edit Mode was copying the avatar every frame, so that we don't accidentally cause the avatar to be modified.</li>
+<li>This change now copies the avatar to a hidden GameObject in the hierarchy and marked non-saved, if the reference to the Object To View does not change.</li>
+<li>Use object change events to detect when anything changes in the scene. If there is any change that pertains to a non-transform, we destroy the copied object and create a new one.</li>
+<li>This copied object is moved 10_000 units downwards between render cycles.</li>
+<li>Don't disable the original avatar between render cycles, because enabling the avatar is slow.</li>
+<li>In the copy, remove the Animators, because they take time to bind and we don't need them.</li>
+</ul>
+</li>
+</ul>
+<p>Fixes:</p>
+<ul>
+<li>Try to fix an issue where the depth was affecting how the view was rendered in a Unity 6.2 Basis project.</li>
+</ul>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[✨ Lightbox Viewer URP V1.0.0-alpha.5]]></title>
             <link>https://docs.hai-vr.dev/updates/2025/07/11/p0</link>
@@ -452,62 +496,6 @@ or permit using two different ranges using one proximity Contact.</li>
 <li>Added a button to export all icons to PNG.<!-- -->
 <ul>
 <li>In the IconGen asset file, go to <em>Show Advanced &gt; Export all to PNG...</em></li>
-</ul>
-</li>
-</ul>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[✨ Double Hip Tracker V1.3.0]]></title>
-            <link>https://docs.hai-vr.dev/updates/2024/08/30/p0</link>
-            <guid>https://docs.hai-vr.dev/updates/2024/08/30/p0</guid>
-            <pubDate>Fri, 30 Aug 2024 22:00:00 GMT</pubDate>
-            <description><![CDATA[This update introduces two changes in the behaviour of the double trackers:]]></description>
-            <content:encoded><![CDATA[<p>This update introduces two changes in the behaviour of the double trackers:</p>
-<ul>
-<li>They <em>should</em> no longer fly away when both trackers are lost.</li>
-<li>We have <a href="https://docs.hai-vr.dev/docs/products/double-hip-tracker/v1.3-new-detection-method">an additional method to detect trackers flying off</a>.</li>
-</ul>
-<video controls="" muted="" width="816"><source src="https://large.docs.cdn.hai-vr.dev/assets/docs/dhtv130-f.mp4"></video>
-<p>Changes:</p>
-<ul>
-<li>Add <strong>"Freeze when both trackers are lost"</strong> checkbox: If both trackers of any given double tracker are lost, then the tracker will freeze in place.<!-- -->
-<ul>
-<li>This new behaviour may be more in line with VRChat's current handling of single trackers being lost. The previous behaviour used to be that the tracker
-would fall back to the degraded data of the last known working tracker.</li>
-<li>On previous versions, this checkbox would be effectively OFF. The default behavior is now for this checkbox to be ON.</li>
-</ul>
-</li>
-<li>Add <strong>a new method to detect when trackers are flying off</strong>, even when SteamVR hardware trackers are reporting themselves as healthy.<!-- -->
-<ul>
-<li>In short, a new option called <strong>Detect Separation</strong> (default ON), will measure the distance that separates the two trackers. If
-that distance changes too much, one of the trackers probably flew off. We will now try to detect that, in addition to the usual method.</li>
-<li>There is <a href="https://docs.hai-vr.dev/docs/products/double-hip-tracker/v1.3-new-detection-method">a dedicated page that explains this new option</a>, and when to turn this off.</li>
-</ul>
-</li>
-<li>Add <strong>Auto-detect hip trackers</strong> checkbox: You can now disable automatic detection of hip trackers.<!-- -->
-<ul>
-<li>When you disable automatic detection, it works identically to the Double Chest Tracker.</li>
-<li>You can use this if you want to always use the same two hip tracker serial numbers without needing to shake your hips, but beware,
-you may have to press the "Realign Trackers" button if you happen to wear your double hip tracker belt after starting the application.</li>
-</ul>
-</li>
-<li>The UI is now organized across tabs.<!-- -->
-<ul>
-<li><em>Align trackers</em> tab: For normal use. It has the buttons to realign trackers.</li>
-<li><em>Edit trackers</em> tab: Configure which Double Trackers are enabled, and their configuration.</li>
-<li><em>Other</em> tab: Provides rarely used options.</li>
-</ul>
-</li>
-<li>Add <em>Send HMD position to VRChat</em> (default OFF).<!-- -->
-<ul>
-<li>This may help some users <a href="https://docs.vrchat.com/docs/osc-trackers#receiving-head-data" target="_blank" rel="noopener noreferrer">who have mismatching tracking spaces</a>.</li>
-<li>This option will be used during support requests to troubleshoot mismatching tracking space issues.</li>
-</ul>
-</li>
-<li>Add vertical offset options: Some users have been having issues with the OSC tracker having some sort of vertical offset.<!-- -->
-<ul>
-<li>No solution had been found for this, so the option to offset the tracker vertically stays.</li>
-<li>This option will be used during support requests to troubleshoot mismatching tracking space issues.</li>
 </ul>
 </li>
 </ul>]]></content:encoded>
