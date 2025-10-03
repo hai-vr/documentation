@@ -6,6 +6,12 @@ import {HaiVideo} from "/src/components/HaiVideo";
 
 ## 2.5.0-beta.1
 
+Lightbox Viewer is now compatible with:
+- BIRP Light Probes.
+- BIRP VRCLV.
+- URP Adaptive Probe Volumes.
+- URP Light Probes.
+
 Add support for URP Light Probes:
 - If URP is the current render pipeline, switch to a different scene if the Quality settings use Light Probes instead of Adaptive Probe Volumes.
 - If URP is in the project, detect when Quality settings change.
