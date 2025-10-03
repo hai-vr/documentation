@@ -4,10 +4,35 @@
         <title>Haï~ Blog</title>
         <link>https://docs.hai-vr.dev/updates</link>
         <description>Haï~ Blog</description>
-        <lastBuildDate>Fri, 03 Oct 2025 17:51:00 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 03 Oct 2025 18:04:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[🔺 HVR Basis Face Tracking (Update)]]></title>
+            <link>https://docs.hai-vr.dev/updates/2025/10/03/p1</link>
+            <guid>https://docs.hai-vr.dev/updates/2025/10/03/p1</guid>
+            <pubDate>Fri, 03 Oct 2025 18:04:00 GMT</pubDate>
+            <description><![CDATA[Avoid string comparisons in HVR addresses]]></description>
+            <content:encoded><![CDATA[<div><p><span></span></p><div class="hai_tag_ZcC4 hai_tag_requires_basis_QHoe">🔺 <span class="notranslate">Basis</span></div><p></p></div>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="avoid-string-comparisons-in-hvr-addresses">Avoid string comparisons in HVR addresses<a href="https://docs.hai-vr.dev/updates/2025/10/03/p1#avoid-string-comparisons-in-hvr-addresses" class="hash-link" aria-label="Direct link to Avoid string comparisons in HVR addresses" title="Direct link to Avoid string comparisons in HVR addresses">​</a></h3>
+<ul>
+<li>Reduce the number of string comparisons by using int addresses instead of string addresses.</li>
+<li>Addresses are mapped to int equivalents as early as possible.</li>
+<li>Modify AcquisitionService and all scripts that depend on it to use int addresses.</li>
+<li>Add HelpUrls to user-facing HVR behaviours.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="try-to-fix-combined-face-tracking-were-not-requested">Try to fix combined face tracking were not requested<a href="https://docs.hai-vr.dev/updates/2025/10/03/p1#try-to-fix-combined-face-tracking-were-not-requested" class="hash-link" aria-label="Direct link to Try to fix combined face tracking were not requested" title="Direct link to Try to fix combined face tracking were not requested">​</a></h3>
+<ul>
+<li>Some of the face tracking parameters that were needed by the default face tracking templates were not requested from VRCFaceTracking.</li>
+<li>Update the JSON file (for older versions of VRCFaceTracking) and the OSCQuery response to match.</li>
+<li>Fix UnifiedExpressions-Advanced-Strict incorrectly references addresses without the v2 prefix.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="expose-functions-for-hvr-basis-avataroptimizer">Expose functions for HVR Basis AvatarOptimizer<a href="https://docs.hai-vr.dev/updates/2025/10/03/p1#expose-functions-for-hvr-basis-avataroptimizer" class="hash-link" aria-label="Direct link to Expose functions for HVR Basis AvatarOptimizer" title="Direct link to Expose functions for HVR Basis AvatarOptimizer">​</a></h3>
+<ul>
+<li>Expose public functions on BlendshapeActuation and AutomaticFaceTracking for future use by HVR Basis AvatarOptimizer.</li>
+</ul>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[✨ Lightbox Viewer 2.5.0-beta.1]]></title>
             <link>https://docs.hai-vr.dev/updates/2025/10/03/p0</link>
@@ -530,39 +555,6 @@ to allow installation with Animator As Code V1.2.0 and all future versions of An
 <p>VR controls in-editor would let you grab world pickups with actual VR controllers and interact with them, opening the possibility of iterating faster on VR content just like a normal Unity game developer would. (<a href="https://x.com/vr_hai/status/1820978189788721500" target="_blank" rel="noopener noreferrer">Video</a>)</p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="thank-you-">Thank you ⭐<a href="https://docs.hai-vr.dev/updates/2024/08/31/x0#thank-you-" class="hash-link" aria-label="Direct link to Thank you ⭐" title="Direct link to Thank you ⭐">​</a></h2>
 <p>Your support makes it sustainable to continue the development of all these projects as a full-time occupation. Thank you so much! ⭐</p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[✨ Vixen V1.3.0]]></title>
-            <link>https://docs.hai-vr.dev/updates/2024/08/30/p2</link>
-            <guid>https://docs.hai-vr.dev/updates/2024/08/30/p2</guid>
-            <pubDate>Fri, 30 Aug 2024 23:30:00 GMT</pubDate>
-            <description><![CDATA[Custom bounds]]></description>
-            <content:encoded><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="custom-bounds">Custom bounds<a href="https://docs.hai-vr.dev/updates/2024/08/30/p2#custom-bounds" class="hash-link" aria-label="Direct link to Custom bounds" title="Direct link to Custom bounds">​</a></h3>
-<p>You can now customize the bounds in OSC Floats, Contacts, and PhysBones.</p>
-<ul>
-<li>By default, it is always between 0.0 and 1.0</li>
-<li>This can be used to change the range of activation for a PhysBone angle, the range of a PhysBone squish,
-or permit using two different ranges using one proximity Contact.</li>
-<li>To use it, enable <em>Use Custom Bounds</em> in the control settings.</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="fixes">Fixes<a href="https://docs.hai-vr.dev/updates/2024/08/30/p2#fixes" class="hash-link" aria-label="Direct link to Fixes" title="Direct link to Fixes">​</a></h3>
-<ul>
-<li>Prevents the editor from hanging up when the user mistakenly pastes a page long of unrelated content in the search field.<!-- -->
-<ul>
-<li>The search query is now limited to 100 characters max.</li>
-</ul>
-</li>
-<li>The Vixen icon will no longer show up in the Scene view.</li>
-<li>User-created <em>Modular Avatar Menu Installer</em> components can now be properly added directly to a Vixen Control.</li>
-<li>Existing <em>Modular Avatar Menu Installer</em> components can now be properly detected even if it is inactive in the hierarchy.</li>
-<li><em>Vixen Control</em> should no longer cause <em>Modular Avatar Menu Item</em> to print harmless error messages when it is deleted during a build.</li>
-<li>Vixen used to add a <em>Vixen BSG</em> phase to NDMF. This has been removed as it was never used.<!-- -->
-<ul>
-<li><em>Vixen BSG (BlendShapeGenerator) was what is now known as Starmesh.</em></li>
-</ul>
-</li>
-<li>Changed the way Vixen detects how VRChat SDK is installed.</li>
-</ul>]]></content:encoded>
         </item>
     </channel>
 </rss>
