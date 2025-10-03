@@ -4,6 +4,11 @@ title: Lightbox Viewer URP
 
 import {HaiVideo} from "/src/components/HaiVideo";
 
+## 1.0.0-beta.1
+
+- Lightbox Viewer URP now supports both Light Probes and Adaptive Probe Volumes through two different scenes loaded dynamically
+  by Lightbox Viewer 2.5.
+
 ## 1.0.0-alpha.6
 
 - Re-bake scene in Unity 6.2.

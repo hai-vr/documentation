@@ -4,6 +4,41 @@ title: Lightbox Viewer
 
 import {HaiVideo} from "/src/components/HaiVideo";
 
+## 2.5.0-beta.1
+
+Add support for URP Light Probes:
+- If URP is the current render pipeline, switch to a different scene if the Quality settings use Light Probes instead of Adaptive Probe Volumes.
+- If URP is in the project, detect when Quality settings change.
+
+Unlike suggested in previous alpha versions, this is still not compatible with macOS, as the compatibility attempt has failed.
+
+Previous change logs from alpha versions repeated in chronological order, without macOS changes:
+
+*From 2.4.1-alpha.1:*
+
+- Change Edit mode strategy for performance:
+    - Previously, Edit Mode was copying the avatar every frame, so that we don't accidentally cause the avatar to be modified.
+    - This change now copies the avatar to a hidden GameObject in the hierarchy and marked non-saved, if the reference to the Object To View does not change.
+    - Use object change events to detect when anything changes in the scene. If there is any change that pertains to a non-transform, we destroy the copied object and create a new one.
+    - This copied object is moved 10_000 units downwards between render cycles.
+    - Don't disable the original avatar between render cycles, because enabling the avatar is slow.
+    - In the copy, remove the Animators, because they take time to bind and we don't need them.
+
+*From 2.4.1-alpha.2:*
+
+- Add support for URP projects:
+    - Detect when the project is BIRP.
+    - If it is not BIRP, don't suggest installing the Post-Processing V2 package.
+    - If it is not BIRP, load the URP scene, even if the Light Volumes package is installed.
+
+*From 2.5.0-alpha.2:*
+
+- Attempt an optimization that removes the need for copying the texture from the GPU to the CPU.
+
+*From 2.5.0-alpha.3:*
+
+- Try to fix an issue where the depth was affecting how the view was rendered in a Unity 6.2 Basis project.
+
 ## 2.5.0-alpha.3
 
 - Try to fix an issue where the depth was affecting how the view was rendered in a Unity 6.2 Basis project.
