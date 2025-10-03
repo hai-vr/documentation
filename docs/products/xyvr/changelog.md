@@ -8,7 +8,7 @@ sidebar_position: 200
 
 Fixes:
 - Fix live monitoring for Resonite and VRChat should now recover after Internet connection is lost.
-- Fix Resonite schema was causing failure to retrieve contacts due to badge format.
+- Fix Resonite schema was causing failure to retrieve contacts due to badge format, contributed by art0007i.
 
 ## 0.0.1-alpha.11
 
