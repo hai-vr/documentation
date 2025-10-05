@@ -5,12 +5,32 @@ sidebar_position: 100
 
 # Privacy and Data considerations
 
-In a nutshell:
+XYVR does not operate any server. All data is stored locally on your computer.
+
 - **This application does not store your email and password.**
+- We store a cookie file and session tokens upon login, if requested.
+- We store your address book in the `%APPDATA%/XYVR/` folder.
+- We only perform requests to the following URLs:
+    - for VRChat accounts: `https://api.vrchat.cloud/api/1` (live updates: `wss://pipeline.vrchat.cloud/`)
+    - for Resonite accounts: `https://api.resonite.com/` (live updates: `https://api.resonite.com/hub`)
+    - for ChilloutVR accounts: `https://api.abinteractive.net/1`
+    - Information from one account is never transmitted to the service of another account (e.g., Resonite account data is never transmitted to VRChat servers, etc.)
+- We fetch thumbnails:
+    - for VRChat: from any thumbnail URL provided by the VRChat API.
+    - for Resonite: only from URLs which hostname is `resonite.com`, or any subdomain of `resonite.com`.
+- There are no requests to any other server.
+- There is no telemetry, no analytics, and no cloud storage.
+- This application will not modify, add, or remove any data from your VRChat, Resonite, or ChilloutVR accounts.
+
+### More detauls
+
 - If you check the "Stay logged in" checkbox, we store your session cookies and tokens in an encrypted file in `%APPDATA%/XYVR/.DO_NOT_SHARE__session-cookies.encrypted`
-- We store your user ID and real username in `%APPDATA%/XYVR/connectors.json`
+- We store your user ID and real username in `%APPDATA%/XYVR/connectors.json` , but not your email.
 - We store your address book in `%APPDATA%/XYVR/individuals.json`
 - We store non-login API requests and responses in `%APPDATA%/XYVR/response-collection.jsonl`
+- World cache:
+  - We store a cache of world names in `%APPDATA%/XYVR/.cache_world-names/`
+  - We store a cache of thumbnails in `%APPDATA%/XYVR/.cache_thumbnails/`
 
 HTTP requests and live updates:
 - Requests to the VRChat API are done using the url `https://api.vrchat.cloud/api/1` at the rate of one request per second on average,
@@ -21,6 +41,7 @@ HTTP requests and live updates:
 - Requests to the ChilloutVR API are done using the url `https://api.abinteractive.net/1`
 - **There are no requests to any other external services.**
   - There is no telemetry, analytics, or tracking of any kind.
+- Information from one account is never transmitted to the service of another account (e.g., Resonite account data is never transmitted to VRChat servers, etc.)
 
 ## Application startup
 

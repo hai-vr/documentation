@@ -17,14 +17,21 @@ view your contacts as one single address book.
 
 ### Privacy and data considerations
 
+XYVR does not operate any server. All data is stored locally on your computer.
+
 - **This application does not store your email and password.**
-- We locally store a cookie file and session tokens upon login, if requested.
-- We locally store your address book in the `%APPDATA%/XYVR/` folder.
+- We store a cookie file and session tokens upon login, if requested.
+- We store your address book in the `%APPDATA%/XYVR/` folder.
 - We only perform requests to the following URLs:
-    - for VRChat accounts: `https://api.vrchat.cloud/api/1` (official URL, see [\[1\]](https://github.com/vrchatapi/specification/commit/558c0ca50202c45194a49d515f27e64f62079ba4#diff-5fa520d3bb34f9ae444cdbdf2b9eccff2361eb89a0cd3f4dba1e2e0fa9bba452R15))
-    - for Resonite accounts: `https://api.resonite.com/`
+    - for VRChat accounts: `https://api.vrchat.cloud/api/1` (live updates: `wss://pipeline.vrchat.cloud/`)
+    - for Resonite accounts: `https://api.resonite.com/` (live updates: `https://api.resonite.com/hub`)
     - for ChilloutVR accounts: `https://api.abinteractive.net/1`
+    - Information from one account is never transmitted to the service of another account (e.g., Resonite account data is never transmitted to VRChat servers, etc.)
+- We fetch thumbnails:
+    - for VRChat: from any thumbnail URL provided by the VRChat API.
+    - for Resonite: only from URLs which hostname is `resonite.com`, or any subdomain of `resonite.com`.
 - There are no requests to any other server.
 - There is no telemetry, no analytics, and no cloud storage.
+- This application will not modify, add, or remove any data from your VRChat, Resonite, or ChilloutVR accounts.
 
 For more details, please refer to the following page: [Privacy and data considerations](./xyvr/privacy)
