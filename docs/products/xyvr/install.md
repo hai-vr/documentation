@@ -17,7 +17,7 @@ All 0.0.1 alpha versions are considered to be under heavy development and may co
 ### Windows
 
 The software under development can be downloaded at this location:
-- Windows-x64: Download **[0.0.1-alpha.11 software (GitHub)](https://github.com/hai-vr/XYVR/releases/download/0.0.1-alpha.11/XYVR-0.0.1-alpha.11-windows-x64-executable.zip)**
+- Windows-x64: Download **[0.0.1-alpha.12 software (GitHub)](https://github.com/hai-vr/XYVR/releases/download/0.0.1-alpha.12/XYVR-0.0.1-alpha.12-windows-x64-executable.zip)**
 
 Installing this requires the .NET 9.0 Desktop Runtime. When you start the application, if you don't have it, it will prompt you to install the runtime
 from the official Microsoft website.
@@ -27,7 +27,7 @@ from the official Microsoft website.
 ### Linux
 
 The software under development can be downloaded at this location:
-- Linux, x64: Download [0.0.1-alpha.11 software (GitHub)](https://github.com/hai-vr/XYVR/releases/download/0.0.1-alpha.11/xyvr-0.0.1-alpha.11-linux-x64-executable.tar.gz)
+- Linux, x64: Download [0.0.1-alpha.12 software (GitHub)](https://github.com/hai-vr/XYVR/releases/download/0.0.1-alpha.12/xyvr-0.0.1-alpha.12-linux-x64-executable.tar.gz)
 - Arch Linux, x64: Download, see [latest releases](https://github.com/hai-vr/XYVR/releases/latest)
 
 Installing this requires libwebkit2gtk-4.0 (see below) and the .NET 9.0 Desktop Runtime.
