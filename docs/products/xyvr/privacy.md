@@ -5,11 +5,18 @@ sidebar_position: 100
 
 # Privacy and Data considerations
 
-XYVR does not operate any server. All data is stored locally on your computer.
+#### Where is my data stored?
+
+All data is stored locally on your computer.
 
 - **This application does not store your email and password.**
 - We store a cookie file and session tokens upon login, if requested.
 - We store your address book in the `%APPDATA%/XYVR/` folder.
+
+#### What servers are called?
+
+XYVR does not operate any server, and it does not have analytics. The only services are those of the social VR apps.
+
 - We only perform requests to the following URLs:
     - for VRChat accounts: `https://api.vrchat.cloud/api/1` (live updates: `wss://pipeline.vrchat.cloud/`)
     - for Resonite accounts: `https://api.resonite.com/` (live updates: `https://api.resonite.com/hub`)
@@ -20,9 +27,19 @@ XYVR does not operate any server. All data is stored locally on your computer.
     - for Resonite: only from URLs which hostname is `resonite.com`, or any subdomain of `resonite.com`.
 - There are no requests to any other server.
 - There is no telemetry, no analytics, and no cloud storage.
-- This application will not modify, add, or remove any data from your VRChat, Resonite, or ChilloutVR accounts.
 
-### More detauls
+#### What is the nature of the requests to those servers?
+
+- This application does not modify, add, or remove any data from your VRChat, Resonite, or ChilloutVR accounts.
+- The following requests are for building an address book:
+    - Get all of your friends' usernames, bio, links, notes.
+    - Get all notes. If someone who has a note is not a friend, then get their username, bio, links, notes.
+- The following requests are for live monitoring:
+    - Get the currently active sessions.
+    - Get the session of a contact.
+    - Get the world of a session and its thumbnail.
+
+### More details
 
 - If you check the "Stay logged in" checkbox, we store your session cookies and tokens in an encrypted file in `%APPDATA%/XYVR/.DO_NOT_SHARE__session-cookies.encrypted`
 - We store your user ID and real username in `%APPDATA%/XYVR/connectors.json` , but not your email.
