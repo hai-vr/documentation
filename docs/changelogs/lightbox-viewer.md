@@ -4,6 +4,16 @@ title: Lightbox Viewer
 
 import {HaiVideo} from "/src/components/HaiVideo";
 
+## 2.5.0-beta.2
+
+Fix an issue with URP Adaptive Probe Volumes in additive scenes that was causing lilToon 2.3.0 previews to be incorrect.
+
+- Fix default lighting data was negatively affecting Adaptive Probe Volumes in additive scenes:
+  - Default scenes have a default lighting data asset assigned to it.
+  - This default lighting data causes the render to look different, and this is most noticeable on lilToon 2.3.0.
+  - Fix by checking if the scene currently uses the default lighting data. If it does, set it to null for the duration of the lightbox usage.
+  - This should fix https://github.com/hai-vr/lightbox-viewer-urp/issues/1 in Lightbox Viewer URP.
+
 ## 2.5.0-beta.1
 
 Lightbox Viewer is now compatible with:

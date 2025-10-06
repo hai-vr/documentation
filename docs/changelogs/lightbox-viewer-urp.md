@@ -4,6 +4,11 @@ title: Lightbox Viewer URP
 
 import {HaiVideo} from "/src/components/HaiVideo";
 
+## 1.0.0-beta.3
+
+- Re-bake the URP Light Probe scene reflection probes.
+- Lightbox Viewer 2.5.0-beta.2 is now required to fix an issue with URP Adaptive Probe Volumes in additive scenes that was causing the lilToon 2.3.0 previews to be incorrect.
+
 ## 1.0.0-beta.2
 
 - Lightbox Viewer 2.5 is now required.
