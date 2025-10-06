@@ -37,7 +37,7 @@ With *ComboGestureExpressions*:
 
 ## Download
 
-The tool is free for download using ALCOM.
+The tool is free to download using ALCOM.
 
 ### ALCOM
 

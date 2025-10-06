@@ -19,7 +19,7 @@ This does not require VRChat to run. It has been tested to work on Unity 2018, U
 
 ## Download
 
-The tool is free for download.
+The tool is free to download.
 
 - GitHub ([hai-vr/unity-2018-2019-cloth-transfer/releases](https://github.com/hai-vr/unity-2018-2019-cloth-transfer/releases))
 - Booth ([Cloth Transfer - hai-vr - BOOTH](https://booth.pm/en/items/3136328))

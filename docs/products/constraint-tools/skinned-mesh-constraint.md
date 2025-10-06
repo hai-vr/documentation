@@ -29,7 +29,7 @@ This does **not** follow the movement of blendshapes, and does **not** follow th
 
 ## Download
 
-The tool is free for download using ALCOM.
+The tool is free to download using ALCOM.
 
 ### ALCOM
 

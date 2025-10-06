@@ -20,7 +20,7 @@ It has been tested to work on Unity 6 only. It may not work on older versions.
 
 ## Download
 
-The tool is free for download using ALCOM.
+The tool is free to download using ALCOM.
 
 ### ALCOM
 

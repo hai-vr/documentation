@@ -11,7 +11,7 @@ The system itself doesn’t need the VRChat SDK to function, so this limitation 
 
 # Download
 
-The tool is free for download.
+The tool is free to download.
 
 - GitHub ([hai-vr/av3-constraint-track-animation-creator](https://github.com/hai-vr/av3-constraint-track-animation-creator))
 - Booth.pm ([Constraint Track Animation Creator - hai-vr - BOOTH](https://hai-vr.booth.pm/items/3532857))

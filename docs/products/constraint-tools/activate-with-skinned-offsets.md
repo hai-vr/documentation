@@ -35,7 +35,7 @@ If you are already using this component, you do not need to use this.
 
 ## Download
 
-The tool is free for download using ALCOM.
+The tool is free to download using ALCOM.
 
 ### ALCOM
 

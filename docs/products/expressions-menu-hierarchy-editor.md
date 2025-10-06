@@ -26,7 +26,7 @@ Additional functionality includes automatically disabling items in the menu when
 
 ## Download
 
-The tool is free for download.
+The tool is free to download.
 
 - GitHub ([hai-vr/av3-expressions-menu-hierarchy-editor](https://github.com/hai-vr/av3-expressions-menu-hierarchy-editor))
 - Booth.pm ([Expressions Menu Hierarchy Editor - hai-vr - BOOTH](https://hai-vr.booth.pm/items/3696355))

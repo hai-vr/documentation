@@ -18,7 +18,7 @@ This does not require VRChat to run. It has been tested to work on Unity 2019, a
 
 ## Download
 
-The tool is free for download. It can also be downloaded using ALCOM.
+The tool is free to download. It can also be downloaded using ALCOM.
 
 ### Direct download
 

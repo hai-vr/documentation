@@ -43,7 +43,7 @@ Compatible with Modular Avatar for <HaiTag requiresResonite={true} short={true} 
 
 ## Download
 
-The tool is free for download using ALCOM.
+The tool is free to download using ALCOM.
 
 ### ALCOM
 

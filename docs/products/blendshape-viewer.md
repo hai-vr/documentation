@@ -20,7 +20,7 @@ import {HaiVideo} from "/src/components/HaiVideo";
 
 ## Download
 
-The tool is free for download. It can also be downloaded using ALCOM.
+The tool is free to download. It can also be downloaded using ALCOM.
 
 ### Direct download
 
