@@ -38,4 +38,6 @@ import {HaiVideo} from "/src/components/HaiVideo";
 - Start adding URP lightbox scene with APVs:
   - This uses URP Adaptive Probe Volumes instead of light probes. It will only work with shaders that supports APVs.
   - Poiyomi URP: As of 2025-07-10, it will only work with Poiyomi URP *070825* or above.
-  - lilToon URP: As of 2025-07-10, it does not yet work with lilToon URP.
+  - ~~lilToon URP: As of 2025-07-10, it does not yet work with lilToon URP.~~
+  - lilToon URP: As of 2025-10-06, APVs will work with lilToon URP *2.3.0* or above.
+
