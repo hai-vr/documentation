@@ -18,6 +18,14 @@ Documentation for the *HVR* Basis packages.
 
 </GalleryItem>
 <GalleryItem 
+        name = 'XYVR'
+        url = '/docs/xyvr'
+>
+
+Documentation for *XYVR*.
+
+</GalleryItem>
+<GalleryItem 
         name = 'ResilienceVR'
         image = {require("@site/docs/products/gallery-img/resilience-temp.png").default}
         url = '/docs/resilience'

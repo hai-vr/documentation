@@ -301,6 +301,13 @@ export default {
           // MISC
           { from: '/redirect/components/SkinnedMeshConstraintBuilder', to: "/docs/products/constraint-tools/skinned-mesh-constraint" },
           { from: '/redirect/components/HaiFaceTraShapeCreator', to: '/docs/products/facetra-shape-creator/new-avatar' },
+
+
+            { from: '/docs/products/xyvr', to: '/docs/xyvr' },
+            { from: '/docs/products/xyvr/install', to: '/docs/xyvr/install' },
+            { from: '/docs/products/xyvr/privacy', to: '/docs/xyvr/privacy' },
+            { from: '/docs/products/xyvr/changelog', to: '/docs/xyvr/changelog' },
+            { from: '/docs/products/xyvr/user-agent', to: '/docs/xyvr/user-agent' },
         ],
         // createRedirects(existingPath) {
         //   if (existingPath.includes('/prefabulous')) {

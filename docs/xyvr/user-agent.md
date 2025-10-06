@@ -14,8 +14,12 @@ and `W` is equal to 0 for releases.
 Hai.XYVR/{version} (docs.hai-vr.dev/docs/products/xyvr/user-agent)
 ```
 
+The user agent is the same for ChilloutVR, VRChat, and Resonite.
+
 For inquiries about the client behavior, contact Haï~ through Discord: `vr_hai`.
 
-Source code: https://github.com/hai-vr/XYVR/blob/main/api-vrchat/VRChatAPI.cs
-- **VRChat API**: All data requests are made with a random delay between 700ms and 1300ms (1 second on average).
-- **Resonite API**: All data requests are made with a random delay between 400ms and 600ms (0.5 seconds on average).
+- **VRChat API**: All data requests are made with a random delay,
+  - 4 requests per second on average for requesting details of individual sessions, and
+  - 1 request per second on average for all other requests.
+  - Source code: https://github.com/hai-vr/XYVR/blob/main/account-vrchat/api/VRChatAPI.cs
+- **Resonite API**: All data requests are made with a random delay at 2 requests per second on average.
