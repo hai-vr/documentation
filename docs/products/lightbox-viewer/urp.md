@@ -31,5 +31,5 @@ The tool is free to download using ALCOM.
 
 If your quality settings use **Adaptive Probe Volumes**, you must use shaders that support Adaptive Probe Volumes.
 
-- **Poiyomi URP**: ✅ As of 2025-07-10, APVs will work with Poiyomi URP *070825* or above.
+- **Poiyomi URP**: ✅ As of 2025-07-10, APVs will work with Poiyomi URP *9.3.48* or above (formerly version 070825).
 - **lilToon URP**: ✅ As of 2025-10-06, APVs will work with lilToon URP *2.3.0* or above.
