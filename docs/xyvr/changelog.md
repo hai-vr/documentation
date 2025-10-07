@@ -4,6 +4,23 @@ sidebar_position: 200
 
 # Changelog
 
+## 0.0.1-alpha.13
+
+Features:
+- Add Simplified Chinese locale, contributed by modimobeikete.
+
+Changes:
+- Live monitoring will now start when logging into an account. Previously, the program needed to be restarted.
+- Live monitoring will now stop when logging out of an account.
+- Reorganized how the buttons are placed in the settings.
+- ChilloutVR API URL has been switched to `api.chilloutvr.net` by request from a member of the ChilloutVR team.
+- Documentation URL has changed. References to documentation URLs inside the app have been changed accordingly.
+
+Internal changes:
+- Compiling localization files is now dynamic, based on a manifest file.
+- Accounts can now be tagged as lost during data collection. This happens when a user deletes their VRChat account.
+- The live monitoring agent is now considered core functionality. 
+
 ## 0.0.1-alpha.12
 
 Fixes:

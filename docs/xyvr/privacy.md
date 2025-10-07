@@ -3,41 +3,11 @@ title: Privacy
 sidebar_position: 100
 ---
 
+import Privacybasics from "./_privacybasics.mdx";
+
 # Privacy and Data considerations
 
-#### Where is my data stored?
-
-All data is stored locally on your computer.
-
-- **This application does not store your email and password.**
-- We store a cookie file and session tokens upon login, if requested.
-- We store your address book in the `%APPDATA%/XYVR/` folder.
-
-#### What servers are called?
-
-XYVR does not operate any server, and it does not have analytics. The only services are those of the social VR apps.
-
-- We only perform requests to the following URLs:
-    - for VRChat accounts: `https://api.vrchat.cloud/api/1` (live updates: `wss://pipeline.vrchat.cloud/`)
-    - for Resonite accounts: `https://api.resonite.com/` (live updates: `https://api.resonite.com/hub`)
-    - for ChilloutVR accounts: `https://api.abinteractive.net/1`
-    - Information from one account is never transmitted to the service of another account (e.g., Resonite account data is never transmitted to VRChat servers, etc.)
-- We fetch thumbnails:
-    - for VRChat: from any thumbnail URL provided by the VRChat API.
-    - for Resonite: only from URLs which hostname is `resonite.com`, or any subdomain of `resonite.com`.
-- There are no requests to any other server.
-- There is no telemetry, no analytics, and no cloud storage.
-
-#### What is the nature of the requests to those servers?
-
-- This application does not modify, add, or remove any data from your VRChat, Resonite, or ChilloutVR accounts.
-- The following requests are for building an address book:
-    - Get all of your friends' usernames, bio, links, notes.
-    - Get all notes. If someone who has a note is not a friend, then get their username, bio, links, notes.
-- The following requests are for live monitoring:
-    - Get the currently active sessions.
-    - Get the session of a contact.
-    - Get the world of a session and its thumbnail.
+<Privacybasics />
 
 ### More details
 
@@ -55,7 +25,7 @@ HTTP requests and live updates:
   - We also use the websocket URL: `wss://pipeline.vrchat.cloud/`
 - Requests to the Resonite API are done using the url `https://api.resonite.com/` at the rate of two requests per second on average,
   and communication with the SignalR protocol for live updates (https://wiki.resonite.com/API#SignalR).
-- Requests to the ChilloutVR API are done using the url `https://api.abinteractive.net/1`
+- Requests to the ChilloutVR API are done using the url `https://api.chilloutvr.net/1`
 - **There are no requests to any other external services.**
   - There is no telemetry, analytics, or tracking of any kind.
 - Information from one account is never transmitted to the service of another account (e.g., Resonite account data is never transmitted to VRChat servers, etc.)
@@ -117,7 +87,7 @@ the registry key containing the encryption key will not be included.
 
 ## ChilloutVR login
 
-Requests to the ChilloutVR API are done using the url `https://api.abinteractive.net/1`
+Requests to the ChilloutVR API are done using the url `https://api.chilloutvr.net/1`
 
 When you connect to your ChilloutVR account using the XYVR application, it will do the following:
 - Send an HTTPS request to log in to your ChilloutVR account using your email and password.
