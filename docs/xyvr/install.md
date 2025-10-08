@@ -8,6 +8,16 @@ sidebar_position: 5
 *This page is a placeholder for a future free product called XYVR. Please check back another time.*
 :::
 
+## Disk space requirements
+
+To comply with VRChat's thumbnail policy, this software is required to store the world thumbnails on your disk to minimize the number of
+requests to VRChat's servers.
+
+If you do not use VRChat, the following does not apply to you.
+
+Depending on the number of different worlds that your friends will visit, this storage can balloon up quickly. Expect around 70MB for
+every 1000 worlds visited. We recommend at least 250MB of free space.
+
 ## Download software
 
 :::danger
