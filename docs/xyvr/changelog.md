@@ -4,6 +4,16 @@ sidebar_position: 200
 
 # Changelog
 
+## 0.0.1-alpha.14
+
+Features:
+- Add ChilloutVR live monitoring, contributed by art0007i.
+  - The CVRX license by AstroDogeDX is now referenced in the third-party acknowledgements.
+
+Changes:
+- In the login page message privacy disclosure, clarify that data is never transmitted to a third-party.
+  - Nothing actually changed in the privacy considerations, this just makes it explicit that no third-party is involved.
+
 ## 0.0.1-alpha.13
 
 Features:
