@@ -4,6 +4,15 @@ sidebar_position: 200
 
 # Changelog
 
+## 0.0.1-alpha.15
+
+Features:
+- VRChat live sessions now have a button to invite yourself to the session.
+- Resonite live sessions now have a button to join that session.
+
+Internal changes:
+- The custom name of live sessions is now hidden in demonstration mode.
+
 ## 0.0.1-alpha.14
 
 Features:
