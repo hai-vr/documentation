@@ -21,7 +21,7 @@ export default function FooterLayout({style, links, logo, copyright}) {
             <PatreonPlusOnly />
             {/*<Patronelt k="-1">⭐ {PatreonMore.plusactive} and <strong>{PatreonMore.regactive}</strong> more <strong><a href="/docs/other/supporters" className={clsx(patreonStyles.footerlink)}>Patreon Supporters ...</a></strong></Patronelt>*/}
             <Patronelt k="-1">⭐ <strong>{PatreonMore.allactive}</strong> total <strong><a href="/docs/other/supporters" className={clsx(patreonStyles.footerlink)}>Patreon Supporters ...</a></strong></Patronelt>
-            <p>Note: Due to a possible change in Patreon's data format (CSVs are no longer available for automation), some names may be missing on pledges made around October 2025. This will be fixed soon.</p>
+            <p>Note: Due to a possible change in Patreon's data format (CSVs are no longer available for automation), some names may be missing on pledges made around October 2025. This is currently being looked at.</p>
         </div>
     }
 
