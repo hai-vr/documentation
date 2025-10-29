@@ -21,6 +21,4 @@ Alternatively:
 
 ## Use
 
-Go to *VRCAvatarDescriptor* or *Pipeline Manager* > ⋮ > *No Thanks - Assign New Avatar ID*
-
-![mspaint_d8yRSDNfuk.png](img/no-thanks/mspaint_d8yRSDNfuk.png)
+TODO
