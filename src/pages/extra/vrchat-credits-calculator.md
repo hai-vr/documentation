@@ -27,7 +27,7 @@ I tried my best, but there may be inaccuracies. Use your due diligence.
 
 ## Sources
 
-The calculations on this page is based on the official documentation regarding fees:
+The calculations on this page are based on the official documentation regarding fees:
 
 - [Creator Economy/Payout/Fees](https://creators.vrchat.com/economy/payout#fees).
   - [Screenshot 1](chrome_xR98WSTVET.png)
@@ -200,7 +200,7 @@ Also:
 
 *\*Source: [Avatar Marketplace, FAQ, "Is there a minimum price that avatar creators have to abide by?"](https://hello.vrchat.com/avatar-marketplace)* 
 
-## Comparing with an hypothetical US salary
+## Comparing with a hypothetical US salary
 
 Assuming an employee earns $100K USD per year:
 

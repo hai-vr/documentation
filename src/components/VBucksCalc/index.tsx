@@ -2,19 +2,19 @@
 import React from 'react';
 import { useState } from 'react';
 
-const constants = {
-    STEAM_OR_APPSTORE_REVENUE_SHARE: 0.3,
-    PURCHASE_FEE: 0.4,
-    TRANSACTION_FEE: 0.153,
-    PAYOUT_FEE: 0.015,
-    VRCHAT_PLUS_MONTHLY_SUBSCRIPTION_PRICE_USD: 10,
-    VRCHAT_PLUS_YEARLY_SUBSCRIPTION_PRICE_USD: 100,
-    VRCHAT_AVATAR_MARKETPLACE_MINIMUM_PRICE_CREDITS: 1200,
-    usdPaidByUser: 10,
-    vrchatCreditsGranted: 1200,
-};
-
-const ratios = (() => {
+const ratiosFn = ((conversion) => {
+    const constants = {
+        STEAM_OR_APPSTORE_REVENUE_SHARE: 0.3,
+        PURCHASE_FEE: 0.4,
+        TRANSACTION_FEE: 0.153,
+        PAYOUT_FEE: 0.015,
+        VRCHAT_PLUS_MONTHLY_SUBSCRIPTION_PRICE_USD: 10 * conversion,
+        VRCHAT_PLUS_YEARLY_SUBSCRIPTION_PRICE_USD: 100 * conversion,
+        VRCHAT_AVATAR_MARKETPLACE_MINIMUM_PRICE_CREDITS: 1200,
+        usdPaidByUser: 10 * conversion,
+        vrchatCreditsGranted: 1200,
+    };
+    
     const c = constants;
 
     const usdEarnedBySteam = c.STEAM_OR_APPSTORE_REVENUE_SHARE * c.usdPaidByUser;
@@ -35,7 +35,7 @@ const ratios = (() => {
     const vrcPlusYearlySubs =
         usdEarnedByVRChat /
         ((1 - c.STEAM_OR_APPSTORE_REVENUE_SHARE) * c.VRCHAT_PLUS_YEARLY_SUBSCRIPTION_PRICE_USD);
-    const employeesAt100kPerYear = usdEarnedByVRChat / 100_000;
+    const employeesAt100kPerYear = (usdEarnedByVRChat / conversion) / 100_000;
 
     return {
         usdPaidByUser: c.usdPaidByUser, // = 10
@@ -51,7 +51,7 @@ const ratios = (() => {
         vrcPlusYearlySubs, // = 0.0274285714285714
         employeesAt100kPerYear // = 0.00001918
     };
-})();
+});
 
 const fieldLabels = {
     en: {
@@ -74,18 +74,18 @@ const fieldLabels = {
         }
     },
     ja: {
-        usdPaidByUser: 'ユーザーが支払うUSD（VAT除く）',
+        usdPaidByUser: 'ユーザーが支払うJPY（VAT除く）',
         vrchatCreditsGranted: 'ユーザーに付与されるVRChatクレジット',
-        usdEarnedBySteam: 'Steamの収益（USD）',
-        usdCreatorEconomy: 'クリエイターエコノミー用に確保されたUSD',
-        usdEarnedByVRChat: '1回の販売でVRChatが得る収益（USD）*',
+        usdEarnedBySteam: 'Steamの収益（JPY）',
+        usdCreatorEconomy: 'クリエイターエコノミー用に確保されたJPY',
+        usdEarnedByVRChat: '1回の販売でVRChatが得る収益（JPY）*',
         vrchatCreditsPayout: '販売者が得るVRChatクレジット',
-        usdPaymentProcessor: '決済処理業者の収益（USD）',
-        usdPaidOutToCreator: 'クリエイターへの支払額（USD）',
+        usdPaymentProcessor: '決済処理業者の収益（JPY）',
+        usdPaidOutToCreator: 'クリエイターへの支払額（JPY）',
         avatarsSoldAtMinPrice: '最低価格で販売されたアバターの数',
         vrcPlusMonthlySubs: '月額VRC+サブスクリプションの相当数（Steamカット後のVRChat収益**）',
         vrcPlusYearlySubs: '年額VRC+サブスクリプションの相当数（Steamカット後のVRChat収益**）',
-        employeesAt100kPerYear: '年間10万USDで雇用可能な従業員数',
+        employeesAt100kPerYear: '米国拠点の年収100,000 USD（おおよそ年収15,400,000 JPY相当）で支払うことができる従業員数',
         sectionTitles: {
             purchasing: 'クレジットの購入',
             sales: '販売と支払い',
@@ -94,24 +94,26 @@ const fieldLabels = {
     }
 };
 
-const currency = {
-    usdPaidByUser: '$',
-    vrchatCreditsGranted: '\\V',
-    usdEarnedBySteam: '$',
-    usdCreatorEconomy: '$',
-    usdEarnedByVRChat: '$',
-    vrchatCreditsPayout: '\\V',
-    usdPaymentProcessor: '$',
-    usdPaidOutToCreator: '$',
-    avatarsSoldAtMinPrice: '',
-    vrcPlusMonthlySubs: '',
-    vrcPlusYearlySubs: '',
-    employeesAt100kPerYear: '',
-};
-
-const fields = Object.keys(ratios).filter(field => field !== 'vrcPlusMonthsInYearlySub');
-
-export function VBucksCalc({ language = 'en' }) {
+export function VBucksCalc({ language = 'en', conversion = 1, currencyMarker = 'USD', currencySymbol = '$' }) {
+    const currency = {
+        usdPaidByUser: currencySymbol,
+        vrchatCreditsGranted: '\\V',
+        usdEarnedBySteam: currencySymbol,
+        usdCreatorEconomy: currencySymbol,
+        usdEarnedByVRChat: currencySymbol,
+        vrchatCreditsPayout: '\\V',
+        usdPaymentProcessor: currencySymbol,
+        usdPaidOutToCreator: currencySymbol,
+        avatarsSoldAtMinPrice: '',
+        vrcPlusMonthlySubs: '',
+        vrcPlusYearlySubs: '',
+        employeesAt100kPerYear: '',
+    };
+    
+    const ratios = ratiosFn(conversion);
+    
+    const fields = Object.keys(ratios).filter(field => field !== 'vrcPlusMonthsInYearlySub');
+    
     const [values, setValues] = useState(() => {
         const initial = {};
         fields.forEach((field) => {
@@ -188,6 +190,7 @@ export function VBucksCalc({ language = 'en' }) {
                     </div>
                 </React.Fragment>
             ))}
+            {conversion !== 1 && (<div>1 USD = {conversion} {currencyMarker}</div>)}
         </div>
     );
 }
