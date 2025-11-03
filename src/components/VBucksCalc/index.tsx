@@ -94,7 +94,7 @@ const fieldLabels = {
     }
 };
 
-export function VBucksCalc({ language = 'en', conversion = 1, currencyMarker = 'USD', currencySymbol = '$' }) {
+export function VBucksCalc({ language = 'en', conversion = 1, currencyMarker = 'USD', currencySymbol = '$', fractionDigits = 2 }) {
     const currency = {
         usdPaidByUser: currencySymbol,
         vrchatCreditsGranted: '\\V',
@@ -126,7 +126,7 @@ export function VBucksCalc({ language = 'en', conversion = 1, currencyMarker = '
     const [inputValues, setInputValues] = useState(() => {
         const initial = {};
         fields.forEach((field) => {
-            initial[field] = ratios[field].toLocaleString(undefined, { minimumFractionDigits: 0, maximumFractionDigits: 2 });
+            initial[field] = ratios[field].toLocaleString(undefined, { minimumFractionDigits: 0, maximumFractionDigits: field === 'employeesAt100kPerYear' ? 3 : fractionDigits });
         });
         return initial;
     });
@@ -153,7 +153,7 @@ export function VBucksCalc({ language = 'en', conversion = 1, currencyMarker = '
             updated[field] = parseFloat(computed.toFixed(6));
             updatedInputValues[field] = field === changedField
                 ? displayValue.toLocaleString(undefined, { maximumFractionDigits: 6 })
-                : displayValue.toLocaleString(undefined, { minimumFractionDigits: 0, maximumFractionDigits: 2 });
+                : displayValue.toLocaleString(undefined, { minimumFractionDigits: 0, maximumFractionDigits: field === 'employeesAt100kPerYear' ? 3 : fractionDigits });
         });
         setValues(updated);
         setInputValues(updatedInputValues);

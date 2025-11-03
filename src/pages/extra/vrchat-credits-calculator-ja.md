@@ -15,7 +15,7 @@ import {VBucksCalc} from "/src/components/VBucksCalc";
 
 最善を尽くしましたが、不正確な部分があるかもしれません。ご自身でも十分にご確認ください。
 
-<VBucksCalc language="ja" conversion="154" currencyMarker="JPY" currencySymbol="JPY" />
+<VBucksCalc language="ja" conversion="154" currencyMarker="JPY" currencySymbol="JPY" fractionDigits="0" />
 
 ----
 
