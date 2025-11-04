@@ -9,9 +9,22 @@ sidebar_position: 200
 Features:
 - VRChat live sessions now have a button to invite yourself to the session.
 - Resonite live sessions now have a button to join that session.
+- In the settings, there is now a setting to toggle whether Resonite sub-sessions are displayed. This does not
+  affect how sessions are displayed during a search.
+- Live monitoring now shows your own session you're in.
+
+Changes:
+- We normally refresh the list of sessions slowly due to rate limiting, but this caused the list of sessions in the UI
+  to reorder itself every time a session is refreshed, making the list of sessions in the UI practically unusable.
+  - Now, when we're refreshing the list of sessions to update the total number of users in a session,
+    the updated list of sessions is pushed to the UI all at once. This means the UI will no longer reorder itself
+    while we're making the API requests to refresh that list.
+- The UI theme is undergoing changes.
 
 Internal changes:
 - The custom name of live sessions is now hidden in demonstration mode.
+- Requests to VRChat API are more aggressively canceled when the application exits.
+- Replaced an incorrect localization line.
 
 ## 0.0.1-alpha.14
 
