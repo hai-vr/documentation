@@ -12,6 +12,8 @@ Features:
 - In the settings, there is now a setting to toggle whether Resonite sub-sessions are displayed. This does not
   affect how sessions are displayed during a search.
 - Live monitoring now shows your own session you're in.
+- Clicking an account or an individual will open that individual in a modal.
+  - That modal also shows the previous account usernames, links, notes, and bio.
 
 Changes:
 - We normally refresh the list of sessions slowly due to rate limiting, but this caused the list of sessions in the UI
@@ -20,6 +22,7 @@ Changes:
     the updated list of sessions is pushed to the UI all at once. This means the UI will no longer reorder itself
     while we're making the API requests to refresh that list.
 - The UI theme is undergoing changes.
+- The button to copy the account ID to the clipboard is now only shown in the modal.
 
 Internal changes:
 - The custom name of live sessions is now hidden in demonstration mode.
