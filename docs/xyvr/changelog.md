@@ -4,6 +4,45 @@ sidebar_position: 200
 
 # Changelog
 
+## 0.0.1-alpha.16 (WIP)
+
+Features:
+- You may now assign a custom profile to your contacts. The UI is now designed around displaying profile pictures.
+  - You choose a profile picture by opening a users' account, and then drag and drop a picture into it.
+  - The 2D profile pictures from the various social VR apps are not used as a profile picture.
+  - The picture is stored with the XYVR database.
+  - If a session has five or more participants, that session is now shown full-width to accomodate the large size of the profile pictures.
+- Live sessions now contain additional information:
+  - Live sessions now display the session entry permission type.
+  - VRChat instances now show when entering it requires Age Verification, contributed by art0007i.
+  - ChilloutVR instances and Resonite sessions now show the usernames of people in the session, contributed by art0007i.
+  - Resonite sessions now display when it is hosted headless.
+  - Resonite sessions now have buttons to open the instance through the web browser, and a button to copy a web link to it.
+- The window size and position are now remembered across sessions.
+  - Although implemented, it is unclear whether this works on Linux.
+- In search results, links to the following services are now marked as such and shortened for most of them:
+  - *Artstation, Bandcamp, Bluesky, Booth.pm, Carrd, Facebook, Fansly, Fantia, GitHub, GitLab, Gumroad, Instagram, Jinxxy, Ko-fi,
+    Linktree, Misskey.io, Misskey.niri.la, Mixcloud, Patreon, Skeb, SoundCloud, Steam, TikTok, Twitch, Twitter, X, YouTube, cluster.mu, lit.link, pixivFANBOX*
+  - Links to Bluesky are not shortened to keep the identifier consistent with the use of custom domains.
+
+Fixes:
+- Fix sending yourself an invite to VRChat instance should now be functional.
+
+Changes:
+- The link to open the profile is now the rightmost.
+- The button to join a session is now displayed at the bottom right.
+- Due to the change in profile pictures, multi-sessions are no longer shown within live sessions and within users located in private sessions;
+  they are now shown only inside the modal.
+- The "Contact" label is no longer shown.
+- Links are now shown at the top rather than at the bottom.
+- A question mark is now shown when the total number of participants in a session is not yet known.
+- Search results are now shown in three columns.
+- A log file is now written to disk, contributed by art0007i.
+
+Internal changes:
+- Builds and the WebView2 build script now output the executable to the `build/` folder at root, contributed by art0007i.
+- Resonite live internals now throw an exception when the user has failed to log in (session expired), contributed by art0007i.
+
 ## 0.0.1-alpha.15
 
 Features:
