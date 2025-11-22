@@ -6,12 +6,24 @@ sidebar_position: 200
 
 ## 0.0.1-alpha.16 (WIP)
 
+Privacy and data changes:
+- Add data considerations for the Cluster social VR application (cluster.mu):
+  - In *What servers are called?*, add the following:
+> - We only perform requests to the following URLs:
+>   - for Cluster accounts: `https://api.cluster.mu/v1`
+> - We fetch thumbnails:
+>   - for Cluster: only from URLs that start with `https://cluster-file-storage.imgix.net/`.
+- These new considerations only apply to accounts of type *cluster.mu*.
+- If you only use Resonite, VRChat, or ChilloutVR accounts, this does not affect you.
+
 Features:
 - You may now assign a custom profile to your contacts. The UI is now designed around displaying profile pictures.
   - You choose a profile picture by opening a users' account, and then drag and drop a picture into it.
   - The 2D profile pictures from the various social VR apps are not used as a profile picture.
   - The picture is stored with the XYVR database.
   - If a session has five or more participants, that session is now shown full-width to accomodate the large size of the profile pictures.
+- Add partial implementation of the Cluster (*cluster.mu*) social VR platform.
+  - For this version, it is not possible to log-in to Cluster accounts due to technical and privacy limitations.
 - Live sessions now contain additional information:
   - Live sessions now display the session entry permission type.
   - VRChat instances now show when entering it requires Age Verification, contributed by art0007i.
@@ -29,13 +41,15 @@ Fixes:
 - Fix sending yourself an invite to VRChat instance should now be functional.
 
 Changes:
-- The link to open the profile is now the rightmost.
-- The button to join a session is now displayed at the bottom right.
-- Due to the change in profile pictures, multi-sessions are no longer shown within live sessions and within users located in private sessions;
-  they are now shown only inside the modal.
-- The "Contact" label is no longer shown.
-- Links are now shown at the top rather than at the bottom.
-- A question mark is now shown when the total number of participants in a session is not yet known.
+- Changes in live sessions:
+  - The button to join a session is now displayed at the bottom right.
+  - Due to the change in profile pictures, multi-sessions are no longer shown within live sessions and within users located in private sessions;
+    they are now shown only inside the modal.
+  - A question mark is now shown when the total number of participants in a session is not yet known.
+- Changes in search results and modal:
+  - The link to open the profile is now the rightmost.
+  - The "Contact" label is no longer shown.
+  - Links are now shown at the top rather than at the bottom.
 - Search results are now shown in three columns.
 - A log file is now written to disk, contributed by art0007i.
 
