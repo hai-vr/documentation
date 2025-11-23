@@ -26,10 +26,12 @@ Features:
   - For this version, it is not possible to log-in to Cluster accounts due to technical and privacy limitations.
 - Live sessions now contain additional information:
   - Live sessions now display the session entry permission type.
-  - VRChat instances now show when entering it requires Age Verification, contributed by art0007i.
+  - Live sessions now have icons:
+    - *Red ID card icon*: VRChat instances now show when entering it requires Age Verification, contributed by art0007i.
+    - *Server icon*: Resonite sessions now display when it is hosted headless.
   - ChilloutVR instances and Resonite sessions now show the usernames of people in the session, contributed by art0007i.
-  - Resonite sessions now display when it is hosted headless.
   - Resonite sessions now have buttons to open the instance through the web browser, and a button to copy a web link to it.
+- There are now buttons to quickly filter online users by app.
 - The window size and position are now remembered across sessions.
   - Although implemented, it is unclear whether this works on Linux.
 - In search results, links to the following services are now marked as such and shortened for most of them:
@@ -46,16 +48,21 @@ Changes:
   - Due to the change in profile pictures, multi-sessions are no longer shown within live sessions and within users located in private sessions;
     they are now shown only inside the modal.
   - A question mark is now shown when the total number of participants in a session is not yet known.
-- Changes in search results and modal:
-  - The link to open the profile is now the rightmost.
-  - The "Contact" label is no longer shown.
-  - Links are now shown at the top rather than at the bottom.
-- Search results are now shown in three columns.
+- Search-related changes:
+  - The search bar has been moved to the top of the screen.
+  - Changes in search results and modal:
+    - The link to open the profile is now the rightmost.
+    - The "Contact" label is no longer shown.
+    - Links are now shown at the top rather than at the bottom.
+  - Search results are now shown in three columns.
+  - If the search terms are a quick filter for online users, then the address book is not shown.
+  - The profile pictures of users in private sessions are now shown even if there is a search term.
 - A log file is now written to disk, contributed by art0007i.
 
 Internal changes:
 - Builds and the WebView2 build script now output the executable to the `build/` folder at root, contributed by art0007i.
 - Resonite live internals now throw an exception when the user has failed to log in (session expired), contributed by art0007i.
+- Update vite to 7.1.11 and js-yaml to 4.1.1 as suggested by Dependabot.
 
 ## 0.0.1-alpha.15
 
