@@ -8,6 +8,12 @@ import {HaiVideo} from "/src/components/HaiVideo";
   - Thanks to @JLChnToZ for reporting this issue ([#2](https://github.com/hai-vr/constraint-tools/issues/2)).
 - Improve component startup time when hiding the component icon in the scene.
 
+## 1.2.0-beta.1
+
+- Fix compatibility with VRCSDK 3.10 where `VRCConstraintBase.GetPerSourcePositionOffsets()` is no longer public.
+  - Thanks to @JLChnToZ for reporting this issue ([#2](https://github.com/hai-vr/constraint-tools/issues/2)).
+- Improve component startup time when hiding the component icon in the scene.
+
 ## 1.1.1
 
 The Skinned Mesh Constraint Builder component now has a clickable help URL in the inspector.
