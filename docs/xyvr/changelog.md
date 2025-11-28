@@ -41,6 +41,7 @@ Features:
 
 Fixes:
 - Fix sending yourself an invite to VRChat instance should now be functional.
+- The rate limit delay for Resonite API calls has been raised from 500ms to 1 second, to avoid getting a Too Many Requests response. 
 
 Changes:
 - Changes in live sessions:
@@ -63,6 +64,9 @@ Internal changes:
 - Builds and the WebView2 build script now output the executable to the `build/` folder at root, contributed by art0007i.
 - Resonite live internals now throw an exception when the user has failed to log in (session expired), contributed by art0007i.
 - Update vite to 7.1.11 and js-yaml to 4.1.1 as suggested by Dependabot.
+- Http requests now handle errors differently:
+  - If any 5xx server error is returned, we use exponential backoff to retry that request.
+  - If 429 Too Many Requests status code is returned, we wait 80 seconds before retrying.
 
 ## 0.0.1-alpha.15
 
