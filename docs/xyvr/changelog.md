@@ -6,7 +6,13 @@ sidebar_position: 200
 
 ## 0.0.1-alpha.16 (WIP)
 
-Privacy and data changes:
+### Privacy and data changes
+
+With the addition of accounts from the *Cluster (cluster.mu)* social VR platform, the Privacy and data consideration are being
+updated to reflect this.
+
+If you only use Resonite, VRChat, or ChilloutVR accounts, this does not affect you.
+
 - Add data considerations for the Cluster social VR application (cluster.mu):
   - In *What servers are called?*, add the following:
 > - We only perform requests to the following URLs:
@@ -14,7 +20,8 @@ Privacy and data changes:
 > - We fetch thumbnails:
 >   - for Cluster: only from URLs that start with `https://cluster-file-storage.imgix.net/`.
 - These new considerations only apply to accounts of type *cluster.mu*.
-- If you only use Resonite, VRChat, or ChilloutVR accounts, this does not affect you.
+
+### Application changes
 
 Features:
 - You may now assign a custom profile to your contacts. The UI is now designed around displaying profile pictures.
