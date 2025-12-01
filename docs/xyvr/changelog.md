@@ -8,8 +8,9 @@ sidebar_position: 200
 
 ### Privacy and data changes
 
-With the addition of accounts from the *Cluster (cluster.mu)* social VR platform, the Privacy and data consideration are being
-updated to reflect this.
+This update adds internal handling to support another social VR platform: *Cluster ([cluster.mu](https://cluster.mu/))*.
+
+The Privacy and data considerations are being updated to reflect this.
 
 If you only use Resonite, VRChat, or ChilloutVR accounts, this does not affect you.
 
