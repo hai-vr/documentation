@@ -2,6 +2,10 @@
 title: Chillaxins
 ---
 
+## 1.2.0
+
+- Improve compatibility with Basis Framework avatar builds non-Windows OS.
+
 ## 1.2.0-alpha.1
 
 - Improve compatibility with Basis Framework avatar builds non-Windows OS.

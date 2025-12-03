@@ -2,11 +2,7 @@ import {HaiVideo} from "/src/components/HaiVideo";
 
 # Constraint Tools
 
-## 1.2.1 (WIP)
-
-:::warning
-This update is not yet released.
-:::
+## 1.2.1
 
 - Make VRCSDK compatibility more future-proof.
   - Internal method is `VRCConstraintBase.GetPerSourcePositionOffsets()` no longer invoked.
