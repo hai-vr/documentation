@@ -4,10 +4,29 @@
         <title>Haï~ Blog</title>
         <link>https://docs.hai-vr.dev/updates</link>
         <description>Haï~ Blog</description>
-        <lastBuildDate>Thu, 27 Nov 2025 23:32:00 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 03 Dec 2025 06:11:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[⚙️ Skinned Mesh Constraint Builder V1.2.1 / Chillaxins V1.2.0]]></title>
+            <link>https://docs.hai-vr.dev/updates/2025/12/03/p0</link>
+            <guid>https://docs.hai-vr.dev/updates/2025/12/03/p0</guid>
+            <pubDate>Wed, 03 Dec 2025 06:11:00 GMT</pubDate>
+            <description><![CDATA[⚙️ Skinned Mesh Constraint Builder V1.2.1]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="️-skinned-mesh-constraint-builder-v121">⚙️ Skinned Mesh Constraint Builder V1.2.1<a href="https://docs.hai-vr.dev/updates/2025/12/03/p0#%EF%B8%8F-skinned-mesh-constraint-builder-v121" class="hash-link" aria-label="Direct link to ⚙️ Skinned Mesh Constraint Builder V1.2.1" title="Direct link to ⚙️ Skinned Mesh Constraint Builder V1.2.1">​</a></h2>
+<ul>
+<li>Make VRCSDK compatibility more future-proof.<!-- -->
+<ul>
+<li>Internal method is <code>VRCConstraintBase.GetPerSourcePositionOffsets()</code> no longer invoked.</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="chillaxins-v120">Chillaxins V1.2.0<a href="https://docs.hai-vr.dev/updates/2025/12/03/p0#chillaxins-v120" class="hash-link" aria-label="Direct link to Chillaxins V1.2.0" title="Direct link to Chillaxins V1.2.0">​</a></h2>
+<ul>
+<li>Improve compatibility with Basis Framework avatar builds non-Windows OS.</li>
+</ul>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[⚙️ Skinned Mesh Constraint Builder V1.2.0]]></title>
             <link>https://docs.hai-vr.dev/updates/2025/11/27/p0</link>
@@ -523,46 +542,6 @@ to allow installation with Animator As Code V1.2.0 and all future versions of An
 <p>Starmesh now has code that is shared with FaceTra Shape Creator under the <em>MeshLib</em> package; this is the main reason this update has been published.</p>
 <p>This update contains fixes in the order Selectors and Operators are processed, so that <em>Op. Paint New Bone</em> does not interfere with operators that use <em>Select Bones</em>.</p>
 <p>🔍 <a href="https://docs.hai-vr.dev/docs/changelogs/starmesh#160">View changelog</a></p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[✨ FaceTra Shape Creator V0.9.0]]></title>
-            <link>https://docs.hai-vr.dev/updates/2024/11/29/p0</link>
-            <guid>https://docs.hai-vr.dev/updates/2024/11/29/p0</guid>
-            <pubDate>Fri, 29 Nov 2024 13:00:00 GMT</pubDate>
-            <description><![CDATA[A new version of FaceTra Shape Creator has been released.]]></description>
-            <content:encoded><![CDATA[<p>A new version of FaceTra Shape Creator has been released.</p>
-<p>There are a lot of changes, described in full in the <a href="https://docs.hai-vr.dev/docs/changelogs/facetra-shape-creator#0.9.0">changelog</a>.</p>
-<p>In summary:</p>
-<ul>
-<li>The performance of the application in Edit mode has been significantly improved.</li>
-<li>Improvements in tailoring:<!-- -->
-<ul>
-<li>You can now enable Tailoring and override push and pulling vertices per-shape.</li>
-<li>The result of tailoring can now be exported into a new file.</li>
-<li>Tailoring can now optionally use the same blendshapes as those from Adaptive file.</li>
-</ul>
-</li>
-<li>Improvements in shapes:<!-- -->
-<ul>
-<li>Most mouth shapes can now have blendshapes added to them. They will use the Mouth Divider.</li>
-<li>The functionality to push and pull vertices is now optional per-shape, and can be turned off entirely.</li>
-<li>Upper teeth can now be included in the deformation of Jaw Open, Jaw Left/Right, and Jaw Forward.</li>
-</ul>
-</li>
-<li>Improvements in the calibration process:<!-- -->
-<ul>
-<li>You can now define a position offset (i.e. when a model has been re-saved with high heels).</li>
-<li>You can now explicitly define base blendshapes that will serve as the rest pose of the face.</li>
-<li>Vertex selection UI has been improved.</li>
-<li>The blendshape used in the calibration process to define Mouth, Teeth, and Tongue vertices is now separate from the blendshape used in Jaw Open.</li>
-<li>Add a new construction line "Eye Visualization", used to visualize the Eye divider.</li>
-</ul>
-</li>
-<li>Add new shape: Nose Sneer Left/Right.</li>
-</ul>
-<video controls="" muted="" width="816"><source src="https://large.docs.cdn.hai-vr.dev/assets/docs/2024-11-25-p0-6JaYH1MJ0A.mp4"></video>
-<div class="theme-admonition theme-admonition-warning admonition_xJq3 alert alert--warning"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>warning</div><div class="admonitionContent_BuS1"><p>FaceTra now shares code with Starmesh under the <em>MeshLib</em> package, which is included in both products.</p><p>If you use Starmesh, please update Starmesh to V1.6.0.</p></div></div>
-<p>🔍 <a href="https://docs.hai-vr.dev/docs/changelogs/facetra-shape-creator#090">View changelog</a></p>]]></content:encoded>
         </item>
     </channel>
 </rss>
