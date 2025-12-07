@@ -1,5 +1,6 @@
 ---
 title: No, Thanks - Generate new Avatar blueprint IDs
+unlisted: true
 ---
 
 ## 1.0.0
