@@ -93,6 +93,7 @@ You can override this behaviour by changing the *Vendor* field to *Unity* before
 
 ## Versions
 
+- **1.2.0**: Fix compatibility with breaking change introduced in VRCSDK 3.10, if it is installed.
 - **1.0.1**: Added.
 
 Classification: *This component is application-agnostic.*
