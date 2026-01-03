@@ -9,7 +9,7 @@ import {HaiVideo} from "/src/components/HaiVideo";
 This page records my attempts to build a toe tracking device that supports multiple toes.
 
 :::danger
-This page is currently being written, and is a living document.
+(2026 notice) This page describes an old project, and it may be incomplete.
 :::
 
 <HaiVideo src="./img/toetracking-tundra-f.mp4"></HaiVideo>

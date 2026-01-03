@@ -7,7 +7,7 @@ import {HaiVideo} from "/src/components/HaiVideo";
 # Option 2: ESP32
 
 :::danger
-This page is currently being written.
+(2026 notice) This page describes an old project, and it may be incomplete.
 :::
 
 I've had two separate electronics implementations:

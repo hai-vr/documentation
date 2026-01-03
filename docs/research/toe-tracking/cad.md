@@ -5,7 +5,7 @@ sidebar_position: 2
 # CAD Models
 
 :::danger
-This page is currently being written.
+(2026 notice) This page describes an old project, and it may be incomplete.
 :::
 
 :::danger

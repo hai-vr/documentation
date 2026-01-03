@@ -5,7 +5,7 @@ sidebar_position: 1
 # Build your own
 
 :::danger
-This page is currently being written.
+(2026 notice) This page describes an old project, and it may be incomplete.
 :::
 
 The design of my multi-toe tracker is made public, but the components I provide as a reference are built to fit my foot shape.
