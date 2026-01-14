@@ -5,7 +5,7 @@ import {HaiTags} from "/src/components/HaiTags";
 import {HaiTag} from "/src/components/HaiTag";
 import {HaiVideo} from "/src/components/HaiVideo";
 
-# Denormalized Avatar Exporter (Beta)
+# Denormalized Avatar Exporter
 
 <HaiTags>
 <HaiTag compatibleWithVNyan={true} compatibleWithWarudo={true} compatibleWithVSeeFace={true} />
@@ -43,7 +43,7 @@ and install it in your VTubing project.
 **Do you use V<!-- -->CC/ALCOM?** The V<!-- -->CC and ALCOM package managers can be used in non-VRChat projects, which could be useful if you want to use lilToon,
 Modular Avatar, or other packages in non-VRChat projects.
 
-If you use V<!-- -->CC or ALCOM, you can instead use the *Haï ~ Denormalized Avatar Exporter (Beta)* package in my [ALCOM listing](/docs/products/listing).
+If you use V<!-- -->CC or ALCOM, you can instead use the *Haï ~ Denormalized Avatar Exporter* package in my [ALCOM listing](/docs/products/listing).
 
 *If you're interested in using V<!-- -->CC, but you don't play VRChat, strongly consider using the [open-source version of V<!-- -->CC called ALCOM](/docs/products/listing#alcom), which does not require you to create a VRChat account (and therefore
 does not require you to accept the VRChat Terms of Use).*
