@@ -8,6 +8,9 @@ Structure
 - **HVR.NetworkingPackets** contains the packets shared between the client and server.
 - **HVR.Server** is a .NET 10 project that contains the server code.
 
+*HVR* depends on one package that was previously separated from this project:
+- **HVR.IK** contains the [IK solver](https://github.com/hai-vr/hvr-ik).
+
 Despite being a package, *HVR.Core* has many assembly definitions in it, which are described below.
 
 ```mermaid
@@ -15,6 +18,7 @@ graph TD;
     PhysicsAnimation-->Shared:::unity;
     Tracking-->Shared:::unity;
     OpenXRTools:::vendor-->|CreatesTrackers|Tracking:::unity;
+    Integration-->HVRIK:::neutral;
     OpenVROverlayTools:::vendor-->|CreatesTrackers|Tracking:::unity;
     
     Integration:::unity-->|WeakDependency|OpenXRTools;
@@ -42,3 +46,13 @@ graph TD;
     classDef dotnet10 fill:#FCC
     classDef vendor fill:#FFC
 ```
+
+## Vendors
+
+Apart from Unity itself, HVR tries to keep vendor dependencies weak so that they may be amputated from the project if necessary.
+- VR/XR/Tracking:
+  - *OpenXRTools* creates trackers for OpenXR through the *HVR.Tracking* module.
+  - *OpenVROverlayTools* creates trackers for OpenVR through the *HVR.Tracking* module.
+  - Trackers created in this way are advertised to *HVR.Integration*, which then uses them to control the VR camera, calibration, and other tracking facilities.
+- Networking:
+  - *Steamworks* raises incoming messages and transmits outbound messages through the *HVR.NetworkingPackets* module.
