@@ -4,6 +4,13 @@ title: Animation Viewer
 
 import {HaiVideo} from "/src/components/HaiVideo";
 
+## 2.1.1
+
+- Fix thumbnail size setting now applies properly when the value is changed.
+  - Previously, it may have been applying an old value for the setting.
+
+The above changes have been contributed by **[mekanyanko (めかにゃんこ)](https://github.com/mekanyanko)**.
+
 ## 2.1.0
 
 - Add support for CTRL-K Unity Search window.
