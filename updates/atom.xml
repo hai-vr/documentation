@@ -2,11 +2,26 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://docs.hai-vr.dev/updates</id>
     <title>Haï~ Blog</title>
-    <updated>2025-12-03T06:11:00.000Z</updated>
+    <updated>2026-01-28T13:33:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://docs.hai-vr.dev/updates"/>
     <subtitle>Haï~ Blog</subtitle>
     <icon>https://docs.hai-vr.dev/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[⚙️ Animation Viewer V2.1.1]]></title>
+        <id>https://docs.hai-vr.dev/updates/2026/01/28/p0</id>
+        <link href="https://docs.hai-vr.dev/updates/2026/01/28/p0"/>
+        <updated>2026-01-28T13:33:00.000Z</updated>
+        <summary type="html"><![CDATA[- Fix thumbnail size setting now applies properly when the value is changed.]]></summary>
+        <content type="html"><![CDATA[<ul>
+<li>Fix thumbnail size setting now applies properly when the value is changed.<!-- -->
+<ul>
+<li>Previously, it may have been applying an old value for the setting.</li>
+</ul>
+</li>
+</ul>
+<p>The above changes have been contributed by <strong><a href="https://github.com/mekanyanko" target="_blank" rel="noopener noreferrer">mekanyanko (めかにゃんこ)</a></strong>.</p>]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[⚙️ Skinned Mesh Constraint Builder V1.2.1 / Chillaxins V1.2.0]]></title>
         <id>https://docs.hai-vr.dev/updates/2025/12/03/p0</id>
@@ -530,16 +545,5 @@ integration with this new API.</p>
         <content type="html"><![CDATA[<p>The sub-packages of Animator As Code "VRChat", "VRChat Destructive Workflow", and "Modular Avatar functions" have been updated
 to allow installation with Animator As Code V1.2.0 and all future versions of Animator As Code V1.</p>
 <p>There are no other changes.</p>]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[⚙️ Starmesh V1.6.0]]></title>
-        <id>https://docs.hai-vr.dev/updates/2024/11/29/p1</id>
-        <link href="https://docs.hai-vr.dev/updates/2024/11/29/p1"/>
-        <updated>2024-11-29T20:00:00.000Z</updated>
-        <summary type="html"><![CDATA[A new version of Starmesh has been released.]]></summary>
-        <content type="html"><![CDATA[<p>A new version of Starmesh has been released.</p>
-<p>Starmesh now has code that is shared with FaceTra Shape Creator under the <em>MeshLib</em> package; this is the main reason this update has been published.</p>
-<p>This update contains fixes in the order Selectors and Operators are processed, so that <em>Op. Paint New Bone</em> does not interfere with operators that use <em>Select Bones</em>.</p>
-<p>🔍 <a href="https://docs.hai-vr.dev/docs/changelogs/starmesh#160">View changelog</a></p>]]></content>
     </entry>
 </feed>
