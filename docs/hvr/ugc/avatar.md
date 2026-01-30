@@ -11,7 +11,7 @@ An avatar is a **humanoid** character. It is built into a file so that it may be
 - Edit the **Avatar Base** field. Example values are `Lime`, `Shinano`, `Milltina`, etc.
   - This may be used to keep in-game settings consistent across avatars that use the same avatar base.
 - Click **Edit Viewpoint** and change the viewpoint to match.
-- In collision meshes, drag and drop the following:
+- In the **Collision Meshes** list, drag and drop the following:
     - Add the mesh of your avatar's body, without clothing.
     - Add the mesh of your avatar's face mesh, without the hair.
     - If you are wearing shoes, add the mesh of your shoes.
