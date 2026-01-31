@@ -1,6 +1,8 @@
 Physics Animation
 =====
 
+import {HaiVideo} from "/src/components/HaiVideo";
+
 *Physics Animation* in HVR refers to a concept that may also be known as *powered ragdolls* or a *control rig*.
 
 It is the act of modifying characteristics of rigidbodies and applying forces on individual rigidbodies and joints of a ragdoll
@@ -16,6 +18,8 @@ to the implementation described in the talk.
 
 Other VR games like [Boneworks](https://store.steampowered.com/app/823500/) and [Hard Bullet](https://store.steampowered.com/app/1294760/)
 are notorious for using similar forms of physics animation, so HVR is not unique in this regard.
+
+<HaiVideo src="./img/M0sEtExl9r-f.mp4" halfWidth={true}></HaiVideo>
 
 ## Physics Animation Profiles
 

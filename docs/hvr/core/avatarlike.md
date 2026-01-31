@@ -1,6 +1,6 @@
 # Avatarlike
 
-An Avatarlike is a component that represents all the facilities needed to puppeteer an [avatar](../ugc/avatar), regardless of whether that avatar is controlled
+An Avatarlike is a component that represents all the facilities needed to puppeteer an [Avatar](../ugc/avatar), regardless of whether that avatar is controlled
 by a person or not.
 
 Thus, an Avatarlike may be used by **People** or **NPCs**. It contains an IK solver, and physics animation components
