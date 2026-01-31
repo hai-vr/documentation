@@ -16,3 +16,14 @@ to the implementation described in the talk.
 
 Other VR games like [Boneworks](https://store.steampowered.com/app/823500/) and [Hard Bullet](https://store.steampowered.com/app/1294760/)
 are notorious for using similar forms of physics animation, so HVR is not unique in this regard.
+
+## Physics Animation Profiles
+
+The main way to control a Physics Animation in HVR is by setting up an *[HVR Avatarlike](avatarlike)* component,
+and enabling **Use Physics Animation** in that component.
+
+Then, in the hierarchy of the *HVR Avatarlike* object, go to:
+- *HVRMultipurposeRig → HVRIK → RuntimeTargets*, and move the child targets to define a new pose.
+- *HVRMultipurposeRig → HVRPhysicsAnimation → ProfileApplier*, and edit the profile settings of each limb to get the physics reaction you need.
+
+![Unity_xyY59AVt9L.png](img/Unity_xyY59AVt9L.png)
