@@ -5,7 +5,7 @@
 <meta name="generator" content="Docusaurus v3.2.1">
 <title data-rh="true">Physics Animation | Haï~</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://docs.hai-vr.dev/img/hai-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://docs.hai-vr.dev/img/hai-social-card.jpg"><meta data-rh="true" property="og:url" content="https://docs.hai-vr.dev/docs/hvr/core/physics-animation"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Physics Animation | Haï~"><meta data-rh="true" name="description" content="Avatars can be affected by physics interactions using Physics Animation. This is also known as powered ragdolls or a control rig."><meta data-rh="true" property="og:description" content="Avatars can be affected by physics interactions using Physics Animation. This is also known as powered ragdolls or a control rig."><link data-rh="true" rel="icon" href="/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://docs.hai-vr.dev/docs/hvr/core/physics-animation"><link data-rh="true" rel="alternate" href="https://docs.hai-vr.dev/docs/hvr/core/physics-animation" hreflang="en"><link data-rh="true" rel="alternate" href="https://docs.hai-vr.dev/docs/hvr/core/physics-animation" hreflang="x-default"><link rel="alternate" type="application/rss+xml" href="/updates/rss.xml" title="Haï~ RSS Feed">
 <link rel="alternate" type="application/atom+xml" href="/updates/atom.xml" title="Haï~ Atom Feed"><link rel="stylesheet" href="/assets/css/styles.00643088.css">
-<script src="/assets/js/runtime~main.efe1d523.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.8ddf71bb.js" defer="defer"></script>
 <script src="/assets/js/main.8545375f.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -22,6 +22,10 @@ to the implementation described in the talk.</p>
 <p>Other VR games like <a href="https://store.steampowered.com/app/823500/" target="_blank" rel="noopener noreferrer">Boneworks</a> and <a href="https://store.steampowered.com/app/1294760/" target="_blank" rel="noopener noreferrer">Hard Bullet</a>
 are notorious for using similar forms of physics animation, so HVR is not unique in this regard.</p>
 <video controls="" muted="" width="408"><source src="https://large.docs.cdn.hai-vr.dev/assets/docs/M0sEtExl9r-f.mp4"></video>
+<video controls="" muted="" width="408"><source src="https://large.docs.cdn.hai-vr.dev/assets/docs/6CHORI233p-f.mp4"></video>
+<p><em>Depending on the physics animation profile, the avatar may have a drastically different reaction to physics interactions.<br>
+On the left, the head and the hips try to weakly maintain their position, and the feet are prioritized.<br>
+On the right, the hands are prioritized.</em></p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="applying-physics-animation">Applying Physics Animation<a href="#applying-physics-animation" class="hash-link" aria-label="Direct link to Applying Physics Animation" title="Direct link to Applying Physics Animation">​</a></h2>
 <p>The main way to control a Physics Animation in HVR is by setting up an <em><a href="/docs/hvr/core/avatarlike">HVR Avatarlike</a></em> component,
 and enabling <strong>Use Physics Animation</strong> in that component.</p>
