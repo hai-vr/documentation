@@ -18,3 +18,7 @@ If you add an Avatarlike component on its own in the scene, that Avatarlike will
 - If you want the Avatarlike to be [physically simulated](./physics-animation), enable **Use Physics Animation**.
 
 When the scene is started, this component will set up the provided instance, and you will be able to manipulate it.
+
+Then, in the hierarchy of the *HVR Avatarlike* object:
+- Go to *HVRMultipurposeRig → HVRIK → RuntimeTargets*. Move and rotate the child targets to define a new pose.
+- If you want to fiddle with physics animation, head over to the [physics animation](./physics-animation) page.

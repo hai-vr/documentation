@@ -1,6 +1,8 @@
 # Avatar
 
-An avatar is a **humanoid** character. It is built into a file so that it may be loaded in-game.
+An Avatar is a **humanoid** character, which can then be worn as a **User** or be spawned as an **NPC**.
+
+Each Avatar is built into a file so that it may be loaded in-game.
 
 ## Building an avatar
 

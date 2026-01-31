@@ -1,14 +1,21 @@
 # Belonging
 
-A personal belonging is an item specifically **tied to a person**.
+A personal Belonging is an item specifically **tied to a person**.
 
-Like a smartphone or house keys, you never leave personal belongings behind at a restaurant; **Belongings disappear when you leave the server**.
+Like a smartphone or house keys, you would never leave personal belongings behind at a restaurant:
+You can spawn Belongings, but **Belongings disappear when you leave the server**.
 
+:::note
 On the other hand, items like post-it notes, photos, or business cards are **not** personal belongings. It can make sense to leave
 such items behind when you leave the server so that they can continue to exist and be used in your absence.
 
+Belongings are explicitly intended to disappear upon your departure.
+:::
+
 A personal belonging can sometimes be thought as something that could be an integral part of an avatar but which can be
 separated from it. It is probably *not* suitable for costumes or individual pieces of clothing.
+
+Each Belonging is built into a file so that it may be loaded in-game.
 
 ## Building a personal belonging
 

@@ -28,7 +28,7 @@ On the right, the hands are prioritized.*
 
 ## Applying Physics Animation
 
-The main way to control a Physics Animation in HVR is by setting up an *[HVR Avatarlike](avatarlike)* component,
+The main way to control Physics Animation is by setting up an *[HVR Avatarlike](avatarlike)* component,
 and enabling **Use Physics Animation** in that component.
 
 Then, in the hierarchy of the *HVR Avatarlike* object:
@@ -37,3 +37,15 @@ Then, in the hierarchy of the *HVR Avatarlike* object:
   edit the profile settings of each limb to get the physics reaction you need.
 
 ![Unity_xyY59AVt9L.png](img/Unity_xyY59AVt9L.png)
+
+*The options highlighted in yellow "H Arms, H Legs, H Body Under Head, and H Body Over Hips" let you modify multiple limbs at once.*
+
+You will have to experiment with the different profiles, but the following ones are the most important:
+- **Normal**: The default. Tries to move to the position and world-space rotation, but gets pushed away when a parent or a child moves away.
+- **Complete Stability**: Strongly maintains the position and world-space rotation.
+- **Motorized**: Configures the joint of the corresponding limb so that the desired angle is the local-space angle relative to the parent.
+- **Motorized in World Space**: Configures the joint of the corresponding limb so that the desired angle is the world-space angle.
+
+The following ones are situational:
+  - **Angular Stability**: Strongly maintains the world-space angle, without trying to move the position.
+  - **Reactive**: A stronger and more reactive version of *Normal* that is still much weaker than *Complete Stability*; but it may spring back and forth.
