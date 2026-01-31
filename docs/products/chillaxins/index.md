@@ -1,5 +1,6 @@
 ﻿import {HaiTags} from "/src/components/HaiTags";
 import {HaiTag} from "/src/components/HaiTag";
+import DownloadFootnote from "/docs/_download_footnote.mdx";
 
 # Chillaxins
 
@@ -34,6 +35,8 @@ If you need help, please check out the [Discord server](/docs/other/discord).
 - Install it in your project.
 - Close your Unity project.
 - Reopen your Unity project.
+
+<DownloadFootnote />
 
 :::tip
 If you use the [ALCOM](/docs/products/listing) package manager, you can add the *Haï ~ Chillaxins* package from **[our listing](/docs/products/listing)**.

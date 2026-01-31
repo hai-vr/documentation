@@ -2,9 +2,13 @@
 sidebar_position: 1
 ---
 
+import DownloadFootnote from "/docs/_download_footnote.mdx";
+
 # Install
 
 Animator As Code V1 can be installed using VRChat Creator Companion or ALCOM through [our listing](/docs/products/listing).
+
+<DownloadFootnote />
 
 ## Packages
 

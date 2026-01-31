@@ -4,6 +4,7 @@ title: Denormalized Avatar Exporter
 import {HaiTags} from "/src/components/HaiTags";
 import {HaiTag} from "/src/components/HaiTag";
 import {HaiVideo} from "/src/components/HaiVideo";
+import DownloadFootnote from "/docs/_download_footnote.mdx";
 
 # Denormalized Avatar Exporter
 
@@ -38,6 +39,8 @@ To install, you must use a Unity project that was properly initialized according
 
 Then, download the [Denormalized Avatar Exporter from GitHub](https://github.com/hai-vr/denormalized-avatar-exporter/releases) as a **.unitypackage**,
 and install it in your VTubing project.
+
+<DownloadFootnote />
 
 :::tip
 **Do you use V<!-- -->CC/ALCOM?** The V<!-- -->CC and ALCOM package managers can be used in non-VRChat projects, which could be useful if you want to use lilToon,
