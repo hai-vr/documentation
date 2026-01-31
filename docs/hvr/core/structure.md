@@ -9,7 +9,7 @@ Structure
 - **HVR.Server** is a .NET 10 project that contains the server code.
 
 *HVR* depends on one package that was previously separated from this project:
-- **HVR.IK** contains the [IK solver](https://github.com/hai-vr/hvr-ik).
+- **HVR.IK** contains the [IK solver](ik).
 
 Despite being a package, *HVR.Core* has many assembly definitions in it, which are described below.
 

@@ -1,12 +1,11 @@
 # Avatarlike
 
-An Avatarlike is a component that represents all the facilities needed to puppeteer an [Avatar](../ugc/avatar), regardless of whether that avatar is controlled
-by a person or not.
+An Avatarlike is a component that sets up all the facilities needed to puppeteer an [Avatar](../ugc/avatar).
 
-Thus, an Avatarlike may be used by **People** or **NPCs**. It contains an IK solver, and physics animation components
-if physics animation is enabled for that Avatarlike.
+It contains an IK solver and [physics animation](./physics-animation) components (if enabled).
 
-It does **not** contain a character controller nor calibration data.
+It may be used to represent a **User**, but also **NPCs**.
+Since an avatarlike is not necessarily tied to a person, it does **not** contain a character controller nor calibration data.
 
 ## Adding an Avatarlike in the scene
 
@@ -16,6 +15,6 @@ If you add an Avatarlike component on its own in the scene, that Avatarlike will
 
 - If you want to load an avatar present in the scene, set the **Provided Instance** to an avatar present in the scene.
 - Otherwise, specify an *HVR AssetBundleLoader* component, which will load a built avatar.
-- If you want the Avatarlike to be [physically simulated](physics-animation), enable **Use Physics Animation**.
+- If you want the Avatarlike to be [physically simulated](./physics-animation), enable **Use Physics Animation**.
 
 When the scene is started, this component will set up the provided instance, and you will be able to manipulate it.
