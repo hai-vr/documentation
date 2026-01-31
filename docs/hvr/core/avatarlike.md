@@ -14,8 +14,8 @@ It does **not** contain a character controller nor calibration data.
 
 If you add an Avatarlike component on its own in the scene, that Avatarlike will be treated as an **inanimate NPC**.
 
-- In you want to load an avatar present in the scene, set the **Provided Instance** to an avatar present in the scene.
+- If you want to load an avatar present in the scene, set the **Provided Instance** to an avatar present in the scene.
 - Otherwise, specify an *HVR AssetBundleLoader* component, which will load a built avatar.
-- If you want the Avatarlike to be physically simulated, enable **Use Physics Animation**.
+- If you want the Avatarlike to be [physically simulated](physics-animation), enable **Use Physics Animation**.
 
 When the scene is started, this component will set up the provided instance, and you will be able to manipulate it.

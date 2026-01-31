@@ -21,13 +21,14 @@ are notorious for using similar forms of physics animation, so HVR is not unique
 
 <HaiVideo src="./img/M0sEtExl9r-f.mp4" halfWidth={true}></HaiVideo>
 
-## Physics Animation Profiles
+## Applying Physics Animation
 
 The main way to control a Physics Animation in HVR is by setting up an *[HVR Avatarlike](avatarlike)* component,
 and enabling **Use Physics Animation** in that component.
 
-Then, in the hierarchy of the *HVR Avatarlike* object, go to:
-- *HVRMultipurposeRig → HVRIK → RuntimeTargets*, and move the child targets to define a new pose.
-- *HVRMultipurposeRig → HVRPhysicsAnimation → ProfileApplier*, and edit the profile settings of each limb to get the physics reaction you need.
+Then, in the hierarchy of the *HVR Avatarlike* object:
+- Go to *HVRMultipurposeRig → HVRIK → RuntimeTargets*. Move and rotate the child targets to define a new pose.
+- Go to *HVRMultipurposeRig → HVRPhysicsAnimation → ProfileApplier*. In the **HVR ProfileAnimationPhysicsApplier** component,
+  edit the profile settings of each limb to get the physics reaction you need.
 
 ![Unity_xyY59AVt9L.png](img/Unity_xyY59AVt9L.png)
