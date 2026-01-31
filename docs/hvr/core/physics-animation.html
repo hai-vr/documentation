@@ -5,7 +5,7 @@
 <meta name="generator" content="Docusaurus v3.2.1">
 <title data-rh="true">Physics Animation | Haï~</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://docs.hai-vr.dev/img/hai-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://docs.hai-vr.dev/img/hai-social-card.jpg"><meta data-rh="true" property="og:url" content="https://docs.hai-vr.dev/docs/hvr/core/physics-animation"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Physics Animation | Haï~"><meta data-rh="true" name="description" content="Avatars can be affected by physics interactions using Physics Animation. This is also known as powered ragdolls or a control rig."><meta data-rh="true" property="og:description" content="Avatars can be affected by physics interactions using Physics Animation. This is also known as powered ragdolls or a control rig."><link data-rh="true" rel="icon" href="/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://docs.hai-vr.dev/docs/hvr/core/physics-animation"><link data-rh="true" rel="alternate" href="https://docs.hai-vr.dev/docs/hvr/core/physics-animation" hreflang="en"><link data-rh="true" rel="alternate" href="https://docs.hai-vr.dev/docs/hvr/core/physics-animation" hreflang="x-default"><link rel="alternate" type="application/rss+xml" href="/updates/rss.xml" title="Haï~ RSS Feed">
 <link rel="alternate" type="application/atom+xml" href="/updates/atom.xml" title="Haï~ Atom Feed"><link rel="stylesheet" href="/assets/css/styles.00643088.css">
-<script src="/assets/js/runtime~main.48b17862.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.f2c3f7bd.js" defer="defer"></script>
 <script src="/assets/js/main.73b27a8b.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -27,7 +27,7 @@ are notorious for using similar forms of physics animation, so HVR is not unique
 On the left, the head and the hips try to weakly maintain their position, and the feet are prioritized.<br>
 On the right, the hands are prioritized.</em></p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="applying-physics-animation">Applying Physics Animation<a href="#applying-physics-animation" class="hash-link" aria-label="Direct link to Applying Physics Animation" title="Direct link to Applying Physics Animation">​</a></h2>
-<p>The main way to control a Physics Animation in HVR is by setting up an <em><a href="/docs/hvr/core/avatarlike">HVR Avatarlike</a></em> component,
+<p>The main way to control Physics Animation is by setting up an <em><a href="/docs/hvr/core/avatarlike">HVR Avatarlike</a></em> component,
 and enabling <strong>Use Physics Animation</strong> in that component.</p>
 <p>Then, in the hierarchy of the <em>HVR Avatarlike</em> object:</p>
 <ul>
@@ -35,7 +35,20 @@ and enabling <strong>Use Physics Animation</strong> in that component.</p>
 <li>Go to <em>HVRMultipurposeRig → HVRPhysicsAnimation → ProfileApplier</em>. In the <strong>HVR ProfileAnimationPhysicsApplier</strong> component,
 edit the profile settings of each limb to get the physics reaction you need.</li>
 </ul>
-<p><img decoding="async" loading="lazy" alt="Unity_xyY59AVt9L.png" src="/assets/images/Unity_xyY59AVt9L-a45f49790aa972d985f25a53838c7dbb.png" width="1233" height="908" class="img_ev3q"></p></div></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/docs/hvr/core/ik"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Inverse Kinematics</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/docs/hvr/core/structure"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Structure</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#applying-physics-animation" class="table-of-contents__link toc-highlight">Applying Physics Animation</a></li></ul></div></div></div></div></main></div></div></div><footer class="footer footer--dark"><div class="centerline_SA5j" data-theme="dark"><p>Thank you to all of my supporters on Patreon ⭐</p><div class="card element_KzhA sp_qcMM k5_NYOb ias_qO18 spias_HNS1">🌟 <!-- -->bd_</div>
+<p><img decoding="async" loading="lazy" alt="Unity_xyY59AVt9L.png" src="/assets/images/Unity_xyY59AVt9L-fccb33c27c73da03597dd167a1d17870.png" width="665" height="587" class="img_ev3q"></p>
+<p><em>The options highlighted in yellow &quot;H Arms, H Legs, H Body Under Head, and H Body Over Hips&quot; let you modify multiple limbs at once.</em></p>
+<p>You will have to experiment with the different profiles, but the following ones are the most important:</p>
+<ul>
+<li><strong>Normal</strong>: The default. Tries to move to the position and world-space rotation, but gets pushed away when a parent or a child moves away.</li>
+<li><strong>Complete Stability</strong>: Strongly maintains the position and world-space rotation.</li>
+<li><strong>Motorized</strong>: Configures the joint of the corresponding limb so that the desired angle is the local-space angle relative to the parent.</li>
+<li><strong>Motorized in World Space</strong>: Configures the joint of the corresponding limb so that the desired angle is the world-space angle.</li>
+</ul>
+<p>The following ones are situational:</p>
+<ul>
+<li><strong>Angular Stability</strong>: Strongly maintains the world-space angle, without trying to move the position.</li>
+<li><strong>Reactive</strong>: A stronger and more reactive version of <em>Normal</em> that is still much weaker than <em>Complete Stability</em>; but it may spring back and forth.</li>
+</ul></div></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/docs/hvr/core/ik"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Inverse Kinematics</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/docs/hvr/core/structure"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Structure</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#applying-physics-animation" class="table-of-contents__link toc-highlight">Applying Physics Animation</a></li></ul></div></div></div></div></main></div></div></div><footer class="footer footer--dark"><div class="centerline_SA5j" data-theme="dark"><p>Thank you to all of my supporters on Patreon ⭐</p><div class="card element_KzhA sp_qcMM k5_NYOb ias_qO18 spias_HNS1">🌟 <!-- -->bd_</div>
 <div class="card element_KzhA sp_qcMM k3_DDJv ias_qO18 spias_HNS1">⭐ <!-- -->Vianvolaeus</div>
 <div class="card element_KzhA sp_qcMM k3_DDJv ias_qO18 spias_HNS1">⭐ <!-- -->Nayir</div>
 <div class="card element_KzhA sp_qcMM k2_SBmZ ias_qO18 spias_HNS1">⭐ <!-- -->Lyuma</div>
