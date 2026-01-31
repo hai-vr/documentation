@@ -20,6 +20,11 @@ Other VR games like [Boneworks](https://store.steampowered.com/app/823500/) and 
 are notorious for using similar forms of physics animation, so HVR is not unique in this regard.
 
 <HaiVideo src="./img/M0sEtExl9r-f.mp4" halfWidth={true}></HaiVideo>
+<HaiVideo src="./img/6CHORI233p-f.mp4" halfWidth={true}></HaiVideo>
+
+*Depending on the physics animation profile, the avatar may have a drastically different reaction to physics interactions.<br/>
+On the left, the head and the hips try to weakly maintain their position, and the feet are prioritized.<br/>
+On the right, the hands are prioritized.*
 
 ## Applying Physics Animation
 
