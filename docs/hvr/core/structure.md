@@ -30,11 +30,11 @@ graph TD;
     Networking.Client-->NetworkingPackets:::neutral;
     Networking.Client-->Shared:::unity;
     
-    UGC-->UnityEngine:::neutral;
-    Shared-->UnityEngine:::unity;
+    UGC-->UnityEngine[Unity Project]:::neutral;
+    Shared-->UnityEngine:::solid;
     
     Networking.Server:::dotnet10-->NetworkingPackets
-    Networking.Server-->NET.10:::dotnet10;
+    Networking.Server-->NET10[.NET 10 Project]:::solid;
     
     SteamworksNetworking.Client:::vendor-->|IsTransportLayer|Networking.Client
     SteamworksNetworking.Server:::vendor-->|IsTransportLayer|Networking.Server
@@ -45,6 +45,7 @@ graph TD;
     classDef unity fill:#CFF
     classDef dotnet10 fill:#FCC
     classDef vendor fill:#FFC
+    classDef solid fill:#7F7
 ```
 
 ## Vendors

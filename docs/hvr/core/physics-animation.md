@@ -1,23 +1,17 @@
+import {HaiVideo} from "/src/components/HaiVideo";
+
 Physics Animation
 =====
 
-import {HaiVideo} from "/src/components/HaiVideo";
-
-*Avatars* can be affected by physics interactions using Physics Animation. This is also known as *powered ragdolls* or a *control rig*.
+*Avatars* can be affected by physics interactions. In HVR, this is called **Physics Animation**.
+This concept is also known as *powered ragdolls* or a *control rig* in other libraries or game engines.
 
 *Physics Animation* modifies the characteristics of rigidbodies and applies forces on individual rigidbodies and joints of a ragdoll
 to make it match a pose.
 
-In HVR, by default, the pose comes from the result of an IK solver, but that pose may come from an animation being played.
+By default, the pose comes from the result of an IK solver, but that pose may come from an animation being played.
 
 Different characteristics can be applied to different limbs of the ragdoll to produce different responses to physical interactions.
-
-The *Physics Animation* components in HVR are heavily inspired by a GDC talk called [**Physics Animation in Uncharted 4: A Thief's End**
-by *Michal Mach* presented at GDC 2017](https://www.youtube.com/watch?v=7S-_vuoKgR4), however, the implementation in HVR is vastly inferior
-to the implementation described in the talk.
-
-Other VR games like [Boneworks](https://store.steampowered.com/app/823500/) and [Hard Bullet](https://store.steampowered.com/app/1294760/)
-are notorious for using similar forms of physics animation, so HVR is not unique in this regard.
 
 <HaiVideo src="./img/M0sEtExl9r-f.mp4" halfWidth={true}></HaiVideo>
 <HaiVideo src="./img/6CHORI233p-f.mp4" halfWidth={true}></HaiVideo>
@@ -26,10 +20,22 @@ are notorious for using similar forms of physics animation, so HVR is not unique
 On the left, the head and the hips try to weakly maintain their position, and the feet are prioritized.<br/>
 On the right, the hands are prioritized.*
 
+:::note
+The *Physics Animation* components in HVR are heavily inspired by a GDC talk called [**"Physics Animation in Uncharted 4: A Thief's End"**
+by Michal Mach presented at GDC 2017](https://www.youtube.com/watch?v=7S-_vuoKgR4), however, the implementation in HVR is vastly inferior
+to the implementation described in the talk.
+
+Other VR games like [*Boneworks*](https://store.steampowered.com/app/823500/) and [*Hard Bullet*](https://store.steampowered.com/app/1294760/)
+are notorious for using similar forms of physics animation, so HVR is not unique in this regard.
+:::
+
 ## Applying Physics Animation
 
-The main way to control Physics Animation is by setting up an *[HVR Avatarlike](avatarlike)* component,
+The main way to control Physics Animation is by setting up an *[HVR Avatarlike](./avatarlike)* component,
 and enabling **Use Physics Animation** in that component.
+
+HVR will automatically create rigidbodies to match the avatar, as long as the *[HVRUGC Avatar](../ugc/avatar)* component was set up
+with collision meshes.
 
 Then, in the hierarchy of the *HVR Avatarlike* object:
 - Go to *HVRMultipurposeRig → HVRIK → RuntimeTargets*. Move and rotate the child targets to define a new pose.
@@ -42,10 +48,13 @@ Then, in the hierarchy of the *HVR Avatarlike* object:
 
 You will have to experiment with the different profiles, but the following ones are the most important:
 - **Normal**: The default. Tries to move to the position and world-space rotation, but gets pushed away when a parent or a child moves away.
-- **Complete Stability**: Strongly maintains the position and world-space rotation.
-- **Motorized**: Configures the joint of the corresponding limb so that the desired angle is the local-space angle relative to the parent.
-- **Motorized in World Space**: Configures the joint of the corresponding limb so that the desired angle is the world-space angle.
+- **Complete Stability**: Strongly maintains the position and world-space rotation. This is great when the feet are planted, or when the hands are firmly holding onto something.
+- **Motorized**: Configures the joint of the corresponding limb so that the desired angle is the local-space angle relative to the parent. This is great for limbs that are flailing.
+- **Motorized in World Space**: Configures the joint of the corresponding limb so that the desired angle is the world-space angle. This is great for limbs that are flailing
+  where the world-space angle matters, such as feet trying to stay horizontal to the floor. 
 
 The following ones are situational:
   - **Angular Stability**: Strongly maintains the world-space angle, without trying to move the position.
-  - **Reactive**: A stronger and more reactive version of *Normal* that is still much weaker than *Complete Stability*; but it may spring back and forth.
+    - However, when *Angular Stability* is applied to a chain of bones, it has the strange effect of causing that chain of bones to move rigidly together.
+  - **Reactive**: A stronger and more reactive version of *Normal* that is still much weaker than *Complete Stability*.
+    - However, the reactivity may cause it to overshoot more severely, and spring back and forth.

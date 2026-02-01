@@ -60,3 +60,7 @@
   background-color: var(--hai-misc-label);
   padding: 0.5em 1em 0.5em 1em;
 }
+.hai_tag_hvr {
+  background-color: var(--hai-hvr-label);
+  padding: 0.5em 1em 0.5em 1em;
+}

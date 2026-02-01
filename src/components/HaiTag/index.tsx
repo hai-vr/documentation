@@ -36,6 +36,7 @@ interface Props {
     supporter: boolean;
     compatibleWithPhotoshop: boolean;
     compatibleWithGIMP: boolean;
+    hvr: boolean;
 }
 
 export function HaiTag({
@@ -57,7 +58,8 @@ export function HaiTag({
                            notCompatibleWithGltf,
                            compatibleWithVNyan,
                            short,
-                           supporter
+                           supporter,
+                           hvr
 }: Props): JSX.Element {
     let div = short ? <></> : <>Compatible with </>;
     let div2 = short ? <></> : <>Requires </>;
@@ -79,6 +81,7 @@ export function HaiTag({
                 {requiresWarudo ? <div className={clsx(styles.hai_tag, styles.hai_tag_compatible_with_warudo)}>📹 {div2}<span className="notranslate">Warudo</span></div> : ''}
                 {isUniversal ? <div className={clsx(styles.hai_tag, styles.hai_tag_universal)}>🌊 Any Platform</div> : ''}
                 {notVRChat ? <div className={clsx(styles.hai_tag, styles.hai_tag_universal)}>🌊 Any Platform, except <span className="notranslate">VRChat</span></div> : ''}
+                {hvr ? <div className={clsx(styles.hai_tag, styles.hai_tag_hvr)}>HVR</div> : ''}
             {supporter ? <div className={clsx(styles.hai_tag, styles.hai_tag_supporter)}>⭐ All Supporter tiers <a href="https://www.patreon.com/vr_hai">(5€+)</a></div> : ''}
             {compatibleWithPhotoshop ? <div className={clsx(styles.hai_tag, styles.hai_tag_misc)}>{div}<span className="notranslate">Photoshop 2024</span></div> : ''}
             {compatibleWithGIMP ? <div className={clsx(styles.hai_tag, styles.hai_tag_misc)}>{div}<span className="notranslate">GIMP</span></div> : ''}
