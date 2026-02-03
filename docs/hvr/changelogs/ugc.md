@@ -1,7 +1,7 @@
 HVR.UGC
 =====
 
-# 0.0.2 (WIP)
+# 0.0.2
 
 New:
 - Add component *HVRUGC Belonging*, which will be used by HVR.Core to spawn personal belongings (items that disappear
@@ -20,10 +20,12 @@ Changes:
 
 Internal:
 - The code for *HVRUGC Avatar* and *HVRUGC Belonging* is now shared.
+- Tracks commit `319c04f9423a62d51d5f61f5dfa15b2ea610e5eb` in HVR.Core.
+- Released at https://github.com/hai-vr/hvr-ugc/releases/tag/0.0.2
 
 # 0.0.1
 
 Initial package.
 
-- Released at https://github.com/hai-vr/hvr-ugc/releases/tag/0.0.1
 - Tracks commit `15501db25749f3d0c4cadceed6f3d468b0ed16b5` in HVR.Core.
+- Released at https://github.com/hai-vr/hvr-ugc/releases/tag/0.0.1
