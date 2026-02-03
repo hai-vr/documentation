@@ -11,7 +11,7 @@ Since an avatarlike is not necessarily tied to a person, it does **not** contain
 
 ![Unity_TMrQnc9AqE.png](img/Unity_TMrQnc9AqE.png)
 
-If you add an Avatarlike component on its own in the scene, that Avatarlike will be treated as an **inanimate NPC**.
+When you add an Avatarlike component on its own in the scene, that Avatarlike will be treated as an **inanimate NPC**.
 
 - If you want to load an avatar present in the scene, set the **Provided Instance** to an avatar present in the scene.
 - Otherwise, specify an *HVR AssetBundleLoader* component, which will load a built avatar.
