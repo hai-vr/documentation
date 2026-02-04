@@ -4,10 +4,19 @@
         <title>Haï~ Blog</title>
         <link>https://docs.hai-vr.dev/updates</link>
         <description>Haï~ Blog</description>
-        <lastBuildDate>Wed, 28 Jan 2026 13:33:00 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 04 Feb 2026 01:17:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[✨ Lightbox Viewer 2.5.0-beta.3]]></title>
+            <link>https://docs.hai-vr.dev/updates/2026/02/04/p0</link>
+            <guid>https://docs.hai-vr.dev/updates/2026/02/04/p0</guid>
+            <pubDate>Wed, 04 Feb 2026 01:17:00 GMT</pubDate>
+            <description><![CDATA[In Edit Mode, hide objects that are hidden by the visibility icon in the scene hierarchy tab.]]></description>
+            <content:encoded><![CDATA[<p>In Edit Mode, hide objects that are hidden by the visibility icon in the scene hierarchy tab.</p>
+<p>Fix object change events should no longer trigger in Play Mode, which was causing errors in the logs.</p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[⚙️ Animation Viewer V2.1.1]]></title>
             <link>https://docs.hai-vr.dev/updates/2026/01/28/p0</link>
@@ -536,16 +545,6 @@ integration with this new API.</p>
 <p>These breaking changes are meant to be the last breaking changes for the lifetime of Animator As Code V1.</p>
 <p>For more details, see the full changelog.</p>
 <p>🔍 <a href="https://docs.hai-vr.dev/docs/changelogs/animator-as-code#120-beta1">View changelog</a></p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[⚙️ Animator As Code - VRChat / VRChat Destructive Workflow / Modular Avatar functions V1.1.1]]></title>
-            <link>https://docs.hai-vr.dev/updates/2024/11/30/p0</link>
-            <guid>https://docs.hai-vr.dev/updates/2024/11/30/p0</guid>
-            <pubDate>Sat, 30 Nov 2024 11:00:00 GMT</pubDate>
-            <description><![CDATA[The sub-packages of Animator As Code "VRChat", "VRChat Destructive Workflow", and "Modular Avatar functions" have been updated]]></description>
-            <content:encoded><![CDATA[<p>The sub-packages of Animator As Code "VRChat", "VRChat Destructive Workflow", and "Modular Avatar functions" have been updated
-to allow installation with Animator As Code V1.2.0 and all future versions of Animator As Code V1.</p>
-<p>There are no other changes.</p>]]></content:encoded>
         </item>
     </channel>
 </rss>
