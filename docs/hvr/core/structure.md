@@ -1,12 +1,12 @@
 Structure
 =====
 
-*HVR* is made of three packages and one side project:
+*HVR* is made of three packages and one additional project:
 - **HVR.Core** contains all the Unity components, except the *HVRUGC* components.
 - **HVR.UGC** only contains *HVRUGC* components such as the *HVRUGC Avatar* component, and is intended to be able to be installed
   separately from *HVR* if needed.
 - **HVR.NetworkingPackets** contains the packets shared between the client and server.
-- **HVR.Server** is a .NET 10 project that contains the server code.
+- The additional project **HVR.Server** is a .NET 10 project that contains the server code.
 
 *HVR* depends on one package that was previously separated from this project:
 - **HVR.IK** contains the [IK solver](ik).

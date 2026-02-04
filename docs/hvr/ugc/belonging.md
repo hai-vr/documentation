@@ -1,6 +1,6 @@
 # Belonging
 
-A personal Belonging is an item specifically **tied to a person**.
+A personal Belonging is an item specifically **tied to a User**.
 
 Like a smartphone or house keys, you would never leave personal belongings behind at a restaurant:
 You can spawn Belongings, but **Belongings disappear when you leave the server**.

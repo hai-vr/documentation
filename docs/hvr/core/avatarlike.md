@@ -5,7 +5,7 @@ An Avatarlike is a component that sets up all the facilities needed to puppeteer
 It contains an IK solver and [physics animation](./physics-animation) components (if enabled).
 
 It may be used to represent a **User**, but also **NPCs**.
-Since an avatarlike is not necessarily tied to a person, it does **not** contain a character controller nor calibration data.
+Since an Avatarlike is not necessarily tied to a User, it does **not** contain a character controller nor calibration data.
 
 ## Adding an Avatarlike in the scene
 

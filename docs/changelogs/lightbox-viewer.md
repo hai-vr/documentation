@@ -4,6 +4,12 @@ title: Lightbox Viewer
 
 import {HaiVideo} from "/src/components/HaiVideo";
 
+## 2.5.0-beta.3
+
+In Edit Mode, hide objects that are hidden by the visibility icon in the scene hierarchy tab.
+
+Fix object change events should no longer trigger in Play Mode, which was causing errors in the logs.
+
 ## 2.5.0-beta.2
 
 Fix an issue with URP Adaptive Probe Volumes in additive scenes that was causing lilToon 2.3.0 previews to be incorrect.
