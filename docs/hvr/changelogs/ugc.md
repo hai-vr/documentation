@@ -1,6 +1,12 @@
 HVR.UGC
 =====
 
+# 0.0.3
+
+Internal:
+- Add internal facilities for eye tracking.
+- Non-destructive components are no longer displayed in the removed components list.
+
 # 0.0.2
 
 New:
