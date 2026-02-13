@@ -30,6 +30,7 @@ Features:
   - The 2D profile pictures from the various social VR apps are not used as a profile picture.
   - The picture is stored with the XYVR database.
   - If a session has five or more participants, that session is now shown full-width to accomodate the large size of the profile pictures.
+- Resonite has an additional field to specify a 2FA code when logging in.
 - Add partial implementation of the Cluster (*cluster.mu*) social VR platform.
   - For this version, it is not possible to log-in to Cluster accounts due to technical and privacy limitations.
 - Live sessions now contain additional information:
@@ -49,7 +50,8 @@ Features:
 
 Fixes:
 - Fix sending yourself an invite to VRChat instance should now be functional.
-- The rate limit delay for Resonite API calls has been raised from 500ms to 1 second, to avoid getting a Too Many Requests response. 
+- The rate limit delay for Resonite API calls has been raised from 500ms to 1 second, to avoid getting a Too Many Requests response.
+- Fix list of participants in a session was sometimes displayed in an incorrect location on the screen.
 
 Changes:
 - Changes in live sessions:
@@ -72,6 +74,7 @@ Internal changes:
 - Builds and the WebView2 build script now output the executable to the `build/` folder at root, contributed by art0007i.
 - Resonite live internals now throw an exception when the user has failed to log in (session expired), contributed by art0007i.
 - Update vite to 7.1.11 and js-yaml to 4.1.1 as suggested by Dependabot.
+- Update react-router-dom to 7.12.0 as suggested by Dependabot.
 - Http requests now handle errors differently:
   - If any 5xx server error is returned, we use exponential backoff to retry that request.
   - If 429 Too Many Requests status code is returned, we wait 80 seconds before retrying.
