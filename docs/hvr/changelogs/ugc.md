@@ -1,6 +1,10 @@
 HVR.UGC
 =====
 
+# 0.0.4 (WIP)
+
+Add localization.
+
 # 0.0.3
 
 Internal:
