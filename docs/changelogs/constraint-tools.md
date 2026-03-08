@@ -10,9 +10,6 @@ import {HaiVideo} from "/src/components/HaiVideo";
   - Generate Korean localization using LLM (GPT-5, not reviewed).
   - Generate Simplified Chinese localization using LLM (Gemini 3, not reviewed).
   - Generate Traditional Chinese localization using LLM (Gemini 3, not reviewed).
-- Set localization prompt to the following:
-
-> When requested to translate a localization file, follow the rules in this prompt. _meta.prompt must not be changed. _meta.name must be in the requested language, not English. For example, it should be 日本語 in the Japanese language. _meta.variant must be the model used, for example GPT-5 or Gemini 3; of course, substitute with the LLM model in use. The words Unity, Skinned Mesh Constraint, Skinned Mesh Constraint Builder, Parent Constraint, and Constraint are technical terms so they must remain in English. The two words Skinned Offsets should be translated.
 
 ## 1.2.1
 
