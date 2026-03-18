@@ -2,14 +2,9 @@ import {HaiVideo} from "/src/components/HaiVideo";
 
 # Constraint Tools
 
-## 1.3.0 (WIP)
+## 1.3.0
 
-- Add language selector.
-  - Add French localization (Gemini 3, but reviewed manually by Haï~).
-  - Generate Japanese localization using LLM (GPT-5, not reviewed).
-  - Generate Korean localization using LLM (GPT-5, not reviewed).
-  - Generate Simplified Chinese localization using LLM (Gemini 3, not reviewed).
-  - Generate Traditional Chinese localization using LLM (Gemini 3, not reviewed).
+- Add language selector for French, Japanese, Korean, Simplified Chinese, Traditional Chinese.
 
 ## 1.2.1
 
