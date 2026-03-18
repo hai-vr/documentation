@@ -4,10 +4,21 @@
         <title>Haï~ Blog</title>
         <link>https://docs.hai-vr.dev/updates</link>
         <description>Haï~ Blog</description>
-        <lastBuildDate>Wed, 04 Feb 2026 01:17:00 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 18 Mar 2026 23:16:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[⚙️ Skinned Mesh Constraint Builder V1.3.0]]></title>
+            <link>https://docs.hai-vr.dev/updates/2026/03/18/p0</link>
+            <guid>https://docs.hai-vr.dev/updates/2026/03/18/p0</guid>
+            <pubDate>Wed, 18 Mar 2026 23:16:00 GMT</pubDate>
+            <description><![CDATA[A language selector has been added to Skinned Mesh Constraint Builder:]]></description>
+            <content:encoded><![CDATA[<p>A language selector has been added to Skinned Mesh Constraint Builder:</p>
+<ul>
+<li>Add language selector for French, Japanese, Korean, Simplified Chinese, Traditional Chinese.</li>
+</ul>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[✨ Lightbox Viewer 2.5.0-beta.3]]></title>
             <link>https://docs.hai-vr.dev/updates/2026/02/04/p0</link>
@@ -524,27 +535,6 @@ it will probably not work as this operator expects the mesh data to overlap, reg
 </ul>
 </li>
 </ul>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[⚙️ Animator As Code V1.2.0-beta.1]]></title>
-            <link>https://docs.hai-vr.dev/updates/2024/11/30/p1</link>
-            <guid>https://docs.hai-vr.dev/updates/2024/11/30/p1</guid>
-            <pubDate>Sat, 30 Nov 2024 11:10:00 GMT</pubDate>
-            <description><![CDATA[The Animator As Code V1 API has been updated to improve support for third-party asset container management.]]></description>
-            <content:encoded><![CDATA[<p>The Animator As Code V1 API has been updated to improve support for third-party asset container management.</p>
-<ul>
-<li>There are no additional dependencies introduced.</li>
-<li>By default, the behaviour of Animator As Code is the same as V1.1.0.</li>
-<li>Add new optional field <code>AacConfiguration.AssetContainerProvider</code> to specify an asset container provider.</li>
-<li>Add new interface <code>IAacAssetContainerProvider</code> to abstract asset container management.</li>
-</ul>
-<p>This change has been contributed by <strong><a href="https://github.com/kb10uy" target="_blank" rel="noopener noreferrer">kb10uy (KOBAYASHI Yū)</a></strong> (first contribution).</p>
-<p>The NDMF example in the <a href="https://docs.hai-vr.dev/docs/products/animator-as-code/getting-started">Getting started</a> page has been updated to demonstrate
-integration with this new API.</p>
-<p>As specified in the changelog for the official release of Animator As Code V1, the breaking changes that were planned for V1.2.0 have been applied.</p>
-<p>These breaking changes are meant to be the last breaking changes for the lifetime of Animator As Code V1.</p>
-<p>For more details, see the full changelog.</p>
-<p>🔍 <a href="https://docs.hai-vr.dev/docs/changelogs/animator-as-code#120-beta1">View changelog</a></p>]]></content:encoded>
         </item>
     </channel>
 </rss>
