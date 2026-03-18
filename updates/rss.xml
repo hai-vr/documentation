@@ -4,12 +4,25 @@
         <title>Haï~ Blog</title>
         <link>https://docs.hai-vr.dev/updates</link>
         <description>Haï~ Blog</description>
-        <lastBuildDate>Wed, 18 Mar 2026 23:16:00 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 18 Mar 2026 23:25:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
         <item>
-            <title><![CDATA[⚙️ Skinned Mesh Constraint Builder V1.3.0]]></title>
+            <title><![CDATA[✨ Prefabulous Universal V2.2.0]]></title>
+            <link>https://docs.hai-vr.dev/updates/2026/03/18/p1</link>
+            <guid>https://docs.hai-vr.dev/updates/2026/03/18/p1</guid>
+            <pubDate>Wed, 18 Mar 2026 23:25:00 GMT</pubDate>
+            <description><![CDATA[A language selector has been added to the Recalculate Normals and Generate Twist Bones components, in Japanese.]]></description>
+            <content:encoded><![CDATA[<p>A language selector has been added to the <em>Recalculate Normals</em> and <em>Generate Twist Bones</em> components, in Japanese.</p>
+<p>All Prefabulous Universal components now have a clickable help URL in the inspector.</p>
+<p>Components from Prefabulous Universal will now run with NDMF 1.8 when building the avatar for non-VRChat platforms and apps such as Resonite.</p>
+<ul>
+<li>Generate Twist Bones will now generate Unity Constraints instead of VRC Constraints when targeting a non-VRChat platform.</li>
+</ul>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[✨ Skinned Mesh Constraint Builder V1.3.0]]></title>
             <link>https://docs.hai-vr.dev/updates/2026/03/18/p0</link>
             <guid>https://docs.hai-vr.dev/updates/2026/03/18/p0</guid>
             <pubDate>Wed, 18 Mar 2026 23:16:00 GMT</pubDate>
@@ -519,21 +532,6 @@ it will probably not work as this operator expects the mesh data to overlap, reg
             <content:encoded><![CDATA[<ul>
 <li>Add "Ignore Analog Fist" option in the compiler. When enabled, the Fist animations play without having to press the trigger.</li>
 <li>ComboGestureExpressions now requires Animator As Code V1.1.0 minimum, and accepts any version above that.</li>
-</ul>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[⚙️ Prefabulous for VRChat V2.2.0-beta.1]]></title>
-            <link>https://docs.hai-vr.dev/updates/2024/11/30/p2</link>
-            <guid>https://docs.hai-vr.dev/updates/2024/11/30/p2</guid>
-            <pubDate>Sat, 30 Nov 2024 11:20:00 GMT</pubDate>
-            <description><![CDATA[- Now requires Animator As Code 1.2.0-beta.1 or above, in order to use the asset container provider API.]]></description>
-            <content:encoded><![CDATA[<ul>
-<li>Now requires Animator As Code 1.2.0-beta.1 or above, in order to use the asset container provider API.</li>
-<li>If NDMF 1.6.0 is installed, Prefabulous for VRChat will use the new APIs in NDMF to save generated assets.<!-- -->
-<ul>
-<li>NDMF 1.6.0 is not explicitly required, to avoid a possible <a href="https://github.com/vrchat-community/creator-companion/issues/29" target="_blank" rel="noopener noreferrer">unresolved issue with VCC</a>.</li>
-</ul>
-</li>
 </ul>]]></content:encoded>
         </item>
     </channel>
