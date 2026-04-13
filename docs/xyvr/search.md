@@ -4,7 +4,15 @@ sidebar_position: 90
 
 # Search
 
-## Search and show old names
+## Search results
+
+When searching the address book, the results will only show the following:
+- Contacts (always)
+- Non-contacts who have a note attached to them, if the checkbox "Include non-Contacts with Notes" is checked.
+
+The search results will never show non-Contacts which don't have notes attached to them.
+
+## Display previous names
 
 When a user changes their username, it can be confusing to find them.
 
