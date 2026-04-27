@@ -28,11 +28,36 @@ First, you need to choose the number of choices that this control will have.
 - **Two choices**: Most of the time, controls have a minimum of two choices: OFF and ON. You may then configure this control to interpolate between OFF and ON, like a slider.
 - **Three or more**: 
 
-### Toggles
+### Toggle objects
 
 In the Toggle section, you can choose which GameObjects or Components will be turned on and off.
 
-### Properties
+### Change Properties
+
+#### Display a number inside TextMeshPro
+
+The text inside TextMeshPro components and Text components can be modified. Here are some examples to get you started:
+
+You can display absolute values using `{0}`, `{0:0}`, or `{0:0.00}`.
+
+For a value of 93.1234:
+
+- `Heart rate: {0}` shows *Heart rate: 93.1234*
+- `Heart rate: {0:0}` shows *Heart rate: 93*
+- `Heart rate: {0:0.0}` shows *Heart rate: 93.1*
+- `Heart rate: {0:0.00}` shows *Heart rate: 93.12*
+
+If your values use 0.0 to represent 0% and 1.0 to represent 100%, they can be displayed as a percentage
+using `{1}`, `{1:0}`, or `{1:0.00}`. You do not need to display the percent sign if you wish not to.
+
+For a value of 0.123456:
+
+- `Power: {1}%` shows *Power: 12.3456%*
+- `Power: {1:0}%` shows *Power: 12%*
+- `Power: {1:0.0}%` shows *Power: 12.3%*
+- `Power: {1:0.00}%` shows *Power: 12.34%*
+
+A period `.` will always be displayed for the decimal separator, even if the computer OS language is set to French.
 
 ### Networked
 
@@ -41,7 +66,7 @@ When the **Networked** option is checked, the state of this object will be made 
 ### Advanced Networking
 
 - **Automatic**: This is the best setting for almost all cases. *This is the default.*
-- **Continuous Automated Data Stream**: This should only be used for anything controlled by an external program which outputs a
+- **Updated Extremely Frequently**: This should only be used for anything controlled by an external program which outputs a
   continuous stream of data: heart rate that updates rapidly, face tracking, toe tracking, tracker position, etc.
   - This should **NOT** be used for anything controlled by an external program which is not continuous:
     Do not use this with a doorbell, light switch, shock collar, heart rate that updates slowly, etc.
