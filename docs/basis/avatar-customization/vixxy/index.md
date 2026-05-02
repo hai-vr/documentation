@@ -95,6 +95,10 @@ The following is not yet possible as of the current version.
 - ❌ Cannot change any other property.
 - ❌ Cannot translate, scale, or rotate objects.
 
+### Multiple object groups
+
+If you need to change the properties of different objects in a different way, press + to create another group.
+
 ### Display a number inside TextMeshPro
 
 The text inside TextMeshPro components and Text components can be modified. Here are some examples to get you started:
