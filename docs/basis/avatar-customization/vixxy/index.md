@@ -16,7 +16,9 @@ This component is primarily intended to be used through the Unity inspector dire
 
 Create a new GameObject in your avatar and add a **HVR Vixxy Control** component to it.
 
-Then, click the "Create menu on this control" button.
+Then in the *Settings* category, click the *"Create menu on this control"* button.
+
+![Unity_7s7gXnMNpa.png](../img/Unity_7s7gXnMNpa.png)
 
 Drag objects into the *Toggle Objects* category:
 
@@ -25,22 +27,42 @@ Drag objects into the *Toggle Objects* category:
 
 If you want to toggle a component instead of the object itself, drag the object into the *Toggle Objects* category, and then choose the desired component in the dropdown.
 
+![Unity_b2PeSbJZYG.png](../img/Unity_b2PeSbJZYG.png)
+
 ## Use more than two choices
 
-If you want more than two choices, open the *Settings* category, and click
+If you want more than two choices, open the *Settings* category, and click the *"+ Add choice"* button.
+
+After adding choices, you should give each choice a description. This description will be displayed in the menu.
+
+![b.png](../img/b.png)
+
+Toggles will be displayed differently when there are more than two choices. Tick or untick the checkboxes to affect the state
+of each object depending on the choice.
+
+![c.png](../img/c.png)
 
 ## Menu
+
+You may change the type of menu through the component created earlier when you clicked the *"Create menu on this control"* button,
+in the *HVR Vixxy Menu Item* component.
 
 There are three different types of controls achievable:
 - A toggle between two choices (OFF/ON).
 - A selection between more than three choices.
 - A slider.
 
+![Unity_xyQLLDm8mo.png](../img/Unity_xyQLLDm8mo.png)
+
 These controls are accessible in-app through *"Settings > My Avatar"*:
+
+![Unity_eaQYvIifYM.png](../img/Unity_eaQYvIifYM.png)
 
 ## Change Properties
 
 If you need to change the value of blendshapes or change the values inside shaders, open the *Change Properties* category.
+
+![d.png](../img/d.png)
 
 ### Create the first object group
 
@@ -48,7 +70,7 @@ In the Properties category, click + to create a group.
 
 Drag the objects to change into that group.
 
-## Search for properties
+### Search for properties
 
 In the components that will show up below, click one of *Properties*, *Materials*, *BlendShapes* to start looking for properties to affect.
 
@@ -96,6 +118,8 @@ For a value of 0.123456:
 - `Power: {1:0.0}%` shows *Power: 12.3%*
 - `Power: {1:0.00}%` shows *Power: 12.34%*
 
+![Unity_pOt5W729BJ.png](../img/Unity_pOt5W729BJ.png)
+
 A period `.` will always be displayed for the decimal separator, even if the computer OS language is set to French.
 
 ## Additional settings
@@ -103,6 +127,8 @@ A period `.` will always be displayed for the decimal separator, even if the com
 ### Networking
 
 When the **Networked** option is checked, the state of this object will be made visible to other users.
+
+The *Advanced Networking* dropdown currenlty has no effect.
 
 [//]: # ()
 [//]: # (### Advanced Networking)
