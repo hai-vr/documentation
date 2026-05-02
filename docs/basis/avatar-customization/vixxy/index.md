@@ -31,7 +31,7 @@ If you want to toggle a component instead of the object itself, drag the object 
 
 ## Use more than two choices
 
-If you want more than two choices, open the *Settings* category, and click the *"+ Add choice"* button.
+If you want more than two choices, open the *Settings* category and click the *"+ Add choice"* button.
 
 After adding choices, you should give each choice a description. This description will be displayed in the menu.
 
@@ -74,7 +74,7 @@ Drag the objects to change into that group.
 
 In the components that will show up below, click one of *Properties*, *Materials*, *BlendShapes* to start looking for properties to affect.
 
-In the search field, type a few letters corresponding to the property you're looking for, and press the Add button to add it.
+In the search field, type a few letters corresponding to the property you're looking for, and press the *"Add"* button to add it.
 
 When done, press the _ button at the top right to minimize the search.
 
