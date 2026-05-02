@@ -23,10 +23,13 @@ This is because the VRChat SDK prepares the Unity project settings specifically 
 VRChat platform.
 :::
 
-TODO
+As of the 28th of April 2026, Modular Avatar is known to work in Basis with the following packages installed:
 
-- Install the patch for Basis projects.
-- Install **NDMF 1.10.0-beta.0**
-- Do not install Modular Avatar. Instead, install the modified version of Modular Avatar.
+- [Modular Avatar](https://modular-avatar.nadena.dev/docs/intro) **1.17.0-beta.0**
+- [NDMF](https://modular-avatar.nadena.dev/docs/intro) **1.11.0**
+- [Chillaxins](https://docs.hai-vr.dev/docs/products/chillaxins) **1.2.0**
 
-WIP
+They can all be installed through ALCOM if you wish to do so.
+
+Newer versions could also work, but you have to verify by yourself as installing in Unity 6.4 is not officially supported by Modular Avatar,
+it just so happens that it can work on it.

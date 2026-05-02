@@ -1,5 +1,6 @@
 ---
 sidebar_position: 40
+unlisted: true
 ---
 
 import {HaiTags} from "/src/components/HaiTags";

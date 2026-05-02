@@ -41,7 +41,3 @@ The following components are permitted:
   - GatorDragonGames.JigglePhysics.JiggleRig
   - TMPro.TextMeshPro
   - TMPro.TextMeshProUGUI
-
-
-
-

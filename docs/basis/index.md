@@ -16,4 +16,5 @@ import {HaiVideo} from "/src/components/HaiVideo";
 
 Currently available components:
 
-- **[Automatic Face Tracking](./basis/avatar-customization/face-tracking)** component.
+- **[Automatic Face Tracking](./basis/avatar-customization/face-tracking)** component to set up face tracking.
+- **[HVR Vixxy Control](./basis/avatar-customization/vixxy)** component to toggle or trigger effects on an avatar.
