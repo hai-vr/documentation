@@ -54,9 +54,9 @@ There are three different types of controls achievable:
 
 ![Unity_xyQLLDm8mo.png](../img/Unity_xyQLLDm8mo.png)
 
-These controls are accessible in-app through *"Settings > My Avatar"*:
+These controls are accessible in-app through *"Settings > Avatar Customization"*:
 
-![Unity_eaQYvIifYM.png](../img/Unity_eaQYvIifYM.png)
+![Unity_GWuNR4ZCCz.png](../img/Unity_GWuNR4ZCCz.png)
 
 ## Change Properties
 
