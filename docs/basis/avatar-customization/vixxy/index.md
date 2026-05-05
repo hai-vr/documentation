@@ -12,6 +12,8 @@ import {HaiVideo} from "/src/components/HaiVideo";
 
 This component is primarily intended to be used through the Unity inspector directly by non-programmer users.
 
+<HaiVideo src="../img/gX02sy0QQp-f.mp4"></HaiVideo>
+
 ## Create a toggle
 
 Create a new GameObject in your avatar and add a **HVR Vixxy Control** component to it.
