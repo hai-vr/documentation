@@ -14,6 +14,13 @@ This component is primarily intended to be used through the Unity inspector dire
 
 <HaiVideo src="../img/gX02sy0QQp-f.mp4"></HaiVideo>
 
+## Install
+
+Vixxy is included by default with the official Basis Framework repository, in the `Basis/Packages/dev.hai-vr.basis.comms/` folder,
+since the 1st of May 2026.
+
+If you are a participant in the Basis Demo application, follow the regular instructions for making avatars.
+
 ## Create a toggle
 
 Create a new GameObject in your avatar and add a **HVR Vixxy Control** component to it.

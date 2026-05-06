@@ -1,6 +1,6 @@
 # Changelogs
 
-## 2025-05-04 (WIP)
+## 2026-05-04 (WIP)
 
 *Authored by Haï~*
 
@@ -13,7 +13,7 @@ Fixes:
 - Workaround initialization packet was exceeding the maximum size when a large number of toggles was created.
   - The initialization packet is now chunked into groups of 10 toggles per packet.
 
-## 2025-05-02
+## 2026-05-02
 
 *Authored by Haï~*
 
