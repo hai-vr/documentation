@@ -78,7 +78,7 @@ of each object depending on the choice.
 
 ![c.png](../img/c.png)
 
-## Menu
+## Configure the menu
 
 You may change the type of menu through the component created earlier when you clicked the *"Create menu on this control"* button,
 in the *HVR Vixxy Menu Item* component.
@@ -93,7 +93,7 @@ There are three different types of controls achievable:
 :::info
 Menus are not the only way to toggle objects and trigger effects. Effects can also be triggered using various measurements or the voice.
 
-This is explained later on this page, in the *[Special inputs](#special-inputs)* section.
+This is explained later on this page, documented in **[Trigger effects without a menu](#trigger-effects-without-a-menu)**.
 :::
 
 These controls are accessible in-app through *"Settings > Avatar Customization"*:
@@ -168,21 +168,13 @@ For a value of 0.123456:
 
 A period `.` will always be displayed for the decimal separator, even if the computer OS language is set to French.
 
-## Additional settings
-
-### Networking
-
-When the **Networked** option is checked, the state of this object will be made visible to other users.
-
-The *Advanced Networking* dropdown currenlty has no effect.
-
-## Transitions
+## Add a transition duration
 
 :::info
 This feature is introduced starting from NEW_VIXXY_VERSION.
 :::
 
-You can choose to introduce a transition duration before your toggle turns completely ON and OFF.
+You can choose to introduce a transition duration before your toggle turns completely ON and OFF in the **Transitions** section.
 
 - **Smooth towards value**: The transition starts quickly and progresses slower as it reaches the target value.
   - This is great for sliders or some controls where the intermediate values are as relevant as the ones at the extremes.
@@ -192,7 +184,12 @@ You can choose to introduce a transition duration before your toggle turns compl
   - Combining *Linear towards value* with *Curve* is great for toggles, but not great for sliders.
   - When combining with *Linear towards value* with *Curve*, the *Curve* should usually be the last item in the list.
 
-**Curve** can also be used independently, without any transition duration effect if you want to apply some particular thresholding on the input value.
+## Add a transition curve
+
+In the **Transitions** section, **Curve** can also be used independently, without any transition duration effect if you want to apply some particular
+thresholding on the input value.
+
+It is not recommended to use a transition curve when using *Smooth towards value*.
 
 ### Seconds per unit
 
@@ -214,7 +211,7 @@ If you have only two choices, such as in the case of a simple toggle, and you ke
 
 You could also change the choice values to become 0, 0.5, 1, or anything you'd like.
 
-## Special inputs
+## Trigger effects without a menu
 
 Toggling and triggering effects on the avatar are not limited to menus.
 
@@ -260,3 +257,11 @@ For example, in the case of an *Angle* measurement, remapping from (30, 180) to 
 
 The *Clamp to bounds* checkbox limits the output range to that specific range. Taking the same example as above, an angle of 0 degrees would become 0.0 when *Clamp to bounds* is checked,
 or an angle of 0 degrees would become -0.2 when *Clamp to bounds* is unchecked.
+
+## Additional settings
+
+### Networking
+
+When the **Networked** option is checked, the state of this object will be made visible to other users.
+
+The *Advanced Networking* dropdown currenlty has no effect.
