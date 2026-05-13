@@ -14,9 +14,11 @@ This is the documentation for the development branch of Vixxy, which is **not** 
 
 *Vixxy* is a user-accessible interface to toggle or trigger effects on an avatar in Basis.
 
-This component is primarily intended to be used through the Unity inspector directly by non-programmer users.
+This component is primarily intended to be used through the Unity inspector directly by **non-programmer users**.
 
 <HaiVideo src="../img/gX02sy0QQp-f.mp4"></HaiVideo>
+
+Effects may be triggered based on the menu, voice, various measurements on the avatar, face tracking, or other hardware or software inputs.
 
 ## Install
 
@@ -205,7 +207,7 @@ If you have only two choices, such as in the case of a simple toggle, and you ke
 - a transition from the value of 0 to 1 would take 1 second at *1 second per unit*,
 - a transition from the value of 0 to 1 would take 0.5 seconds at *0.5 second per unit*.
 
-**However,** you have a multiple-choice slider, each choice is assigned a value. If you have not changed the value of the choices, those values may be 0, 1, **2**. In this case:
+**However,** when you have a multiple-choice slider, each choice is assigned a value, and if you have not changed the value of the choices, those values may be 0, 1, **2**. In this case:
 - a transition from the value of 0 to **2** would take 2 seconds at *1 second per unit*,
 - a transition from the value of 0 to **2** would take 1 second at *0.5 second per unit*.
 
@@ -244,7 +246,27 @@ The **HVR Measure** component can be used to measure things on the avatar. The r
 - **Angle**: Measures the angle between three objects in degrees.
 - **Rotation**: Measures the difference in the rotation of two objects.
 - **Raycast**: Measures the raycast distance to a collider.
-- **Speed**: Measures the speed of an object.
+- **Speed**: Measures the movement speed of an object.
+
+Most measurement types can also calculate the rate of change over time, such as the Angle rate of change, or the Distance rate of change between two objects.
+
+#### Angle and Rotation
+
+There are two ways to measure angles: **Angle**, and **Rotation**. The *Angle* option is probably easier to understand and to use,
+but the *Rotation* option can measure something that *Angle* cannot, should the need arise.
+
+*Angle* takes the position of three objects *Origin, Target A, Target B*, and measures the angle formed by Origin-Target A and Origin-Target B.
+- You can measure the angle of the leg by setting *Origin* to the lower leg bone, *Target A* to the upper leg bone, and *Target B* to the foot bone.
+
+*Rotation* takes the absolute rotation of two objects and measures the angle difference between them. The positions of those two objects don't matter.
+
+*Rotation* has a *Roll* option:
+- When *Include Roll* is selected, the rotation in all directions matters.
+- When *Do Not Include Roll* is selected, the angle is measured by the difference in the forward vector (the blue arrow) of each object.
+
+#### Raycast
+
+
 
 #### Remap
 
@@ -264,4 +286,4 @@ or an angle of 0 degrees would become -0.2 when *Clamp to bounds* is unchecked.
 
 When the **Networked** option is checked, the state of this object will be made visible to other users.
 
-The *Advanced Networking* dropdown currenlty has no effect.
+The *Advanced Networking* dropdown currently has no effect.
