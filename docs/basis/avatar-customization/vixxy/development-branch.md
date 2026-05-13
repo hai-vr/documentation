@@ -90,6 +90,12 @@ There are three different types of controls achievable:
 
 ![Unity_xyQLLDm8mo.png](../img/Unity_xyQLLDm8mo.png)
 
+:::info
+Menus are not the only way to toggle objects and trigger effects. Effects can also be triggered using various measurements or the voice.
+
+This is explained later on this page, in the *[Special inputs](#special-inputs)* section.
+:::
+
 These controls are accessible in-app through *"Settings > Avatar Customization"*:
 
 ![Unity_GWuNR4ZCCz.png](../img/Unity_GWuNR4ZCCz.png)
@@ -188,6 +194,26 @@ You can choose to introduce a transition duration before your toggle turns compl
 
 **Curve** can also be used independently, without any transition duration effect if you want to apply some particular thresholding on the input value.
 
+### Seconds per unit
+
+The transition duration is defined in **seconds per unit**, but in many cases you can think of it as being the same as the **transition duration in seconds** and leave it at that.
+
+If you want the transition to take 0.5 seconds, then set it to 0.5.
+
+#### Details
+
+Here are the gritty details: It means the seconds it takes to go from a value of 0 to a value of 1.
+
+If you have only two choices, such as in the case of a simple toggle, and you kept the default values for the choices, then *duration in seconds per unit* just means **duration in seconds**:
+- a transition from the value of 0 to 1 would take 1 second at *1 second per unit*,
+- a transition from the value of 0 to 1 would take 0.5 seconds at *0.5 second per unit*.
+
+**However,** you have a multiple-choice slider, each choice is assigned a value. If you have not changed the value of the choices, those values may be 0, 1, **2**. In this case:
+- a transition from the value of 0 to **2** would take 2 seconds at *1 second per unit*,
+- a transition from the value of 0 to **2** would take 1 second at *0.5 second per unit*.
+
+You could also change the choice values to become 0, 0.5, 1, or anything you'd like.
+
 ## Special inputs
 
 Toggling and triggering effects on the avatar are not limited to menus.
@@ -203,8 +229,8 @@ Effects can be triggered based on your voice.
 After creating a control, instead of clicking the *"Create menu on this control"* button, click a button under the **Voice** category.
 
 :::note
-Voice effects depend on your audio range settings. If the person wearing the avatar is outside someone else's audio range, that other person
-may not see the effect that would be normally be triggered by the voice.
+Voice effects depend on audio range settings. If the person wearing the avatar is outside someone else's audio range, that other person
+may not see the effect that would normally be triggered by the voice.
 :::
 
 ### Measurements
@@ -225,7 +251,9 @@ The **HVR Measure** component can be used to measure things on the avatar. The r
 
 #### Remap
 
-*Remap* changes the input range to the output range.
+*Remap* converts a measured value from the input range to the output range. This can be used to define a minimum and maximum distance, angle, or speed.
+
+When using an *Angle* measurement, it is strongly recommended to make use of the Remap function to remap from degrees down to a usable range.
 
 For example, in the case of an *Angle* measurement, remapping from (30, 180) to (0, 1) will make the angle of
 30 degrees output 0.0, and the angle of 180 degrees output 1.0. The angle of 105 degrees, which is halfway between 30 degrees and 180 degrees, will be 0.5.
