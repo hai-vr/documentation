@@ -193,6 +193,8 @@ You can choose to introduce a transition duration before your toggle turns compl
 
 ## Add a transition curve
 
+<HaiTags><HaiStartingFromTag version={"NEW_VIXXY_VERSION"} /></HaiTags>
+
 In the **Transitions** section, **Curve** can also be used independently, without any transition duration effect if you want to apply some particular
 thresholding on the input value.
 

@@ -68,7 +68,7 @@ There are four different packet types depending on the variety of values:
 - `Zeroes`, if all values to be sent by the message are `0.0`
 - `Ones`, if all values to be sent by the message are `1.0`
 - `ZeroesAndOnes`, if all values to be sent by the message are either `0.0` or `1.0` (we specify the number of addresses that are zeroes).
-- `Mixed` if at least one value of the message is neither `0.0` nor `1.0`. The values of `0.0` and `1.0` are still only transmitted using only
+- `Mixed` if at least one value of the message is neither `0.0` nor `1.0`. The values of `0.0` and `1.0` are still transmitted using only
   their addresses (we specify the number of addresses that are zeroes).
 
 This approach reduces the cost of messages related to toggles.
@@ -85,13 +85,13 @@ This approach reduces the cost of messages related to toggles.
 
 When preparing a message, we do not send the current value for an address. Instead, we send any value that was set that has the largest delta since the last sent value.
 
-For example, if those are the values that are set for a given address, with a new line representing the moment where we decide to send a message:
-
 This is done for the following reasons:
 - If the user presses a button, and that button press happens between networked messages, then that button press is still networked.
 - If the user blinks, but that blink happens between networked messages, then that blink is still visible. This also goes for other short and subtle facial cues.
 
 #### Example A
+
+Those are the values that are set for a given address, with a new line representing the moment where we decide to send a message:
 
 ```text
 (#1) 0
@@ -103,7 +103,7 @@ This is done for the following reasons:
 (#7) 0 0 0
 ```
 
-We send the following: 1, 5, 2, 5.
+We send the following: 0, 1, 0, 1, 0.
 
 - (#1) **0**: → This is the first sent packet.
 - (#2) **1**: `Abs(0 - 1) = 1` → This is the greatest absolute value.
@@ -114,6 +114,8 @@ We send the following: 1, 5, 2, 5.
 - (#7) (**0**: `Abs(0 - 0) = 0`) → We don't send anything.
 
 #### Example B
+
+Those are the values that are set for a given address, with a new line representing the moment where we decide to send a message:
 
 ```text
 (#1) 1 
