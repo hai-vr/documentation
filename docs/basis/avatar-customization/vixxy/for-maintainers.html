@@ -5,7 +5,7 @@
 <meta name="generator" content="Docusaurus v3.2.1">
 <title data-rh="true">For maintainers | Haï~</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://docs.hai-vr.dev/img/hai-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://docs.hai-vr.dev/img/hai-social-card.jpg"><meta data-rh="true" property="og:url" content="https://docs.hai-vr.dev/docs/basis/avatar-customization/vixxy/for-maintainers"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="For maintainers | Haï~"><meta data-rh="true" name="description" content="This is technical documentation intended for developers who may maintain the application."><meta data-rh="true" property="og:description" content="This is technical documentation intended for developers who may maintain the application."><link data-rh="true" rel="icon" href="/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://docs.hai-vr.dev/docs/basis/avatar-customization/vixxy/for-maintainers"><link data-rh="true" rel="alternate" href="https://docs.hai-vr.dev/docs/basis/avatar-customization/vixxy/for-maintainers" hreflang="en"><link data-rh="true" rel="alternate" href="https://docs.hai-vr.dev/docs/basis/avatar-customization/vixxy/for-maintainers" hreflang="x-default"><link rel="alternate" type="application/rss+xml" href="/updates/rss.xml" title="Haï~ RSS Feed">
 <link rel="alternate" type="application/atom+xml" href="/updates/atom.xml" title="Haï~ Atom Feed"><link rel="stylesheet" href="/assets/css/styles.e3d295a8.css">
-<script src="/assets/js/runtime~main.889ff4ae.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.3fa4237d.js" defer="defer"></script>
 <script src="/assets/js/main.f86289ea.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -83,9 +83,9 @@ their addresses (we specify the number of addresses that are zeroes).</li>
 <ul>
 <li>(#1) <strong>0</strong>: → This is the first sent packet.</li>
 <li>(#2) <strong>1</strong>: <code>Abs(0 - 1) = 1</code> → This is the greatest absolute value.</li>
-<li>(#3) <strong>0</strong>: <code>Abs(1 - 0) = 0</code> → This is the greatest absolute value.</li>
+<li>(#3) <strong>0</strong>: <code>Abs(1 - 0) = 1</code> → This is the greatest absolute value.</li>
 <li>(#4) <strong>1</strong>: <code>Abs(0 - 1) = 1</code> → Even though 0 is the last value, we sent the value of 1 because it is the value that is further away from the last sent value (the last sent value was 0).</li>
-<li>(#5) <strong>0</strong>: <code>Abs(1 - 0) = 0</code> → Even though only the value of 0 was set since the last message sent, we must send the value of 0 because it is different from the last sent value (the last sent value was 1).</li>
+<li>(#5) <strong>0</strong>: <code>Abs(1 - 0) = 1</code> → Even though only the value of 0 was set since the last message sent, we must send the value of 0 because it is different from the last sent value (the last sent value was 1).</li>
 <li>(#6) (<strong>0</strong>: <code>Abs(0 - 0) = 0</code>) → We don&#x27;t send anything. In fact, we wouldn&#x27;t even calculate the absolute value. Checks are only done if the value has changed or if we have sent a message for that address on the previous iteration while the newly sent value was not equal to the last value.</li>
 <li>(#7) (<strong>0</strong>: <code>Abs(0 - 0) = 0</code>) → We don&#x27;t send anything.</li>
 </ul>
