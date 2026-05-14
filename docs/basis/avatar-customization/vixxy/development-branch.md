@@ -13,9 +13,9 @@ import {HaiVideo} from "/src/components/HaiVideo";
 <HaiTag requiresBasis={true} />
 </HaiTags>
 
-To toggle or trigger effects on an avatar, you may use **Vixxy**, a user-accessible component usable in Basis.
+**Vixxy** is a user-accessible interface to toggle or trigger effects on your avatar in Basis.
 
-*Vixxy* is primarily intended to be used through the Unity inspector directly by **non-programmer users**.
+It is primarily intended to be used through the Unity inspector directly by **non-programmer users**.
 
 Effects may be triggered based on the menu, voice, various measurements on the avatar, face tracking, or other hardware or software inputs.
 
@@ -271,13 +271,13 @@ but the *Rotation* option can measure something that *Angle* cannot, should the 
 
 
 
-#### Remap
+#### Convert range
 
-*Remap* converts a measured value from the input range to the output range. This can be used to define a minimum and maximum distance, angle, or speed.
+The measured value can be converted from the input range to the output range. This can be used to define a minimum and maximum distance, angle, or speed.
 
-When using an *Angle* measurement, it is strongly recommended to make use of the Remap function to remap from degrees down to a usable range.
+When using an *Angle* measurement, it is strongly recommended to make use of the *Convert range* function to convert from degrees down to a usable range.
 
-For example, in the case of an *Angle* measurement, remapping from (30, 180) to (0, 1) will make the angle of
+For example, in the case of an *Angle* measurement, converting from (30, 180) to (0, 1) will make the angle of
 30 degrees output 0.0, and the angle of 180 degrees output 1.0. The angle of 105 degrees, which is halfway between 30 degrees and 180 degrees, will be 0.5.
 
 The *Clamp to bounds* checkbox limits the output range to that specific range. Taking the same example as above, an angle of 0 degrees would become 0.0 when *Clamp to bounds* is checked,
