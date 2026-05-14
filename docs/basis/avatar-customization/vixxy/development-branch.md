@@ -1,24 +1,27 @@
-# Vixxy (Development branch)
+---
+title: Toggle or trigger effects (Vixxy)
+---
+
+# Toggle or trigger effects using Vixxy (Development branch)
 
 import {HaiTags} from "/src/components/HaiTags";
 import {HaiTag} from "/src/components/HaiTag";
+import {HaiStartingFromTag} from "/src/components/HaiStartingFromTag";
 import {HaiVideo} from "/src/components/HaiVideo";
 
 <HaiTags>
 <HaiTag requiresBasis={true} />
 </HaiTags>
 
-:::danger
-This is the documentation for the development branch of Vixxy, which is **not** available in the Basis Demonstration software and repository yet.
-:::
+To toggle or trigger effects on an avatar, you may use **Vixxy**, a user-accessible component usable in Basis.
 
-*Vixxy* is a user-accessible interface to toggle or trigger effects on an avatar in Basis.
-
-This component is primarily intended to be used through the Unity inspector directly by **non-programmer users**.
-
-<HaiVideo src="../img/gX02sy0QQp-f.mp4"></HaiVideo>
+*Vixxy* is primarily intended to be used through the Unity inspector directly by **non-programmer users**.
 
 Effects may be triggered based on the menu, voice, various measurements on the avatar, face tracking, or other hardware or software inputs.
+
+It can toggle objects ON and OFF, change shader material settings, blendshapes, and the text inside TextMeshPro components.
+
+<HaiVideo src="../img/gX02sy0QQp-f.mp4"></HaiVideo>
 
 ## Install
 
@@ -26,25 +29,27 @@ Effects may be triggered based on the menu, voice, various measurements on the a
 This is the documentation for the development branch of Vixxy, which is **not** available in the Basis Demonstration software and repository yet.
 :::
 
-Vixxy is included by default with the official Basis Framework repository, in the `Basis/Packages/dev.hai-vr.basis.comms/` folder,
+*Vixxy* is included by default with the official Basis Framework repository, in the `Basis/Packages/dev.hai-vr.basis.comms/` folder,
 since the 1st of May 2026.
 
 If you are a participant in the Basis Demo application, follow the regular instructions for making avatars.
+
+## Preface for developers
+
+*Vixxy* is one of various ways to create effects in Basis. Although it is primarily designed to be accessible for non-programmer users, it can be used by developers as well.
+
+That said, if you are a software developer, you may consider using other approaches:
+- Directly use the Basis Framework avatar communication API if you are an application developer, or
+- Consider using scripting through [Cilbox](https://docs.basisvr.org/en/docs/scripting/scripting).
+
+The networking of *Vixxy* is built using the Basis Framework avatar communication API; the rest is just plain Unity software.
+Most of the *Vixxy* code can be used in single-player without depending on any of the Basis Framework APIs. 
 
 ## Create a toggle
 
 Create a new GameObject in your avatar and add a **HVR Vixxy Control** component to it.
 
 Then in the *Settings* category, click the *"Create menu on this control"* button.
-
-:::warning
-This documentation will skim through the configuration; some options will not be explained as they will only become useful later
-in the development of Vixxy.
-
-Therefore, you do not need to touch anything else in the *Settings* category.
-- Leave the *Address* field empty.
-- Keep the *Networked* setting checked.
-:::
 
 :::info
 **TODO: Replace this graphic**
@@ -219,9 +224,7 @@ Toggling and triggering effects on the avatar are not limited to menus.
 
 ### Voice
 
-:::info
-This feature is introduced starting from NEW_VIXXY_VERSION.
-:::
+<HaiTags><HaiStartingFromTag version={"NEW_VIXXY_VERSION"} /></HaiTags>
 
 Effects can be triggered based on your voice.
 
@@ -234,9 +237,7 @@ may not see the effect that would normally be triggered by the voice.
 
 ### Measurements
 
-:::info
-This feature is introduced starting from NEW_VIXXY_VERSION.
-:::
+<HaiTags><HaiStartingFromTag version={"NEW_VIXXY_VERSION"} /></HaiTags>
 
 The **HVR Measure** component can be used to measure things on the avatar. The resulting values may be used to trigger effects on your avatar.
 
