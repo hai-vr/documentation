@@ -107,9 +107,9 @@ We send the following: 1, 5, 2, 5.
 
 - (#1) **0**: → This is the first sent packet.
 - (#2) **1**: `Abs(0 - 1) = 1` → This is the greatest absolute value.
-- (#3) **0**: `Abs(1 - 0) = 0` → This is the greatest absolute value.
+- (#3) **0**: `Abs(1 - 0) = 1` → This is the greatest absolute value.
 - (#4) **1**: `Abs(0 - 1) = 1` → Even though 0 is the last value, we sent the value of 1 because it is the value that is further away from the last sent value (the last sent value was 0).
-- (#5) **0**: `Abs(1 - 0) = 0` → Even though only the value of 0 was set since the last message sent, we must send the value of 0 because it is different from the last sent value (the last sent value was 1).
+- (#5) **0**: `Abs(1 - 0) = 1` → Even though only the value of 0 was set since the last message sent, we must send the value of 0 because it is different from the last sent value (the last sent value was 1).
 - (#6) (**0**: `Abs(0 - 0) = 0`) → We don't send anything. In fact, we wouldn't even calculate the absolute value. Checks are only done if the value has changed or if we have sent a message for that address on the previous iteration while the newly sent value was not equal to the last value.
 - (#7) (**0**: `Abs(0 - 0) = 0`) → We don't send anything.
 
