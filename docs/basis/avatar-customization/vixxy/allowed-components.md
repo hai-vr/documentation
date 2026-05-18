@@ -1,10 +1,13 @@
 # Allowed components
 
-*Vixxy* operates with a list of allowed components.
+By default, *Vixxy* does not allow toggling or accessing all component types as a precautionary measure to
+prevent affecting components that are created by the application.
 
-The following components are permitted:
+These restrictions may be relaxed during the development of Vixxy.
 
-- **In UnityEngine:**
+The following components are permitted in a default configuration:
+
+- **In UnityEngine base components:**
   - *Miscellaneous:*
     - Transform
     - GameObject
@@ -36,7 +39,7 @@ The following components are permitted:
     - Canvas
     - Text
     - Image
-- **In external packages:**
+- **In other packages:**
   - UnityEngine.Rendering.Universal.DecalProjector
   - GatorDragonGames.JigglePhysics.JiggleRig
   - TMPro.TextMeshPro

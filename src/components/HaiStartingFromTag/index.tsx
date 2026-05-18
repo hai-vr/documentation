@@ -17,13 +17,14 @@ import clsx from 'clsx';
 import styles from '/src/components/HaiTag/styles.module.css';
 
 interface Props {
-    version: string
+    version: string,
+    small: boolean
 }
 
-export function HaiStartingFromTag({version}: Props): JSX.Element {
+export function HaiStartingFromTag({version, small = false}: Props): JSX.Element {
     return (
         <span>
-                <div className={clsx(styles.hai_tag, styles.hai_tag_startingfrom)}>Starting from <strong><span
+                <div className={clsx(styles.hai_tag, styles.hai_tag_startingfrom, small && styles.hai_tag_small)}>Starting from <strong><span
                     className="notranslate">{version}</span></strong></div>
         </span>
     );

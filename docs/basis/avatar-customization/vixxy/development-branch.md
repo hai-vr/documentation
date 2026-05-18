@@ -2,12 +2,12 @@
 title: Toggle or trigger effects (Vixxy)
 ---
 
-# Toggle or trigger effects using Vixxy (Development branch)
-
 import {HaiTags} from "/src/components/HaiTags";
 import {HaiTag} from "/src/components/HaiTag";
 import {HaiStartingFromTag} from "/src/components/HaiStartingFromTag";
 import {HaiVideo} from "/src/components/HaiVideo";
+
+# Toggle or trigger effects using Vixxy (Development branch)
 
 <HaiTags>
 <HaiTag requiresBasis={true} />
@@ -17,9 +17,8 @@ import {HaiVideo} from "/src/components/HaiVideo";
 
 It is primarily intended to be used through the Unity inspector directly by **non-programmer users**.
 
-Effects may be triggered based on the menu, voice, various measurements on the avatar, face tracking, or other hardware or software inputs.
-
-It can toggle objects ON and OFF, change shader material settings, blendshapes, and the text inside TextMeshPro components.
+Effects may be triggered based on the menu, voice, various measurements on the avatar, face tracking, or inputs received from external hardware and software.
+It can toggle objects ON and OFF, change shader material settings, blendshapes, textures inside materials, and the text inside TextMeshPro components.
 
 <HaiVideo src="../img/gX02sy0QQp-f.mp4"></HaiVideo>
 
@@ -136,13 +135,16 @@ The following is possible as of the current version:
 - ✅ Change the value of blendshapes.
 - ✅ Change float values in material properties.
 - ✅ Change color values in material properties.
+- ✅ Rotate objects. <HaiStartingFromTag version={"NEW_VIXXY_VERSION"} small={true} />
+
+The following is possible and worth a special mention as they were not possible if you were used to animation-based systems:
 - ✅ Change texture slots in material properties.
 - ✅ Change the text string of a TextMeshPro / TextMeshProUGUI / Text component, with float number formatting.
 
 The following is not yet available as of the current version.
 - ❌ Cannot change material slot in a Renderer.
 - ❌ Cannot change any other property.
-- ❌ Cannot translate, scale, or rotate objects.
+- ❌ Cannot translate, or scale objects.
 
 ### Multiple object groups
 
@@ -223,6 +225,15 @@ You could also change the choice values to become 0, 0.5, 1, or anything you'd l
 ## Trigger effects without a menu
 
 Toggling and triggering effects on the avatar are not limited to menus.
+
+### Face Tracking
+
+If you use face tracking on your avatar, you can specify existing face tracking addresses to trigger an effect on your avatar, such as connecting
+the ears of your avatar to the expression of your mouth, for example `FT/v2/MouthStretchLeft`.
+
+You can specify the address in the *Address and Networking* tab.
+
+For the full list of addresses, see [Face Tracking addresses](./face-tracking-addresses).
 
 ### Voice
 
