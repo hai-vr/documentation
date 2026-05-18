@@ -39,10 +39,10 @@ If you are a participant in the Basis Demo application, follow the regular instr
 
 That said, if you are a software developer, you may consider using other approaches:
 - Directly use the Basis Framework avatar communication API if you are an application developer, or
-- Consider using scripting through [Cilbox](https://docs.basisvr.org/en/docs/scripting/scripting).
+- Consider using scripting through [Cilbox](https://docs.basisvr.org/en/docs/scripting/scripting) to modify GameObjects and Components directly.
 
 The networking of *Vixxy* is built using the Basis Framework avatar communication API; the rest is just plain Unity software.
-Most of the *Vixxy* code can be used in single-player without depending on any of the Basis Framework APIs. 
+A large portion of the *Vixxy* code can be used in single-player without depending on any of the Basis Framework APIs. 
 
 ## Create a toggle
 
