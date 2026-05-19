@@ -233,7 +233,7 @@ the ears of your avatar to the expression of your mouth, for example `FT/v2/Mout
 
 You can specify the address in the *Address and Networking* tab.
 
-For the full list of addresses, see [Face Tracking addresses](./face-tracking-addresses).
+If you want to learn more, see [Face Tracking addresses](./face-tracking-addresses).
 
 ### Voice
 

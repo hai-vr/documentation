@@ -11,6 +11,27 @@ The following addresses can be used in Vixxy.
 
 Their behavior should match the [VRCFaceTracking documentation](https://docs.vrcft.io/docs/tutorial-avatars/tutorial-avatars-extras/parameters).
 
+## Networking
+
+All addresses use linear quantization on 1 byte over the available range, so they all have acceptable precision for face tracking purposes.
+
+- For values that go between 0.0 and 1.0, the step is approximately 0.004, which is 0.4%.
+- For values that go between -1.0 and 1.0, the step is approximately 0.008, which is 0.8%.
+- The values of -1.0, 1.0, and 0.0 are guaranteed to stay the same after quantization.
+
+If the hardware doesn't support some addresses, the unused addresses will not use any continuous network load.
+Only addresses that change frequently take a continuous network load.
+
+For example, if your face tracking hardware doesn't support the nose, but you specify the `FT/v2/NoseSneerLeft` address anyway on your avatar,
+we will send the value of 0.0 for the nose once to other players, and then never again.
+
+Similarly, if your avatar supports face tracking, but you do not have face tracking hardware plugged in, or you do not have the software running,
+none of the addresses will use any continuous network load.
+
+In other words, don't worry about networking.
+
+## Addresses
+
 - `FT/v2/BrowDownLeft`
 - `FT/v2/BrowDownRight`
 - `FT/v2/BrowInnerUp`
