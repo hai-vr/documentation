@@ -184,7 +184,7 @@ This feature is introduced starting from NEW_VIXXY_VERSION.
 
 You can choose to introduce a transition duration before your toggle turns completely ON and OFF.
 
-### Simplified
+### Simplified Transition
 
 By setting the **Transition** setting to **Simplified**, you can specify a transition duration in seconds.
 
@@ -244,7 +244,7 @@ Toggling and triggering effects on the avatar are not limited to menus.
 If you use face tracking on your avatar, you can specify existing face tracking addresses to trigger an effect on your avatar, such as connecting
 the ears of your avatar to the expression of your mouth, for example `FT/v2/MouthStretchLeft`.
 
-You can specify the address in the *Address and Networking* tab.
+Use the *Select...* button, then open the *Face Tracking* category to choose the address you want to use.
 
 If you want to learn more, see [Face Tracking addresses](./face-tracking-addresses).
 
@@ -254,7 +254,8 @@ If you want to learn more, see [Face Tracking addresses](./face-tracking-address
 
 Effects can be triggered based on your voice.
 
-After creating a control, instead of clicking the *"Create menu on this control"* button, click a button under the **Voice** category.
+- If you want to trigger an effect based on your voice gain, click the *Select...* button, then select *Voice Gain*.
+- If you want to trigger an effect based on a specific viseme, click the *Select...* button, then open the *Viseme* category to choose the address you want to use.
 
 :::note
 Voice effects depend on audio range settings. If the person wearing the avatar is outside someone else's audio range, that other person
@@ -270,10 +271,13 @@ The **HVR Measure** component can be used to measure things on the avatar. The r
 #### Measurement types
 
 - **Distance**: Measures the distance between two objects.
-- **Angle**: Measures the angle between three objects in degrees.
+- **Angle**: Measures the angle between three objects.
 - **Rotation Difference**: Measures the difference in the rotation of two objects.
 - **Raycast**: Measures the raycast distance to a collider.
 - **Speed**: Measures the movement speed of an object.
+
+Most distance-based measurements are done in avatar space by default, so that the measurement scales with your avatar.
+For example, a measurement that depends on your arm length will result in the same value regardless of the avatar scale.
 
 Most measurement types can also calculate the rate of change over time, such as the Angle rate of change, or the Distance rate of change between two objects.
 
@@ -299,7 +303,7 @@ but the *Rotation* option can measure something that *Angle* cannot, should the 
 
 The measured value can be converted from the input range to the output range. This can be used to define a minimum and maximum distance, angle, or speed.
 
-When using an *Angle* measurement, it is strongly recommended to make use of the *Convert range* function to convert from degrees down to a usable range.
+The result will be given in degrees. When using an *Angle* measurement, it is strongly recommended to make use of the *Convert range* function to convert from degrees down to a usable range.
 
 For example, in the case of an *Angle* measurement, converting from (30, 180) to (0, 1) will make the angle of
 30 degrees output 0.0, and the angle of 180 degrees output 1.0. The angle of 105 degrees, which is halfway between 30 degrees and 180 degrees, will be 0.5.
