@@ -48,7 +48,7 @@ A large portion of the *Vixxy* code can be used in single-player without dependi
 
 Create a new GameObject in your avatar and add a **HVR Vixxy Control** component to it.
 
-Then in the *Settings* category, click the *"Create menu on this control"* button.
+Then in *What activates this control* click *Select...* and choose **Menu Item**.
 
 :::info
 **TODO: Replace this graphic**
@@ -73,7 +73,7 @@ If you want to toggle a component instead of the object itself, drag the object 
 
 ## Use more than two choices
 
-If you want more than two choices, open the *Settings* category and click the *"+ Add choice"* button.
+If you want more than two choices, click the *"+ Add choice"* button at the top.
 
 After adding choices, you should give each choice a description. This description will be displayed in the menu.
 
@@ -135,7 +135,7 @@ The following is possible as of the current version:
 - ✅ Change the value of blendshapes.
 - ✅ Change float values in material properties.
 - ✅ Change color values in material properties.
-- ✅ Rotate objects. <HaiStartingFromTag version={"NEW_VIXXY_VERSION"} small={true} />
+- ✅ Translate, rotate, or scale objects. <HaiStartingFromTag version={"NEW_VIXXY_VERSION"} small={true} />
 
 The following is possible and worth a special mention as they were not possible if you were used to animation-based systems:
 - ✅ Change texture slots in material properties.
@@ -144,7 +144,6 @@ The following is possible and worth a special mention as they were not possible 
 The following is not yet available as of the current version.
 - ❌ Cannot change material slot in a Renderer.
 - ❌ Cannot change any other property.
-- ❌ Cannot translate, or scale objects.
 
 ### Multiple object groups
 
@@ -177,13 +176,23 @@ For a value of 0.123456:
 
 A period `.` will always be displayed for the decimal separator, even if the computer OS language is set to French.
 
-## Add a transition duration
+## Transitions
 
 :::info
 This feature is introduced starting from NEW_VIXXY_VERSION.
 :::
 
-You can choose to introduce a transition duration before your toggle turns completely ON and OFF in the **Transitions** section.
+You can choose to introduce a transition duration before your toggle turns completely ON and OFF.
+
+### Simplified
+
+By setting the **Transition** setting to **Simplified**, you can specify a transition duration in seconds.
+
+The transition duration is the time it takes to go from the choice with the minimum value to the choice with the maximum value.
+
+### Advanced Transitions
+
+By setting the **Transition** setting to **Advanced**, a new tab will be shown in the **Advanced** section called **Advanced Transition**.
 
 - **Smooth towards value**: The transition starts quickly and progresses slower as it reaches the target value.
   - This is great for sliders or some controls where the intermediate values are as relevant as the ones at the extremes.
@@ -193,7 +202,11 @@ You can choose to introduce a transition duration before your toggle turns compl
   - Combining *Linear towards value* with *Curve* is great for toggles, but not great for sliders.
   - When combining with *Linear towards value* with *Curve*, the *Curve* should usually be the last item in the list.
 
-## Add a transition curve
+The *Simplified* transition uses two filters:
+- On the first slot: *Linear towards value* with a Seconds Per Unit equal to `(Maximum - Minimum) * TransitionDuration`
+- On the second slot: *Curve* equal to going from `t=Minimum, value=Minimum` to `t=Maximum, value=Maximum`, in an ease in-out shape.
+
+#### Add a transition curve
 
 <HaiTags><HaiStartingFromTag version={"NEW_VIXXY_VERSION"} /></HaiTags>
 
@@ -202,13 +215,13 @@ thresholding on the input value.
 
 It is not recommended to use a transition curve when using *Smooth towards value*.
 
-### Seconds per unit
+##### Seconds per unit
 
 The transition duration is defined in **seconds per unit**, but in many cases you can think of it as being the same as the **transition duration in seconds** and leave it at that.
 
 If you want the transition to take 0.5 seconds, then set it to 0.5.
 
-#### Details
+##### Details
 
 Here are the gritty details: It means the seconds it takes to go from a value of 0 to a value of 1.
 
@@ -258,7 +271,7 @@ The **HVR Measure** component can be used to measure things on the avatar. The r
 
 - **Distance**: Measures the distance between two objects.
 - **Angle**: Measures the angle between three objects in degrees.
-- **Rotation**: Measures the difference in the rotation of two objects.
+- **Rotation Difference**: Measures the difference in the rotation of two objects.
 - **Raycast**: Measures the raycast distance to a collider.
 - **Speed**: Measures the movement speed of an object.
 
