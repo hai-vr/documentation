@@ -5,6 +5,7 @@ sidebar_position: 20
 import {HaiTags} from "/src/components/HaiTags";
 import {HaiTag} from "/src/components/HaiTag";
 import {HaiVideo} from "/src/components/HaiVideo";
+import {HaiStartingFromTag} from "/src/components/HaiStartingFromTag";
 
 # Face tracking
 
@@ -12,12 +13,23 @@ import {HaiVideo} from "/src/components/HaiVideo";
 <HaiTag requiresBasis={true} />
 </HaiTags>
 
-There is a rudimentary implementation of face tracking avatars in Basis, which I have made to help dooly test out avatar networking packet
-communications using a real scenario.
+If your avatar supports Face Tracking, you need to add a component to enable it. 
 
-This requires the VRCFaceTracking software.
+This requires the VRCFaceTracking software. This guide assumes you're already familiar with VRCFaceTracking and your own hardware.
 
-This guide assumes you're already familiar with VRCFaceTracking and your own hardware.
+## Technical specifications
+
+We support [most of the addresses](https://docs.vrcft.io/docs/tutorial-avatars/tutorial-avatars-extras/parameters). EyeY is used instead of EyeLeftY and EyeRightY.
+
+All addresses are transmitted using 1 byte per address.
+
+Linear quantization is used on the available range, so they all have acceptable precision for face tracking purposes.
+
+- For values that go between 0.0 and 1.0, the step is approximately 0.004, which is 0.4%.
+- For values that go between -1.0 and 1.0, the step is approximately 0.008, which is 0.8%.
+- The values of -1.0, 1.0, and 0.0 are guaranteed to stay the same after quantization.
+
+If the connected hardware doesn't support an address, networking is not consumed by that address. <HaiStartingFromTag version={"NEW_VIXXY_VERSION"} small={true} />
 
 ## Set up your avatar
 
@@ -33,14 +45,12 @@ When you added the *Automatic Face Tracking* component, it should have added a p
 This component is responsible for the network communication of your avatar. Keep this prefab at the root.
 
 The setup is complete. *Automatic Face Tracking* will detect all meshes on the avatar that have face tracking blendshapes
-which follow either the *ARKit* or the [*Unified Expressions*](https://docs.vrcft.io/docs/tutorial-avatars/tutorial-avatars-extras/unified-blendshapes)
-naming conventions.
+which follow either the [*Unified Expressions*](https://docs.vrcft.io/docs/tutorial-avatars/tutorial-avatars-extras/unified-blendshapes), *ARKit*, or *SRAnipal* naming conventions.
 
 :::danger
 The face tracking implementation does not use the Animator system.
 
-**Do not use face tracking animator templates designed for VRC**, they won't do anything and might even interfere with
-the operation as the execution order is not explicitly defined.
+**Do not use face tracking animator templates designed for VRC**, they won't do anything and might even interfere.
 
 Face tracking is interpolated by default for remote users (≈ smoothed).
 :::

@@ -1,3 +1,7 @@
+---
+sidebar_position: 30
+---
+
 # Vixxy
 
 import {HaiTags} from "/src/components/HaiTags";

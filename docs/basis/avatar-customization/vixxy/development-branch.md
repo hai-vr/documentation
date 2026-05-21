@@ -71,6 +71,9 @@ If you want to toggle a component instead of the object itself, drag the object 
 ![Unity_b2PeSbJZYG.png](../img/Unity_b2PeSbJZYG.png)
 :::
 
+When you added the *HVR Vixxy Control* component, it should have added a prefab in your avatar called *HVR.Networking*.
+This component is responsible for the network communication of your avatar. Keep this prefab at the root.
+
 ## Use more than two choices
 
 If you want more than two choices, click the *"+ Add choice"* button at the top.
@@ -264,52 +267,19 @@ may not see the effect that would normally be triggered by the voice.
 
 ### Measurements
 
-<HaiTags><HaiStartingFromTag version={"NEW_VIXXY_VERSION"} /></HaiTags>
-
-The **HVR Measure** component can be used to measure things on the avatar. The resulting values may be used to trigger effects on your avatar.
-
-#### Measurement types
+The **HVR Measure** component can be used to measure things on the avatar. The resulting values may be used to trigger effects on
+your avatar using [Vixxy](/docs/basis/avatar-customization/vixxy).
 
 - **Distance**: Measures the distance between two objects.
 - **Angle**: Measures the angle between three objects.
 - **Rotation Difference**: Measures the difference in the rotation of two objects.
-- **Raycast**: Measures the raycast distance to a collider.
-- **Speed**: Measures the movement speed of an object.
 
-Most distance-based measurements are done in avatar space by default, so that the measurement scales with your avatar.
-For example, a measurement that depends on your arm length will result in the same value regardless of the avatar scale.
+[//]: # (- ~~**Raycast**: Measures the raycast distance to a collider.~~)
+[//]: # (- ~~**Speed**: Measures the movement speed of an object.~~)
 
-Most measurement types can also calculate the rate of change over time, such as the Angle rate of change, or the Distance rate of change between two objects.
+*Additional measurement types may be available in the future, such as Speed and Raycast.*
 
-#### Angle and Rotation
-
-There are two ways to measure angles: **Angle**, and **Rotation**. The *Angle* option is probably easier to understand and to use,
-but the *Rotation* option can measure something that *Angle* cannot, should the need arise.
-
-*Angle* takes the position of three objects *Origin, Target A, Target B*, and measures the angle formed by Origin-Target A and Origin-Target B.
-- You can measure the angle of the leg by setting *Origin* to the lower leg bone, *Target A* to the upper leg bone, and *Target B* to the foot bone.
-
-*Rotation* takes the absolute rotation of two objects and measures the angle difference between them. The positions of those two objects don't matter.
-
-*Rotation* has a *Roll* option:
-- When *Include Roll* is selected, the rotation in all directions matters.
-- When *Do Not Include Roll* is selected, the angle is measured by the difference in the forward vector (the blue arrow) of each object.
-
-#### Raycast
-
-
-
-#### Convert range
-
-The measured value can be converted from the input range to the output range. This can be used to define a minimum and maximum distance, angle, or speed.
-
-The result will be given in degrees. When using an *Angle* measurement, it is strongly recommended to make use of the *Convert range* function to convert from degrees down to a usable range.
-
-For example, in the case of an *Angle* measurement, converting from (30, 180) to (0, 1) will make the angle of
-30 degrees output 0.0, and the angle of 180 degrees output 1.0. The angle of 105 degrees, which is halfway between 30 degrees and 180 degrees, will be 0.5.
-
-The *Clamp to bounds* checkbox limits the output range to that specific range. Taking the same example as above, an angle of 0 degrees would become 0.0 when *Clamp to bounds* is checked,
-or an angle of 0 degrees would become -0.2 when *Clamp to bounds* is unchecked.
+To learn more, [see the page about the Measure component](/docs/basis/avatar-customization/measure).
 
 ## Additional settings
 

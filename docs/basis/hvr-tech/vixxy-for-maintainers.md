@@ -1,4 +1,4 @@
-# For maintainers
+# For maintainers (Vixxy)
 
 :::danger
 This is technical documentation intended for developers who may maintain the application.
