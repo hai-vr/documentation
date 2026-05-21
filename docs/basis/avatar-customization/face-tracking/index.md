@@ -15,31 +15,17 @@ import {HaiStartingFromTag} from "/src/components/HaiStartingFromTag";
 
 If your avatar supports Face Tracking, you need to add a component to enable it. 
 
-This requires the VRCFaceTracking software. This guide assumes you're already familiar with VRCFaceTracking and your own hardware.
-
-## Technical specifications
-
-We support [most of the addresses](https://docs.vrcft.io/docs/tutorial-avatars/tutorial-avatars-extras/parameters). EyeY is used instead of EyeLeftY and EyeRightY.
-
-All addresses are transmitted using 1 byte per address.
-
-Linear quantization is used on the available range, so they all have acceptable precision for face tracking purposes.
-
-- For values that go between 0.0 and 1.0, the step is approximately 0.004, which is 0.4%.
-- For values that go between -1.0 and 1.0, the step is approximately 0.008, which is 0.8%.
-- The values of -1.0, 1.0, and 0.0 are guaranteed to stay the same after quantization.
-
-If the connected hardware doesn't support an address, networking is not consumed by that address. <HaiStartingFromTag version={"NEW_VIXXY_VERSION"} small={true} />
+This requires the [VRCFaceTracking software](https://docs.vrcft.io/). This guide assumes you're already familiar with VRCFaceTracking and your own hardware.
 
 ## Set up your avatar
-
-<HaiVideo src="./img/ShWakJTG9n.mp4" halfWidth={true}></HaiVideo>
 
 To set up your avatar:
 
 - Create a new GameObject inside your avatar. Give it a name of your choice, like *FaceTracking*.
 - Add the **Automatic Face Tracking** component.
 - In the inspector of the *Automatic Face Tracking* component, press the *"Create VRCFaceTracking JSON file"* button.
+
+<HaiVideo src="./img/ShWakJTG9n.mp4" halfWidth={true}></HaiVideo>
 
 When you added the *Automatic Face Tracking* component, it should have added a prefab in your avatar called *HVR.Networking*.
 This component is responsible for the network communication of your avatar. Keep this prefab at the root.
@@ -48,11 +34,8 @@ The setup is complete. *Automatic Face Tracking* will detect all meshes on the a
 which follow either the [*Unified Expressions*](https://docs.vrcft.io/docs/tutorial-avatars/tutorial-avatars-extras/unified-blendshapes), *ARKit*, or *SRAnipal* naming conventions.
 
 :::danger
-The face tracking implementation does not use the Animator system.
-
-**Do not use face tracking animator templates designed for VRC**, they won't do anything and might even interfere.
-
-Face tracking is interpolated by default for remote users (≈ smoothed).
+The face tracking implementation does not use the Animator system. **Do not use face tracking animator templates designed for VRC**,
+they won't do anything and might even interfere.
 :::
 
 ## Testing
@@ -74,3 +57,19 @@ When you load into your avatar, the following thing will happen:
 ![basisfakeclient.png](img/basisfakeclient.png)
 
 Then in the scene view, look at your own avatar's face, see how it moves.
+
+## Technical specifications
+
+We support [most of the addresses](https://docs.vrcft.io/docs/tutorial-avatars/tutorial-avatars-extras/parameters). EyeY is used instead of EyeLeftY and EyeRightY.
+
+All addresses are transmitted using 1 byte per address.
+
+Linear quantization is used on the available range, so they all have acceptable precision for face tracking purposes.
+
+- For values that go between 0.0 and 1.0, the step is approximately 0.004, which is 0.4%.
+- For values that go between -1.0 and 1.0, the step is approximately 0.008, which is 0.8%.
+- The values of -1.0, 1.0, and 0.0 are guaranteed to stay the same after quantization.
+
+If the connected hardware doesn't support an address, networking is not consumed by that address. <HaiStartingFromTag version={"NEW_VIXXY_VERSION"} small={true} />
+
+Face tracking is interpolated by default for remote users.
