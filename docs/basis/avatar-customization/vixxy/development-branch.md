@@ -183,7 +183,9 @@ A period `.` will always be displayed for the decimal separator, even if the com
 
 <HaiTags><HaiStartingFromTag version={"21st of May 2026"} /></HaiTags>
 
-You can choose to introduce a transition duration before your toggle turns completely ON and OFF.
+You can choose to introduce a transition duration before your toggle turns completely ON or OFF.
+
+The **Transition** setting is always shown, and it is located at near top, under the choices. There is no transition by default.
 
 ### Simplified Transition
 
