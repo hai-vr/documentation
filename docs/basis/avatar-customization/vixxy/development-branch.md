@@ -138,7 +138,7 @@ The following is possible as of the current version:
 - ✅ Change the value of blendshapes.
 - ✅ Change float values in material properties.
 - ✅ Change color values in material properties.
-- ✅ Translate, rotate, or scale objects. <HaiStartingFromTag version={"NEW_VIXXY_VERSION"} small={true} />
+- ✅ Translate, rotate, or scale objects. <HaiStartingFromTag version={"21st of May 2026"} small={true} />
 
 The following is possible and worth a special mention as they were not possible if you were used to animation-based systems:
 - ✅ Change texture slots in material properties.
@@ -182,7 +182,7 @@ A period `.` will always be displayed for the decimal separator, even if the com
 ## Transitions
 
 :::info
-This feature is introduced starting from NEW_VIXXY_VERSION.
+This feature is introduced starting from 21st of May 2026.
 :::
 
 You can choose to introduce a transition duration before your toggle turns completely ON and OFF.
@@ -211,7 +211,7 @@ The *Simplified* transition uses two filters:
 
 #### Add a transition curve
 
-<HaiTags><HaiStartingFromTag version={"NEW_VIXXY_VERSION"} /></HaiTags>
+<HaiTags><HaiStartingFromTag version={"21st of May 2026"} /></HaiTags>
 
 In the **Transitions** section, **Curve** can also be used independently, without any transition duration effect if you want to apply some particular
 thresholding on the input value.
@@ -240,7 +240,7 @@ You could also change the choice values to become 0, 0.5, 1, or anything you'd l
 
 ## Trigger effects without a menu
 
-<HaiTags><HaiStartingFromTag version={"NEW_VIXXY_VERSION"} /></HaiTags>
+<HaiTags><HaiStartingFromTag version={"21st of May 2026"} /></HaiTags>
 
 Toggling and triggering effects on the avatar are not limited to menus.
 

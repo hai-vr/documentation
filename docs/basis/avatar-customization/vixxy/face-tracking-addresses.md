@@ -5,7 +5,7 @@ import {HaiVideo} from "/src/components/HaiVideo";
 
 # Face Tracking addresses
 
-<HaiTags><HaiStartingFromTag version={"NEW_VIXXY_VERSION"} /></HaiTags>
+<HaiTags><HaiStartingFromTag version={"21st of May 2026"} /></HaiTags>
 
 The following addresses can be used in Vixxy.
 

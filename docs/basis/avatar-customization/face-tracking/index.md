@@ -70,6 +70,6 @@ Linear quantization is used on the available range, so they all have acceptable 
 - For values that go between -1.0 and 1.0, the step is approximately 0.008, which is 0.8%.
 - The values of -1.0, 1.0, and 0.0 are guaranteed to stay the same after quantization.
 
-If the connected hardware doesn't support an address, networking is not consumed by that address. <HaiStartingFromTag version={"NEW_VIXXY_VERSION"} small={true} />
+If the connected hardware doesn't support an address, networking is not consumed by that address. <HaiStartingFromTag version={"21st of May 2026"} small={true} />
 
 Face tracking is interpolated by default for remote users.

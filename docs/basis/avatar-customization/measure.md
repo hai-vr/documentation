@@ -11,7 +11,7 @@ import {HaiStartingFromTag} from "/src/components/HaiStartingFromTag";
 
 <HaiTags>
 <HaiTag requiresBasis={true} />
-<HaiStartingFromTag version={"NEW_VIXXY_VERSION"} />
+<HaiStartingFromTag version={"21st of May 2026"} />
 </HaiTags>
 
 The **HVR Measure** component can be used to measure things on the avatar. The resulting values may be used to trigger effects
