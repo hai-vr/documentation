@@ -13,7 +13,7 @@ import {HaiStartingFromTag} from "/src/components/HaiStartingFromTag";
 <HaiTag requiresBasis={true} />
 </HaiTags>
 
-If your avatar supports Face Tracking, you need to add a component to enable it. 
+If your avatar has blendshapes designed for face tracking, you need to add a component for Basis to recognize them. 
 
 This requires the [VRCFaceTracking software](https://docs.vrcft.io/). This guide assumes you're already familiar with VRCFaceTracking and your own hardware.
 
