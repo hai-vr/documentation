@@ -14,7 +14,8 @@ import {HaiStartingFromTag} from "/src/components/HaiStartingFromTag";
 <HaiStartingFromTag version={"NEW_VIXXY_VERSION"} />
 </HaiTags>
 
-The **HVR Measure** component can be used to measure things on the avatar. The resulting values may be used to trigger effects on your avatar.
+The **HVR Measure** component can be used to measure things on the avatar. The resulting values may be used to trigger effects
+on your avatar using [Vixxy](/docs/basis/avatar-customization/vixxy).
 
 ## Measurement types
 
@@ -31,6 +32,8 @@ We offer the following measurement types:
 *Additional measurement types may be available in the future, such as Speed and Raycast.*
 
 Most measurement types can also calculate the rate of change over time, such as the Angle rate of change, or the Distance rate of change between two objects.
+
+The result will be written to the address of your choice by checking the corresponding checkbox in the *Output* section.
 
 ## Distance
 

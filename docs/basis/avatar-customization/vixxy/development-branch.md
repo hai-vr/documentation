@@ -240,6 +240,8 @@ You could also change the choice values to become 0, 0.5, 1, or anything you'd l
 
 ## Trigger effects without a menu
 
+<HaiTags><HaiStartingFromTag version={"NEW_VIXXY_VERSION"} /></HaiTags>
+
 Toggling and triggering effects on the avatar are not limited to menus.
 
 ### Face Tracking
@@ -253,8 +255,6 @@ If you want to learn more, see [Face Tracking addresses](./face-tracking-address
 
 ### Voice
 
-<HaiTags><HaiStartingFromTag version={"NEW_VIXXY_VERSION"} /></HaiTags>
-
 Effects can be triggered based on your voice.
 
 - If you want to trigger an effect based on your voice gain, click the *Select...* button, then select *Voice Gain*.
@@ -267,8 +267,7 @@ may not see the effect that would normally be triggered by the voice.
 
 ### Measurements
 
-The **HVR Measure** component can be used to measure things on the avatar. The resulting values may be used to trigger effects on
-your avatar using [Vixxy](/docs/basis/avatar-customization/vixxy).
+The **HVR Measure** component can be used to measure things on the avatar. The resulting values may be used to trigger effects on your avatar.
 
 - **Distance**: Measures the distance between two objects.
 - **Angle**: Measures the angle between three objects.
