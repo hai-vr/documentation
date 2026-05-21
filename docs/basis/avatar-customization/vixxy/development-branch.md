@@ -181,9 +181,7 @@ A period `.` will always be displayed for the decimal separator, even if the com
 
 ## Transitions
 
-:::info
-This feature is introduced starting from 21st of May 2026.
-:::
+<HaiTags><HaiStartingFromTag version={"21st of May 2026"} /></HaiTags>
 
 You can choose to introduce a transition duration before your toggle turns completely ON and OFF.
 
@@ -210,8 +208,6 @@ The *Simplified* transition uses two filters:
 - On the second slot: *Curve* equal to going from `t=Minimum, value=Minimum` to `t=Maximum, value=Maximum`, in an ease in-out shape.
 
 #### Add a transition curve
-
-<HaiTags><HaiStartingFromTag version={"21st of May 2026"} /></HaiTags>
 
 In the **Transitions** section, **Curve** can also be used independently, without any transition duration effect if you want to apply some particular
 thresholding on the input value.
