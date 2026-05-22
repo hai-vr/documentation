@@ -284,6 +284,9 @@ The **HVR Measure** component can be used to measure things on the avatar. The r
 
 To learn more, [see the page about the Measure component](/docs/basis/avatar-customization/measure).
 
+After configuring the *Measure* component, go to the *Vixxy Control* component and press the *Select...* button. The address will be available
+in the *Measurements* category.
+
 <HaiVideo src="./img/bdH9zKqkQE-f.mp4"></HaiVideo>
 
 ## Additional settings

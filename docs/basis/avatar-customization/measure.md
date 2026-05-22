@@ -118,3 +118,10 @@ For example, in the case of an *Angle* measurement, converting from (30, 180) to
 
 The *Clamp to bounds* checkbox limits the output range to that specific range. Taking the same example as above, an angle of 0 degrees would become 0.0 when *Clamp to bounds* is checked,
 or an angle of 0 degrees would become -0.2 when *Clamp to bounds* is unchecked.
+
+## Connecting to Vixxy Control
+
+The measurement can be used to trigger effects on your avatar using **[Vixxy](/docs/basis/avatar-customization/vixxy)**.
+
+After configuring the *Measure* component, go to the **Vixxy Control** component and press the *Select...* button.
+The address will be available in the *Measurements* category.
