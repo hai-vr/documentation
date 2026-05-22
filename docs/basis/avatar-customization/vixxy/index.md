@@ -1,5 +1,6 @@
 ---
 title: Toggle or trigger effects
+sidebar_position: 30
 ---
 
 import {HaiTags} from "/src/components/HaiTags";
