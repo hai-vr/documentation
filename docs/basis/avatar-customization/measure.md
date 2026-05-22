@@ -19,6 +19,8 @@ on your avatar using [Vixxy](/docs/basis/avatar-customization/vixxy).
 
 ## Measurement types
 
+Add a *HVR Measure* component on your avatar. The location of that *HVR Measure* component in your hierarchy does not matter.
+
 We offer the following measurement types:
 
 - **Distance**: Measures the distance between two objects.
