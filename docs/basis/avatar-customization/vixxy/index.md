@@ -14,7 +14,7 @@ import {HaiVideo} from "/src/components/HaiVideo";
 <HaiTag requiresBasis={true} />
 </HaiTags>
 
-**Vixxy** is a user-accessible interface to toggle or trigger effects on your avatar in Basis.
+**Vixxy** is a user-accessible interface to toggle or trigger effects on your avatar in Basis Framework projects.
 
 It is primarily intended to be used through the Unity inspector directly by **non-programmer users**.
 
@@ -32,6 +32,8 @@ It can toggle objects ON and OFF, change shader material settings, blendshapes, 
 since the 1st of May 2026.
 
 If you are a participant in the Basis Demo application, follow the regular instructions for making avatars.
+
+You may need to update your project to benefit from newly added features. <HaiStartingFromTag version={"21st of May 2026"} small={true} />
 
 ## Preface for developers
 
