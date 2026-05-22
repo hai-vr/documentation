@@ -112,7 +112,7 @@ If you need to change the value of blendshapes or change the values inside mater
 
 ### Create the first object group
 
-In the *Properties* category, click + to create a group.
+In the *Change Properties* category, click + to create a group.
 
 Drag the objects you want to change into that group.
 
