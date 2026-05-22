@@ -254,7 +254,7 @@ the ears of your avatar to the expression of your mouth, for example `FT/v2/Mout
 
 Use the *Select...* button, then open the *Face Tracking* category to choose the address you want to use.
 
-If you want to learn more, see [Face Tracking addresses](./face-tracking-addresses).
+If you want to learn more, see [Face Tracking addresses](./vixxy/face-tracking-addresses).
 
 ![mspaint_uKlixIZsWG.png](../img/mspaint_uKlixIZsWG.png)
 
