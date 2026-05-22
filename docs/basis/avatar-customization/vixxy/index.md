@@ -48,7 +48,8 @@ A large portion of the *Vixxy* code can be used in single-player without dependi
 
 Create a new GameObject in your avatar and add a **HVR Vixxy Control** component to it.
 
-In *What activates this control* click *Select...* and choose **Menu Item**.
+In *What activates this control* click *Select...* and choose **Menu Item**. Clicking this button will automatically create a **HVR Vixxy Menu**
+component above this one.
 
 ![mspaint_ahQVxKtu9A.png](../img/mspaint_ahQVxKtu9A.png)
 
@@ -84,8 +85,7 @@ of each object depending on the choice.
 
 ## Configure the menu
 
-You may change the type of menu through the component created earlier when you clicked the *"Create menu on this control"* button,
-in the *HVR Vixxy Menu Item* component.
+You may change the type of menu through the component that was created earlier in the *HVR Vixxy Menu Item* component.
 
 There are three different types of controls achievable:
 - A toggle between two choices (OFF/ON).
