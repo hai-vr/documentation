@@ -1,70 +1,87 @@
 ---
-sidebar_position: 30
+title: Toggle or trigger effects
 ---
-
-# Vixxy
 
 import {HaiTags} from "/src/components/HaiTags";
 import {HaiTag} from "/src/components/HaiTag";
+import {HaiStartingFromTag} from "/src/components/HaiStartingFromTag";
 import {HaiVideo} from "/src/components/HaiVideo";
+
+# Toggle or trigger effects using Vixxy
 
 <HaiTags>
 <HaiTag requiresBasis={true} />
 </HaiTags>
 
-*Vixxy* is a user-accessible interface to toggle or trigger effects on an avatar in Basis.
+**Vixxy** is a user-accessible interface to toggle or trigger effects on your avatar in Basis.
 
-This component is primarily intended to be used through the Unity inspector directly by non-programmer users.
+It is primarily intended to be used through the Unity inspector directly by **non-programmer users**.
 
 <HaiVideo src="../img/gX02sy0QQp-f.mp4"></HaiVideo>
 
+Effects may be triggered based on the menu, voice, various measurements on the avatar, face tracking, or inputs received from external hardware and software.
+
+It can toggle objects ON and OFF, change shader material settings, blendshapes, textures inside materials, and the text inside TextMeshPro components.
+
+<HaiVideo src="./img/bdH9zKqkQE-f.mp4"></HaiVideo>
+
 ## Install
 
-Vixxy is included by default with the official Basis Framework repository, in the `Basis/Packages/dev.hai-vr.basis.comms/` folder,
+*Vixxy* is included by default with the official Basis Framework repository, in the `Basis/Packages/dev.hai-vr.basis.comms/` folder,
 since the 1st of May 2026.
 
 If you are a participant in the Basis Demo application, follow the regular instructions for making avatars.
 
-## Create a toggle
+## Preface for developers
+
+*Vixxy* is **one of various ways** to create effects in Basis. Although it is primarily designed to be accessible for non-programmer users, it can be used by developers as well.
+
+That said, if you are a software developer, you may consider using other approaches:
+- Directly use the Basis Framework avatar communication API if you are an application developer, or
+- Consider using scripting through [Cilbox](https://docs.basisvr.org/en/docs/scripting/scripting) to modify GameObjects and Components directly.
+
+The networking of *Vixxy* is built using the Basis Framework avatar communication API; the rest is just plain Unity software.
+A large portion of the *Vixxy* code can be used in single-player without depending on any of the Basis Framework APIs.
+
+## Create a toggle with a menu
 
 Create a new GameObject in your avatar and add a **HVR Vixxy Control** component to it.
 
-Then in the *Settings* category, click the *"Create menu on this control"* button.
+In *What activates this control* click *Select...* and choose **Menu Item**.
 
-:::warning
-This documentation will skim through the configuration; some options will not be explained as they will only become useful later
-in the development of Vixxy.
+![mspaint_ahQVxKtu9A.png](../img/mspaint_ahQVxKtu9A.png)
 
-Therefore, you do not need to touch anything else in the *Settings* category.
-- Leave the *Address* field empty.
-- Keep the *Networked* setting checked.
-:::
+Drag objects into the *Toggle Objects* category.
 
-![Unity_7s7gXnMNpa.png](../img/Unity_7s7gXnMNpa.png)
+Checkboxes will appear next to each object. The checkbox defines the visibility of the object for each choice.
 
-Drag objects into the *Toggle Objects* category:
+- The #1 corresponds to the menu being **OFF**. Checking that makes the object visible when the menu is turned OFF. Unchecking makes it invisible when OFF.
+- The #2 corresponds to the menu being **ON**. Checking that makes the object visible when the menu is turned ON. Unchecking makes it invisible when ON.
 
-- Objects placed in *Enable these when active* will be visible when the menu is turned ON and become invisible when the menu is turned OFF.
-- Objects placed in *Disable these when active* will be visible when the menu is turned OFF and become visible when the menu is turned ON.
+To change the default value of the menu, click the **Default** button of the corresponding choice at the top.
+
+![Unity_zcRHyS5cpb.png](../img/Unity_zcRHyS5cpb.png)
 
 If you want to toggle a component instead of the object itself, drag the object into the *Toggle Objects* category, and then choose the desired component in the dropdown.
 
-![Unity_b2PeSbJZYG.png](../img/Unity_b2PeSbJZYG.png)
+:::note
+When you added the *HVR Vixxy Control* component, it should have added a prefab in your avatar called *HVR.Networking*.
+
+This component is responsible for the network communication of your avatar. Keep this prefab at the root.
+:::
 
 ## Use more than two choices
 
-If you want more than two choices, open the *Settings* category and click the *"+ Add choice"* button.
+If you want more than two choices, click the *"+ Add choice"* button at the top.
 
 After adding choices, you should give each choice a description. This description will be displayed in the menu.
 
-![b.png](../img/b.png)
-
-Toggles will be displayed differently when there are more than two choices. Tick or untick the checkboxes to affect the state
+Toggles will be displayed with more checkboxes for each new choice (#3, #4, etc.). Tick or untick the checkboxes to affect the state
 of each object depending on the choice.
 
-![c.png](../img/c.png)
+![Unity_msP1E4flDG.png](../img/Unity_msP1E4flDG.png)
 
-## Menu
+## Configure the menu
 
 You may change the type of menu through the component created earlier when you clicked the *"Create menu on this control"* button,
 in the *HVR Vixxy Menu Item* component.
@@ -74,23 +91,27 @@ There are three different types of controls achievable:
 - A dropdown selection between three choices or more.
 - A slider, which can be used between any number of choices.
 
-![Unity_xyQLLDm8mo.png](../img/Unity_xyQLLDm8mo.png)
+![Unity_9gBBi4tM4Z.png](../img/Unity_9gBBi4tM4Z.png)
+
+:::info
+Menus are not the only way to toggle objects and trigger effects. Effects can also be triggered using various measurements or the voice.
+
+This is explained later on this page, documented in **[Trigger effects without a menu](#trigger-effects-without-a-menu)**.
+:::
 
 These controls are accessible in-app through *"Settings > Avatar Customization"*:
 
 ![Unity_GWuNR4ZCCz.png](../img/Unity_GWuNR4ZCCz.png)
 
-## Change Properties
+## Change properties (blendshapes, shader, ...)
 
-If you need to change the value of blendshapes or change the values inside shaders, open the *Change Properties* category.
-
-![d.png](../img/d.png)
+If you need to change the value of blendshapes or change the values inside materials to affect the shaders, open the *Change Properties* category.
 
 ### Create the first object group
 
-In the Properties category, click + to create a group.
+In the *Properties* category, click + to create a group.
 
-Drag the objects to change into that group.
+Drag the objects you want to change into that group.
 
 ### Search for properties
 
@@ -100,7 +121,15 @@ A search field will appear at the top. Type a few letters corresponding to the p
 
 When done, press the _ button at the top right to minimize the search.
 
-You can then edit the property.
+![Unity_emEfEG0hzt.png](../img/Unity_emEfEG0hzt.png)
+
+### Edit the property
+
+Edit the property by giving a different value for each choice.
+
+You can press the downwards arrow button `⤓` at the right of the value to sample the current value from the scene.
+
+![Unity_OxCwv2QpzO.png](../img/Unity_OxCwv2QpzO.png)
 
 ### Available functions
 
@@ -109,13 +138,15 @@ The following is possible as of the current version:
 - ✅ Change the value of blendshapes.
 - ✅ Change float values in material properties.
 - ✅ Change color values in material properties.
+- ✅ Translate, rotate, or scale objects. <HaiStartingFromTag version={"21st of May 2026"} small={true} />
+
+The following is possible and worth a special mention as they were not possible if you were used to animation-based systems:
 - ✅ Change texture slots in material properties.
 - ✅ Change the text string of a TextMeshPro / TextMeshProUGUI / Text component, with float number formatting.
 
 The following is not yet available as of the current version.
 - ❌ Cannot change material slot in a Renderer.
 - ❌ Cannot change any other property.
-- ❌ Cannot translate, scale, or rotate objects.
 
 ### Multiple object groups
 
@@ -148,10 +179,114 @@ For a value of 0.123456:
 
 A period `.` will always be displayed for the decimal separator, even if the computer OS language is set to French.
 
+## Transitions
+
+<HaiTags><HaiStartingFromTag version={"21st of May 2026"} /></HaiTags>
+
+You can choose to introduce a transition duration before your toggle turns completely ON or OFF.
+
+The **Transition** setting is always shown, and it is located at near top, under the choices. There is no transition by default.
+
+### Simplified Transition
+
+By setting the **Transition** setting to **Simplified**, you can specify a transition duration in seconds.
+
+The transition duration is the time it takes to go from the choice with the minimum value to the choice with the maximum value.
+
+![Unity_a3gRJ02bAV.png](../img/Unity_a3gRJ02bAV.png)
+
+### Advanced Transitions
+
+By setting the **Transition** setting to **Advanced**, a new tab will be shown in the **Advanced** section called **Advanced Transition**.
+
+- **Smooth towards value**: The transition starts quickly and progresses slower as it reaches the target value.
+    - This is great for sliders or some controls where the intermediate values are as relevant as the ones at the extremes.
+- **Linear towards value**: The transition progresses linearly towards the value.
+    -  This is nice for both toggles and sliders.
+- *Linear towards value* is nicely combined with **Curve**: The input value can be remapped to follow a curve.
+    - Combining *Linear towards value* with *Curve* is great for toggles, but not great for sliders.
+    - When combining with *Linear towards value* with *Curve*, the *Curve* should usually be the last item in the list.
+
+The *Simplified* transition uses two filters:
+- On the first slot: *Linear towards value* with a Seconds Per Unit equal to `(Maximum - Minimum) * TransitionDuration`
+- On the second slot: *Curve* equal to going from `t=Minimum, value=Minimum` to `t=Maximum, value=Maximum`, in an ease in-out shape.
+
+![Unity_GwkTM2Q2aU.png](../img/Unity_GwkTM2Q2aU.png)
+
+#### Add a transition curve
+
+In the **Transitions** section, **Curve** can also be used independently, without any transition duration effect if you want to apply some particular
+thresholding on the input value.
+
+It is not recommended to use a transition curve when using *Smooth towards value*.
+
+#### Seconds per unit
+
+The transition duration is defined in **seconds per unit**, but in many cases you can think of it as being the same as the **transition duration in seconds** and leave it at that.
+
+If you want the transition to take 0.5 seconds, then set it to 0.5.
+
+:::note
+Here are the gritty details: It means the seconds it takes to go from a value of 0 to a value of 1.
+
+If you have only two choices, such as in the case of a simple toggle, and you kept the default values for the choices, then *duration in seconds per unit* just means **duration in seconds**:
+- a transition from the value of 0 to 1 would take 1 second at *1 second per unit*,
+- a transition from the value of 0 to 1 would take 0.5 seconds at *0.5 second per unit*.
+
+**However,** when you have a multiple-choice slider, each choice is assigned a value, and if you have not changed the value of the choices, those values may be 0, 1, **2**. In this case:
+- a transition from the value of 0 to **2** would take 2 seconds at *1 second per unit*,
+- a transition from the value of 0 to **2** would take 1 second at *0.5 second per unit*.
+
+You could also change the choice values to become 0, 0.5, 1, or anything you'd like.
+:::
+
+## Trigger effects without a menu
+
+<HaiTags><HaiStartingFromTag version={"21st of May 2026"} /></HaiTags>
+
+Toggling and triggering effects on the avatar are not limited to menus.
+
+### Face Tracking
+
+If you use face tracking on your avatar, you can specify existing face tracking addresses to trigger an effect on your avatar, such as connecting
+the ears of your avatar to the expression of your mouth, for example `FT/v2/MouthStretchLeft`.
+
+Use the *Select...* button, then open the *Face Tracking* category to choose the address you want to use.
+
+If you want to learn more, see [Face Tracking addresses](./face-tracking-addresses).
+
+![mspaint_uKlixIZsWG.png](../img/mspaint_uKlixIZsWG.png)
+
+### Voice
+
+Effects can be triggered based on your voice.
+
+- If you want to trigger an effect based on your voice gain, click the *Select...* button, then select *Voice Gain*.
+- If you want to trigger an effect based on a specific viseme, click the *Select...* button, then open the *Viseme* category to choose the address you want to use.
+
+:::note
+Voice effects depend on audio range settings. If the person wearing the avatar is outside someone else's audio range, that other person
+may not see the effect that would normally be triggered by the voice.
+:::
+
+### Measurements
+
+The **HVR Measure** component can be used to measure things on the avatar. The resulting values may be used to trigger effects on your avatar.
+
+- **Distance**: Measures the distance between two objects.
+- **Angle**: Measures the angle between three objects.
+- **Rotation Difference**: Measures the difference in the rotation of two objects.
+
+*Additional measurement types may be available in the future, such as Speed and Raycast.*
+
+To learn more, [see the page about the Measure component](/docs/basis/avatar-customization/measure).
+
+<HaiVideo src="./img/bdH9zKqkQE-f.mp4"></HaiVideo>
+
 ## Additional settings
 
 ### Networking
 
 When the **Networked** option is checked, the state of this object will be made visible to other users.
 
-The *Advanced Networking* dropdown currenlty has no effect.
+The *Advanced Networking* dropdown currently has no effect.
