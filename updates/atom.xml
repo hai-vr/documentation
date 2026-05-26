@@ -12,9 +12,9 @@
         <id>https://docs.hai-vr.dev/updates/2026/05/21</id>
         <link href="https://docs.hai-vr.dev/updates/2026/05/21"/>
         <updated>2026-05-21T10:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Vixxy is a user-accessible interface to toggle or trigger effects on avatars in Basis Framework projects.]]></summary>
+        <summary type="html"><![CDATA[A new product has been published: Vixxy is a user-accessible interface to toggle or trigger effects on avatars in Basis Framework projects.]]></summary>
         <content type="html"><![CDATA[<div><p><span></span></p><div class="hai_tag_ZcC4 hai_tag_requires_basis_QHoe">🔺 <span class="notranslate">Basis</span></div><p></p></div>
-<p><strong>Vixxy</strong> is a user-accessible interface to toggle or trigger effects on avatars in Basis Framework projects.</p>
+<p>A new product has been published: <strong>Vixxy</strong> is a user-accessible interface to toggle or trigger effects on avatars in Basis Framework projects.</p>
 <p>It is primarily intended to be used through the Unity inspector directly by <strong>non-programmer users</strong>.</p>
 <video controls="" muted="" width="816"><source src="https://large.docs.cdn.hai-vr.dev/assets/docs/gX02sy0QQp-f.mp4"></video>
 <p>Effects may be triggered based on the menu, voice, various measurements on the avatar, face tracking, or inputs received from external hardware and software.</p>
