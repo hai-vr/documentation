@@ -2,11 +2,26 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://docs.hai-vr.dev/updates</id>
     <title>Haï~ Blog</title>
-    <updated>2026-03-18T23:25:00.000Z</updated>
+    <updated>2026-05-21T10:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://docs.hai-vr.dev/updates"/>
     <subtitle>Haï~ Blog</subtitle>
     <icon>https://docs.hai-vr.dev/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[🔺 HVR Basis Vixxy]]></title>
+        <id>https://docs.hai-vr.dev/updates/2026/05/21</id>
+        <link href="https://docs.hai-vr.dev/updates/2026/05/21"/>
+        <updated>2026-05-21T10:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Vixxy is a user-accessible interface to toggle or trigger effects on avatars in Basis Framework projects.]]></summary>
+        <content type="html"><![CDATA[<div><p><span></span></p><div class="hai_tag_ZcC4 hai_tag_requires_basis_QHoe">🔺 <span class="notranslate">Basis</span></div><p></p></div>
+<p><strong>Vixxy</strong> is a user-accessible interface to toggle or trigger effects on avatars in Basis Framework projects.</p>
+<p>It is primarily intended to be used through the Unity inspector directly by <strong>non-programmer users</strong>.</p>
+<video controls="" muted="" width="816"><source src="https://large.docs.cdn.hai-vr.dev/assets/docs/gX02sy0QQp-f.mp4"></video>
+<p>Effects may be triggered based on the menu, voice, various measurements on the avatar, face tracking, or inputs received from external hardware and software.</p>
+<p>It can toggle objects ON and OFF, change shader material settings, blendshapes, textures inside materials, and the text inside TextMeshPro components.</p>
+<video controls="" muted="" width="816"><source src="https://large.docs.cdn.hai-vr.dev/assets/docs/bdH9zKqkQE-f.mp4"></video>
+<p>🗒️ <a href="https://docs.hai-vr.dev/docs/basis/avatar-customization/vixxy">Open documentation</a></p>]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[✨ Prefabulous Universal V2.2.0]]></title>
         <id>https://docs.hai-vr.dev/updates/2026/03/18/p1</id>
@@ -521,16 +536,5 @@ of a blendshape from another mesh.</p>
 it will probably not work as this operator expects the mesh data to overlap, regardless of how bones are arranged in the scene.</p></div></div>
 <video controls="" muted="" width="816"><source src="https://large.docs.cdn.hai-vr.dev/assets/docs/2024-12-06-transfer-blendshape-f.mp4"></video>
 <p>🗒️ <a href="https://docs.hai-vr.dev/docs/products/starmesh/operators/transfer-blendshape">Open documentation</a></p>]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[⚙️ ComboGestureExpressions V3.3.0]]></title>
-        <id>https://docs.hai-vr.dev/updates/2024/11/30/p3</id>
-        <link href="https://docs.hai-vr.dev/updates/2024/11/30/p3"/>
-        <updated>2024-11-30T11:30:00.000Z</updated>
-        <summary type="html"><![CDATA[- Add "Ignore Analog Fist" option in the compiler. When enabled, the Fist animations play without having to press the trigger.]]></summary>
-        <content type="html"><![CDATA[<ul>
-<li>Add "Ignore Analog Fist" option in the compiler. When enabled, the Fist animations play without having to press the trigger.</li>
-<li>ComboGestureExpressions now requires Animator As Code V1.1.0 minimum, and accepts any version above that.</li>
-</ul>]]></content>
     </entry>
 </feed>
