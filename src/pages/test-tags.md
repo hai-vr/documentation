@@ -90,3 +90,4 @@ import {HaiTag} from "/src/components/HaiTag";
 <HaiTag supporter={true} short={true} />
 <HaiTag supporter={true} short={false} />
 </HaiTags>
+
