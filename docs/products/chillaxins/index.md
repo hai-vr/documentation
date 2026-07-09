@@ -15,6 +15,7 @@ import DownloadFootnote from "/docs/_download_footnote.mdx";
 Using this, you can use some of my products in ChilloutVR, like **[⭐ Starmesh](/docs/products/starmesh)**, **[⭐ FaceTra Shape Creator](/docs/products/facetra-shape-creator)**,
 and **[Prefabulous Universal](/docs/products/prefabulous)**.
 
+As of April 2026, *Chillaxins* is also commonly used to help with the installation of NDMF and Modular Avatar on <HaiTag requiresBasis={true} short={true} /> projects.
 
 Notes:
 - The non-destructive tools must be based on the **[Non-Destructive Modular Framework](https://github.com/bdunderscore/ndmf)**, and they must not depend on other incompatible SDKs, such as the VRChat SDK.
@@ -23,12 +24,6 @@ such as *[Modular Avatar Merge Armature](https://modular-avatar.nadena.dev/docs/
 - *Chillaxins* is compatible with Warudo projects if you use the [Denormalized Avatar Exporter](/docs/products/denormalized-avatar-exporter).
 
 ## Install
-
-:::warning
-Support for ChilloutVR is new. You may encounter some issues.
-
-If you need help, please check out the [Discord server](/docs/other/discord).
-:::
 
 - Download the **[.unitypackage file (Direct Download)](https://github.com/hai-vr/chillaxins/releases/download/1.2.0/dev.hai-vr.chillaxins-1.2.0.unitypackage)** from GitHub.
   - Current version is **V1.2.0**
