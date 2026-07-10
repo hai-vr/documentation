@@ -36,7 +36,7 @@ If an unexpected asset is being included in the export, the *Transfer Assistant*
 
 *Transfer Assistant* will never modify the contents of Scenes or Prefabs.
 
-The intended use case for this tool is to **export an avatar project file between different games**, e.g., from a Unity 2022 BIRP project to a standalone Unity 6.4 URP project.
+The intended use for this tool is to **export an avatar project file between different games**, e.g., from a Unity 2022 BIRP project to a standalone Unity 6.4 URP project.
 In such a project, assets are scattered across multiple folders, and within those folders, there are assets that you want to exclude because they serve no purpose in the destination project,
 such as animator controllers or animation files.
 
@@ -70,7 +70,14 @@ These are the basic steps in how to use the tool:
 
 ## Choose which assets to analyze
 
-In the *Project* tab, right-click a prefab or scene and choose *Transfer Assistant...*
+To begin, choose one of the following:
+
+- [Analyze a prefab](#analyze-a-prefab), or
+- [Analyze a scene](#analyze-a-scene).
+
+### Analyze a prefab
+
+In the *Project* tab, right-click a prefab and choose *Transfer Assistant...*
 
 Alternatively, you can go to *Window > Haï~ > Transfer Assistant*, then choose a prefab, and click the *Perform analysis* button.
 
@@ -78,12 +85,23 @@ Alternatively, you can go to *Window > Haï~ > Transfer Assistant*, then choose 
 If you're working on an avatar, you should select the prefab in the Project view that contains your avatar.
 :::
 
+### Analyze a scene
+
+To analyze the objects contained within a scene, you must:
+
+- Open the scene in the Unity Editor.
+- Go to *Window > Haï~ > Transfer Assistant*.
+- Set the dropdown on the top right to **Current Scenes**.
+- Click the *Perform analysis* button.
+
+### Additional details
+
 The dropdown on the top right lets you switch between different object selection modes.
 
 - **Single Target**: Only one root object is analyzed.
 - **Multiple Targets**: Multiple root objects are analyzed.
 - **Current Scenes**: Add root objects of all opened scenes are analyzed, and the Scene itself is added for export.
-    - For now, this does **not** include render settings from the scenes. Skybox, lighting data, and other scene references won't be included in the export.
+  - This does **not** include render settings from the scenes. Skybox, lighting data, and other scene references won't be included in the export.
 
 If you decide to change the target, or if you make modifications to any of the assets, click the *Perform analysis* button to refresh the contents.
 
