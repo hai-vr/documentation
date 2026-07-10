@@ -5,7 +5,7 @@
 <meta name="generator" content="Docusaurus v3.2.1">
 <title data-rh="true">Transfer Assistant | Haï~</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://docs.hai-vr.dev/img/hai-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://docs.hai-vr.dev/img/hai-social-card.jpg"><meta data-rh="true" property="og:url" content="https://docs.hai-vr.dev/docs/products/transfer-assistant"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Transfer Assistant | Haï~"><meta data-rh="true" name="description" content="This Unity tool will assist you when you want to use the .unitypackage export function to transfer assets from one project"><meta data-rh="true" property="og:description" content="This Unity tool will assist you when you want to use the .unitypackage export function to transfer assets from one project"><meta data-rh="true" name="robots" content="noindex, nofollow"><link data-rh="true" rel="icon" href="/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://docs.hai-vr.dev/docs/products/transfer-assistant"><link data-rh="true" rel="alternate" href="https://docs.hai-vr.dev/docs/products/transfer-assistant" hreflang="en"><link data-rh="true" rel="alternate" href="https://docs.hai-vr.dev/docs/products/transfer-assistant" hreflang="x-default"><link rel="alternate" type="application/rss+xml" href="/updates/rss.xml" title="Haï~ RSS Feed">
 <link rel="alternate" type="application/atom+xml" href="/updates/atom.xml" title="Haï~ Atom Feed"><link rel="stylesheet" href="/assets/css/styles.04c0824d.css">
-<script src="/assets/js/runtime~main.d6e4c80e.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.5a804ce7.js" defer="defer"></script>
 <script src="/assets/js/main.38277ff8.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -30,7 +30,7 @@ If a prefab uses an asset that the main avatar does not, it is not included. Thi
 <p>If an unexpected asset is being included in the export, the <em>Transfer Assistant</em> user interface can help you locate which object or component depends on it.</p>
 <p style="color:#FF0000"><strong>TODO: DEPENDENCY REASON ILLUSTRATION</strong></p>
 <p><em>Transfer Assistant</em> will never modify the contents of Scenes or Prefabs.</p>
-<p>The intended use case for this tool is to <strong>export an avatar project file between different games</strong>, e.g., from a Unity 2022 BIRP project to a standalone Unity 6.4 URP project.
+<p>The intended use for this tool is to <strong>export an avatar project file between different games</strong>, e.g., from a Unity 2022 BIRP project to a standalone Unity 6.4 URP project.
 In such a project, assets are scattered across multiple folders, and within those folders, there are assets that you want to exclude because they serve no purpose in the destination project,
 such as animator controllers or animation files.</p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="what-this-tool-is-not-designed-for">What this tool is NOT designed for<a href="#what-this-tool-is-not-designed-for" class="hash-link" aria-label="Direct link to What this tool is NOT designed for" title="Direct link to What this tool is NOT designed for">​</a></h3>
@@ -52,16 +52,31 @@ Some functionality of this tool may be used for introspection purposes, but it i
 <li><a href="#export-the-selected-assets">Export the selected assets.</a></li>
 </ul>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="choose-which-assets-to-analyze">Choose which assets to analyze<a href="#choose-which-assets-to-analyze" class="hash-link" aria-label="Direct link to Choose which assets to analyze" title="Direct link to Choose which assets to analyze">​</a></h2>
-<p>In the <em>Project</em> tab, right-click a prefab or scene and choose <em>Transfer Assistant...</em></p>
+<p>To begin, choose one of the following:</p>
+<ul>
+<li><a href="#analyze-a-prefab">Analyze a prefab</a>, or</li>
+<li><a href="#analyze-a-scene">Analyze a scene</a>.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="analyze-a-prefab">Analyze a prefab<a href="#analyze-a-prefab" class="hash-link" aria-label="Direct link to Analyze a prefab" title="Direct link to Analyze a prefab">​</a></h3>
+<p>In the <em>Project</em> tab, right-click a prefab and choose <em>Transfer Assistant...</em></p>
 <p>Alternatively, you can go to <em>Window &gt; Haï~ &gt; Transfer Assistant</em>, then choose a prefab, and click the <em>Perform analysis</em> button.</p>
 <div class="theme-admonition theme-admonition-info admonition_xJq3 alert alert--info"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>info</div><div class="admonitionContent_BuS1"><p>If you&#x27;re working on an avatar, you should select the prefab in the Project view that contains your avatar.</p></div></div>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="analyze-a-scene">Analyze a scene<a href="#analyze-a-scene" class="hash-link" aria-label="Direct link to Analyze a scene" title="Direct link to Analyze a scene">​</a></h3>
+<p>To analyze the objects contained within a scene, you must:</p>
+<ul>
+<li>Open the scene in the Unity Editor.</li>
+<li>Go to <em>Window &gt; Haï~ &gt; Transfer Assistant</em>.</li>
+<li>Set the dropdown on the top right to <strong>Current Scenes</strong>.</li>
+<li>Click the <em>Perform analysis</em> button.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="additional-details">Additional details<a href="#additional-details" class="hash-link" aria-label="Direct link to Additional details" title="Direct link to Additional details">​</a></h3>
 <p>The dropdown on the top right lets you switch between different object selection modes.</p>
 <ul>
 <li><strong>Single Target</strong>: Only one root object is analyzed.</li>
 <li><strong>Multiple Targets</strong>: Multiple root objects are analyzed.</li>
 <li><strong>Current Scenes</strong>: Add root objects of all opened scenes are analyzed, and the Scene itself is added for export.<!-- -->
 <ul>
-<li>For now, this does <strong>not</strong> include render settings from the scenes. Skybox, lighting data, and other scene references won&#x27;t be included in the export.</li>
+<li>This does <strong>not</strong> include render settings from the scenes. Skybox, lighting data, and other scene references won&#x27;t be included in the export.</li>
 </ul>
 </li>
 </ul>
@@ -135,9 +150,9 @@ Some functionality of this tool may be used for introspection purposes, but it i
 <p>You can use this information to figure out which object in your hierarchy requires that asset.</p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="export-the-selected-assets">Export the selected assets<a href="#export-the-selected-assets" class="hash-link" aria-label="Direct link to Export the selected assets" title="Direct link to Export the selected assets">​</a></h2>
 <p>Press the <em>Export to file...</em> button to export the selected assets to a file of your choice.</p>
-<p>Alternatively, press the <em>Quick Export</em> button to export or overwrite into the <code>export.unitypackage</code> file.</p></div></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages"></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#what-this-tool-is-not-designed-for" class="table-of-contents__link toc-highlight">What this tool is NOT designed for</a></li><li><a href="#download" class="table-of-contents__link toc-highlight">Download</a></li><li><a href="#how-to-use" class="table-of-contents__link toc-highlight">How to use</a></li><li><a href="#choose-which-assets-to-analyze" class="table-of-contents__link toc-highlight">Choose which assets to analyze</a></li><li><a href="#narrow-down-which-asset-references-you-want-to-keep" class="table-of-contents__link toc-highlight">Narrow down which asset references you want to keep</a></li><li><a href="#explore-which-assets-require-other-assets" class="table-of-contents__link toc-highlight">Explore which assets require other assets</a></li><li><a href="#prepare-export-to-preview-which-asset-files-will-be-exported" class="table-of-contents__link toc-highlight">Prepare export to preview which asset files will be exported</a></li><li><a href="#find-out-why-unexpected-asset-files-are-required" class="table-of-contents__link toc-highlight">Find out why unexpected asset files are required</a></li><li><a href="#export-the-selected-assets" class="table-of-contents__link toc-highlight">Export the selected assets</a></li></ul></div></div></div></div></main></div></div></div><footer class="footer footer--dark"><div class="centerline_SA5j" data-theme="dark"><p>Thank you to all of my supporters on Patreon ⭐</p><div class="card element_KzhA sp_qcMM k10_P0Dq ias_qO18 spias_HNS1">☀️ <!-- -->Lyuma</div>
+<p>Alternatively, press the <em>Quick Export</em> button to export or overwrite into the <code>export.unitypackage</code> file.</p></div></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages"></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#what-this-tool-is-not-designed-for" class="table-of-contents__link toc-highlight">What this tool is NOT designed for</a></li><li><a href="#download" class="table-of-contents__link toc-highlight">Download</a></li><li><a href="#how-to-use" class="table-of-contents__link toc-highlight">How to use</a></li><li><a href="#choose-which-assets-to-analyze" class="table-of-contents__link toc-highlight">Choose which assets to analyze</a><ul><li><a href="#analyze-a-prefab" class="table-of-contents__link toc-highlight">Analyze a prefab</a></li><li><a href="#analyze-a-scene" class="table-of-contents__link toc-highlight">Analyze a scene</a></li><li><a href="#additional-details" class="table-of-contents__link toc-highlight">Additional details</a></li></ul></li><li><a href="#narrow-down-which-asset-references-you-want-to-keep" class="table-of-contents__link toc-highlight">Narrow down which asset references you want to keep</a></li><li><a href="#explore-which-assets-require-other-assets" class="table-of-contents__link toc-highlight">Explore which assets require other assets</a></li><li><a href="#prepare-export-to-preview-which-asset-files-will-be-exported" class="table-of-contents__link toc-highlight">Prepare export to preview which asset files will be exported</a></li><li><a href="#find-out-why-unexpected-asset-files-are-required" class="table-of-contents__link toc-highlight">Find out why unexpected asset files are required</a></li><li><a href="#export-the-selected-assets" class="table-of-contents__link toc-highlight">Export the selected assets</a></li></ul></div></div></div></div></main></div></div></div><footer class="footer footer--dark"><div class="centerline_SA5j" data-theme="dark"><p>Thank you to all of my supporters on Patreon ⭐</p><div class="card element_KzhA sp_qcMM k10_P0Dq ias_qO18 spias_HNS1">☀️ <!-- -->Lyuma</div>
 <div class="card element_KzhA sp_qcMM k10_P0Dq ias_qO18 spias_HNS1">☀️ <!-- -->Towneh</div>
-<div class="card element_KzhA sp_qcMM k10_P0Dq ias_qO18 spias_HNS1"> ☀️ <!-- -->foobar</div>
+<div class="card element_KzhA sp_qcMM k10_P0Dq ias_qO18 spias_HNS1">☀️ <!-- -->foobar</div>
 <div class="card element_KzhA sp_qcMM k5_NYOb ias_qO18 spias_HNS1">🌟 <!-- -->bd_</div>
 <div class="card element_KzhA sp_qcMM k5_NYOb ias_qO18 spias_HNS1">🌟 <!-- -->Andy </div>
 <div class="card element_KzhA sp_qcMM k3_DDJv ias_qO18 spias_HNS1">⭐ <!-- -->Vianvolaeus</div>
