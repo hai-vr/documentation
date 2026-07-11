@@ -118,37 +118,42 @@ These checkboxes have a **cascading effect**; for example, unchecking Materials 
 #### Include EditorOnly
 
 - When checked, all objects are included. **This is the default option.**
-- When unchecked, assets referenced inside `EditorOnly` objects and any of their children are not included.
-  - However, prefabs are always included, even if the prefab instance is EditorOnly.
+- When unchecked, assets referenced inside EditorOnly objects and any of their children are not included.
+  - However, to avoid errors during import, prefab sources are always included, even if the prefab instance is EditorOnly.
 
-*This does not remove the GameObjects or Components marked as EditorOnly from the prefab, even during export.*
+This does not remove the GameObjects or Components marked as EditorOnly from the prefab, even during export.
 
 #### Include hidden in Prefabs
 
-- This option is related to how overriding a Prefab instance hides the assets inside the source Prefab.
-- When checked, assets nested inside source Prefabs are included, even if your target object does not use it in its hierarchy because it overrides it.
-- When unchecked, assets nested inside source Prefabs are not included, so that the only assets that are included are those that your target object uses. **This is the default option.**
+This option deals with how overriding a Prefab instance hides the assets inside the source Prefab.
+
+- When checked, assets referenced within source Prefabs are included, even if your target object does not use it in its hierarchy because it overrides it.
+- When unchecked, assets referenced within source Prefabs are not included, so that the only assets that are included are those that your target object actively uses. **This is the default option.**
   - This is the recommended option for **avatar-like projects** as you are often only interested in what is actively being used on your avatar.
 
 #### Culling
 
-- When checking an asset type, those asset types are included, and any other asset referenced by those asset types is discovered and traversed.
-- When unchecking an asset type, those asset types are not included, and assets referenced by those asset types are not discovered.
+- When checking an asset type, those asset types are included, and any other asset referenced by those asset types is included.
+- When unchecking an asset type, those asset types are not included, and assets referenced by those asset types are not included.
 
 #### Component
 
-- When checking a component, any other asset referenced by those components is discovered and traversed.
-- When unchecking a component, assets referenced by those components are not discovered.
-- *This does not remove the Components from the prefab, even during export*
+- When checking a component, any asset referenced by those components is included, and any other asset referenced by those assets is included.
+- When unchecking a component, assets referenced by those components are not included, and assets referenced by those assets are not included.
+
+This does not remove the Components from the prefab, even during export.
 
 ## Explore which assets require other assets
 
-The main panel of the *Transfer Assistant* contains a tree of objects.
+The main panel of the *Transfer Assistant* contains a dependency tree of objects. This tree is displayed in such a way that the roots depend on the children
+(= the children are what an object depends on).
 
-- The children are what an object depends on.
-- The parent depends on that object.
+Many objects like materials or textures are used multiple times, which means they would have multiple parents;
+you will see that same object multiple times in that tree when that happens.
 
-An object such as a Material often has multiple parents; therefore you will see the same object multiple times in that tree when that happens.
+For brievety, each object only displays its children once; other occurrences will have the text "*(Already shown)*" added to the right of it.
+
+Click on any object to highlight the location of that object.
 
 Use the following functions to navigate and figure out why some objects are required:
 - Press the **magnifier icon on a specific object** to focus on that object.<br/>Use this to understand which objects it depends on and which objects depend on it.
@@ -156,6 +161,16 @@ Use the following functions to navigate and figure out why some objects are requ
 - Type text in the **Search field** to look for specific asset names.
 
 You can click the magnifier icon again to clear the search.
+
+:::note
+Color coding goes as follows:
+
+- Most objects that are grayed out are not assets, for example, they may be Components or GameObjects that aren't prefabs.
+- Objects in blue are *Prefab Sources* or *Prefab Models*, which is a prefab asset that exists as a file in the project.
+- Objects in green are *Prefab Instances*, which is a scene object. They may exist in the scene or inside other prefabs.
+
+*Prefab Instances* often share the same name as the *Prefab Source* that it depends on, which can be confusing to read. That's why they are color-coded.
+:::
 
 ## Prepare export to preview which asset files will be exported
 
@@ -170,7 +185,11 @@ The sidebar of that window has buttons for each asset type. These **do not** hav
 - **Deselect and Hide**: Deselects the assets of this type and removes them from the Export window.
     - *Note: Pressing Deselect and Hide will **not** deselect the assets that are referenced by those assets, so this is different from the Culling option from the Transfer Assets window.*
 
-If you decide to do modifications to the *Transfer Assistant* window, you will need to press the *Prepare Export...* button again.
+:::warning
+Changes made to the *Transfer Assistant* window will not be reflected in the *Prepare Export* window:
+
+If you decide to narrow down or expand your dependencies, you will need to press the *Prepare Export...* button again.
+:::
 
 ## Find out why unexpected asset files are required
 
@@ -179,6 +198,12 @@ In the *Prepare Export* window, you may sometimes see files without understandin
 In that case, press the **magnifier icon** at the right of the *Prepare Export* window. This will search for that asset inside the *Transfer Assistant* window.
 
 You can use this information to figure out which object in your hierarchy requires that asset.
+
+:::tip
+You can press the *Prepare Export...* button even if you have no intention of exporting the files.
+
+Since the *Prepare Export* window represents your dependencies as files and folders, this is useful information to help locate unexpected assets.
+:::
 
 ## Export the selected assets
 
