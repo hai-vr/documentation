@@ -1,4 +1,5 @@
 ---
+title: Transfer Assistant
 unlisted: true
 ---
 import {HaiTags} from "/src/components/HaiTags";
@@ -6,7 +7,7 @@ import {HaiTag} from "/src/components/HaiTag";
 import HaiSupport from "/docs/_support.mdx";
 import {HaiVideo} from "/src/components/HaiVideo";
 
-# Transfer Assistant (日本語版)
+# Transfer Assistant (転送アシスタント)
 
 <HaiTags>
 <HaiTag isUniversal={true} />

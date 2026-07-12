@@ -16,7 +16,7 @@ This Unity tool will assist you when you want to use the *.unitypackage* export 
 to another project**, while stripping assets that you deem unnecessary.
 
 :::note
-このドキュメントは[**日本語**版もあります](transfer-assistant/ja)。
+このドキュメントは[**日本語**版もあります](/ja/docs/products/transfer-assistant)。
 :::
 
 <p style={{color:"#FF0000"}}>**TODO: MAIN ILLUSTRATION**</p>
