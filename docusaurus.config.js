@@ -143,34 +143,7 @@ export default {
       footer: {
         style: 'dark',
         links: [
-          {
-            label: 'Patreon',
-            href: 'https://www.patreon.com/vr_hai',
-          },
-          {
-            label: 'pixivFANBOX',
-            href: 'https://hai-vr.fanbox.cc/',
-          },
-          {
-            label: 'Twitter',
-            href: 'https://twitter.com/vr_hai',
-          },
-          {
-            label: 'Bluesky @just.hai-vr.dev',
-            href: 'https://bsky.app/profile/just.hai-vr.dev',
-          },
-          {
-            label: 'Discord',
-            to: '/docs/other/discord',
-          },
-          {
-            label: 'GitHub',
-            href: 'https://github.com/hai-vr/',
-          },
-          {
-            label: 'Links',
-            to: '/links',
-          }
+          // 
         ],
         copyright: `Copyright © ${new Date().getFullYear()} Invitational Software. Built with Docusaurus.`,
       },
