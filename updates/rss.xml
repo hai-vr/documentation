@@ -14,7 +14,7 @@
             <guid>https://docs.hai-vr.dev/updates/2026/05/21</guid>
             <pubDate>Thu, 21 May 2026 10:00:00 GMT</pubDate>
             <description><![CDATA[A new product has been published: Vixxy is a user-accessible interface to toggle or trigger effects on avatars in Basis Framework projects.]]></description>
-            <content:encoded><![CDATA[<div><p><span></span></p><div class="hai_tag_ZcC4 hai_tag_requires_basis_QHoe"><svg width="24" height="24" viewBox="-1 -1 26 23" xmlns="http://www.w3.org/2000/svg" class="hai_icon_Cqd7" role="img"><path d="m12 0 12 20.78H0Z" fill="red" stroke="#000" stroke-width="1.5" stroke-linejoin="round"></path></svg> <span class="notranslate">Basis</span></div><p></p></div>
+            <content:encoded><![CDATA[<div><p><span></span></p><div class="hai_tag_ZcC4 hai_tag_requires_basis_QHoe"><svg width="16" height="16" viewBox="-1 -1 26 23" xmlns="http://www.w3.org/2000/svg" class="hai_icon_Cqd7" role="img"><path d="m12 0 12 20.78H0Z" fill="red" stroke="#000" stroke-width="1.5" stroke-linejoin="round"></path></svg> <span class="notranslate">Basis</span></div><p></p></div>
 <p>A new product has been published: <strong>Vixxy</strong> is a user-accessible interface to toggle or trigger effects on avatars in Basis Framework projects.</p>
 <p>It is primarily intended to be used through the Unity inspector directly by <strong>non-programmer users</strong>.</p>
 <video controls="" muted="" width="816"><source src="https://large.docs.cdn.hai-vr.dev/assets/docs/gX02sy0QQp-f.mp4"></video>
@@ -111,7 +111,7 @@
             <guid>https://docs.hai-vr.dev/updates/2025/10/03/p1</guid>
             <pubDate>Fri, 03 Oct 2025 18:04:00 GMT</pubDate>
             <description><![CDATA[HVR Basis Face Tracking has been updated.]]></description>
-            <content:encoded><![CDATA[<div><p><span></span></p><div class="hai_tag_ZcC4 hai_tag_requires_basis_QHoe"><svg width="24" height="24" viewBox="-1 -1 26 23" xmlns="http://www.w3.org/2000/svg" class="hai_icon_Cqd7" role="img"><path d="m12 0 12 20.78H0Z" fill="red" stroke="#000" stroke-width="1.5" stroke-linejoin="round"></path></svg> <span class="notranslate">Basis</span></div><p></p></div>
+            <content:encoded><![CDATA[<div><p><span></span></p><div class="hai_tag_ZcC4 hai_tag_requires_basis_QHoe"><svg width="16" height="16" viewBox="-1 -1 26 23" xmlns="http://www.w3.org/2000/svg" class="hai_icon_Cqd7" role="img"><path d="m12 0 12 20.78H0Z" fill="red" stroke="#000" stroke-width="1.5" stroke-linejoin="round"></path></svg> <span class="notranslate">Basis</span></div><p></p></div>
 <p><strong>HVR Basis Face Tracking</strong> has been updated.</p>
 <p>It should work better with ARKit avatars, as we were not requesting some face tracking traits correctly, so VRCFaceTracking would not
 send them to us. No avatar reupload is needed.</p>
@@ -187,7 +187,7 @@ avatar optimization tools may detect which blendshapes should not be removed fro
             <guid>https://docs.hai-vr.dev/updates/2025/09/28/p0</guid>
             <pubDate>Sun, 28 Sep 2025 00:00:00 GMT</pubDate>
             <description><![CDATA[HVR Basis Face Tracking has been migrated to the new Basis networking system.]]></description>
-            <content:encoded><![CDATA[<div><p><span></span></p><div class="hai_tag_ZcC4 hai_tag_requires_basis_QHoe"><svg width="24" height="24" viewBox="-1 -1 26 23" xmlns="http://www.w3.org/2000/svg" class="hai_icon_Cqd7" role="img"><path d="m12 0 12 20.78H0Z" fill="red" stroke="#000" stroke-width="1.5" stroke-linejoin="round"></path></svg> <span class="notranslate">Basis</span></div><p></p></div>
+            <content:encoded><![CDATA[<div><p><span></span></p><div class="hai_tag_ZcC4 hai_tag_requires_basis_QHoe"><svg width="16" height="16" viewBox="-1 -1 26 23" xmlns="http://www.w3.org/2000/svg" class="hai_icon_Cqd7" role="img"><path d="m12 0 12 20.78H0Z" fill="red" stroke="#000" stroke-width="1.5" stroke-linejoin="round"></path></svg> <span class="notranslate">Basis</span></div><p></p></div>
 <p><strong>HVR Basis Face Tracking</strong> has been migrated to the new Basis networking system.</p>
 <p>Instructions for previous Face Tracking avatar users:</p>
 <ul>
@@ -295,7 +295,7 @@ but it should also work with old versions of VRCFaceTracking that were not insta
             <pubDate>Fri, 11 Jul 2025 00:00:00 GMT</pubDate>
             <description><![CDATA[Lightbox Viewer URP for the Basis Framework has been added as a new package.]]></description>
             <content:encoded><![CDATA[<p><em>Lightbox Viewer URP for the Basis Framework</em> has been added as a new package.</p>
-<p>This package is meant to be used on URP <span></span></p><div class="hai_tag_ZcC4 hai_tag_requires_basis_QHoe"><svg width="24" height="24" viewBox="-1 -1 26 23" xmlns="http://www.w3.org/2000/svg" class="hai_icon_Cqd7" role="img"><path d="m12 0 12 20.78H0Z" fill="red" stroke="#000" stroke-width="1.5" stroke-linejoin="round"></path></svg> <span class="notranslate">Basis</span></div> projects in Unity 6,
+<p>This package is meant to be used on URP <span></span></p><div class="hai_tag_ZcC4 hai_tag_requires_basis_QHoe"><svg width="16" height="16" viewBox="-1 -1 26 23" xmlns="http://www.w3.org/2000/svg" class="hai_icon_Cqd7" role="img"><path d="m12 0 12 20.78H0Z" fill="red" stroke="#000" stroke-width="1.5" stroke-linejoin="round"></path></svg> <span class="notranslate">Basis</span></div> projects in Unity 6,
 with Adaptive Probe Volumes enabled.<p></p>
 <p>This early version does not support post-processing, and it does not support traditional Light Probes.</p>
 <p>🗒️ <a href="https://docs.hai-vr.dev/docs/products/lightbox-viewer/urp">Open documentation</a>.</p>]]></content:encoded>
