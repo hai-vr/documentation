@@ -6,12 +6,15 @@ import {HaiTags} from "/src/components/HaiTags";
 import {HaiTag} from "/src/components/HaiTag";
 import {HaiVideo} from "/src/components/HaiVideo";
 import HaiSupport from "/docs/_support.mdx";
+import HaiLocalization from "/src/components/HaiLocalization";
 
 # Activate Constraint with Skinned Offsets (Menu option)
 
 <HaiTags>
 <HaiTag isUniversal={true} />
 </HaiTags>
+
+<HaiLocalization languages={['en', 'ja']} />
 
 *This functionality is for advanced users.* 
 

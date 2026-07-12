@@ -5,12 +5,15 @@ import {HaiTags} from "/src/components/HaiTags";
 import {HaiTag} from "/src/components/HaiTag";
 import {HaiVideo} from "/src/components/HaiVideo";
 import HaiSupport from "/docs/_support.mdx";
+import HaiLocalization from "/src/components/HaiLocalization";
 
 # Skinned Mesh Constraint Builder
 
 <HaiTags>
 <HaiTag isUniversal={true} />
 </HaiTags>
+
+<HaiLocalization languages={['en', 'ja']} />
 
 Creates a parent constraint that is weighted to move similarly to the closest polygon of a Skinned Mesh Renderer.
 

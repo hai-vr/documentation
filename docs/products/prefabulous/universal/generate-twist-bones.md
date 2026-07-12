@@ -2,12 +2,15 @@
 import {HaiTag} from "/src/components/HaiTag";
 import HaiSupport from "/docs/_support.mdx";
 import {HaiVideo} from "/src/components/HaiVideo";
+import HaiLocalization from "/src/components/HaiLocalization";
 
 # Generate Twist Bones (Alpha)
 
 <HaiTags>
 <HaiTag isUniversal={true} />
 </HaiTags>
+
+<HaiLocalization languages={['en', 'ja']} />
 
 Improves the look of the elbow joint by generating twist bones covering part of the lower arm that is closer to the elbow.
 

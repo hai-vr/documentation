@@ -2,12 +2,15 @@
 import {HaiTag} from "/src/components/HaiTag";
 import HaiSupport from "/docs/_support.mdx";
 import {HaiVideo} from "/src/components/HaiVideo";
+import HaiLocalization from "/src/components/HaiLocalization";
 
 # Recalculate Normals
 
 <HaiTags>
 <HaiTag isUniversal={true} />
 </HaiTags>
+
+<HaiLocalization languages={['en', 'ja']} />
 
 Improves the shading of SkinnedMeshRenderers by recalculating select blendshape normals (and tangents).
 

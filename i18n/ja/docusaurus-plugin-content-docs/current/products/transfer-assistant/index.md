@@ -1,5 +1,4 @@
 ---
-title: Transfer Assistant
 unlisted: true
 ---
 import {HaiTags} from "/src/components/HaiTags";
