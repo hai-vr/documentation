@@ -13,7 +13,7 @@
         <link href="https://docs.hai-vr.dev/ja/updates/2026/05/21"/>
         <updated>2026-05-21T10:00:00.000Z</updated>
         <summary type="html"><![CDATA[A new product has been published: Vixxy is a user-accessible interface to toggle or trigger effects on avatars in Basis Framework projects.]]></summary>
-        <content type="html"><![CDATA[<div><p><span></span></p><div class="hai_tag_ZcC4 hai_tag_requires_basis_QHoe"><svg width="16" height="16" viewBox="-1 -1 26 23" xmlns="http://www.w3.org/2000/svg" class="hai_icon_Cqd7" role="img"><path d="m12 0 12 20.78H0Z" fill="red" stroke="#000" stroke-width="1.5" stroke-linejoin="round"></path></svg> <span class="notranslate">Basis</span></div><p></p></div>
+        <content type="html"><![CDATA[<div><p><span></span></p><div class="hai_tag_ZcC4 hai_tag_requires_basis_QHoe"><img src="https://docs.hai-vr.dev/ja/assets/images/basis_logo-32f467832057c8a4fcf5994ce854dab1.png" alt="" class="hai_icon_Cqd7"> <span class="notranslate">Basis</span></div><p></p></div>
 <p>A new product has been published: <strong>Vixxy</strong> is a user-accessible interface to toggle or trigger effects on avatars in Basis Framework projects.</p>
 <p>It is primarily intended to be used through the Unity inspector directly by <strong>non-programmer users</strong>.</p>
 <video controls="" muted="" width="816"><source src="https://large.docs.cdn.hai-vr.dev/assets/docs/gX02sy0QQp-f.mp4"></video>
@@ -110,7 +110,7 @@
         <link href="https://docs.hai-vr.dev/ja/updates/2025/10/03/p1"/>
         <updated>2025-10-03T18:04:00.000Z</updated>
         <summary type="html"><![CDATA[HVR Basis Face Tracking has been updated.]]></summary>
-        <content type="html"><![CDATA[<div><p><span></span></p><div class="hai_tag_ZcC4 hai_tag_requires_basis_QHoe"><svg width="16" height="16" viewBox="-1 -1 26 23" xmlns="http://www.w3.org/2000/svg" class="hai_icon_Cqd7" role="img"><path d="m12 0 12 20.78H0Z" fill="red" stroke="#000" stroke-width="1.5" stroke-linejoin="round"></path></svg> <span class="notranslate">Basis</span></div><p></p></div>
+        <content type="html"><![CDATA[<div><p><span></span></p><div class="hai_tag_ZcC4 hai_tag_requires_basis_QHoe"><img src="https://docs.hai-vr.dev/ja/assets/images/basis_logo-32f467832057c8a4fcf5994ce854dab1.png" alt="" class="hai_icon_Cqd7"> <span class="notranslate">Basis</span></div><p></p></div>
 <p><strong>HVR Basis Face Tracking</strong> has been updated.</p>
 <p>It should work better with ARKit avatars, as we were not requesting some face tracking traits correctly, so VRCFaceTracking would not
 send them to us. No avatar reupload is needed.</p>
@@ -186,7 +186,7 @@ avatar optimization tools may detect which blendshapes should not be removed fro
         <link href="https://docs.hai-vr.dev/ja/updates/2025/09/28/p0"/>
         <updated>2025-09-28T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[HVR Basis Face Tracking has been migrated to the new Basis networking system.]]></summary>
-        <content type="html"><![CDATA[<div><p><span></span></p><div class="hai_tag_ZcC4 hai_tag_requires_basis_QHoe"><svg width="16" height="16" viewBox="-1 -1 26 23" xmlns="http://www.w3.org/2000/svg" class="hai_icon_Cqd7" role="img"><path d="m12 0 12 20.78H0Z" fill="red" stroke="#000" stroke-width="1.5" stroke-linejoin="round"></path></svg> <span class="notranslate">Basis</span></div><p></p></div>
+        <content type="html"><![CDATA[<div><p><span></span></p><div class="hai_tag_ZcC4 hai_tag_requires_basis_QHoe"><img src="https://docs.hai-vr.dev/ja/assets/images/basis_logo-32f467832057c8a4fcf5994ce854dab1.png" alt="" class="hai_icon_Cqd7"> <span class="notranslate">Basis</span></div><p></p></div>
 <p><strong>HVR Basis Face Tracking</strong> has been migrated to the new Basis networking system.</p>
 <p>Instructions for previous Face Tracking avatar users:</p>
 <ul>
@@ -294,7 +294,7 @@ but it should also work with old versions of VRCFaceTracking that were not insta
         <updated>2025-07-11T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Lightbox Viewer URP for the Basis Framework has been added as a new package.]]></summary>
         <content type="html"><![CDATA[<p><em>Lightbox Viewer URP for the Basis Framework</em> has been added as a new package.</p>
-<p>This package is meant to be used on URP <span></span></p><div class="hai_tag_ZcC4 hai_tag_requires_basis_QHoe"><svg width="16" height="16" viewBox="-1 -1 26 23" xmlns="http://www.w3.org/2000/svg" class="hai_icon_Cqd7" role="img"><path d="m12 0 12 20.78H0Z" fill="red" stroke="#000" stroke-width="1.5" stroke-linejoin="round"></path></svg> <span class="notranslate">Basis</span></div> projects in Unity 6,
+<p>This package is meant to be used on URP <span></span></p><div class="hai_tag_ZcC4 hai_tag_requires_basis_QHoe"><img src="https://docs.hai-vr.dev/ja/assets/images/basis_logo-32f467832057c8a4fcf5994ce854dab1.png" alt="" class="hai_icon_Cqd7"> <span class="notranslate">Basis</span></div> projects in Unity 6,
 with Adaptive Probe Volumes enabled.<p></p>
 <p>This early version does not support post-processing, and it does not support traditional Light Probes.</p>
 <p>🗒️ <a href="https://docs.hai-vr.dev/ja/docs/products/lightbox-viewer/urp">Open documentation</a>.</p>]]></content>
@@ -499,7 +499,7 @@ then:</p>
 <p><a href="https://vrc-get.anatawa12.com/alcom/" target="_blank" rel="noopener noreferrer">ALCOM</a> (<a href="https://github.com/vrc-get/vrc-get" target="_blank" rel="noopener noreferrer">GitHub</a>) is a community-created package manager. It is functionally equivalent to the <em>VRChat Creator Companion</em>,
 but <strong>contains fixes</strong> to many bugs that had been reported in the <em>VRChat Creator Companion</em> for years.</p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="report-the-vcc-bugs-to-vrchat">Report the VCC bugs to VRChat<a href="https://docs.hai-vr.dev/ja/updates/2024/12/23/p0#report-the-vcc-bugs-to-vrchat" class="hash-link" aria-label="Report the VCC bugs to VRChat への直接リンク" title="Report the VCC bugs to VRChat への直接リンク">​</a></h3>
-<p>Report the bugs you have encountered in VCC directly to VRChat Inc. through either the feedback forum, or the <a href="https://github.com/vrchat-community/creator-companion/issues" target="_blank" rel="noopener noreferrer">GitHub issues</a>.</p>
+<p>Report the bugs you have encountered in VCC directly to VRChat, Inc. through either the feedback forum, or the <a href="https://github.com/vrchat-community/creator-companion/issues" target="_blank" rel="noopener noreferrer">GitHub issues</a>.</p>
 <p>The bug you have encountered has most likely been reported already in 2022 or 2023.</p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="what-if-i-already-use-alcom">What if I already use ALCOM?<a href="https://docs.hai-vr.dev/ja/updates/2024/12/23/p0#what-if-i-already-use-alcom" class="hash-link" aria-label="What if I already use ALCOM? への直接リンク" title="What if I already use ALCOM? への直接リンク">​</a></h2>
 <p>There is no action to do if you already use ALCOM. Check out <a href="https://github.com/anatawa12" target="_blank" rel="noopener noreferrer">anatawa12's GitHub page</a>.</p>]]></content>
