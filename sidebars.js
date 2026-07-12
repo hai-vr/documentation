@@ -154,17 +154,17 @@ const sidebars = {
         "label": "⭐ FaceTra Shape Creator",
         "items": [
           "products/facetra-shape-creator/install",
-          {
-            "type": "category",
-            "label": "Premade files",
-            "items": [
-              "products/facetra-shape-creator/premade/hai-style"
-            ],
-            "link": {
-              "type": "doc",
-              "id": "products/facetra-shape-creator/premade/index"
-            }
-          },
+          // {
+          //   "type": "category",
+          //   "label": "Premade files",
+          //   "items": [
+          //     "products/facetra-shape-creator/premade/hai-style"
+          //   ],
+          //   "link": {
+          //     "type": "doc",
+          //     "id": "products/facetra-shape-creator/premade/index"
+          //   }
+          // },
           "products/facetra-shape-creator/video",
           "products/facetra-shape-creator/new-avatar",
           "products/facetra-shape-creator/construction-lines",

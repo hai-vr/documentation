@@ -1,6 +1,7 @@
 import React from 'react';
 import { useLocation } from '@docusaurus/router';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+import { HaiIcon } from '../HaiIcon';
 
 interface Props {
   languages: string[];
@@ -10,6 +11,11 @@ interface Props {
 const languageNames: Record<string, string> = {
   en: 'English',
   ja: '日本語',
+};
+
+const languageIcons: Record<string, string> = {
+  en: 'uk',
+  ja: 'jp',
 };
 
 const availablePhrases: Record<string, string> = {
@@ -63,6 +69,7 @@ export default function HaiLocalization({ languages, children }: Props): JSX.Ele
       <div className="admonition-content">
         {targetLanguages.map((lang) => (
           <p key={lang} className="margin-bottom--none">
+            {languageIcons[lang] && <HaiIcon name={languageIcons[lang]} />}
             {availablePhrases[lang] || `This page is available in ${lang}`}:{' '}
             <a href={getLocalizedPath(lang)}>{languageNames[lang] || lang}</a>
           </p>

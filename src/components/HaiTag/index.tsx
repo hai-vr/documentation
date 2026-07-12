@@ -15,6 +15,7 @@
 import React from 'react';
 import clsx from 'clsx';
 import styles from './styles.module.css';
+import {HaiIcon} from "../HaiIcon";
 
 interface Props {
     requiresVRChat: boolean;
@@ -67,7 +68,7 @@ export function HaiTag({
         <span>
                 {requiresVRChat ? <div className={clsx(styles.hai_tag, styles.hai_tag_requires_vrchat)}>💬 {div2}<span className="notranslate">VRChat</span></div> : ''}
                 {requiresResonite ? <div className={clsx(styles.hai_tag, styles.hai_tag_requires_resonite)}>⚡ {div2}<span className="notranslate">Resonite</span></div> : ''}
-                {requiresBasis ? <div className={clsx(styles.hai_tag, styles.hai_tag_requires_basis)}>🔺 {div2}<span className="notranslate">Basis</span></div> : ''}
+                {requiresBasis ? <div className={clsx(styles.hai_tag, styles.hai_tag_requires_basis)}><HaiIcon name="basis" /> {div2}<span className="notranslate">Basis</span></div> : ''}
                 {requiresVRM ? <div className={clsx(styles.hai_tag, styles.hai_tag_requires_vrm)}>📹 {div2}<span className="notranslate">VRM</span></div> : ''}
                 {requiresSteamVR ? <div className={clsx(styles.hai_tag, styles.hai_tag_requires_steamvr)}>{div2}<span className="notranslate">SteamVR</span></div> : ''}
                 {requiresChilloutVR ? <div className={clsx(styles.hai_tag, styles.hai_tag_requires_chilloutvr)}>🌆 {div2}<span className="notranslate">ChilloutVR</span></div> : ''}
