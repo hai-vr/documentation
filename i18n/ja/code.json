@@ -1,0 +1,13 @@
+{
+  "hai.tag.any_platform": {
+    "message": "全プラットフォーム"
+  },
+  "hai.tag.compatible_with": {
+    "message": "対応: ",
+    "description": "Compatible with"
+  },
+  "hai.tag.requires": {
+    "message": "必須: ",
+    "description": "Requires"
+  }
+}
