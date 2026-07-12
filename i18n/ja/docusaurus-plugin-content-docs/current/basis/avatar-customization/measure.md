@@ -6,6 +6,7 @@ import {HaiTags} from "/src/components/HaiTags";
 import {HaiTag} from "/src/components/HaiTag";
 import {HaiVideo} from "/src/components/HaiVideo";
 import {HaiStartingFromTag} from "/src/components/HaiStartingFromTag";
+import HaiLocalization from "/src/components/HaiLocalization";
 
 # Measure (計測)
 
@@ -13,6 +14,8 @@ import {HaiStartingFromTag} from "/src/components/HaiStartingFromTag";
 <HaiTag requiresBasis={true} />
 <HaiStartingFromTag version={"2026年5月21日"} />
 </HaiTags>
+
+<HaiLocalization languages={['en', 'ja']} />
 
 **HVR Measure** コンポーネントを使用すると、アバター上のさまざまなものを計測できます。計測された値は、[Vixxy](/docs/basis/avatar-customization/vixxy) を使用してアバターのエフェクトをトリガーするために使用できます。
 

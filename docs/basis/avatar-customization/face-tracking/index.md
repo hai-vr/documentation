@@ -6,12 +6,15 @@ import {HaiTags} from "/src/components/HaiTags";
 import {HaiTag} from "/src/components/HaiTag";
 import {HaiVideo} from "/src/components/HaiVideo";
 import {HaiStartingFromTag} from "/src/components/HaiStartingFromTag";
+import HaiLocalization from "/src/components/HaiLocalization";
 
 # Face tracking
 
 <HaiTags>
 <HaiTag requiresBasis={true} />
 </HaiTags>
+
+<HaiLocalization languages={['en', 'ja']} />
 
 If your avatar has blendshapes designed for face tracking, you need to add a component for Basis to recognize them. 
 
@@ -54,7 +57,7 @@ When you load into your avatar, the following thing will happen:
 - We will also start a fake OSCQuery server on a random port. The Steam version of VRCFaceTracking will detect this OSCQuery server.
 - VRCFaceTracking will start to communicate with Basis by sending face tracking parameters.
 - You should see the following in the VRCFaceTracking window if this is successful:
-![basisfakeclient.png](img/basisfakeclient.png)
+![basisfakeclient.png](/assets/docs/basis/avatar-customization/basisfakeclient.png)
 
 Then in the scene view, look at your own avatar's face, see how it moves.
 
