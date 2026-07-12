@@ -16,7 +16,7 @@ This Unity tool will assist you when you want to use the *.unitypackage* export 
 to another project**, while stripping assets that you deem unnecessary.
 
 :::note
-このドキュメントは[**日本語**版もあります](/ja/docs/products/transfer-assistant)。
+このドキュメントは[**日本語**版もあります](https://docs.hai-vr.dev/ja/docs/products/transfer-assistant)。
 :::
 
 <p style={{color:"#FF0000"}}>**TODO: MAIN ILLUSTRATION**</p>
@@ -54,7 +54,7 @@ This tool can be downloaded on Booth.pm:
 It can also be installed through ALCOM.
 
 :::note
-このドキュメントは[**日本語**版もあります](transfer-assistant/ja)。
+このドキュメントは[**日本語**版もあります](https://docs.hai-vr.dev/ja/docs/products/transfer-assistant)。
 :::
 
 ## How to use

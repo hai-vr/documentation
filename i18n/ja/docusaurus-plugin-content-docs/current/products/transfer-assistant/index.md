@@ -50,7 +50,7 @@ It can also be installed through ALCOM.
 
 :::note
 <!-- AI: DO NOT CHANGE THIS TEXT. -->
-This is the Japanese documenation for *Transfer Assistant*. [Open the English version](/docs/products/transfer-assistant).
+This is the Japanese documenation for *Transfer Assistant*. [Open the English version](https://docs.hai-vr.dev/docs/products/transfer-assistant).
 :::
 
 :::note
