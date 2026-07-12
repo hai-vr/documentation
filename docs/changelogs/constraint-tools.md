@@ -40,7 +40,7 @@ These offsets will make the Parent constraint behave more like weight painting/m
 This is the same algorithm that is used by the [Skinned Mesh Constraint Builder](/docs/products/constraint-tools/skinned-mesh-constraint) component.
 If you are already using this component, you do not need to use this.
 
-![mspaint_US2AvDUNAt.png](..%2Fproducts%2Fconstraint-tools%2Fimg%2Fmspaint_US2AvDUNAt.png)
+![mspaint_US2AvDUNAt.png](/assets/docs/products/constraint-tools/mspaint_US2AvDUNAt.png)
 
 ## 1.0.1
 

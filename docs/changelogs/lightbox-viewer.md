@@ -127,7 +127,7 @@ Add support for URP projects:
 - Some settings are now saved editor-wide, instead of being reset when the Lightbox Viewer window is closed.
   - This includes *Counter Rotate, Post Processing, Vertical Displacement, Mute Lights Inside Object, Support Depth Texture*.
 
-![Unity_a6UfNnk6f1.png](..%2Fproducts%2Fimg%2Flightbox-viewer%2FUnity_a6UfNnk6f1.png)
+![Unity_a6UfNnk6f1.png](/assets/docs/products/lightbox-viewer/Unity_a6UfNnk6f1.png)
 
 <HaiVideo src="./img/lightbox-viewer/6bNmaNelyD.mp4"></HaiVideo>
 
@@ -163,10 +163,10 @@ you need the actual [Light Volumes package](https://github.com/REDSIM/VRCLightVo
 <HaiVideo src="./img/lightbox-viewer/gvIpDdvoyu.mp4" loop={true}></HaiVideo>
 
 *With light volumes:*
-![Unity_UWaWszgU9p.png](..%2Fproducts%2Fimg%2Flightbox-viewer%2FUnity_UWaWszgU9p.png)
+![Unity_UWaWszgU9p.png](/assets/docs/products/lightbox-viewer/Unity_UWaWszgU9p.png)
 
 *Without light volumes:*
-![Unity_BuaFhsYHjq.png](..%2Fproducts%2Fimg%2Flightbox-viewer%2FUnity_BuaFhsYHjq.png)
+![Unity_BuaFhsYHjq.png](/assets/docs/products/lightbox-viewer/Unity_BuaFhsYHjq.png)
 
 ## 2.3.0-beta.2
 
@@ -182,10 +182,10 @@ The lightboxes themselves do not change, so the differences are subtle.
 The Pink scene is the most notable because the left hand will be lit pink and the right hand will be lit purple.
 
 *With light volumes:*
-![Unity_UWaWszgU9p.png](..%2Fproducts%2Fimg%2Flightbox-viewer%2FUnity_UWaWszgU9p.png)
+![Unity_UWaWszgU9p.png](/assets/docs/products/lightbox-viewer/Unity_UWaWszgU9p.png)
 
 *Without light volumes:*
-![Unity_BuaFhsYHjq.png](..%2Fproducts%2Fimg%2Flightbox-viewer%2FUnity_BuaFhsYHjq.png)
+![Unity_BuaFhsYHjq.png](/assets/docs/products/lightbox-viewer/Unity_BuaFhsYHjq.png)
 
 - Add scene to support Light Volumes: https://github.com/REDSIM/VRCLightVolumes
   - Scene is baked differently from main scene, as it uses Progressive GPU instead of CPU.

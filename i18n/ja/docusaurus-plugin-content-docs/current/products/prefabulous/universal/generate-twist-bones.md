@@ -35,7 +35,7 @@ import HaiLocalization from "/src/components/HaiLocalization";
 <HaiVideo src="../img/auto-twist-f.mp4"></HaiVideo>
 *腕にツイストボーンを追加する前と後のビデオ比較。肘関節でアウトラインがどのように食い込んでいるかに注目してください。*
 
-![twist-compare.png](..%2Fimg%2Ftwist-compare.png)
+![twist-compare.png](/assets/docs/products/prefabulous/twist-compare.png)
 *左：Generate Twist Bones有効 / 右：元のアバター*
 
 <HaiSupport/>
@@ -50,7 +50,7 @@ import HaiLocalization from "/src/components/HaiLocalization";
 このコンポーネントの使用に問題がある場合は、**[Discordサーバー](/docs/other/discord)で問題を報告してください。** ありがとうございます！
 :::
 
-![Unity_N37ilQuCVl.png](..%2Fimg%2FUnity_N37ilQuCVl.png)
+![Unity_N37ilQuCVl.png](/assets/docs/products/prefabulous/Unity_N37ilQuCVl.png)
 
 :::warning
 **🚧🚧🚧 このコンポーネントは現在アルファ段階です。 🚧🚧🚧**
@@ -76,7 +76,7 @@ import HaiLocalization from "/src/components/HaiLocalization";
 
 カーブは上り坂のような形にする必要があります。 (0,0) と (1,1) のポイントは常にそのままにしてください。
 
-![tLLlJZ4XEX.png](..%2Fimg%2FtLLlJZ4XEX.png)![rR2EJxtTwA.png](..%2Fimg%2FrR2EJxtTwA.png)
+![tLLlJZ4XEX.png](/assets/docs/products/prefabulous/tLLlJZ4XEX.png)![rR2EJxtTwA.png](/assets/docs/products/prefabulous/rR2EJxtTwA.png)
 
 ## オプション：ブレスレットと腕時計
 

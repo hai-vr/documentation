@@ -28,7 +28,7 @@ This does **not** follow the movement of blendshapes, and does **not** follow th
 
 <HaiVideo src="../img/oSEDSUFVRj.mp4"></HaiVideo>
 
-![Unity_4rDudyR3MY.png](img%2FUnity_4rDudyR3MY.png)
+![Unity_4rDudyR3MY.png](/assets/docs/products/constraint-tools/Unity_4rDudyR3MY.png)
 
 ## Download
 

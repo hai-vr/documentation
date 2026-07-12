@@ -67,7 +67,7 @@ Enabling Erase Custom Split Normals will erase the custom split normals data on 
 
 The custom split normals data remains intact on the mesh when the specified blendshapes are inactive.
 
-![erase-split-normals.png](..%2Fimg%2Ferase-split-normals.png)
+![erase-split-normals.png](/assets/docs/products/prefabulous/erase-split-normals.png)
 
 *Top: Erase Custom Split Normals enabled. Bottom: Not active<br />In this case, the lower portion was affected by custom split normals. Enabling Erase Custom Split Normals in this specific case can improve the shading by removing the smudges and inadequate surface direction in some areas.*
 

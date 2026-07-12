@@ -49,7 +49,7 @@ The tool is free to download using ALCOM.
 
 A new menu option is added in the inspector of the Parent constraint.
 
-![mspaint_US2AvDUNAt.png](img%2Fmspaint_US2AvDUNAt.png)
+![mspaint_US2AvDUNAt.png](/assets/docs/products/constraint-tools/mspaint_US2AvDUNAt.png)
 
 - Create or Edit a *Parent Constraint* or *VRC Parent Constraint* component that you have not activated yet.
   - Add additional sources and source transforms, and assign the weights to each source.

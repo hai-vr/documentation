@@ -48,7 +48,7 @@ Parent Constraint コンポーネント（および <HaiTag requiresVRChat={true
 
 Parent Constraint のインスペクターに新しいメニューオプションが追加されます。
 
-![mspaint_US2AvDUNAt.png](img/mspaint_US2AvDUNAt.png)
+![mspaint_US2AvDUNAt.png](/assets/docs/products/constraint-tools/mspaint_US2AvDUNAt.png)
 
 - まだ有効化していない *Parent Constraint* または *VRC Parent Constraint* コンポーネントを作成または編集します。
   - ソースとソースのトランスフォームを追加し、各ソースにウェイトを割り当てます。

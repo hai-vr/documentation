@@ -35,7 +35,7 @@ Thank you for your understanding.
 <HaiVideo src="../img/auto-twist-f.mp4"></HaiVideo>
 *Video comparison of before, and then, after twist bones are added on the arm. Notice how the outlines bite on the elbow joint.*
 
-![twist-compare.png](..%2Fimg%2Ftwist-compare.png)
+![twist-compare.png](/assets/docs/products/prefabulous/twist-compare.png)
 *Left: Generate Twist Bones active / Right: Original avatar*
 
 <HaiSupport/>
@@ -52,7 +52,7 @@ If you're encountering difficulties with the use of this component, **please rep
 このコンポーネントの使用に問題がある場合は、**[Discordサーバー](/docs/other/discord)で問題を報告してください。** ありがとうございます！
 :::
 
-![Unity_N37ilQuCVl.png](..%2Fimg%2FUnity_N37ilQuCVl.png)
+![Unity_N37ilQuCVl.png](/assets/docs/products/prefabulous/Unity_N37ilQuCVl.png)
 
 :::warning
 **🚧🚧🚧 This component is currently in an alpha phase. 🚧🚧🚧**
@@ -78,7 +78,7 @@ You can choose a custom *Weight Distribution* curve. The X axis of the curve rep
 
 The curve should look like a slope going uphill. Always keep the (0,0) and (1,1) points where they are.
 
-![tLLlJZ4XEX.png](..%2Fimg%2FtLLlJZ4XEX.png)![rR2EJxtTwA.png](..%2Fimg%2FrR2EJxtTwA.png)
+![tLLlJZ4XEX.png](/assets/docs/products/prefabulous/tLLlJZ4XEX.png)![rR2EJxtTwA.png](/assets/docs/products/prefabulous/rR2EJxtTwA.png)
 
 ## Option: Bracelets and Wristwatches
 

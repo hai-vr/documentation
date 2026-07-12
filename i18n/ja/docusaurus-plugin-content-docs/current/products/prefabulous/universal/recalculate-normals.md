@@ -64,7 +64,7 @@ Erase Custom Split Normals を有効にすると、指定した BlendShapes が*
 
 指定した BlendShapes が非アクティブな間、Custom Split Normals データはメッシュ上に維持されます。
 
-![erase-split-normals.png](../img/erase-split-normals.png)
+![erase-split-normals.png](/assets/docs/products/prefabulous/erase-split-normals.png)
 
 *上：Erase Custom Split Normals 有効。下：無効。<br />このケースでは、下部が Custom Split Normals の影響を受けていました。この特定のケースで Erase Custom Split Normals を有効にすると、一部の領域の汚れや不適切な表面の向きが解消され、シェーディングが改善されます。*
 
