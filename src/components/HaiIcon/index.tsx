@@ -5,11 +5,13 @@ import styles from './styles.module.css';
 import BasisIcon from './basis.svg';
 import JpIcon from './jp.svg';
 import UkIcon from './uk.svg';
+import UniversalIcon from './universal.png';
 
 const ICON_ASSETS: Record<string, any> = {
     basis: BasisIcon,
     jp: JpIcon,
     uk: UkIcon,
+    universal: UniversalIcon,
 };
 
 interface Props {

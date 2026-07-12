@@ -457,7 +457,18 @@ const sidebars = {
         "products/animation-viewer",
         "products/blendshape-viewer",
         "products/blendtree-viewer",
-        "products/lightbox-viewer/index",
+        {
+          "type": "category",
+          "label": "Lightbox Viewer", // INDEX
+          "items": [
+            "products/lightbox-viewer/advanced"
+          ],
+          "link": {
+            "type": "doc",
+            "id": "products/lightbox-viewer/index"
+          }
+        },
+        // "products/lightbox-viewer/index",
         "products/lightbox-viewer/urp",
         "products/property-finder",
         'products/transfer-assistant/index',

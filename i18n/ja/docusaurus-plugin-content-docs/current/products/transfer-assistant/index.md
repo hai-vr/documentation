@@ -4,7 +4,7 @@ unlisted: true
 import {HaiTags} from "/src/components/HaiTags";
 import {HaiTag} from "/src/components/HaiTag";
 import HaiLocalization from "/src/components/HaiLocalization";
-import HaiSupport from "/docs/_support.mdx";
+import HaiSupport from "/i18n/ja/docusaurus-plugin-content-docs/current/_support.mdx";
 import {HaiVideo} from "/src/components/HaiVideo";
 
 # Transfer Assistant (転送アシスタント)
