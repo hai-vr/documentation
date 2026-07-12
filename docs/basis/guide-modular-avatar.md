@@ -5,12 +5,15 @@ sidebar_position: 30
 import {HaiTags} from "/src/components/HaiTags";
 import {HaiTag} from "/src/components/HaiTag";
 import {HaiVideo} from "/src/components/HaiVideo";
+import HaiLocalization from "/src/components/HaiLocalization";
 
 # Guide for using Modular Avatar on Basis projects
 
 <HaiTags>
 <HaiTag requiresBasis={true} />
 </HaiTags>
+
+<HaiLocalization languages={['en', 'ja']} />
 
 *Modular Avatar* is not officially supported on Basis projects.
 
@@ -27,9 +30,9 @@ As of the 28th of April 2026, Modular Avatar is known to work in Basis with the 
 
 - [Modular Avatar](https://modular-avatar.nadena.dev/docs/intro) **1.17.0-beta.0**
 - [NDMF](https://modular-avatar.nadena.dev/docs/intro) **1.11.0**
-- [Chillaxins](https://docs.hai-vr.dev/docs/products/chillaxins) **1.2.0**
+- [Chillaxins](https://docs.hai-vr.dev/docs/products/chillaxins) **1.2.0** ([Download directly here](https://github.com/hai-vr/chillaxins/releases/download/1.2.0/dev.hai-vr.chillaxins-1.2.0.unitypackage))
 
 They can all be installed through ALCOM if you wish to do so.
 
-Newer versions could also work, but you have to verify by yourself as installing in Unity 6.4 is not officially supported by Modular Avatar,
-it just so happens that it can work on it.
+It may be possible that newer versions of Modular Avatar and NDMF could work, but you have to verify by yourself as installing in
+Unity 6.4 or Unity 6.5 is not officially supported by Modular Avatar; it just so happens that those specific versions can work on it without additional patches.
