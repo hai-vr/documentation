@@ -62,7 +62,7 @@ and optionally big toe overlap (negative splay).
 The toe tracking must allow for greater amount of toe poses rather than just the up-down curl of the group of toes.
 
 The project is built out of pure personal amusement and curiosity; there are no community, personal self-expression, or business goals,
-although it is a good match with [one of my ongoing software projects](/docs/products/toetra-rig-creator).
+although it is a good match with another one of my ongoing software projects for automatic toe rigging.
 
 *This project was started mid-January 2024.*
 
