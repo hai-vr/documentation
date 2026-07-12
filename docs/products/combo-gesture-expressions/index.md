@@ -1,5 +1,6 @@
 ﻿---
 title: ComboGestureExpressions
+displayed_sidebar: legacyProductsSidebar
 ---
 import {HaiTags} from "/src/components/HaiTags";
 import {HaiTag} from "/src/components/HaiTag";

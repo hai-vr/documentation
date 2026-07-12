@@ -12,7 +12,8 @@ import {HaiVideo} from "/src/components/HaiVideo";
 *BlendTree Viewer* lets you browse large blend trees in a compact view.
 
 :::tip[Compatibility notes]
-This does not require VRChat to run. It has been tested to work on Unity 2019, and should work on newer versions.
+- It has been tested to work on Unity 2019, and should work on newer versions.
+- 🌊 No game-specific SDK is required.
 :::
 
 <HaiVideo src="./img/blendtree-viewer/2023-11-17_00-10-56_ShareX.mp4"></HaiVideo>

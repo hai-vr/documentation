@@ -11,7 +11,8 @@ import {HaiVideo} from "/src/components/HaiVideo";
 *Visual Expressions Editor* lets you edit face expression animations.
 
 :::tip[Compatibility notes]
-This does not require VRChat to run. It has been tested to work on Unity 2019, and should work on newer versions.
+- It has been tested to work on Unity 2019, and should work on newer versions.
+- 🌊 No game-specific SDK is required.
 :::
 
 <HaiVideo src="./visual-expressions-editor-img/sx_2022-03-08_16-17-04_ochgB1a5VG.mp4"></HaiVideo>

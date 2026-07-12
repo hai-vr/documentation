@@ -1,4 +1,7 @@
-﻿import {HaiTags} from "/src/components/HaiTags";
+﻿---
+displayed_sidebar: legacyProductsSidebar
+---
+import {HaiTags} from "/src/components/HaiTags";
 import {HaiTag} from "/src/components/HaiTag";
 
 # Cloth Transfer

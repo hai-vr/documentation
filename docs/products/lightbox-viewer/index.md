@@ -14,7 +14,8 @@ import {HaiVideo} from "/src/components/HaiVideo";
 
 :::tip[Compatibility notes]
 - It has been tested to work on Unity 2019, Unity 2022, and Unity 6, and should work on newer versions.
-- It is confirmed to work in <HaiTag requiresVRChat={true} short={true} /> and <HaiTag requiresBasis={true} short={true} /> projects. Other applications may be compatible.
+- 🌊 No game-specific SDK is required.
+- For <HaiTag requiresBasis={true} short={true} /> projects, the [URP module](lightbox-viewer/urp) is required.
 :::
 
 ## Download

@@ -15,8 +15,9 @@ import {HaiVideo} from "/src/components/HaiVideo";
 Both *Adaptive Probe Volumes* and *Light Probes* are supported, based on the Quality settings.
 
 :::warning[Compatibility notes]
-It has been tested to work on Unity 6 only. It may not work on older versions.
-:::
+- It has been tested to work on Unity 6 only. It may not work on older versions.
+- This tool has only been tested in <HaiTag requiresBasis={true} short={true} /> projects so far. Non-Basis projects should still work, but it has not been tested.
+  :::
 
 ## Download
 

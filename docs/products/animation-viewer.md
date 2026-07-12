@@ -13,7 +13,7 @@ import {HaiVideo} from "/src/components/HaiVideo";
 
 :::tip[Compatibility notes]
 - It has been tested to work on Unity 2019, Unity 2021, and Unity 2022, and should work on newer versions.
-- This does not require VRChat to run.
+- 🌊 No game-specific SDK is required.
 :::
 
 <HaiVideo src="./animation-viewer-img/sx_2022-02-02_03-27-39_uYmmptha2T.mp4"></HaiVideo>
