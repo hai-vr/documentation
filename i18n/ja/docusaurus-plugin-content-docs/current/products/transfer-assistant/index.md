@@ -4,6 +4,7 @@ unlisted: true
 ---
 import {HaiTags} from "/src/components/HaiTags";
 import {HaiTag} from "/src/components/HaiTag";
+import HaiLocalization from "/src/components/HaiLocalization";
 import HaiSupport from "/docs/_support.mdx";
 import {HaiVideo} from "/src/components/HaiVideo";
 
@@ -12,6 +13,8 @@ import {HaiVideo} from "/src/components/HaiVideo";
 <HaiTags>
 <HaiTag isUniversal={true} />
 </HaiTags>
+
+<HaiLocalization languages={['en', 'ja']} />
 
 このUnityツールは、不要と思われるアセットを取り除きつつ、*.unitypackageを書き出す*機能を使用して、**あるプロジェクトから別のプロジェクトへアセットを転送する**のを支援します。
 
@@ -47,11 +50,6 @@ This tool can be downloaded on Booth.pm:
 It can also be installed through ALCOM.
 
 ## リファレンスマニュアル
-
-:::note
-<!-- AI: DO NOT CHANGE THIS TEXT. -->
-This is the Japanese documenation for *Transfer Assistant*. [Open the English version](https://docs.hai-vr.dev/docs/products/transfer-assistant).
-:::
 
 :::note
 <!-- AI: DO NOT CHANGE THIS TEXT. -->

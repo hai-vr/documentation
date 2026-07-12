@@ -1,8 +1,10 @@
 ---
 unlisted: true
+displayed_sidebar: newProductsSidebar
 ---
 import {HaiTags} from "/src/components/HaiTags";
 import {HaiTag} from "/src/components/HaiTag";
+import HaiLocalization from "/src/components/HaiLocalization";
 import HaiSupport from "/docs/_support.mdx";
 import {HaiVideo} from "/src/components/HaiVideo";
 
@@ -12,12 +14,11 @@ import {HaiVideo} from "/src/components/HaiVideo";
 <HaiTag isUniversal={true} />
 </HaiTags>
 
+<HaiLocalization languages={['en', 'ja']} />
+
 This Unity tool will assist you when you want to use the *.unitypackage* export function to **transfer assets from one project
 to another project**, while stripping assets that you deem unnecessary.
 
-:::note
-このドキュメントは[**日本語**版もあります](https://docs.hai-vr.dev/ja/docs/products/transfer-assistant)。
-:::
 
 <p style={{color:"#FF0000"}}>**TODO: MAIN ILLUSTRATION**</p>
 
@@ -53,9 +54,7 @@ This tool can be downloaded on Booth.pm:
 
 It can also be installed through ALCOM.
 
-:::note
-このドキュメントは[**日本語**版もあります](https://docs.hai-vr.dev/ja/docs/products/transfer-assistant)。
-:::
+<HaiLocalization languages={['en', 'ja']} />
 
 ## How to use
 
