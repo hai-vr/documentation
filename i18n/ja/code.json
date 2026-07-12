@@ -9,5 +9,9 @@
   "hai.tag.requires": {
     "message": "必須: ",
     "description": "Requires"
+  },
+  "hai.starting_from": {
+    "message": "開始: ",
+    "description": "Starting from"
   }
 }

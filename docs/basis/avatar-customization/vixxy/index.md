@@ -7,12 +7,15 @@ import {HaiTags} from "/src/components/HaiTags";
 import {HaiTag} from "/src/components/HaiTag";
 import {HaiStartingFromTag} from "/src/components/HaiStartingFromTag";
 import {HaiVideo} from "/src/components/HaiVideo";
+import HaiLocalization from "/src/components/HaiLocalization";
 
 # Toggle or trigger effects using Vixxy
 
 <HaiTags>
 <HaiTag requiresBasis={true} />
 </HaiTags>
+
+<HaiLocalization languages={['en', 'ja']} />
 
 **Vixxy** is a user-accessible interface to toggle or trigger effects on your avatar in Basis Framework projects.
 
@@ -53,7 +56,7 @@ Create a new GameObject in your avatar and add a **HVR Vixxy Control** component
 In *What activates this control* click *Select...* and choose **Menu Item**. Clicking this button will automatically create a **HVR Vixxy Menu**
 component above this one.
 
-![mspaint_ahQVxKtu9A.png](../img/mspaint_ahQVxKtu9A.png)
+![mspaint_ahQVxKtu9A.png](/assets/docs/basis/avatar-customization/vixxy/mspaint_ahQVxKtu9A.png)
 
 Drag objects into the *Toggle Objects* category.
 
@@ -64,7 +67,7 @@ Checkboxes will appear next to each object. The checkbox defines the visibility 
 
 To change the default value of the menu, click the **Default** button of the corresponding choice at the top.
 
-![Unity_zcRHyS5cpb.png](../img/Unity_zcRHyS5cpb.png)
+![Unity_zcRHyS5cpb.png](/assets/docs/basis/avatar-customization/vixxy/Unity_zcRHyS5cpb.png)
 
 If you want to toggle a component instead of the object itself, drag the object into the *Toggle Objects* category, and then choose the desired component in the dropdown.
 
@@ -83,7 +86,7 @@ After adding choices, you should give each choice a description. This descriptio
 Toggles will be displayed with more checkboxes for each new choice (#3, #4, etc.). Tick or untick the checkboxes to affect the state
 of each object depending on the choice.
 
-![Unity_msP1E4flDG.png](../img/Unity_msP1E4flDG.png)
+![Unity_msP1E4flDG.png](/assets/docs/basis/avatar-customization/vixxy/Unity_msP1E4flDG.png)
 
 ## Configure the menu
 
@@ -94,7 +97,7 @@ There are three different types of controls achievable:
 - A dropdown selection between three choices or more.
 - A slider, which can be used between any number of choices.
 
-![Unity_9gBBi4tM4Z.png](../img/Unity_9gBBi4tM4Z.png)
+![Unity_9gBBi4tM4Z.png](/assets/docs/basis/avatar-customization/vixxy/Unity_9gBBi4tM4Z.png)
 
 :::info
 Menus are not the only way to toggle objects and trigger effects. Effects can also be triggered using various measurements or the voice.
@@ -104,7 +107,7 @@ This is explained later on this page, documented in **[Trigger effects without a
 
 These controls are accessible in-app through *"Settings > Avatar Customization"*:
 
-![Unity_GWuNR4ZCCz.png](../img/Unity_GWuNR4ZCCz.png)
+![Unity_GWuNR4ZCCz.png](/assets/docs/basis/avatar-customization/vixxy/Unity_GWuNR4ZCCz.png)
 
 ## Change properties (blendshapes, shader, ...)
 
@@ -124,7 +127,7 @@ A search field will appear at the top. Type a few letters corresponding to the p
 
 When done, press the _ button at the top right to minimize the search.
 
-![Unity_emEfEG0hzt.png](../img/Unity_emEfEG0hzt.png)
+![Unity_emEfEG0hzt.png](/assets/docs/basis/avatar-customization/vixxy/Unity_emEfEG0hzt.png)
 
 ### Edit the property
 
@@ -132,7 +135,7 @@ Edit the property by giving a different value for each choice.
 
 You can press the downwards arrow button `⤓` at the right of the value to sample the current value from the scene.
 
-![Unity_OxCwv2QpzO.png](../img/Unity_OxCwv2QpzO.png)
+![Unity_OxCwv2QpzO.png](/assets/docs/basis/avatar-customization/vixxy/Unity_OxCwv2QpzO.png)
 
 ### Available functions
 
@@ -178,7 +181,7 @@ For a value of 0.123456:
 - `Power: {1:0.0}%` shows *Power: 12.3%*
 - `Power: {1:0.00}%` shows *Power: 12.34%*
 
-![Unity_pOt5W729BJ.png](../img/Unity_pOt5W729BJ.png)
+![Unity_pOt5W729BJ.png](/assets/docs/basis/avatar-customization/vixxy/Unity_pOt5W729BJ.png)
 
 A period `.` will always be displayed for the decimal separator, even if the computer OS language is set to French.
 
@@ -196,7 +199,7 @@ By setting the **Transition** setting to **Simplified**, you can specify a trans
 
 The transition duration is the time it takes to go from the choice with the minimum value to the choice with the maximum value.
 
-![Unity_a3gRJ02bAV.png](../img/Unity_a3gRJ02bAV.png)
+![Unity_a3gRJ02bAV.png](/assets/docs/basis/avatar-customization/vixxy/Unity_a3gRJ02bAV.png)
 
 ### Advanced Transitions
 
@@ -214,7 +217,7 @@ The *Simplified* transition uses two filters:
 - On the first slot: *Linear towards value* with a Seconds Per Unit equal to `(Maximum - Minimum) * TransitionDuration`
 - On the second slot: *Curve* equal to going from `t=Minimum, value=Minimum` to `t=Maximum, value=Maximum`, in an ease in-out shape.
 
-![Unity_GwkTM2Q2aU.png](../img/Unity_GwkTM2Q2aU.png)
+![Unity_GwkTM2Q2aU.png](/assets/docs/basis/avatar-customization/vixxy/Unity_GwkTM2Q2aU.png)
 
 #### Add a transition curve
 
@@ -258,7 +261,7 @@ Use the *Select...* button, then open the *Face Tracking* category to choose the
 
 If you want to learn more, see [Face Tracking addresses](./vixxy/face-tracking-addresses).
 
-![mspaint_uKlixIZsWG.png](../img/mspaint_uKlixIZsWG.png)
+![mspaint_uKlixIZsWG.png](/assets/docs/basis/avatar-customization/vixxy/mspaint_uKlixIZsWG.png)
 
 ### Voice
 

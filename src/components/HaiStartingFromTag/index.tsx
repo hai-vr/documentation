@@ -14,6 +14,7 @@
 // @ts-ignore
 import React from 'react';
 import clsx from 'clsx';
+import Translate from '@docusaurus/Translate';
 import styles from '/src/components/HaiTag/styles.module.css';
 
 interface Props {
@@ -24,7 +25,7 @@ interface Props {
 export function HaiStartingFromTag({version, small = false}: Props): JSX.Element {
     return (
         <span>
-                <div className={clsx(styles.hai_tag, styles.hai_tag_startingfrom, small && styles.hai_tag_small)}>Starting from <strong><span
+                <div className={clsx(styles.hai_tag, styles.hai_tag_startingfrom, small && styles.hai_tag_small)}><Translate id="hai.starting_from">Starting from </Translate><strong><span
                     className="notranslate">{version}</span></strong></div>
         </span>
     );
