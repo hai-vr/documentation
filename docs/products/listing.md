@@ -1,5 +1,5 @@
 ﻿---
-title: ALCOM Listing (formerly VCC)
+title: ALCOM Listing
 sidebar_position: 2
 hide_title: true
 ---

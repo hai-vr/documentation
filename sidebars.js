@@ -414,7 +414,7 @@ const sidebars = {
       label: 'Return to Products'
     },
     {
-      '✈️ Legacy': [ // Reminder there are two placed needed to update this.
+      '✈️ Legacy tools': [ // Reminder there are two placed needed to update this.
         "products/auto-reset-osc-config",
         "products/cloth-transfer",
         {
