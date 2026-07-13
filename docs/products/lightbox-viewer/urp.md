@@ -8,17 +8,17 @@ import {HaiVideo} from "/src/components/HaiVideo";
 import HaiLocalization from "/src/components/HaiLocalization";
 
 <HaiTags>
-<HaiTag requiresBasis={true} />
+<HaiTag requiresBasis={true} short={true} />
 </HaiTags>
 
 <HaiLocalization languages={['en', 'ja']} />
 
-*Lightbox Viewer* can work on URP <HaiTag requiresBasis={true} short={true} /> projects in Unity 6.4.
+*Lightbox Viewer* can work on URP projects in Unity 6.4.
 
 Both *Adaptive Probe Volumes* and *Light Probes* are supported, based on the Quality settings.
 
 :::warning[Compatibility notes]
-- It has been tested to work on Unity 6.4 only. It may not work on older versions.
+- It has only been tested on Unity 6.4. It may not work on older versions.
 - This tool has only been tested in <HaiTag requiresBasis={true} short={true} /> projects so far. Non-Basis projects should still work, but it has not been tested.
 :::
 

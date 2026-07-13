@@ -8,12 +8,12 @@ import {HaiVideo} from "/src/components/HaiVideo";
 import HaiLocalization from "/src/components/HaiLocalization";
 
 <HaiTags>
-<HaiTag requiresBasis={true} />
+<HaiTag requiresBasis={true} short={true} />
 </HaiTags>
 
 <HaiLocalization languages={['en', 'ja']} />
 
-*Lightbox Viewer*（ライトボックス・ビューアー）は、Unity 6.4 の URP <HaiTag requiresBasis={true} short={true} /> プロジェクトで動作します。
+*Lightbox Viewer*（ライトボックス・ビューアー）は、Unity 6.4 の URP プロジェクトで動作します。
 
 Quality 設定に基づき、*Adaptive Probe Volumes* と *Light Probes* の両方をサポートしています。
 
