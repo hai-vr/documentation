@@ -67,8 +67,8 @@ export function HaiTag({
     let div2 = short ? <></> : <><Translate id="hai.tag.requires">Requires </Translate></>;
     return (
         <span>
-                {requiresVRChat ? <div className={clsx(styles.hai_tag, styles.hai_tag_requires_vrchat)}>💬 {div2}<span className="notranslate">VRChat</span></div> : ''}
-                {requiresResonite ? <div className={clsx(styles.hai_tag, styles.hai_tag_requires_resonite)}>⚡ {div2}<span className="notranslate">Resonite</span></div> : ''}
+                {requiresVRChat ? <div className={clsx(styles.hai_tag, styles.hai_tag_requires_vrchat)}><HaiIcon name="chatbubble" /> {div2}<span className="notranslate">VRChat</span></div> : ''}
+                {requiresResonite ? <div className={clsx(styles.hai_tag, styles.hai_tag_requires_resonite)}><HaiIcon name="resonite" /> {div2}<span className="notranslate">Resonite</span></div> : ''}
                 {requiresBasis ? <div className={clsx(styles.hai_tag, styles.hai_tag_requires_basis)}><HaiIcon name="basis" /> {div2}<span className="notranslate">Basis</span></div> : ''}
                 {requiresVRM ? <div className={clsx(styles.hai_tag, styles.hai_tag_requires_vrm)}>📹 {div2}<span className="notranslate">VRM</span></div> : ''}
                 {requiresSteamVR ? <div className={clsx(styles.hai_tag, styles.hai_tag_requires_steamvr)}>{div2}<span className="notranslate">SteamVR</span></div> : ''}
@@ -84,7 +84,7 @@ export function HaiTag({
                 {isUniversal ? <div className={clsx(styles.hai_tag, styles.hai_tag_universal)}><HaiIcon name="universal" /> <Translate id="hai.tag.any_platform">Any Platform</Translate></div> : ''}
                 {notVRChat ? <div className={clsx(styles.hai_tag, styles.hai_tag_universal)}><HaiIcon name="universal" /> <Translate id="hai.tag.any_platform">Any Platform</Translate>, except <span className="notranslate">VRChat</span></div> : ''}
                 {hvr ? <div className={clsx(styles.hai_tag, styles.hai_tag_hvr)}>HVR</div> : ''}
-            {supporter ? <div className={clsx(styles.hai_tag, styles.hai_tag_supporter)}>⭐ All Supporter tiers <a href="https://www.patreon.com/vr_hai">(5€+)</a></div> : ''}
+            {supporter ? <div className={clsx(styles.hai_tag, styles.hai_tag_supporter)}><HaiIcon name="star" /> All Supporter tiers <a href="https://www.patreon.com/vr_hai">(5€+)</a></div> : ''}
             {compatibleWithPhotoshop ? <div className={clsx(styles.hai_tag, styles.hai_tag_misc)}>{div}<span className="notranslate">Photoshop 2024</span></div> : ''}
             {compatibleWithGIMP ? <div className={clsx(styles.hai_tag, styles.hai_tag_misc)}>{div}<span className="notranslate">GIMP</span></div> : ''}
         </span>
