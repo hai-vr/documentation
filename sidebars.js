@@ -377,7 +377,7 @@ const sidebars = {
     {
       "type": "category",
       "label": "✈️ Legacy tools", // Reminder there are two placed needed to update this.
-      "collapsed": false,
+      "collapsed": true,
       "items": [
         "products/auto-reset-osc-config",
         "products/cloth-transfer",
