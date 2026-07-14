@@ -124,17 +124,6 @@ const sidebars = {
           "products/constraint-tools/activate-with-skinned-offsets"
         ]
       },
-      {
-        "type": "category",
-        "label": "Constraint Track Animation Creator",
-        "items": [
-          "products/constraint-track-animation-creator/reference"
-        ],
-        "link": {
-          "type": "doc",
-          "id": "products/constraint-track-animation-creator/index"
-        }
-      },
       "products/denormalized-avatar-exporter",
       {
         "type": "category",
@@ -393,6 +382,7 @@ const sidebars = {
         "products/auto-reset-osc-config",
         "products/cloth-transfer",
         "products/combo-gesture-expressions/index",
+        "products/constraint-track-animation-creator/index",
         "products/expressions-menu-hierarchy-editor",
       ]
     }
@@ -440,6 +430,17 @@ const sidebars = {
           "link": {
             "type": "doc",
             "id": "products/combo-gesture-expressions/index"
+          }
+        },
+        {
+          "type": "category",
+          "label": "Constraint Track Animation Creator",
+          "items": [
+            "products/constraint-track-animation-creator/reference"
+          ],
+          "link": {
+            "type": "doc",
+            "id": "products/constraint-track-animation-creator/index"
           }
         },
         "products/expressions-menu-hierarchy-editor",

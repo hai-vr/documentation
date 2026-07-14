@@ -26,7 +26,7 @@ This tool will **deliberately ignore some asset references**, keeping only asset
 
 - Instead of exporting every asset referenced by prefabs, it only exports assets that exist on the main avatar.
   If a prefab uses an asset that the main avatar does not, it is not included. This is the default behavior, but it can be changed.
-- You may choose to ignore assets by type or by component, along with any asset referenced by them.
+- You may choose to ignore assets by type or by component, along with any asset referenced by them. Examples:
   - When you ignore materials, it will also ignore textures used by those materials.
   - When you ignore components such as *Modular Avatar Menu Item*, it will also ignore the icon textures referenced by those components.
 - You may choose to ignore assets referenced by objects marked as EditorOnly.
@@ -99,8 +99,9 @@ The dropdown on the top right lets you switch between different object selection
 
 - **Single Target**: Only one root object is analyzed.
 - **Multiple Targets**: Multiple root objects are analyzed.
-- **Current Scenes**: Add root objects of all opened scenes are analyzed, and the Scene itself is added for export.
+- **Current Scenes**: All root objects of the opened scene are analyzed, and the scene itself is added for export.
   - This does **not** include render settings from the scenes. Skybox, lighting data, and other scene references won't be included in the export.
+  - If you have multiple scenes open, then will all be analyzed.
 
 If you decide to change the target, or if you make modifications to any of the assets, click the *Perform analysis* button to refresh the contents.
 

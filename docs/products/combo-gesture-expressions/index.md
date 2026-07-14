@@ -13,7 +13,7 @@ import {HaiVideo} from "/src/components/HaiVideo";
 *ComboGestureExpressions* is a Unity Editor tool that lets you attach face expressions to hand gestures, and make it react to other *Avatars 3.0*'s features, including *Contacts*, *PhysBones* and *OSC*.
 
 :::warning[Compatibility notes]
-This tool requires <HaiTag requiresVRChat={true} short={true} />, and is incompatible with other apps and platforms.
+This tool requires <HaiTag requiresVRChat={true} short={true} /> and is incompatible with other apps and platforms.
 :::
 
 It is bundled with *Visual Expressions Editor*, an animation editor that lets you create face expressions with the help of previews.
