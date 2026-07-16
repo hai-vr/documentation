@@ -346,6 +346,15 @@ const sidebars = {
           "id": "products/vixen/index"
         }
       },
+      {
+        "type": "category",
+        "label": "Vixxy",
+        "items": [],
+        "link": {
+          "type": "doc",
+          "id": "basis/avatar-customization/vixxy/index"
+        }
+      }
     ]
     },
     {
