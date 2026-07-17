@@ -1,4 +1,7 @@
-﻿# VRWare (World)
+﻿---
+unlisted: true
+---
+# VRWare (World)
 
 ## 2024-01-07 - Fonts Update
 
