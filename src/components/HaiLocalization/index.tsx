@@ -77,7 +77,7 @@ export default function HaiLocalization({ languages, children }: Props): JSX.Ele
       <div className="admonition-content">
         <ul className="margin-bottom--none">
           {targetLanguages.map((lang) => (
-            <li key={lang}>
+            <li lang={lang} key={lang}>
               {languageIcons[lang] && <HaiIcon name={languageIcons[lang]} />}
               {availablePhrases[lang] || `This page is available in ${lang}`}:{' '}
               <a href={getLocalizedPath(lang)}>{languageNames[lang] || lang}</a>
