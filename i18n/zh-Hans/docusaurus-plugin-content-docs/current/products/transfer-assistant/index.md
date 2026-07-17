@@ -100,10 +100,10 @@ import {HaiVideo} from "/src/components/HaiVideo";
 
 右上角的下拉菜单允许您在不同的对象选择模式之间切换。
 
-- **Single Target**: 仅分析一个根对象。
-- **Multiple Targets**: 分析多个根对象。
-- **Current Scenes**: 分析打开场景的所有根对象，并将场景本身添加到导出列表中。
-  - 这**不包括**场景中的渲染设置 (Render Settings)。天空盒、光照数据和其他场景引用将不会包含在导出中。
+- **单一目标**: 仅分析一个根对象。
+- **多目标**: 分析多个根对象。
+- **当前场景**: 分析打开场景的所有根对象，并将场景本身添加到导出列表中。
+  - 这**不包括**场景中的渲染设置。天空盒、光照数据和其他场景引用将不会包含在导出中。
   - 如果您打开了多个场景，则都会被分析。
 
 如果您决定更改目标，或者对任何资源进行了修改，请点击 *执行分析* 按钮以刷新内容。
@@ -133,7 +133,7 @@ import {HaiVideo} from "/src/components/HaiVideo";
 
 ![checkboxes_zh-cn.png](/assets/docs/products/transfer-assistant/checkboxes_zh-cn.png)
 
-#### Include EditorOnly
+#### 包含 EditorOnly
 
 - 选中时，包含所有对象。**这是默认选项。**
 - 取消选中时，不包含 EditorOnly 对象及其任何子对象中引用的资源。
@@ -143,7 +143,7 @@ import {HaiVideo} from "/src/components/HaiVideo";
 
 是否选中此项取决于您的工作流程。
 
-#### Include hidden in Prefabs
+#### 包含 Prefab 中的隐藏项目
 
 此选项处理覆盖预制件实例如何隐藏源预制件内部资源的问题。
 
@@ -153,13 +153,13 @@ import {HaiVideo} from "/src/components/HaiVideo";
 
 > ![simplehidden.png](/assets/docs/products/transfer-assistant/simplehidden.png)
 >
-> 默认情况下， *Include hidden in Prefabs* 处于未选中状态。保持未选中状态有时会导致导出的资源数量大幅减少。
+> 默认情况下， *包含 Prefab 中的隐藏项目* 处于未选中状态。保持未选中状态有时会导致导出的资源数量大幅减少。
 >
 > 在这个例子中，通过将材质转换为 NonToon 修改了一个化身。
 > - 预制件源仍然引用转换之前的旧材质，尽管化身并未主动使用这些材质。
-> - 通过保持 *Include hidden in Prefabs* 为未选中状态，那些旧材质将不包含在导出中，仅包含 NonToon 材质。
+> - 通过保持 *包含 Prefab 中的隐藏项目* 为未选中状态，那些旧材质将不包含在导出中，仅包含 NonToon 材质。
 
-#### Culling (剔除)
+#### 剔除
 
 - 选中某种资源类型时，该资源类型将被包含，并且该资源类型引用的任何其他资源也将被包含。
 - 取消选中某种资源类型时，该资源类型将不被包含，并且该资源类型引用的资源也不被包含。
@@ -168,7 +168,7 @@ import {HaiVideo} from "/src/components/HaiVideo";
 >
 > 取消选中 *Animator Controller* 不仅会从导出中删除 *Animator Controllers*，还会从导出中删除这些 *Animator Controllers* 使用的 *Blend Tree* 资源和 *Animation Clip* 资源。
 
-#### Components (组件)
+#### 组件
 
 - 选中某个组件时，该组件引用的任何资源都将被包含，并且这些资源引用的任何其他资源也将被包含。
 - 取消选中某个组件时，这些组件引用的资源将不被包含，并且这些资源引用的资源也不被包含。
@@ -181,7 +181,7 @@ import {HaiVideo} from "/src/components/HaiVideo";
 
 许多对象（如材质或贴图）会被多次使用，这意味着它们会有多个父节点；当发生这种情况时，您会在该树中多次看到同一个对象。
 
-为了简明起见，每个对象仅显示其子节点一次；其他出现的地方将在右侧添加文字 "*(Already shown)*"。
+为了简明起见，每个对象仅显示其子节点一次；其他出现的地方将在右侧添加文字 "*(已显示)*"。
 
 点击任何对象以高亮显示该对象的位置。
 

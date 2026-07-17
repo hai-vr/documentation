@@ -1,0 +1,2 @@
+- There is no need to put the English names in parentheses.
+- Please make sure that the manual uses the translated names which are used by the application, as described in the JSON files.

@@ -100,10 +100,10 @@ Pour analyser les objets contenus dans une scène, vous devez :
 
 Le menu déroulant en haut à droite vous permet de basculer entre différents modes de sélection d'objets.
 
-- **Single Target** : Un seul objet racine est analysé.
-- **Multiple Targets** : Plusieurs objets racines sont analysés.
-- **Current Scenes** : Tous les objets racines de la scène ouverte sont analysés, et la scène elle-même est ajoutée pour l'exportation.
-  - Cela n'inclut **pas** les paramètres de rendu (render settings) des scènes. La skybox, les données d'éclairage et les autres références de scène ne seront pas incluses dans l'exportation.
+- **Cible unique**: Un seul objet racine est analysé.
+- **Cibles multiples**: Plusieurs objets racines sont analysés.
+- **Scènes actuelles**: Tous les objets racines de la scène ouverte sont analysés, et la scène elle-même est ajoutée pour l'exportation.
+  - Cela n'inclut **pas** les paramètres de rendu des scènes. La skybox, les données d'éclairage et les autres références de scène ne seront pas incluses dans l'exportation.
   - Si vous avez plusieurs scènes ouvertes, elles seront toutes analysées.
 
 Si vous décidez de changer de cible, ou si vous apportez des modifications à l'un des assets, cliquez sur le bouton *Effectuer l'analyse* pour rafraîchir le contenu.
@@ -133,7 +133,7 @@ Ces cases à cocher ont un **effet en cascade** ; par exemple, décocher Materia
 
 ![checkboxes_fr.png](/assets/docs/products/transfer-assistant/checkboxes_fr.png)
 
-#### Include EditorOnly
+#### Inclure EditorOnly
 
 - Lorsque cette case est cochée, tous les objets sont inclus. **C'est l'option par défaut.**
 - Lorsqu'elle est décochée, les assets référencés à l'intérieur des objets EditorOnly et de leurs enfants ne sont pas inclus.
@@ -143,7 +143,7 @@ Cela ne supprime pas les GameObjects ou les composants marqués comme EditorOnly
 
 Le fait de cocher ou de décocher cette case dépend de votre workflow.
 
-#### Include hidden in Prefabs
+#### Inclure les éléments cachés dans les Prefabs
 
 Cette option concerne la manière dont la modification d'une instance de prefab masque les assets à l'intérieur du prefab source.
 
@@ -153,13 +153,13 @@ Cette option concerne la manière dont la modification d'une instance de prefab 
 
 > ![simplehidden.png](/assets/docs/products/transfer-assistant/simplehidden.png)
 >
-> Par défaut, *Include hidden in Prefabs* est décoché. Le laisser décoché entraînera parfois un nombre d'assets exportés considérablement plus faible.
+> Par défaut, *Inclure les éléments cachés dans les Prefabs* est décoché. Le laisser décoché entraînera parfois un nombre d'assets exportés considérablement plus faible.
 >
 > Dans cet exemple, un avatar a été modifié en convertissant les matériaux en NonToon.
 > - La source du prefab référence toujours les matériaux précédents avant la conversion, bien que l'avatar n'utilise plus activement ces matériaux.
-> - En laissant *Include hidden in Prefabs* décoché, ces anciens matériaux ne sont pas inclus pour l'exportation, ne laissant que les matériaux NonToon inclus.
+> - En laissant *Inclure les éléments cachés dans les Prefabs* décoché, ces anciens matériaux ne sont pas inclus pour l'exportation, ne laissant que les matériaux NonToon inclus.
 
-#### Culling (Élimination)
+#### Élagage
 
 - En cochant un type d'asset, ces types d'assets sont inclus, ainsi que tout autre asset référencé par ces types d'assets.
 - En décochant un type d'asset, ces types d'assets ne sont pas inclus, et les assets référencés par ces types d'assets ne sont pas inclus.
@@ -168,7 +168,7 @@ Cette option concerne la manière dont la modification d'une instance de prefab 
 >
 > Décocher *Animator Controller* ne supprime pas seulement les *Animator Controllers* de l'exportation, cela supprime également les assets *Blend Tree* et les assets *Animation Clip* utilisés par ces *Animator Controllers* de l'exportation.
 
-#### Components
+#### Composants
 
 - En cochant un composant, tout asset référencé par ces composants est inclus, ainsi que tout autre asset référencé par ces assets.
 - En décochant un composant, les assets référencés par ces composants ne sont pas inclus, et les assets référencés par ces assets ne sont pas inclus.
@@ -181,7 +181,7 @@ Le panneau principal de *Transfer Assistant* contient un arbre de dépendances d
 
 De nombreux objets comme les matériaux ou les textures sont utilisés plusieurs fois, ce qui signifie qu'ils auraient plusieurs parents ; vous verrez ce même objet plusieurs fois dans cet arbre lorsque cela se produit.
 
-Pour plus de brièveté, chaque objet n'affiche ses enfants qu'une seule fois ; les autres occurrences porteront la mention "*(Already shown)*" ajoutée à leur droite.
+Pour plus de brièveté, chaque objet n'affiche ses enfants qu'une seule fois ; les autres occurrences porteront la mention "*(Déjà affiché)*" ajoutée à leur droite.
 
 Cliquez sur n'importe quel objet pour mettre en évidence l'emplacement de cet objet.
 
