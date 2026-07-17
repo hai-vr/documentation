@@ -21,11 +21,11 @@ This tool requires <HaiTag requiresVRChat={true} short={true} /> and is incompat
 If you use **[Modular Avatar](https://modular-avatar.nadena.dev/)**, you should use [Modular Avatar Menu Items](https://modular-avatar.nadena.dev/docs/tutorials/menu) instead.
 :::
 
-![EmhCard.png](expressions-menu-hierarchy-editor-img/EmhCard.png)
+![EmhCard.png](/assets/docs/products/expressions-menu-hierarchy-editor/EmhCard.png)
 
 Additional functionality includes automatically disabling items in the menu when your Expression Parameters does not support it, and generating icons.
 
-![EmhPromoDisable.png](expressions-menu-hierarchy-editor-img/EmhPromoDisable.png)
+![EmhPromoDisable.png](/assets/docs/products/expressions-menu-hierarchy-editor/EmhPromoDisable.png)
 
 ## Download
 
@@ -51,7 +51,7 @@ We will import your existing menu in order to create a new Expression Menu asset
 
 Your scene now contains the entire menu as a hierarchy of GameObjects!
 
-<HaiVideo src="./expressions-menu-hierarchy-editor-img/sx_2022-03-03_03-36-12_qwusFjCQsC.mp4"></HaiVideo>
+<HaiVideo src=".//assets/docs/products/expressions-menu-hierarchy-editor/sx_2022-03-03_03-36-12_qwusFjCQsC.mp4"></HaiVideo>
 
 ## Editing menus
 
@@ -61,13 +61,13 @@ Making change to your menu is as easy as moving items in the scene hierarchy.
 
 If you want to create new items in your menu, you can duplicate an existing item as if you were to duplicate an object in the scene.
 
-![sx_2022-03-03_00-48-49_GDDnnICXaV.gif](expressions-menu-hierarchy-editor-img/sx_2022-03-03_00-48-49_GDDnnICXaV.gif)
+![sx_2022-03-03_00-48-49_GDDnnICXaV.gif](/assets/docs/products/expressions-menu-hierarchy-editor/sx_2022-03-03_00-48-49_GDDnnICXaV.gif)
 
 ### Applying changes
 
 Select the “ExpressionsMenuHierarchy” compiler, and click “Generate”.
 
-![Untitled](expressions-menu-hierarchy-editor-img/Untitled.png)
+![Untitled](/assets/docs/products/expressions-menu-hierarchy-editor/Untitled.png)
 
 ### Creating new submenus
 
@@ -81,7 +81,7 @@ Menus generated from other Editor Tools such as Radial Inventory System can be h
 
 The hierarchy children of this SubMenu will be ignored.
 
-<HaiVideo src="./expressions-menu-hierarchy-editor-img/sx_2022-03-03_01-37-29_JfpvN3yRTz.mp4"></HaiVideo>
+<HaiVideo src=".//assets/docs/products/expressions-menu-hierarchy-editor/sx_2022-03-03_01-37-29_JfpvN3yRTz.mp4"></HaiVideo>
 
 ### Reusing a SubMenu multiple times / Circular references
 
@@ -93,7 +93,7 @@ The hierarchy children of this SubMenu will be ignored.
 
 If you disable a GameObject, it won’t be included in the generated menu.
 
-![sx_2022-03-03_01-41-17_2kXLjfNcIZ.gif](expressions-menu-hierarchy-editor-img/sx_2022-03-03_01-41-17_2kXLjfNcIZ.gif)
+![sx_2022-03-03_01-41-17_2kXLjfNcIZ.gif](/assets/docs/products/expressions-menu-hierarchy-editor/sx_2022-03-03_01-41-17_2kXLjfNcIZ.gif)
 
 ### Items with no text
 
@@ -109,7 +109,7 @@ Automatic discarding lets you specify options that will discard menu items durin
 
 The “Auto Discard” functionality of EMH allows you to specify a VRC Expression Parameters asset in your compiler. During the generation process, all items that have at least one parameter that is missing from the Expression Parameters will be discarded.
 
-![Untitled](expressions-menu-hierarchy-editor-img/Untitled_1.png)
+![Untitled](/assets/docs/products/expressions-menu-hierarchy-editor/Untitled_1.png)
 
 The Discard Type lets you choose how the items will be discarded:
 
@@ -118,7 +118,7 @@ The Discard Type lets you choose how the items will be discarded:
     - The appearance of grayed out icons can be customized by changing the Discard Gray Out material. A few shader materials are provided in the Shaders/ folder.
 - Remove: Discarded items will be removed from the menu.
 
-![EmhPromoDisable.png](expressions-menu-hierarchy-editor-img/EmhPromoDisable.png)
+![EmhPromoDisable.png](/assets/docs/products/expressions-menu-hierarchy-editor/EmhPromoDisable.png)
 
 ### Discard items using tags, and customize discard type per item
 
@@ -126,11 +126,11 @@ The “Auto Discard” functionality of EMH can also allow you to specify tags t
 
 When editing items, you can check “Advanced mode” at the top. Additional options will appear to let you choose tags. In addition, you can choose how specific items will be discarded using the “Discardable” drop-down menu.
 
-![Untitled](expressions-menu-hierarchy-editor-img/Untitled_2.png)
+![Untitled](/assets/docs/products/expressions-menu-hierarchy-editor/Untitled_2.png)
 
 In the compiler, you can then specify tags, separated by commas `,` to discard specific tags.
 
-![Untitled](expressions-menu-hierarchy-editor-img/Untitled_3.png)
+![Untitled](/assets/docs/products/expressions-menu-hierarchy-editor/Untitled_3.png)
 
 ## Generating custom icons using shaders
 
@@ -141,4 +141,4 @@ Shaders can be used to modify the appearance of your icons. This can be used in 
 
 A few shader materials are provided in the Shaders/ folder. One of them draws a red line across the icon. Try playing with it!
 
-![sx_2022-03-02_22-23-30_viM5vpgobm.gif](expressions-menu-hierarchy-editor-img/sx_2022-03-02_22-23-30_viM5vpgobm.gif)
+![sx_2022-03-02_22-23-30_viM5vpgobm.gif](/assets/docs/products/expressions-menu-hierarchy-editor/sx_2022-03-02_22-23-30_viM5vpgobm.gif)
