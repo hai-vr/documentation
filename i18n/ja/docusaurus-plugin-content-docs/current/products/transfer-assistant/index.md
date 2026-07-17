@@ -17,7 +17,7 @@ import {HaiVideo} from "/src/components/HaiVideo";
 
 このUnityツールは、不要と思われるアセットを取り除きつつ、*.unitypackageを書き出す*機能を使用して、**あるプロジェクトから別のプロジェクトへアセットを転送する**のを支援します。
 
-<p style={{color:"#FF0000"}}>**TODO: MAIN ILLUSTRATION**</p>
+![general_ja.png](/assets/docs/products/transfer-assistant/general_ja.png)
 
 すべての参照されたアセットを含めるのではなく、意図的に一部のアセットを無視します。
 

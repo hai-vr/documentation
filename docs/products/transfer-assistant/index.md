@@ -19,8 +19,7 @@ import {HaiVideo} from "/src/components/HaiVideo";
 This Unity tool will assist you when you want to use the *.unitypackage* export function to **transfer assets from one project
 to another project**, while stripping assets that you deem unnecessary.
 
-
-<p style={{color:"#FF0000"}}>**TODO: MAIN ILLUSTRATION**</p>
+![general_en.png](/assets/docs/products/transfer-assistant/general_en.png)
 
 This tool will **deliberately ignore some asset references**, keeping only assets that you actively need.
 
@@ -33,7 +32,7 @@ This tool will **deliberately ignore some asset references**, keeping only asset
 
 If an unexpected asset is being included in the export, the *Transfer Assistant* user interface can help you locate which object or component depends on it.
 
-<p style={{color:"#FF0000"}}>**TODO: DEPENDENCY REASON ILLUSTRATION**</p>
+![dependency_en.png](../../../static/assets/docs/products/transfer-assistant/dependency_en.png)
 
 *Transfer Assistant* will never modify the contents of Scenes or Prefabs.
 
@@ -84,6 +83,8 @@ Alternatively, you can go to *Window > Haï~ > Transfer Assistant*, then choose 
 If you're working on an avatar, you should select the prefab in the Project view that contains your avatar.
 :::
 
+![project_menu.png](/assets/docs/products/transfer-assistant/project_menu.png)
+
 ### Analyze a scene
 
 To analyze the objects contained within a scene, you must:
@@ -92,6 +93,10 @@ To analyze the objects contained within a scene, you must:
 - Go to *Window > Haï~ > Transfer Assistant*.
 - Set the dropdown on the top right to **Current Scenes**.
 - Click the *Perform analysis* button.
+
+![window_menu.png](/assets/docs/products/transfer-assistant/window_menu.png)
+
+![scenes_en.png](/assets/docs/products/transfer-assistant/scenes_en.png)
 
 ### Additional details
 
@@ -105,6 +110,17 @@ The dropdown on the top right lets you switch between different object selection
 
 If you decide to change the target, or if you make modifications to any of the assets, click the *Perform analysis* button to refresh the contents.
 
+## Change the window language
+
+You may change the language using the dropdown at the bottom of the window, which says the word *"Language"* written in English.
+
+:::note
+If your language is not available, but you are technically inclined, you can:
+- ask a large language model to translate the `Packages/dev.hai-vr.transfer-assistant/Scripts/Editor/Locale/en.json` file into a new `.json` file,
+- then press `CTRL-R` in the Unity Editor window,
+- then press the refresh button located to the right of the Language selection dropdown.
+:::
+
 ## Narrow down which asset references you want to keep
 
 Press the checkboxes in the sidebar on the left to affect which assets will get exported.
@@ -114,6 +130,8 @@ These checkboxes have a **cascading effect**; for example, unchecking Materials 
 :::info
 *Transfer Assistant* **never modifies** prefabs nor scenes, so it is always safe to click any of the buttons.
 :::
+
+![checkboxes_en.png](/assets/docs/products/transfer-assistant/checkboxes_en.png)
 
 #### Include EditorOnly
 
@@ -136,7 +154,7 @@ This option deals with how overriding a Prefab instance hides the assets inside 
 - When checking an asset type, those asset types are included, and any other asset referenced by those asset types is included.
 - When unchecking an asset type, those asset types are not included, and assets referenced by those asset types are not included.
 
-#### Component
+#### Components
 
 - When checking a component, any asset referenced by those components is included, and any other asset referenced by those assets is included.
 - When unchecking a component, assets referenced by those components are not included, and assets referenced by those assets are not included.
