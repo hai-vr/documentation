@@ -112,7 +112,7 @@ If you decide to change the target, or if you make modifications to any of the a
 
 ## Change the window language
 
-You may change the language using the dropdown at the bottom of the window, which says the word *"Language"* written in English.
+You may change the language using the dropdown at the bottom of the window, which says the word *"Language"* written in English. <!-- AI: On this line, the word Language which is in quotes at near the end of the sentence must be kept written in English using alphabetical characters. -->
 
 :::note
 If your language is not available, but you are technically inclined, you can:
@@ -120,6 +120,8 @@ If your language is not available, but you are technically inclined, you can:
 - then press `CTRL-R` in the Unity Editor window,
 - then press the refresh button located to the right of the Language selection dropdown.
 :::
+
+![language.png](../../../static/assets/docs/products/transfer-assistant/language.png)
 
 ## Narrow down which asset references you want to keep
 
@@ -139,7 +141,9 @@ These checkboxes have a **cascading effect**; for example, unchecking Materials 
 - When unchecked, assets referenced inside EditorOnly objects and any of their children are not included.
   - However, to avoid errors during import, prefab sources are always included, even if the prefab instance is EditorOnly.
 
-This does not remove the GameObjects or Components marked as EditorOnly from the prefab, even during export.
+This does not remove the GameObjects or Components marked as EditorOnly from the prefab, even during export; it only ignores the references that they contain.
+
+Whether you want to check or uncheck this depends on your workflow.
 
 #### Include hidden in Prefabs
 
@@ -149,10 +153,23 @@ This option deals with how overriding a Prefab instance hides the assets inside 
 - When unchecked, assets referenced within source Prefabs are not included, so that the only assets that are included are those that your target object actively uses. **This is the default option.**
   - This is the recommended option for **avatar-like projects** as you are often only interested in what is actively being used on your avatar.
 
+> ![simplehidden.png](/assets/docs/products/transfer-assistant/simplehidden.png)
+> 
+> By default, *Include hidden in Prefabs* is left unchecked. Leaving it unchecked will sometimes lead to a drastically smaller number of assets exported.
+> 
+> In this example, an avatar was modified by converting the materials to NonToon.
+> - The prefab source still references the previous materials before conversion, despite the avatar not actively using those materials.
+> - By leaving *Include hidden in Prefabs* unchecked, those older materials are not included for the export, leaving only the NonToon materials included.
+
 #### Culling
 
 - When checking an asset type, those asset types are included, and any other asset referenced by those asset types is included.
 - When unchecking an asset type, those asset types are not included, and assets referenced by those asset types are not included.
+
+>![culling.png](../../../static/assets/docs/products/transfer-assistant/culling.png)
+>
+> Unchecking *Animator Controller* not only removes the *Animator Controllers* from the export, it also removes the *Blend Tree* assets
+> and the *Animation Clip* assets used by those *Animator Controllers* from the export.
 
 #### Components
 
@@ -180,10 +197,12 @@ Use the following functions to navigate and figure out why some objects are requ
 
 You can click the magnifier icon again to clear the search.
 
+![search_en.png](../../../static/assets/docs/products/transfer-assistant/search_en.png)
+
 :::note
 Color coding goes as follows:
 
-- Most objects that are grayed out are not assets, for example, they may be Components or GameObjects that aren't prefabs.
+- Most objects that are grayed out are not assets, for example, they may be Components or GameObjects that aren't prefabs. Components are shown as grayed-out yellow.
 - Objects in blue are *Prefab Sources* or *Prefab Models*, which is a prefab asset that exists as a file in the project.
 - Objects in green are *Prefab Instances*, which is a scene object. They may exist in the scene or inside other prefabs.
 
@@ -202,6 +221,8 @@ The sidebar of that window has buttons for each asset type. These **do not** hav
 - **Deselect**: Deselects the assets of this type, which will exclude them from the export.
 - **Deselect and Hide**: Deselects the assets of this type and removes them from the Export window.
     - *Note: Pressing Deselect and Hide will **not** deselect the assets that are referenced by those assets, so this is different from the Culling option from the Transfer Assets window.*
+
+![export_en.png](../../../static/assets/docs/products/transfer-assistant/export_en.png)
 
 :::warning
 Changes made to the *Transfer Assistant* window will not be reflected in the *Prepare Export* window:
@@ -223,8 +244,10 @@ You can press the *Prepare Export...* button even if you have no intention of ex
 Since the *Prepare Export* window represents your dependencies as files and folders, this is useful information to help locate unexpected assets.
 :::
 
+![exportexplain.png](/assets/docs/products/transfer-assistant/exportexplain.png)
+
 ## Export the selected assets
 
-Press the *Export to file...* button to export the selected assets to a file of your choice.
+Near the bottom of the *Prepare Export* window, press the *Export to file...* button to export the selected assets to a file of your choice.
 
 Alternatively, press the *Quick Export* button to export or overwrite into the `export.unitypackage` file.
