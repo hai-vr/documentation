@@ -1,0 +1,17 @@
+{
+  "hai.tag.any_platform": {
+    "message": "Toutes plateformes"
+  },
+  "hai.tag.compatible_with": {
+    "message": "Compatible avec : ",
+    "description": "Compatible with"
+  },
+  "hai.tag.requires": {
+    "message": "Nécessite : ",
+    "description": "Requires"
+  },
+  "hai.starting_from": {
+    "message": "À partir de : ",
+    "description": "Starting from"
+  }
+}

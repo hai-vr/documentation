@@ -32,7 +32,7 @@ This tool will **deliberately ignore some asset references**, keeping only asset
 
 If an unexpected asset is being included in the export, the *Transfer Assistant* user interface can help you locate which object or component depends on it.
 
-![dependency_en.png](../../../static/assets/docs/products/transfer-assistant/dependency_en.png)
+![dependency_en.png](/assets/docs/products/transfer-assistant/dependency_en.png)
 
 *Transfer Assistant* will never modify the contents of Scenes or Prefabs.
 
@@ -121,7 +121,7 @@ If your language is not available, but you are technically inclined, you can:
 - then press the refresh button located to the right of the Language selection dropdown.
 :::
 
-![language.png](../../../static/assets/docs/products/transfer-assistant/language.png)
+![language.png](/assets/docs/products/transfer-assistant/language.png)
 
 ## Narrow down which asset references you want to keep
 
@@ -166,7 +166,7 @@ This option deals with how overriding a Prefab instance hides the assets inside 
 - When checking an asset type, those asset types are included, and any other asset referenced by those asset types is included.
 - When unchecking an asset type, those asset types are not included, and assets referenced by those asset types are not included.
 
->![culling.png](../../../static/assets/docs/products/transfer-assistant/culling.png)
+>![culling.png](/assets/docs/products/transfer-assistant/culling.png)
 >
 > Unchecking *Animator Controller* not only removes the *Animator Controllers* from the export, it also removes the *Blend Tree* assets
 > and the *Animation Clip* assets used by those *Animator Controllers* from the export.
@@ -197,7 +197,7 @@ Use the following functions to navigate and figure out why some objects are requ
 
 You can click the magnifier icon again to clear the search.
 
-![search_en.png](../../../static/assets/docs/products/transfer-assistant/search_en.png)
+![search_en.png](/assets/docs/products/transfer-assistant/search_en.png)
 
 :::note
 Color coding goes as follows:
@@ -222,7 +222,7 @@ The sidebar of that window has buttons for each asset type. These **do not** hav
 - **Deselect and Hide**: Deselects the assets of this type and removes them from the Export window.
     - *Note: Pressing Deselect and Hide will **not** deselect the assets that are referenced by those assets, so this is different from the Culling option from the Transfer Assets window.*
 
-![export_en.png](../../../static/assets/docs/products/transfer-assistant/export_en.png)
+![export_en.png](/assets/docs/products/transfer-assistant/export_en.png)
 
 :::warning
 Changes made to the *Transfer Assistant* window will not be reflected in the *Prepare Export* window:

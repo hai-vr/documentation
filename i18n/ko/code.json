@@ -1,0 +1,17 @@
+{
+  "hai.tag.any_platform": {
+    "message": "모든 플랫폼"
+  },
+  "hai.tag.compatible_with": {
+    "message": "호환성: ",
+    "description": "Compatible with"
+  },
+  "hai.tag.requires": {
+    "message": "요구 사항: ",
+    "description": "Requires"
+  },
+  "hai.starting_from": {
+    "message": "시작 버전: ",
+    "description": "Starting from"
+  }
+}

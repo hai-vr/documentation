@@ -18,7 +18,7 @@ This tool requires <HaiTag requiresVRChat={true} short={true} /> and is incompat
 
 It is bundled with *Visual Expressions Editor*, an animation editor that lets you create face expressions with the help of previews.
 
-<HaiVideo src="../../../static/unsorted_ghc/githubio/cge2-rc-github.mp4"></HaiVideo>
+<HaiVideo src="/unsorted_ghc/githubio/cge2-rc-github.mp4"></HaiVideo>
 
 [//]: # (<iframe src="https://streamable.com/e/t19nkm?loop=0" width="408" height="256" frameborder="0" allowfullscreen></iframe> <iframe src="https://streamable.com/e/bg1uoj?loop=0" width="408" height="256" frameborder="0" allowfullscreen></iframe>)
 

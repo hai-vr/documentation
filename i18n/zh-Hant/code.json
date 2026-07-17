@@ -1,0 +1,17 @@
+{
+  "hai.tag.any_platform": {
+    "message": "全平台"
+  },
+  "hai.tag.compatible_with": {
+    "message": "相容: ",
+    "description": "Compatible with"
+  },
+  "hai.tag.requires": {
+    "message": "要求: ",
+    "description": "Requires"
+  },
+  "hai.starting_from": {
+    "message": "版本要求: ",
+    "description": "Starting from"
+  }
+}
