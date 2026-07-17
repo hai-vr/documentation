@@ -27,7 +27,7 @@ Documentation for *XYVR*.
 </GalleryItem>
 <GalleryItem 
         name = 'ResilienceVR'
-        image = {require("@site/docs/products/gallery-img/resilience-temp.png").default}
+        image = {require("@site/static/assets/docs/products/gallery/resilience-temp.png").default}
         url = '/docs/resilience'
 >
 
