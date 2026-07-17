@@ -109,7 +109,7 @@ Automatic discarding lets you specify options that will discard menu items durin
 
 The “Auto Discard” functionality of EMH allows you to specify a VRC Expression Parameters asset in your compiler. During the generation process, all items that have at least one parameter that is missing from the Expression Parameters will be discarded.
 
-![Untitled](expressions-menu-hierarchy-editor-img/Untitled%201.png)
+![Untitled](expressions-menu-hierarchy-editor-img/Untitled_1.png)
 
 The Discard Type lets you choose how the items will be discarded:
 
@@ -126,11 +126,11 @@ The “Auto Discard” functionality of EMH can also allow you to specify tags t
 
 When editing items, you can check “Advanced mode” at the top. Additional options will appear to let you choose tags. In addition, you can choose how specific items will be discarded using the “Discardable” drop-down menu.
 
-![Untitled](expressions-menu-hierarchy-editor-img/Untitled%202.png)
+![Untitled](expressions-menu-hierarchy-editor-img/Untitled_2.png)
 
 In the compiler, you can then specify tags, separated by commas `,` to discard specific tags.
 
-![Untitled](expressions-menu-hierarchy-editor-img/Untitled%203.png)
+![Untitled](expressions-menu-hierarchy-editor-img/Untitled_3.png)
 
 ## Generating custom icons using shaders
 

@@ -40,7 +40,7 @@ The **Track.** These are the transforms through which the Constraint will slide.
 
 The **Animation**. This animates the Constraint to move along the Track, and also animates the Track to disable them when not in use.
 
-![Untitled](index-img/Untitled%201.png)
+![Untitled](index-img/Untitled_1.png)
 
 The Parent Constraint lets an object move as if it had multiple parents. Each “parent” has a weight representing how much that parent will influence the movement. This weight can be controlled by an animation. By animating the weight, the object will move between the “parents”. Here, each parent of the Constraint is a waypoint in the track.
 

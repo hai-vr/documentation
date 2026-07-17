@@ -30,11 +30,11 @@ On the Double Chest Tracker tab panel, select and copy the line called *Launch a
 
 On your Steam library, right click VRChat, and select *Properties…*
 
-![Untitled](img/Untitled%201.png)
+![Untitled](img/Untitled_1.png)
 
 Paste the line you copied in the Launch options, and make sure the serial numbers are correct (for example, the last characters could be missing).
 
-![Untitled](img/Untitled%202.png)
+![Untitled](img/Untitled_2.png)
 
 Once done, VRChat should no longer try to bind to those hardware trackers during calibration.
 
@@ -50,7 +50,7 @@ Select the serial number of the tracker that has a better position in the **Trac
 
 Check the Prioritize Tracker A checkbox.
 
-![Untitled](img/Untitled%203.png)
+![Untitled](img/Untitled_3.png)
 
 By using Prioritize Tracker A, the Double Chest Tracker will be positioned at the same position as the Tracker A. It will no longer act as an average measurement of the two chest trackers.
 

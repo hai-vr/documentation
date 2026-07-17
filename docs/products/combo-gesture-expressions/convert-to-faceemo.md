@@ -28,7 +28,7 @@ In ALCOM, install the additional package *Haï ~ Convert ComboGesture to FaceEmo
 or reuse the one you have.
 - Outside the avatar, create a GameObject and add a *ComboGesture to FaceEmo Converter* component (search for "convert").
 
-![img/convert.png](img/convert.png)
+![/assets/docs/products/combo-gesture-expressions/img/convert.png](/assets/docs/products/combo-gesture-expressions/img/convert.png)
 - Specify the ComboGestureCompiler component and the FaceEmo component.
 - Choose whether you want to ignore fist triggers (see limitations above).
 - Press Convert.

@@ -16,7 +16,7 @@ import {HaiVideo} from "/src/components/HaiVideo";
 - 🌊 No game-specific SDK is required.
 :::
 
-<HaiVideo src="./animation-viewer-img/sx_2022-02-02_03-27-39_uYmmptha2T.mp4"></HaiVideo>
+<HaiVideo src="/assets/docs/products/animation-viewer/sx_2022-02-02_03-27-39_uYmmptha2T.mp4"></HaiVideo>
 
 ## Download
 
@@ -35,7 +35,7 @@ The tool is free to download. It can also be downloaded using ALCOM.
 
 - Select your Animator. In the inspector, click the three dots, and select “Haï AnimationViewer”.
 
-![Untitled](animation-viewer-img/Untitled.png)
+![Untitled](/assets/docs/products/animation-viewer/Untitled.png)
 
 - Move the camera in the scene, and hover your cursor over the Project view to refresh the pictures.
 - When the Animation Viewer is activated, the performance of the editor will be impacted. Click “Activate Viewer” to toggle it on/off. The button is red when it is active.
@@ -46,7 +46,7 @@ The tool is free to download. It can also be downloaded using ALCOM.
 
 - **Animator**: The animator to use as a preview base.
 
-![Untitled](animation-viewer-img/Untitled%201.png)
+![Untitled](/assets/docs/products/animation-viewer/Untitled_1.png)
 
 - **Auto Update On Focus**: If you change the scene camera position, hovering your cursor over the Project view window will refresh the pictures.
 - **Continuous Updates**: If you change the scene camera position, it will immediately refresh the pictures. This will lead to a dramatic slow down of the editor.
@@ -55,14 +55,14 @@ A lower value such as 5 causes the Project view to update 5 thumbnails per updat
 A higher value like 20 causes the Project view to update 20 thumbnails per update tick, which will result in faster load times but more hitches in folders that contain a lot of animation files.
 - **Thumbnail Size**: Change the thumbnail size of the Project view. This can be larger than the Project view allows (Unity’s maximum value is normally 96).
 
-![Untitled](animation-viewer-img/Untitled%202.png)
+![Untitled](/assets/docs/products/animation-viewer/Untitled_2.png)
 
-![Untitled](animation-viewer-img/Untitled%203.png)
+![Untitled](/assets/docs/products/animation-viewer/Untitled_3.png)
 
 - **Activate Viewer button**: Click to enable the previews.
 When the Animation Viewer is activated, the performance of the editor will be impacted. Click “Activate Viewer” to toggle it on/off. The button is red when it is active.
 
-![Untitled](animation-viewer-img/Untitled%204.png)
+![Untitled](/assets/docs/products/animation-viewer/Untitled_4.png)
 
 - **Update button**: Click to refresh the pictures.
 - **Force button**: Click to refresh the pictures, additionally clearing the thumbnail cache.
@@ -77,13 +77,13 @@ This lets you preview the avatar in a different pose than the bicycle pose (see 
 
 - You can change the field of view of the scene camera.
 
-![Untitled](animation-viewer-img/Untitled%206.png)
+![Untitled](/assets/docs/products/animation-viewer/Untitled_6.png)
 
 - Use **Advanced/Base Pose** to specify an animation that applies before the animation is previewed.
 This can be used to choose a pose to preview clothing toggle animations.
 This can also be used to hide hats and other objects, letting you generate more relevant previews.
     
-<HaiVideo src="./animation-viewer-img/sx_2022-02-02_03-05-20_QdOYmOWyly.mp4"></HaiVideo>
+<HaiVideo src="/assets/docs/products/animation-viewer/sx_2022-02-02_03-05-20_QdOYmOWyly.mp4"></HaiVideo>
 
 ## CTRL-K Search window
 
@@ -99,4 +99,4 @@ After opening this window, click on the three dots at the top right, and make su
 
 You can use the prefix `anim:<your search query>` to only show *Animation Viewer* results.
 
-![Untitled](animation-viewer-img/ctrl-k.png)
+![Untitled](/assets/docs/products/animation-viewer/ctrl-k.png)

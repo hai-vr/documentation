@@ -82,15 +82,15 @@ Test the behaviour of your avatar after detaching. If it behaves differently, re
 In the following example, the Dynamic Bone components are located in the Breast_L and Breast_R bones.
 These bones only have 1 child object, which is more likely to cause issues.
 
-![Untitled](reference-img/Untitled%201.png)
+![Untitled](reference-img/Untitled_1.png)
 
 Creating a detached bone will cause the dynamic bone to no longer function as it should, in this case the Breast_L and Breast_R bones may not rotate as they previously did, due to the presence of any additional child GameObject. This is the case even if the newly detached bones are in the Exclusion list of the Dynamic Bone:
 
-![Untitled](reference-img/Untitled%202.png)
+![Untitled](reference-img/Untitled_2.png)
 
 A possible solution to this is to move the detached bone (and Neutral) to be children of the _end bones if they exist, and then add them to the Exclusions list of the Dynamic Bone:
 
-![Untitled](reference-img/Untitled%203.png)
+![Untitled](reference-img/Untitled_3.png)
 
 </aside>
 
@@ -137,7 +137,7 @@ For those, you need to split the Vertex Group of the mesh into multiple parts yo
 - Add the clothing bones to the list of bones.
 - Click “Create Neutral Objects”
 
-![Untitled](reference-img/Untitled%204.png)
+![Untitled](reference-img/Untitled_4.png)
 
 - **If necessary, move the Neutral objects to a location that better represents the bone.**
   In the following video, the Neutral object of the frill ribbon is moved away from the LeftUpLeg bone to be roughly the center of the frill ribbon.
@@ -166,7 +166,7 @@ For each waypoint, use the Parent Constraint to attach it to the bones of the ar
 - Do the same for the `P1`, `P2`, ... objects.
 - If you choose to parent to multiple bones, remember you can select the weight of each bone.
 
-![Untitled](reference-img/Untitled%205.png)
+![Untitled](reference-img/Untitled_5.png)
 
 # Parent the P0 object to a Proxy for non-important bones
 
@@ -188,7 +188,7 @@ This is optional.
     - In Optional Animation Active, put an animation that animates your blend shape / shape keys. The animation is 10 seconds long most of the times.
     - In Optional Animation Inactive, put an animation that animates your blend shape to the rest position. The animation length should be exacly 2 keyframes (meaning it lasts 1/60 of a second).
 
-![Untitled](reference-img/Untitled%206.png)
+![Untitled](reference-img/Untitled_6.png)
 
 # Generate the Animator (VRChat)
 
@@ -281,7 +281,7 @@ The minimum distance is specified in the Single Constraint Track component, in t
 
 If you wish different Single Constraint Tracks to start at different times relative to each other, change the “Timing Delay Start Seconds” option. Tracks have a length of 10 seconds, so adding a delay of 3 seconds will make this track length 13 seconds.
 
-![Untitled](reference-img/Untitled%206.png)
+![Untitled](reference-img/Untitled_6.png)
 
 ### Make a track shorter than others
 
@@ -317,7 +317,7 @@ You can change the “Gizmo Direction” to point at another direction. This is 
 
 Change the “Gizmo Scale” to make your gizmos shorter or larger.
 
-![Untitled](reference-img/Untitled%207.png)
+![Untitled](reference-img/Untitled_7.png)
 
 ## Advanced: Updating a model after using Bone Detach Tool
 
@@ -329,7 +329,7 @@ If you encounter an issue when trying to Fix Model Update, post a message in **#
 
 [Join the Invitational Discord Server!](https://discord.com/invite/58fWAUTYF8)
 
-![Untitled](reference-img/Untitled%208.png)
+![Untitled](reference-img/Untitled_8.png)
 
 ## Advanced: Adding new bones / forgotten bones to an existing system
 

@@ -45,7 +45,7 @@ The tool is free to download. It can also be downloaded using ALCOM.
 - **Clip**: The animation clip to edit.
 - **Auto Select**: The window will update when a new clip is selected in the Project view.
 
-![Untitled](visual-expressions-editor-img/Untitled%201.png)
+![Untitled](visual-expressions-editor-img/Untitled_1.png)
 
 - **Thumbnail Size**: Size of the pictures.
 - **Update button**: Click to refresh the pictures.
@@ -96,7 +96,7 @@ These blendshapes are displayed differently in the editor:
 
 There is a button that lets you delete all 0-values.
 
-![Untitled](visual-expressions-editor-img/Untitled%202.png)
+![Untitled](visual-expressions-editor-img/Untitled_2.png)
 
 ## “Loop Edit “Mode
 
@@ -110,7 +110,7 @@ Version V1.1.0 introduces “Loop Edit” mode.
 
 This mode is intended to be used simultaneously with the default Animation editor window.
 
-![Untitled](visual-expressions-editor-img/Untitled%203.png)
+![Untitled](visual-expressions-editor-img/Untitled_3.png)
 
 - **Quick Preview**: Scrub the animation timeline without affecting the currently active frame being edited.
 - **Edit Frame**: Change the active frame being edited.
@@ -132,13 +132,13 @@ Remember that animations assets must be set to looping so that they will loop in
 
 - Remember you can change the field of view of the scene camera.
 
-![Untitled](visual-expressions-editor-img/Untitled%205.png)
+![Untitled](visual-expressions-editor-img/Untitled_5.png)
 
 - The text of the blendshape labels can be selected and copied.
 
-![Untitled](visual-expressions-editor-img/Untitled%206.png)
+![Untitled](visual-expressions-editor-img/Untitled_6.png)
 
-![Untitled](visual-expressions-editor-img/Untitled%207.png)
+![Untitled](visual-expressions-editor-img/Untitled_7.png)
 
 ## Special thanks
 

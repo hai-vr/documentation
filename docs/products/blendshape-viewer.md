@@ -44,15 +44,15 @@ The tool is free to download. It can also be downloaded using ALCOM.
 
 - **Skinned Mesh**: The skinned mesh to view blendshapes.
 
-![Untitled](blendshape-viewer-img/Untitled%201.png)
+![Untitled](blendshape-viewer-img/Untitled_1.png)
 
 - **Show Differences**: Highlight the differences against the current settings of the Skinned Mesh.
 
-![Untitled](blendshape-viewer-img/Untitled%202.png)
+![Untitled](blendshape-viewer-img/Untitled_2.png)
 
 - **Show Hotspots**: Draw the differences in red.
 
-![Untitled](blendshape-viewer-img/Untitled%203.png)
+![Untitled](blendshape-viewer-img/Untitled_3.png)
 
 - **Auto Update On Focus**: If you change the scene camera position, clicking the BlendshapeViewer window will refresh the pictures.
 - **Use Compute Shader**: Accelerates difference calculation when checked.
@@ -64,7 +64,7 @@ The tool is free to download. It can also be downloaded using ALCOM.
 
 - Remember you can change the field of view of the scene camera.
 
-![Untitled](blendshape-viewer-img/Untitled%205.png)
+![Untitled](blendshape-viewer-img/Untitled_5.png)
 
 - The tool can be used when recording animations.
 
@@ -73,9 +73,9 @@ The tool is free to download. It can also be downloaded using ALCOM.
 - The text of the blendshape labels can be selected and copied.
 - Press the icon next to the blendshape to copy the name your clipboard.
 
-![Untitled](blendshape-viewer-img/Untitled%206.png)
+![Untitled](blendshape-viewer-img/Untitled_6.png)
 
-![Untitled](blendshape-viewer-img/Untitled%207.png)
+![Untitled](blendshape-viewer-img/Untitled_7.png)
 
 ## Special thanks
 
