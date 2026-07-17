@@ -14,7 +14,7 @@ import {HaiVideo} from "/src/components/HaiVideo";
 <HaiTag isUniversal={true} />
 </HaiTags>
 
-<HaiLocalization languages={['en', 'ja', 'fr', 'ko', 'zh-Hant', 'zh-Hans']} />
+<HaiLocalization languages={['en', 'ja', 'fr', 'ko', 'zh-Hans', 'zh-Hant']} />
 
 이 Unity 도구는 *.unitypackage* 내보내기 기능을 사용하여 불필요하다고 판단되는 에셋을 제거하면서 **한 프로젝트에서 다른 프로젝트로 에셋을 전송**할 때 도움을 줍니다.
 

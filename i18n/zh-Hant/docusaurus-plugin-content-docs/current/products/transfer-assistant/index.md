@@ -14,7 +14,7 @@ import {HaiVideo} from "/src/components/HaiVideo";
 <HaiTag isUniversal={true} />
 </HaiTags>
 
-<HaiLocalization languages={['en', 'ja', 'fr', 'ko', 'zh-Hant', 'zh-Hans']} />
+<HaiLocalization languages={['en', 'ja', 'fr', 'ko', 'zh-Hans', 'zh-Hant']} />
 
 此 Unity 工具將協助您使用 *.unitypackage* 匯出功能，在**將資源從一個項目轉移到另一個項目**時，剔除您認為不需要的資源。
 

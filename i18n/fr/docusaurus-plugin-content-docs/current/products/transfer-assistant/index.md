@@ -14,7 +14,7 @@ import {HaiVideo} from "/src/components/HaiVideo";
 <HaiTag isUniversal={true} />
 </HaiTags>
 
-<HaiLocalization languages={['en', 'ja', 'fr', 'ko', 'zh-Hant', 'zh-Hans']} />
+<HaiLocalization languages={['en', 'ja', 'fr', 'ko', 'zh-Hans', 'zh-Hant']} />
 
 Cet outil Unity vous aidera lorsque vous souhaitez utiliser la fonction d'exportation *.unitypackage* pour **transférer des assets d'un projet à un autre**, tout en supprimant les assets que vous jugez inutiles.
 

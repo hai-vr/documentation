@@ -14,7 +14,7 @@ import {HaiVideo} from "/src/components/HaiVideo";
 <HaiTag isUniversal={true} />
 </HaiTags>
 
-<HaiLocalization languages={['en', 'ja', 'fr', 'ko', 'zh-Hant', 'zh-Hans']} />
+<HaiLocalization languages={['en', 'ja', 'fr', 'ko', 'zh-Hans', 'zh-Hant']} />
 
 このUnityツールは、*.unitypackage* の書き出し機能を使用して、不要と思われるアセットを削除しながら、**あるプロジェクトから別のプロジェクトへアセットを転送**するのを支援します。
 

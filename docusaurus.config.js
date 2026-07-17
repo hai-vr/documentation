@@ -31,7 +31,7 @@ export default {
   // to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
-    locales: ['en', 'ja', 'fr', 'ko', 'zh-Hant', 'zh-Hans'],
+    locales: ['en', 'ja', 'fr', 'ko', 'zh-Hans', 'zh-Hant'],
   },
 
   markdown: {
