@@ -89,6 +89,7 @@ Pour analyser les objets contenus dans une scène, vous devez :
 
 - Ouvrir la scène dans l'éditeur Unity.
 - Aller dans *Window > Haï~ > Transfer Assistant*.
+- Si nécessaire, [changez la langue de la fenêtre en utilisant les instructions de la section suivante](#changer-la-langue-de-la-fenêtre).
 - Régler le menu déroulant en haut à droite sur **Scènes actuelles**.
 - Cliquer sur le bouton *Effectuer l'analyse*.
 

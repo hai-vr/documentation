@@ -91,6 +91,7 @@ To analyze the objects contained within a scene, you must:
 
 - Open the scene in the Unity Editor.
 - Go to *Window > Haï~ > Transfer Assistant*.
+- If necessary, [change the window language using the instructions from the next section](#change-the-window-language).
 - Set the dropdown on the top right to **Current Scenes**.
 - Click the *Perform analysis* button.
 

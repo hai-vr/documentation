@@ -89,6 +89,7 @@ import {HaiVideo} from "/src/components/HaiVideo";
 
 - 在 Unity 編輯器中打開場景。
 - 轉到 *Window > Haï~ > Transfer Assistant*。
+- 如有需要，[請按照下一節的說明更改窗口語言](#更改窗口語言)。
 - 將右上角的下拉菜單設置為 **當前場景**。
 - 點擊 *執行分析* 按鈕。
 

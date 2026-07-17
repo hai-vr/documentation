@@ -89,6 +89,7 @@ import {HaiVideo} from "/src/components/HaiVideo";
 
 - Unityエディタでシーンを開きます。
 - *Window > Haï~ > Transfer Assistant* に移動します。
+- 必要に応じて、[次節の手順でウィンドウの言語を変更してください](#ウィンドウの言語を変更する)。
 - 右上のドロップダウンを **現在のシーン** に設定します。
 - *分析を実行* ボタンをクリックします。
 
