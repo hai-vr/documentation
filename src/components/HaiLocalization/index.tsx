@@ -11,6 +11,10 @@ interface Props {
 const languageNames: Record<string, string> = {
   en: 'English',
   ja: '日本語',
+  fr: 'Français',
+  ko: '한국어',
+  'zh-Hant': '繁體中文',
+  'zh-Hans': '简体中文',
 };
 
 const languageIcons: Record<string, string> = {
@@ -21,6 +25,10 @@ const languageIcons: Record<string, string> = {
 const availablePhrases: Record<string, string> = {
   en: 'This page is available in English',
   ja: 'このページは日本語でご覧いただけます',
+  fr: 'Cette page est disponible en français',
+  ko: '이 페이지는 한국어로 제공됩니다',
+  'zh-Hant': '本頁面有繁體中文版本',
+  'zh-Hans': '本页面有简体中文版本',
 };
 
 export default function HaiLocalization({ languages, children }: Props): JSX.Element {
@@ -67,13 +75,15 @@ export default function HaiLocalization({ languages, children }: Props): JSX.Ele
   return (
     <div className="alert alert--secondary margin-bottom--md" role="alert" data-nosnippet>
       <div className="admonition-content">
-        {targetLanguages.map((lang) => (
-          <p key={lang} className="margin-bottom--none">
-            {languageIcons[lang] && <HaiIcon name={languageIcons[lang]} />}
-            {availablePhrases[lang] || `This page is available in ${lang}`}:{' '}
-            <a href={getLocalizedPath(lang)}>{languageNames[lang] || lang}</a>
-          </p>
-        ))}
+        <ul className="margin-bottom--none">
+          {targetLanguages.map((lang) => (
+            <li key={lang}>
+              {languageIcons[lang] && <HaiIcon name={languageIcons[lang]} />}
+              {availablePhrases[lang] || `This page is available in ${lang}`}:{' '}
+              <a href={getLocalizedPath(lang)}>{languageNames[lang] || lang}</a>
+            </li>
+          ))}
+        </ul>
         {children && <div className="margin-top--md">{children}</div>}
       </div>
     </div>
