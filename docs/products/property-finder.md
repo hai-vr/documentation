@@ -37,7 +37,7 @@ To begin, choose an object, and click the three vertical dots `⋮` next to the 
 
 You can also open it through *Window > Haï > PropertyFinder*.
 
-![property-finder-location.png](./img/property-finder/property-finder-location.png)
+![property-finder-location.png](/assets/docs/products/property-finder/property-finder-location.png)
 
 Drag and drop the object to inspect in the *Target Object* field.
 

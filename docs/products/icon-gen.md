@@ -44,7 +44,7 @@ You can change the editor language at the bottom of the panel.
 
 パネルの下部でエディターの言語を変更できます。
 
-![](./img/icon-gen/mspaint_ovJ8RiyRSo.png)
+![](/assets/docs/products/icon-gen/mspaint_ovJ8RiyRSo.png)
 :::
 
 <HaiVideo src="./img/icon-gen/2023-09-21_08-34-13_ShareX.mp4"></HaiVideo>
@@ -61,7 +61,7 @@ To capture new icons from the scene:
 
 ### Options
 
-![](./img/icon-gen/Unity_N4SK4Zqao0.png)
+![](/assets/docs/products/icon-gen/Unity_N4SK4Zqao0.png)
 
 - **Icon Size:** Change the size of the icon/picture.
 - *Buttons*
@@ -85,9 +85,9 @@ To capture new icons from the scene:
   - **Avoid Emulator Conflict:** Hides the Player and MirrorReflection layers from the capture camera, which avoids a conflict with Av3 Emulator in Play mode.
   - **Use Post Processing:** Make post processing volumes affect the capture camera.
 - *Preview*
-  - **Show Grid:** Show a grid on the picture to assist in alignment.<br/>![](./img/icon-gen/Unity_0TIJndaE7c.png)
+  - **Show Grid:** Show a grid on the picture to assist in alignment.<br/>![](/assets/docs/products/icon-gen/Unity_0TIJndaE7c.png)
   - **Preview Generator:** Select an existing IconGen assets to test how layers would be applied to this picture.
-  - **Preview Icon:** Preview the picture with the IconGen asset applied.<br/>![](./img/icon-gen/Unity_FRkH0ykKvM.png)
+  - **Preview Icon:** Preview the picture with the IconGen asset applied.<br/>![](/assets/docs/products/icon-gen/Unity_FRkH0ykKvM.png)
   - **Save baked preview as PNG...:** Save the preview as a PNG (grid is not included).
   - **Save baked preview again:** Save the preview at the previously saved location.
 
@@ -100,14 +100,14 @@ You can change the editor language at the bottom of the panel.
 
 パネルの下部でエディターの言語を変更できます。
 
-![](./img/icon-gen/mspaint_ovJ8RiyRSo.png)
+![](/assets/docs/products/icon-gen/mspaint_ovJ8RiyRSo.png)
 :::
 
 ### Create an IconGen asset
 
 Create a new asset by right-clicking into the Project tab and selecting *Create > Haï > IconGen*.
 
-![](./img/icon-gen/Unity_gCIY4BKhBo.png)
+![](/assets/docs/products/icon-gen/Unity_gCIY4BKhBo.png)
 
 ### Add multiple icons at once
 
@@ -119,7 +119,7 @@ Drag and drop a group of icons by selecting the IconGen asset, then locking the 
 
 To add icons one by one, you can do the same as *Add multiple icons at once*, or you can alternatively add it in the *+* field and press the *+ Add* button.
 
-![](./img/icon-gen/2023-09-21_07-38-29_ShareX.png)
+![](/assets/docs/products/icon-gen/2023-09-21_07-38-29_ShareX.png)
 
 ### Rename your icons
 
@@ -151,20 +151,20 @@ In this example, there are 3 layers:
 - The middle layer is a white ring using Overlay mode, colored blue. This draws a blue ring on top of the picture.
 - The topmost layer is a red strike using Overlay mode. This draws a red strike on top of the blue ring.
 
-![](./img/icon-gen/2023-09-21_07-48-40_ShareX.png)
+![](/assets/docs/products/icon-gen/2023-09-21_07-48-40_ShareX.png)
 
 ### Choose a layer mode
 
 Layers can be set into different modes which determines how that layer will affect the existing picture.
 
-![](./img/icon-gen/Unity_wnr2Xh3hUm.png)
+![](/assets/docs/products/icon-gen/Unity_wnr2Xh3hUm.png)
 
-- **Overlay**: The element is drawn on top.<br/>![](./img/icon-gen/2023-09-21_08-01-03_ShareX.png)
-- **Mask**: The picture is cut into the shape of the element.<br/>![](./img/icon-gen/2023-09-21_08-00-08_ShareX.png)
-- **Draw Under**: The element is drawn below.<br/>![](./img/icon-gen/2023-09-21_08-02-25_ShareX.png)
-- **Gray Out**: The picture is grayed out. If there is an element, then only the similar pixels will be grayed out.<br/>![](./img/icon-gen/2023-09-21_07-59-22_ShareX.png)
+- **Overlay**: The element is drawn on top.<br/>![](/assets/docs/products/icon-gen/2023-09-21_08-01-03_ShareX.png)
+- **Mask**: The picture is cut into the shape of the element.<br/>![](/assets/docs/products/icon-gen/2023-09-21_08-00-08_ShareX.png)
+- **Draw Under**: The element is drawn below.<br/>![](/assets/docs/products/icon-gen/2023-09-21_08-02-25_ShareX.png)
+- **Gray Out**: The picture is grayed out. If there is an element, then only the similar pixels will be grayed out.<br/>![](/assets/docs/products/icon-gen/2023-09-21_07-59-22_ShareX.png)
 - *Position modes*
-  - **Bottom Left**: The element is drawn at the bottom left.<br/>![](./img/icon-gen/2023-09-21_08-04-10_ShareX.png)
+  - **Bottom Left**: The element is drawn at the bottom left.<br/>![](/assets/docs/products/icon-gen/2023-09-21_08-04-10_ShareX.png)
   - **Bottom Right**: The element is drawn at the bottom right.
   - **Top Left**: The element is drawn at the top left.
   - **Top Right**: The element is drawn at the top right.
@@ -190,7 +190,7 @@ If you wish to export all of them, you can go to *Advanced*, and click the *Expo
 
 To capture thumbnails for VRChat in Play Mode, go to *Window > Haï > IconGen Thumbnail*.
 
-![icon-gen-menu.png](./img/icon-gen/icon-gen-menu.png)
+![icon-gen-menu.png](/assets/docs/products/icon-gen/icon-gen-menu.png)
 
 In the window, click *Start capturing*.
 
@@ -200,7 +200,7 @@ Click *Save as PNG...* to save the thumbnail.
 
 The *Save again* button will save the picture at the previously saved location.
 
-![Unity_xuolgaXxqS.png](./img/icon-gen/Unity_xuolgaXxqS.png)
+![Unity_xuolgaXxqS.png](/assets/docs/products/icon-gen/Unity_xuolgaXxqS.png)
 
 :::warning
 Click *Stop capturing* when you're done, as the tool will consume resources during use.
