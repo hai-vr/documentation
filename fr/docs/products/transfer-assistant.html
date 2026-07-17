@@ -5,7 +5,7 @@
 <meta name="generator" content="Docusaurus v3.2.1">
 <title data-rh="true">Transfer Assistant | Haï~</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://docs.hai-vr.dev/fr/img/hai-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://docs.hai-vr.dev/fr/img/hai-social-card.jpg"><meta data-rh="true" property="og:url" content="https://docs.hai-vr.dev/fr/docs/products/transfer-assistant"><meta data-rh="true" property="og:locale" content="fr"><meta data-rh="true" property="og:locale:alternate" content="en"><meta data-rh="true" property="og:locale:alternate" content="ja"><meta data-rh="true" property="og:locale:alternate" content="ko"><meta data-rh="true" property="og:locale:alternate" content="zh_Hant"><meta data-rh="true" property="og:locale:alternate" content="zh_Hans"><meta data-rh="true" name="docusaurus_locale" content="fr"><meta data-rh="true" name="docsearch:language" content="fr"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Transfer Assistant | Haï~"><meta data-rh="true" name="description" content="Cet outil Unity vous aidera lorsque vous souhaitez utiliser la fonction d&#x27;exportation .unitypackage pour transférer des assets d&#x27;un projet à un autre, tout en supprimant les assets que vous jugez inutiles."><meta data-rh="true" property="og:description" content="Cet outil Unity vous aidera lorsque vous souhaitez utiliser la fonction d&#x27;exportation .unitypackage pour transférer des assets d&#x27;un projet à un autre, tout en supprimant les assets que vous jugez inutiles."><meta data-rh="true" name="robots" content="noindex, nofollow"><link data-rh="true" rel="icon" href="/fr/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://docs.hai-vr.dev/fr/docs/products/transfer-assistant"><link data-rh="true" rel="alternate" href="https://docs.hai-vr.dev/docs/products/transfer-assistant" hreflang="en"><link data-rh="true" rel="alternate" href="https://docs.hai-vr.dev/ja/docs/products/transfer-assistant" hreflang="ja"><link data-rh="true" rel="alternate" href="https://docs.hai-vr.dev/fr/docs/products/transfer-assistant" hreflang="fr"><link data-rh="true" rel="alternate" href="https://docs.hai-vr.dev/ko/docs/products/transfer-assistant" hreflang="ko"><link data-rh="true" rel="alternate" href="https://docs.hai-vr.dev/zh-Hant/docs/products/transfer-assistant" hreflang="zh-Hant"><link data-rh="true" rel="alternate" href="https://docs.hai-vr.dev/zh-Hans/docs/products/transfer-assistant" hreflang="zh-Hans"><link data-rh="true" rel="alternate" href="https://docs.hai-vr.dev/docs/products/transfer-assistant" hreflang="x-default"><link rel="alternate" type="application/rss+xml" href="/fr/updates/rss.xml" title="Haï~ RSS Feed">
 <link rel="alternate" type="application/atom+xml" href="/fr/updates/atom.xml" title="Haï~ Atom Feed"><link rel="stylesheet" href="/fr/assets/css/styles.b1fc5abc.css">
-<script src="/fr/assets/js/runtime~main.79ec9e1a.js" defer="defer"></script>
+<script src="/fr/assets/js/runtime~main.a6a4077f.js" defer="defer"></script>
 <script src="/fr/assets/js/main.19544f30.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -73,11 +73,11 @@ Certaines fonctionnalités de cet outil peuvent être utilisées à des fins d&#
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="détails-supplémentaires">Détails supplémentaires<a href="#détails-supplémentaires" class="hash-link" aria-label="Lien direct vers Détails supplémentaires" title="Lien direct vers Détails supplémentaires">​</a></h3>
 <p>Le menu déroulant en haut à droite vous permet de basculer entre différents modes de sélection d&#x27;objets.</p>
 <ul>
-<li><strong>Single Target</strong> : Un seul objet racine est analysé.</li>
-<li><strong>Multiple Targets</strong> : Plusieurs objets racines sont analysés.</li>
-<li><strong>Current Scenes</strong> : Tous les objets racines de la scène ouverte sont analysés, et la scène elle-même est ajoutée pour l&#x27;exportation.<!-- -->
+<li><strong>Cible unique</strong>: Un seul objet racine est analysé.</li>
+<li><strong>Cibles multiples</strong>: Plusieurs objets racines sont analysés.</li>
+<li><strong>Scènes actuelles</strong>: Tous les objets racines de la scène ouverte sont analysés, et la scène elle-même est ajoutée pour l&#x27;exportation.<!-- -->
 <ul>
-<li>Cela n&#x27;inclut <strong>pas</strong> les paramètres de rendu (render settings) des scènes. La skybox, les données d&#x27;éclairage et les autres références de scène ne seront pas incluses dans l&#x27;exportation.</li>
+<li>Cela n&#x27;inclut <strong>pas</strong> les paramètres de rendu des scènes. La skybox, les données d&#x27;éclairage et les autres références de scène ne seront pas incluses dans l&#x27;exportation.</li>
 <li>Si vous avez plusieurs scènes ouvertes, elles seront toutes analysées.</li>
 </ul>
 </li>
@@ -96,7 +96,7 @@ Certaines fonctionnalités de cet outil peuvent être utilisées à des fins d&#
 <p>Ces cases à cocher ont un <strong>effet en cascade</strong> ; par exemple, décocher Materials affectera les Textures qui seront exportées.</p>
 <div class="theme-admonition theme-admonition-info admonition_xJq3 alert alert--info"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>info</div><div class="admonitionContent_BuS1"><p><em>Transfer Assistant</em> ne <strong>modifie jamais</strong> les prefabs ni les scènes, il est donc toujours sûr de cliquer sur n&#x27;importe quel bouton.</p></div></div>
 <p><img decoding="async" loading="lazy" alt="checkboxes_fr.png" src="/fr/assets/images/checkboxes_fr-a824617524de398d6f132ea7c0b5f7be.png" width="297" height="452" class="img_ev3q"></p>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="include-editoronly">Include EditorOnly<a href="#include-editoronly" class="hash-link" aria-label="Lien direct vers Include EditorOnly" title="Lien direct vers Include EditorOnly">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="inclure-editoronly">Inclure EditorOnly<a href="#inclure-editoronly" class="hash-link" aria-label="Lien direct vers Inclure EditorOnly" title="Lien direct vers Inclure EditorOnly">​</a></h4>
 <ul>
 <li>Lorsque cette case est cochée, tous les objets sont inclus. <strong>C&#x27;est l&#x27;option par défaut.</strong></li>
 <li>Lorsqu&#x27;elle est décochée, les assets référencés à l&#x27;intérieur des objets EditorOnly et de leurs enfants ne sont pas inclus.<!-- -->
@@ -107,7 +107,7 @@ Certaines fonctionnalités de cet outil peuvent être utilisées à des fins d&#
 </ul>
 <p>Cela ne supprime pas les GameObjects ou les composants marqués comme EditorOnly du prefab, même pendant l&#x27;exportation ; cela ignore seulement les références qu&#x27;ils contiennent.</p>
 <p>Le fait de cocher ou de décocher cette case dépend de votre workflow.</p>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="include-hidden-in-prefabs">Include hidden in Prefabs<a href="#include-hidden-in-prefabs" class="hash-link" aria-label="Lien direct vers Include hidden in Prefabs" title="Lien direct vers Include hidden in Prefabs">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="inclure-les-éléments-cachés-dans-les-prefabs">Inclure les éléments cachés dans les Prefabs<a href="#inclure-les-éléments-cachés-dans-les-prefabs" class="hash-link" aria-label="Lien direct vers Inclure les éléments cachés dans les Prefabs" title="Lien direct vers Inclure les éléments cachés dans les Prefabs">​</a></h4>
 <p>Cette option concerne la manière dont la modification d&#x27;une instance de prefab masque les assets à l&#x27;intérieur du prefab source.</p>
 <ul>
 <li>Lorsque cette case est cochée, les assets référencés dans les prefabs sources sont inclus, même si votre objet cible ne les utilise pas dans sa hiérarchie parce qu&#x27;il les surcharge.</li>
@@ -119,14 +119,14 @@ Certaines fonctionnalités de cet outil peuvent être utilisées à des fins d&#
 </ul>
 <blockquote>
 <p><img decoding="async" loading="lazy" alt="simplehidden.png" src="/fr/assets/images/simplehidden-25e3496ae54831559d090d1b8992a46c.png" width="511" height="527" class="img_ev3q"></p>
-<p>Par défaut, <em>Include hidden in Prefabs</em> est décoché. Le laisser décoché entraînera parfois un nombre d&#x27;assets exportés considérablement plus faible.</p>
+<p>Par défaut, <em>Inclure les éléments cachés dans les Prefabs</em> est décoché. Le laisser décoché entraînera parfois un nombre d&#x27;assets exportés considérablement plus faible.</p>
 <p>Dans cet exemple, un avatar a été modifié en convertissant les matériaux en NonToon.</p>
 <ul>
 <li>La source du prefab référence toujours les matériaux précédents avant la conversion, bien que l&#x27;avatar n&#x27;utilise plus activement ces matériaux.</li>
-<li>En laissant <em>Include hidden in Prefabs</em> décoché, ces anciens matériaux ne sont pas inclus pour l&#x27;exportation, ne laissant que les matériaux NonToon inclus.</li>
+<li>En laissant <em>Inclure les éléments cachés dans les Prefabs</em> décoché, ces anciens matériaux ne sont pas inclus pour l&#x27;exportation, ne laissant que les matériaux NonToon inclus.</li>
 </ul>
 </blockquote>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="culling-élimination">Culling (Élimination)<a href="#culling-élimination" class="hash-link" aria-label="Lien direct vers Culling (Élimination)" title="Lien direct vers Culling (Élimination)">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="élagage">Élagage<a href="#élagage" class="hash-link" aria-label="Lien direct vers Élagage" title="Lien direct vers Élagage">​</a></h4>
 <ul>
 <li>En cochant un type d&#x27;asset, ces types d&#x27;assets sont inclus, ainsi que tout autre asset référencé par ces types d&#x27;assets.</li>
 <li>En décochant un type d&#x27;asset, ces types d&#x27;assets ne sont pas inclus, et les assets référencés par ces types d&#x27;assets ne sont pas inclus.</li>
@@ -135,16 +135,16 @@ Certaines fonctionnalités de cet outil peuvent être utilisées à des fins d&#
 <p><img decoding="async" loading="lazy" alt="culling.png" src="/fr/assets/images/culling-e4963ff74545b948748b6515079931e2.png" width="740" height="542" class="img_ev3q"></p>
 <p>Décocher <em>Animator Controller</em> ne supprime pas seulement les <em>Animator Controllers</em> de l&#x27;exportation, cela supprime également les assets <em>Blend Tree</em> et les assets <em>Animation Clip</em> utilisés par ces <em>Animator Controllers</em> de l&#x27;exportation.</p>
 </blockquote>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="components">Components<a href="#components" class="hash-link" aria-label="Lien direct vers Components" title="Lien direct vers Components">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="composants">Composants<a href="#composants" class="hash-link" aria-label="Lien direct vers Composants" title="Lien direct vers Composants">​</a></h4>
 <ul>
 <li>En cochant un composant, tout asset référencé par ces composants est inclus, ainsi que tout autre asset référencé par ces assets.</li>
-<li>En décochant un composant, les assets référencés par ces composants ne sont pas inclus, et les assets référenc és par ces assets ne sont pas inclus.</li>
+<li>En décochant un composant, les assets référencés par ces composants ne sont pas inclus, et les assets référencés par ces assets ne sont pas inclus.</li>
 </ul>
 <p>Cela ne supprime pas les composants du prefab, même pendant l&#x27;exportation.</p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="explorer-quels-assets-nécessitent-dautres-assets">Explorer quels assets nécessitent d&#x27;autres assets<a href="#explorer-quels-assets-nécessitent-dautres-assets" class="hash-link" aria-label="Lien direct vers Explorer quels assets nécessitent d&#x27;autres assets" title="Lien direct vers Explorer quels assets nécessitent d&#x27;autres assets">​</a></h2>
 <p>Le panneau principal de <em>Transfer Assistant</em> contient un arbre de dépendances d&#x27;objets. Cet arbre est affiché de telle sorte que les racines dépendent des enfants (= les enfants sont ce dont un objet dépend).</p>
 <p>De nombreux objets comme les matériaux ou les textures sont utilisés plusieurs fois, ce qui signifie qu&#x27;ils auraient plusieurs parents ; vous verrez ce même objet plusieurs fois dans cet arbre lorsque cela se produit.</p>
-<p>Pour plus de brièveté, chaque objet n&#x27;affiche ses enfants qu&#x27;une seule fois ; les autres occurrences porteront la mention &quot;<em>(Already shown)</em>&quot; ajoutée à leur droite.</p>
+<p>Pour plus de brièveté, chaque objet n&#x27;affiche ses enfants qu&#x27;une seule fois ; les autres occurrences porteront la mention &quot;<em>(Déjà affiché)</em>&quot; ajoutée à leur droite.</p>
 <p>Cliquez sur n&#x27;importe quel objet pour mettre en évidence l&#x27;emplacement de cet objet.</p>
 <p>Utilisez les fonctions suivantes pour naviguer et comprendre pourquoi certains objets sont requis :</p>
 <ul>

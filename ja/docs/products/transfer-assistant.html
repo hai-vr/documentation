@@ -5,7 +5,7 @@
 <meta name="generator" content="Docusaurus v3.2.1">
 <title data-rh="true">Transfer Assistant | Haï~</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://docs.hai-vr.dev/ja/img/hai-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://docs.hai-vr.dev/ja/img/hai-social-card.jpg"><meta data-rh="true" property="og:url" content="https://docs.hai-vr.dev/ja/docs/products/transfer-assistant"><meta data-rh="true" property="og:locale" content="ja"><meta data-rh="true" property="og:locale:alternate" content="en"><meta data-rh="true" property="og:locale:alternate" content="fr"><meta data-rh="true" property="og:locale:alternate" content="ko"><meta data-rh="true" property="og:locale:alternate" content="zh_Hant"><meta data-rh="true" property="og:locale:alternate" content="zh_Hans"><meta data-rh="true" name="docusaurus_locale" content="ja"><meta data-rh="true" name="docsearch:language" content="ja"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Transfer Assistant | Haï~"><meta data-rh="true" name="description" content="このUnityツールは、.unitypackage の書き出し機能を使用して、不要と思われるアセットを削除しながら、あるプロジェクトから別のプロジェクトへアセットを転送するのを支援します。"><meta data-rh="true" property="og:description" content="このUnityツールは、.unitypackage の書き出し機能を使用して、不要と思われるアセットを削除しながら、あるプロジェクトから別のプロジェクトへアセットを転送するのを支援します。"><meta data-rh="true" name="robots" content="noindex, nofollow"><link data-rh="true" rel="icon" href="/ja/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://docs.hai-vr.dev/ja/docs/products/transfer-assistant"><link data-rh="true" rel="alternate" href="https://docs.hai-vr.dev/docs/products/transfer-assistant" hreflang="en"><link data-rh="true" rel="alternate" href="https://docs.hai-vr.dev/ja/docs/products/transfer-assistant" hreflang="ja"><link data-rh="true" rel="alternate" href="https://docs.hai-vr.dev/fr/docs/products/transfer-assistant" hreflang="fr"><link data-rh="true" rel="alternate" href="https://docs.hai-vr.dev/ko/docs/products/transfer-assistant" hreflang="ko"><link data-rh="true" rel="alternate" href="https://docs.hai-vr.dev/zh-Hant/docs/products/transfer-assistant" hreflang="zh-Hant"><link data-rh="true" rel="alternate" href="https://docs.hai-vr.dev/zh-Hans/docs/products/transfer-assistant" hreflang="zh-Hans"><link data-rh="true" rel="alternate" href="https://docs.hai-vr.dev/docs/products/transfer-assistant" hreflang="x-default"><link rel="alternate" type="application/rss+xml" href="/ja/updates/rss.xml" title="Haï~ RSS Feed">
 <link rel="alternate" type="application/atom+xml" href="/ja/updates/atom.xml" title="Haï~ Atom Feed"><link rel="stylesheet" href="/ja/assets/css/styles.6786b9e7.css">
-<script src="/ja/assets/js/runtime~main.6ff7c3c9.js" defer="defer"></script>
+<script src="/ja/assets/js/runtime~main.d91eb70b.js" defer="defer"></script>
 <script src="/ja/assets/js/main.2bb8b4e1.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -73,11 +73,11 @@
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="その他の詳細">その他の詳細<a href="#その他の詳細" class="hash-link" aria-label="その他の詳細 への直接リンク" title="その他の詳細 への直接リンク">​</a></h3>
 <p>右上のドロップダウンで、オブジェクトの選択モードを切り替えることができます。</p>
 <ul>
-<li><strong>Single Target</strong>: 1つのルートオブジェクトのみが分析されます。</li>
-<li><strong>Multiple Targets</strong>: 複数のルートオブジェクトが分析されます。</li>
-<li><strong>Current Scenes</strong>: 開いているシーンのすべてのルートオブジェクトが分析され、シーン自体も書き出しに追加されます。<!-- -->
+<li><strong>単一ターゲット</strong>: 1つのルートオブジェクトのみが分析されます。</li>
+<li><strong>複数ターゲット</strong>: 複数のルートオブジェクトが分析されます。</li>
+<li><strong>現在のシーン</strong>: 開いているシーンのすべてのルートオブジェクトが分析され、シーン自体も書き出しに追加されます。<!-- -->
 <ul>
-<li>これにはシーンのレンダリング設定（Render Settings）は<strong>含まれません</strong>。スカイボックス、ライティングデータ、その他のシーン参照は書き出しに含まれません。</li>
+<li>これにはシーンのレンダリング設定は<strong>含まれません</strong>。スカイボックス、ライティングデータ、その他のシーン参照は書き出しに含まれません。</li>
 <li>複数のシーンを開いている場合、それらすべてが分析されます。</li>
 </ul>
 </li>
@@ -96,7 +96,7 @@
 <p>これらのチェックボックスには<strong>連鎖効果</strong>があります。例えば、 Materials のチェックを外すと、エクスポートされる Textures にも影響します。</p>
 <div class="theme-admonition theme-admonition-info admonition_xJq3 alert alert--info"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>備考</div><div class="admonitionContent_BuS1"><p><em>Transfer Assistant</em> はプレハブやシーンを<strong>一切変更しない</strong>ため、どのボタンをクリックしても常に安全です。</p></div></div>
 <p><img decoding="async" loading="lazy" alt="checkboxes_ja.png" src="/ja/assets/images/checkboxes_ja-f4c1abb9fa98992b4a965bee6346225c.png" width="297" height="452" class="img_ev3q"></p>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="include-editoronly">Include EditorOnly<a href="#include-editoronly" class="hash-link" aria-label="Include EditorOnly への直接リンク" title="Include EditorOnly への直接リンク">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="editoronlyを含める">EditorOnlyを含める<a href="#editoronlyを含める" class="hash-link" aria-label="EditorOnlyを含める への直接リンク" title="EditorOnlyを含める への直接リンク">​</a></h4>
 <ul>
 <li>チェックされている場合、すべてのオブジェクトが含まれます。<strong>これがデフォルトのオプションです。</strong></li>
 <li>チェックされていない場合、EditorOnlyオブジェクトおよびその子オブジェクト内で参照されているアセットは含まれません。<!-- -->
@@ -107,7 +107,7 @@
 </ul>
 <p>これは、エクスポート中であっても、EditorOnlyとしてマークされたGameObjectやコンポーネントをプレハブから削除するものではありません。それらが含んでいる参照を無視するだけです。</p>
 <p>これにチェックを入れるかどうかは、ワークフローによります。</p>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="include-hidden-in-prefabs">Include hidden in Prefabs<a href="#include-hidden-in-prefabs" class="hash-link" aria-label="Include hidden in Prefabs への直接リンク" title="Include hidden in Prefabs への直接リンク">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="プレハブ内の非表示項目を含める">プレハブ内の非表示項目を含める<a href="#プレハブ内の非表示項目を含める" class="hash-link" aria-label="プレハブ内の非表示項目を含める への直接リンク" title="プレハブ内の非表示項目を含める への直接リンク">​</a></h4>
 <p>このオプションは、プレハブインスタンスの上書きによってソースプレハブ内のアセットが非表示になる場合の扱いを決定します。</p>
 <ul>
 <li>チェックされている場合、ターゲットオブジェクトが階層内で上書きして使用していない場合でも、ソースプレハブ内で参照されているアセットが含まれます。</li>
@@ -119,14 +119,14 @@
 </ul>
 <blockquote>
 <p><img decoding="async" loading="lazy" alt="simplehidden.png" src="/ja/assets/images/simplehidden-25e3496ae54831559d090d1b8992a46c.png" width="511" height="527" class="img_ev3q"></p>
-<p>デフォルトでは、 <em>Include hidden in Prefabs</em> はチェックされていません。チェックを外したままにすると、エクスポートされるアセットの数が劇的に少なくなることがあります。</p>
+<p>デフォルトでは、 <em>プレハブ内の非表示項目を含める</em> はチェックされていません。チェックを外したままにすると、エクスポートされるアセットの数が劇的に少なくなることがあります。</p>
 <p>この例では、マテリアルを NonToon に変換してアバターを修正しました。</p>
 <ul>
 <li>プレハブソースは、アバターがそれらのマテリアルをアクティブに使用していないにもかかわらず、変換前の以前のマテリアルを依然として参照しています。</li>
-<li><em>Include hidden in Prefabs</em> のチェックを外したままにすることで、それらの古いマテリアルはエクスポートに含まれず、NonToon マテリアルのみ が含まれます。</li>
+<li><em>プレハブ内の非表示項目を含める</em> のチェックを外したままにすることで、それらの古いマテリアルはエクスポートに含まれず、NonToon マテリアルのみが含まれます。</li>
 </ul>
 </blockquote>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="culling-カリング">Culling (カリング)<a href="#culling-カリング" class="hash-link" aria-label="Culling (カリング) への直接リンク" title="Culling (カリング) への直接リンク">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="カリング">カリング<a href="#カリング" class="hash-link" aria-label="カリング への直接リンク" title="カリング への直接リンク">​</a></h4>
 <ul>
 <li>アセットタイプをチェックすると、そのアセットタイプが含まれ、そのアセットタイプによって参照される他のアセットも含まれます。</li>
 <li>アセットタイプのチェックを外すと、そのアセットタイプは含まれず、そのアセットタイプによって参照されるアセットも含まれません。</li>
@@ -135,7 +135,7 @@
 <p><img decoding="async" loading="lazy" alt="culling.png" src="/ja/assets/images/culling-e4963ff74545b948748b6515079931e2.png" width="740" height="542" class="img_ev3q"></p>
 <p><em>Animator Controller</em> のチェックを外すと、エクスポートから <em>Animator Controller</em> が削除されるだけでなく、それらの <em>Animator Controller</em> で使用されている <em>Blend Tree</em> アセットや <em>Animation Clip</em> アセットもエクスポートから削除されます。</p>
 </blockquote>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="components-コンポーネント">Components (コンポーネント)<a href="#components-コンポーネント" class="hash-link" aria-label="Components (コンポーネント) への直接リンク" title="Components (コンポーネント) への直接リンク">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="コンポーネント">コンポーネント<a href="#コンポーネント" class="hash-link" aria-label="コンポーネント への直接リンク" title="コンポーネント への直接リンク">​</a></h4>
 <ul>
 <li>コンポーネントをチェックすると、それらのコンポーネントによって参照されるアセットが含まれ、それらのアセットによって参照される他のすべてのアセットも含まれます。</li>
 <li>コンポーネントのチェックを外すと、それらのコンポーネントによって参照されるアセットは含まれず、それらのアセットによって参照されるアセットも含まれません。</li>
@@ -144,11 +144,11 @@
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="どのアセットが他のアセットを必要としているかを確認する">どのアセットが他のアセットを必要としているかを確認する<a href="#どのアセットが他のアセットを必要としているかを確認する" class="hash-link" aria-label="どのアセットが他のアセットを必要としているかを確認する への直接リンク" title="どのアセットが他のアセットを必要としているかを確認する への直接リンク">​</a></h2>
 <p><em>Transfer Assistant</em> のメインパネルには、オブジェクトの依存関係ツリーが表示されます。このツリーは、ルートが子に依存している（＝子がオブジェクトの依存先である）という形で表示されます。</p>
 <p>マテリアルやテクスチャなどの多くのオブジェクトは複数回使用されるため、複数の親を持つことになります。その場合、ツリー内に同じオブジェクトが複数回表示されます。</p>
-<p>簡潔にするため、各オブジェクトはその子を一度だけ表示します。2回目以降の出現には、右側に &quot;<em>(Already shown)</em>&quot; というテキストが追加されます。</p>
+<p>簡潔にするため、各オブジェクトはその子を一度だけ表示します。2回目以降の出現には、右側に &quot;<em>(表示済み)</em>&quot; というテキストが追加されます。</p>
 <p>オブジェクトをクリックすると、そのオブジェクトの場所がハイライトされます。</p>
 <p>以下の機能を使用して、なぜ一部のオブジェクトが必要なのかを確認し、ナビゲートしてください：</p>
 <ul>
-<li><strong>特定のオブジェクトにある虫眼鏡アイコン</strong>を押すと、そのオブジェクトにフォーカスします。<br>これを使用して、それがどのアセットに依存しているか、またどのアセットがそれに依存しているか  を理解します。</li>
+<li><strong>特定のオブジェクトにある虫眼鏡アイコン</strong>を押すと、そのオブジェクトにフォーカスします。<br>これを使用して、それがどのアセットに依存しているか、またどのアセットがそれに依存しているかを理解します。</li>
 <li><strong>サイドバーにある虫眼鏡アイコン</strong>を押すと、それらのアセットタイプにフォーカスします。<br>これを使用して、それらのアセットタイプを必要とするすべての依存関係を可視化します。</li>
 <li><strong>検索フィールド</strong>にテキストを入力して、特定のアセット名を検索します。</li>
 </ul>
@@ -157,7 +157,7 @@
 <div class="theme-admonition theme-admonition-note admonition_xJq3 alert alert--secondary"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path></svg></span>注記</div><div class="admonitionContent_BuS1"><p>色分けは以下の通りです：</p><ul>
 <li>グレーアウトされているオブジェクトのほとんどはアセットではありません。例えば、プレハブではないコンポーネントやGameObjectなどです。コンポーネントはグレーアウトされた黄色で表示されます。</li>
 <li>青色のオブジェクトは、プロジェクト内にファイルとして存在するプレハブアセットである <em>Prefab Sources</em> または <em>Prefab Models</em> です。</li>
-<li>  緑色のオブジェクトは、シーンオブジェクトである <em>Prefab Instances</em> です。これらはシーン内、または他のプレハブ内に存在する可能性があります。</li>
+<li>緑色のオブジェクトは、シーンオブジェクトである <em>Prefab Instances</em> です。これらはシーン内、または他のプレハブ内に存在する可能性があります。</li>
 </ul><p><em>Prefab Instances</em> は、それが依存している <em>Prefab Source</em> と同じ名前であることが多いため、読み間違える可能性があります。そのため、色分けされています。</p></div></div>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="書き出しの準備をしてどのファイルが書き出されるかプレビューする">書き出しの準備をして、どのファイルが書き出されるかプレビューする<a href="#書き出しの準備をしてどのファイルが書き出されるかプレビューする" class="hash-link" aria-label="書き出しの準備をして、どのファイルが書き出されるかプレビューする への直接リンク" title="書き出しの準備をして、どのファイルが書き出されるかプレビューする への直接リンク">​</a></h2>
 <p>サイドバーで <em>エクスポートの準備...</em> ボタンを押します。これにより、 <em>Export .unitypackage</em> ウィンドウに似た新しいウィンドウが開きます。</p>
@@ -168,21 +168,21 @@
 <li><strong>Deselect</strong>: そのタイプのアセットの選択を解除し、エクスポートから除外します。</li>
 <li><strong>Deselect and Hide</strong>: そのタイプのアセットの選択を解除し、Exportウィンドウから削除します。<!-- -->
 <ul>
-<li><em>注: Deselect and Hide   を押しても、それらのアセットによって参照されているアセットの選択は解除<strong>されません</strong>。そのため、Transfer Assets ウィンドウのカリング（Culling）オプションとは動作が異なります。</em></li>
+<li><em>注: Deselect and Hide を押しても、それらのアセットによって参照されているアセットの選択は解除<strong>されません</strong>。そのため、Transfer Assets ウィンドウのカリング（Culling）オプションとは動作が異なります。</em></li>
 </ul>
 </li>
 </ul>
 <p><img decoding="async" loading="lazy" alt="export_ja.png" src="/ja/assets/images/export_ja-35e19783a881295f4a81ec69ee7e3615.png" width="1268" height="664" class="img_ev3q"></p>
 <div class="theme-admonition theme-admonition-warning admonition_xJq3 alert alert--warning"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>警告</div><div class="admonitionContent_BuS1"><p><em>Transfer Assistant</em> ウィンドウで行った変更は、 <em>Prepare Export</em> ウィンドウには反映されません：</p><p>依存関係を絞り込んだり広げたりした場合は、再度 <em>エクスポートの準備...</em> ボタンを押す必要があります。</p></div></div>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="なぜ予期しないアセットファイルが必要とされているのかを突き止める">なぜ予期しないアセットファイルが必要とされているのかを突き止める<a href="#なぜ予期しないアセットファイルが必要とされているのかを突き止める" class="hash-link" aria-label="なぜ予期しないアセットファイルが必要とされているのかを突き止める への直接リンク" title="なぜ予期しないアセットファイルが必要とされているのかを突き止める への直接リンク">​</a></h2>
-<p><em>Prepare Export</em> ウィンドウで、なぜエクスポートされるのかわからないファイルが表示されることがあります。</p>
+<p><em>Prepare Export</em> ウィンドウで 、なぜエクスポートされるのかわからないファイルが表示されることがあります。</p>
 <p>その場合は、 <em>Prepare Export</em> ウィンドウの右側にある<strong>虫眼鏡アイコン</strong>を押してください。これにより、 <em>Transfer Assistant</em> ウィンドウ内でそのアセットが検索されます。</p>
 <p>この情報を使用して、階層内のどのオブジェクトがそのアセットを必要としているかを突き止めることができます。</p>
 <div class="theme-admonition theme-admonition-tip admonition_xJq3 alert alert--success"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path></svg></span>ヒント</div><div class="admonitionContent_BuS1"><p>ファイルをエクスポートするつもりがなくても、 <em>エクスポートの準備...</em> ボタンを押すことができます。</p><p><em>Prepare Export</em> ウィンドウは依存関係をファイルやフォルダとして表示するため、予期しないアセットの場所を特定するのに役立つ情報となります。</p></div></div>
 <p><img decoding="async" loading="lazy" alt="exportexplain.png" src="/ja/assets/images/exportexplain-fad61b94ee002309b3639fc2b5ef4c22.png" width="1267" height="517" class="img_ev3q"></p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="選択したアセットを書き出す">選択したアセットを書き出す<a href="#選択したアセットを書き出す" class="hash-link" aria-label="選択したアセットを書き出す への直接リンク" title="選択したアセットを書き出す への直接リンク">​</a></h2>
 <p><em>Prepare Export</em> ウィンドウの下部付近にある <em>ファイルにエクスポート...</em> ボタンを押して、選択したアセットを任意のファイルにエクスポートします。</p>
-<p>または、 <em>クイックエクスポート</em> ボタンを押して、 <code>export.unitypackage</code> ファイルにエクスポート（または上書き）します。</p></div></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="ドキュメントページ"></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#このツールが適していないケース" class="table-of-contents__link toc-highlight">このツールが適していないケース</a></li><li><a href="#ダウンロード" class="table-of-contents__link toc-highlight">ダウンロード</a></li><li><a href="#使い方" class="table-of-contents__link toc-highlight">使い方</a></li><li><a href="#分析するアセットを選択する" class="table-of-contents__link toc-highlight">分析するアセットを選択する</a><ul><li><a href="#プレハブを分析する" class="table-of-contents__link toc-highlight">プレハブを分析する</a></li><li><a href="#シーンを分析する" class="table-of-contents__link toc-highlight">シーンを分析する</a></li><li><a href="#その他の詳細" class="table-of-contents__link toc-highlight">その他の詳細</a></li></ul></li><li><a href="#ウィンドウの言語を変更する" class="table-of-contents__link toc-highlight">ウィンドウの言語を変更する</a></li><li><a href="#保持したいアセット参照を絞り込む" class="table-of-contents__link toc-highlight">保持したいアセット参照を絞り込む</a></li><li><a href="#どのアセットが他のアセットを必要とし  ているかを確認する" class="table-of-contents__link toc-highlight">どのアセットが他のアセットを必要としているかを確認する</a></li><li><a href="#書き出しの準備をしてどのファイルが書き出されるかプレビューする" class="table-of-contents__link toc-highlight">書き出しの準備をして、どのファイルが書き出されるかプレビューする</a></li><li><a href="#なぜ予期しないアセットファイルが必要とされているのかを突き止める" class="table-of-contents__link toc-highlight">なぜ予期しないアセットファイルが必要とされているのかを突き止める</a></li><li><a href="#選択したアセットを書き出す" class="table-of-contents__link toc-highlight">選択したアセットを書き出す</a></li></ul></div></div></div></div></main></div></div></div><footer class="footer footer--dark"><div class="centerline_SA5j" data-theme="dark"><p>Thank you to all of my supporters on Patreon ⭐</p><div class="card element_KzhA sp_qcMM k10_P0Dq ias_qO18 spias_HNS1">☀️ <!-- -->Lyuma</div>
+<p>または、 <em>クイックエクスポート</em> ボタンを押して、 <code>export.unitypackage</code> ファイルにエクスポート（または上書き）します。</p></div></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="ドキュメントページ"></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#このツールが適していないケース" class="table-of-contents__link toc-highlight">このツールが適していないケース</a></li><li><a href="#ダウンロード" class="table-of-contents__link toc-highlight">ダウンロード</a></li><li><a href="#使い方" class="table-of-contents__link toc-highlight">使い方</a></li><li><a href="#分析するアセットを選択する" class="table-of-contents__link toc-highlight">分析するアセットを選択する</a><ul><li><a href="#プレハブを分析する" class="table-of-contents__link toc-highlight">プレハブを分析する</a></li><li><a href="#シーンを分析する" class="table-of-contents__link toc-highlight">シーンを分析する</a></li><li><a href="#その他の詳細" class="table-of-contents__link toc-highlight">その他の詳細</a></li></ul></li><li><a href="#ウィンドウの言語を変更する" class="table-of-contents__link toc-highlight">ウィンドウの言語を変更する</a></li><li><a href="#保持したいアセット参照を絞り込む" class="table-of-contents__link toc-highlight">保持したいアセット参照を絞り込む</a></li><li><a href="#どのアセ  ットが他のアセットを必要としているかを確認する" class="table-of-contents__link toc-highlight">どのアセットが他のアセットを必要としているかを確認する</a></li><li><a href="#書き出しの準備をしてどのファイルが書き出されるかプレビューする" class="table-of-contents__link toc-highlight">書き出しの準備をして、どのファイルが書き出されるかプレビューする</a></li><li><a href="#なぜ予期しないアセットファイルが必要とされているのかを突き止める" class="table-of-contents__link toc-highlight">なぜ予期しないアセットファイルが必要とされているのかを突き止める</a></li><li><a href="#選択したアセットを書き出す" class="table-of-contents__link toc-highlight">選択したアセットを書き出す</a></li></ul></div></div></div></div></main></div></div></div><footer class="footer footer--dark"><div class="centerline_SA5j" data-theme="dark"><p>Thank you to all of my supporters on Patreon ⭐</p><div class="card element_KzhA sp_qcMM k10_P0Dq ias_qO18 spias_HNS1">☀️ <!-- -->Lyuma</div>
 <div class="card element_KzhA sp_qcMM k10_P0Dq ias_qO18 spias_HNS1">☀️ <!-- -->Towneh</div>
 <div class="card element_KzhA sp_qcMM k10_P0Dq ias_qO18 spias_HNS1">☀️ <!-- -->foobar</div>
 <div class="card element_KzhA sp_qcMM k5_NYOb ias_qO18 spias_HNS1">🌟 <!-- -->bd_</div>
