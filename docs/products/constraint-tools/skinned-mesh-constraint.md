@@ -32,7 +32,7 @@ This does **not** follow the movement of blendshapes, and does **not** follow th
 
 ## Download
 
-The tool is free to download using ALCOM.
+The tool is free to download using ALCOM. It can also be [downloaded on Booth.pm](https://hai-vr.booth.pm/items/8628778).
 
 ### ALCOM
 
