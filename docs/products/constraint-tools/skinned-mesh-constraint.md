@@ -23,7 +23,7 @@ This does **not** follow the movement of blendshapes, and does **not** follow th
 
 :::tip[Compatibility notes]
 - It has been tested to work on Unity 2020, Unity 2022, and Unity 6, and should work on newer versions.
-- It is confirmed to work in <HaiTag requiresVRChat={true} short={true} />, and <HaiTag requiresBasis={true} short={true} /> projects. Other applications may be compatible.
+- It is confirmed to work in <HaiTag requiresVRChat={true} short={true} /> and <HaiTag requiresBasis={true} short={true} /> projects. Other applications may be compatible.
 :::
 
 <HaiVideo src="../img/oSEDSUFVRj.mp4"></HaiVideo>
