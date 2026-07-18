@@ -17,13 +17,11 @@ Beaucoup de ces produits peuvent être installés en utilisant notre liste de d�
 <br />
 <br />
 
-:::danger
-Le **VRChat Creator Companion n'est plus officiellement supporté** dans cette liste de dépôts.
+:::info
+Le **gestionnaire de paquets [ALCOM](https://vrc-get.anatawa12.com/alcom/)** est le gestionnaire de paquets recommandé pour être utilisé avec cette liste de dépôts.
 
-Je garantis uniquement que ce dépôt fonctionnera avec le **gestionnaire de paquets [ALCOM](https://vrc-get.anatawa12.com/alcom/)**,
-qui contient des corrections pour de nombreux bugs affectant les créateurs de paquets signalés dans le *VRChat Creator Companion* depuis des années.
-
-Pour plus d'informations, lisez le [billet de mise à jour (en anglais)](/updates/2024/12/23/p0).
+Certains gestionnaires de paquets (tels que *VCC*) sont connus pour être défectueux et peuvent parfois être incapables d'installer correctement les mises à jour.
+Utilisez des gestionnaires de paquets défectueux à vos propres risques. Pour plus d'informations, [lisez ce billet (en anglais)](/updates/2024/12/23/p0).
 :::
 
 -----

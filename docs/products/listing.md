@@ -17,13 +17,11 @@ Many of these products can be installed using our package repository listing.
 <br />
 <br />
 
-:::danger
-The **VRChat Creator Companion is no longer officially supported** in this repository listing.
+:::info
+The **[ALCOM](https://vrc-get.anatawa12.com/alcom/) package manager** is the recommended package manager to be used with this repository listing.
 
-I will only provide a guarantee that this repository will work with the **[ALCOM](https://vrc-get.anatawa12.com/alcom/) package manager**,
-which contains fixes to many bugs affecting package creators that had been reported in the *VRChat Creator Companion* for years.
-
-For more information, read the [update post](/updates/2024/12/23/p0).
+Some package managers (such as *VCC*) have been known to be defective and may sometimes be unable to install updates properly.
+Use defective package managers at your own risk. For more information, [read this post](/updates/2024/12/23/p0).
 :::
 
 -----

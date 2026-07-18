@@ -17,13 +17,11 @@ import {HaiTag} from "/src/components/HaiTag";
 <br />
 <br />
 
-:::danger
-此儲存庫列表**不再官方支援 VRChat Creator Companion**。
+:::info
+**[ALCOM](https://vrc-get.anatawa12.com/alcom/) 套件管理器** 是推薦與此儲存庫列表配合使用的套件管理器。
 
-我僅保證此儲存庫能夠與 **[ALCOM](https://vrc-get.anatawa12.com/alcom/) 套件管理器**配合使用。
-ALCOM 包含了對多年來在 *VRChat Creator Companion* 中報告的、影響套件建立者的許多錯誤的修復。
-
-欲了解更多資訊，請閱讀[更新公告（英文）](/updates/2024/12/23/p0)。
+已知某些套件管理器（如 *VCC*）存在缺陷，有時可能無法正確安裝更新。
+使用存在缺陷的套件管理器需自擔風險。欲了解更多資訊，請閱讀[這篇文章（英文）](/updates/2024/12/23/p0)。
 :::
 
 -----

@@ -17,13 +17,11 @@ import {HaiTag} from "/src/components/HaiTag";
 <br />
 <br />
 
-:::danger
-이 저장소 목록에서 **VRChat Creator Companion은 더 이상 공식적으로 지원되지 않습니다**.
+:::info
+**[ALCOM](https://vrc-get.anatawa12.com/alcom/) 패키지 관리자**는 이 저장소 목록과 함께 사용하는 것을 권장하는 패키지 관리자입니다.
 
-이 저장소는 **[ALCOM](https://vrc-get.anatawa12.com/alcom/) 패키지 관리자**에서만 작동함을 보장합니다.
-ALCOM에는 수년 동안 *VRChat Creator Companion*에서 보고된 패키지 제작자에게 영향을 미치는 많은 버그에 대한 수정 사항이 포함되어 있습니다.
-
-자세한 내용은 [업데이트 게시물(영어)](/updates/2024/12/23/p0)을 읽어보십시오.
+일부 패키지 관리자(*VCC* 등)는 결함이 있는 것으로 알려져 있으며, 때로는 업데이트를 제대로 설치하지 못할 수 있습니다.
+결함이 있는 패키지 관리자를 사용하는 것은 사용자의 책임입니다. 자세한 내용은 [이 게시물(영어)](/updates/2024/12/23/p0)을 읽어보십시오.
 :::
 
 -----
