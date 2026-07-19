@@ -1,5 +1,4 @@
 ---
-unlisted: true
 displayed_sidebar: newProductsSidebar
 ---
 import {HaiTags} from "/src/components/HaiTags";
@@ -52,6 +51,8 @@ This tool can be downloaded on [Booth.pm](https://hai-vr.booth.pm/items/8628836)
 It can also be installed through ALCOM:
 - Use this link to **[install our listing to ALCOM](vcc://vpm/addRepo?url=https://hai-vr.github.io/vpm-listing/index.json)**.
 - Add *Haï ~ Transfer Assistant* to your project using ALCOM.
+
+<HaiSupport/>
 
 ## How to use
 

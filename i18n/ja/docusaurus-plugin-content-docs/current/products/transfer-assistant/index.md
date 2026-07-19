@@ -1,5 +1,4 @@
 ---
-unlisted: true
 displayed_sidebar: newProductsSidebar
 ---
 import {HaiTags} from "/src/components/HaiTags";
@@ -51,7 +50,7 @@ ALCOM経由でインストールすることもできます：
 - このリンクを使用して**[リポジトリリストをALCOMにインストール](vcc://vpm/addRepo?url=https://hai-vr.github.io/vpm-listing/index.json)**してください。
 - ALCOMを使用して *Haï ~ Transfer Assistant* をプロジェクトに追加してください。
 
-<HaiLocalization languages={['en', 'ja']} />
+<HaiSupport/>
 
 ## 使い方
 

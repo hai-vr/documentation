@@ -1,5 +1,4 @@
 ---
-unlisted: true
 displayed_sidebar: newProductsSidebar
 ---
 import {HaiTags} from "/src/components/HaiTags";
@@ -51,7 +50,7 @@ import {HaiVideo} from "/src/components/HaiVideo";
 - 使用此連結 **[將我們的列表安裝到 ALCOM](vcc://vpm/addRepo?url=https://hai-vr.github.io/vpm-listing/index.json)**。
 - 使用 ALCOM 將 *Haï ~ Transfer Assistant* 添加到您的項目中。
 
-<HaiLocalization languages={['en', 'ja']} />
+<HaiSupport/>
 
 ## 如何使用
 
