@@ -4,10 +4,25 @@
         <title>Haï~ Blog</title>
         <link>https://docs.hai-vr.dev/updates</link>
         <description>Haï~ Blog</description>
-        <lastBuildDate>Thu, 21 May 2026 10:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 19 Jul 2026 14:05:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[☀️ Transfer Assistant]]></title>
+            <link>https://docs.hai-vr.dev/updates/2026/07/19/p0</link>
+            <guid>https://docs.hai-vr.dev/updates/2026/07/19/p0</guid>
+            <pubDate>Sun, 19 Jul 2026 14:05:00 GMT</pubDate>
+            <description><![CDATA[I am releasing Transfer Assistant. This tool will assist you when you want to use the .unitypackage export function to transfer assets from one project]]></description>
+            <content:encoded><![CDATA[<div><p><span></span></p><div class="hai_tag_ZcC4 hai_tag_universal_aJnK"><span class="hai_icon_Cqd7" role="img" aria-label="universal" style="background-image:url(/assets/images/universal-9aab57cda5764d6d88598a54db7652ab.png)"></span> <!-- -->Any Platform</div><p></p></div>
+<p>I am releasing <em>Transfer Assistant</em>. This tool will assist you when you want to use the <em>.unitypackage</em> export function to <strong>transfer assets from one project
+to another project</strong>, while stripping assets that you deem unnecessary.</p>
+<p><img decoding="async" loading="lazy" alt="general_en.png" src="https://docs.hai-vr.dev/assets/images/general_en-e982fda174af5dace92f994dc355dd78.png" width="1323" height="700" class="img_ev3q"></p>
+<p>This tool will deliberately ignore some asset references, keeping only assets that you actively need.</p>
+<p>If an unexpected asset is being included in the export, the <em>Transfer Assistant</em> user interface can help you locate which object or component depends on it.</p>
+<p>The intended use for this tool is to export an avatar project file between different games.</p>
+<p>🗒️ <a href="https://docs.hai-vr.dev/docs/products/transfer-assistant">Open documentation</a></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[🔺 HVR Basis Vixxy]]></title>
             <link>https://docs.hai-vr.dev/updates/2026/05/21</link>
@@ -521,22 +536,6 @@ but <strong>contains fixes</strong> to many bugs that had been reported in the <
 </li>
 </ul>
 <p>🔍 <a href="https://docs.hai-vr.dev/docs/research/articles">View articles</a></p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[✨ Transfer Blendshape (Starmesh V1.7.0)]]></title>
-            <link>https://docs.hai-vr.dev/updates/2024/12/06/p0</link>
-            <guid>https://docs.hai-vr.dev/updates/2024/12/06/p0</guid>
-            <pubDate>Fri, 06 Dec 2024 00:00:00 GMT</pubDate>
-            <description><![CDATA[✨ New component: Transfer Blendshape]]></description>
-            <content:encoded><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-new-component-transfer-blendshape">✨ New component: Transfer Blendshape<a href="https://docs.hai-vr.dev/updates/2024/12/06/p0#-new-component-transfer-blendshape" class="hash-link" aria-label="Direct link to ✨ New component: Transfer Blendshape" title="Direct link to ✨ New component: Transfer Blendshape">​</a></h3>
-<p>The <em>Starmesh Op. Transfer Blendshape</em> component <strong>attempts</strong> to create a blendshape on a costume that mimics the movement
-of a blendshape from another mesh.</p>
-<p>Try using this to transfer nail deformations, chest deformations, or hip deformations (i.e. <code>Hip_big</code>) from a base mesh to a costume.</p>
-<p>Combine it with other Selectors to limit the areas affected by the transferred deformations.</p>
-<div class="theme-admonition theme-admonition-warning admonition_xJq3 alert alert--warning"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>warning</div><div class="admonitionContent_BuS1"><p><strong>This component may not always produce good results.</strong></p><p>In addition, if you use other tools that attempt to fit a costume on an avatar it was not designed for (i.e. fitting a costume made for Manuka on a Lime base body),
-it will probably not work as this operator expects the mesh data to overlap, regardless of how bones are arranged in the scene.</p></div></div>
-<video controls="" muted="" width="816"><source src="https://large.docs.cdn.hai-vr.dev/assets/docs/2024-12-06-transfer-blendshape-f.mp4"></video>
-<p>🗒️ <a href="https://docs.hai-vr.dev/docs/products/starmesh/operators/transfer-blendshape">Open documentation</a></p>]]></content:encoded>
         </item>
     </channel>
 </rss>
