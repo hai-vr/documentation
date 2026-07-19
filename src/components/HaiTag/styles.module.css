@@ -72,3 +72,9 @@
   background-color: var(--hai-startingfrom-label);
   padding: 0.5em 1em 0.5em 1em;
 }
+.hai_tag_custom {
+  background-color: white !important;
+  color: black !important;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  padding: 0.5em 1em 0.5em 1em;
+}

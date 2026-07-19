@@ -6,4 +6,6 @@ import {HaiVideo} from "/src/components/HaiVideo";
 
 ## 1.0.0
 
+First release.
+
 ...

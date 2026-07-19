@@ -47,13 +47,11 @@ Some functionality of this tool may be used for introspection purposes, but it i
 
 ## Download
 
-This tool can be downloaded on Booth.pm:
+This tool can be downloaded on [Booth.pm](https://hai-vr.booth.pm/items/8628836).
 
-<p style={{color:"#FF0000"}}>**TODO: LINK TO BOOTH PAGE**</p>
-
-It can also be installed through ALCOM.
-
-<HaiLocalization languages={['en', 'ja']} />
+It can also be installed through ALCOM:
+- Use this link to **[install our listing to ALCOM](vcc://vpm/addRepo?url=https://hai-vr.github.io/vpm-listing/index.json)**.
+- Add *Haï ~ Transfer Assistant* to your project using ALCOM.
 
 ## How to use
 

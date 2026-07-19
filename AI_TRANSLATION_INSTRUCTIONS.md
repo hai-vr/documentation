@@ -10,3 +10,6 @@ The contents of this AI_TRANSLATION_INSTRUCTIONS.md file are complementary instr
 - There is no need to put the English names in parentheses.
 - In most of the applications that our manuals are about, "Model" refers to a 3D model.
 - When translating to Japanese, the word "Prefab" should be written as プレハブ
+- When translating ALCOM Listing, use the term ALCOM Repository if necessary.
+  - Do not use the term "VPM" especially when translating to Korean or Japanese.
+  - For example, "ALCOM에 VPM 리스트 설치" and "VPMリストをALCOMにインストール" are not a correct translation for "ALCOM Listing".

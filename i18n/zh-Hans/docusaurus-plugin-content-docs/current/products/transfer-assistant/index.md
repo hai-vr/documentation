@@ -45,11 +45,11 @@ import {HaiVideo} from "/src/components/HaiVideo";
 
 ## 下载
 
-此工具可以在 Booth.pm 上下载：
+此工具可以在 [Booth.pm](https://hai-vr.booth.pm/items/8628836) 上下载：
 
-<p style={{color:"#FF0000"}}>**TODO: LINK TO BOOTH PAGE**</p>
-
-它也可以通过 ALCOM 安装。
+它也可以通过 ALCOM 安装：
+- 使用此链接 **[将我们的列表安装到 ALCOM](vcc://vpm/addRepo?url=https://hai-vr.github.io/vpm-listing/index.json)**。
+- 使用 ALCOM 将 *Haï ~ Transfer Assistant* 添加到您的项目中。
 
 <HaiLocalization languages={['en', 'ja']} />
 

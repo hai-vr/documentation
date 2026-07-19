@@ -45,11 +45,11 @@ Certaines fonctionnalités de cet outil peuvent être utilisées à des fins d'i
 
 ## Téléchargement
 
-Cet outil peut être téléchargé sur Booth.pm :
+Cet outil peut être téléchargé sur [Booth.pm](https://hai-vr.booth.pm/items/8628836) :
 
-<p style={{color:"#FF0000"}}>**TODO: LINK TO BOOTH PAGE**</p>
-
-Il peut également être installé via ALCOM.
+Il peut également être installé via ALCOM :
+- Utilisez ce lien pour **[installer notre listing sur ALCOM](vcc://vpm/addRepo?url=https://hai-vr.github.io/vpm-listing/index.json)**.
+- Ajoutez *Haï ~ Transfer Assistant* à votre projet en utilisant ALCOM.
 
 <HaiLocalization languages={['en', 'ja']} />
 
