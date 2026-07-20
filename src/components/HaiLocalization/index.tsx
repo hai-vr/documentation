@@ -94,7 +94,7 @@ export default function HaiLocalization({ languages, children }: Props): JSX.Ele
           ))}
         </ul>
         {aiDisclaimer[currentLocale] && (
-          <div className="margin-top--sm" style={{ fontSize: '0.9em', opacity: 0.8 }}>
+          <div className="margin-top--sm" style={{ fontSize: '0.75em', opacity: 0.8 }}>
             {aiDisclaimer[currentLocale]}
           </div>
         )}
