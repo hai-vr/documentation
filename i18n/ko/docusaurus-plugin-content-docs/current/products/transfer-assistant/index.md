@@ -215,7 +215,7 @@ ALCOM을 통해서도 설치할 수 있습니다:
 - **Select**: 해당 타입의 에셋을 선택하여 내보내기에 포함합니다.
 - **Deselect**: 해당 타입의 에셋 선택을 해제하여 내보내기에서 제외합니다.
 - **Deselect and Hide**: 해당 타입의 에셋 선택을 해제하고 내보내기 창에서 제거합니다.
-    - *참고: Deselect and Hide를 눌러도 해당 에셋들이 참조하는 에셋들의 선택이 해제되지는 않으므로, Transfer Assets 창의 Culling 옵션과는 다릅니다.*
+    - *참고: Deselect and Hide를 눌러도 해당 에셋들이 참조하는 에셋들의 선택이 해제되지는 않으므로, Transfer Assistant 창의 Culling 옵션과는 다릅니다.*
 
 ![export_ko.png](/assets/docs/products/transfer-assistant/export_ko.png)
 

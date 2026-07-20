@@ -220,7 +220,7 @@ The sidebar of that window has buttons for each asset type. These **do not** hav
 - **Select**: Selects the assets of this type, which will include them in the export.
 - **Deselect**: Deselects the assets of this type, which will exclude them from the export.
 - **Deselect and Hide**: Deselects the assets of this type and removes them from the Export window.
-    - *Note: Pressing Deselect and Hide will **not** deselect the assets that are referenced by those assets, so this is different from the Culling option from the Transfer Assets window.*
+    - *Note: Pressing Deselect and Hide will **not** deselect the assets that are referenced by those assets, so this is different from the Culling option from the Transfer Assistant window.*
 
 ![export_en.png](/assets/docs/products/transfer-assistant/export_en.png)
 

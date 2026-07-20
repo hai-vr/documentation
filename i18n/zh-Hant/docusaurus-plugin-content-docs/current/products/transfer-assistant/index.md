@@ -215,7 +215,7 @@ import {HaiVideo} from "/src/components/HaiVideo";
 - **Select**: 選擇該類型的資源，這會將它們包含在匯出中。
 - **Deselect**: 取消選擇該類型的資源，這會將它們從匯出中排除。
 - **Deselect and Hide**: 取消選擇該類型的資源並將其從“匯出”窗口中刪除。
-    - *注意：按下 Deselect and Hide 將**不會**取消選擇被這些資源引用的資源，因此這與 Transfer Assets 窗口中的 Culling 選項不同。*
+    - *注意：按下 Deselect and Hide 將**不會**取消選擇被這些資源引用的資源，因此這與 Transfer Assistant 窗口中的 Culling 選項不同。*
 
 ![export_zh-tw.png](/assets/docs/products/transfer-assistant/export_zh-tw.png)
 

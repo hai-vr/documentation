@@ -216,7 +216,7 @@ ALCOM経由でインストールすることもできます：
 - **Select**: そのタイプのアセットを選択し、エクスポートに含めます。
 - **Deselect**: そのタイプのアセットの選択を解除し、エクスポートから除外します。
 - **Deselect and Hide**: そのタイプのアセットの選択を解除し、Exportウィンドウから削除します。
-    - *注: Deselect and Hide を押しても、それらのアセットによって参照されているアセットの選択は解除**されません**。そのため、Transfer Assets ウィンドウのカリング（Culling）オプションとは動作が異なります。*
+    - *注: Deselect and Hide を押しても、それらのアセットによって参照されているアセットの選択は解除**されません**。そのため、Transfer Assistant ウィンドウのカリング（Culling）オプションとは動作が異なります。*
 
 ![export_ja.png](/assets/docs/products/transfer-assistant/export_ja.png)
 
