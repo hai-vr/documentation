@@ -13,5 +13,23 @@
   "hai.starting_from": {
     "message": "開始: ",
     "description": "Starting from"
+  },
+  "hai.support.info": {
+    "message": "あなたのサポートが、この無料ツールの提供を可能にしています"
+  },
+  "hai.support.thanks": {
+    "message": "ツール制作を継続させてくださっているPatreonサポーターの皆様に感謝します ⭐"
+  },
+  "hai.support.patreon_link": {
+    "message": "もしこの無料ツールがお役に立ちましたら、{link}して制作のサポートをお願いします。"
+  },
+  "hai.support.patreon_link_text": {
+    "message": "Patreonにアクセス"
+  },
+  "hai.support.rewards": {
+    "message": "{link}も入手できます。"
+  },
+  "hai.support.rewards_link_text": {
+    "message": "Patreonのリワードとして追加のツール"
   }
 }
