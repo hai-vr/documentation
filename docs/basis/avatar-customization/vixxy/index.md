@@ -15,7 +15,7 @@ import HaiLocalization from "/src/components/HaiLocalization";
 <HaiTag requiresBasis={true} />
 </HaiTags>
 
-<HaiLocalization languages={['en', 'ja']} />
+<HaiLocalization languages={['en', 'ja']} applicationIsLocalized={false} />
 
 **Vixxy** is a user-accessible interface to toggle or trigger effects on your avatar in Basis Framework projects.
 

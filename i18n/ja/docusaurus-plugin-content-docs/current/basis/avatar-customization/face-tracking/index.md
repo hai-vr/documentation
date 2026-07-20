@@ -14,7 +14,7 @@ import HaiLocalization from "/src/components/HaiLocalization";
 <HaiTag requiresBasis={true} />
 </HaiTags>
 
-<HaiLocalization languages={['en', 'ja']} />
+<HaiLocalization languages={['en', 'ja']} applicationIsLocalized={false} />
 
 アバターにフェイストラッキング用に設計されたブレンドシェイプがある場合、Basisがそれらを認識できるようにコンポーネントを追加する必要があります。
 

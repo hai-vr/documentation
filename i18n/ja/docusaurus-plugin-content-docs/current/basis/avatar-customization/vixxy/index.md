@@ -15,7 +15,7 @@ import HaiLocalization from "/src/components/HaiLocalization";
 <HaiTag requiresBasis={true} />
 </HaiTags>
 
-<HaiLocalization languages={['en', 'ja']} />
+<HaiLocalization languages={['en', 'ja']} applicationIsLocalized={false} />
 
 **Vixxy**は、Basis Frameworkプロジェクトにおいて、アバターのエフェクトを切り替えたりトリガーしたりするための、ユーザーがアクセス可能なインターフェースです。
 

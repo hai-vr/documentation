@@ -13,7 +13,7 @@ import HaiLocalization from "/src/components/HaiLocalization";
 <HaiTag isUniversal={true} />
 </HaiTags>
 
-<HaiLocalization languages={['en', 'ja']} />
+<HaiLocalization languages={['en', 'ja']} applicationIsLocalized={true} />
 
 Creates a parent constraint that is weighted to move similarly to the closest polygon of a Skinned Mesh Renderer.
 

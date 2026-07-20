@@ -11,7 +11,7 @@ import HaiLocalization from "/src/components/HaiLocalization";
 <HaiTag requiresBasis={true} short={true} />
 </HaiTags>
 
-<HaiLocalization languages={['en', 'ja']} />
+<HaiLocalization languages={['en', 'ja']} applicationIsLocalized={false} />
 
 *Lightbox Viewer* can work on URP projects in Unity 6.4.
 

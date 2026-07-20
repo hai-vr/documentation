@@ -10,7 +10,7 @@ import HaiLocalization from "/src/components/HaiLocalization";
 <HaiTag isUniversal={true} />
 </HaiTags>
 
-<HaiLocalization languages={['en', 'ja']} />
+<HaiLocalization languages={['en', 'ja']} applicationIsLocalized={true} />
 
 Improves the look of the elbow joint by generating twist bones covering part of the lower arm that is closer to the elbow.
 

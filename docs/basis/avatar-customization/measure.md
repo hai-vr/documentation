@@ -15,7 +15,7 @@ import HaiLocalization from "/src/components/HaiLocalization";
 <HaiStartingFromTag version={"21st of May 2026"} />
 </HaiTags>
 
-<HaiLocalization languages={['en', 'ja']} />
+<HaiLocalization languages={['en', 'ja']} applicationIsLocalized={false} />
 
 The **HVR Measure** component can be used to measure things on the avatar. The resulting values may be used to trigger effects
 on your avatar using [Vixxy](/docs/basis/avatar-customization/vixxy).

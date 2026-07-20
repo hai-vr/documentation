@@ -15,7 +15,7 @@ import HaiLocalization from "/src/components/HaiLocalization";
 <HaiStartingFromTag version={"2026年5月21日"} />
 </HaiTags>
 
-<HaiLocalization languages={['en', 'ja']} />
+<HaiLocalization languages={['en', 'ja']} applicationIsLocalized={false} />
 
 **HVR Measure** コンポーネントを使用すると、アバター上のさまざまなものを計測できます。計測された値は、[Vixxy](/docs/basis/avatar-customization/vixxy) を使用してアバターのエフェクトをトリガーするために使用できます。
 

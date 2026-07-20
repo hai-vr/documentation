@@ -13,7 +13,7 @@ import HaiLocalization from "/src/components/HaiLocalization";
 <HaiTag requiresBasis={true} />
 </HaiTags>
 
-<HaiLocalization languages={['en', 'ja']} />
+<HaiLocalization languages={['en', 'ja']} applicationIsLocalized={false} />
 
 *Modular Avatar* はBasisプロジェクトでは公式にサポートされていません。
 

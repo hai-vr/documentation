@@ -10,7 +10,7 @@ import HaiLocalization from "/src/components/HaiLocalization";
 <HaiTag isUniversal={true} />
 </HaiTags>
 
-<HaiLocalization languages={['en', 'ja']} />
+<HaiLocalization languages={['en', 'ja']} applicationIsLocalized={true} />
 
 選択した BlendShapes の法線（および接線）を再計算することで、SkinnedMeshRenderer のシェーディングを改善します。
 

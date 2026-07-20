@@ -10,7 +10,7 @@ import HaiLocalization from "/src/components/HaiLocalization";
 <HaiTag isUniversal={true} />
 </HaiTags>
 
-<HaiLocalization languages={['en', 'ja']} />
+<HaiLocalization languages={['en', 'ja']} applicationIsLocalized={true} />
 
 Improves the shading of SkinnedMeshRenderers by recalculating select blendshape normals (and tangents).
 

@@ -10,7 +10,7 @@ import HaiLocalization from "/src/components/HaiLocalization";
 <HaiTag isUniversal={true} />
 </HaiTags>
 
-<HaiLocalization languages={['en', 'ja']} />
+<HaiLocalization languages={['en', 'ja']} applicationIsLocalized={true} />
 
 肘に近い前腕の一部をカバーするツイストボーンを生成することで、肘関節の見栄えを改善します。
 

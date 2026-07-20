@@ -12,7 +12,7 @@ import HaiLocalization from "/src/components/HaiLocalization";
 <HaiTag isUniversal={true} />
 </HaiTags>
 
-<HaiLocalization languages={['en', 'ja']} />
+<HaiLocalization languages={['en', 'ja']} applicationIsLocalized={false} />
 
 *Lightbox Viewer*（ライトボックス・ビューアー）を使用すると、さまざまな照明条件下でのシェーダーマテリアル設定の変化を同時に視覚化できます。
 
