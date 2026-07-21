@@ -44,7 +44,7 @@ const aiDisclaimer: Record<string, string> = {
 const aiLocalizationDisclaimer: Record<string, string> = {
   en: 'Additionally, the localization files used by the application are provided to the large language model as additional context for the translation of this user manual.',
   ja: 'また、アプリケーションで使用されているローカライズファイルが、このユーザーマニュアルの翻訳のための追加のコンテキストとして大規模言語モデルに提供されています。',
-  fr: 'De plus, les fichiers de localisation utilisés par l\'application sont fournis au modèle de langage étendu en tant que contexte supplémentaire pour la traduction de ce manuel d\'utilisation.',
+  fr: 'De plus, les fichiers de localisation utilisés par l\'application sont fournis au grand modèle de langage en tant que contexte supplémentaire pour la traduction de ce manuel d\'utilisation.',
   ko: '또한, 애플리케이션에서 사용하는 로컬라이제이션 파일이 이 사용자 매뉴얼의 번역을 위한 추가 컨텍스트로 대규모 언어 모델에 제공됩니다.',
   'zh-Hant': '此外，應用程式所使用的在地化檔案也作為此使用者手冊翻譯的補充內容提供給大型語言模型。',
   'zh-Hans': '此外，应用程序所使用的本地化文件也作为此用户手册翻译的补充内容提供给大型语言模型。',
