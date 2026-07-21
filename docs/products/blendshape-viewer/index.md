@@ -56,7 +56,7 @@ For better results, remember that you can change the field of view of the Scene 
 ![field_of_view](/assets/docs/products/blendshape-viewer/Untitled_5.png)
 :::
 
-### Identify which blenshape affects which area
+### Identify which blendshape affects which area
 
 By default, the thumbnails will display the differences. If you do not want this, uncheck *Show differences*.
 
