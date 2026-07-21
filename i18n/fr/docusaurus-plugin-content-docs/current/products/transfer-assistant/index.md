@@ -212,10 +212,10 @@ Vous pouvez y inspecter les fichiers qui seraient exportés et affiner votre sé
 
 La barre latérale de cette fenêtre comporte des boutons pour chaque type d'asset. Ceux-ci **n'ont pas** d'effet en cascade.
 
-- **Select** : Sélectionne les assets de ce type, ce qui les inclura dans l'exportation.
-- **Deselect** : Désélectionne les assets de ce type, ce qui les exclura de l'exportation.
-- **Deselect and Hide** : Désélectionne les assets de ce type et les supprime de la fenêtre d'exportation.
-    - *Note : Appuyer sur Deselect and Hide ne désélectionnera **pas** les assets qui sont référencés par ces assets, c'est donc différent de l'option Culling de la fenêtre Transfer Assistant.*
+- **Sélectionner** : Sélectionne les assets de ce type, ce qui les inclura dans l'exportation.
+- **Désélectionner** : Désélectionne les assets de ce type, ce qui les exclura de l'exportation.
+- **Désélectionner et masquer** : Désélectionne les assets de ce type et les supprime de la fenêtre d'exportation.
+    - *Note : Appuyer sur Désélectionner et masquer ne désélectionnera **pas** les assets qui sont référencés par ces assets, c'est donc différent de l'option Élagage de la fenêtre Transfer Assistant.*
 
 ![export_fr.png](/assets/docs/products/transfer-assistant/export_fr.png)
 

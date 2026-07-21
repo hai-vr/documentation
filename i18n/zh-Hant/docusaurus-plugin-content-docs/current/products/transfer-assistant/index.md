@@ -212,10 +212,10 @@ import {HaiVideo} from "/src/components/HaiVideo";
 
 該窗口的側邊欄有每種資源類型的按鈕。這些按鈕**不**具有級聯效應。
 
-- **Select**: 選擇該類型的資源，這會將它們包含在匯出中。
-- **Deselect**: 取消選擇該類型的資源，這會將它們從匯出中排除。
-- **Deselect and Hide**: 取消選擇該類型的資源並將其從“匯出”窗口中刪除。
-    - *注意：按下 Deselect and Hide 將**不會**取消選擇被這些資源引用的資源，因此這與 Transfer Assistant 窗口中的 Culling 選項不同。*
+- **選擇**: 選擇該類型的資源，這會將它們包含在匯出中。
+- **取消選擇**: 取消選擇該類型的資源，這會將它們從匯出中排除。
+- **取消選擇並隱藏**: 取消選擇該類型的資源並將其從「匯出」窗口中刪除。
+    - *注意：按下 取消選擇並隱藏 將**不會**取消選擇被這些資源引用的資源，因此這與 Transfer Assistant 窗口中的 剔除 選項不同。*
 
 ![export_zh-tw.png](/assets/docs/products/transfer-assistant/export_zh-tw.png)
 
