@@ -45,13 +45,17 @@ settings as the scene view.
 
 If you want the thumbnails to be larger, change the *Thumbnail Size* slider, and press the *Update* button again.
 
-By default, the thumbnails will display the differences. If you do not want this, uncheck *Show differences*.
-
 :::tip
 For better results, remember that you can change the field of view of the Scene camera.
 
 ![Untitled](/assets/docs/products/blendshape-viewer/Untitled_5.png)
 :::
+
+### Identify which blenshape affects which area
+
+By default, the thumbnails will display the differences. If you do not want this, uncheck *Show differences*.
+
+While having your cursor inside the *Blendshape Viewer* window, press the ALT key to display more precisely where the differences are.
 
 ### Search for blendshapes
 
