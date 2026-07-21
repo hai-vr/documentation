@@ -198,10 +198,10 @@ import {HaiVideo} from "/src/components/HaiVideo";
 颜色编码如下：
 
 - 大多数变灰的对象都不是资源，例如，它们可能是组件或非预制件的 GameObject。组件显示为变灰的黄色。
-- 蓝色对象是 *Prefab Sources* 或 *Prefab Models*，这是项目中以文件形式存在的预制件资源。
-- 绿色对象是 *Prefab Instances*，这是场景对象。它们可能存在于场景中或在其他预制件内部。
+- 蓝色对象是 *Prefab 源* 或 *Prefab 模型*，这是项目中以文件形式存在的预制件资源。
+- 绿色对象是 *Prefab 实例*，这是场景对象。它们可能存在于场景中或在其他预制件内部。
 
-*Prefab Instances* 通常与它所依赖的 *Prefab Source* 同名，这可能会导致阅读混淆。这就是它们被颜色编码的原因。
+*Prefab 实例* 通常与它所依赖的 *Prefab 源* 同名，这可能会导致阅读混淆。这就是它们被颜色编码的原因。
 :::
 
 ## 准备导出以预览将导出的资源文件

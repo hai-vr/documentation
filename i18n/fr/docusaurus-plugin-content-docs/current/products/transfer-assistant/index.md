@@ -198,10 +198,10 @@ Vous pouvez cliquer à nouveau sur l'icône de la loupe pour effacer la recherch
 Le code couleur est le suivant :
 
 - La plupart des objets grisés ne sont pas des assets, par exemple, il peut s'agir de composants ou de GameObjects qui ne sont pas des prefabs. Les composants sont affichés en jaune grisé.
-- Les objets en bleu sont des *Prefab Sources* ou *Prefab Models*, qui sont des assets de prefab existant sous forme de fichiers dans le projet.
-- Les objets en vert sont des *Prefab Instances*, qui sont des objets de scène. Ils peuvent exister dans la scène ou à l'intérieur d'autres prefabs.
+- Les objets en bleu sont des *Sources du Prefab* ou *Modèles Prefab*, qui sont des assets de prefab existant sous forme de fichiers dans le projet.
+- Les objets en vert sont des *Instance du Prefab*, qui sont des objets de scène. Ils peuvent exister dans la scène ou à l'intérieur d'autres prefabs.
 
-Les *Prefab Instances* partagent souvent le même nom que la *Prefab Source* dont elles dépendent, ce qui peut être déroutant à lire. C'est pourquoi elles sont colorées.
+Les *Instance du Prefab* partagent souvent le même nom que la *Source du Prefab* dont elles dépendent, ce qui peut être déroutant à lire. C'est pourquoi elles sont colorées.
 :::
 
 ## Préparer l'exportation pour prévisualiser quels fichiers d'assets seront exportés
