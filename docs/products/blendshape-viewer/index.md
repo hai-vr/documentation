@@ -1,16 +1,17 @@
 ﻿---
-title: Blendshape Viewer
+title: Blendshape Viewer (V3)
 ---
 import {HaiTags} from "/src/components/HaiTags";
 import {HaiTag} from "/src/components/HaiTag";
 import {HaiVideo} from "/src/components/HaiVideo";
 import HaiLocalization from "/src/components/HaiLocalization";
+import HaiSupport from "/docs/_support.mdx";
 
 <HaiTags>
 <HaiTag isUniversal={true} />
 </HaiTags>
 
-[//]: # (<HaiLocalization languages={['en', 'ja', 'fr', 'ko', 'zh-Hans', 'zh-Hant']} applicationIsLocalized={true} />)
+<HaiLocalization languages={['en', 'ja', 'fr', 'ko', 'zh-Hans', 'zh-Hant']} applicationIsLocalized={true} />
 
 *Blendshape Viewer* lets you visualize which area of a model is affected by a blendshape so that you can tweak their values.
 
@@ -19,6 +20,8 @@ import HaiLocalization from "/src/components/HaiLocalization";
 - 🌊 No game-specific SDK is required.
 - If you use a version of Unity lower than 2022, you must use version 2.1.2. 
 :::
+
+![Unity_p1DUewycYd.png](/assets/docs/products/blendshape-viewer/v3/Unity_p1DUewycYd.png)
 
 <HaiVideo src="./blendshape-viewer-img/sx_2022-01-15_00-25-45_Je9CWGeOH8.mp4"></HaiVideo>
 
@@ -30,13 +33,15 @@ It can also be installed through ALCOM:
 - Use this link to **[install our listing to ALCOM](vcc://vpm/addRepo?url=https://hai-vr.github.io/vpm-listing/index.json)**.
 - Add *Haï ~ Blendshape Viewer* to your project using ALCOM.
 
+<HaiSupport/>
+
 ## How to use
 
 ### Choose which object to preview
 
 Select the *SkinnedMeshRenderer* that you want to preview. In the inspector, click the three dots, and select “Haï Blendshape Viewer”.
 
-![Untitled](/assets/docs/products/blendshape-viewer/Untitled.png)
+![how_to_open](/assets/docs/products/blendshape-viewer/v3/how_to_open.png)
 
 ### Align the scene view with your mesh
 
@@ -48,7 +53,7 @@ If you want the thumbnails to be larger, change the *Thumbnail Size* slider, and
 :::tip
 For better results, remember that you can change the field of view of the Scene camera.
 
-![Untitled](/assets/docs/products/blendshape-viewer/Untitled_5.png)
+![field_of_view](/assets/docs/products/blendshape-viewer/Untitled_5.png)
 :::
 
 ### Identify which blenshape affects which area
@@ -56,6 +61,8 @@ For better results, remember that you can change the field of view of the Scene 
 By default, the thumbnails will display the differences. If you do not want this, uncheck *Show differences*.
 
 While having your cursor inside the *Blendshape Viewer* window, press the ALT key to display more precisely where the differences are.
+
+![alt](/assets/docs/products/blendshape-viewer/v3/alt.png)
 
 ### Search for blendshapes
 
@@ -69,7 +76,7 @@ Click on the **clipboard icon** to copy the blendshape name.
 
 Alternatively, you can also select the text that contains the blendshape name.
 
-### Record an animation
+### Change the value of a blendshape
 
 The slider under each blendshape will modify the value of that blendshape in your scene.
 

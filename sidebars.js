@@ -363,7 +363,8 @@ const sidebars = {
       "collapsed": false,
       "items": [
         "products/animation-viewer",
-        "products/blendshape-viewer",
+        "products/blendshape-viewer-v2",
+        "products/blendshape-viewer/index",
         "products/blendtree-viewer",
         "products/lightbox-viewer/index",
         "products/lightbox-viewer/urp",
@@ -465,7 +466,8 @@ const sidebars = {
     {
       '🌊 Assistive tools': [ // Reminder there are two placed needed to update this.
         "products/animation-viewer",
-        "products/blendshape-viewer",
+        "products/blendshape-viewer-v2",
+        "products/blendshape-viewer/index",
         "products/blendtree-viewer",
         {
           "type": "category",
