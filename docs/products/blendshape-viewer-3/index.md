@@ -1,0 +1,78 @@
+﻿---
+title: Blendshape Viewer
+---
+import {HaiTags} from "/src/components/HaiTags";
+import {HaiTag} from "/src/components/HaiTag";
+import {HaiVideo} from "/src/components/HaiVideo";
+import HaiLocalization from "/src/components/HaiLocalization";
+
+<HaiTags>
+<HaiTag isUniversal={true} />
+</HaiTags>
+
+[//]: # (<HaiLocalization languages={['en', 'ja', 'fr', 'ko', 'zh-Hans', 'zh-Hant']} applicationIsLocalized={true} />)
+
+*Blendshape Viewer* lets you visualize which area of a model is affected by a blendshape so that you can tweak their values.
+
+:::tip[Compatibility notes]
+- It has been tested to work on Unity 2022, and Unity 6.4, and should work on newer versions.
+- 🌊 No game-specific SDK is required.
+- If you use a version of Unity lower than 2022, you must use version 2.1.2. 
+:::
+
+<HaiVideo src="./blendshape-viewer-img/sx_2022-01-15_00-25-45_Je9CWGeOH8.mp4"></HaiVideo>
+
+## Download
+
+This tool can be downloaded on [Booth.pm](https://hai-vr.booth.pm/items/3582541).
+
+It can also be installed through ALCOM:
+- Use this link to **[install our listing to ALCOM](vcc://vpm/addRepo?url=https://hai-vr.github.io/vpm-listing/index.json)**.
+- Add *Haï ~ Blendshape Viewer* to your project using ALCOM.
+
+## How to use
+
+### Choose which object to preview
+
+Select the *SkinnedMeshRenderer* that you want to preview. In the inspector, click the three dots, and select “Haï Blendshape Viewer”.
+
+![Untitled](/assets/docs/products/blendshape-viewer/Untitled.png)
+
+### Align the scene view with your mesh
+
+Look around using the Scene tab to focus on your mesh, then press *Update* to refresh the thumbnails. The thumbnails use the same camera
+settings as the scene view.
+
+If you want the thumbnails to be larger, change the *Thumbnail Size* slider, and press the *Update* button again.
+
+By default, the thumbnails will display the differences. If you do not want this, uncheck *Show differences*.
+
+:::tip
+For better results, remember that you can change the field of view of the Scene camera.
+
+![Untitled](/assets/docs/products/blendshape-viewer/Untitled_5.png)
+:::
+
+### Search for blendshapes
+
+Type on the *Search* field to filter the results by blendshape name.
+
+You can separate search terms with a space. The search query `eye down` can find results like `eye_lookdown`.
+
+### Copy a blendshape name
+
+Click on the **clipboard icon** to copy the blendshape name.
+
+Alternatively, you can also select the text that contains the blendshape name.
+
+### Record an animation
+
+The slider under each blendshape will modify the value of that blendshape in your scene.
+
+This can also be used while recording an animation.
+
+<HaiVideo src="./blendshape-viewer-img/sx_2022-01-15_00-18-15_4Kdbs1Hlck.mp4"></HaiVideo>
+
+## Special thanks
+
+- [Pema](https://github.com/pema99/) for the [Compute Shader](https://github.com/hai-vr/blendshape-viewer/commit/46db696df8be42d251f59c3f0fb240b117905c76)!
