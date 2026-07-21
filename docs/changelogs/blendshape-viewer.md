@@ -13,10 +13,14 @@ Optimizations:
   - Rendering used to be slow if the Blendshape Window was already open due to a quirk with Animation Mode garbage collection.
   - Unity's Animation Mode is no longer used to render the thumbnails.
 
+Features:
+- Pressing the ALT key will now display the areas affected by the blendshape in yellow.
+- Checkboxes are now saved between Editor sessions.
+- Add localization.
+
 Changes:
 - The compute shader is now always used on computers that support the compute shader.
 - If no change is visible on a blendshape thumbnail, the thumbnail now looks even darker.
-- Checkboxes are now saved between Editor sessions.
 - Auto-update on focus is now OFF by default.
 - Window is now called "Blendshape Viewer" instead of "BlendshapeViewer".
 
