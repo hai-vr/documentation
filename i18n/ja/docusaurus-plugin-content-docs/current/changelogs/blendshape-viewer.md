@@ -5,6 +5,12 @@ import HaiLocalization from "/src/components/HaiLocalization";
 
 <HaiLocalization languages={['en', 'ja', 'fr', 'ko', 'zh-Hans', 'zh-Hant']} applicationIsLocalized={true} />
 
+## 3.0.0-beta.3
+
+修正:
+- コンピュートシェーダー（Compute Shader）において、アンチエイリアシングにより大きな許容誤差（tolerance）が必要だった問題を修正しました。
+- 不適切な RenderTexture のリリース呼び出しを修正しました。
+
 ## 3.0.0-beta.2
 
 変更点:

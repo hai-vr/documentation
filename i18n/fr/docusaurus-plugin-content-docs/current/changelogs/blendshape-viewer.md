@@ -5,6 +5,12 @@ import HaiLocalization from "/src/components/HaiLocalization";
 
 <HaiLocalization languages={['en', 'ja', 'fr', 'ko', 'zh-Hans', 'zh-Hant']} applicationIsLocalized={true} />
 
+## 3.0.0-beta.3
+
+Corrections :
+- Correction d'un problème où l'anti-aliasing nécessitait une plus grande tolérance dans le compute shader.
+- Correction d'une invocation incorrecte de la libération de RenderTexture.
+
 ## 3.0.0-beta.2
 
 Changements :

@@ -5,6 +5,12 @@ import HaiLocalization from "/src/components/HaiLocalization";
 
 <HaiLocalization languages={['en', 'ja', 'fr', 'ko', 'zh-Hans', 'zh-Hant']} applicationIsLocalized={true} />
 
+## 3.0.0-beta.3
+
+수정 사항:
+- Compute Shader에서 안티앨리어싱(anti-aliasing)에 더 큰 허용 오차(tolerance)가 필요하던 문제를 수정했습니다.
+- 부적절한 RenderTexture 릴리스 호출을 수정했습니다.
+
 ## 3.0.0-beta.2
 
 변경 사항:
