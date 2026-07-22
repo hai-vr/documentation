@@ -19,7 +19,8 @@ Creates a parent constraint that is weighted to move similarly to the closest po
 
 Use this component when you notice that attaching an object to your body is not as straightforward as parenting to a bone.
 
-This does **not** follow the movement of blendshapes, and does **not** follow the movement of cloth meshes.
+This does **not** follow the movement of blendshapes, does **not** follow the movement of cloth meshes,
+and does **not** follow the movement of DPS, SPS, or any other shader-based mesh deformation systems.
 
 :::tip[Compatibility notes]
 - It has been tested to work on Unity 2020, Unity 2022, and Unity 6, and should work on newer versions.

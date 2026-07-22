@@ -10,7 +10,8 @@ The contents of this AI_TRANSLATION_INSTRUCTIONS.md file are complementary instr
 - There is no need to put the English names in parentheses.
 - In most of the applications that our manuals are about, "Model" refers to a 3D model.
 - If you are instructed to localize or update a file from the /docs/changelogs folder, you must use the corresponding reference manual that the changelog refers to as additional context to ensure a consistent translation.
-
+- The words "DPS" and "SPS" should be kept verbatim and not decomposed nor translated into any assumed abbreviation.
+- 
 Language-specific instructions:
 - When translating to Japanese, the word "Prefab" should be written as プレハブ
 - When translating ALCOM Listing, use the term ALCOM Repository if necessary.
