@@ -65,8 +65,8 @@ Tout en ayant votre curseur à l'intérieur de la fenêtre *Blendshape Viewer*, 
 
 La fonction de la touche ALT peut être modifiée dans le menu déroulant en haut à droite :
 
-- Pour afficher l'image originale lorsque la touche ALT est maintenue enfoncée, choisissez *ALT affiche l'original* :
-- Pour mettre en évidence les différences en jaune lorsque la touche ALT est maintenue enfoncée, choisissez *ALT affiche les hotspots* :
+- Pour afficher l'image originale lorsque la touche ALT est maintenue enfoncée, choisissez *ALT affiche l'original*.
+- Pour mettre en évidence les différences en jaune lorsque la touche ALT est maintenue enfoncée, choisissez *ALT affiche les hotspots*.
 - Choisissez *Afficher les hotspots par défaut* pour mettre en évidence les différences en jaune ; maintenir la touche *ALT* enfoncée affichera la zone générale.
 - Pour désactiver la fonction de la touche ALT, sélectionnez *ALT ne fait rien*.
 
