@@ -5,6 +5,38 @@ import HaiLocalization from "/src/components/HaiLocalization";
 
 <HaiLocalization languages={['en', 'ja', 'fr', 'ko', 'zh-Hans', 'zh-Hant']} applicationIsLocalized={true} />
 
+## 3.0.0
+
+Changements majeurs :
+- Ne supporte plus Unity 2019. Unity 2022 est le minimum requis.
+
+Optimisations :
+- L'interface utilisateur devrait maintenant être plus rapide sur les modèles contenant un grand nombre de blendshapes (testé avec 700 blendshapes).
+- La durée du rendu devrait maintenant être plus courte.
+  - Le rendu était lent si la fenêtre Blendshape était déjà ouverte en raison d'une particularité du ramasse-miettes (garbage collection) de l'Animation Mode.
+  - L'Animation Mode d'Unity n'est plus utilisé pour le rendu des vignettes.
+  - Le rendu et la détection des différences sont désormais des opérations distinctes.
+
+Fonctionnalités :
+- Maintenir la touche ALT enfoncée peut désormais vous aider à comparer plus précisément les différences :
+  - Par défaut, maintenir la touche ALT enfoncée affiche l'image originale, sans la blendshape appliquée.
+  - Alternativement, en utilisant l'option du menu déroulant, maintenir la touche ALT enfoncée peut mettre en évidence les différences en couleur.
+  - La couleur jaune est utilisée pour les zones devenues plus claires, et la couleur rouge pour les zones devenues plus sombres.
+- Ajout d'un nouveau filtre qui, une fois cliqué, n'affiche que les blendshapes ayant une valeur différente de zéro.
+- Les cases à cocher sont désormais sauvegardées entre les sessions de l'éditeur.
+- Ajout de la localisation.
+
+Changements :
+- Le compute shader est désormais toujours utilisé sur les ordinateurs qui le supportent.
+- Si aucun changement n'est visible sur une vignette de blendshape, la vignette paraît désormais encore plus sombre.
+- L'auto-update au focus est désormais désactivé par défaut.
+- L'anti-aliasing est désormais activé.
+- Augmentation de la marge du rectangle de 2 pixels à 5 pixels.
+- La fenêtre s'appelle désormais "Blendshape Viewer" au lieu de "BlendshapeViewer".
+
+Corrections :
+- Lorsque la fenêtre prend le focus avec les mises à jour automatiques, les mises à jour sont désormais différées pour éviter un double rafraîchissement.
+
 ## 3.0.0-beta.4
 
 Fonctionnalités :

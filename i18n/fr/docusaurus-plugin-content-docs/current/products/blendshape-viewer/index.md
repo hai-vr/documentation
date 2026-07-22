@@ -23,7 +23,9 @@ import HaiSupport from "/docs/_support.mdx";
 
 ![Unity_Q4csWb8ty6.png](/assets/docs/products/blendshape-viewer/v3/Unity_Q4csWb8ty6.png)
 
-<HaiVideo src="./blendshape-viewer-img/sx_2022-01-15_00-25-45_Je9CWGeOH8.mp4"></HaiVideo>
+[//]: # (<HaiVideo src="./blendshape-viewer-img/sx_2022-01-15_00-25-45_Je9CWGeOH8.mp4"></HaiVideo>)
+
+<HaiVideo src="./TNrGPtICLP-f.mp4"></HaiVideo>
 
 ## Téléchargement
 
@@ -67,6 +69,8 @@ La fonction de la touche ALT peut être modifiée dans le menu déroulant en hau
 - Pour mettre en évidence les différences en jaune lorsque la touche ALT est maintenue enfoncée, choisissez *ALT affiche les hotspots* :
 - Choisissez *Afficher les hotspots par défaut* pour mettre en évidence les différences en jaune ; maintenir la touche *ALT* enfoncée affichera la zone générale.
 - Pour désactiver la fonction de la touche ALT, sélectionnez *ALT ne fait rien*.
+
+<HaiVideo src="./TNrGPtICLP-f.mp4"></HaiVideo>
 
 ### Rechercher des blendshapes
 

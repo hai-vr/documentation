@@ -23,7 +23,9 @@ import HaiSupport from "/docs/_support.mdx";
 
 ![Unity_Q4csWb8ty6.png](/assets/docs/products/blendshape-viewer/v3/Unity_Q4csWb8ty6.png)
 
-<HaiVideo src="./blendshape-viewer-img/sx_2022-01-15_00-25-45_Je9CWGeOH8.mp4"></HaiVideo>
+[//]: # (<HaiVideo src="./blendshape-viewer-img/sx_2022-01-15_00-25-45_Je9CWGeOH8.mp4"></HaiVideo>)
+
+<HaiVideo src="./TNrGPtICLP-f.mp4"></HaiVideo>
 
 ## 下載
 
@@ -67,6 +69,8 @@ ALT 鍵的功能可以透過右上角的下拉選單進行更改：
 - 要在按住 ALT 键時以黄色高亮显示差異，請選擇 *ALT 顯示熱點*。
 - 選擇 *默認顯示熱點* 以黃色高亮顯示差異；此時按住 *ALT* 鍵將顯示常規區域。
 - 要禁用 ALT 鍵的功能，請選擇 *ALT 不執行任何操作*。
+
+<HaiVideo src="./TNrGPtICLP-f.mp4"></HaiVideo>
 
 ### 搜尋 blendshape
 

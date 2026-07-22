@@ -5,6 +5,38 @@ import HaiLocalization from "/src/components/HaiLocalization";
 
 <HaiLocalization languages={['en', 'ja', 'fr', 'ko', 'zh-Hans', 'zh-Hant']} applicationIsLocalized={true} />
 
+## 3.0.0
+
+重大變更：
+- 不再支援 Unity 2019。最低要求 Unity 2022。
+
+優化：
+- 在包含大量混合形狀（已使用 700 個混合形狀進行測試）的模型上，UI 現在執行速度更快。
+- 渲染持續時間現在應該更快。
+  - 由於 Animation Mode 垃圾回收的特性，如果 Blendshape 視窗已經打開，渲染曾經會很慢。
+  - 現在不再使用 Unity 的 Animation Mode 來渲染縮略圖。
+  - 渲染和檢測差異現在是獨立的操作。
+
+功能：
+- 按住 ALT 鍵現在可以幫助您更準確地比較差異：
+  - 預設情況下，按住 ALT 鍵顯示未應用混合形狀的原圖。
+  - 或者，使用下拉選項，按住 ALT 鍵可以以顏色高亮顯示差異。
+  - 變亮的區域使用黃色顯示，變暗的區域使用紅色顯示。
+- 添加了一個新過濾器，點擊後僅顯示值不為零的混合形狀（blendshape）。
+- 複選框狀態現在會在編輯器會話之間保存。
+- 添加在地化。
+
+變更：
+- 在支援運算著色器（Compute Shader）的電腦上現在始終使用運算著色器。
+- 如果混合形狀縮略圖上沒有明顯變化，縮略圖現在看起來會更暗。
+- 「滑鼠移入時自動更新（Auto Update On Focus）」現在預設關閉。
+- 現在啟用了反鋸齒。
+- 將矩形的邊距從 2 像素增加到 5 像素。
+- 視窗現在稱為 「Blendshape Viewer」 而不是 「BlendshapeViewer」。
+
+修復：
+- 當視窗在自動更新狀態下獲得焦點時，更新現在會延遲以防止重複刷新。
+
 ## 3.0.0-beta.4
 
 功能：

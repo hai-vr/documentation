@@ -5,6 +5,38 @@ import HaiLocalization from "/src/components/HaiLocalization";
 
 <HaiLocalization languages={['en', 'ja', 'fr', 'ko', 'zh-Hans', 'zh-Hant']} applicationIsLocalized={true} />
 
+## 3.0.0
+
+Breaking changes:
+- No longer supports Unity 2019. Unity 2022 minimum required.
+
+Optimizations:
+- UI should now be faster on models containing a large number of blendshapes (tested with 700 blendshapes).
+- Rendering duration should now be faster.
+  - Rendering used to be slow if the Blendshape Window was already open due to a quirk with Animation Mode garbage collection.
+  - Unity's Animation Mode is no longer used to render the thumbnails.
+  - Rendering and detecting differences are now separate operations.
+
+Features:
+- Holding down the ALT key can now help you more accurately compare the differences:
+  - By default, holding down the ALT key shows the original picture, without the blendshape applied.
+  - Alternatively, using the dropdown option, holding down the ALT key can highlight the differences in color.
+  - Yellow color is used for areas that became brighter, and red color for areas that became darker.
+- Add a new filter which, once clicked, only shows blendshapes that have a value other than zero.
+- Checkboxes are now saved between Editor sessions.
+- Add localization.
+
+Changes:
+- The compute shader is now always used on computers that support the compute shader.
+- If no change is visible on a blendshape thumbnail, the thumbnail now looks even darker.
+- Auto-update on focus is now OFF by default.
+- Antialiasing is now enabled.
+- Increase margin of the rectangle from 2 pixels to 5 pixels.
+- Window is now called "Blendshape Viewer" instead of "BlendshapeViewer".
+
+Fixes:
+- When the window is focused with auto-updates, updates are now delayed to prevent double-refresh.
+
 ## 3.0.0-beta.4
 
 Features:

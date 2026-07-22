@@ -23,7 +23,9 @@ import HaiSupport from "/docs/_support.mdx";
 
 ![Unity_Q4csWb8ty6.png](/assets/docs/products/blendshape-viewer/v3/Unity_Q4csWb8ty6.png)
 
-<HaiVideo src="./blendshape-viewer-img/sx_2022-01-15_00-25-45_Je9CWGeOH8.mp4"></HaiVideo>
+[//]: # (<HaiVideo src="./blendshape-viewer-img/sx_2022-01-15_00-25-45_Je9CWGeOH8.mp4"></HaiVideo>)
+
+<HaiVideo src="./TNrGPtICLP-f.mp4"></HaiVideo>
 
 ## ダウンロード
 
@@ -67,6 +69,8 @@ ALT キーの機能は、右上のドロップダウンで変更できます：
 - ALT キーを押している間に差異を黄色でハイライトするには、*ALTキーでホットスポットを表示* を選択します。
 - 差異を常に黄色でハイライトするには、*デフォルトでホットスポットを表示* を選択します。この状態で ALT キーを押すと、一般的なエリアが表示されます。
 - ALT キーの機能を無効にするには、*ALTキーは何もしない* を選択します。
+
+<HaiVideo src="./TNrGPtICLP-f.mp4"></HaiVideo>
 
 ### ブレンドシェイプを検索する
 

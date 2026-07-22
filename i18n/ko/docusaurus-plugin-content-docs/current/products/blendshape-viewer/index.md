@@ -23,7 +23,9 @@ import HaiSupport from "/docs/_support.mdx";
 
 ![Unity_Q4csWb8ty6.png](/assets/docs/products/blendshape-viewer/v3/Unity_Q4csWb8ty6.png)
 
-<HaiVideo src="./blendshape-viewer-img/sx_2022-01-15_00-25-45_Je9CWGeOH8.mp4"></HaiVideo>
+[//]: # (<HaiVideo src="./blendshape-viewer-img/sx_2022-01-15_00-25-45_Je9CWGeOH8.mp4"></HaiVideo>)
+
+<HaiVideo src="./TNrGPtICLP-f.mp4"></HaiVideo>
 
 ## 다운로드
 
@@ -67,6 +69,8 @@ ALT 키의 기능은 오른쪽 상단의 드롭다운에서 변경할 수 있습
 - ALT 키를 누르고 있는 동안 차이점을 노란색으로 강조하려면 *ALT 키로 핫스팟 표시*를 선택하십시오.
 - 기본적으로 차이점을 노란색으로 강조하려면 *기본적으로 핫스팟 표시*를 선택하십시오. 이 상태에서 ALT 키를 누르면 일반적인 영역이 표시됩니다.
 - ALT 키의 기능을 비활성화하려면 *ALT 키가 아무것도 하지 않음*을 선택하십시오.
+
+<HaiVideo src="./TNrGPtICLP-f.mp4"></HaiVideo>
 
 ### 블렌드쉐이프 검색
 
