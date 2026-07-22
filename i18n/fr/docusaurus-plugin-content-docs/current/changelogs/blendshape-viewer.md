@@ -5,6 +5,11 @@ import HaiLocalization from "/src/components/HaiLocalization";
 
 <HaiLocalization languages={['en', 'ja', 'fr', 'ko', 'zh-Hans', 'zh-Hant']} applicationIsLocalized={true} />
 
+## 3.0.1
+
+Corrections :
+- Correction d'un problème où le bouton "Afficher uniquement les valeurs non nulles" n'était pas visible dans Unity 2022.
+
 ## 3.0.0
 
 Changements majeurs :
