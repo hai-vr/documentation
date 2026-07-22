@@ -5,6 +5,18 @@ import HaiLocalization from "/src/components/HaiLocalization";
 
 <HaiLocalization languages={['en', 'ja', 'fr', 'ko', 'zh-Hans', 'zh-Hant']} applicationIsLocalized={true} />
 
+## 3.0.0-beta.4
+
+変更点:
+- アンチエイリアシングを 8 から 4 に変更しました。
+- ALT キーに複数のオプションを追加しました。
+  - オリジナルの画像を表示するオプションを追加しました。これがデフォルトになりました。
+  - ALT キーの機能を無効にするオプションを追加しました。
+  - ハイライトされたホットスポットのオプションが、チェックボックスから 2 つのオプションに変更されました。
+
+修正:
+- サポートされていない環境でコンピュートシェーダーを実行しないように修正しました。
+
 ## 3.0.0-beta.3
 
 修正:

@@ -60,9 +60,14 @@ For better results, remember that you can change the field of view of the Scene 
 
 By default, the thumbnails will display the differences. If you do not want this, uncheck *Show differences*.
 
-While having your cursor inside the *Blendshape Viewer* window, press the ALT key to display more precisely where the differences are.
+While having your cursor inside the *Blendshape Viewer* window, press the ALT key to display the original picture without the blendshape applied.
 
-![alt](/assets/docs/products/blendshape-viewer/v3/alt.png)
+The function of the ALT key can be changed in the dropdown at the top right:
+
+- To show the original picture when the ALT key is held down, choose *ALT shows original*:
+- To highlight the differences in yellow when the ALT key is held down, choose *ALT shows hotspots*:
+- Choose *Show hotspots by default* to highlight the differences in yellow; holding the *ALT* key down will show the general area.
+- To disable the function of the ALT key, select *ALT does nothing*.
 
 ### Search for blendshapes
 

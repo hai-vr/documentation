@@ -59,9 +59,14 @@ Pour de meilleurs résultats, n'oubliez pas que vous pouvez modifier le champ de
 
 Par défaut, les vignettes affichent les différences. Si vous ne le souhaitez pas, décochez *Afficher les différences*.
 
-Tout en ayant votre curseur à l'intérieur de la fenêtre *Blendshape Viewer*, appuyez sur la touche ALT pour afficher plus précisément où se trouvent les différences.
+Tout en ayant votre curseur à l'intérieur de la fenêtre *Blendshape Viewer*, appuyez sur la touche ALT pour afficher l'image originale sans la blendshape appliquée.
 
-![alt](/assets/docs/products/blendshape-viewer/v3/alt.png)
+La fonction de la touche ALT peut être modifiée dans le menu déroulant en haut à droite :
+
+- Pour afficher l'image originale lorsque la touche ALT est maintenue enfoncée, choisissez *ALT affiche l'original* :
+- Pour mettre en évidence les différences en jaune lorsque la touche ALT est maintenue enfoncée, choisissez *ALT affiche les hotspots* :
+- Choisissez *Afficher les hotspots par défaut* pour mettre en évidence les différences en jaune ; maintenir la touche *ALT* enfoncée affichera la zone générale.
+- Pour désactiver la fonction de la touche ALT, sélectionnez *ALT ne fait rien*.
 
 ### Rechercher des blendshapes
 

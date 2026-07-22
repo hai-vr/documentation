@@ -5,6 +5,18 @@ import HaiLocalization from "/src/components/HaiLocalization";
 
 <HaiLocalization languages={['en', 'ja', 'fr', 'ko', 'zh-Hans', 'zh-Hant']} applicationIsLocalized={true} />
 
+## 3.0.0-beta.4
+
+Changes:
+- Change antialiasing from 8 to 4.
+- Add multiple options for the ALT key.
+  - Add option to display the original picture. This is now the default.
+  - Add option to disable the function of the ALT key.
+  - The options for the highlighted hotspots have changed from a checkbox into two options.
+
+Fixes:
+- Fix compute shader should not run on unsupported environments.
+
 ## 3.0.0-beta.3
 
 Changes:

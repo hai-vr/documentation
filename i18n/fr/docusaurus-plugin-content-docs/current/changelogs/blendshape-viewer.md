@@ -5,6 +5,18 @@ import HaiLocalization from "/src/components/HaiLocalization";
 
 <HaiLocalization languages={['en', 'ja', 'fr', 'ko', 'zh-Hans', 'zh-Hant']} applicationIsLocalized={true} />
 
+## 3.0.0-beta.4
+
+Changements :
+- Passage de l'anti-aliasing de 8 à 4.
+- Ajout de plusieurs options pour la touche ALT.
+  - Ajout d'une option pour afficher l'image originale. C'est désormais le réglage par défaut.
+  - Ajout d'une option pour désactiver la fonction de la touche ALT.
+  - Les options pour les points chauds (hotspots) mis en évidence sont passées d'une case à cocher à deux options.
+
+Corrections :
+- Correction du compute shader qui ne devrait pas s'exécuter sur les environnements non supportés.
+
 ## 3.0.0-beta.3
 
 Corrections :

@@ -59,9 +59,14 @@ import HaiSupport from "/docs/_support.mdx";
 
 預設情況下，縮略圖將顯示差異。如果您不希望這樣，請取消選取 *顯示差異*。
 
-將光標置於 *Blendshape Viewer* 視窗內時，按 ALT 鍵可以更精確地顯示差異所在的位置。
+將光標置於 *Blendshape Viewer* 視窗內時，按 ALT 鍵可以顯示未應用 blendshape 的原圖。
 
-![alt](/assets/docs/products/blendshape-viewer/v3/alt.png)
+ALT 鍵的功能可以透過右上角的下拉選單進行更改：
+
+- 要在按住 ALT 鍵時顯示原圖，請選擇 *ALT 顯示原圖*。
+- 要在按住 ALT 键時以黄色高亮显示差異，請選擇 *ALT 顯示熱點*。
+- 選擇 *默認顯示熱點* 以黃色高亮顯示差異；此時按住 *ALT* 鍵將顯示常規區域。
+- 要禁用 ALT 鍵的功能，請選擇 *ALT 不執行任何操作*。
 
 ### 搜尋 blendshape
 

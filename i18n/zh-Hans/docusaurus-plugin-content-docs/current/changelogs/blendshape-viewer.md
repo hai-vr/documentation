@@ -5,6 +5,18 @@ import HaiLocalization from "/src/components/HaiLocalization";
 
 <HaiLocalization languages={['en', 'ja', 'fr', 'ko', 'zh-Hans', 'zh-Hant']} applicationIsLocalized={true} />
 
+## 3.0.0-beta.4
+
+变更：
+- 将抗锯齿从 8 更改为 4。
+- 为 ALT 键添加了多个选项。
+  - 添加了显示原图的选项。这现在是默认设置。
+  - 添加了禁用 ALT 键功能的选项。
+  - 高亮热点的选项已从复选框更改为两个选项。
+
+修复：
+- 修复了计算着色器（Compute Shader）不应在不受支持的环境中运行的问题。
+
 ## 3.0.0-beta.3
 
 修复：

@@ -5,6 +5,18 @@ import HaiLocalization from "/src/components/HaiLocalization";
 
 <HaiLocalization languages={['en', 'ja', 'fr', 'ko', 'zh-Hans', 'zh-Hant']} applicationIsLocalized={true} />
 
+## 3.0.0-beta.4
+
+변경 사항:
+- 안티앨리어싱(anti-aliasing)을 8에서 4로 변경했습니다.
+- ALT 키에 대한 여러 옵션을 추가했습니다.
+  - 원본 사진을 표시하는 옵션을 추가했습니다. 이제 이것이 기본값입니다.
+  - ALT 키의 기능을 비활성화하는 옵션을 추가했습니다.
+  - 하이라이트된 핫스팟(hotspots)에 대한 옵션이 체크박스에서 두 가지 옵션으로 변경되었습니다.
+
+수정 사항:
+- 지원되지 않는 환경에서 Compute Shader가 실행되지 않도록 수정했습니다.
+
 ## 3.0.0-beta.3
 
 수정 사항:
