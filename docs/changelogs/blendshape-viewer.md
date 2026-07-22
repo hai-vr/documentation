@@ -7,6 +7,9 @@ import HaiLocalization from "/src/components/HaiLocalization";
 
 ## 3.0.0-beta.4
 
+Features:
+- Add button to only show blendshapes that have a value other than zero.
+
 Changes:
 - Change antialiasing from 8 to 4.
 - Add multiple options for the ALT key.

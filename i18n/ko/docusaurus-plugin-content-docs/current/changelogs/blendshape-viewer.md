@@ -7,6 +7,9 @@ import HaiLocalization from "/src/components/HaiLocalization";
 
 ## 3.0.0-beta.4
 
+기능:
+- 값이 0이 아닌 블렌드쉐이프만 표시하는 버튼을 추가했습니다.
+
 변경 사항:
 - 안티앨리어싱(anti-aliasing)을 8에서 4로 변경했습니다.
 - ALT 키에 대한 여러 옵션을 추가했습니다.

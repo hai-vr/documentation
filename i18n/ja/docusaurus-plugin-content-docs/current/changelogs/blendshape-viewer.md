@@ -7,6 +7,9 @@ import HaiLocalization from "/src/components/HaiLocalization";
 
 ## 3.0.0-beta.4
 
+機能追加:
+- 値が 0 以外のブレンドシェイプのみを表示するボタンを追加しました。
+
 変更点:
 - アンチエイリアシングを 8 から 4 に変更しました。
 - ALT キーに複数のオプションを追加しました。

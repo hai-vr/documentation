@@ -75,6 +75,9 @@ Type on the *Search* field to filter the results by blendshape name.
 
 You can separate search terms with a space. The search query `eye down` can find results like `eye_lookdown`.
 
+The button to the right of the *Search* field labeled *Only show non-zero* is a filter that will only show blendshapes that have a value
+other than zero.
+
 ### Copy a blendshape name
 
 Click on the **clipboard icon** to copy the blendshape name.

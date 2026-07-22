@@ -74,6 +74,8 @@ Tapez dans le champ *Rechercher* pour filtrer les résultats par nom de blendsha
 
 Vous pouvez séparer les termes de recherche par un espace. La requête de recherche `eye down` peut trouver des résultats comme `eye_lookdown`.
 
+Le bouton à droite du champ *Rechercher* intitulé *Afficher uniquement les valeurs non nulles* est un filtre qui n'affichera que les blendshapes ayant une valeur différente de zéro.
+
 ### Copier le nom d'une blendshape
 
 Cliquez sur l'**icône du presse-papiers** pour copier le nom de la blendshape.

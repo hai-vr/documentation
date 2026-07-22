@@ -7,6 +7,9 @@ import HaiLocalization from "/src/components/HaiLocalization";
 
 ## 3.0.0-beta.4
 
+功能：
+- 添加了仅显示值不为零的混合形状（blendshape）的按钮。
+
 变更：
 - 将抗锯齿从 8 更改为 4。
 - 为 ALT 键添加了多个选项。
