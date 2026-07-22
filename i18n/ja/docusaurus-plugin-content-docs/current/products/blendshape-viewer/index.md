@@ -21,7 +21,7 @@ import HaiSupport from "/docs/_support.mdx";
 - Unity 2022 未満のバージョンを使用する場合は、バージョン 2.1.2 を使用する必要があります。
 :::
 
-![Unity_p1DUewycYd.png](/assets/docs/products/blendshape-viewer/v3/Unity_p1DUewycYd.png)
+![Unity_Q4csWb8ty6.png](/assets/docs/products/blendshape-viewer/v3/Unity_Q4csWb8ty6.png)
 
 <HaiVideo src="./blendshape-viewer-img/sx_2022-01-15_00-25-45_Je9CWGeOH8.mp4"></HaiVideo>
 
