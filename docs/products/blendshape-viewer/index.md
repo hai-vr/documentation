@@ -1,5 +1,5 @@
 ﻿---
-title: Blendshape Viewer (V3)
+title: Blendshape Viewer
 ---
 import {HaiTags} from "/src/components/HaiTags";
 import {HaiTag} from "/src/components/HaiTag";

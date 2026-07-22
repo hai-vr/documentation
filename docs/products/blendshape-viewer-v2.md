@@ -1,4 +1,5 @@
 ﻿---
+unlisted: true
 title: Blendshape Viewer (V2)
 ---
 import {HaiTags} from "/src/components/HaiTags";

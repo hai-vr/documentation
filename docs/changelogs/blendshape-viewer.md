@@ -7,6 +7,10 @@ import HaiLocalization from "/src/components/HaiLocalization";
 
 ## 3.0.0-beta.3
 
+Changes:
+- Rendering of diff textures is now done separately from capturing the thumbnails while the Editor is running.
+- Increase margin of the diff rectangle from 2 pixels to 5 pixels.
+
 Fixes:
 - Fix antialiasing requires greater tolerance in the compute shader.
 - Fix improper RenderTexture release invocation.
