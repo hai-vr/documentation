@@ -5,6 +5,12 @@ import HaiLocalization from "/src/components/HaiLocalization";
 
 <HaiLocalization languages={['en', 'ja', 'fr', 'ko', 'zh-Hans', 'zh-Hant']} applicationIsLocalized={true} />
 
+## 3.0.0-beta.2
+
+Changes:
+- Use yellow color for areas that became brighter, and red color for areas that became darker.
+- Ensure camera has anti-aliasing for the generation of thumbnails.
+
 ## 3.0.0-beta.1
 
 Breaking changes:

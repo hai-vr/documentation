@@ -5,6 +5,12 @@ import HaiLocalization from "/src/components/HaiLocalization";
 
 <HaiLocalization languages={['en', 'ja', 'fr', 'ko', 'zh-Hans', 'zh-Hant']} applicationIsLocalized={true} />
 
+## 3.0.0-beta.2
+
+变更：
+- 变亮的区域使用黄色显示，变暗的区域使用红色显示。
+- 确保相机开启抗锯齿以生成缩略图。
+
 ## 3.0.0-beta.1
 
 重大变更：

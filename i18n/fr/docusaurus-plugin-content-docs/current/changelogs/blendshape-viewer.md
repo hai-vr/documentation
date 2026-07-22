@@ -5,6 +5,12 @@ import HaiLocalization from "/src/components/HaiLocalization";
 
 <HaiLocalization languages={['en', 'ja', 'fr', 'ko', 'zh-Hans', 'zh-Hant']} applicationIsLocalized={true} />
 
+## 3.0.0-beta.2
+
+Changements :
+- Utilisation de la couleur jaune pour les zones devenues plus claires, et de la couleur rouge pour les zones devenues plus sombres.
+- S'assure que la caméra dispose de l'anti-aliasing pour la génération des vignettes.
+
 ## 3.0.0-beta.1
 
 Changements majeurs :

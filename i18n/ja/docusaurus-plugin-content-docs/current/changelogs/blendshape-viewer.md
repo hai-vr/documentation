@@ -5,6 +5,12 @@ import HaiLocalization from "/src/components/HaiLocalization";
 
 <HaiLocalization languages={['en', 'ja', 'fr', 'ko', 'zh-Hans', 'zh-Hant']} applicationIsLocalized={true} />
 
+## 3.0.0-beta.2
+
+変更点:
+- 明るくなった箇所を黄色で、暗くなった箇所を赤色で表示するように変更しました。
+- サムネイル生成時にカメラのアンチエイリアシングを有効にするようにしました。
+
 ## 3.0.0-beta.1
 
 破壊的変更:

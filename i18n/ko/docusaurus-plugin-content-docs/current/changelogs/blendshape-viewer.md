@@ -5,6 +5,12 @@ import HaiLocalization from "/src/components/HaiLocalization";
 
 <HaiLocalization languages={['en', 'ja', 'fr', 'ko', 'zh-Hans', 'zh-Hant']} applicationIsLocalized={true} />
 
+## 3.0.0-beta.2
+
+변경 사항:
+- 더 밝아진 영역은 노란색으로, 더 어두워진 영역은 빨간색으로 표시하도록 변경되었습니다.
+- 썸네일 생성 시 카메라에 안티앨리어싱(anti-aliasing)이 적용되도록 보장합니다.
+
 ## 3.0.0-beta.1
 
 주요 변경 사항:
