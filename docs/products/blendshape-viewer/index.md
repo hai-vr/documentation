@@ -23,7 +23,9 @@ import HaiSupport from "/docs/_support.mdx";
 
 ![Unity_Q4csWb8ty6.png](/assets/docs/products/blendshape-viewer/v3/Unity_Q4csWb8ty6.png)
 
-<HaiVideo src="./blendshape-viewer-img/sx_2022-01-15_00-25-45_Je9CWGeOH8.mp4"></HaiVideo>
+[//]: # (<HaiVideo src="./blendshape-viewer-img/sx_2022-01-15_00-25-45_Je9CWGeOH8.mp4"></HaiVideo>)
+
+<HaiVideo src="./TNrGPtICLP-f.mp4"></HaiVideo>
 
 ## Download
 
@@ -68,6 +70,8 @@ The function of the ALT key can be changed in the dropdown at the top right:
 - To highlight the differences in yellow when the ALT key is held down, choose *ALT shows hotspots*:
 - Choose *Show hotspots by default* to highlight the differences in yellow; holding the *ALT* key down will show the general area.
 - To disable the function of the ALT key, select *ALT does nothing*.
+
+<HaiVideo src="./TNrGPtICLP-f.mp4"></HaiVideo>
 
 ### Search for blendshapes
 
