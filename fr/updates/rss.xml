@@ -4,10 +4,23 @@
         <title>Haï~ Blog</title>
         <link>https://docs.hai-vr.dev/fr/updates</link>
         <description>Haï~ Blog</description>
-        <lastBuildDate>Sun, 19 Jul 2026 14:05:00 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 22 Jul 2026 22:38:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>fr</language>
+        <item>
+            <title><![CDATA[✨ Blendshape Viewer V3]]></title>
+            <link>https://docs.hai-vr.dev/fr/updates/2026/07/22/p0</link>
+            <guid>https://docs.hai-vr.dev/fr/updates/2026/07/22/p0</guid>
+            <pubDate>Wed, 22 Jul 2026 22:38:00 GMT</pubDate>
+            <description><![CDATA[A new version of Blendshape Viewer has been released.]]></description>
+            <content:encoded><![CDATA[<p>A new version of Blendshape Viewer has been released.</p>
+<p>This update introduces a bunch of optimizations to make the UI faster on avatars with a large number of blendshapes.
+The UI is also localized into multiple languages.</p>
+<p>In addition, pressing the ALT key will now show the original picture without the blendshape applied so that you can better pinpoint the differences.</p>
+<video controls="" muted="" width="816"><source src="https://large.docs.cdn.hai-vr.dev/assets/docs/TNrGPtICLP-f.mp4"></video>
+<p>🗒️ <a href="https://docs.hai-vr.dev/fr/docs/changelogs/blendshape-viewer">Open changelog</a></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[☀️ Transfer Assistant]]></title>
             <link>https://docs.hai-vr.dev/fr/updates/2026/07/19/p0</link>
@@ -519,23 +532,6 @@ but <strong>contains fixes</strong> to many bugs that had been reported in the <
 <p>The bug you have encountered has most likely been reported already in 2022 or 2023.</p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="what-if-i-already-use-alcom">What if I already use ALCOM?<a href="https://docs.hai-vr.dev/fr/updates/2024/12/23/p0#what-if-i-already-use-alcom" class="hash-link" aria-label="Lien direct vers What if I already use ALCOM?" title="Lien direct vers What if I already use ALCOM?">​</a></h2>
 <p>There is no action to do if you already use ALCOM. Check out <a href="https://github.com/anatawa12" target="_blank" rel="noopener noreferrer">anatawa12's GitHub page</a>.</p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[🧪 Knowledge sharing "Running Modular Avatar on other apps"]]></title>
-            <link>https://docs.hai-vr.dev/fr/updates/2024/12/08/p0-ks</link>
-            <guid>https://docs.hai-vr.dev/fr/updates/2024/12/08/p0-ks</guid>
-            <pubDate>Sun, 08 Dec 2024 00:00:00 GMT</pubDate>
-            <description><![CDATA[A new knowledge sharing article has been published, "Running Modular Avatar on other apps".]]></description>
-            <content:encoded><![CDATA[<p>A new knowledge sharing article has been published, "Running Modular Avatar on other apps".</p>
-<ul>
-<li>2024-12-08<!-- -->
-<ul>
-<li><a href="https://docs.hai-vr.dev/fr/docs/research/other/modular-avatar-on-other-apps">"Running Modular Avatar on other apps"</a></li>
-<li><a href="https://docs.hai-vr.dev/fr/docs/research/other/modular-avatar-on-other-apps-ja">"他のアプリケーションでModular Avatarを動かす方法"</a></li>
-</ul>
-</li>
-</ul>
-<p>🔍 <a href="https://docs.hai-vr.dev/fr/docs/research/articles">View articles</a></p>]]></content:encoded>
         </item>
     </channel>
 </rss>

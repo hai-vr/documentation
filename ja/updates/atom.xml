@@ -2,11 +2,24 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://docs.hai-vr.dev/ja/updates</id>
     <title>Haï~ Blog</title>
-    <updated>2026-07-19T14:05:00.000Z</updated>
+    <updated>2026-07-22T22:38:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://docs.hai-vr.dev/ja/updates"/>
     <subtitle>Haï~ Blog</subtitle>
     <icon>https://docs.hai-vr.dev/ja/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[✨ Blendshape Viewer V3]]></title>
+        <id>https://docs.hai-vr.dev/ja/updates/2026/07/22/p0</id>
+        <link href="https://docs.hai-vr.dev/ja/updates/2026/07/22/p0"/>
+        <updated>2026-07-22T22:38:00.000Z</updated>
+        <summary type="html"><![CDATA[A new version of Blendshape Viewer has been released.]]></summary>
+        <content type="html"><![CDATA[<p>A new version of Blendshape Viewer has been released.</p>
+<p>This update introduces a bunch of optimizations to make the UI faster on avatars with a large number of blendshapes.
+The UI is also localized into multiple languages.</p>
+<p>In addition, pressing the ALT key will now show the original picture without the blendshape applied so that you can better pinpoint the differences.</p>
+<video controls="" muted="" width="816"><source src="https://large.docs.cdn.hai-vr.dev/assets/docs/TNrGPtICLP-f.mp4"></video>
+<p>🗒️ <a href="https://docs.hai-vr.dev/ja/docs/changelogs/blendshape-viewer">Open changelog</a></p>]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[☀️ Transfer Assistant]]></title>
         <id>https://docs.hai-vr.dev/ja/updates/2026/07/19/p0</id>
@@ -131,7 +144,7 @@ to another project</strong>, while stripping assets that you deem unnecessary.</
 send them to us. No avatar reupload is needed.</p>
 <p>This update includes some performance improvements and some code preparation for future use by <em>HVR Basis AvatarOptimizer</em>, so that
 avatar optimization tools may detect which blendshapes should not be removed from the mesh.</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="backend-changes">Backend changes<a href="https://docs.hai-vr.dev/ja/updates/2025/10/03/p1#backend-changes" class="hash-link" aria-label="Backend changes への直接リンク" title="Backend changes への直接�リンク">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="backend-changes">Backend changes<a href="https://docs.hai-vr.dev/ja/updates/2025/10/03/p1#backend-changes" class="hash-link" aria-label="Backend changes への直接リンク" title="Backend changes への直接リンク">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="avoid-string-comparisons-in-hvr-addresses">Avoid string comparisons in HVR addresses<a href="https://docs.hai-vr.dev/ja/updates/2025/10/03/p1#avoid-string-comparisons-in-hvr-addresses" class="hash-link" aria-label="Avoid string comparisons in HVR addresses への直接リンク" title="Avoid string comparisons in HVR addresses への直接リンク">​</a></h3>
 <ul>
 <li>Reduce the number of string comparisons by using int addresses instead of string addresses.</li>
@@ -331,7 +344,7 @@ even if VRChat introduces breaking changes:</p>
 <li>ComboGestureExpressions V3.3.1</li>
 </ul>
 <p>VRChat Avatars package upper bound dependency raised to VRChat SDK999.</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="prefabulous-for-vrchat-v220">Prefabulous for VRChat V2.2.0<a href="https://docs.hai-vr.dev/ja/updates/2025/06/24/p0#prefabulous-for-vrchat-v220" class="hash-link" aria-label="Prefabulous for VRChat V2.2.0 への直接リンク" title="Prefabulous for VRChat V2.2.0 への直接リンク">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="prefabulous-for-vrchat-v220">Prefabulous for VRChat V2.2.0<a href="https://docs.hai-vr.dev/ja/updates/2025/06/24/p0#prefabulous-for-vrchat-v220" class="hash-link" aria-label="Prefabulous for VRChat V2.2.0 への��直接リンク" title="Prefabulous for VRChat V2.2.0 への直接リンク">​</a></h2>
 <ul>
 <li>Now requires Animator As Code 1.2.0 or above, in order to use the asset container provider API.</li>
 <li>Add support for cross-application build compatibility being introduced in NDMF 1.8.<!-- -->
@@ -518,22 +531,5 @@ but <strong>contains fixes</strong> to many bugs that had been reported in the <
 <p>The bug you have encountered has most likely been reported already in 2022 or 2023.</p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="what-if-i-already-use-alcom">What if I already use ALCOM?<a href="https://docs.hai-vr.dev/ja/updates/2024/12/23/p0#what-if-i-already-use-alcom" class="hash-link" aria-label="What if I already use ALCOM? への直接リンク" title="What if I already use ALCOM? への直接リンク">​</a></h2>
 <p>There is no action to do if you already use ALCOM. Check out <a href="https://github.com/anatawa12" target="_blank" rel="noopener noreferrer">anatawa12's GitHub page</a>.</p>]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[🧪 Knowledge sharing "Running Modular Avatar on other apps"]]></title>
-        <id>https://docs.hai-vr.dev/ja/updates/2024/12/08/p0-ks</id>
-        <link href="https://docs.hai-vr.dev/ja/updates/2024/12/08/p0-ks"/>
-        <updated>2024-12-08T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[A new knowledge sharing article has been published, "Running Modular Avatar on other apps".]]></summary>
-        <content type="html"><![CDATA[<p>A new knowledge sharing article has been published, "Running Modular Avatar on other apps".</p>
-<ul>
-<li>2024-12-08<!-- -->
-<ul>
-<li><a href="https://docs.hai-vr.dev/ja/docs/research/other/modular-avatar-on-other-apps">"Running Modular Avatar on other apps"</a></li>
-<li><a href="https://docs.hai-vr.dev/ja/docs/research/other/modular-avatar-on-other-apps-ja">"他のアプリケーションでModular Avatarを動かす方法"</a></li>
-</ul>
-</li>
-</ul>
-<p>🔍 <a href="https://docs.hai-vr.dev/ja/docs/research/articles">View articles</a></p>]]></content>
     </entry>
 </feed>

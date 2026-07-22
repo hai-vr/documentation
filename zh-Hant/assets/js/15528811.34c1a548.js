@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmy_website=self.webpackChunkmy_website||[]).push([[27850],{19850:e=>{e.exports=JSON.parse('{"permalink":"/zh-Hant/updates/page/5","page":5,"postsPerPage":20,"totalPages":6,"totalCount":114,"previousPage":"/zh-Hant/updates/page/4","nextPage":"/zh-Hant/updates/page/6","blogDescription":"All updates","blogTitle":"Updates"}')}}]);
