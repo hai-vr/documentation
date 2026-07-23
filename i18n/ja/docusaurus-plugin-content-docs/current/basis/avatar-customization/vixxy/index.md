@@ -33,7 +33,7 @@ import HaiLocalization from "/src/components/HaiLocalization";
 
 *Vixxy*は、2026年5月1日以降、公式のBasis Frameworkリポジトリの`Basis/Packages/dev.hai-vr.basis.comms/`フォルダにデフォルトで含まれています。
 
-Basis Demoアプリケーションの参加者は、通常のアバター作成手順に従ってください。
+Basis Demo（現在はBasis Labsと呼ばれています）アプリケーションの参加者は、通常のアバター作成手順に従ってください。
 
 新しく追加された機能を利用するには、プロジェクトを更新する必要がある場合があります。<HaiStartingFromTag version={"2026年5月21日"} small={true} />
 

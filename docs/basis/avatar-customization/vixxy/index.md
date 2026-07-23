@@ -34,7 +34,7 @@ It can toggle objects ON and OFF, change shader material settings, blendshapes, 
 *Vixxy* is included by default with the official Basis Framework repository, in the `Basis/Packages/dev.hai-vr.basis.comms/` folder,
 since the 1st of May 2026.
 
-If you are a participant in the Basis Demo application, follow the regular instructions for making avatars.
+If you are a participant in the Basis Demo (now called Basis Labs) application, follow the regular instructions for making avatars.
 
 You may need to update your project to benefit from newly added features. <HaiStartingFromTag version={"21st of May 2026"} small={true} />
 
