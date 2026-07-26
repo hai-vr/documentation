@@ -41,7 +41,8 @@ export default {
 
 
   scripts: [
-    {src: 'https://plausible.io/js/script.js', defer: true, 'data-domain': 'docs.hai-vr.dev'}
+    {src: 'https://plausible.io/js/pa-vmG2Rpsh8fM1msl7KRzLq.js', async: true},
+    {src: '/js/plausible-init.js', async: false}
   ],
 
   presets: [
