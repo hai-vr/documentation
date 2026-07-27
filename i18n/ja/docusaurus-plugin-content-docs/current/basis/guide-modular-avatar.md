@@ -25,18 +25,14 @@ Basisプロジェクトには**絶対に** VRChat SDKをインストールしな
 これは、VRChat SDKがアセットやシェーダーをVRChatプラットフォーム内で動作するようにビルドするために、Unityプロジェクトの設定を専用に準備するためです。
 :::
 
-2026年4月28日現在、以下のパッケージをインストールすることで、BasisでModular Avatarが動作することが確認されています：
+2026年4月28日現在、以下のパッケージをインストールすることで、BasisでModular Avatarが動作することが確認されていました：
 
 - [Modular Avatar](https://modular-avatar.nadena.dev/docs/intro) **1.17.0-beta.0**
 - [NDMF](https://modular-avatar.nadena.dev/docs/intro) **1.11.0**
 - [Chillaxins](https://docs.hai-vr.dev/docs/products/chillaxins) **1.2.0** ([ここから直接ダウンロード](https://github.com/hai-vr/chillaxins/releases/download/1.2.0/dev.hai-vr.chillaxins-1.2.0.unitypackage))
 
+しかし、本稿執筆時点（2026年7月27日）では、Modular AvatarとNDMFはUnity 6.5と互換性がありません。
+
 これらはすべて、希望すればALCOM経由でインストール可能です。
 
 Modular AvatarやNDMFのより新しいバージョンが動作する可能性もありますが、Unity 6.4や6.5へのインストールはModular Avatarによって公式にサポートされていないため、各自で検証する必要があります。たまたまこれらの特定のバージョンが、追加のパッチなしで動作しています。
-
-より新しいバージョンを試したい場合は、（2026年7月26日現在）以下のパッケージを試してください。これらはUnity 6.4プロジェクトで動作するようです：
-
-- [Modular Avatar](https://modular-avatar.nadena.dev/docs/intro) **1.18.0-rc.1**
-- [NDMF](https://modular-avatar.nadena.dev/docs/intro) **1.14.1**
-- [Chillaxins](https://docs.hai-vr.dev/docs/products/chillaxins) **1.2.0** ([ここから直接ダウンロード](https://github.com/hai-vr/chillaxins/releases/download/1.2.0/dev.hai-vr.chillaxins-1.2.0.unitypackage))
