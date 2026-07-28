@@ -3,6 +3,13 @@ title: Lightbox Viewer
 ---
 
 import {HaiVideo} from "/src/components/HaiVideo";
+import HaiLocalization from "/src/components/HaiLocalization";
+
+<HaiLocalization languages={['en', 'ja', 'fr', 'ko', 'zh-Hans', 'zh-Hant']} applicationIsLocalized={true} />
+
+## 2.5.0-beta.4
+
+Add option to force anti-aliasing. This may help in some standalone project setups (e.g., Basis Framework projects).
 
 ## 2.5.0-beta.3
 
