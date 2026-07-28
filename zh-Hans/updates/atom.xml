@@ -2,11 +2,22 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://docs.hai-vr.dev/zh-Hans/updates</id>
     <title>Haï~ Blog</title>
-    <updated>2026-07-22T22:38:00.000Z</updated>
+    <updated>2026-07-28T08:31:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://docs.hai-vr.dev/zh-Hans/updates"/>
     <subtitle>Haï~ Blog</subtitle>
     <icon>https://docs.hai-vr.dev/zh-Hans/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[⚙️ Transfer Assistant 1.0.1]]></title>
+        <id>https://docs.hai-vr.dev/zh-Hans/updates/2026/07/28/p0</id>
+        <link href="https://docs.hai-vr.dev/zh-Hans/updates/2026/07/28/p0"/>
+        <updated>2026-07-28T08:31:00.000Z</updated>
+        <summary type="html"><![CDATA[Fixes:]]></summary>
+        <content type="html"><![CDATA[<p>Fixes:</p>
+<ul>
+<li>Fix TreeView was incompatible with Unity 6.5.</li>
+</ul>]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[✨ Blendshape Viewer V3]]></title>
         <id>https://docs.hai-vr.dev/zh-Hans/updates/2026/07/22/p0</id>
@@ -245,7 +256,7 @@ avatar optimization tools may detect which blendshapes should not be removed fro
 <p>The new face tracking has been modified to work with the Steam version of VRCFaceTracking (it now has OSCQuery),
 but it should also work with old versions of VRCFaceTracking that were not installed from Steam.</p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="backend-changes">Backend changes<a href="https://docs.hai-vr.dev/zh-Hans/updates/2025/09/28/p0#backend-changes" class="hash-link" aria-label="Backend changes的直接链接" title="Backend changes的直接链接">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="migrate-face-tracking-to-newest-basis-networking">Migrate face tracking to newest Basis networking<a href="https://docs.hai-vr.dev/zh-Hans/updates/2025/09/28/p0#migrate-face-tracking-to-newest-basis-networking" class="hash-link" aria-label="Migrate face tracking to newest Basis networking的直接链接" title="Migrate face tracking to newest Basis networking��的直接链接">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="migrate-face-tracking-to-newest-basis-networking">Migrate face tracking to newest Basis networking<a href="https://docs.hai-vr.dev/zh-Hans/updates/2025/09/28/p0#migrate-face-tracking-to-newest-basis-networking" class="hash-link" aria-label="Migrate face tracking to newest Basis networking的直接链接" title="Migrate face tracking to newest Basis networking的直接链接">​</a></h3>
 <ul>
 <li>Migrate to newer Basis avatar networking systems:<!-- -->
 <ul>
@@ -505,31 +516,5 @@ If you are already using this component, you do not need to use this.</p>
 <p>Use this component when you notice that attaching an object to your body is not as straightforward as parenting to a bone.</p>
 <video controls="" muted="" width="816"><source src="https://large.docs.cdn.hai-vr.dev/assets/docs/oSEDSUFVRj.mp4"></video>
 <p>You may install the <a href="https://docs.hai-vr.dev/zh-Hans/docs/products/constraint-tools/skinned-mesh-constraint#download">new package <em>Haï ~ Skinned Mesh Constraint</em></a> using ALCOM.</p>]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[⚠️ Advance notice for VRChat Creator Companion changes]]></title>
-        <id>https://docs.hai-vr.dev/zh-Hans/updates/2024/12/23/p0</id>
-        <link href="https://docs.hai-vr.dev/zh-Hans/updates/2024/12/23/p0"/>
-        <updated>2024-12-23T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Starting from the 1st of February 2025, my repository listing will no longer]]></summary>
-        <content type="html"><![CDATA[<p>Starting from the 1st of February 2025, <a href="https://docs.hai-vr.dev/zh-Hans/docs/products/listing">my repository listing</a> will no longer
-officially support the <em>VRChat Creator Companion</em> package manager. Instead, it will support the ALCOM package manager.</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="what-happens-if-i-continue-using-the-vrchat-creator-companion-to-install-this-repository">What happens if I continue using the <em>VRChat Creator Companion</em> to install this repository?<a href="https://docs.hai-vr.dev/zh-Hans/updates/2024/12/23/p0#what-happens-if-i-continue-using-the-vrchat-creator-companion-to-install-this-repository" class="hash-link" aria-label="what-happens-if-i-continue-using-the-vrchat-creator-companion-to-install-this-repository的直接链接" title="what-happens-if-i-continue-using-the-vrchat-creator-companion-to-install-this-repository的直接链接">​</a></h2>
-<p>In many cases you <em>might</em> still be able to install the packages from the <em>VRChat Creator Companion</em>.</p>
-<p>However, if there are any issues occuring within the <em>VRChat Creator Companion</em> during the installation process,
-<strong>then it will be considered to be an issue within the <em>VRChat Creator Companion</em> software itself</strong>,
-and workarounds will no longer be provided.</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="what-should-i-do-if-i-still-use-the-vrchat-creator-companion-and-an-error-occurs-in-vcc">What should I do if I still use the <em>VRChat Creator Companion</em>, and an error occurs in VCC?<a href="https://docs.hai-vr.dev/zh-Hans/updates/2024/12/23/p0#what-should-i-do-if-i-still-use-the-vrchat-creator-companion-and-an-error-occurs-in-vcc" class="hash-link" aria-label="what-should-i-do-if-i-still-use-the-vrchat-creator-companion-and-an-error-occurs-in-vcc的直接链接" title="what-should-i-do-if-i-still-use-the-vrchat-creator-companion-and-an-error-occurs-in-vcc的直接链接">​</a></h2>
-<p>If you still use the VRChat Creator Companion, and an error occurs in VCC during the installation of some packages from this repository,
-then:</p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="install-the-alcom-package-manager">Install the ALCOM package manager<a href="https://docs.hai-vr.dev/zh-Hans/updates/2024/12/23/p0#install-the-alcom-package-manager" class="hash-link" aria-label="Install the ALCOM package manager的直接链接" title="Install the ALCOM package manager的直接链接">​</a></h3>
-<p>I recommend that you install the ALCOM package manager.</p>
-<p><a href="https://vrc-get.anatawa12.com/alcom/" target="_blank" rel="noopener noreferrer">ALCOM</a> (<a href="https://github.com/vrc-get/vrc-get" target="_blank" rel="noopener noreferrer">GitHub</a>) is a community-created package manager. It is functionally equivalent to the <em>VRChat Creator Companion</em>,
-but <strong>contains fixes</strong> to many bugs that had been reported in the <em>VRChat Creator Companion</em> for years.</p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="report-the-vcc-bugs-to-vrchat">Report the VCC bugs to VRChat<a href="https://docs.hai-vr.dev/zh-Hans/updates/2024/12/23/p0#report-the-vcc-bugs-to-vrchat" class="hash-link" aria-label="Report the VCC bugs to VRChat的直接链接" title="Report the VCC bugs to VRChat的直接链接">​</a></h3>
-<p>Report the bugs you have encountered in VCC directly to VRChat, Inc. through either the feedback forum, or the <a href="https://github.com/vrchat-community/creator-companion/issues" target="_blank" rel="noopener noreferrer">GitHub issues</a>.</p>
-<p>The bug you have encountered has most likely been reported already in 2022 or 2023.</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="what-if-i-already-use-alcom">What if I already use ALCOM?<a href="https://docs.hai-vr.dev/zh-Hans/updates/2024/12/23/p0#what-if-i-already-use-alcom" class="hash-link" aria-label="What if I already use ALCOM?的直接链接" title="What if I already use ALCOM?的直接链接">​</a></h2>
-<p>There is no action to do if you already use ALCOM. Check out <a href="https://github.com/anatawa12" target="_blank" rel="noopener noreferrer">anatawa12's GitHub page</a>.</p>]]></content>
     </entry>
 </feed>
