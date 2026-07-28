@@ -9,9 +9,9 @@ import HaiLocalization from "/src/components/HaiLocalization";
 
 ## 1.0.1
 
-Fixes:
-- Fix TreeView was incompatible with Unity 6.5.
+修復：
+- 修復了 TreeView 與 Unity 6.5 不兼容的問題。
 
 ## 1.0.0
 
-First release.
+首次發布。
