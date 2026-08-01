@@ -3,6 +3,17 @@ title: Lightbox Viewer URP
 ---
 
 import {HaiVideo} from "/src/components/HaiVideo";
+import HaiLocalization from "/src/components/HaiLocalization";
+
+<HaiLocalization languages={['en', 'ja', 'fr', 'ko', 'zh-Hans', 'zh-Hant']} applicationIsLocalized={true} />
+
+## 1.0.0-beta.4
+
+- Adaptive Probe Volumes configuration changes:
+  - Fill empty spaces enabled.
+  - Bounds dimensions reduced.
+  - Spacing changed to 0.1m.
+- Scene has been re-baked in 6000.4.11f1.
 
 ## 1.0.0-beta.3
 
