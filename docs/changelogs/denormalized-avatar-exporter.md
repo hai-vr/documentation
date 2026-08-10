@@ -2,6 +2,11 @@
 title: Denormalized Avatar Exporter
 ---
 
+## 1.2.0-beta.1
+
+- Fix compilation error with newer UniVRM: AvatarDescription.CreateAvatar no longer exists
+  - This change has been contributed by [linnnnnnnnnnnnnnnnnnnnn #6](https://github.com/hai-vr/denormalized-avatar-exporter/pull/6)
+
 ## 1.1.0
 
 - Fix prevent armature rotation from being hijacked by another armature object with the same name.
