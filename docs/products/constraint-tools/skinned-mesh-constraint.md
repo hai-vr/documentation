@@ -23,7 +23,7 @@ This does **not** follow the movement of blendshapes, does **not** follow the mo
 and does **not** follow the movement of DPS, SPS, or any other shader-based mesh deformation systems.
 
 :::tip[Compatibility notes]
-- It has been tested to work on Unity 2020, Unity 2022, and Unity 6, and should work on newer versions.
+- It has been tested to work on Unity 2020, Unity 2022, Unity 6.4, and Unity 6.5, and should work on newer versions.
 - It is confirmed to work in <HaiTag requiresVRChat={true} short={true} /> and <HaiTag requiresBasis={true} short={true} /> projects. Other applications may be compatible.
 :::
 
@@ -86,8 +86,8 @@ The selected triangle or vertex is shown for five seconds when you click *Create
 
 ## Optional: Vendor
 
-If the <HaiTag requiresVRChat={true} short={true} /> Avatars SDK 3.7.3 or above is installed in the project, we will create a *VRC Parent Constraint*
-instead of a Unity *Parent Constraint*.
+- If the <HaiTag requiresVRChat={true} short={true} /> Avatars SDK 3.7.3 or above is installed in the project, we will create a *VRC Parent Constraint* instead of a Unity *Parent Constraint*.
+- If the <HaiTag requiresBasis={true} short={true} /> SDK is installed in the project, we will create a *Basis Parent Constraint* instead of a Unity *Parent Constraint*.
 
 You can override this behaviour by changing the *Vendor* field to *Unity* before creating the constraint, so that it creates a Unity *Parent Constraint*.
 
@@ -97,6 +97,7 @@ You can override this behaviour by changing the *Vendor* field to *Unity* before
 
 ## Versions
 
+- **1.4.0**: Add support for Basis Framework constraints.
 - **1.2.0**: Fix compatibility with breaking change introduced in VRCSDK 3.10, if it is installed.
 - **1.0.1**: Added.
 

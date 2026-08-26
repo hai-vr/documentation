@@ -23,7 +23,7 @@ Skinned Mesh Renderer の最も近いポリゴンと同様に動くように重�
 また、DPS、SPS、またはその他のシェーダーベースのメッシュ変形システムの動きにも追従**しません**。
 
 :::tip[互換性に関する注意]
-- Unity 2020、Unity 2022、および Unity 6 で動作確認済みであり、それ以降のバージョンでも動作するはずです。
+- Unity 2020、Unity 2022、Unity 6.4、および Unity 6.5 で動作確認済みであり、それ以降のバージョンでも動作するはずです。
 - <HaiTag requiresVRChat={true} short={true} /> および <HaiTag requiresBasis={true} short={true} /> プロジェクトでの動作を確認しています。他のアプリケーションでも互換性がある可能性があります。
 :::
 
@@ -83,7 +83,8 @@ Constraint の *Activate* ボタンは**押さないでください**！
 
 ## オプション：Vendor（ベンダー）
 
-プロジェクトに <HaiTag requiresVRChat={true} short={true} /> Avatars SDK 3.7.3 以上がインストールされている場合、Unity の *Parent Constraint* の代わりに *VRC Parent Constraint* を作成します。
+- プロジェクトに <HaiTag requiresVRChat={true} short={true} /> Avatars SDK 3.7.3 以上がインストールされている場合、Unity の *Parent Constraint* の代わりに *VRC Parent Constraint* を作成します。
+- プロジェクトに <HaiTag requiresBasis={true} short={true} /> SDK がインストールされている場合、Unity の *Parent Constraint* の代わりに *Basis Parent Constraint* を作成します。
 
 Constraint を作成する前に *Vendor*（ベンダー）フィールドを *Unity* に変更することで、この動作を上書きし、Unity の *Parent Constraint* を作成するようにできます。
 
@@ -93,6 +94,7 @@ Constraint を作成する前に *Vendor*（ベンダー）フィールドを *U
 
 ## バージョン
 
+- **1.4.0**: Basis Framework の Constraint サポートを追加。
 - **1.2.0**: VRCSDK 3.10 がインストールされている場合に導入された破壊的変更との互換性を修正。
 - **1.0.1**: 追加。
 
