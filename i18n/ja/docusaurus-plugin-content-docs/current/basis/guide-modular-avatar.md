@@ -50,6 +50,18 @@ https://hai-vr.github.io/unofficial-modular-avatar-basis-listing/index.json
 
 Modular AvatarやNDMFのより新しいバージョンが動作する可能性もありますが、Unity 6.4や6.5へのインストールはModular Avatarによって公式にサポートされていないため、各自で検証する必要があります。
 
+![mspaint_tzwtFeXOnl.png](/assets/docs/basis/mspaint_tzwtFeXOnl.png)
+
+### Modular Avatar Shape Changer を使用しないでください
+
+Modular Avatar には [Shape Changer](https://modular-avatar.nadena.dev/docs/reference/reaction/shape-changer) という名前のコンポーネントがあります。
+
+Basis Framework はアバターメッシュの簡略版（LOD）を生成しますが、本稿執筆時点（2026年8月26日）では、Modular Avatar はこれらの簡略版を認識しません。その結果、Shape Changer の影響を受けるメッシュにおいて、簡略版と詳細版が同時に表示されてしまう可能性があります。
+
+このため、Modular Avatar Shape Changer や、Modular Avatar に含まれるその他の同様のメッシュ改変ツールは使用できない場合があります。
+
+![fTKJolFI4M.png](/assets/docs/basis/fTKJolFI4M.png)
+
 ## Unity 6.4 (以前のバージョンのBasis Framework)
 
 Unity 6.4をまだ使用している古いバージョンのBasis Frameworkを使用している場合、以下のバージョンが動作することが確認されていました：

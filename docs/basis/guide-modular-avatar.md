@@ -52,6 +52,20 @@ And also, install this:
 It may be possible that newer versions of Modular Avatar and NDMF could work, but you have to verify by yourself as installing in
 Unity 6.4 or Unity 6.5 is not officially supported by Modular Avatar.
 
+![mspaint_tzwtFeXOnl.png](/assets/docs/basis/mspaint_tzwtFeXOnl.png)
+
+### Do not use Modular Avatar Shape Changer 
+
+Modular Avatar has a component called [Shape Changer](https://modular-avatar.nadena.dev/docs/reference/reaction/shape-changer).
+
+Basis Framework generates simplified versions of the avatar mesh (LODs), but at this time of writing (26th of August 2026), Modular Avatar
+is blind to these simplified versions. This may result in the meshes affected by Shape Changer displaying both the simplified versions and the
+detailed versions simultaneously.
+
+For this reason, you may not be able to use Modular Avatar Shape Changer nor any other similar mesh alteration tools present in Modular Avatar.
+
+![fTKJolFI4M.png](/assets/docs/basis/fTKJolFI4M.png)
+
 ## Unity 6.4 (old versions of Basis Framework)
 
 If you are on an old version of Basis Framework that is still using Unity 6.4, the following versions were known to work:
