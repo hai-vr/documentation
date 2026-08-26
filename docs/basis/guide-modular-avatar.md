@@ -26,15 +26,36 @@ This is because the VRChat SDK prepares the Unity project settings specifically 
 VRChat platform.
 :::
 
-As of the 28th of April 2026, Modular Avatar was known to work in Basis with the following packages installed:
+## Unity 6.5 (version of Basis Framework as of the 26th of August 2026)
+
+As of the 26th of August 2026, the Basis Framework runs in Unity 6.5, but this version of Unity introduces breaking changes.
+
+At this time of writing (26th of August 2026), Modular Avatar and NDMF are not compatible with Unity 6.5.
+
+You may have to install unofficial versions of Modular Avatar and NDMF, as instructed below.
+
+Add this listing to ALCOM:
+
+```
+https://hai-vr.github.io/unofficial-modular-avatar-basis-listing/index.json
+```
+
+(you may audit by [inspecting the GitHub repository for that listing](https://github.com/hai-vr/unofficial-modular-avatar-basis-listing))
+
+Then, install these versions in ALCOM:
+- NDMF **1.14.6-unofficial.basis.1** (hosted at https://github.com/hai-vr/ndmf/releases)
+- Modular Avatar **1.18.3-unofficial.basis.1** (hosted at https://github.com/hai-vr/modular-avatar/releases)
+
+And also, install this:
+- [Chillaxins](https://docs.hai-vr.dev/docs/products/chillaxins) **1.2.0** ([Download directly here](https://github.com/hai-vr/chillaxins/releases/download/1.2.0/dev.hai-vr.chillaxins-1.2.0.unitypackage))
+
+It may be possible that newer versions of Modular Avatar and NDMF could work, but you have to verify by yourself as installing in
+Unity 6.4 or Unity 6.5 is not officially supported by Modular Avatar.
+
+## Unity 6.4 (old versions of Basis Framework)
+
+If you are on an old version of Basis Framework that is still using Unity 6.4, the following versions were known to work:
 
 - [Modular Avatar](https://modular-avatar.nadena.dev/docs/intro) **1.17.0-beta.0**
 - [NDMF](https://modular-avatar.nadena.dev/docs/intro) **1.11.0**
 - [Chillaxins](https://docs.hai-vr.dev/docs/products/chillaxins) **1.2.0** ([Download directly here](https://github.com/hai-vr/chillaxins/releases/download/1.2.0/dev.hai-vr.chillaxins-1.2.0.unitypackage))
-
-However, at this time of writing, 27th of July 2026, Modular Avatar and NDMF are not compatible with Unity 6.5.
-
-They can all be installed through ALCOM if you wish to do so.
-
-It may be possible that newer versions of Modular Avatar and NDMF could work, but you have to verify by yourself as installing in
-Unity 6.4 or Unity 6.5 is not officially supported by Modular Avatar; it just so happens that those specific versions can work on it without additional patches.
