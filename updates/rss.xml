@@ -4,10 +4,19 @@
         <title>Haï~ Blog</title>
         <link>https://docs.hai-vr.dev/updates</link>
         <description>Haï~ Blog</description>
-        <lastBuildDate>Tue, 28 Jul 2026 08:31:00 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 26 Aug 2026 20:38:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[✨ Skinned Mesh Constraint Builder V1.4.0]]></title>
+            <link>https://docs.hai-vr.dev/updates/2026/08/26/p0</link>
+            <guid>https://docs.hai-vr.dev/updates/2026/08/26/p0</guid>
+            <pubDate>Wed, 26 Aug 2026 20:38:00 GMT</pubDate>
+            <description><![CDATA[When Skinned Mesh Constraint Builder is installed in a Basis Framework project that contains the Basis SDK,]]></description>
+            <content:encoded><![CDATA[<p>When Skinned Mesh Constraint Builder is installed in a Basis Framework project that contains the Basis SDK,
+we will now create a <em>Basis Parent Constraint</em> component by default, unless the <em>Vendor</em> setting is changed.</p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[⚙️ Transfer Assistant 1.0.1]]></title>
             <link>https://docs.hai-vr.dev/updates/2026/07/28/p0</link>
@@ -505,18 +514,6 @@ These offsets will make the Parent constraint behave more like weight painting/m
 If you are already using this component, you do not need to use this.</p>
 <p><img decoding="async" loading="lazy" alt="mspaint_US2AvDUNAt.png" src="https://docs.hai-vr.dev/assets/images/mspaint_US2AvDUNAt-98a16aa572a04a7534199b61b70deefb.png" width="376" height="304" class="img_ev3q"></p>
 <p>🗒️ <a href="https://docs.hai-vr.dev/docs/products/constraint-tools/activate-with-skinned-offsets">Open documentation</a></p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[☀️ Skinned Mesh Constraint Builder (Constraint Tools V1)]]></title>
-            <link>https://docs.hai-vr.dev/updates/2025/05/01/p0</link>
-            <guid>https://docs.hai-vr.dev/updates/2025/05/01/p0</guid>
-            <pubDate>Thu, 01 May 2025 00:00:00 GMT</pubDate>
-            <description><![CDATA[A new component, Skinned Mesh Constraint Builder, has been introduced to a new package.]]></description>
-            <content:encoded><![CDATA[<p>A new component, <a href="https://docs.hai-vr.dev/docs/products/constraint-tools/skinned-mesh-constraint">Skinned Mesh Constraint Builder</a>, has been introduced to a new package.</p>
-<p>This component creates a parent constraint that moves with the closest polygon of a Skinned Mesh Renderer.</p>
-<p>Use this component when you notice that attaching an object to your body is not as straightforward as parenting to a bone.</p>
-<video controls="" muted="" width="816"><source src="https://large.docs.cdn.hai-vr.dev/assets/docs/oSEDSUFVRj.mp4"></video>
-<p>You may install the <a href="https://docs.hai-vr.dev/docs/products/constraint-tools/skinned-mesh-constraint#download">new package <em>Haï ~ Skinned Mesh Constraint</em></a> using ALCOM.</p>]]></content:encoded>
         </item>
     </channel>
 </rss>
