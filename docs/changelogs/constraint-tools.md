@@ -7,6 +7,11 @@ import {HaiVideo} from "/src/components/HaiVideo";
 Add support for Basis Framework constraints:
 - Create a BasisParentConstraint if the Basis SDK package (com.basis.sdk) is present in the project.
 
+## 1.4.0-beta.1
+
+Add support for Basis Framework constraints:
+- Create a BasisParentConstraint if the Basis SDK package (com.basis.sdk) is present in the project.
+
 ## 1.3.0
 
 - Add language selector for French, Japanese, Korean, Simplified Chinese, Traditional Chinese.
