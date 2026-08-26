@@ -6,6 +6,7 @@ import {HaiTag} from "/src/components/HaiTag";
 import {HaiVideo} from "/src/components/HaiVideo";
 import HaiSupport from "/docs/_support.mdx";
 import HaiLocalization from "/src/components/HaiLocalization";
+import {HaiStartingFromTag} from "/src/components/HaiStartingFromTag";
 
 # Skinned Mesh Constraint Builder
 
@@ -84,7 +85,7 @@ Constraint の *Activate* ボタンは**押さないでください**！
 ## オプション：Vendor（ベンダー）
 
 - プロジェクトに <HaiTag requiresVRChat={true} short={true} /> Avatars SDK 3.7.3 以上がインストールされている場合、Unity の *Parent Constraint* の代わりに *VRC Parent Constraint* を作成します。
-- プロジェクトに <HaiTag requiresBasis={true} short={true} /> SDK がインストールされている場合、Unity の *Parent Constraint* の代わりに *Basis Parent Constraint* を作成します。
+- プロジェクトに <HaiTag requiresBasis={true} short={true} /> SDK がインストールされている場合、Unity の *Parent Constraint* の代わりに *Basis Parent Constraint* を作成します。 <HaiStartingFromTag version={"1.4.0"} small={true} />
 
 Constraint を作成する前に *Vendor*（ベンダー）フィールドを *Unity* に変更することで、この動作を上書きし、Unity の *Parent Constraint* を作成するようにできます。
 

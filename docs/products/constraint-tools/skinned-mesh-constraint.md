@@ -6,6 +6,7 @@ import {HaiTag} from "/src/components/HaiTag";
 import {HaiVideo} from "/src/components/HaiVideo";
 import HaiSupport from "/docs/_support.mdx";
 import HaiLocalization from "/src/components/HaiLocalization";
+import {HaiStartingFromTag} from "/src/components/HaiStartingFromTag";
 
 # Skinned Mesh Constraint Builder
 
@@ -87,7 +88,7 @@ The selected triangle or vertex is shown for five seconds when you click *Create
 ## Optional: Vendor
 
 - If the <HaiTag requiresVRChat={true} short={true} /> Avatars SDK 3.7.3 or above is installed in the project, we will create a *VRC Parent Constraint* instead of a Unity *Parent Constraint*.
-- If the <HaiTag requiresBasis={true} short={true} /> SDK is installed in the project, we will create a *Basis Parent Constraint* instead of a Unity *Parent Constraint*.
+- If the <HaiTag requiresBasis={true} short={true} /> SDK is installed in the project, we will create a *Basis Parent Constraint* instead of a Unity *Parent Constraint*. <HaiStartingFromTag version={"1.4.0"} small={true} />
 
 You can override this behaviour by changing the *Vendor* field to *Unity* before creating the constraint, so that it creates a Unity *Parent Constraint*.
 
