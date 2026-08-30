@@ -1,4 +1,7 @@
 import {HaiVideo} from "/src/components/HaiVideo";
+import HaiLocalization from "/src/components/HaiLocalization";
+
+<HaiLocalization languages={['en', 'ja']} applicationIsLocalized={true} />
 
 # Constraint Tools
 

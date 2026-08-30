@@ -8,11 +8,13 @@ import {HaiVideo} from "/src/components/HaiVideo";
 <HaiTag requiresBasis={true} />
 </HaiTags>
 
+<HaiLocalization languages={['en', 'ja']} applicationIsLocalized={false} />
+
 This is the user guide for customizing avatars using the Haï VR (HVR) packages of Basis.
 
 ## Basis is a framework
 
-The HVR packages contains components that can be used to customize avatars further than the base set
+The HVR packages contain components that can be used to customize avatars further than the base set
 provided in Basis.
 
 The HVR packages are optional, they are built on top of the APIs provided by Basis.

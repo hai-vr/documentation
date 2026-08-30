@@ -109,6 +109,36 @@ These controls are accessible in-app through *"Settings > Avatar Customization"*
 
 ![Unity_GWuNR4ZCCz.png](/assets/docs/basis/avatar-customization/vixxy/Unity_GWuNR4ZCCz.png)
 
+## Override based on the visibility of another mesh
+
+<HaiTags>
+<HaiStartingFromTag version={"Not released yet"} />
+</HaiTags>
+
+You may choose to override the value of a control based on whether another mesh is visible.
+
+Here are some examples:
+
+### Hide a mesh because of another mesh
+
+If you have a bra and t-shirt that are both toggled separately, but the bra should be hidden by that t-shirt, then:
+
+- Click the *"+ Add Mesh Visibility condition"* on the *Vixxy Control* of the bra.
+- In the *Mesh Visibility* component:
+  - Specify the t-shirt **Mesh** (**not** the control) to turn OFF the bra (using the corresponding value for that choice).
+  - In the *Otherwise* section, leave the value to *Do Not Override*, so that the menu value is in effect.
+
+### Shrink body blendshapes because of several other meshes
+
+If you have socks and shoes that should both hide parts of the body mesh using a blendshape whenever any of them is visible:
+
+- Create a new *Vixxy Control* that will be used to control the blendshapes of the body mesh.
+- Use the *Select...* button and choose *Mesh Visibility*.
+- In the *Mesh Visibility* component:
+  - Specify the socks **Mesh** and shoes **Mesh** (**not** the controls) that should hide parts of the body, and choose the corresponding value for that choice for when the mesh is visible.
+  - In the *Otherwise* section, use the dropdown to select *Override Value*, and choose the corresponding value for that choice for when the mesh is not visible.
+- Change the blendshapes of the body mesh (see section below).
+
 ## Change properties (blendshapes, shader, ...)
 
 If you need to change the value of blendshapes or change the values inside materials to affect the shaders, open the *Change Properties* category.
