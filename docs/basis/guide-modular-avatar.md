@@ -33,4 +33,7 @@ Modular Avatar is known to work with Basis on Unity 6.5 by default. Use the late
 - [Modular Avatar](https://modular-avatar.nadena.dev/docs/intro) any version above **1.18.5**
 - [NDMF](https://modular-avatar.nadena.dev/docs/intro) any version above**1.14.8**
 
-Then execute `SetupStandalone.ps1` from the NDMF package folder.
+Still, Modular Avatar and NDMF require DLLs to be installed. You have two options on Windows, either:
+
+- On [GitHub, download the `SetupStandalone.ps1` script](https://github.com/bdunderscore/ndmf), put it inside the NDMF package folder, and execute it with PowerShell as administrator;
+- OR, Install [Chillaxins](https://docs.hai-vr.dev/docs/products/chillaxins) **1.2.0** ([Download directly here](https://github.com/hai-vr/chillaxins/releases/download/1.2.0/dev.hai-vr.chillaxins-1.2.0.unitypackage))
