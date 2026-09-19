@@ -7,6 +7,10 @@ import HaiLocalization from "/src/components/HaiLocalization";
 
 <HaiLocalization languages={['en', 'ja', 'fr', 'ko', 'zh-Hans', 'zh-Hant']} applicationIsLocalized={true} />
 
+## 1.0.0-beta.5
+
+- 添加了藍色和橙色燈光箱缺失的資源。
+
 ## 1.0.0-beta.4
 
 - Adaptive Probe Volumes 配置更改：

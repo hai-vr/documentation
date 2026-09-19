@@ -7,6 +7,10 @@ import HaiLocalization from "/src/components/HaiLocalization";
 
 <HaiLocalization languages={['en', 'ja', 'fr', 'ko', 'zh-Hans', 'zh-Hant']} applicationIsLocalized={true} />
 
+## 1.0.0-beta.5
+
+- Add missing assets for the Blue and Orange lightbox.
+
 ## 1.0.0-beta.4
 
 - Adaptive Probe Volumes configuration changes:

@@ -7,6 +7,10 @@ import HaiLocalization from "/src/components/HaiLocalization";
 
 <HaiLocalization languages={['en', 'ja', 'fr', 'ko', 'zh-Hans', 'zh-Hant']} applicationIsLocalized={true} />
 
+## 1.0.0-beta.5
+
+- Blue 및 Orange 라이트박스에 누락된 에셋을 추가했습니다.
+
 ## 1.0.0-beta.4
 
 - Adaptive Probe Volumes 설정 변경:
