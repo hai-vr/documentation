@@ -7,6 +7,10 @@ import HaiLocalization from "/src/components/HaiLocalization";
 
 <HaiLocalization languages={['en', 'ja', 'fr', 'ko', 'zh-Hans', 'zh-Hant']} applicationIsLocalized={true} />
 
+## 2.5.0-beta.5
+
+修正：instanceId が使用できなくなったため、Lightbox Viewer が Unity 6.5 (例: Basis Framework プロジェクト) と互換性を持つようになりました。
+
 ## 2.5.0-beta.4
 
 アンチエイリアシングを強制するオプションを追加しました。これは、一部のスタンドアロンプロジェクト設定（例：Basis Framework プロジェクト）で役立つ場合があります。
@@ -43,7 +47,7 @@ URP Light Probes のサポートを追加：
 
 アルファ版からの以前の変更ログを時系列順に繰り返し（macOS の変更を除く）：
 
-*2.4.1-alpha.1 より:*
+*From 2.4.1-alpha.1:*
 
 - パフォーマンス向上のためエディットモードの戦略を変更：
     - 以前のエディットモードでは、アバターが誤って変更されないように毎フレームアバターをコピーしていました。
@@ -53,18 +57,18 @@ URP Light Probes のサポートを追加：
     - アバターの有効化は低速であるため、レンダリングサイクル間に元のアバターを無効化しないようにしました。
     - コピーにおいて、バインドに時間がかかり不要な Animator を削除しました。
 
-*2.4.1-alpha.2 より:*
+*From 2.4.1-alpha.2:*
 
 - URP プロジェクトのサポートを追加：
     - プロジェクトが BIRP であるかを検出します。
     - BIRP でない場合、Post-Processing V2 パッケージのインストールを推奨しないようにしました。
     - BIRP でない場合、Light Volumes パッケージがインストールされていても URP シーンをロードするようにしました。
 
-*2.5.0-alpha.2 より:*
+*From 2.5.0-alpha.2:*
 
 - GPU から CPU へのテクスチャコピーの必要性をなくす最適化を試みました。
 
-*2.5.0-alpha.3 より:*
+*From 2.5.0-alpha.3:*
 
 - Unity 6.2 Basis プロジェクトで深度がビューのレンダリングに影響を与えていた問題の修正を試みました。
 
@@ -83,14 +87,14 @@ GPU から CPU へのテクスチャコピーの必要性をなくす最適化�
 Async GPU readback のないシステムのサポートを試行：
 - Async GPU readback がないと思われる macOS 上の Metal のサポートを試みました。
 
-*2.4.1-alpha.2 より:*
+*From 2.4.1-alpha.2:*
 
 - URP プロジェクトのサポートを追加：
   - プロジェクトが BIRP であるかを検出します。
   - BIRP でない場合、Post-Processing V2 パッケージのインストールを推奨しないようにしました。
   - BIRP でない場合、Light Volumes パッケージがインストールされていても URP シーンをロードするようにしました。
 
-*2.4.1-alpha.1 より:*
+*From 2.4.1-alpha.1:*
 
 - パフォーマンス向上のためエディットモードの戦略を変更：
   - 以前のエディットモードでは、アバターが誤って変更されないように毎フレームアバターをコピーしていました。

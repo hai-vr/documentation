@@ -322,6 +322,28 @@ in the *Measurements* category.
 
 <HaiVideo src="./img/bdH9zKqkQE-f.mp4"></HaiVideo>
 
+### External programs
+
+<HaiTags><HaiStartingFromTag version={"21st of May 2026"} /></HaiTags>
+
+:::warning
+Please note that this feature has not been tested extensively. This documentation was added on the 19th of September 2026, but this should be working
+since the 21st of May 2026.
+:::
+
+External programs may be able to modify controls. Here are the rules:
+
+- In Additonal settings, set an address by hand, such as `Example`.
+- The external program may send OSC packets on port 9000 with the address `/avatar/parameters/Example`.
+  - You should send OSC float values, not bool values.
+  - Sending bool values through OSC might or might not have any effect.
+- In the Vixxy Control component, configure the choices so that there is a choice with the minimum value and a choice with the maximum value you want to support.
+  - For example, 0 and 1, -1 and 1, or 40 and 200
+- The minimum value and the maximum value may be in any range, but when networked, the value is quantized to 255 distinct values.
+  - For values that go between 0.0 and 1.0, the step is approximately 0.004, which is 0.4%.
+  - For values that go between -1.0 and 1.0, the step is approximately 0.008, which is 0.8%.
+  - The values of -1.0, 1.0, and 0.0 are guaranteed to stay the same after quantization.
+
 ## Additional settings
 
 ### Networking

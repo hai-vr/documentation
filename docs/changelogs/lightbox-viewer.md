@@ -7,6 +7,10 @@ import HaiLocalization from "/src/components/HaiLocalization";
 
 <HaiLocalization languages={['en', 'ja', 'fr', 'ko', 'zh-Hans', 'zh-Hant']} applicationIsLocalized={true} />
 
+## 2.5.0-beta.5
+
+Fix Lightbox Viewer should now be compatible with Unity 6.5 (e.g. Basis Framework projects), as instanceId can no longer be used.
+
 ## 2.5.0-beta.4
 
 Add option to force anti-aliasing. This may help in some standalone project setups (e.g., Basis Framework projects).
